@@ -1,0 +1,45 @@
+  # Script: Force Fix Radish Batch ID
+  # Manually sets a batch ID for slots A1-A8 to fix the "no selection" issue
+  sproutie_force_fix_radish:
+    alias: "Force Fix Radish Batch ID"
+    description: "Forcefully updates A1-A8 with a new batch ID"
+    sequence:
+      - variables:
+          new_batch_id: "{{ now().timestamp() | int }}"
+      - repeat:
+          for_each:
+            - "A1"
+            - "A2"
+            - "A3"
+            - "A4"
+            - "A5"
+            - "A6"
+            - "A7"
+            - "A8"
+          sequence:
+            - variables:
+                slot_entity: "input_text.slot_{{ repeat.item | lower }}_data"
+                current_data: "{{ states(slot_entity) }}"
+                updated_json: >
+                  {%- if current_data not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                    {%- set parsed = current_data | from_json(default={}) -%}
+                    {
+                      "crop": "{{ parsed.get('crop', 'Radish') }}",
+                      "id": "{{ new_batch_id }}",
+                      "planted": "{{ parsed.get('planted', now().date() | string) }}",
+                      "container": "{{ parsed.get('container', 'Tray') }}",
+                      "phase": "{{ parsed.get('phase', 'Growing') }}",
+                      "seed_weight": {{ parsed.get('seed_weight', 30) }},
+                      "soak_time": {{ parsed.get('soak_time', 0) }},
+                      "substrate": "{{ parsed.get('substrate', 'Soil') }}",
+                      "notes": "{{ parsed.get('notes', 'Force Fixed') }}"
+                    }
+                  {%- else -%}
+                    {{ current_data }}
+                  {%- endif -%}
+            - service: input_text.set_value
+              target:
+                entity_id: "{{ slot_entity }}"
+              data:
+                value: "{{ updated_json }}"
+

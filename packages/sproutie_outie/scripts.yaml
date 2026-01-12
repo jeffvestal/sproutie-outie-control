@@ -1,0 +1,267 @@
+# Sproutie OS v2.1 - Scripts
+# Logic and External Connectors
+
+rest_command:
+  sproutie_push_to_elastic:
+    url: !secret es_url_endpoint
+    method: POST
+    headers:
+      Authorization: !secret es_api_key
+      Content-Type: "application/json"
+    payload: |
+      {
+        "@timestamp": "{{ timestamp }}",
+        "event.dataset": "sproutie.events",
+        "sproutie": {
+          "batch_id": "{{ batch_id }}",
+          "slot_id": "{{ slot_id }}",
+          "event_type": "{{ event_type }}",
+          "detail": "{{ detail }}",
+          "photo_url": "{{ photo_url }}",
+          "environment": {
+            "temp": {{ temp }},
+            "humidity": {{ humidity }}
+          }
+        }
+      }
+    content_type: "application/json"
+
+script:
+  sproutie_log_event:
+    alias: "Sproutie Log Event"
+    description: "Master script for logging events to Elasticsearch with optional photo capture"
+    fields:
+      slot_id:
+        description: "The slot ID (A1-A8, B1-B8)"
+        example: "A1"
+      event_type:
+        description: "Event type (Water, Phase Change, Issue, Harvest, Note, etc.)"
+        example: "Phase Change"
+      detail:
+        description: "Event detail/description"
+        example: "Blackout"
+      take_photo:
+        description: "Whether to capture a photo snapshot"
+        default: false
+    sequence:
+      - variables:
+          slot_entity: "input_text.slot_{{ slot_id | lower }}_data"
+          slot_data_raw: "{{ states(slot_entity) }}"
+          slot_data: >
+            {% if slot_data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+              {{ slot_data_raw | from_json(default={}) }}
+            {% else %}
+              {}
+            {% endif %}
+          batch_id: "{{ slot_data.get('id', '') }}"
+          current_temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
+          current_humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+          photo_url: ""
+      - if:
+          - condition: template
+            value_template: "{{ take_photo | default(false) }}"
+        then:
+          - variables:
+              camera_entity: >
+                {% if slot_id[0] | upper == 'A' %}
+                  camera.sproutie_outie_top_eyes
+                {% else %}
+                  camera.sproutie_outie_bottom_eyes
+                {% endif %}
+              timestamp_str: "{{ now().strftime('%Y%m%d_%H%M%S') }}"
+              filename: "{{ slot_id | lower }}_{{ timestamp_str }}.jpg"
+              snapshot_path: "snapshots/{{ filename }}"
+          - service: camera.snapshot
+            target:
+              entity_id: "{{ camera_entity }}"
+            data:
+              filename: "{{ snapshot_path }}"
+          - variables:
+              photo_url: "/local/snapshots/{{ filename }}"
+      - if:
+          - condition: template
+            value_template: "{{ event_type == 'Phase Change' }}"
+        then:
+          - variables:
+              updated_json: >
+                {% if slot_data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                  {
+                    "crop": "{{ slot_data.get('crop', '') }}",
+                    "id": "{{ slot_data.get('id', '') }}",
+                    "planted": "{{ slot_data.get('planted', '') }}",
+                    "container": "{{ slot_data.get('container', '') }}",
+                    "phase": "{{ detail }}",
+                    "seed_weight": {{ slot_data.get('seed_weight', 0) }},
+                    "soak_time": {{ slot_data.get('soak_time', 0) }},
+                    "substrate": "{{ slot_data.get('substrate', '') }}",
+                    "notes": "{{ slot_data.get('notes', '') }}"
+                  }
+                {% else %}
+                  {}
+                {% endif %}
+          - service: input_text.set_value
+            target:
+              entity_id: "{{ slot_entity }}"
+            data:
+              value: "{{ updated_json }}"
+      - service: rest_command.sproutie_push_to_elastic
+        data:
+          timestamp: "{{ now().isoformat() }}"
+          batch_id: "{{ batch_id }}"
+          slot_id: "{{ slot_id }}"
+          event_type: "{{ event_type }}"
+          detail: "{{ detail | default('') }}"
+          photo_url: "{{ photo_url }}"
+          temp: "{{ current_temp }}"
+          humidity: "{{ current_humidity }}"
+
+  toggle_inspection_mode:
+    alias: "Toggle Inspection Mode"
+    description: "Save scene, kill grow lights, turn on Aux light"
+    sequence:
+      - service: scene.create
+        data:
+          scene_id: "sproutie_pre_inspection_scene"
+          snapshot_entities:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+            - switch.aux_light
+            - input_boolean.inspection_mode
+      - service: switch.turn_off
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+      - service: switch.turn_on
+        target:
+          entity_id: switch.aux_light
+      - service: input_boolean.toggle
+        target:
+          entity_id: input_boolean.inspection_mode
+
+  sproutie_plant_batch:
+    alias: "Plant Batch"
+    description: "Creates a new batch in the selected slot"
+    fields:
+      slot_id:
+        description: "The slot ID (A1-A8, B1-B8)"
+        example: "A1"
+    sequence:
+      - variables:
+          target_slot: "{{ slot_id | default(states('input_text.selected_slot')) }}"
+          batch_id: "{{ now().timestamp() | int }}"
+          crop: "{{ states('input_select.planting_preset') }}"
+          container: "{{ states('input_select.container_type') }}"
+          seed_weight: "{{ states('input_number.seed_weight') | int }}"
+          plant_date: "{{ states('input_datetime.batch_plant_date') | default(now().strftime('%Y-%m-%d')) }}"
+          payload: >
+            {
+              "crop": "{{ crop }}",
+              "id": "{{ batch_id }}",
+              "planted": "{{ plant_date }}",
+              "container": "{{ container }}",
+              "phase": "Germination",
+              "seed_weight": {{ seed_weight }},
+              "soak_time": 0,
+              "substrate": "Soil",
+              "notes": ""
+            }
+      - service: input_text.set_value
+        target:
+          entity_id: "input_text.slot_{{ target_slot | lower }}_data"
+        data:
+          value: "{{ payload }}"
+      - service: rest_command.sproutie_push_to_elastic
+        data:
+          timestamp: "{{ now().isoformat() }}"
+          batch_id: "{{ batch_id }}"
+          slot_id: "{{ target_slot }}"
+          event_type: "Planted"
+          detail: "{{ crop }} planted in {{ container }}"
+          photo_url: ""
+          temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
+          humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+      - service: input_text.set_value
+        target:
+          entity_id: input_text.selected_slot
+        data:
+          value: ""
+
+  sproutie_harvest_batch:
+    alias: "Harvest Batch"
+    description: "Harvests and clears the slot"
+    fields:
+      slot_id:
+        description: "The slot ID (A1-A8, B1-B8)"
+        example: "A1"
+    sequence:
+      - variables:
+          target_slot: "{{ slot_id | default(states('input_text.selected_slot')) }}"
+          slot_data_raw: "{{ states('input_text.slot_' ~ (target_slot | lower) ~ '_data') }}"
+          slot_data: "{{ slot_data_raw | from_json(default={}) }}"
+          harvest_weight: "{{ states('input_number.harvest_weight') | int }}"
+          crop: "{{ slot_data.get('crop', 'Unknown') }}"
+          batch_id: "{{ slot_data.get('id', '') }}"
+          seed_weight: "{{ slot_data.get('seed_weight', 1) | float }}"
+          yield_ratio: "{{ (harvest_weight / seed_weight) | round(2) if seed_weight > 0 else 0 }}"
+      - service: rest_command.sproutie_push_to_elastic
+        data:
+          timestamp: "{{ now().isoformat() }}"
+          batch_id: "{{ batch_id }}"
+          slot_id: "{{ target_slot }}"
+          event_type: "Harvested"
+          detail: "Yield: {{ harvest_weight }}g ({{ yield_ratio }}x)"
+          photo_url: ""
+          temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
+          humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+      - service: input_text.set_value
+        target:
+          entity_id: "input_text.slot_{{ target_slot | lower }}_data"
+        data:
+          value: "Empty"
+      - service: input_number.set_value
+        target:
+          entity_id: input_number.harvest_weight
+        data:
+          value: 0
+
+  sproutie_advance_phase:
+    alias: "Advance to Next Phase"
+    description: "Transitions crop to the next growth phase"
+    fields:
+      slot_id:
+        description: "The slot ID (A1-A8, B1-B8)"
+        example: "A1"
+    sequence:
+      - variables:
+          target_slot: "{{ slot_id | default(states('input_text.selected_slot')) }}"
+          next_phase: "{{ states('input_select.phase_transition') }}"
+      - service: script.sproutie_log_event
+        data:
+          slot_id: "{{ target_slot }}"
+          event_type: "Phase Change"
+          detail: "{{ next_phase }}"
+          take_photo: true
+
+  sproutie_log_issue:
+    alias: "Log Issue"
+    description: "Logs an issue for a slot"
+    fields:
+      slot_id:
+        description: "The slot ID (A1-A8, B1-B8)"
+        example: "A1"
+    sequence:
+      - variables:
+          target_slot: "{{ slot_id | default(states('input_text.selected_slot')) }}"
+          issue_detail: "{{ states('input_text.issue_note') }}"
+      - service: script.sproutie_log_event
+        data:
+          slot_id: "{{ target_slot }}"
+          event_type: "Issue"
+          detail: "{{ issue_detail }}"
+          take_photo: true
+      - service: input_text.set_value
+        target:
+          entity_id: input_text.issue_note
+        data:
+          value: ""

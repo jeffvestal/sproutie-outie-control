@@ -1,0 +1,73 @@
+# Elastic Agent Builder Tool Definitions for FLORA Agent
+
+# ES|QL Tool: Get Current Tent Status
+tool-esql-tent-status:
+  id: "tool-esql-tent-status"
+  type: "esql"
+  description: "Get the most recent sensor readings from the Sproutie Outie tent including temperature, humidity, and control states"
+  labels: ["sproutie", "sensors"]
+  configuration:
+    query: |
+      FROM sproutie-sensors-*
+      | SORT @timestamp DESC
+      | LIMIT 1
+      | KEEP tent_temp, tent_humidity, room_temp, room_humidity, fan_exhaust, fan_top, fan_bottom, lights_top, lights_bottom
+    params: {}
+
+# ES|QL Tool: Get Sensor History
+tool-esql-sensor-history:
+  id: "tool-esql-sensor-history"
+  type: "esql"
+  description: "Get historical sensor data for the Sproutie Outie tent over a specified time range. Use this to analyze trends, patterns, or compare current conditions to past data."
+  labels: ["sproutie", "sensors", "history"]
+  configuration:
+    query: |
+      FROM sproutie-sensors-*
+      | WHERE @timestamp >= NOW() - INTERVAL 24 HOURS
+      | STATS avg_temp = AVG(tent_temp), avg_humidity = AVG(tent_humidity), 
+              max_temp = MAX(tent_temp), min_temp = MIN(tent_temp),
+              max_humidity = MAX(tent_humidity), min_humidity = MIN(tent_humidity)
+              BY bucket(@timestamp, 1h)
+      | SORT @timestamp DESC
+    params: {}
+
+# ES|QL Tool: Query Botany Logs
+tool-esql-botany-logs:
+  id: "tool-esql-botany-logs"
+  type: "esql"
+  description: "Search and retrieve botany log entries. Use this to recall past events, conditions, or recommendations. Supports semantic search via content field."
+  labels: ["sproutie", "botany-logs"]
+  configuration:
+    query: |
+      FROM sproutie-botany-logs
+      | WHERE @timestamp >= NOW() - INTERVAL 7 DAYS
+      | SORT @timestamp DESC
+      | LIMIT 10
+      | KEEP @timestamp, log_type, content, conditions_summary, alerts
+    params: {}
+
+# ES|QL Tool: Get Recent Anomalies
+tool-esql-recent-anomalies:
+  id: "tool-esql-recent-anomalies"
+  type: "esql"
+  description: "Get recent anomaly detection results from the ML job. Use this to identify unusual patterns or conditions that need attention."
+  labels: ["sproutie", "anomalies"]
+  configuration:
+    query: |
+      FROM sproutie-anomaly-results
+      | WHERE @timestamp >= NOW() - INTERVAL 24 HOURS
+      | WHERE anomaly_score > 50
+      | SORT anomaly_score DESC, @timestamp DESC
+      | LIMIT 10
+      | KEEP @timestamp, anomaly_score, detector_description, typical, actual
+    params: {}
+
+# Index Search Tool: Search Plantbook Data
+tool-search-plantbook:
+  id: "tool-search-plantbook"
+  type: "index_search"
+  description: "Search Open Plantbook database for plant care information, optimal growing conditions, and cultivation advice. Use this when asked about specific crops or growing requirements."
+  labels: ["sproutie", "plantbook", "external"]
+  configuration:
+    pattern: "plantbook-*"
+

@@ -1,0 +1,751 @@
+# Sproutie OS v2.1 - Command Center
+# Material Design 3 | Stack-in-card containers | 24px border-radius
+
+title: Command Center
+path: command-center
+type: panel
+cards:
+  - type: vertical-stack
+    cards:
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 0: STATUS SUMMARY (Mission Control)
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              border: none !important;
+              overflow: hidden !important;
+              padding: 16px !important;
+            }
+        cards:
+          - type: horizontal-stack
+            cards:
+              # ─────────────────────────────────────────────────────────────────
+              # Active Batches Stat
+              # ─────────────────────────────────────────────────────────────────
+              - type: custom:mushroom-template-card
+                primary: Active Batches
+                secondary: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set ns = namespace(count=0) %}
+                  {% for s in slots %}
+                    {% set data = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if data not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set ns.count = ns.count + 1 %}
+                    {% endif %}
+                  {% endfor %}
+                  {{ ns.count }} / 16
+                icon: mdi:sprout
+                icon_color: "#4caf50"
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    .secondary {
+                      font-size: 24px !important;
+                      font-weight: 700 !important;
+                      color: #4caf50 !important;
+                    }
+              # ─────────────────────────────────────────────────────────────────
+              # Next Harvest Stat
+              # ─────────────────────────────────────────────────────────────────
+              - type: custom:mushroom-template-card
+                primary: Next Harvest
+                secondary: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set crop_lib_raw = states('input_text.crop_library_json') %}
+                  {% set crop_lib = crop_lib_raw | from_json(default={}) %}
+                  {% set ns = namespace(harvest_dates=[]) %}
+                  {% for s in slots %}
+                    {% set slot_data_raw = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if slot_data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set slot_data = slot_data_raw | from_json(default={}) %}
+                      {% set crop = slot_data.get('crop', '') %}
+                      {% set planted = slot_data.get('planted', '') %}
+                      {% if crop and planted %}
+                        {% set grow_days = crop_lib.get(crop, {}).get('grow_days', 10) | int %}
+                        {% set planted_date = planted | as_datetime %}
+                        {% if planted_date %}
+                          {% set harvest_date = planted_date + timedelta(days=grow_days) %}
+                          {% set ns.harvest_dates = ns.harvest_dates + [harvest_date] %}
+                        {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if ns.harvest_dates | length > 0 %}
+                    {% set soonest = ns.harvest_dates | min %}
+                    {{ soonest.strftime('%b %d') }}
+                  {% else %}
+                    No crops
+                  {% endif %}
+                icon: mdi:calendar-clock
+                icon_color: "#ff9800"
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    .secondary {
+                      font-size: 24px !important;
+                      font-weight: 700 !important;
+                      color: #ff9800 !important;
+                    }
+              # ─────────────────────────────────────────────────────────────────
+              # System Health Stat
+              # ─────────────────────────────────────────────────────────────────
+              - type: custom:mushroom-template-card
+                primary: System Health
+                secondary: >
+                  {% if is_state('input_boolean.production_mode', 'on') %}
+                    Nominal
+                  {% else %}
+                    Standby
+                  {% endif %}
+                icon: mdi:check-network-outline
+                icon_color: "#00bcd4"
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                    }
+                    .secondary {
+                      font-size: 24px !important;
+                      font-weight: 700 !important;
+                      color: #00bcd4 !important;
+                    }
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 1: VITALS ROW (Top) - Temperature, Humidity, VPD
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: horizontal-stack
+        cards:
+          # ─────────────────────────────────────────────────────────────────
+          # Temperature Super Card
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                }
+            cards:
+              # Header
+              - type: custom:mushroom-template-card
+                primary: Temperature
+                icon: mdi:thermometer
+                icon_color: "#e74c3c"
+                tap_action:
+                  action: more-info
+                  entity: sensor.sproutie_outie_internal_temp
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 16px 16px 4px 16px !important;
+                    }
+                    .primary {
+                      font-size: 14px !important;
+                      font-weight: 500 !important;
+                      text-transform: uppercase !important;
+                      letter-spacing: 1px !important;
+                      opacity: 0.7 !important;
+                    }
+              # Sparkline Graph
+              - type: custom:mini-graph-card
+                entities:
+                  - entity: sensor.sproutie_outie_internal_temp
+                    color: "#e74c3c"
+                hours_to_show: 24
+                points_per_hour: 4
+                line_width: 2
+                height: 50
+                show:
+                  graph: true
+                  fill: true
+                  labels: false
+                  points: false
+                  name: false
+                  icon: false
+                  state: false
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 12px !important;
+                      margin-top: -8px !important;
+                    }
+              # Big Value Footer
+              - type: custom:mushroom-template-card
+                primary: "{{ states('sensor.sproutie_outie_internal_temp') | round(1) }}°F"
+                icon: ""
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 16px 16px 16px !important;
+                      margin-top: -12px !important;
+                    }
+                    .primary {
+                      font-size: 36px !important;
+                      font-weight: 700 !important;
+                      color: #e74c3c !important;
+                      text-align: center !important;
+                    }
+
+          # ─────────────────────────────────────────────────────────────────
+          # Humidity Super Card
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                }
+            cards:
+              # Header
+              - type: custom:mushroom-template-card
+                primary: Humidity
+                icon: mdi:water-percent
+                icon_color: "#3498db"
+                tap_action:
+                  action: more-info
+                  entity: sensor.sproutie_outie_internal_humidity
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 16px 16px 4px 16px !important;
+                    }
+                    .primary {
+                      font-size: 14px !important;
+                      font-weight: 500 !important;
+                      text-transform: uppercase !important;
+                      letter-spacing: 1px !important;
+                      opacity: 0.7 !important;
+                    }
+              # Sparkline Graph
+              - type: custom:mini-graph-card
+                entities:
+                  - entity: sensor.sproutie_outie_internal_humidity
+                    color: "#3498db"
+                hours_to_show: 24
+                points_per_hour: 4
+                line_width: 2
+                height: 50
+                show:
+                  graph: true
+                  fill: true
+                  labels: false
+                  points: false
+                  name: false
+                  icon: false
+                  state: false
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 12px !important;
+                      margin-top: -8px !important;
+                    }
+              # Big Value Footer
+              - type: custom:mushroom-template-card
+                primary: "{{ states('sensor.sproutie_outie_internal_humidity') | round(1) }}%"
+                icon: ""
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 16px 16px 16px !important;
+                      margin-top: -12px !important;
+                    }
+                    .primary {
+                      font-size: 36px !important;
+                      font-weight: 700 !important;
+                      color: #3498db !important;
+                      text-align: center !important;
+                    }
+
+          # ─────────────────────────────────────────────────────────────────
+          # VPD Super Card
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                }
+            cards:
+              # Header
+              - type: custom:mushroom-template-card
+                primary: VPD
+                icon: mdi:gauge
+                icon_color: "#2ecc71"
+                tap_action:
+                  action: more-info
+                  entity: sensor.sproutie_vpd
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 16px 16px 4px 16px !important;
+                    }
+                    .primary {
+                      font-size: 14px !important;
+                      font-weight: 500 !important;
+                      text-transform: uppercase !important;
+                      letter-spacing: 1px !important;
+                      opacity: 0.7 !important;
+                    }
+              # Sparkline Graph
+              - type: custom:mini-graph-card
+                entities:
+                  - entity: sensor.sproutie_vpd
+                    color: "#2ecc71"
+                hours_to_show: 24
+                points_per_hour: 4
+                line_width: 2
+                height: 50
+                show:
+                  graph: true
+                  fill: true
+                  labels: false
+                  points: false
+                  name: false
+                  icon: false
+                  state: false
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 12px !important;
+                      margin-top: -8px !important;
+                    }
+              # Big Value Footer
+              - type: custom:mushroom-template-card
+                primary: "{{ states('sensor.sproutie_vpd') | round(2) }} kPa"
+                icon: ""
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 16px 16px 16px !important;
+                      margin-top: -12px !important;
+                    }
+                    .primary {
+                      font-size: 36px !important;
+                      font-weight: 700 !important;
+                      color: #2ecc71 !important;
+                      text-align: center !important;
+                    }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 2: CONTROL DECK (Middle) - Camera + Hardware Grid
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:layout-card
+        layout_type: custom:grid-layout
+        layout:
+          grid-template-columns: 1fr 1fr
+          grid-template-rows: auto
+          gap: 16px
+        cards:
+          # ─────────────────────────────────────────────────────────────────
+          # Left: Camera Feed (Top/Bottom Toggle)
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                  height: 100% !important;
+                }
+            cards:
+              - type: vertical-stack
+                cards:
+                  # Top Camera
+                  - type: picture-entity
+                    entity: camera.sproutie_outie_top_eyes
+                    name: Top Rack
+                    show_state: false
+                    aspect_ratio: 16:9
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: transparent !important;
+                          border: none !important;
+                          box-shadow: none !important;
+                          border-radius: 20px !important;
+                          overflow: hidden !important;
+                          margin: 8px !important;
+                        }
+                        img {
+                          border-radius: 16px !important;
+                        }
+                  # Bottom Camera
+                  - type: picture-entity
+                    entity: camera.sproutie_outie_bottom_eyes
+                    name: Bottom Rack
+                    show_state: false
+                    aspect_ratio: 16:9
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: transparent !important;
+                          border: none !important;
+                          box-shadow: none !important;
+                          border-radius: 20px !important;
+                          overflow: hidden !important;
+                          margin: 8px !important;
+                        }
+                        img {
+                          border-radius: 16px !important;
+                        }
+
+          # ─────────────────────────────────────────────────────────────────
+          # Right: Hardware Grid (2x3)
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                  padding: 8px !important;
+                  height: 100% !important;
+                  display: flex !important;
+                  flex-direction: column !important;
+                }
+            cards:
+              - type: grid
+                columns: 2
+                square: true
+                cards:
+                  # Top Lights
+                  - type: custom:mushroom-entity-card
+                    entity: switch.top_shelf_lights
+                    name: Top Lights
+                    icon: mdi:lightbulb-group
+                    icon_color: amber
+                    tap_action:
+                      action: toggle
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('switch.top_shelf_lights', 'on') %}rgba(255, 193, 7, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+                  # Bottom Lights
+                  - type: custom:mushroom-entity-card
+                    entity: switch.bottom_shelf_lights
+                    name: Bot Lights
+                    icon: mdi:lightbulb-group
+                    icon_color: amber
+                    tap_action:
+                      action: toggle
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('switch.bottom_shelf_lights', 'on') %}rgba(255, 193, 7, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+                  # Top Fan
+                  - type: custom:mushroom-entity-card
+                    entity: switch.top_shelf_fan
+                    name: Top Fan
+                    icon: mdi:fan
+                    icon_color: cyan
+                    tap_action:
+                      action: toggle
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('switch.top_shelf_fan', 'on') %}rgba(0, 188, 212, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+                  # Bottom Fan
+                  - type: custom:mushroom-entity-card
+                    entity: switch.bottom_shelf_fan
+                    name: Bot Fan
+                    icon: mdi:fan
+                    icon_color: cyan
+                    tap_action:
+                      action: toggle
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('switch.bottom_shelf_fan', 'on') %}rgba(0, 188, 212, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+                  # Exhaust Fan
+                  - type: custom:mushroom-entity-card
+                    entity: switch.exhaust_fan
+                    name: Exhaust
+                    icon: mdi:weather-windy
+                    icon_color: teal
+                    tap_action:
+                      action: toggle
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('switch.exhaust_fan', 'on') %}rgba(0, 150, 136, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+                  # Inspection Mode
+                  - type: custom:mushroom-entity-card
+                    entity: input_boolean.inspection_mode
+                    name: Inspect
+                    icon: mdi:eye
+                    icon_color: purple
+                    tap_action:
+                      action: call-service
+                      service: script.toggle_inspection_mode
+                    layout: vertical
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('input_boolean.inspection_mode', 'on') %}rgba(156, 39, 176, 0.2){% else %}rgba(50, 50, 50, 0.4){% endif %} !important;
+                          border-radius: 16px !important;
+                          border: none !important;
+                        }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 3: ENGINEERING (Bottom) - Production Mode + Scheduler
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: horizontal-stack
+        cards:
+          # ─────────────────────────────────────────────────────────────────
+          # Production Mode Toggle (Big Red/Green)
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                }
+            cards:
+              - type: custom:mushroom-template-card
+                entity: input_boolean.production_mode
+                primary: Production Mode
+                secondary: "{% if is_state('input_boolean.production_mode', 'on') %}ACTIVE{% else %}STANDBY{% endif %}"
+                icon: mdi:power
+                icon_color: "{% if is_state('input_boolean.production_mode', 'on') %}green{% else %}red{% endif %}"
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.15){% else %}rgba(231, 76, 60, 0.15){% endif %} !important;
+                      border: 2px solid {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.5){% else %}rgba(231, 76, 60, 0.5){% endif %} !important;
+                      border-radius: 20px !important;
+                      margin: 12px !important;
+                      padding: 16px !important;
+                    }
+                    .primary {
+                      font-size: 18px !important;
+                      font-weight: 600 !important;
+                      text-transform: uppercase !important;
+                      letter-spacing: 2px !important;
+                    }
+                    .secondary {
+                      font-size: 24px !important;
+                      font-weight: 700 !important;
+                      color: {% if is_state('input_boolean.production_mode', 'on') %}#2ecc71{% else %}#e74c3c{% endif %} !important;
+                    }
+                    mushroom-shape-icon {
+                      --icon-size: 48px !important;
+                    }
+
+          # ─────────────────────────────────────────────────────────────────
+          # Scheduler Panel
+          # ─────────────────────────────────────────────────────────────────
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card {
+                  background: rgba(30, 30, 30, 0.6) !important;
+                  border-radius: 24px !important;
+                  border: none !important;
+                  overflow: hidden !important;
+                  padding: 16px !important;
+                }
+            cards:
+              # Scheduler Header
+              - type: custom:mushroom-template-card
+                primary: Scheduler
+                icon: mdi:clock-outline
+                icon_color: orange
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: transparent !important;
+                      border: none !important;
+                      box-shadow: none !important;
+                      padding: 0 !important;
+                      margin-bottom: -8px !important;
+                    }
+                    .primary {
+                      font-size: 16px !important;
+                      font-weight: 600 !important;
+                      text-transform: uppercase !important;
+                      letter-spacing: 1px !important;
+                    }
+
+              # Light Schedule
+              - type: custom:stack-in-card
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(50, 50, 50, 0.4) !important;
+                      border-radius: 16px !important;
+                      border: none !important;
+                      margin-bottom: 8px !important;
+                    }
+                cards:
+                  - type: custom:mushroom-template-card
+                    primary: Light Schedule
+                    icon: mdi:lightbulb-outline
+                    icon_color: amber
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: transparent !important;
+                          border: none !important;
+                          box-shadow: none !important;
+                          padding: 8px 12px 0 12px !important;
+                        }
+                        .primary {
+                          font-size: 12px !important;
+                          font-weight: 500 !important;
+                          text-transform: uppercase !important;
+                          opacity: 0.7 !important;
+                        }
+                  - type: horizontal-stack
+                    cards:
+                      - type: entities
+                        entities:
+                          - entity: input_datetime.lights_on_time
+                            name: "ON"
+                        card_mod:
+                          style: |
+                            ha-card {
+                              background: transparent !important;
+                              border: none !important;
+                              box-shadow: none !important;
+                            }
+                      - type: entities
+                        entities:
+                          - entity: input_datetime.lights_off_time
+                            name: "OFF"
+                        card_mod:
+                          style: |
+                            ha-card {
+                              background: transparent !important;
+                              border: none !important;
+                              box-shadow: none !important;
+                            }
+
+              # Exhaust Cycle
+              - type: custom:stack-in-card
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(50, 50, 50, 0.4) !important;
+                      border-radius: 16px !important;
+                      border: none !important;
+                    }
+                cards:
+                  - type: custom:mushroom-template-card
+                    primary: Exhaust Cycle
+                    icon: mdi:fan
+                    icon_color: teal
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: transparent !important;
+                          border: none !important;
+                          box-shadow: none !important;
+                          padding: 8px 12px 0 12px !important;
+                        }
+                        .primary {
+                          font-size: 12px !important;
+                          font-weight: 500 !important;
+                          text-transform: uppercase !important;
+                          opacity: 0.7 !important;
+                        }
+                  - type: horizontal-stack
+                    cards:
+                      - type: entities
+                        entities:
+                          - entity: input_number.exhaust_on_duration
+                            name: "ON (min)"
+                        card_mod:
+                          style: |
+                            ha-card {
+                              background: transparent !important;
+                              border: none !important;
+                              box-shadow: none !important;
+                            }
+                      - type: entities
+                        entities:
+                          - entity: input_number.exhaust_off_duration
+                            name: "OFF (min)"
+                        card_mod:
+                          style: |
+                            ha-card {
+                              background: transparent !important;
+                              border: none !important;
+                              box-shadow: none !important;
+                            }

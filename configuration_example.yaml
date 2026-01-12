@@ -1,0 +1,49 @@
+# Example Home Assistant configuration.yaml entries
+# Add these to your main configuration.yaml file
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Enable packages
+homeassistant:
+  packages: !include_dir_named packages
+
+# Load Lovelace in YAML mode
+lovelace:
+  mode: yaml
+  resources:
+    # Core custom cards
+    - url: /hacsfiles/button-card/button-card.js
+      type: module
+    - url: /hacsfiles/lovelace-card-mod/card-mod.js
+      type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
+    - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+      type: module
+    # Mushroom cards
+    - url: /hacsfiles/lovelace-mushroom/mushroom.js
+      type: module
+    # Auto-entities for dynamic card generation
+    - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+      type: module
+    # Stack-in-card for card grouping
+    - url: /hacsfiles/stack-in-card/stack-in-card.js
+      type: module
+    # Browser Mod for browser-based interactions
+    - url: /hacsfiles/browser_mod/browser_mod.js
+      type: module
+
+# Load REST commands
+rest_command: !include rest_commands.yaml
+
+# Standard includes
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# Example secrets.yaml entries needed:
+# es_cluster_url: "https://your-cluster.es.region.cloud.es.io:9243"
+# es_api_key: "your_api_key_here"
+# kibana_url: "https://your-deployment.kb.region.cloud.es.io"
+

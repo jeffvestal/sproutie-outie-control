@@ -1,0 +1,249 @@
+cyberpunk_stat:
+  show_icon: true
+  show_name: true
+  show_state: true
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: '1px solid #00f3ff'
+      - border-radius: '4px'
+      - box-shadow: '0 0 10px #00f3ff40'
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: '#00f3ff'
+      - min-height: '150px'
+      - position: relative
+    name:
+      - font-size: '14px'
+      - text-transform: uppercase
+      - letter-spacing: '2px'
+      - color: '#00f3ff'
+      - opacity: 0.9
+      - margin-bottom: '12px'
+    state:
+      - font-size: '48px'
+      - font-weight: bold
+      - color: '#00f3ff'
+      - text-shadow: '0 0 15px #00f3ff, 0 0 30px #00f3ff40'
+      - margin: '12px 0'
+    icon:
+      - color: '#00f3ff'
+      - width: '48px'
+      - opacity: 0.9
+      - filter: 'drop-shadow(0 0 8px #00f3ff)'
+  card_mod:
+    style: |
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 10px #00f3ff40, 0 0 20px #00f3ff20; }
+        50% { box-shadow: 0 0 20px #00f3ff80, 0 0 40px #00f3ff40, 0 0 60px #00f3ff20; }
+      }
+      @keyframes border-pulse {
+        0%, 100% { border-color: #00f3ff; }
+        50% { border-color: #ff00ff; }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 2px; }
+      }
+      ha-card {
+        animation: pulse-glow 3s ease-in-out infinite, border-pulse 4s ease-in-out infinite, scanlines 0.5s linear infinite;
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7));
+        background-size: 100% 2px, 100% 100%;
+      }
+
+holo_toggle:
+  show_icon: true
+  show_name: true
+  show_state: false
+  tap_action:
+    action: toggle
+  hold_action:
+    action: more-info
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: |
+          [[[
+            return entity.state === 'on' ? '1px solid #00f3ff' : '1px solid #333';
+          ]]]
+      - border-radius: '4px'
+      - box-shadow: |
+          [[[
+            return entity.state === 'on' ? '0 0 15px #00f3ff40' : 'none';
+          ]]]
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - cursor: pointer
+      - transition: 'all 0.3s ease'
+      - filter: |
+          [[[
+            return entity.state === 'on' ? 'none' : 'grayscale(100%)';
+          ]]]
+      - opacity: |
+          [[[
+            return entity.state === 'on' ? '1' : '0.5';
+          ]]]
+      - min-height: '120px'
+      - position: relative
+    icon:
+      - width: '64px'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - filter: |
+          [[[
+            return entity.state === 'on' ? 'drop-shadow(0 0 20px #00f3ff)' : 'none';
+          ]]]
+      - animation: |
+          [[[
+            const isFan = entity.entity_id.includes('fan');
+            return (entity.state === 'on' && isFan) ? 'spin 2s linear infinite' : 'none';
+          ]]]
+    name:
+      - font-size: '14px'
+      - text-transform: uppercase
+      - letter-spacing: '2px'
+      - margin-top: '16px'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - opacity: |
+          [[[
+            return entity.state === 'on' ? '1' : '0.6';
+          ]]]
+  card_mod:
+    style: |
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse-glow-strong {
+        0%, 100% { box-shadow: 0 0 15px #00f3ff40, 0 0 30px #00f3ff20; }
+        50% { box-shadow: 0 0 30px #00f3ff80, 0 0 60px #00f3ff40, 0 0 90px #00f3ff20; }
+      }
+      @keyframes border-gradient {
+        0% { border-color: #00f3ff; }
+        50% { border-color: #ff00ff; }
+        100% { border-color: #00f3ff; }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 2px; }
+      }
+      ha-card[data-state="on"] {
+        animation: pulse-glow-strong 2s ease-in-out infinite, border-gradient 3s ease-in-out infinite, scanlines 0.5s linear infinite !important;
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7)) !important;
+        background-size: 100% 2px, 100% 100% !important;
+      }
+      ha-card:not([data-state="on"]) {
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.1) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7)) !important;
+        background-size: 100% 2px, 100% 100% !important;
+        animation: scanlines 0.5s linear infinite !important;
+      }
+
+threat_level:
+  show_icon: false
+  show_name: true
+  show_state: false
+  name: 'THREAT ASSESSMENT'
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: '1px solid #666'
+      - border-radius: '4px'
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: '#00f3ff'
+      - min-height: '150px'
+      - position: relative
+    name:
+      - font-size: '16px'
+      - text-transform: uppercase
+      - letter-spacing: '3px'
+      - margin-bottom: '20px'
+      - color: '#00f3ff'
+      - text-align: center
+      - font-weight: bold
+  custom_fields:
+    threat_bar: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="height: 30px; background: #333; border: 1px solid #666; border-radius: 2px; margin: 12px 0; display: flex; align-items: center; justify-content: center; color: #666; font-size: 12px;">ML JOB NOT CONFIGURED</div>`;
+        }
+        return `<div style="height: 30px; background: linear-gradient(to right, #00ff00 0%, #00ff00 33%, #ffbf00 33%, #ffbf00 66%, #ff00ff 66%, #ff00ff 100%); border: 1px solid #333; border-radius: 2px; margin: 12px 0;"></div>`;
+      ]]]
+    threat_label: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="font-size: 28px; font-weight: bold; color: #666; text-align: center; margin-top: 12px;">OFFLINE</div>`;
+        }
+        const score = parseFloat(state) || 0;
+        let level = 'NOMINAL';
+        let color = '#00ff00';
+        if (score > 70) { level = 'CRITICAL'; color = '#ff00ff'; }
+        else if (score > 40) { level = 'ELEVATED'; color = '#ffbf00'; }
+        else if (score > 20) { level = 'CAUTION'; color = '#ffbf00'; }
+        return `<div style="font-size: 28px; font-weight: bold; color: ${color}; text-shadow: 0 0 15px ${color}, 0 0 30px ${color}40; text-align: center; margin-top: 12px;">${level}</div>`;
+      ]]]
+    score_label: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="font-size: 12px; opacity: 0.7; text-align: center; margin-top: 8px;">Connect Elasticsearch to enable</div>`;
+        }
+        return `<div style="font-size: 14px; opacity: 0.8; text-align: center; margin-top: 8px; color: #00f3ff;">Anomaly Score: ${state}</div>`;
+      ]]]
+  card_mod:
+    style: |
+      @keyframes threat-pulse {
+        0%, 100% { box-shadow: 0 0 10px rgba(102, 102, 102, 0.3); }
+        50% { box-shadow: 0 0 20px rgba(102, 102, 102, 0.5); }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 2px; }
+      }
+      ha-card {
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7));
+        background-size: 100% 2px, 100% 100%;
+        animation: threat-pulse 3s ease-in-out infinite, scanlines 0.5s linear infinite;
+      }

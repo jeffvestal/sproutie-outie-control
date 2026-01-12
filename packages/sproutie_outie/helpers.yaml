@@ -1,0 +1,127 @@
+# packages/sproutie_outie/helpers.yaml
+
+# --- SYSTEM CONTROLS ---
+input_boolean:
+  production_mode:
+    name: "Production Mode (Master System)"
+    icon: mdi:power
+  inspection_mode:
+    name: "Inspection Lights (Slot 6)"
+    icon: mdi:magnify
+
+# --- HARDWARE SCHEDULES ---
+input_datetime:
+  lights_on_time:
+    name: "Grow Lights ON"
+    has_date: false
+    has_time: true
+  lights_off_time:
+    name: "Grow Lights OFF"
+    has_date: false
+    has_time: true
+
+input_number:
+  exhaust_on_duration:
+    name: "Exhaust ON (Mins)"
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "min"
+    icon: mdi:fan-clock
+  exhaust_off_duration:
+    name: "Exhaust PAUSE (Mins)"
+    min: 0
+    max: 60
+    step: 1
+    unit_of_measurement: "min"
+    icon: mdi:timer-off
+  seed_weight:
+    name: "Seed Weight (g)"
+    min: 0
+    max: 1000
+    step: 1
+    unit_of_measurement: "g"
+    icon: mdi:weight-gram
+
+# --- CROP INVENTORY ---
+input_text:
+  # NOTE: 255 char limit. We store minimal JSON here.
+  crop_library_json:
+    name: "Hidden Crop Library Database"
+    max: 255
+    initial: '{"Radish": {"w": 35, "s": 4}, "Sun": {"w": 50, "s": 12}}'
+  
+  log_event_buffer:
+    name: "Universal Event Buffer"
+    max: 255
+
+input_select:
+  planting_preset:
+    name: "Crop Preset"
+    options:
+      - "Radish"
+      - "Sunflower"
+      - "Pea"
+      - "Custom"
+    icon: mdi:seed
+  container_type:
+    name: "Container Type"
+    options:
+      - "Tray"
+      - "Jar"
+    icon: mdi:beaker
+
+# --- THE SLOT MATRIX (A1-A8, B1-B8) ---
+# Each text input stores the JSON state of that slot.
+# MAX LENGTH 255: We must keep JSON keys short.
+# Example: {"b": "123", "c": "Radish", "p": "Germ", "d": "2026-01-01"}
+input_text:
+  slot_a1_data:
+    name: Slot A1 Data
+    max: 255
+  slot_a2_data:
+    name: Slot A2 Data
+    max: 255
+  slot_a3_data:
+    name: Slot A3 Data
+    max: 255
+  slot_a4_data:
+    name: Slot A4 Data
+    max: 255
+  slot_a5_data:
+    name: Slot A5 Data
+    max: 255
+  slot_a6_data:
+    name: Slot A6 Data
+    max: 255
+  slot_a7_data:
+    name: Slot A7 Data
+    max: 255
+  slot_a8_data:
+    name: Slot A8 Data
+    max: 255
+
+  slot_b1_data:
+    name: Slot B1 Data
+    max: 255
+  slot_b2_data:
+    name: Slot B2 Data
+    max: 255
+  slot_b3_data:
+    name: Slot B3 Data
+    max: 255
+  slot_b4_data:
+    name: Slot B4 Data
+    max: 255
+  slot_b5_data:
+    name: Slot B5 Data
+    max: 255
+  slot_b6_data:
+    name: Slot B6 Data
+    max: 255
+  slot_b7_data:
+    name: Slot B7 Data
+    max: 255
+  slot_b8_data:
+    name: Slot B8 Data
+    max: 255

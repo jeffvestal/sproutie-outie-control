@@ -1,0 +1,8 @@
+# Sproutie Outie Control Center Package
+# This file defines the core package structure.
+# Helpers are defined in helpers.yaml (auto-loaded via !include_dir_named)
+# Other components (sensors, automations, scripts) are loaded automatically 
+# because they are in the same package directory.
+
+# Note: All helpers have been moved to helpers.yaml
+# Home Assistant will auto-merge all YAML files in this package directory

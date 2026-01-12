@@ -1,0 +1,189 @@
+# Template sensors for Sproutie Outie Control Center
+# Using legacy template format for package inclusion
+
+sensor:
+  # Anomaly Score Sensor (pulls from Elasticsearch)
+  - platform: template
+    sensors:
+      sproutie_anomaly_score:
+        friendly_name: "Sproutie Anomaly Score"
+        unit_of_measurement: "%"
+        value_template: >
+          {% if states('sensor.sproutie_es_anomaly_score') not in ['unknown', 'unavailable', 'none'] %}
+            {{ states('sensor.sproutie_es_anomaly_score') | int(0) }}
+          {% else %}
+            0
+          {% endif %}
+        icon_template: "mdi:alert-circle"
+
+  # Latest Botany Log Sensor
+  - platform: template
+    sensors:
+      sproutie_latest_botany_log:
+        friendly_name: "Latest Botany Log"
+        value_template: >
+          {% if states('sensor.sproutie_es_latest_log') not in ['unknown', 'unavailable', 'none', ''] %}
+            {{ states('sensor.sproutie_es_latest_log') }}
+          {% else %}
+            BOTANY LOG // INITIALIZING // SYSTEM STARTUP
+            
+            Sproutie Outie Control Center online. All systems nominal.
+            Awaiting first log entry...
+            
+            - FLORA
+          {% endif %}
+        icon_template: "mdi:book-open-variant"
+
+  # System Status Sensor (aggregate health check)
+  - platform: template
+    sensors:
+      sproutie_system_status:
+        friendly_name: "System Status"
+        value_template: >
+          {% set temp = states('sensor.sproutie_outie_internal_temp') | float(72) %}
+          {% set humidity = states('sensor.sproutie_outie_internal_humidity') | float(60) %}
+          {% if temp == 0 and humidity == 0 %}
+            INITIALIZING
+          {% elif temp > 80 or temp < 60 or humidity > 85 or humidity < 40 %}
+            ALERT
+          {% elif temp > 75 or temp < 65 or humidity > 70 or humidity < 50 %}
+            WARNING
+          {% else %}
+            NOMINAL
+          {% endif %}
+        icon_template: >
+          {% if is_state('sensor.sproutie_system_status', 'ALERT') %}
+            mdi:alert-circle
+          {% elif is_state('sensor.sproutie_system_status', 'WARNING') %}
+            mdi:alert
+          {% else %}
+            mdi:check-circle
+          {% endif %}
+
+  # Days to Harvest (placeholder - will be enhanced in Phase 2)
+  - platform: template
+    sensors:
+      sproutie_tray_1_days_to_harvest:
+        friendly_name: "Tray 1 Days to Harvest"
+        unit_of_measurement: "days"
+        value_template: "7"
+        icon_template: "mdi:calendar-clock"
+  
+      sproutie_tray_2_days_to_harvest:
+        friendly_name: "Tray 2 Days to Harvest"
+        unit_of_measurement: "days"
+        value_template: "7"
+        icon_template: "mdi:calendar-clock"
+  
+      sproutie_days_to_harvest:
+        friendly_name: "Days to Harvest"
+        value_template: >
+          {% set tray1_crop = states('input_select.tray_1_crop') %}
+          {% set tray2_crop = states('input_select.tray_2_crop') %}
+          {% set crop_days = {
+            'Radish': 6,
+            'Sunflower': 10,
+            'Pea Shoots': 8,
+            'Broccoli': 10,
+            'Mustard': 7,
+            'Kale': 10,
+            'Arugula': 7
+          } %}
+          {% set tray1_days = crop_days.get(tray1_crop, 7) %}
+          {% set tray2_days = crop_days.get(tray2_crop, 7) %}
+          {% if tray1_days <= tray2_days %}
+            {{ tray1_days }}
+          {% else %}
+            {{ tray2_days }}
+          {% endif %}
+        icon_template: "mdi:calendar-clock"
+  
+      sproutie_es_anomaly_score_val:
+        friendly_name: "Anomaly Score"
+        value_template: >
+          {% if states('sensor.sproutie_es_connection_status') == 'CONNECTED' %}
+            {% if states('sensor.sproutie_es_latest_anomaly') not in ['unknown', 'unavailable', 'none', ''] %}
+              {{ states('sensor.sproutie_es_latest_anomaly') | int(0) }}
+            {% else %}
+              0
+            {% endif %}
+          {% else %}
+            0
+          {% endif %}
+        icon_template: "mdi:chart-bell-curve"
+
+  # VPD (Vapor Pressure Deficit) Sensor
+  # Formula: SVP = 0.61078 * e^((17.269 * T) / (T + 237.3)) where T is in Celsius
+  # VPD = SVP * (1 - RH/100)
+  - platform: template
+    sensors:
+      sproutie_vpd:
+        friendly_name: "Sproutie VPD"
+        unit_of_measurement: "kPa"
+        value_template: >
+          {% set T = states('sensor.sproutie_outie_internal_temp') | float(0) %}
+          {% set RH = states('sensor.sproutie_outie_internal_humidity') | float(0) %}
+          {% set T_degC = (T - 32) * 5/9 %}
+          {% set SVP = 0.61078 * (2.71828 ** ((17.269 * T_degC) / (T_degC + 237.3))) %}
+          {% set VPD = SVP * (1 - (RH / 100)) %}
+          {{ VPD | round(2) }}
+        icon_template: "mdi:water-percent"
+
+  # Sproutie Outie (TENT) - Wrapped Hardware Sensors
+  - platform: template
+    sensors:
+      sproutie_outie_internal_temp:
+        friendly_name: "Sproutie Outie Internal Temp"
+        unit_of_measurement: "°F"
+        device_class: temperature
+        value_template: "{{ states('sensor.monitor2_temperature') | float(0) }}"
+        icon_template: "mdi:thermometer"
+      
+      sproutie_outie_internal_humidity:
+        friendly_name: "Sproutie Outie Internal Humidity"
+        unit_of_measurement: "%"
+        device_class: humidity
+        value_template: "{{ states('sensor.monitor2_humidity') | float(0) }}"
+        icon_template: "mdi:water-percent"
+
+  # Caffrey Taffy Co (ROOM) - Wrapped Hardware Sensors
+  - platform: template
+    sensors:
+      caffrey_taffy_co_internal_temp:
+        friendly_name: "Caffrey Taffy Co Internal Temp"
+        unit_of_measurement: "°F"
+        device_class: temperature
+        value_template: "{{ states('sensor.govee_humidity_temp_monitor_temperature') | float(0) }}"
+        icon_template: "mdi:thermometer"
+      
+      caffrey_taffy_co_internal_humidity:
+        friendly_name: "Caffrey Taffy Co Internal Humidity"
+        unit_of_measurement: "%"
+        device_class: humidity
+        value_template: "{{ states('sensor.govee_humidity_temp_monitor_humidity') | float(0) }}"
+        icon_template: "mdi:water-percent"
+
+  # Elasticsearch connection status
+  - platform: template
+    sensors:
+      sproutie_es_connection_status:
+        friendly_name: "Elasticsearch Connection"
+        value_template: >
+          {% if states('sensor.sproutie_es_last_success') not in ['unknown', 'unavailable', 'none'] %}
+            {% set last_success = as_timestamp(states('sensor.sproutie_es_last_success')) | int(0) %}
+            {% set now = as_timestamp(now()) | int(0) %}
+            {% set diff = (now - last_success) | int %}
+            {% if diff < 600 %}
+              CONNECTED
+            {% else %}
+              DEGRADED
+            {% endif %}
+          {% else %}
+            DISCONNECTED
+          {% endif %}
+        icon_template: >
+          {% if is_state('sensor.sproutie_es_connection_status', 'CONNECTED') %}
+            mdi:check-circle
+          {% else %}
+            mdi:alert-circle
+          {% endif %}

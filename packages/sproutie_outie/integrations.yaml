@@ -1,0 +1,26 @@
+# Sproutie Outie REST Commands
+# Long-Term Memory - Elasticsearch integration for logging events
+
+rest_command:
+  sproutie_log_batch:
+    url: !secret elastic_url_doc
+    method: POST
+    headers:
+      Authorization: !secret elastic_api_key_header
+      Content-Type: "application/json"
+    payload: >
+      {
+        "timestamp": "{{ now().isoformat() }}",
+        "event_type": "{{ event_type | default('UNKNOWN_EVENT') }}",
+        "slot_id": "{{ slot_id }}",
+        "zone": "{{ slot_id[0] if slot_id else 'UNKNOWN' }}",
+        "detail": "{{ detail | default('') }}",
+        "value": {{ value | default(0) | float }},
+        "crop": "{{ crop | default('') }}",
+        "note": "{{ note | default('') }}",
+        "env_snapshot": {
+          "temp": {{ states('sensor.sproutie_outie_internal_temp') | float(0) }},
+          "humidity": {{ states('sensor.sproutie_outie_internal_humidity') | float(0) }},
+          "vpd": {{ states('sensor.sproutie_vpd') | default(0) | float(0) }}
+        }
+      }

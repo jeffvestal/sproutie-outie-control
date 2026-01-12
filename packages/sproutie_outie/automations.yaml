@@ -1,0 +1,94 @@
+# Sproutie OS v2.1 - Automations
+# Schedules and Duty Cycles
+
+automation:
+  # Duty Cycle: Exhaust Fan Control
+  # Runs every minute, checks production_mode, toggles exhaust fan based on on/off durations
+  - id: sproutie_exhaust_fan_duty_cycle
+    alias: "Exhaust Fan Duty Cycle"
+    description: "Controls exhaust fan based on on/off duration settings when production mode is enabled"
+    trigger:
+      - platform: time_pattern
+        minutes: "/1"
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+    action:
+      - variables:
+          fan_state: "{{ states('switch.exhaust_fan') }}"
+          last_changed: "{{ states.switch.exhaust_fan.last_changed }}"
+          on_duration: "{{ states('input_number.exhaust_on_duration') | int(15) }}"
+          off_duration: "{{ states('input_number.exhaust_off_duration') | int(45) }}"
+          elapsed_minutes: >
+            {% set last_ts = as_timestamp(last_changed) | int(0) %}
+            {% set now_ts = as_timestamp(now()) | int(0) %}
+            {{ ((now_ts - last_ts) / 60) | int }}
+      - choose:
+          # Fan is ON - check if we've exceeded on_duration
+          - conditions:
+              - condition: state
+                entity_id: switch.exhaust_fan
+                state: "on"
+            sequence:
+              - if:
+                  - condition: template
+                    value_template: "{{ elapsed_minutes >= on_duration }}"
+                then:
+                  - service: switch.turn_off
+                    target:
+                      entity_id: switch.exhaust_fan
+          # Fan is OFF - check if we've exceeded off_duration
+          - conditions:
+              - condition: state
+                entity_id: switch.exhaust_fan
+                state: "off"
+            sequence:
+              - if:
+                  - condition: template
+                    value_template: "{{ elapsed_minutes >= off_duration }}"
+                then:
+                  - service: switch.turn_on
+                    target:
+                      entity_id: switch.exhaust_fan
+    mode: single
+
+  # Light Schedule: Turn ON Grow Lights
+  - id: sproutie_lights_on
+    alias: "Grow Lights ON"
+    description: "Turns on grow lights at scheduled time when production mode is enabled"
+    trigger:
+      - platform: template
+        value_template: >
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_on')[:5] }}
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+    mode: single
+
+  # Light Schedule: Turn OFF Grow Lights
+  - id: sproutie_lights_off
+    alias: "Grow Lights OFF"
+    description: "Turns off grow lights at scheduled time when production mode is enabled"
+    trigger:
+      - platform: template
+        value_template: >
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_off')[:5] }}
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+    action:
+      - service: switch.turn_off
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+    mode: single

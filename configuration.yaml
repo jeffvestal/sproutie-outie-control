@@ -1,0 +1,44 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+browser_mod:
+
+# Enable stream for camera support
+stream:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+eufy:
+  username: kegsofduff@gmail.com
+  password: bailout_kind_Anal8
+
+homeassistant:
+  packages: !include_dir_named packages
+
+# Load Lovelace in YAML mode
+lovelace:
+  mode: yaml
+  resources:
+    - url: /hacsfiles/button-card/button-card.js
+      type: module
+    - url: /hacsfiles/lovelace-card-mod/card-mod.js
+      type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
+    - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+      type: module
+    - url: /hacsfiles/lovelace-mushroom/mushroom.js
+      type: module
+    - url: /hacsfiles/stack-in-card/stack-in-card.js
+      type: module
+    - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+      type: module
+    # browser_mod.js is auto-registered by the integration - no manual resource needed
+    - url: /hacsfiles/apexcharts-card/apexcharts-card.js
+      type: module

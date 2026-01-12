@@ -1,0 +1,49 @@
+{
+  "index_patterns": ["sproutie-sensors-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "index.lifecycle.name": "sproutie-sensors-policy",
+      "index.lifecycle.rollover_alias": "sproutie-sensors"
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "tent_temp": {
+          "type": "float"
+        },
+        "tent_humidity": {
+          "type": "float"
+        },
+        "room_temp": {
+          "type": "float"
+        },
+        "room_humidity": {
+          "type": "float"
+        },
+        "fan_exhaust": {
+          "type": "boolean"
+        },
+        "fan_top": {
+          "type": "boolean"
+        },
+        "fan_bottom": {
+          "type": "boolean"
+        },
+        "lights_top": {
+          "type": "boolean"
+        },
+        "lights_bottom": {
+          "type": "boolean"
+        },
+        "anomaly_score": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}
+

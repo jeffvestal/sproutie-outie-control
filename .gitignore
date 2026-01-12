@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Home Assistant
+*.db
+*.db-shm
+*.db-wal
+.secrets.yaml
+secrets.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Elasticsearch
+*.log
+
+# Environment variables
+.env
+.env.local
+

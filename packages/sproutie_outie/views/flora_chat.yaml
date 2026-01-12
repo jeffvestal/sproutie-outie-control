@@ -1,0 +1,86 @@
+# FLORA Chat View - Separate view for agent interaction
+title: FLORA Chat
+path: flora-chat
+type: custom:grid-layout
+layout_type: grid
+layout:
+  grid-template-columns: 1fr
+  grid-gap: 16px
+cards:
+  # Header
+  - type: custom:button-card
+    entity: sensor.time
+    name: "FLORA // AI ASSISTANT"
+    card_mod:
+      style: |
+        .card {
+          background: rgba(8, 8, 8, 0.9);
+          border: 2px solid #00f3ff;
+          box-shadow: 0 0 30px #00f3ff40;
+          padding: 20px;
+          text-align: center;
+        }
+        .name {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 3px;
+          color: #00f3ff;
+          text-shadow: 0 0 15px #00f3ff;
+        }
+    tap_action:
+      action: none
+
+  # Chat Interface
+  # Note: This is a placeholder. Actual implementation depends on how you embed
+  # the Elastic Agent Builder chat interface. Options:
+  # 1. Use iframe to embed Kibana chat UI
+  # 2. Use custom card that calls Agent Builder API
+  # 3. Use markdown card with instructions
+  
+  - type: markdown
+    content: |
+      ## Chat with FLORA
+      
+      FLORA (Friendly Lifecycle Optimization and Resource Assistant) is your AI caretaker for the Sproutie Outie tent.
+      
+      **Available via:**
+      - Elastic Agent Builder Chat Interface
+      - Direct API calls
+      - Voice commands (Phase 2)
+      
+      **FLORA can:**
+      - Monitor tent conditions
+      - Answer questions about your crops
+      - Generate botany log summaries
+      - Control fans and lights (with permission)
+      - Provide growing advice from Open Plantbook
+      
+      **Example questions:**
+      - "How are the greens doing?"
+      - "What happened yesterday?"
+      - "What's the optimal temperature for pea shoots?"
+      - "Turn on the exhaust fan"
+    card_mod:
+      style: |
+        .card {
+          background: rgba(8, 8, 8, 0.7);
+          backdrop-filter: blur(10px);
+          border: 1px solid #00f3ff;
+          border-radius: 4px;
+          padding: 20px;
+          font-family: "Courier New", "Roboto Mono", monospace;
+          color: #00f3ff;
+        }
+
+  # Iframe option for Agent Builder chat (if available)
+  - type: iframe
+    url: "{{ kibana_url }}/app/ml/ai_assistant/chat"
+    aspect_ratio: 16:9
+    card_mod:
+      style: |
+        .card {
+          background: rgba(8, 8, 8, 0.7);
+          border: 1px solid #00f3ff;
+          border-radius: 4px;
+        }
+

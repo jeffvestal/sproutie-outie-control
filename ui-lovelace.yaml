@@ -1,0 +1,8 @@
+title: Sproutie Outie
+
+# Load button-card templates (separate from HA packages to avoid loading errors)
+button_card_templates: !include lovelace/templates.yaml
+
+# Load dashboard views
+views: !include_dir_list lovelace/views/
+

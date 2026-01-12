@@ -1,0 +1,32 @@
+{
+  "job_id": "sproutie-anomaly-detection",
+  "description": "Anomaly detection for Sproutie Outie sensor data",
+  "analysis_config": {
+    "bucket_span": "5m",
+    "detectors": [
+      {
+        "detector_description": "Temperature anomaly",
+        "function": "mean",
+        "field_name": "tent_temp"
+      },
+      {
+        "detector_description": "Humidity anomaly",
+        "function": "mean",
+        "field_name": "tent_humidity"
+      },
+      {
+        "detector_description": "Temperature-Humidity correlation",
+        "function": "mean",
+        "field_name": "tent_temp",
+        "by_field_name": "tent_humidity"
+      }
+    ],
+    "influencers": ["tent_temp", "tent_humidity"]
+  },
+  "data_description": {
+    "time_field": "@timestamp",
+    "time_format": "epoch_ms"
+  },
+  "results_index_name": "sproutie-anomaly-results"
+}
+

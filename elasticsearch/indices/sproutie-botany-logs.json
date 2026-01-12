@@ -1,0 +1,53 @@
+{
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "log_type": {
+        "type": "keyword"
+      },
+      "content": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "content_vector": {
+        "type": "dense_vector",
+        "dims": 384
+      },
+      "conditions_summary": {
+        "type": "object",
+        "properties": {
+          "temp": {
+            "type": "float"
+          },
+          "humidity": {
+            "type": "float"
+          },
+          "tray_1_crop": {
+            "type": "keyword"
+          },
+          "tray_2_crop": {
+            "type": "keyword"
+          }
+        }
+      },
+      "alerts": {
+        "type": "keyword"
+      },
+      "anomaly_score": {
+        "type": "float"
+      }
+    }
+  },
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  }
+}
+

@@ -1,0 +1,38 @@
+# Elastic Workflow: Control Fan via MCP
+# This workflow calls the MCP server to control fans
+
+id: workflow-control-fan
+name: Control Sproutie Outie Fan
+description: Controls a fan in the Sproutie Outie tent via MCP server
+
+inputs:
+  fan_name:
+    type: string
+    required: true
+    description: "Name of the fan: 'exhaust', 'top', or 'bottom'"
+  state:
+    type: boolean
+    required: true
+    description: "True to turn on, False to turn off"
+
+steps:
+  - name: call_mcp_set_fan
+    type: http
+    with:
+      url: "http://mcp-server:8001/mcp/tools/set_fan_state"
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        fan_name: "{{ inputs.fan_name }}"
+        state: "{{ inputs.state }}"
+    on_failure:
+      - type: respond
+        with:
+          error: "Failed to control fan. Check MCP server connection."
+
+  - name: respond
+    type: respond
+    with:
+      result: "{{ steps.call_mcp_set_fan.body }}"
+
