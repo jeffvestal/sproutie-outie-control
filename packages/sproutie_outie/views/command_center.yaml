@@ -123,6 +123,105 @@ cards:
                       font-weight: 700 !important;
                       color: #00bcd4 !important;
                     }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # CROP SUMMARY (Grouped by Crop Type - Stable Layout)
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              border: none !important;
+              overflow: hidden !important;
+              padding: 16px !important;
+            }
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Crop Summary
+            secondary: "Active batches by type"
+            icon: mdi:sprout-outline
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card {
+                  background: transparent !important;
+                  border: none !important;
+                  box-shadow: none !important;
+                  padding: 0 0 8px 0 !important;
+                }
+                .primary {
+                  font-size: 16px !important;
+                  font-weight: 600 !important;
+                  text-transform: uppercase !important;
+                  letter-spacing: 1px !important;
+                }
+          - type: custom:mushroom-chips-card
+            alignment: center
+            chips:
+              # Sunflower Count
+              - type: template
+                icon: mdi:white-balance-sunny
+                icon_color: amber
+                content: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set ns = namespace(count=0) %}
+                  {% for s in slots %}
+                    {% set data_raw = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set d = data_raw | from_json(default={}) %}
+                      {% if d.crop == 'Sunflower' %}{% set ns.count = ns.count + 1 %}{% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  Sun: {{ ns.count }}
+              # Radish Count
+              - type: template
+                icon: mdi:food-variant
+                icon_color: pink
+                content: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set ns = namespace(count=0) %}
+                  {% for s in slots %}
+                    {% set data_raw = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set d = data_raw | from_json(default={}) %}
+                      {% if d.crop == 'Radish' %}{% set ns.count = ns.count + 1 %}{% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  Radish: {{ ns.count }}
+              # Pea Count
+              - type: template
+                icon: mdi:peanut
+                icon_color: green
+                content: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set ns = namespace(count=0) %}
+                  {% for s in slots %}
+                    {% set data_raw = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set d = data_raw | from_json(default={}) %}
+                      {% if d.crop == 'Pea' %}{% set ns.count = ns.count + 1 %}{% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  Pea: {{ ns.count }}
+              # Other/Custom Count
+              - type: template
+                icon: mdi:leaf
+                icon_color: cyan
+                content: >
+                  {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+                  {% set known_crops = ['Sunflower', 'Radish', 'Pea'] %}
+                  {% set ns = namespace(count=0) %}
+                  {% for s in slots %}
+                    {% set data_raw = states('input_text.slot_' ~ s ~ '_data') %}
+                    {% if data_raw not in ['unknown', 'unavailable', 'Empty', ''] %}
+                      {% set d = data_raw | from_json(default={}) %}
+                      {% if d.crop and d.crop not in known_crops %}{% set ns.count = ns.count + 1 %}{% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  Other: {{ ns.count }}
+
       # ═══════════════════════════════════════════════════════════════════════
       # SECTION 1: VITALS ROW (Top) - Temperature, Humidity, VPD
       # ═══════════════════════════════════════════════════════════════════════

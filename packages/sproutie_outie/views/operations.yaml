@@ -1,6 +1,4 @@
 # Sproutie OS v2.1 - Workbench (Operations)
-# Material Design 3 | Stack-in-card containers | 24px border-radius
-
 title: Workbench
 path: workbench
 type: panel
@@ -8,7 +6,7 @@ cards:
   - type: vertical-stack
     cards:
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 1: HEADER - Navigation/Mode Selection
+      # SECTION 1: HEADER
       # ═══════════════════════════════════════════════════════════════════════
       - type: custom:stack-in-card
         card_mod:
@@ -20,67 +18,22 @@ cards:
               padding: 16px !important;
             }
         cards:
-          - type: horizontal-stack
-            cards:
-              - type: custom:mushroom-template-card
-                primary: Workbench
-                secondary: "{{ states('input_select.op_mode') }} Mode"
-                icon: mdi:sprout
-                icon_color: green
-                card_mod:
-                  style: |
-                    ha-card {
-                      background: transparent !important;
-                      border: none !important;
-                      box-shadow: none !important;
-                    }
-                    .primary {
-                      font-size: 24px !important;
-                      font-weight: 700 !important;
-                    }
-              - type: custom:mushroom-chips-card
-                alignment: end
-                chips:
-                  - type: template
-                    icon: mdi:seed
-                    icon_color: "{% if is_state('input_select.op_mode', 'Seeding') %}green{% else %}grey{% endif %}"
-                    content: Seeding
-                    tap_action:
-                      action: call-service
-                      service: input_select.select_option
-                      service_data:
-                        entity_id: input_select.op_mode
-                        option: Seeding
-                  - type: template
-                    icon: mdi:watering-can
-                    icon_color: "{% if is_state('input_select.op_mode', 'Care') %}blue{% else %}grey{% endif %}"
-                    content: Care
-                    tap_action:
-                      action: call-service
-                      service: input_select.select_option
-                      service_data:
-                        entity_id: input_select.op_mode
-                        option: Care
-                  - type: template
-                    icon: mdi:basket
-                    icon_color: "{% if is_state('input_select.op_mode', 'Harvest') %}orange{% else %}grey{% endif %}"
-                    content: Harvest
-                    tap_action:
-                      action: call-service
-                      service: input_select.select_option
-                      service_data:
-                        entity_id: input_select.op_mode
-                        option: Harvest
-                card_mod:
-                  style: |
-                    ha-card {
-                      background: transparent !important;
-                      border: none !important;
-                      box-shadow: none !important;
-                    }
+          - type: custom:mushroom-template-card
+            primary: Workbench
+            secondary: "Crop Operations & Management"
+            icon: mdi:sprout
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card {
+                  background: transparent !important;
+                  border: none !important;
+                  box-shadow: none !important;
+                }
+                .primary { font-size: 24px !important; font-weight: 700 !important; }
 
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 2: ACTIVE BATCHES (Static list - shows planted slots)
+      # SECTION 2: ACTIVE BATCHES (16-Slot Grid)
       # ═══════════════════════════════════════════════════════════════════════
       - type: custom:stack-in-card
         card_mod:
@@ -94,333 +47,2073 @@ cards:
         cards:
           - type: custom:mushroom-template-card
             primary: Active Batches
+            secondary: "Tap a slot to view details"
             icon: mdi:tray-full
             icon_color: cyan
             card_mod:
               style: |
-                ha-card {
-                  background: transparent !important;
-                  border: none !important;
-                  box-shadow: none !important;
-                  padding: 0 0 8px 0 !important;
-                }
-                .primary {
-                  font-size: 16px !important;
-                  font-weight: 600 !important;
-                  text-transform: uppercase !important;
-                  letter-spacing: 1px !important;
-                }
-          - type: custom:auto-entities
-            show_empty: false
-            card:
-              type: grid
-              columns: 2
-              square: false
-            card_param: cards
-            filter:
-              include:
-                - entity_id: input_text.slot_*_data
-                  state: "!= Empty"
-                  not:
-                    state: ""
-                  not:
-                    state: "unknown"
-                  not:
-                    state: "unavailable"
-                  options:
-                    type: custom:mushroom-entity-card
-                    icon: mdi:sprout
-                    icon_color: green
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: rgba(46, 204, 113, 0.2) !important;
-                          border-radius: 12px !important;
-                        }
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 8px 0 !important; }
+                .primary { font-size: 16px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 1px !important; }
+          
+          - type: grid
+            columns: 4
+            square: false
+            cards:
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A1
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a1_data
+                    state_not: ""
+                  - entity: input_text.slot_a1_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a1_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a1_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a1_data') | from_json(default={}) %}
+                    A1 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A1"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a1_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a1_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A1
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A1
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A1
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A1
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A2
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a2_data
+                    state_not: ""
+                  - entity: input_text.slot_a2_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a2_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a2_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a2_data') | from_json(default={}) %}
+                    A2 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A2"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a2_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a2_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A2
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A2
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A2
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A2
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A3
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a3_data
+                    state_not: ""
+                  - entity: input_text.slot_a3_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a3_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a3_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a3_data') | from_json(default={}) %}
+                    A3 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A3"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a3_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a3_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A3
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A3
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A3
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A3
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A4
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a4_data
+                    state_not: ""
+                  - entity: input_text.slot_a4_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a4_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a4_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a4_data') | from_json(default={}) %}
+                    A4 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A4"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a4_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a4_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A4
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A4
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A4
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A4
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A5
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a5_data
+                    state_not: ""
+                  - entity: input_text.slot_a5_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a5_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a5_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a5_data') | from_json(default={}) %}
+                    A5 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A5"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a5_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a5_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A5
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A5
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A5
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A5
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A6
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a6_data
+                    state_not: ""
+                  - entity: input_text.slot_a6_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a6_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a6_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a6_data') | from_json(default={}) %}
+                    A6 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A6"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a6_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a6_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A6
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A6
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A6
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A6
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A7
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a7_data
+                    state_not: ""
+                  - entity: input_text.slot_a7_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a7_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a7_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a7_data') | from_json(default={}) %}
+                    A7 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A7"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a7_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a7_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A7
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A7
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A7
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A7
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT A8
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_a8_data
+                    state_not: ""
+                  - entity: input_text.slot_a8_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_a8_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_a8_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_a8_data') | from_json(default={}) %}
+                    A8 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: green
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(46, 204, 113, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - A8"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_a8_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_a8_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: green
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_top_eyes
+                              name: "Zone A Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A8
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: A8
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: A8
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: A8
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B1 (Bottom Shelf - Uses Bottom Camera)
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b1_data
+                    state_not: ""
+                  - entity: input_text.slot_b1_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b1_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b1_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b1_data') | from_json(default={}) %}
+                    B1 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B1"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b1_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b1_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B1
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B1
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B1
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B1
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B2
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b2_data
+                    state_not: ""
+                  - entity: input_text.slot_b2_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b2_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b2_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b2_data') | from_json(default={}) %}
+                    B2 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B2"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b2_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b2_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B2
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B2
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B2
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B2
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B3
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b3_data
+                    state_not: ""
+                  - entity: input_text.slot_b3_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b3_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b3_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b3_data') | from_json(default={}) %}
+                    B3 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B3"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b3_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b3_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B3
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B3
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B3
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B3
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B4
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b4_data
+                    state_not: ""
+                  - entity: input_text.slot_b4_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b4_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b4_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b4_data') | from_json(default={}) %}
+                    B4 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B4"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b4_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b4_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B4
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B4
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B4
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B4
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B5
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b5_data
+                    state_not: ""
+                  - entity: input_text.slot_b5_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b5_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b5_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b5_data') | from_json(default={}) %}
+                    B5 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B5"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b5_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b5_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B5
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B5
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B5
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B5
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B6
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b6_data
+                    state_not: ""
+                  - entity: input_text.slot_b6_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b6_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b6_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b6_data') | from_json(default={}) %}
+                    B6 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B6"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b6_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b6_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B6
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B6
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B6
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B6
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B7
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b7_data
+                    state_not: ""
+                  - entity: input_text.slot_b7_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b7_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b7_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b7_data') | from_json(default={}) %}
+                    B7 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B7"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b7_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b7_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B7
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B7
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B7
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B7
+
+              # ─────────────────────────────────────────────────────────────────
+              # SLOT B8
+              # ─────────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: input_text.slot_b8_data
+                    state_not: ""
+                  - entity: input_text.slot_b8_data
+                    state_not: "Empty"
+                  - entity: input_text.slot_b8_data
+                    state_not: "unknown"
+                card:
+                  type: custom:mushroom-template-card
+                  primary: >
+                    {% set d = states('input_text.slot_b8_data') | from_json(default={}) %}
+                    {{ d.crop | default('Unknown') }}
+                  secondary: >
+                    {% set d = states('input_text.slot_b8_data') | from_json(default={}) %}
+                    B8 | {{ d.phase | default('Growing') }}
+                  icon: mdi:sprout
+                  icon_color: teal
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: rgba(0, 150, 136, 0.2) !important;
+                        border-radius: 12px !important;
+                        border: none !important;
+                      }
+                  tap_action:
+                    action: fire-dom-event
+                    browser_mod:
+                      service: browser_mod.popup
+                      data:
+                        title: "Crop Details - B8"
+                        content:
+                          type: vertical-stack
+                          cards:
+                            - type: custom:mushroom-template-card
+                              primary: >
+                                {% set d = states('input_text.slot_b8_data') | from_json(default={}) %}
+                                {{ d.crop | default('Unknown Crop') }}
+                              secondary: >
+                                {% set d = states('input_text.slot_b8_data') | from_json(default={}) %}
+                                Batch: {{ d.id | default('N/A') }} | Phase: {{ d.phase | default('Growing') }}
+                              icon: mdi:sprout
+                              icon_color: teal
+                              card_mod:
+                                style: |
+                                  ha-card { background: transparent !important; box-shadow: none !important; }
+                            - type: picture-entity
+                              entity: camera.sproutie_outie_bottom_eyes
+                              name: "Zone B Camera"
+                              show_state: false
+                              aspect_ratio: 16:9
+                            - type: custom:mushroom-chips-card
+                              alignment: center
+                              chips:
+                                - type: template
+                                  icon: mdi:water
+                                  content: Water
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B8
+                                      event_type: Water
+                                      detail: "Watered"
+                                - type: template
+                                  icon: mdi:arrow-right-circle
+                                  content: Next Phase
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_advance_phase
+                                    service_data:
+                                      slot_id: B8
+                                - type: template
+                                  icon: mdi:note-text
+                                  content: Log Note
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_log_event
+                                    service_data:
+                                      slot_id: B8
+                                      event_type: Note
+                                      detail: "Manual note"
+                                - type: template
+                                  icon: mdi:basket
+                                  content: Harvest
+                                  icon_color: orange
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_harvest_batch
+                                    service_data:
+                                      slot_id: B8
 
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 3: PLANTING GRIDS (Zone A / Zone B)
+      # SECTION 3: AVAILABLE SPACE (Empty Slots for Planting)
       # ═══════════════════════════════════════════════════════════════════════
-      - type: horizontal-stack
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              border: none !important;
+              padding: 16px !important;
+            }
         cards:
-          # Zone A (Top Shelf)
+          - type: custom:mushroom-template-card
+            primary: Available Space
+            secondary: "Tap to plant a new batch"
+            icon: mdi:plus-circle-outline
+            icon_color: amber
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 8px 0 !important; }
+                .primary { font-size: 16px !important; font-weight: 600 !important; }
+          
+          # Zone A (Top) Empty Slots
           - type: custom:stack-in-card
             card_mod:
               style: |
-                ha-card {
-                  background: rgba(30, 30, 30, 0.6) !important;
-                  border-radius: 24px !important;
-                  border: none !important;
-                  padding: 16px !important;
-                }
+                ha-card { background: rgba(50, 50, 50, 0.4) !important; border-radius: 16px !important; border: none !important; padding: 8px !important; }
             cards:
               - type: custom:mushroom-template-card
-                primary: Zone A
-                secondary: Top Shelf
+                primary: "Zone A (Top)"
                 icon: mdi:arrow-up-box
-                icon_color: cyan
+                icon_color: green
                 card_mod:
                   style: |
-                    ha-card {
-                      background: transparent !important;
-                      border: none !important;
-                      box-shadow: none !important;
-                      padding: 0 0 8px 0 !important;
-                    }
-                    .primary {
-                      font-size: 14px !important;
-                      font-weight: 600 !important;
-                      text-transform: uppercase !important;
-                    }
-              - type: custom:layout-card
-                layout_type: grid
-                layout:
-                  grid-template-columns: repeat(4, 1fr)
-                  gap: 8px
-                cards:
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a1_data
-                    primary: A1
-                    icon: "{% if states('input_text.slot_a1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a2_data
-                    primary: A2
-                    icon: "{% if states('input_text.slot_a2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a3_data
-                    primary: A3
-                    icon: "{% if states('input_text.slot_a3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a4_data
-                    primary: A4
-                    icon: "{% if states('input_text.slot_a4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a5_data
-                    primary: A5
-                    icon: "{% if states('input_text.slot_a5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a6_data
-                    primary: A6
-                    icon: "{% if states('input_text.slot_a6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a7_data
-                    primary: A7
-                    icon: "{% if states('input_text.slot_a7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_a8_data
-                    primary: A8
-                    icon: "{% if states('input_text.slot_a8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_a8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_a8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
+                    ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                    .primary { font-size: 12px !important; opacity: 0.7 !important; }
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a1_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A1
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A1"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A1"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A1
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a2_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A2
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A2"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A2"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A2
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a3_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A3
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A3"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A3"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A3
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a4_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A4
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A4"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A4"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A4
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a5_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A5
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A5"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A5"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A5
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a6_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A6
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A6"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A6"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A6
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a7_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A7
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A7"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A7"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A7
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_a8_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: A8
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - A8"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in A8"
+                                  icon: mdi:seed
+                                  icon_color: green
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: A8
 
-          # Zone B (Bottom Shelf)
+          # Zone B (Bottom) Empty Slots
           - type: custom:stack-in-card
             card_mod:
               style: |
-                ha-card {
-                  background: rgba(30, 30, 30, 0.6) !important;
-                  border-radius: 24px !important;
-                  border: none !important;
-                  padding: 16px !important;
-                }
+                ha-card { background: rgba(50, 50, 50, 0.4) !important; border-radius: 16px !important; border: none !important; padding: 8px !important; margin-top: 8px !important; }
             cards:
               - type: custom:mushroom-template-card
-                primary: Zone B
-                secondary: Bottom Shelf
+                primary: "Zone B (Bottom)"
                 icon: mdi:arrow-down-box
-                icon_color: orange
+                icon_color: teal
                 card_mod:
                   style: |
-                    ha-card {
-                      background: transparent !important;
-                      border: none !important;
-                      box-shadow: none !important;
-                      padding: 0 0 8px 0 !important;
-                    }
-                    .primary {
-                      font-size: 14px !important;
-                      font-weight: 600 !important;
-                      text-transform: uppercase !important;
-                    }
-              - type: custom:layout-card
-                layout_type: grid
-                layout:
-                  grid-template-columns: repeat(4, 1fr)
-                  gap: 8px
-                cards:
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b1_data
-                    primary: B1
-                    icon: "{% if states('input_text.slot_b1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b1_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b2_data
-                    primary: B2
-                    icon: "{% if states('input_text.slot_b2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b2_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b3_data
-                    primary: B3
-                    icon: "{% if states('input_text.slot_b3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b3_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b4_data
-                    primary: B4
-                    icon: "{% if states('input_text.slot_b4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b4_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b5_data
-                    primary: B5
-                    icon: "{% if states('input_text.slot_b5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b5_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b6_data
-                    primary: B6
-                    icon: "{% if states('input_text.slot_b6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b6_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b7_data
-                    primary: B7
-                    icon: "{% if states('input_text.slot_b7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b7_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
-                  - type: custom:mushroom-template-card
-                    entity: input_text.slot_b8_data
-                    primary: B8
-                    icon: "{% if states('input_text.slot_b8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}mdi:tray{% else %}mdi:sprout{% endif %}"
-                    icon_color: "{% if states('input_text.slot_b8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}grey{% else %}green{% endif %}"
-                    tap_action:
-                      action: more-info
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if states('input_text.slot_b8_data') in ['', 'Empty', 'unknown', 'unavailable'] %}rgba(50, 50, 50, 0.4){% else %}rgba(46, 204, 113, 0.2){% endif %} !important;
-                          border-radius: 12px !important;
-                        }
+                    ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                    .primary { font-size: 12px !important; opacity: 0.7 !important; }
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b1_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B1
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B1"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B1"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B1
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b2_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B2
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B2"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B2"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B2
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b3_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B3
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B3"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B3"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B3
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b4_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B4
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B4"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B4"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B4
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b5_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B5
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B5"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B5"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B5
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b6_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B6
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B6"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B6"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B6
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b7_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B7
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B7"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B7"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B7
+                  - type: conditional
+                    conditions:
+                      - entity: input_text.slot_b8_data
+                        state: ""
+                    chip:
+                      type: template
+                      content: B8
+                      tap_action:
+                        action: fire-dom-event
+                        browser_mod:
+                          service: browser_mod.popup
+                          data:
+                            title: "Plant New Batch - B8"
+                            content:
+                              type: vertical-stack
+                              cards:
+                                - type: entities
+                                  entities:
+                                    - entity: input_select.planting_preset
+                                    - entity: input_select.container_type
+                                    - entity: input_number.seed_weight
+                                - type: custom:mushroom-template-card
+                                  primary: "Plant in B8"
+                                  icon: mdi:seed
+                                  icon_color: teal
+                                  tap_action:
+                                    action: call-service
+                                    service: script.sproutie_plant_batch
+                                    service_data:
+                                      slot_id: B8
