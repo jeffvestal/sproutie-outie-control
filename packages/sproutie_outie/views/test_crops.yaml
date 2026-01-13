@@ -1,14 +1,13 @@
-# Sproutie OS v2.5 - Command Center
-# Clean rewrite with dynamic crop cards
-
-title: Command Center
-path: command-center
-type: panel
+# Test Page: Dynamic Styled Crop Summary
+title: Test Crops
+path: test-crops
 cards:
   - type: vertical-stack
     cards:
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 0: CROP OVERVIEW (Dynamic using sensor.sproutie_crop_N)
+      # DYNAMIC STYLED CROP CARDS
+      # Each sensor.sproutie_crop_N dynamically represents the Nth active crop
+      # Cards are styled Mushroom cards with conditional visibility
       # ═══════════════════════════════════════════════════════════════════════
       - type: custom:stack-in-card
         card_mod:
@@ -291,230 +290,40 @@ cards:
                           .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
 
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 1: VITALS (Dual-Line Graphs)
+      # SENSOR DEBUG INFO
       # ═══════════════════════════════════════════════════════════════════════
-      - type: horizontal-stack
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              padding: 16px !important;
+              margin-top: 16px !important;
+            }
         cards:
-          # Temperature
-          - type: custom:mini-graph-card
-            name: Temperature
-            icon: mdi:thermometer
-            entities:
-              - entity: sensor.monitor2_temperature
-                name: Tent
-                color: "#e74c3c"
-              - entity: sensor.govee_humidity_temp_monitor_temperature
-                name: Room
-                color: "#95a5a6"
-                show_state: true
-                y_axis: secondary
-            hours_to_show: 24
-            points_per_hour: 2
-            line_width: 2
-            show:
-              graph: true
-              fill: false
-              labels: false
-              legend: true
+          - type: custom:mushroom-template-card
+            primary: "Sensor Debug"
+            secondary: "Dynamic Crop Slot Sensors"
+            icon: mdi:bug
+            icon_color: orange
             card_mod:
               style: |
-                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
-
-          # Humidity
-          - type: custom:mini-graph-card
-            name: Humidity
-            icon: mdi:water-percent
-            entities:
-              - entity: sensor.monitor2_humidity
-                name: Tent
-                color: "#3498db"
-              - entity: sensor.govee_humidity_temp_monitor_humidity
-                name: Room
-                color: "#95a5a6"
-                show_state: true
-                y_axis: secondary
-            hours_to_show: 24
-            points_per_hour: 2
-            line_width: 2
-            show:
-              graph: true
-              fill: false
-              labels: false
-              legend: true
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+          - type: entities
             card_mod:
               style: |
-                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
-
-          # VPD
-          - type: custom:mini-graph-card
-            name: VPD
-            icon: mdi:gauge
+                ha-card { background: transparent !important; border: none !important; }
             entities:
-              - entity: sensor.sproutie_vpd
-                name: Tent
-                color: "#2ecc71"
-            hours_to_show: 24
-            points_per_hour: 2
-            line_width: 2
-            show:
-              graph: true
-              fill: true
-            card_mod:
-              style: |
-                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
-
-      # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 2: CONTROL DECK
-      # ═══════════════════════════════════════════════════════════════════════
-      - type: custom:layout-card
-        layout_type: custom:grid-layout
-        layout:
-          grid-template-columns: 2fr 1fr
-          gap: 16px
-        cards:
-          # LEFT: Cameras
-          - type: vertical-stack
-            cards:
-              - type: picture-entity
-                entity: camera.sproutie_outie_top_eyes
-                name: Top Rack
-                show_state: false
-                aspect_ratio: 16:9
-                card_mod:
-                  style: |
-                    ha-card { border-radius: 20px !important; overflow: hidden !important; }
-              - type: picture-entity
-                entity: camera.sproutie_outie_bottom_eyes
-                name: Bottom Rack
-                show_state: false
-                aspect_ratio: 16:9
-                card_mod:
-                  style: |
-                    ha-card { border-radius: 20px !important; overflow: hidden !important; margin-top: 16px !important; }
-
-          # RIGHT: Hardware & Engineering
-          - type: vertical-stack
-            cards:
-              # Hardware Controls
-              - type: custom:stack-in-card
-                card_mod:
-                  style: |
-                    ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; padding: 16px !important; }
-                cards:
-                  - type: grid
-                    columns: 2
-                    square: false
-                    cards:
-                      - type: custom:mushroom-entity-card
-                        entity: switch.top_shelf_lights
-                        name: Top Lights
-                        icon: mdi:lightbulb-group
-                        icon_color: amber
-                        tap_action:
-                          action: toggle
-                        layout: vertical
-                      - type: custom:mushroom-entity-card
-                        entity: switch.bottom_shelf_lights
-                        name: Bot Lights
-                        icon: mdi:lightbulb-group
-                        icon_color: amber
-                        tap_action:
-                          action: toggle
-                        layout: vertical
-                      - type: custom:mushroom-entity-card
-                        entity: switch.top_shelf_fan
-                        name: Top Fan
-                        icon: mdi:fan
-                        icon_color: cyan
-                        tap_action:
-                          action: toggle
-                        layout: vertical
-                      - type: custom:mushroom-entity-card
-                        entity: switch.bottom_shelf_fan
-                        name: Bot Fan
-                        icon: mdi:fan
-                        icon_color: cyan
-                        tap_action:
-                          action: toggle
-                        layout: vertical
-                      - type: custom:mushroom-entity-card
-                        entity: switch.exhaust_fan
-                        name: Exhaust
-                        icon: mdi:weather-windy
-                        icon_color: teal
-                        tap_action:
-                          action: toggle
-                        layout: vertical
-                      - type: custom:mushroom-entity-card
-                        entity: input_boolean.inspection_mode
-                        name: Inspect
-                        icon: mdi:eye
-                        icon_color: purple
-                        tap_action:
-                          action: call-service
-                          service: script.toggle_inspection_mode
-                        layout: vertical
-
-              # Production & Interactive Scheduler
-              - type: custom:stack-in-card
-                card_mod:
-                  style: |
-                    ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; padding: 16px !important; margin-top: 16px !important; }
-                cards:
-                  # Production Mode
-                  - type: custom:mushroom-template-card
-                    entity: input_boolean.production_mode
-                    primary: Production Mode
-                    secondary: "{% if is_state('input_boolean.production_mode', 'on') %}ACTIVE{% else %}STANDBY{% endif %}"
-                    icon: mdi:power
-                    icon_color: "{% if is_state('input_boolean.production_mode', 'on') %}green{% else %}red{% endif %}"
-                    tap_action:
-                      action: toggle
-                    card_mod:
-                      style: |
-                        ha-card {
-                          background: {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.15){% else %}rgba(231, 76, 60, 0.15){% endif %} !important;
-                          border: 1px solid {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.5){% else %}rgba(231, 76, 60, 0.5){% endif %} !important;
-                          border-radius: 12px !important;
-                          margin-bottom: 12px !important;
-                        }
-
-                  # Light Schedule Row
-                  - type: custom:mushroom-template-card
-                    primary: "Lights Schedule"
-                    secondary: "{{ states('input_datetime.lights_on_time')[:5] }} - {{ states('input_datetime.lights_off_time')[:5] }}"
-                    icon: mdi:clock-time-four-outline
-                    icon_color: orange
-                    tap_action:
-                      action: fire-dom-event
-                      browser_mod:
-                        service: browser_mod.popup
-                        data:
-                          title: "Light Schedule"
-                          content:
-                            type: entities
-                            entities:
-                              - entity: input_datetime.lights_on_time
-                                name: "Turn ON at"
-                              - entity: input_datetime.lights_off_time
-                                name: "Turn OFF at"
-
-                  # Exhaust Cycle Row
-                  - type: custom:mushroom-template-card
-                    primary: "Exhaust Cycle"
-                    secondary: "{{ states('input_number.exhaust_on_duration')|int }}m ON / {{ states('input_number.exhaust_off_duration')|int }}m OFF"
-                    icon: mdi:fan-clock
-                    icon_color: teal
-                    tap_action:
-                      action: fire-dom-event
-                      browser_mod:
-                        service: browser_mod.popup
-                        data:
-                          title: "Exhaust Cycle Settings"
-                          content:
-                            type: entities
-                            entities:
-                              - entity: input_number.exhaust_on_duration
-                                name: "Run for (minutes)"
-                              - entity: input_number.exhaust_off_duration
-                                name: "Pause for (minutes)"
+              - entity: sensor.sproutie_crop_1
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_2
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_3
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_4
+                secondary_info: attribute
+                attribute: count

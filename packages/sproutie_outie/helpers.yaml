@@ -55,27 +55,10 @@ input_text:
     name: "Universal Event Buffer"
     max: 255
 
-input_select:
-  planting_preset:
-    name: "Crop Preset"
-    options:
-      - "Radish"
-      - "Sunflower"
-      - "Pea"
-      - "Custom"
-    icon: mdi:seed
-  container_type:
-    name: "Container Type"
-    options:
-      - "Tray"
-      - "Jar"
-    icon: mdi:beaker
-
-# --- THE SLOT MATRIX (A1-A8, B1-B8) ---
-# Each text input stores the JSON state of that slot.
-# MAX LENGTH 255: We must keep JSON keys short.
-# Example: {"b": "123", "c": "Radish", "p": "Germ", "d": "2026-01-01"}
-input_text:
+  # --- THE SLOT MATRIX (A1-A8, B1-B8) ---
+  # Each text input stores the JSON state of that slot.
+  # MAX LENGTH 255: We must keep JSON keys short.
+  # Example: {"b": "123", "c": "Radish", "p": "Germ", "d": "2026-01-01"}
   slot_a1_data:
     name: Slot A1 Data
     max: 255
@@ -125,3 +108,19 @@ input_text:
   slot_b8_data:
     name: Slot B8 Data
     max: 255
+
+input_select:
+  planting_preset:
+    name: "Crop Preset"
+    options:
+      - "Radish"
+      - "Sunflower"
+      - "Pea"
+      - "Custom"
+    icon: mdi:seed
+  container_type:
+    name: "Container Type"
+    options:
+      - "Tray"
+      - "Jar"
+    icon: mdi:beaker

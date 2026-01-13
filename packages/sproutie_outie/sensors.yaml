@@ -187,3 +187,1000 @@ sensor:
           {% else %}
             mdi:alert-circle
           {% endif %}
+
+  # Crop presence sensors for Command Center conditional cards
+  - platform: template
+    sensors:
+      sproutie_has_radish:
+        friendly_name: "Has Radish Active"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set found = false -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop == 'Radish' -%}
+                {%- set found = true -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if found -%}on{%- else -%}off{%- endif -%}
+        icon_template: mdi:food-variant
+      
+      sproutie_has_sunflower:
+        friendly_name: "Has Sunflower Active"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set found = false -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop == 'Sunflower' -%}
+                {%- set found = true -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if found -%}on{%- else -%}off{%- endif -%}
+        icon_template: mdi:white-balance-sunny
+      
+      sproutie_has_pea:
+        friendly_name: "Has Pea Active"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set found = false -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop == 'Pea' -%}
+                {%- set found = true -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if found -%}on{%- else -%}off{%- endif -%}
+        icon_template: mdi:sprout
+      
+      sproutie_has_other:
+        friendly_name: "Has Other Crops Active"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set known_crops = ['Sunflower', 'Radish', 'Pea'] -%}
+          {%- set found = false -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop and d.crop not in known_crops -%}
+                {%- set found = true -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- if found -%}on{%- else -%}off{%- endif -%}
+        icon_template: mdi:leaf
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # DYNAMIC CROP SUMMARY SENSOR
+  # Aggregates ALL crops dynamically - no hardcoding!
+  # State = number of unique crop types
+  # Attribute 'crops' = JSON with full details per crop
+  # ═══════════════════════════════════════════════════════════════════════
+  - platform: template
+    sensors:
+      sproutie_crop_summary:
+        friendly_name: "Sproutie Crop Summary"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set ns = namespace(crops=[]) -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop is defined and d.crop not in ns.crops -%}
+                {%- set ns.crops = ns.crops + [d.crop] -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {{ ns.crops | length }}
+        icon_template: mdi:sprout
+        attribute_templates:
+          crop_names: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops=[]) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined and d.crop not in ns.crops -%}
+                  {%- set ns.crops = ns.crops + [d.crop] -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {{ ns.crops | join(',') }}
+          total_trays: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(count=0) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set ns.count = ns.count + 1 -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {{ ns.count }}
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # DYNAMIC CROP SLOT SENSORS (1-4)
+  # Each sensor represents a "slot" for one unique crop type
+  # State = crop name (or "none" if slot is empty)
+  # Attributes = count, max_age, phase, days_to_harvest, bg_color, icon
+  # FIXED: Uses simple count dict for sorting, then computes details
+  # ═══════════════════════════════════════════════════════════════════════
+  - platform: template
+    sensors:
+      sproutie_crop_1:
+        friendly_name: "Active Crop 1"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set ns = namespace(crops={}) -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop is defined -%}
+                {%- set crop_name = d.crop -%}
+                {%- if crop_name in ns.crops -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                {%- else -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+          {%- if sorted_crops | length >= 1 -%}
+            {{ sorted_crops[0][0] }}
+          {%- else -%}
+            none
+          {%- endif -%}
+        icon_template: mdi:sprout
+        attribute_templates:
+          count: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 1 -%}
+              {{ sorted_crops[0][1] }}
+            {%- else -%}
+              0
+            {%- endif -%}
+          max_age: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 1 -%}
+              {%- set ns.target_crop = sorted_crops[0][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.max_age }}
+          phase: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 1 -%}
+              {%- set ns.target_crop = sorted_crops[0][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0, phase='Growing') -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop -%}
+                    {%- set planted = d.planted | as_datetime if d.planted else none -%}
+                    {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int if planted else 0 -%}
+                    {%- if age >= ns2.max_age -%}
+                      {%- set ns2.max_age = age -%}
+                      {%- set ns2.phase = d.phase | default('Growing') -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.phase }}
+          days_to_harvest: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 1 -%}
+              {%- set ns.target_crop = sorted_crops[0][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- set harvest_days = {
+              'Radish': 6,
+              'Sunflower': 10,
+              'Pea': 8,
+              'Wheatgrass': 7,
+              'Broccoli': 10,
+              'Kale': 10,
+              'Arugula': 7
+            } -%}
+            {%- set total = harvest_days.get(ns.target_crop, 7) -%}
+            {{ [0, total - ns2.max_age] | max }}
+          bg_color: >
+            {%- set crop = states('sensor.sproutie_crop_1') -%}
+            {%- set colors = {
+              'Radish': 'rgba(233,30,99,0.35)',
+              'Sunflower': 'rgba(255,193,7,0.35)',
+              'Pea': 'rgba(76,175,80,0.35)',
+              'Wheatgrass': 'rgba(139,195,74,0.35)',
+              'Broccoli': 'rgba(0,150,136,0.35)',
+              'Kale': 'rgba(63,81,181,0.35)',
+              'Arugula': 'rgba(156,39,176,0.35)'
+            } -%}
+            {{ colors.get(crop, 'rgba(96,125,139,0.35)') }}
+          accent_color: >
+            {%- set crop = states('sensor.sproutie_crop_1') -%}
+            {%- set colors = {
+              'Radish': '#e91e63',
+              'Sunflower': '#ffc107',
+              'Pea': '#4caf50',
+              'Wheatgrass': '#8bc34a',
+              'Broccoli': '#009688',
+              'Kale': '#3f51b5',
+              'Arugula': '#9c27b0'
+            } -%}
+            {{ colors.get(crop, '#607d8b') }}
+          icon: >
+            {%- set crop = states('sensor.sproutie_crop_1') -%}
+            {%- set icons = {
+              'Radish': 'mdi:food-variant',
+              'Sunflower': 'mdi:white-balance-sunny',
+              'Pea': 'mdi:seed',
+              'Wheatgrass': 'mdi:grass',
+              'Broccoli': 'mdi:food-broccoli',
+              'Kale': 'mdi:leaf',
+              'Arugula': 'mdi:spa'
+            } -%}
+            {{ icons.get(crop, 'mdi:sprout') }}
+
+      sproutie_crop_2:
+        friendly_name: "Active Crop 2"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set ns = namespace(crops={}) -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop is defined -%}
+                {%- set crop_name = d.crop -%}
+                {%- if crop_name in ns.crops -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                {%- else -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+          {%- if sorted_crops | length >= 2 -%}
+            {{ sorted_crops[1][0] }}
+          {%- else -%}
+            none
+          {%- endif -%}
+        icon_template: mdi:sprout
+        attribute_templates:
+          count: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 2 -%}
+              {{ sorted_crops[1][1] }}
+            {%- else -%}
+              0
+            {%- endif -%}
+          max_age: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 2 -%}
+              {%- set ns.target_crop = sorted_crops[1][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.max_age }}
+          phase: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 2 -%}
+              {%- set ns.target_crop = sorted_crops[1][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0, phase='Growing') -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop -%}
+                    {%- set planted = d.planted | as_datetime if d.planted else none -%}
+                    {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int if planted else 0 -%}
+                    {%- if age >= ns2.max_age -%}
+                      {%- set ns2.max_age = age -%}
+                      {%- set ns2.phase = d.phase | default('Growing') -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.phase }}
+          days_to_harvest: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 2 -%}
+              {%- set ns.target_crop = sorted_crops[1][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- set harvest_days = {
+              'Radish': 6,
+              'Sunflower': 10,
+              'Pea': 8,
+              'Wheatgrass': 7,
+              'Broccoli': 10,
+              'Kale': 10,
+              'Arugula': 7
+            } -%}
+            {%- set total = harvest_days.get(ns.target_crop, 7) -%}
+            {{ [0, total - ns2.max_age] | max }}
+          bg_color: >
+            {%- set crop = states('sensor.sproutie_crop_2') -%}
+            {%- set colors = {
+              'Radish': 'rgba(233,30,99,0.35)',
+              'Sunflower': 'rgba(255,193,7,0.35)',
+              'Pea': 'rgba(76,175,80,0.35)',
+              'Wheatgrass': 'rgba(139,195,74,0.35)',
+              'Broccoli': 'rgba(0,150,136,0.35)',
+              'Kale': 'rgba(63,81,181,0.35)',
+              'Arugula': 'rgba(156,39,176,0.35)'
+            } -%}
+            {{ colors.get(crop, 'rgba(96,125,139,0.35)') }}
+          accent_color: >
+            {%- set crop = states('sensor.sproutie_crop_2') -%}
+            {%- set colors = {
+              'Radish': '#e91e63',
+              'Sunflower': '#ffc107',
+              'Pea': '#4caf50',
+              'Wheatgrass': '#8bc34a',
+              'Broccoli': '#009688',
+              'Kale': '#3f51b5',
+              'Arugula': '#9c27b0'
+            } -%}
+            {{ colors.get(crop, '#607d8b') }}
+          icon: >
+            {%- set crop = states('sensor.sproutie_crop_2') -%}
+            {%- set icons = {
+              'Radish': 'mdi:food-variant',
+              'Sunflower': 'mdi:white-balance-sunny',
+              'Pea': 'mdi:seed',
+              'Wheatgrass': 'mdi:grass',
+              'Broccoli': 'mdi:food-broccoli',
+              'Kale': 'mdi:leaf',
+              'Arugula': 'mdi:spa'
+            } -%}
+            {{ icons.get(crop, 'mdi:sprout') }}
+
+      sproutie_crop_3:
+        friendly_name: "Active Crop 3"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set ns = namespace(crops={}) -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop is defined -%}
+                {%- set crop_name = d.crop -%}
+                {%- if crop_name in ns.crops -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                {%- else -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+          {%- if sorted_crops | length >= 3 -%}
+            {{ sorted_crops[2][0] }}
+          {%- else -%}
+            none
+          {%- endif -%}
+        icon_template: mdi:sprout
+        attribute_templates:
+          count: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 3 -%}
+              {{ sorted_crops[2][1] }}
+            {%- else -%}
+              0
+            {%- endif -%}
+          max_age: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 3 -%}
+              {%- set ns.target_crop = sorted_crops[2][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.max_age }}
+          phase: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 3 -%}
+              {%- set ns.target_crop = sorted_crops[2][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0, phase='Growing') -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop -%}
+                    {%- set planted = d.planted | as_datetime if d.planted else none -%}
+                    {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int if planted else 0 -%}
+                    {%- if age >= ns2.max_age -%}
+                      {%- set ns2.max_age = age -%}
+                      {%- set ns2.phase = d.phase | default('Growing') -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.phase }}
+          days_to_harvest: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 3 -%}
+              {%- set ns.target_crop = sorted_crops[2][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- set harvest_days = {
+              'Radish': 6,
+              'Sunflower': 10,
+              'Pea': 8,
+              'Wheatgrass': 7,
+              'Broccoli': 10,
+              'Kale': 10,
+              'Arugula': 7
+            } -%}
+            {%- set total = harvest_days.get(ns.target_crop, 7) -%}
+            {{ [0, total - ns2.max_age] | max }}
+          bg_color: >
+            {%- set crop = states('sensor.sproutie_crop_3') -%}
+            {%- set colors = {
+              'Radish': 'rgba(233,30,99,0.35)',
+              'Sunflower': 'rgba(255,193,7,0.35)',
+              'Pea': 'rgba(76,175,80,0.35)',
+              'Wheatgrass': 'rgba(139,195,74,0.35)',
+              'Broccoli': 'rgba(0,150,136,0.35)',
+              'Kale': 'rgba(63,81,181,0.35)',
+              'Arugula': 'rgba(156,39,176,0.35)'
+            } -%}
+            {{ colors.get(crop, 'rgba(96,125,139,0.35)') }}
+          accent_color: >
+            {%- set crop = states('sensor.sproutie_crop_3') -%}
+            {%- set colors = {
+              'Radish': '#e91e63',
+              'Sunflower': '#ffc107',
+              'Pea': '#4caf50',
+              'Wheatgrass': '#8bc34a',
+              'Broccoli': '#009688',
+              'Kale': '#3f51b5',
+              'Arugula': '#9c27b0'
+            } -%}
+            {{ colors.get(crop, '#607d8b') }}
+          icon: >
+            {%- set crop = states('sensor.sproutie_crop_3') -%}
+            {%- set icons = {
+              'Radish': 'mdi:food-variant',
+              'Sunflower': 'mdi:white-balance-sunny',
+              'Pea': 'mdi:seed',
+              'Wheatgrass': 'mdi:grass',
+              'Broccoli': 'mdi:food-broccoli',
+              'Kale': 'mdi:leaf',
+              'Arugula': 'mdi:spa'
+            } -%}
+            {{ icons.get(crop, 'mdi:sprout') }}
+
+      sproutie_crop_4:
+        friendly_name: "Active Crop 4"
+        value_template: >
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set ns = namespace(crops={}) -%}
+          {%- for s in slots -%}
+            {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+            {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+              {%- set d = raw | from_json(default={}) -%}
+              {%- if d.crop is defined -%}
+                {%- set crop_name = d.crop -%}
+                {%- if crop_name in ns.crops -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                {%- else -%}
+                  {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+          {%- if sorted_crops | length >= 4 -%}
+            {{ sorted_crops[3][0] }}
+          {%- else -%}
+            none
+          {%- endif -%}
+        icon_template: mdi:sprout
+        attribute_templates:
+          count: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}) -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 4 -%}
+              {{ sorted_crops[3][1] }}
+            {%- else -%}
+              0
+            {%- endif -%}
+          max_age: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 4 -%}
+              {%- set ns.target_crop = sorted_crops[3][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.max_age }}
+          phase: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 4 -%}
+              {%- set ns.target_crop = sorted_crops[3][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0, phase='Growing') -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop -%}
+                    {%- set planted = d.planted | as_datetime if d.planted else none -%}
+                    {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int if planted else 0 -%}
+                    {%- if age >= ns2.max_age -%}
+                      {%- set ns2.max_age = age -%}
+                      {%- set ns2.phase = d.phase | default('Growing') -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {{ ns2.phase }}
+          days_to_harvest: >
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set ns = namespace(crops={}, target_crop='') -%}
+            {%- for s in slots -%}
+              {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+              {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                {%- set d = raw | from_json(default={}) -%}
+                {%- if d.crop is defined -%}
+                  {%- set crop_name = d.crop -%}
+                  {%- if crop_name in ns.crops -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: ns.crops[crop_name] + 1}) -%}
+                  {%- else -%}
+                    {%- set ns.crops = dict(ns.crops, **{crop_name: 1}) -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- set sorted_crops = ns.crops | dictsort(by='value', reverse=true) -%}
+            {%- if sorted_crops | length >= 4 -%}
+              {%- set ns.target_crop = sorted_crops[3][0] -%}
+            {%- endif -%}
+            {%- set ns2 = namespace(max_age=0) -%}
+            {%- if ns.target_crop -%}
+              {%- for s in slots -%}
+                {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {%- if d.crop == ns.target_crop and d.planted -%}
+                    {%- set planted = d.planted | as_datetime -%}
+                    {%- if planted -%}
+                      {%- set age = ((as_timestamp(now()) - as_timestamp(planted)) / 86400) | int -%}
+                      {%- if age > ns2.max_age -%}
+                        {%- set ns2.max_age = age -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+            {%- set harvest_days = {
+              'Radish': 6,
+              'Sunflower': 10,
+              'Pea': 8,
+              'Wheatgrass': 7,
+              'Broccoli': 10,
+              'Kale': 10,
+              'Arugula': 7
+            } -%}
+            {%- set total = harvest_days.get(ns.target_crop, 7) -%}
+            {{ [0, total - ns2.max_age] | max }}
+          bg_color: >
+            {%- set crop = states('sensor.sproutie_crop_4') -%}
+            {%- set colors = {
+              'Radish': 'rgba(233,30,99,0.35)',
+              'Sunflower': 'rgba(255,193,7,0.35)',
+              'Pea': 'rgba(76,175,80,0.35)',
+              'Wheatgrass': 'rgba(139,195,74,0.35)',
+              'Broccoli': 'rgba(0,150,136,0.35)',
+              'Kale': 'rgba(63,81,181,0.35)',
+              'Arugula': 'rgba(156,39,176,0.35)'
+            } -%}
+            {{ colors.get(crop, 'rgba(96,125,139,0.35)') }}
+          accent_color: >
+            {%- set crop = states('sensor.sproutie_crop_4') -%}
+            {%- set colors = {
+              'Radish': '#e91e63',
+              'Sunflower': '#ffc107',
+              'Pea': '#4caf50',
+              'Wheatgrass': '#8bc34a',
+              'Broccoli': '#009688',
+              'Kale': '#3f51b5',
+              'Arugula': '#9c27b0'
+            } -%}
+            {{ colors.get(crop, '#607d8b') }}
+          icon: >
+            {%- set crop = states('sensor.sproutie_crop_4') -%}
+            {%- set icons = {
+              'Radish': 'mdi:food-variant',
+              'Sunflower': 'mdi:white-balance-sunny',
+              'Pea': 'mdi:seed',
+              'Wheatgrass': 'mdi:grass',
+              'Broccoli': 'mdi:food-broccoli',
+              'Kale': 'mdi:leaf',
+              'Arugula': 'mdi:spa'
+            } -%}
+            {{ icons.get(crop, 'mdi:sprout') }}
