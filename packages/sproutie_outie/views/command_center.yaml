@@ -1,6 +1,4 @@
-# Sproutie OS v2.5 - Command Center
-# Clean rewrite with dynamic crop cards
-
+# Sproutie OS v2.6 - Command Center
 title: Command Center
 path: command-center
 type: panel
@@ -8,7 +6,7 @@ cards:
   - type: vertical-stack
     cards:
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 0: CROP OVERVIEW (Dynamic using sensor.sproutie_crop_N)
+      # SECTION 0: CROP OVERVIEW
       # ═══════════════════════════════════════════════════════════════════════
       - type: custom:stack-in-card
         card_mod:
@@ -31,12 +29,10 @@ cards:
                 .primary { font-size: 20px !important; font-weight: 700 !important; }
 
           - type: grid
-            columns: 2
+            columns: 4
             square: false
             cards:
-              # ─────────────────────────────────────────────────────────────
               # CROP SLOT 1
-              # ─────────────────────────────────────────────────────────────
               - type: conditional
                 conditions:
                   - entity: sensor.sproutie_crop_1
@@ -52,13 +48,9 @@ cards:
                         border-radius: 20px !important;
                         border: none !important;
                         box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
-                        padding: 16px !important;
+                        padding: 12px !important;
                         cursor: pointer !important;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-                      }
-                      ha-card:hover {
-                        transform: translateY(-2px) !important;
-                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                        max-width: 280px !important;
                       }
                   cards:
                     - type: custom:mushroom-template-card
@@ -75,8 +67,7 @@ cards:
                       card_mod:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
-                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
-                          mushroom-shape-icon { --icon-size: 32px !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_1
                       primary: "{{ state_attr('sensor.sproutie_crop_1', 'phase') }}"
@@ -87,7 +78,7 @@ cards:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
                           .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
-                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_1
                       primary: "~{{ state_attr('sensor.sproutie_crop_1', 'days_to_harvest') }} days to harvest"
@@ -98,9 +89,7 @@ cards:
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
                           .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
 
-              # ─────────────────────────────────────────────────────────────
               # CROP SLOT 2
-              # ─────────────────────────────────────────────────────────────
               - type: conditional
                 conditions:
                   - entity: sensor.sproutie_crop_2
@@ -116,13 +105,9 @@ cards:
                         border-radius: 20px !important;
                         border: none !important;
                         box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
-                        padding: 16px !important;
+                        padding: 12px !important;
                         cursor: pointer !important;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-                      }
-                      ha-card:hover {
-                        transform: translateY(-2px) !important;
-                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                        max-width: 280px !important;
                       }
                   cards:
                     - type: custom:mushroom-template-card
@@ -139,8 +124,7 @@ cards:
                       card_mod:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
-                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
-                          mushroom-shape-icon { --icon-size: 32px !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_2
                       primary: "{{ state_attr('sensor.sproutie_crop_2', 'phase') }}"
@@ -151,7 +135,7 @@ cards:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
                           .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
-                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_2
                       primary: "~{{ state_attr('sensor.sproutie_crop_2', 'days_to_harvest') }} days to harvest"
@@ -162,9 +146,7 @@ cards:
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
                           .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
 
-              # ─────────────────────────────────────────────────────────────
               # CROP SLOT 3
-              # ─────────────────────────────────────────────────────────────
               - type: conditional
                 conditions:
                   - entity: sensor.sproutie_crop_3
@@ -180,13 +162,9 @@ cards:
                         border-radius: 20px !important;
                         border: none !important;
                         box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
-                        padding: 16px !important;
+                        padding: 12px !important;
                         cursor: pointer !important;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-                      }
-                      ha-card:hover {
-                        transform: translateY(-2px) !important;
-                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                        max-width: 280px !important;
                       }
                   cards:
                     - type: custom:mushroom-template-card
@@ -203,8 +181,7 @@ cards:
                       card_mod:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
-                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
-                          mushroom-shape-icon { --icon-size: 32px !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_3
                       primary: "{{ state_attr('sensor.sproutie_crop_3', 'phase') }}"
@@ -215,7 +192,7 @@ cards:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
                           .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
-                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_3
                       primary: "~{{ state_attr('sensor.sproutie_crop_3', 'days_to_harvest') }} days to harvest"
@@ -226,9 +203,7 @@ cards:
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
                           .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
 
-              # ─────────────────────────────────────────────────────────────
               # CROP SLOT 4
-              # ─────────────────────────────────────────────────────────────
               - type: conditional
                 conditions:
                   - entity: sensor.sproutie_crop_4
@@ -244,13 +219,9 @@ cards:
                         border-radius: 20px !important;
                         border: none !important;
                         box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
-                        padding: 16px !important;
+                        padding: 12px !important;
                         cursor: pointer !important;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-                      }
-                      ha-card:hover {
-                        transform: translateY(-2px) !important;
-                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                        max-width: 280px !important;
                       }
                   cards:
                     - type: custom:mushroom-template-card
@@ -267,8 +238,7 @@ cards:
                       card_mod:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
-                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
-                          mushroom-shape-icon { --icon-size: 32px !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_4
                       primary: "{{ state_attr('sensor.sproutie_crop_4', 'phase') }}"
@@ -279,7 +249,7 @@ cards:
                         style: |
                           ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
                           .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
-                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
                     - type: custom:mushroom-template-card
                       entity: sensor.sproutie_crop_4
                       primary: "~{{ state_attr('sensor.sproutie_crop_4', 'days_to_harvest') }} days to harvest"
@@ -291,11 +261,10 @@ cards:
                           .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
 
       # ═══════════════════════════════════════════════════════════════════════
-      # SECTION 1: VITALS (Dual-Line Graphs)
+      # SECTION 1: VITALS
       # ═══════════════════════════════════════════════════════════════════════
       - type: horizontal-stack
         cards:
-          # Temperature
           - type: custom:mini-graph-card
             name: Temperature
             icon: mdi:thermometer
@@ -320,7 +289,6 @@ cards:
               style: |
                 ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
 
-          # Humidity
           - type: custom:mini-graph-card
             name: Humidity
             icon: mdi:water-percent
@@ -345,7 +313,6 @@ cards:
               style: |
                 ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
 
-          # VPD
           - type: custom:mini-graph-card
             name: VPD
             icon: mdi:gauge
@@ -369,7 +336,7 @@ cards:
       - type: custom:layout-card
         layout_type: custom:grid-layout
         layout:
-          grid-template-columns: 2fr 1fr
+          grid-template-columns: 1fr 1fr
           gap: 16px
         cards:
           # LEFT: Cameras
@@ -379,23 +346,22 @@ cards:
                 entity: camera.sproutie_outie_top_eyes
                 name: Top Rack
                 show_state: false
-                aspect_ratio: 16:9
+                aspect_ratio: 16:7
                 card_mod:
                   style: |
-                    ha-card { border-radius: 20px !important; overflow: hidden !important; }
+                    ha-card { border-radius: 16px !important; overflow: hidden !important; }
               - type: picture-entity
                 entity: camera.sproutie_outie_bottom_eyes
                 name: Bottom Rack
                 show_state: false
-                aspect_ratio: 16:9
+                aspect_ratio: 16:7
                 card_mod:
                   style: |
-                    ha-card { border-radius: 20px !important; overflow: hidden !important; margin-top: 16px !important; }
+                    ha-card { border-radius: 16px !important; overflow: hidden !important; margin-top: 12px !important; }
 
-          # RIGHT: Hardware & Engineering
+          # RIGHT: Hardware & Controls
           - type: vertical-stack
             cards:
-              # Hardware Controls
               - type: custom:stack-in-card
                 card_mod:
                   style: |
@@ -455,13 +421,11 @@ cards:
                           service: script.toggle_inspection_mode
                         layout: vertical
 
-              # Production & Interactive Scheduler
               - type: custom:stack-in-card
                 card_mod:
                   style: |
                     ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; padding: 16px !important; margin-top: 16px !important; }
                 cards:
-                  # Production Mode
                   - type: custom:mushroom-template-card
                     entity: input_boolean.production_mode
                     primary: Production Mode
@@ -479,7 +443,6 @@ cards:
                           margin-bottom: 12px !important;
                         }
 
-                  # Light Schedule Row
                   - type: custom:mushroom-template-card
                     primary: "Lights Schedule"
                     secondary: "{{ states('input_datetime.lights_on_time')[:5] }} - {{ states('input_datetime.lights_off_time')[:5] }}"
@@ -499,7 +462,6 @@ cards:
                               - entity: input_datetime.lights_off_time
                                 name: "Turn OFF at"
 
-                  # Exhaust Cycle Row
                   - type: custom:mushroom-template-card
                     primary: "Exhaust Cycle"
                     secondary: "{{ states('input_number.exhaust_on_duration')|int }}m ON / {{ states('input_number.exhaust_off_duration')|int }}m OFF"
