@@ -1,3 +1,9 @@
-cd /homeassistant/packages
+# Try to navigate to the config directory
+cd /config
+# If /config doesn't work, the user might already be in the right place
+put configuration.yaml
+put ui-lovelace-v3.yaml
+put rest_commands.yaml
+cd packages
 put -r packages/sproutie_outie
 bye
