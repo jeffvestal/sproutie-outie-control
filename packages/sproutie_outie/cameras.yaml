@@ -1,2 +1,12 @@
-# Camera configuration removed - Generic camera platform does not support YAML setup.
-# Please configure cameras via Home Assistant UI: Settings -> Devices & Services -> Add Integration -> Generic Camera
+# Snapshot Cameras for Dashboard Display
+# These local_file cameras display the most recent flash photography snapshots
+# reducing bandwidth usage while keeping live streams available via tap action
+
+camera:
+  - platform: local_file
+    name: Top Eyes Snapshot
+    file_path: /config/www/snapshots/top_eyes_latest.jpg
+  
+  - platform: local_file
+    name: Bottom Eyes Snapshot
+    file_path: /config/www/snapshots/bottom_eyes_latest.jpg

@@ -1,0 +1,941 @@
+title: Sproutie OS
+button_card_templates: !include lovelace/templates.yaml
+
+views:
+  - title: Command Center
+    path: v3
+    icon: mdi:view-dashboard-outline
+    type: custom:grid-layout
+    layout:
+      grid-template-columns: 30% 40% 30%
+      grid-template-rows: auto
+      grid-template-areas: |
+        "vitals crops ops"
+      mediaquery:
+        "(max-width: 1024px)":
+          grid-template-columns: 100%
+          grid-template-areas: |
+            "vitals"
+            "crops"
+            "ops"
+    cards:
+      # --- COLUMN 1: VITALS ---
+      - type: vertical-stack
+        view_layout:
+          grid-area: vitals
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Environment Vitals
+            icon: mdi:pulse
+            icon_color: blue
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: custom:apexcharts-card
+            graph_span: 24h
+            header:
+              show: true
+              title: Temperature
+              show_states: true
+              colorize_states: true
+            now:
+              show: true
+              label: Now
+            apex_config:
+              chart:
+                height: 230
+              xaxis:
+                labels:
+                  format: HH:mm
+                  show: true
+                  rotate: -45
+              grid:
+                show: true
+                borderColor: "rgba(255,255,255,0.05)"
+            series:
+              - entity: sensor.monitor2_temperature
+                name: Tent
+                color: '#ff5252'
+                stroke_width: 2
+                curve: straight
+              - entity: sensor.govee_humidity_temp_monitor_temperature
+                name: Room
+                color: '#9e9e9e'
+                stroke_width: 2
+                curve: straight
+            yaxis:
+              - show: true
+                opposite: true
+                decimals: 1
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-bottom: 16px !important; }
+
+          - type: custom:apexcharts-card
+            graph_span: 24h
+            header:
+              show: true
+              title: Humidity
+              show_states: true
+              colorize_states: true
+            now:
+              show: true
+              label: Now
+            apex_config:
+              chart:
+                height: 230
+              xaxis:
+                labels:
+                  format: HH:mm
+                  show: true
+                  rotate: -45
+              grid:
+                show: true
+                borderColor: "rgba(255,255,255,0.05)"
+            series:
+              - entity: sensor.monitor2_humidity
+                name: Tent
+                color: '#3498db'
+                stroke_width: 2
+                curve: straight
+              - entity: sensor.govee_humidity_temp_monitor_humidity
+                name: Room
+                color: '#9e9e9e'
+                stroke_width: 2
+                curve: straight
+            yaxis:
+              - show: true
+                opposite: true
+                decimals: 0
+                min: 0
+                max: 100
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-bottom: 16px !important; }
+
+          - type: custom:apexcharts-card
+            graph_span: 24h
+            header:
+              show: true
+              title: VPD
+              show_states: true
+              colorize_states: true
+            now:
+              show: true
+              label: Now
+            apex_config:
+              chart:
+                height: 230
+              xaxis:
+                labels:
+                  format: HH:mm
+                  show: true
+                  rotate: -45
+              grid:
+                show: true
+                borderColor: "rgba(255,255,255,0.05)"
+              annotations:
+                yaxis:
+                  - y: 0.8
+                    y2: 1.2
+                    fillColor: "#2ecc71"
+                    opacity: 0.15
+                    label:
+                      text: Safe Zone
+                      style:
+                        color: "#2ecc71"
+                        background: "transparent"
+                  - y: 0
+                    y2: 0.8
+                    fillColor: "#e74c3c"
+                    opacity: 0.1
+                  - y: 1.2
+                    y2: 5
+                    fillColor: "#e74c3c"
+                    opacity: 0.1
+            series:
+              - entity: sensor.sproutie_vpd
+                name: VPD
+                color: '#2ecc71'
+                stroke_width: 2
+                curve: straight
+            yaxis:
+              - show: true
+                opposite: true
+                decimals: 2
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-bottom: 16px !important; }
+
+      # --- COLUMN 2: ACTIVE CROP ENGINE ---
+      - type: vertical-stack
+        view_layout:
+          grid-area: crops
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Active Manifest
+            secondary: "Production Summary"
+            icon: mdi:sprout
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-bottom: 0px !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: custom:auto-entities
+            card:
+              type: vertical-stack
+            card_param: cards
+            filter:
+              template: |
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set crop_lib = states('input_text.crop_library_json') | from_json(default={}) -%}
+                {%- set active_crops = namespace(names=[]) -%}
+                
+                {%- for s in slots -%}
+                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                  {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                    {%- set d = raw | from_json(default={}) -%}
+                    {%- if d.crop is defined and d.crop not in active_crops.names -%}
+                      {%- set active_crops.names = active_crops.names + [d.crop] -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                
+                {%- for target_crop in active_crops.names -%}
+                  {%- set ns_stats = namespace(count=0, max_age=0, stage='Unknown', first_id='') -%}
+                  {%- for s in slots -%}
+                    {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                    {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                      {%- set d = raw | from_json(default={}) -%}
+                      {%- if d.crop == target_crop -%}
+                        {%- set ns_stats.count = ns_stats.count + 1 -%}
+                        {%- if ns_stats.count == 1 -%}{%- set ns_stats.first_id = d.id -%}{%- endif -%}
+                        {%- set planted = d.planted | as_datetime -%}
+                        {%- set age = ((as_timestamp(now()) - as_timestamp(planted | default(now()))) / 86400) | int -%}
+                        {%- if age >= ns_stats.max_age -%}
+                          {%- set ns_stats.max_age = age -%}
+                          {%- set ns_stats.stage = d.phase | default('Growing') -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  
+                  {%- set grow_days = crop_lib.get(target_crop, {}).get('grow_days', 10) | int -%}
+                  {%- set days_left = grow_days - ns_stats.max_age -%}
+                  
+                  {%- set icon = 'mdi:leaf' -%}
+                  {%- set color = 'teal' -%}
+                  {%- if target_crop == 'Radish' -%}{%- set icon = 'mdi:food-variant' -%}{%- set color = 'pink' -%}
+                  {%- elif target_crop == 'Sunflower' -%}{%- set icon = 'mdi:white-balance-sunny' -%}{%- set color = 'amber' -%}{%- endif -%}
+                  
+                  {{ {
+                    "type": "custom:mushroom-template-card",
+                    "primary": target_crop,
+                    "secondary": "Harvest in " ~ (days_left if days_left > 0 else "DUE") ~ "d | " ~ ns_stats.stage ~ " (Day " ~ ns_stats.max_age ~ ") | " ~ ns_stats.count ~ " Trays",
+                    "icon": icon,
+                    "icon_color": color,
+                    "tap_action": {
+                      "action": "call-service",
+                      "service": "script.sproutie_ui_select_crop",
+                      "data": {
+                        "crop": target_crop,
+                        "batch_id": ns_stats.first_id | string
+                      }
+                    },
+                    "card_mod": {
+                      "style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; padding: 12px !important; margin-bottom: 8px !important; border: 1px solid rgba(255,255,255,0.05) !important; } .primary { font-size: 20px !important; font-weight: 700 !important; }"
+                    }
+                  } }},
+                {%- endfor -%}
+
+        # --- DYNAMIC ACTIVITY LOG ---
+          - type: custom:mushroom-template-card
+            primary: "Station Log"
+            secondary: "Live Events"
+            icon: mdi:console-line
+            icon_color: blue-grey
+            tap_action:
+              action: fire-dom-event
+              browser_mod:
+                service: browser_mod.popup
+                data:
+                  title: "System History"
+                  size: wide
+                  content:
+                    type: logbook
+                    hours_to_show: 24
+                    entities:
+                      - camera.top_eyes
+                      - switch.camera_flash
+                      - script.sequence_crop_photography
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 12px !important; margin-bottom: 0px !important; }
+
+          - type: custom:auto-entities
+            card:
+              type: vertical-stack
+            card_param: cards
+            filter:
+              template: |
+                {%- set logs = state_attr('sensor.sproutie_activity_log', 'entries') | default([]) -%}
+                {%- for log in logs[:4] -%}
+                  {{ {
+                    "type": "custom:mushroom-template-card",
+                    "primary": log.message,
+                    "secondary": log.type ~ " • " ~ log.time,
+                    "icon": log.icon,
+                    "icon_color": log.color,
+                    "card_mod": {
+                      "style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; border: none !important; margin-bottom: 8px !important; } .primary { font-size: 14px !important; font-weight: 500 !important; color: rgba(255,255,255,0.9) !important; } .secondary { font-size: 11px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.5px !important; color: rgba(255,255,255,0.4) !important; }"
+                    }
+                  } }},
+                {%- endfor -%}
+                {%- if logs | length == 0 -%}
+                  {{ {
+                    "type": "markdown",
+                    "content": "<div style='text-align: center; opacity: 0.3; font-style: italic; padding: 20px;'>No recent activity</div>",
+                    "card_mod": {
+                      "style": "ha-card { background: transparent !important; border: none !important; }"
+                    }
+                  } }},
+                {%- endif -%}
+
+          - type: custom:mushroom-template-card
+            primary: "Manage Inventory / Plant New"
+            secondary: "Inventory & Seeding"
+            icon: mdi:seed
+            icon_color: amber
+            tap_action:
+              action: navigate
+              navigation_path: /sproutie-os/workbench
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; border: none !important; margin-top: 16px !important; }
+
+      # --- COLUMN 3: OPERATIONS ---
+      - type: vertical-stack
+        view_layout:
+          grid-area: ops
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Operations
+            icon: mdi:cog
+            icon_color: grey
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: picture-entity
+            entity: camera.top_eyes_snapshot
+            show_state: false
+            show_name: false
+            tap_action:
+              action: fire-dom-event
+              browser_mod:
+                service: browser_mod.popup
+                data:
+                  title: "Top Rack Inspector"
+                  size: wide
+                  style: |
+                    --popup-min-width: 900px;
+                    --popup-max-width: 95vw;
+                    --popup-border-radius: 16px;
+                    --popup-background-color: #1c1c1c;
+                  content:
+                    type: vertical-stack
+                    cards:
+                      - type: picture-entity
+                        entity: camera.top_eyes_snapshot
+                        show_state: false
+                        show_name: false
+                      - type: custom:mushroom-template-card
+                        primary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            Snapshot Time: Unknown
+                          {% else %}
+                            Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                          {% endif %}
+                        secondary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            {{ last }}
+                          {% endif %}
+                        icon: mdi:clock
+                        icon_color: grey
+                        card_mod:
+                          style: |
+                            ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                      - type: custom:mushroom-chips-card
+                        alignment: center
+                        card_mod:
+                          style: |
+                            ha-card { padding-bottom: 12px !important; }
+                        chips:
+                          - type: template
+                            icon: mdi:camera-flash
+                            content: Snap New
+                            icon_color: "{{ 'amber' if is_state('script.sequence_crop_photography', 'on') else 'grey' }}"
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  {% if is_state('script.sequence_crop_photography', 'on') %}
+                                    animation: pulse 2s infinite;
+                                    --chip-background: rgba(255, 193, 7, 0.2) !important;
+                                  {% endif %}
+                                }
+                                @keyframes pulse {
+                                  0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+                                  70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+                                  100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+                                }
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.sequence
+                                data:
+                                  sequence:
+                                    - service: browser_mod.toast
+                                      data:
+                                        message: "Photography sequence started..."
+                                        duration: 3000
+                                    - service: script.sequence_crop_photography
+                          - type: template
+                            icon: mdi:video
+                            content: Live Feed
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.popup
+                                data:
+                                  title: "Live Feed - Top Eyes"
+                                  size: wide
+                                  content:
+                                    type: picture-entity
+                                    entity: camera.top_eyes
+                                    camera_view: live
+                          - type: template
+                            icon: mdi:close
+                            content: Close
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.close_popup
+          
+          - type: picture-entity
+            entity: camera.bottom_eyes_snapshot
+            show_state: false
+            show_name: false
+            tap_action:
+              action: fire-dom-event
+              browser_mod:
+                service: browser_mod.popup
+                data:
+                  title: "Bottom Rack Inspector"
+                  size: wide
+                  style: |
+                    --popup-min-width: 900px;
+                    --popup-max-width: 95vw;
+                    --popup-border-radius: 16px;
+                    --popup-background-color: #1c1c1c;
+                  content:
+                    type: vertical-stack
+                    cards:
+                      - type: picture-entity
+                        entity: camera.bottom_eyes_snapshot
+                        show_state: false
+                        show_name: false
+                      - type: custom:mushroom-template-card
+                        primary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            Snapshot Time: Unknown
+                          {% else %}
+                            Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                          {% endif %}
+                        secondary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            {{ last }}
+                          {% endif %}
+                        icon: mdi:clock
+                        icon_color: grey
+                        card_mod:
+                          style: |
+                            ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                      - type: custom:mushroom-chips-card
+                        alignment: center
+                        card_mod:
+                          style: |
+                            ha-card { padding-bottom: 12px !important; }
+                        chips:
+                          - type: template
+                            icon: mdi:camera-flash
+                            content: Snap New
+                            icon_color: "{{ 'amber' if is_state('script.sequence_crop_photography', 'on') else 'grey' }}"
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  {% if is_state('script.sequence_crop_photography', 'on') %}
+                                    animation: pulse 2s infinite;
+                                    --chip-background: rgba(255, 193, 7, 0.2) !important;
+                                  {% endif %}
+                                }
+                                @keyframes pulse {
+                                  0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+                                  70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+                                  100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+                                }
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.sequence
+                                data:
+                                  sequence:
+                                    - service: browser_mod.toast
+                                      data:
+                                        message: "Photography sequence started..."
+                                        duration: 3000
+                                    - service: script.sequence_crop_photography
+                          - type: template
+                            icon: mdi:video
+                            content: Live Feed
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.popup
+                                data:
+                                  title: "Live Feed - Bottom Eyes"
+                                  size: wide
+                                  content:
+                                    type: picture-entity
+                                    entity: camera.bottom_eyes
+                                    camera_view: live
+                          - type: template
+                            icon: mdi:close
+                            content: Close
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.close_popup
+            card_mod:
+              style: |
+                ha-card { margin-top: 8px !important; }
+
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 20px !important; padding: 12px !important; margin-top: 16px !important; }
+            cards:
+              - type: vertical-stack
+                cards:
+                  # --- ROW 1: SYSTEM MODES ---
+                  - type: grid
+                    columns: 3
+                    square: false
+                    cards:
+                      - type: custom:mushroom-template-card
+                        entity: input_boolean.production_mode
+                        primary: System
+                        secondary: "{{ 'ACTIVE' if is_state(entity, 'on') else 'IDLE' }}"
+                        icon: mdi:power
+                        icon_color: "{{ 'green' if is_state(entity, 'on') else 'red' }}"
+                        tap_action:
+                          action: toggle
+                      - type: custom:mushroom-template-card
+                        entity: input_boolean.inspection_mode
+                        primary: Inspect
+                        secondary: "{{ 'ON' if is_state(entity, 'on') else 'OFF' }}"
+                        icon: mdi:eye
+                        icon_color: "{{ 'blue' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: call-service
+                          service: script.toggle_inspection_mode
+                      - type: custom:mushroom-template-card
+                        entity: switch.exhaust_fan
+                        primary: Exhaust
+                        secondary: "{{ 'ON' if is_state(entity, 'on') else 'OFF' }}"
+                        icon: mdi:fan
+                        icon_color: "{{ 'teal' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: toggle
+
+                  # --- ROW 2: MANUAL CONTROLS ---
+                  - type: grid
+                    columns: 4
+                    square: false
+                    cards:
+                      - type: custom:mushroom-template-card
+                        entity: switch.top_shelf_lights
+                        primary: Top Lgt
+                        icon: mdi:lightbulb
+                        icon_color: "{{ 'amber' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: toggle
+                        card_mod:
+                          style: |
+                            ha-card { height: 80px !important; }
+                      - type: custom:mushroom-template-card
+                        entity: switch.top_shelf_fan
+                        primary: Top Fan
+                        icon: mdi:fan
+                        icon_color: "{{ 'cyan' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: toggle
+                        card_mod:
+                          style: |
+                            ha-card { height: 80px !important; }
+                      - type: custom:mushroom-template-card
+                        entity: switch.bottom_shelf_lights
+                        primary: Btm Lgt
+                        icon: mdi:lightbulb
+                        icon_color: "{{ 'amber' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: toggle
+                        card_mod:
+                          style: |
+                            ha-card { height: 80px !important; }
+                      - type: custom:mushroom-template-card
+                        entity: switch.bottom_shelf_fan
+                        primary: Btm Fan
+                        icon: mdi:fan
+                        icon_color: "{{ 'cyan' if is_state(entity, 'on') else 'grey' }}"
+                        tap_action:
+                          action: toggle
+                        card_mod:
+                          style: |
+                            ha-card { height: 80px !important; }
+
+          - type: custom:mushroom-template-card
+            primary: Schedules & Settings
+            icon: mdi:clock-outline
+            icon_color: orange
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; }
+                .primary { font-size: 18px !important; font-weight: 700 !important; }
+
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.4) !important; border-radius: 20px !important; padding: 12px !important; }
+            cards:
+              - type: vertical-stack
+                cards:
+                  # --- LIGHTS SCHEDULE ---
+                  - type: custom:mushroom-template-card
+                    entity: input_boolean.schedule_lights_enabled
+                    primary: "Light Schedule"
+                    secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                    icon: mdi:lightbulb-auto
+                    icon_color: "{{ 'amber' if is_state(entity, 'on') else 'grey' }}"
+                    tap_action:
+                      action: toggle
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.lights_on_time
+                        name: Lights ON
+                      - entity: input_datetime.lights_off_time
+                        name: Lights OFF
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          background: transparent !important; 
+                          border: none !important; 
+                          box-shadow: none !important;
+                          opacity: {{ '1.0' if is_state('input_boolean.schedule_lights_enabled', 'on') else '0.4' }};
+                          transition: opacity 0.3s ease;
+                        }
+                        .card-content { padding: 0 0 0 16px !important; }
+
+                  # --- EXHAUST SCHEDULE ---
+                  - type: custom:mushroom-template-card
+                    entity: input_boolean.schedule_exhaust_enabled
+                    primary: "Exhaust Schedule"
+                    secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                    icon: mdi:fan-auto
+                    icon_color: "{{ 'teal' if is_state(entity, 'on') else 'grey' }}"
+                    tap_action:
+                      action: toggle
+                  - type: entities
+                    entities:
+                      - entity: input_number.exhaust_on_duration
+                        name: Run (min)
+                      - entity: input_number.exhaust_off_duration
+                        name: Pause (min)
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          background: transparent !important; 
+                          border: none !important; 
+                          box-shadow: none !important;
+                          opacity: {{ '1.0' if is_state('input_boolean.schedule_exhaust_enabled', 'on') else '0.4' }};
+                          transition: opacity 0.3s ease;
+                        }
+                        .card-content { padding: 0 0 0 16px !important; }
+
+                  # --- PHOTO SCHEDULE ---
+                  - type: custom:mushroom-template-card
+                    entity: input_boolean.schedule_photos_enabled
+                    primary: "Photo Schedule"
+                    secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                    icon: mdi:camera
+                    icon_color: "{{ 'blue' if is_state(entity, 'on') else 'grey' }}"
+                    tap_action:
+                      action: toggle
+                  - type: entities
+                    entities:
+                      - entity: input_number.photo_interval
+                        name: Interval (min)
+                    card_mod:
+                      style: |
+                        ha-card { 
+                          background: transparent !important; 
+                          border: none !important; 
+                          box-shadow: none !important;
+                          opacity: {{ '1.0' if is_state('input_boolean.schedule_photos_enabled', 'on') else '0.4' }};
+                          transition: opacity 0.3s ease;
+                        }
+                        .card-content { padding: 0 0 0 16px !important; }
+
+  - !include packages/sproutie_outie/views/operations.yaml.disabled
+
+  - title: Crop Details
+    path: crop-details
+    icon: mdi:leaf
+    cards:
+      - type: custom:mushroom-template-card
+        primary: "{{ states('input_text.selected_crop') }} Cockpit"
+        secondary: "Detailed analysis and control"
+        icon: mdi:sprout
+        icon_color: green
+      
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: |
+              {%- set crop = states('input_text.selected_crop') -%}
+              {%- set batch_id = states('input_text.selected_batch') -%}
+              {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+              {%- set ns = namespace(found=false, data={}) -%}
+              {%- for s in slots -%}
+                {%- if not ns.found -%}
+                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                  {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                    {%- set d = raw | from_json -%}
+                    {%- if d.id | string == batch_id | string -%}
+                      {%- set ns.found = true -%}{%- set ns.data = d -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+              
+              # {{ crop }} (Batch: {{ ns.data.id }})
+              **Phase:** {{ ns.data.phase }} | **Planted:** {{ ns.data.planted }}
+              
+          - type: custom:auto-entities
+            card:
+              type: vertical-stack
+            card_param: cards
+            filter:
+              template: |
+                {%- set batch_id = states('input_text.selected_batch') -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set ns = namespace(camera='') -%}
+                {%- for s in slots -%}
+                  {%- if ns.camera == '' -%}
+                    {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                    {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                      {%- set d = raw | from_json(default={}) -%}
+                      {%- if d.id | string == batch_id | string -%}
+                        {%- if s[0] == 'a' -%}
+                          {%- set ns.camera = 'camera.top_eyes_snapshot' -%}
+                        {%- else -%}
+                          {%- set ns.camera = 'camera.bottom_eyes_snapshot' -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if ns.camera != '' -%}
+                {{ [{
+                  "type": "picture-entity",
+                  "entity": ns.camera,
+                  "name": "Latest Snapshot",
+                  "show_state": false,
+                  "card_mod": {
+                    "style": "ha-card { border-radius: 16px !important; overflow: hidden !important; }"
+                  }
+                }] }}
+                {%- endif -%}
+
+          - type: custom:mushroom-template-card
+            primary: "History Timeline"
+            icon: mdi:history
+            icon_color: grey
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; }
+                .primary { font-size: 16px !important; font-weight: 700 !important; }
+
+          # History from Elasticsearch (full history, not truncated)
+          - type: custom:auto-entities
+            card:
+              type: vertical-stack
+            card_param: cards
+            filter:
+              template: |
+                {%- set es_hits = state_attr('sensor.sproutie_batch_history', 'hits') | default([]) -%}
+                {%- set batch_id = states('input_text.selected_batch') -%}
+                {%- set ns = namespace(history=[]) -%}
+                {%- for hit in es_hits -%}
+                  {%- set src = hit.get('_source', {}) -%}
+                  {%- set sproutie = src.get('sproutie', {}) -%}
+                  {%- if sproutie.get('batch_id', '') | string == batch_id | string -%}
+                    {%- set ts = src.get('@timestamp', '') -%}
+                    {%- set date_part = ts[:10] if ts else '' -%}
+                    {%- set event_type = sproutie.get('event_type', 'Event') -%}
+                    {%- set detail = sproutie.get('detail', '') -%}
+                    {%- set ns.history = ns.history + [{'date': date_part, 'event': event_type, 'note': detail}] -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if ns.history | length == 0 -%}
+                  {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                  {%- for s in slots -%}
+                    {%- if ns.history | length == 0 -%}
+                      {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                      {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                        {%- set d = raw | from_json(default={}) -%}
+                        {%- if d.id | string == batch_id | string -%}
+                          {%- set ns.history = d.get('history', []) -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+                {%- for item in ns.history -%}
+                {{ {
+                  "type": "custom:mushroom-template-card",
+                  "primary": item.event ~ " • " ~ item.date,
+                  "secondary": item.note | default(''),
+                  "icon": "mdi:water" if item.event == "Water" else "mdi:leaf" if item.event == "Phase Change" else "mdi:seed" if item.event == "Planted" else "mdi:basket" if item.event == "Harvested" else "mdi:note-text",
+                  "icon_color": "blue" if item.event == "Water" else "green" if item.event == "Phase Change" else "teal" if item.event == "Planted" else "orange" if item.event == "Harvested" else "grey",
+                  "card_mod": {
+                    "style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"
+                  }
+                } }},
+                {%- endfor -%}
+                {%- if ns.history | length == 0 -%}
+                {{ {
+                  "type": "markdown",
+                  "content": "No history recorded yet. Events will appear here from Elasticsearch.",
+                  "card_mod": {
+                    "style": "ha-card { background: transparent !important; border: none !important; text-align: center; opacity: 0.5; }"
+                  }
+                } }}
+                {%- endif -%}
+          
+          - type: grid
+            columns: 4
+            cards:
+              - type: custom:mushroom-template-card
+                primary: Water
+                icon: mdi:water
+                icon_color: blue
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: Log Watering
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: entities
+                            entities:
+                              - entity: input_select.watering_type
+                              - entity: input_number.water_amount
+                          - type: custom:mushroom-template-card
+                            primary: Save
+                            icon: mdi:check
+                            icon_color: green
+                            tap_action:
+                              action: call-service
+                              service: script.commit_water_log
+              - type: custom:mushroom-template-card
+                primary: Note
+                icon: mdi:note-plus
+                icon_color: grey
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: Add Note
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: entities
+                            entities:
+                              - entity: input_text.event_note
+                          - type: custom:mushroom-template-card
+                            primary: Save Note
+                            icon: mdi:check
+                            icon_color: green
+                            tap_action:
+                              action: call-service
+                              service: script.sproutie_log_event
+                              service_data:
+                                event_type: Note
+              - type: custom:mushroom-template-card
+                primary: Phase
+                icon: mdi:step-forward
+                icon_color: green
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: Advance Phase
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: entities
+                            entities:
+                              - entity: input_select.phase_transition
+                          - type: custom:mushroom-template-card
+                            primary: Confirm Phase Change
+                            icon: mdi:check
+                            icon_color: green
+                            tap_action:
+                              action: call-service
+                              service: script.sproutie_advance_phase
+              - type: custom:mushroom-template-card
+                primary: Harvest
+                icon: mdi:basket-check
+                icon_color: orange
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: Harvest Batch
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: entities
+                            entities:
+                              - entity: input_number.harvest_weight
+                              - entity: input_text.event_note
+                          - type: custom:mushroom-template-card
+                            primary: Confirm Harvest
+                            icon: mdi:check
+                            icon_color: orange
+                            tap_action:
+                              action: call-service
+                              service: script.sproutie_harvest_batch

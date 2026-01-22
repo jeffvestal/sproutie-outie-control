@@ -14,6 +14,9 @@ automation:
       - condition: state
         entity_id: input_boolean.production_mode
         state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_exhaust_enabled
+        state: "on"
     action:
       - variables:
           fan_state: "{{ states('switch.exhaust_fan') }}"
@@ -38,6 +41,12 @@ automation:
                   - service: switch.turn_off
                     target:
                       entity_id: switch.exhaust_fan
+                  - service: script.sproutie_log_event
+                    data:
+                      type: "Climate"
+                      message: "Exhaust Cycle Complete"
+                      icon: "mdi:fan-off"
+                      color: "#3498db"
           # Fan is OFF - check if we've exceeded off_duration
           - conditions:
               - condition: state
@@ -51,6 +60,12 @@ automation:
                   - service: switch.turn_on
                     target:
                       entity_id: switch.exhaust_fan
+                  - service: script.sproutie_log_event
+                    data:
+                      type: "Climate"
+                      message: "Exhaust Cycle Active"
+                      icon: "mdi:fan"
+                      color: "#3498db"
     mode: single
 
   # Light Schedule: Turn ON Grow Lights
@@ -60,10 +75,13 @@ automation:
     trigger:
       - platform: template
         value_template: >
-          {{ now().strftime('%H:%M') == states('input_datetime.lights_on')[:5] }}
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_on_time')[:5] }}
     condition:
       - condition: state
         entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_lights_enabled
         state: "on"
     action:
       - service: switch.turn_on
@@ -80,10 +98,13 @@ automation:
     trigger:
       - platform: template
         value_template: >
-          {{ now().strftime('%H:%M') == states('input_datetime.lights_off')[:5] }}
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_off_time')[:5] }}
     condition:
       - condition: state
         entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_lights_enabled
         state: "on"
     action:
       - service: switch.turn_off
@@ -91,4 +112,116 @@ automation:
           entity_id:
             - switch.top_shelf_lights
             - switch.bottom_shelf_lights
+    mode: single
+
+  # Photography System: Interval snapshots
+  - id: sproutie_crop_photography_interval
+    alias: "Crop Photography Interval"
+    mode: single
+    max_exceeded: silent
+    description: "Triggers crop photography sequence based on the photo_interval setting with retry"
+    trigger:
+      - platform: time_pattern
+        minutes: "/5"
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_photos_enabled
+        state: "on"
+      - condition: template
+        value_template: >
+          {% set interval = states('input_number.photo_interval') | int(60) %}
+          {% set last_success = states('input_datetime.last_photography_success') %}
+          {% if last_success in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+            true
+          {% else %}
+            {% set diff = (as_timestamp(now()) - as_timestamp(last_success)) / 60 %}
+            {{ diff >= interval }}
+          {% endif %}
+    action:
+      - service: script.sequence_crop_photography
+
+      - delay: "00:02:00"
+      - if:
+          - condition: template
+            value_template: >
+              {% set last_success = states('input_datetime.last_photography_success') %}
+              {% set diff = (as_timestamp(now()) - as_timestamp(last_success)) / 60 %}
+              {{ diff > 2 }}
+        then:
+          - delay: "00:05:00"
+          - service: script.sequence_crop_photography
+
+
+  # Safety Valve: Ensure white lights are turned off after 6 minutes
+  - id: sproutie_photography_lights_safety_valve
+    alias: "Photography Lights Safety Valve"
+    description: "Turns off white lights and restores grow lights if left on too long"
+    trigger:
+      - platform: state
+        entity_id: switch.camera_flash
+        to: "on"
+        for: "00:06:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.inspection_mode
+        state: "off"
+    action:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.camera_flash
+      - service: scene.turn_on
+        target:
+          entity_id: scene.sproutie_snapshot_restore_scene
+        continue_on_error: true
+      - service: browser_mod.notification
+        data:
+          title: "Safety Valve Triggered"
+          message: "White lights were on for 6 minutes. Restoring grow lights automatically."
+          duration: 10000
+      - service: script.sproutie_log_event
+        data:
+          event_type: "Safety"
+          detail: "Photography Lights Safety Valve Triggered - White lights forced OFF after 6 minutes"
+    mode: single
+
+  # Refresh ES Batch History when selected batch changes
+  - id: sproutie_refresh_batch_history
+    alias: "Refresh Batch History from ES"
+    description: "Updates the ES batch history sensor when a different batch is selected"
+    trigger:
+      - platform: state
+        entity_id: input_text.selected_batch
+    condition:
+      - condition: template
+        value_template: "{{ trigger.to_state.state not in ['', 'unknown', 'unavailable'] }}"
+    action:
+      - delay: "00:00:01"
+      - service: homeassistant.update_entity
+        target:
+          entity_id: sensor.sproutie_batch_history
+    mode: restart
+
+  # Telemetry Auditing: Periodic push to Elasticsearch
+  - id: sproutie_telemetry_audit_push
+    alias: "Telemetry Audit Push"
+    description: "Periodically pushes system telemetry (temp, humidity, hardware states) to Elasticsearch"
+    trigger:
+      - platform: time_pattern
+        minutes: "/5"
+    action:
+      - service: rest_command.sproutie_es_bulk_index
+        data:
+          timestamp: "{{ now().isoformat() }}"
+          tent_temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
+          tent_humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+          room_temp: "{{ states('sensor.caffrey_taffy_co_internal_temp') | float(0) }}"
+          room_humidity: "{{ states('sensor.caffrey_taffy_co_internal_humidity') | float(0) }}"
+          fan_exhaust: "{{ 1 if is_state('switch.exhaust_fan', 'on') else 0 }}"
+          fan_top: "{{ 1 if is_state('switch.top_shelf_fan', 'on') else 0 }}"
+          fan_bottom: "{{ 1 if is_state('switch.bottom_shelf_fan', 'on') else 0 }}"
+          lights_top: "{{ 1 if is_state('switch.top_shelf_lights', 'on') else 0 }}"
+          lights_bottom: "{{ 1 if is_state('switch.bottom_shelf_lights', 'on') else 0 }}"
     mode: single

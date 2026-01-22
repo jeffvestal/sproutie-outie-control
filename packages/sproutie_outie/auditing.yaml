@@ -1,0 +1,44 @@
+# Sproutie OS - Auditing and State Tracking
+# Ensures every hardware and system mode change is logged to Elasticsearch
+
+automation:
+  - id: sproutie_audit_hardware_changes
+    alias: "Audit: Hardware State Changes"
+    description: "Logs any manual or automated switch changes to Elasticsearch"
+    trigger:
+      - platform: state
+        entity_id: [switch.top_shelf_lights, switch.bottom_shelf_lights, switch.exhaust_fan, switch.top_shelf_fan, switch.bottom_shelf_fan, switch.camera_flash]
+    condition:
+      - condition: template
+        value_template: "{{ trigger.from_state.state != trigger.to_state.state }}"
+    action:
+      - service: script.sproutie_log_event
+        data:
+          event_type: "System Audit"
+          detail: >-
+            Hardware Change: {{ trigger.to_state.name }} turned {{ trigger.to_state.state | upper }}
+          take_photo: false
+    mode: parallel
+
+  - id: sproutie_audit_mode_changes
+    alias: "Audit: System Mode Changes"
+    description: "Logs production and inspection mode toggles to Elasticsearch"
+    trigger:
+      - platform: state
+        entity_id:
+          - input_boolean.production_mode
+          - input_boolean.inspection_mode
+          - input_boolean.schedule_lights_enabled
+          - input_boolean.schedule_exhaust_enabled
+          - input_boolean.schedule_photos_enabled
+    condition:
+      - condition: template
+        value_template: "{{ trigger.from_state.state != trigger.to_state.state }}"
+    action:
+      - service: script.sproutie_log_event
+        data:
+          event_type: "System Audit"
+          detail: >-
+            Mode Change: {{ trigger.to_state.name }} set to {{ 'ACTIVE' if trigger.to_state.state == 'on' else 'INACTIVE' }}
+          take_photo: false
+    mode: parallel

@@ -20,10 +20,26 @@ eufy:
 
 homeassistant:
   packages: !include_dir_named packages
+  allowlist_external_dirs:
+    - "/config"
+    - "/media"
+
+rest_command: !include rest_commands.yaml
+
+shell_command:
+  copy_snapshot: 'cp "{{ source }}" "{{ target }}"'
+  upload_snapshot_to_gcp: 'curl -X POST -F "file=@{{ filename }}" -H "Authorization: Bearer !secret gcp_bridge_token" !secret gcp_upload_url'
+  log_json: 'echo "{{ msg }}" >> /config/.cursor/debug.log'
 
 # Load Lovelace in YAML mode
 lovelace:
   mode: yaml
+  dashboards:
+    sproutie-os:
+      mode: yaml
+      title: Sproutie OS
+      icon: mdi:sprout
+      filename: ui-lovelace-v3.yaml
   resources:
     - url: /hacsfiles/button-card/button-card.js
       type: module

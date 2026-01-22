@@ -3,22 +3,22 @@
 
 # Elasticsearch Bulk Index Command
 sproutie_es_bulk_index:
-  url: "{{ es_cluster_url }}/sproutie-sensors-*/_bulk"
+  url: !secret es_url_bulk
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/x-ndjson"
-  payload: |
+  payload: >
     {"index":{}}
     {"@timestamp":"{{ timestamp }}","tent_temp":{{ tent_temp }},"tent_humidity":{{ tent_humidity }},"room_temp":{{ room_temp }},"room_humidity":{{ room_humidity }},"fan_exhaust":{{ fan_exhaust }},"fan_top":{{ fan_top }},"fan_bottom":{{ fan_bottom }},"lights_top":{{ lights_top }},"lights_bottom":{{ lights_bottom }}}
   content_type: "application/x-ndjson"
 
 # Get Anomaly Score from Elasticsearch
 sproutie_es_get_anomaly_score:
-  url: "{{ es_cluster_url }}/sproutie-anomaly-results/_search"
+  url: !secret es_url_anomaly
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/json"
   payload: |
     {
@@ -30,10 +30,10 @@ sproutie_es_get_anomaly_score:
 
 # Store Botany Log Entry
 sproutie_es_store_botany_log:
-  url: "{{ es_cluster_url }}/sproutie-botany-logs/_doc"
+  url: !secret es_url_botany
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/json"
   payload: |
     {
@@ -51,10 +51,10 @@ sproutie_es_store_botany_log:
 
 # Get Recent Events for Botany Log Context
 sproutie_es_get_recent_events:
-  url: "{{ es_cluster_url }}/sproutie-sensors-*/_search"
+  url: !secret es_url_sensors_search
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/json"
   payload: |
     {
@@ -72,10 +72,10 @@ sproutie_es_get_recent_events:
 
 # Log Alert Event
 sproutie_es_log_alert:
-  url: "{{ es_cluster_url }}/sproutie-alerts/_doc"
+  url: !secret es_url_alerts
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/json"
   payload: |
     {
@@ -85,23 +85,24 @@ sproutie_es_log_alert:
     }
   content_type: "application/json"
 
-# Call FLORA Agent to Generate Log
-sproutie_flora_generate_log:
-  url: "{{ kibana_url }}/api/agent_builder/agents/flora-sproutie-agent/converse"
+# Log Harvest Event (New for v3)
+sproutie_es_log_harvest:
+  url: !secret elastic_url_doc
   method: POST
   headers:
-    Authorization: "ApiKey {{ es_api_key }}"
+    Authorization: !secret es_api_key
     Content-Type: "application/json"
-    kbn-xsrf: "true"
-    x-elastic-internal-origin: "kibana"
   payload: |
     {
-      "messages": [
-        {
-          "role": "user",
-          "content": "Generate a {{ log_type }} botany log entry. Current conditions: Temp {{ current_temp }}°F, Humidity {{ current_humidity }}%. Tray 1: {{ tray_1_crop }}, Tray 2: {{ tray_2_crop }}. Recent events: {{ recent_events }}"
-        }
-      ]
+      "@timestamp": "{{ timestamp }}",
+      "id": "{{ batch_id }}",
+      "crop": "{{ crop }}",
+      "planted_date": "{{ planted_date }}",
+      "harvest_date": "{{ now().strftime('%Y-%m-%d') }}",
+      "seed_weight": {{ seed_weight | default(0) }},
+      "harvest_weight": {{ harvest_weight | default(0) }},
+      "efficiency": {{ efficiency | default(0) }},
+      "notes": "{{ notes }}",
+      "history": {{ history | default([]) | to_json }}
     }
   content_type: "application/json"
-

@@ -343,7 +343,7 @@ cards:
           - type: vertical-stack
             cards:
               - type: picture-entity
-                entity: camera.sproutie_outie_top_eyes
+                entity: camera.top_eyes
                 name: Top Rack
                 show_state: false
                 aspect_ratio: 16:7
@@ -351,7 +351,7 @@ cards:
                   style: |
                     ha-card { border-radius: 16px !important; overflow: hidden !important; }
               - type: picture-entity
-                entity: camera.sproutie_outie_bottom_eyes
+                entity: camera.bottom_eyes
                 name: Bottom Rack
                 show_state: false
                 aspect_ratio: 16:7

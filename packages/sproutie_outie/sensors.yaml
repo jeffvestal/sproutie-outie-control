@@ -1184,3 +1184,22 @@ sensor:
               'Arugula': 'mdi:spa'
             } -%}
             {{ icons.get(crop, 'mdi:sprout') }}
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # ELASTICSEARCH BATCH HISTORY SENSOR
+  # Fetches full event history for selected batch from Elasticsearch
+  # ═══════════════════════════════════════════════════════════════════════
+  - platform: rest
+    name: sproutie_batch_history
+    resource_template: >-
+      https://sproutie-outie-ccff9a.es.us-central1.gcp.elastic.cloud:443/sproutie-events/_search?q=sproutie.batch_id:{{ states('input_text.selected_batch') }}&size=50&sort=@timestamp:desc
+    headers:
+      Authorization: !secret es_api_key
+      Content-Type: application/json
+    method: GET
+    value_template: "{{ value_json.hits.total.value | default(0) }}"
+    json_attributes_path: "$.hits"
+    json_attributes:
+      - hits
+      - total
+    scan_interval: 60

@@ -8,6 +8,21 @@ input_boolean:
   inspection_mode:
     name: "Inspection Lights (Slot 6)"
     icon: mdi:magnify
+  soak_seeds:
+    name: "Soak Seeds"
+    icon: mdi:water-circle
+  schedule_lights_enabled:
+    name: "Light Schedule Enabled"
+    icon: mdi:lightbulb-auto
+    initial: true
+  schedule_exhaust_enabled:
+    name: "Exhaust Schedule Enabled"
+    icon: mdi:fan-auto
+    initial: true
+  schedule_photos_enabled:
+    name: "Photo Schedule Enabled"
+    icon: mdi:camera-auto
+    initial: true
 
 # --- HARDWARE SCHEDULES ---
 input_datetime:
@@ -19,8 +34,25 @@ input_datetime:
     name: "Grow Lights OFF"
     has_date: false
     has_time: true
+  manual_event_date:
+    name: "Event Date Override"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
+  last_photography_success:
+    name: "Last Photography Success"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
 
 input_number:
+  water_amount:
+    name: "Water Amount (ml)"
+    min: 0
+    max: 1000
+    step: 50
+    unit_of_measurement: "ml"
+    icon: mdi:water-plus
   exhaust_on_duration:
     name: "Exhaust ON (Mins)"
     min: 0
@@ -40,8 +72,40 @@ input_number:
     min: 0
     max: 1000
     step: 1
+    mode: box
     unit_of_measurement: "g"
     icon: mdi:weight-gram
+  soak_time:
+    name: "Soak Time (hours)"
+    min: 0
+    max: 48
+    step: 1
+    initial: 8
+    mode: box
+    unit_of_measurement: "hrs"
+    icon: mdi:timer-sand
+  harvest_weight:
+    name: "Harvest Weight (g)"
+    min: 0
+    max: 5000
+    step: 0.1
+    mode: box
+    unit_of_measurement: "g"
+    icon: mdi:basket-fill
+  photo_interval:
+    name: "Photo Interval (Mins)"
+    min: 10
+    max: 120
+    step: 5
+    initial: 60
+    unit_of_measurement: "min"
+    icon: mdi:camera-timer
+  photo_refresh_trigger:
+    name: "Photo Refresh Trigger"
+    min: 0
+    max: 9999999999
+    step: 1
+    mode: box
 
 # --- CROP INVENTORY ---
 input_text:
@@ -49,10 +113,25 @@ input_text:
   crop_library_json:
     name: "Hidden Crop Library Database"
     max: 255
-    initial: '{"Radish": {"w": 35, "s": 4}, "Sun": {"w": 50, "s": 12}}'
+    initial: '{"Radish": {"grow_days": 6, "w": 35}, "Sunflower": {"grow_days": 10, "w": 50}, "Pea": {"grow_days": 8, "w": 40}, "Red Acre Cabbage": {"grow_days": 10, "w": 30, "soak": false, "notes": "Red Cabbage. Fast grower. 4 days germ."}}'
   
   log_event_buffer:
     name: "Universal Event Buffer"
+    max: 255
+  issue_note:
+    name: "Issue Note"
+    max: 255
+  selected_slot:
+    name: "Selected Slot"
+    max: 10
+  selected_batch:
+    name: "Selected Batch ID"
+    max: 50
+  selected_crop:
+    name: "Selected Crop Name"
+    max: 50
+  event_note:
+    name: "Event Note"
     max: 255
 
   # --- THE SLOT MATRIX (A1-A8, B1-B8) ---
@@ -116,6 +195,7 @@ input_select:
       - "Radish"
       - "Sunflower"
       - "Pea"
+      - "Red Acre Cabbage"
       - "Custom"
     icon: mdi:seed
   container_type:
@@ -124,3 +204,26 @@ input_select:
       - "Tray"
       - "Jar"
     icon: mdi:beaker
+  phase_transition:
+    name: "Next Phase"
+    options:
+      - "Germination"
+      - "Blackout"
+      - "Growing"
+      - "Harvest Ready"
+    icon: mdi:step-forward
+  watering_type:
+    name: "Watering Type"
+    options:
+      - "Top Drip"
+      - "Bottom Soak"
+      - "Full Flush"
+    icon: mdi:water-sync
+  container_size:
+    name: "Planting Footprint"
+    options:
+      - "Full Shelf (10x20)"
+      - "Half Shelf (10x10)"
+      - "Single Slot (Jar)"
+    initial: "Full Shelf (10x20)"
+    icon: mdi:arrow-expand-horizontal
