@@ -8,9 +8,9 @@ sproutie_es_bulk_index:
   headers:
     Authorization: !secret es_api_key
     Content-Type: "application/x-ndjson"
-  payload: >
+  payload: |
     {"index":{}}
-    {"@timestamp":"{{ timestamp }}","tent_temp":{{ tent_temp }},"tent_humidity":{{ tent_humidity }},"room_temp":{{ room_temp }},"room_humidity":{{ room_humidity }},"fan_exhaust":{{ fan_exhaust }},"fan_top":{{ fan_top }},"fan_bottom":{{ fan_bottom }},"lights_top":{{ lights_top }},"lights_bottom":{{ lights_bottom }}}
+    {"@timestamp":"{{ timestamp }}","tent_temp":{{ tent_temp | default(0) }},"tent_humidity":{{ tent_humidity | default(0) }},"room_temp":{{ room_temp | default(0) }},"room_humidity":{{ room_humidity | default(0) }},"fan_exhaust":{{ fan_exhaust | default(0) }},"fan_top":{{ fan_top | default(0) }},"fan_bottom":{{ fan_bottom | default(0) }},"lights_top":{{ lights_top | default(0) }},"lights_bottom":{{ lights_bottom | default(0) }}}
   content_type: "application/x-ndjson"
 
 # Get Anomaly Score from Elasticsearch
@@ -95,14 +95,14 @@ sproutie_es_log_harvest:
   payload: |
     {
       "@timestamp": "{{ timestamp }}",
-      "id": "{{ batch_id }}",
-      "crop": "{{ crop }}",
-      "planted_date": "{{ planted_date }}",
+      "id": "{{ batch_id | default('unknown') }}",
+      "crop": "{{ crop | default('Unknown') }}",
+      "planted_date": "{{ planted_date | default('') }}",
       "harvest_date": "{{ now().strftime('%Y-%m-%d') }}",
       "seed_weight": {{ seed_weight | default(0) }},
       "harvest_weight": {{ harvest_weight | default(0) }},
       "efficiency": {{ efficiency | default(0) }},
-      "notes": "{{ notes }}",
+      "notes": "{{ notes | default('') }}",
       "history": {{ history | default([]) | to_json }}
     }
   content_type: "application/json"

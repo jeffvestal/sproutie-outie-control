@@ -212,9 +212,9 @@ views:
                       {%- set d = raw | from_json(default={}) -%}
                       {%- if d.crop == target_crop -%}
                         {%- set ns_stats.count = ns_stats.count + 1 -%}
-                        {%- if ns_stats.count == 1 -%}{%- set ns_stats.first_id = d.id -%}{%- endif -%}
-                        {%- set planted = d.planted | as_datetime -%}
-                        {%- set age = ((as_timestamp(now()) - as_timestamp(planted | default(now()))) / 86400) | int -%}
+                        {%- if ns_stats.count == 1 -%}{%- set ns_stats.first_id = d.get('id') -%}{%- endif -%}
+                        {%- set planted = d.get('planted') | as_datetime -%}
+                        {%- set age = ((as_timestamp(now()) - as_timestamp(planted if planted else now())) / 86400) | int -%}
                         {%- if age >= ns_stats.max_age -%}
                           {%- set ns_stats.max_age = age -%}
                           {%- set ns_stats.stage = d.phase | default('Growing') -%}
@@ -721,22 +721,20 @@ views:
             content: |
               {%- set crop = states('input_text.selected_crop') -%}
               {%- set batch_id = states('input_text.selected_batch') -%}
-              {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
               {%- set ns = namespace(found=false, data={}) -%}
-              {%- for s in slots -%}
-                {%- if not ns.found -%}
-                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
-                  {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
-                    {%- set d = raw | from_json -%}
-                    {%- if d.id | string == batch_id | string -%}
-                      {%- set ns.found = true -%}{%- set ns.data = d -%}
-                    {%- endif -%}
+              
+              {# Iterate state objects to ensure listeners are registered #}
+              {%- for state in states.input_text -%}
+                {%- if not ns.found and state.entity_id.startswith('input_text.slot_') and state.state not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = state.state | from_json(default={}) -%}
+                  {%- if d.get('id') | string == batch_id | string -%}
+                    {%- set ns.found = true -%}{%- set ns.data = d -%}
                   {%- endif -%}
                 {%- endif -%}
               {%- endfor -%}
               
-              # {{ crop }} (Batch: {{ ns.data.id }})
-              **Phase:** {{ ns.data.phase }} | **Planted:** {{ ns.data.planted }}
+              # {{ crop }} (Batch: {{ ns.data.get('id', 'Unknown') }})
+              **Phase:** {{ ns.data.get('phase', 'Unknown') }} | **Planted:** {{ ns.data.get('planted', 'Unknown') }}
               
           - type: custom:auto-entities
             card:
@@ -752,7 +750,7 @@ views:
                     {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
                     {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
                       {%- set d = raw | from_json(default={}) -%}
-                      {%- if d.id | string == batch_id | string -%}
+                      {%- if d.get('id') | string == batch_id | string -%}
                         {%- if s[0] == 'a' -%}
                           {%- set ns.camera = 'camera.top_eyes_snapshot' -%}
                         {%- else -%}
@@ -814,7 +812,7 @@ views:
                   {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
                   {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
                     {%- set d = raw | from_json(default={}) -%}
-                    {%- if d.id | string == batch_id | string -%}
+                    {%- if d.get('id') | string == batch_id | string -%}
                       {%- set ns.planted_date = d.get('planted', '') -%}
                       {%- for item in d.get('history', []) -%}
                         {# Simple check to avoid duplicates from ES #}
@@ -851,46 +849,46 @@ views:
                   {%- set ns.phases = ns.phases + [{'date': ns.planted_date, 'event': 'Planted', 'note': 'Initial Planting'}] -%}
                 {%- endif -%}
                 
-                {# 4. Render Categorized Cards #}
-                {%- set output = [] -%}
+                {# 4. Render Categorized Cards - Use namespace for loop scoping #}
+                {%- set out = namespace(cards=[]) -%}
                 
                 {# Water Section #}
                 {%- if ns.water | length > 0 -%}
-                  {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": "Watering History", "icon": "mdi:water", "icon_color": "blue", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
-                  {%- for item in ns.water | sort(attribute='date', reverse=True) -%}
-                    {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": item.event ~ " • " ~ item.date, "secondary": item.note, "icon": "mdi:water", "icon_color": "blue", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
+                  {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": "Watering History", "icon": "mdi:water", "icon_color": "blue", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
+                  {%- for item in ns.water -%}
+                    {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": (item.event | default('Water')) ~ " • " ~ (item.date | default('?')), "secondary": (item.note | default('')), "icon": "mdi:water", "icon_color": "blue", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
                   {%- endfor -%}
                 {%- endif -%}
                 
                 {# Phase Section #}
                 {%- if ns.phases | length > 0 -%}
-                  {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": "Phase Changes", "icon": "mdi:leaf", "icon_color": "green", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
-                  {%- for item in ns.phases | sort(attribute='date', reverse=True) -%}
-                    {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": item.event ~ " • " ~ item.date, "secondary": item.note, "icon": "mdi:seed" if item.event == "Planted" else "mdi:basket" if item.event == "Harvested" else "mdi:leaf", "icon_color": "teal" if item.event == "Planted" else "orange" if item.event == "Harvested" else "green", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
+                  {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": "Phase Changes", "icon": "mdi:leaf", "icon_color": "green", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
+                  {%- for item in ns.phases -%}
+                    {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": (item.event | default('Phase')) ~ " • " ~ (item.date | default('?')), "secondary": (item.note | default('')), "icon": "mdi:seed" if item.event == "Planted" else "mdi:basket" if item.event == "Harvested" else "mdi:leaf", "icon_color": "teal" if item.event == "Planted" else "orange" if item.event == "Harvested" else "green", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
                   {%- endfor -%}
                 {%- endif -%}
                 
                 {# Notes Section #}
                 {%- if ns.notes | length > 0 -%}
-                  {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": "Batch Notes", "icon": "mdi:note-text", "icon_color": "grey", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
-                  {%- for item in ns.notes | sort(attribute='date', reverse=True) -%}
-                    {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": item.event ~ " • " ~ item.date, "secondary": item.note, "icon": "mdi:note-text", "icon_color": "grey", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
+                  {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": "Batch Notes", "icon": "mdi:note-text", "icon_color": "grey", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
+                  {%- for item in ns.notes -%}
+                    {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": (item.event | default('Note')) ~ " • " ~ (item.date | default('?')), "secondary": (item.note | default('')), "icon": "mdi:note-text", "icon_color": "grey", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
                   {%- endfor -%}
                 {%- endif -%}
                 
                 {# System Section (Last 4) #}
                 {%- if ns.system | length > 0 -%}
-                  {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": "System Log (Last 4)", "icon": "mdi:cog", "icon_color": "amber", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
-                  {%- for item in (ns.system | sort(attribute='date', reverse=True))[:4] -%}
-                    {%- set output = output + [{"type": "custom:mushroom-template-card", "primary": item.event ~ " • " ~ item.date, "secondary": item.note, "icon": "mdi:camera" if item.event == "Snapshot" else "mdi:cog", "icon_color": "amber", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
+                  {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": "System Log (Last 4)", "icon": "mdi:cog", "icon_color": "amber", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; } .primary { font-size: 16px !important; font-weight: 700 !important; }"}}] -%}
+                  {%- for item in (ns.system)[:4] -%}
+                    {%- set out.cards = out.cards + [{"type": "custom:mushroom-template-card", "primary": (item.event | default('System')) ~ " • " ~ (item.date | default('?')), "secondary": (item.note | default('')), "icon": "mdi:camera" if item.event == "Snapshot" else "mdi:cog", "icon_color": "amber", "card_mod": {"style": "ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; margin-bottom: 8px !important; }"}}] -%}
                   {%- endfor -%}
                 {%- endif -%}
                 
-                {%- if output | length == 0 -%}
-                  {%- set output = [{"type": "markdown", "content": "No history found for Batch {{ batch_id }}", "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; text-align: center; opacity: 0.5; }"}}] -%}
+                {%- if out.cards | length == 0 -%}
+                  {%- set out.cards = [{"type": "markdown", "content": "No history found for Batch " ~ batch_id, "card_mod": {"style": "ha-card { background: transparent !important; border: none !important; text-align: center; opacity: 0.5; }"}}] -%}
                 {%- endif -%}
                 
-                {{ output }}
+                {{ out.cards }}
           
           - type: grid
             columns: 4
@@ -911,14 +909,15 @@ views:
                           - type: entities
                             entities:
                               - entity: input_select.watering_type
-                              - entity: input_number.water_amount
                           - type: custom:mushroom-template-card
                             primary: Save
                             icon: mdi:check
                             icon_color: green
                             tap_action:
                               action: call-service
-                              service: script.commit_water_log
+                              service: script.sproutie_log_event
+                              service_data:
+                                event_type: Water
               - type: custom:mushroom-template-card
                 primary: Note
                 icon: mdi:note-plus

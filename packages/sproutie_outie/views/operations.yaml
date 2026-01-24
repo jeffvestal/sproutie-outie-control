@@ -52,7 +52,7 @@ cards:
                       'service': 'script.sproutie_ui_select_crop',
                       'service_data': {
                         'crop': d.crop | default('Unknown'),
-                        'batch_id': d.id | default('0')
+                        'batch_id': d.get('id') | default('0')
                       }
                     } if not isEmpty else {
                       'action': 'fire-dom-event',

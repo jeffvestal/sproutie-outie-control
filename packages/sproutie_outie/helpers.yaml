@@ -215,9 +215,9 @@ input_select:
   watering_type:
     name: "Watering Type"
     options:
-      - "Top Drip"
-      - "Bottom Soak"
-      - "Full Flush"
+      - "Bottom Fill"
+      - "Top Mist Plain"
+      - "Top Mist with H2O2"
     icon: mdi:water-sync
   container_size:
     name: "Planting Footprint"
