@@ -703,7 +703,7 @@ views:
                         }
                         .card-content { padding: 0 0 0 16px !important; }
 
-  - !include packages/sproutie_outie/views/operations.yaml.disabled
+  - !include lovelace/views/operations.yaml
 
   - title: Crop Details
     path: crop-details

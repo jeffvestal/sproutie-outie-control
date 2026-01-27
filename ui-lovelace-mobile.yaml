@@ -1,0 +1,770 @@
+# Sproutie Mobile Dashboard
+# Mobile-optimized view for quick glances and actions
+# Design: Soft & Round - border-radius: 15px on all cards
+
+title: Sproutie Mobile
+
+views:
+  - title: Mobile
+    path: mobile
+    icon: mdi:sprout
+    cards:
+      # ============================================================
+      # ROOT CARD 1: THE VISIBLE DASHBOARD
+      # This stack contains everything you want to SEE.
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          # SECTION 1: THE "GLANCE" HEADER - Camera Feeds
+          - type: horizontal-stack
+            cards:
+              # TOP RACK CAMERA
+              - type: picture-entity
+                entity: camera.top_eyes_snapshot
+                name: Top Rack
+                show_state: false
+                show_name: true
+                camera_view: auto
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: "Top Rack Inspector"
+                      size: wide
+                      style: |
+                        --popup-min-width: 320px;
+                        --popup-max-width: 95vw;
+                        --popup-border-radius: 16px;
+                        --popup-background-color: #1c1c1c;
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: picture-entity
+                            entity: camera.top_eyes_snapshot
+                            show_state: false
+                            show_name: false
+                          - type: custom:mushroom-template-card
+                            primary: >
+                              {% set last = states('input_datetime.last_photography_success') %}
+                              {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                                Snapshot Time: Unknown
+                              {% else %}
+                                Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                              {% endif %}
+                            secondary: >
+                              {% set last = states('input_datetime.last_photography_success') %}
+                              {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                                {{ last }}
+                              {% endif %}
+                            icon: mdi:clock
+                            icon_color: grey
+                            card_mod:
+                              style: |
+                                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                          - type: custom:mushroom-chips-card
+                            alignment: center
+                            card_mod:
+                              style: |
+                                ha-card { padding-bottom: 12px !important; }
+                            chips:
+                              - type: template
+                                icon: mdi:camera-flash
+                                content: Snap New
+                                icon_color: "{{ 'amber' if is_state('script.sequence_crop_photography', 'on') else 'grey' }}"
+                                card_mod:
+                                  style: |
+                                    ha-card {
+                                      {% if is_state('script.sequence_crop_photography', 'on') %}
+                                        animation: pulse 2s infinite;
+                                        --chip-background: rgba(255, 193, 7, 0.2) !important;
+                                      {% endif %}
+                                    }
+                                    @keyframes pulse {
+                                      0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+                                      70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+                                      100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+                                    }
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.sequence
+                                    data:
+                                      sequence:
+                                        - service: browser_mod.toast
+                                          data:
+                                            message: "Photography sequence started..."
+                                            duration: 3000
+                                        - service: script.sequence_crop_photography
+                              - type: template
+                                icon: mdi:video
+                                content: Live Feed
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.popup
+                                    data:
+                                      title: "Live Feed - Top Eyes"
+                                      size: wide
+                                      content:
+                                        type: picture-entity
+                                        entity: camera.top_eyes
+                                        camera_view: live
+                              - type: template
+                                icon: mdi:close
+                                content: Close
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.close_popup
+                card_mod:
+                  style: |
+                    ha-card {
+                      border-radius: 15px !important;
+                      overflow: hidden !important;
+                      aspect-ratio: 16/9;
+                    }
+                    .footer {
+                      background: rgba(0,0,0,0.6) !important;
+                      font-size: 12px !important;
+                      padding: 4px 8px !important;
+                    }
+
+              # BOTTOM RACK CAMERA
+              - type: picture-entity
+                entity: camera.bottom_eyes_snapshot
+                name: Bottom Rack
+                show_state: false
+                show_name: true
+                camera_view: auto
+                tap_action:
+                  action: fire-dom-event
+                  browser_mod:
+                    service: browser_mod.popup
+                    data:
+                      title: "Bottom Rack Inspector"
+                      size: wide
+                      style: |
+                        --popup-min-width: 320px;
+                        --popup-max-width: 95vw;
+                        --popup-border-radius: 16px;
+                        --popup-background-color: #1c1c1c;
+                      content:
+                        type: vertical-stack
+                        cards:
+                          - type: picture-entity
+                            entity: camera.bottom_eyes_snapshot
+                            show_state: false
+                            show_name: false
+                          - type: custom:mushroom-template-card
+                            primary: >
+                              {% set last = states('input_datetime.last_photography_success') %}
+                              {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                                Snapshot Time: Unknown
+                              {% else %}
+                                Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                              {% endif %}
+                            secondary: >
+                              {% set last = states('input_datetime.last_photography_success') %}
+                              {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                                {{ last }}
+                              {% endif %}
+                            icon: mdi:clock
+                            icon_color: grey
+                            card_mod:
+                              style: |
+                                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                          - type: custom:mushroom-chips-card
+                            alignment: center
+                            card_mod:
+                              style: |
+                                ha-card { padding-bottom: 12px !important; }
+                            chips:
+                              - type: template
+                                icon: mdi:camera-flash
+                                content: Snap New
+                                icon_color: "{{ 'amber' if is_state('script.sequence_crop_photography', 'on') else 'grey' }}"
+                                card_mod:
+                                  style: |
+                                    ha-card {
+                                      {% if is_state('script.sequence_crop_photography', 'on') %}
+                                        animation: pulse 2s infinite;
+                                        --chip-background: rgba(255, 193, 7, 0.2) !important;
+                                      {% endif %}
+                                    }
+                                    @keyframes pulse {
+                                      0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+                                      70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+                                      100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+                                    }
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.sequence
+                                    data:
+                                      sequence:
+                                        - service: browser_mod.toast
+                                          data:
+                                            message: "Photography sequence started..."
+                                            duration: 3000
+                                        - service: script.sequence_crop_photography
+                              - type: template
+                                icon: mdi:video
+                                content: Live Feed
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.popup
+                                    data:
+                                      title: "Live Feed - Bottom Eyes"
+                                      size: wide
+                                      content:
+                                        type: picture-entity
+                                        entity: camera.bottom_eyes
+                                        camera_view: live
+                              - type: template
+                                icon: mdi:close
+                                content: Close
+                                tap_action:
+                                  action: fire-dom-event
+                                  browser_mod:
+                                    service: browser_mod.close_popup
+                card_mod:
+                  style: |
+                    ha-card {
+                      border-radius: 15px !important;
+                      overflow: hidden !important;
+                      aspect-ratio: 16/9;
+                    }
+                    .footer {
+                      background: rgba(0,0,0,0.6) !important;
+                      font-size: 12px !important;
+                      padding: 4px 8px !important;
+                    }
+
+          # SECTION 2: THE "PULSE" STRIP - Environment Cards
+          # TEMPERATURE CARD
+          - type: custom:mini-graph-card
+            name: Temperature
+            icon: mdi:thermometer
+            entities:
+              - entity: sensor.monitor2_temperature
+                name: Tent
+                color: '#ff5252'
+                show_state: true
+                state_adaptive_color: false
+              - entity: sensor.govee_humidity_temp_monitor_temperature
+                name: Room
+                color: '#9e9e9e'
+                show_state: true
+                state_adaptive_color: false
+            hours_to_show: 6
+            points_per_hour: 4
+            line_width: 2
+            font_size: 85
+            height: 80
+            show:
+              name: true
+              icon: true
+              state: true
+              legend: true
+              fill: fade
+            card_mod:
+              style: |
+                ha-card {
+                  border-radius: 15px !important;
+                  background: rgba(30, 30, 30, 0.7) !important;
+                }
+                .header {
+                  padding: 12px 16px 0 16px !important;
+                }
+                .states {
+                  padding: 0 16px !important;
+                }
+                .state__value {
+                  font-size: 28px !important;
+                  font-weight: 700 !important;
+                }
+
+          # HUMIDITY CARD
+          - type: custom:mini-graph-card
+            name: Humidity
+            icon: mdi:water-percent
+            entities:
+              - entity: sensor.monitor2_humidity
+                name: Tent
+                color: '#3498db'
+                show_state: true
+                state_adaptive_color: false
+              - entity: sensor.govee_humidity_temp_monitor_humidity
+                name: Room
+                color: '#9e9e9e'
+                show_state: true
+                state_adaptive_color: false
+            hours_to_show: 6
+            points_per_hour: 4
+            line_width: 2
+            font_size: 85
+            height: 80
+            show:
+              name: true
+              icon: true
+              state: true
+              legend: true
+              fill: fade
+            card_mod:
+              style: |
+                ha-card {
+                  border-radius: 15px !important;
+                  background: rgba(30, 30, 30, 0.7) !important;
+                }
+                .header {
+                  padding: 12px 16px 0 16px !important;
+                }
+                .states {
+                  padding: 0 16px !important;
+                }
+                .state__value {
+                  font-size: 28px !important;
+                  font-weight: 700 !important;
+                }
+
+          # SECTION 3: ACTIVE CROPS LIST
+          - type: custom:auto-entities
+            card:
+              type: vertical-stack
+            card_param: cards
+            filter:
+              template: |
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set out = namespace(cards=[], seen_batches=[]) -%}
+                
+                {# Section Header #}
+                {%- set out.cards = out.cards + [{
+                  "type": "custom:mushroom-template-card",
+                  "primary": "Active Crops",
+                  "icon": "mdi:sprout",
+                  "icon_color": "green",
+                  "card_mod": {
+                    "style": "ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 8px !important; } .primary { font-size: 18px !important; font-weight: 700 !important; }"
+                  }
+                }] -%}
+                
+                {%- for s in slots -%}
+                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                  {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                    {%- set d = raw | from_json(default={}) -%}
+                    {%- set crop_name = d.get('crop', '') -%}
+                    {%- set batch_id = d.get('id', '') -%}
+                    
+                    {%- if crop_name not in ['Unknown', 'Empty', '', none] and batch_id not in ['', '0', none] -%}
+                      {%- if batch_id not in out.seen_batches -%}
+                        {%- set out.seen_batches = out.seen_batches + [batch_id] -%}
+                        
+                        {%- set phase = d.get('phase', 'Growing') -%}
+                        {%- set planted = d.get('planted', '') -%}
+                        {%- set planted_dt = planted | as_datetime if planted else none -%}
+                        {%- set age = ((as_timestamp(now()) - as_timestamp(planted_dt if planted_dt else now())) / 86400) | int -%}
+                        {%- set rack = 'Top' if s[0] == 'a' else 'Bottom' -%}
+                        {%- set rack_color = 'green' if s[0] == 'a' else 'orange' -%}
+                        
+                        {%- set out.cards = out.cards + [{
+                          "type": "custom:mushroom-template-card",
+                          "primary": crop_name,
+                          "secondary": rack ~ " Rack • " ~ phase ~ " • Day " ~ age,
+                          "icon": "mdi:sprout",
+                          "icon_color": rack_color,
+                          "card_mod": {
+                            "style": "ha-card { background: rgba(46, 204, 113, 0.15) !important; border-radius: 15px !important; margin-bottom: 8px !important; } .primary { font-size: 16px !important; font-weight: 600 !important; }"
+                          },
+                          "tap_action": {
+                            "action": "fire-dom-event",
+                            "browser_mod": {
+                              "service": "browser_mod.sequence",
+                              "data": {
+                                "sequence": [
+                                  {
+                                    "service": "input_text.set_value",
+                                    "data": {
+                                      "entity_id": "input_text.selected_batch",
+                                      "value": s
+                                    }
+                                  },
+                                  {
+                                    "service": "browser_mod.navigate",
+                                    "data": {
+                                      "path": "#batch-actions"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }] -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                
+                {# Show empty state if no crops #}
+                {%- if out.cards | length <= 1 -%}
+                  {%- set out.cards = out.cards + [{
+                    "type": "markdown",
+                    "content": "No active crops. Use the desktop dashboard to plant new batches.",
+                    "card_mod": {
+                      "style": "ha-card { background: rgba(30, 30, 30, 0.5) !important; border-radius: 15px !important; text-align: center !important; padding: 24px !important; }"
+                    }
+                  }] -%}
+                {%- endif -%}
+                
+                {{ out.cards }}
+
+          # SECTION 4: SPACER (for footer clearance)
+          - type: custom:button-card
+            color_type: blank-card
+            styles:
+              card:
+                - height: 80px
+
+          # SECTION 5: FLOATING FOOTER - Action Bar
+          - type: horizontal-stack
+            cards:
+              # BUTTON 1: INSPECT MODE
+              - type: custom:mushroom-template-card
+                entity: input_boolean.inspection_mode
+                primary: Inspect
+                icon: mdi:flashlight
+                icon_color: "{{ 'yellow' if is_state(entity, 'on') else 'grey' }}"
+                tap_action:
+                  action: call-service
+                  service: script.toggle_inspection_mode
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(30, 30, 30, 0.85) !important;
+                      border-radius: 15px !important;
+                      backdrop-filter: blur(10px) !important;
+                      -webkit-backdrop-filter: blur(10px) !important;
+                    }
+
+              # BUTTON 2: DESKTOP LINK
+              - type: custom:mushroom-template-card
+                primary: Desktop
+                icon: mdi:monitor
+                icon_color: blue
+                tap_action:
+                  action: navigate
+                  navigation_path: /sproutie-os
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(30, 30, 30, 0.85) !important;
+                      border-radius: 15px !important;
+                      backdrop-filter: blur(10px) !important;
+                      -webkit-backdrop-filter: blur(10px) !important;
+                    }
+
+# ============================================================
+      # ROOT CARD 2: THE POPUP SYSTEM
+      # This stack contains the Bubble Card + Content.
+      # It is SEPARATE from the Dashboard stack above so it can collapse safely.
+      # ============================================================
+      
+      # ============================================================
+      # 1. MAIN HUB: THE BATCH ACTIONS MENU
+      # Triggered by: Tapping a specific crop card
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#batch-actions"
+            name: Batch Actions
+            icon: mdi:sprout
+            margin_top_mobile: "30vh"
+            margin_top_desktop: "50vh"
+            width_desktop: "600px"
+            bg_color: "#1c1c1e"
+            bg_opacity: "100"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+              .bubble-pop-up-container::before {
+                content: ''; display: block; width: 40px; height: 5px;
+                background: rgba(255, 255, 255, 0.2); border-radius: 3px;
+                margin: 12px auto 0 auto;
+              }
+
+          # --- HUB BUTTONS ---
+          - type: vertical-stack
+            cards:
+              - type: grid
+                columns: 2
+                square: false
+                cards:
+                  # WATER BUTTON -> Opens Water Menu
+                  - type: custom:mushroom-template-card
+                    primary: Water
+                    icon: mdi:water
+                    icon_color: blue
+                    layout: vertical
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#water-actions"
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(33, 150, 243, 0.2) !important; }
+
+                  # NOTE BUTTON -> Opens Note Form
+                  - type: custom:mushroom-template-card
+                    primary: Note
+                    icon: mdi:note-text
+                    icon_color: amber
+                    layout: vertical
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#note-actions"
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(255, 193, 7, 0.2) !important; }
+
+                  # PHASE BUTTON -> Opens Phase Menu
+                  - type: custom:mushroom-template-card
+                    primary: Phase
+                    icon: mdi:leaf
+                    icon_color: green
+                    layout: vertical
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#phase-actions"
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(76, 175, 80, 0.2) !important; }
+
+                  # HARVEST BUTTON -> Go to Desktop
+                  - type: custom:mushroom-template-card
+                    primary: Harvest
+                    icon: mdi:basket
+                    icon_color: orange
+                    layout: vertical
+                    tap_action:
+                      action: navigate
+                      navigation_path: /sproutie-os
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(255, 152, 0, 0.2) !important; }
+              
+              # Close Button
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:close
+                    content: Close
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#"
+
+      # ============================================================
+      # 2. SUB-MENU: WATER BUTTONS
+      # Fast interactions: Tap button -> Log immediately
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#water-actions"
+            name: Select Water Type
+            icon: mdi:water
+            show_header: true
+            button_type: name
+            margin_top_mobile: "50vh"
+            bg_color: "#1c1c1e"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+
+          - type: vertical-stack
+            cards:
+              # BUTTON 1: TOP MIST
+              - type: custom:mushroom-template-card
+                primary: Top Mist (H2O2)
+                secondary: "Sanitizing Spray"
+                icon: mdi:spray
+                icon_color: cyan
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: water
+                    water_type: "Top Mist with H2O2"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 8px; background: rgba(0, 188, 212, 0.15) !important; }
+
+              # BUTTON 2: BOTTOM WATER
+              - type: custom:mushroom-template-card
+                primary: Bottom Water
+                secondary: "Standard Refill"
+                icon: mdi:water-pump
+                icon_color: blue
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: water
+                    water_type: "Bottom Water"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 8px; background: rgba(33, 150, 243, 0.15) !important; }
+
+              # BUTTON 3: NUTRIENT FEED
+              - type: custom:mushroom-template-card
+                primary: Nutrient Feed
+                secondary: "Add Fertilizer"
+                icon: mdi:flask
+                icon_color: purple
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: water
+                    water_type: "Nutrients"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 16px; background: rgba(156, 39, 176, 0.15) !important; }
+
+              # BACK BUTTON
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:arrow-left
+                    content: Back
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#batch-actions"
+
+      # ============================================================
+      # 3. SUB-MENU: NOTE ENTRY
+      # Text Input -> Submit
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#note-actions"
+            name: Add Note
+            icon: mdi:note-edit
+            margin_top_mobile: "50vh"
+            bg_color: "#1c1c1e"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+
+          - type: vertical-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_text.event_note
+                    name: Note Content
+                    icon: mdi:pencil
+              
+              - type: custom:mushroom-template-card
+                primary: Save Note
+                icon: mdi:content-save
+                icon_color: amber
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: note
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-top: 12px; background: rgba(255, 193, 7, 0.2) !important; }
+
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:arrow-left
+                    content: Back
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#batch-actions"
+
+      # ============================================================
+      # 4. SUB-MENU: PHASE CHANGE
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#phase-actions"
+            name: Change Phase
+            icon: mdi:leaf
+            margin_top_mobile: "50vh"
+            bg_color: "#1c1c1e"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+
+          - type: vertical-stack
+            cards:
+              # BUTTON 1: GERMINATION
+              - type: custom:mushroom-template-card
+                primary: Germination
+                icon: mdi:seed
+                icon_color: brown
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: phase
+                    phase: "Germination"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 8px; background: rgba(121, 85, 72, 0.2) !important; }
+
+              # BUTTON 2: GROWING
+              - type: custom:mushroom-template-card
+                primary: Growing
+                icon: mdi:sprout
+                icon_color: green
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: phase
+                    phase: "Growing"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 8px; background: rgba(76, 175, 80, 0.2) !important; }
+
+              # BUTTON 3: BLACKOUT
+              - type: custom:mushroom-template-card
+                primary: Blackout
+                icon: mdi:brightness-2
+                icon_color: indigo
+                tap_action:
+                  action: call-service
+                  service: script.sproutie_log_activity
+                  data:
+                    action: phase
+                    phase: "Blackout"
+                    slot: "{{ states('input_text.selected_batch') }}"
+                card_mod:
+                  style: |
+                    ha-card { margin-bottom: 16px; background: rgba(63, 81, 181, 0.2) !important; }
+
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:arrow-left
+                    content: Back
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#batch-actions"

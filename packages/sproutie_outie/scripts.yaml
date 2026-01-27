@@ -218,27 +218,47 @@ script:
 
   toggle_inspection_mode:
     alias: "Toggle Inspection Mode"
-    description: "Save scene, kill grow lights, turn on Aux light"
+    description: "Toggle inspection: saves light state, kills grow lights, enables camera flash. Restores on toggle off."
     sequence:
-      - service: scene.create
-        data:
-          scene_id: "sproutie_pre_inspection_scene"
-          snapshot_entities:
-            - switch.top_shelf_lights
-            - switch.bottom_shelf_lights
-            - switch.aux_light
-            - input_boolean.inspection_mode
-      - service: switch.turn_off
-        target:
-          entity_id:
-            - switch.top_shelf_lights
-            - switch.bottom_shelf_lights
-      - service: switch.turn_on
-        target:
-          entity_id: switch.aux_light
-      - service: input_boolean.toggle
-        target:
-          entity_id: input_boolean.inspection_mode
+      - choose:
+          # CASE: Inspection is OFF -> Turn it ON
+          - conditions:
+              - condition: state
+                entity_id: input_boolean.inspection_mode
+                state: "off"
+            sequence:
+              # Save current light state
+              - service: scene.create
+                data:
+                  scene_id: "sproutie_pre_inspection_scene"
+                  snapshot_entities:
+                    - switch.top_shelf_lights
+                    - switch.bottom_shelf_lights
+                    - switch.camera_flash
+              # Kill grow lights
+              - service: switch.turn_off
+                target:
+                  entity_id:
+                    - switch.top_shelf_lights
+                    - switch.bottom_shelf_lights
+              # Enable camera flash (white light)
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.camera_flash
+              # Set inspection mode ON
+              - service: input_boolean.turn_on
+                target:
+                  entity_id: input_boolean.inspection_mode
+        # DEFAULT: Inspection is ON -> Turn it OFF (restore)
+        default:
+          # Restore saved scene
+          - service: scene.turn_on
+            target:
+              entity_id: scene.sproutie_pre_inspection_scene
+          # Set inspection mode OFF
+          - service: input_boolean.turn_off
+            target:
+              entity_id: input_boolean.inspection_mode
 
   sproutie_plant_batch:
     alias: "Plant Batch"
@@ -495,6 +515,18 @@ script:
     alias: "Sequence Crop Photography"
     description: "Turns on the flash, takes snapshots for all active crops, and turns off the flash"
     sequence:
+      - service: scene.create
+        data:
+          scene_id: "sproutie_pre_photo_scene"
+          snapshot_entities:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+      - service: switch.turn_off
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+      - delay: "00:00:01"
       - service: switch.turn_on
         target:
           entity_id: switch.camera_flash
@@ -531,6 +563,7 @@ script:
                 entity_id: "{{ camera_entity }}"
               data:
                 filename: "/config/www/snapshots/{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
+              continue_on_error: true
             - delay: "00:00:02"
             - service: shell_command.copy_snapshot
               data:
@@ -541,6 +574,7 @@ script:
                   {% else %}
                     /media/snapshots/bottom_eyes_latest.jpg
                   {% endif %}
+              continue_on_error: true
             - service: rest_command.sproutie_push_to_elastic
               data:
                 timestamp: "{{ now().isoformat() }}"
@@ -551,10 +585,16 @@ script:
                 photo_url: "/local/snapshots/{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
                 temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
                 humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+              continue_on_error: true
       - delay: "00:00:02"
       - service: switch.turn_off
         target:
           entity_id: switch.camera_flash
+        continue_on_error: true
+      - service: scene.turn_on
+        target:
+          entity_id: scene.sproutie_pre_photo_scene
+        continue_on_error: true
       - service: homeassistant.update_entity
         target:
           entity_id:
@@ -593,3 +633,25 @@ script:
       - service: browser_mod.navigate
         data:
           path: "/sproutie-os/crop-details"
+
+  sproutie_log_activity:
+    alias: "Sproutie Log Activity"
+    description: "UI helper to log basic activities (Water, Note, Phase)"
+    fields:
+      action:
+        description: "The action to log (water, note, phase)"
+      slot:
+        description: "Optional slot ID"
+    sequence:
+      - variables:
+          target_slot: "{{ slot | default(states('input_text.selected_batch')) }}"
+          event_type: >-
+            {% if action == 'water' %}Water{% elif action == 'note' %}Note{% elif action == 'phase' %}Phase Change{% else %}Unknown{% endif %}
+          event_detail: >-
+            {% if action == 'phase' %}{{ states('input_select.growth_phase') }}{% else %}{{ '' }}{% endif %}
+      - service: script.sproutie_log_event
+        data:
+          slot_id: "{{ target_slot }}"
+          event_type: "{{ event_type }}"
+          detail: "{{ event_detail }}"
+          take_photo: "{{ true if action == 'phase' else false }}"

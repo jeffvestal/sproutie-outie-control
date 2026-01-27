@@ -1,0 +1,72 @@
+title: Test Dashboard
+
+views:
+  - title: Bubble Test
+    path: test
+    icon: mdi:test-tube
+    # type: panel  <-- CRITICAL: Ensure this is NOT present. Standard view is safer.
+    cards:
+      - type: vertical-stack
+        cards:
+          # 1. THE TRIGGER BUTTON
+          # This navigates to the hash, which triggers the popup to open.
+          - type: custom:mushroom-chips-card
+            alignment: center
+            chips:
+              - type: template
+                icon: mdi:arrow-up-bold-box-outline
+                content: Open Test Popup
+                tap_action:
+                  action: navigate
+                  navigation_path: "#test-popup"
+
+          # 2. THE BUBBLE CARD POP-UP DEFINITION
+          # This must be placed BEFORE the content it hides.
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#test-popup"   # <--- THE FIX: Must include the '#'
+            name: Test Popup
+            icon: mdi:check-circle
+            margin_top_mobile: "50vh"
+            margin_top_desktop: "50vh"
+            width_desktop: "500px"
+            bg_color: "#1c1c1e"
+            bg_opacity: "100"
+            styles: |
+              .bubble-pop-up-container {
+                  border-radius: 24px 24px 0 0 !important;
+              }
+              .bubble-pop-up-container::before {
+                  content: '';
+                  display: block;
+                  width: 40px;
+                  height: 5px;
+                  background: rgba(255, 255, 255, 0.2);
+                  border-radius: 3px;
+                  margin: 12px auto 0 auto;
+              }
+
+          # 3. THE POPUP CONTENT
+          # This vertical stack is what gets hidden and shown by the card above.
+          - type: vertical-stack
+            cards:
+              - type: custom:mushroom-template-card
+                primary: "It Works!"
+                secondary: "Bubble Card is loaded and configured correctly."
+                icon: mdi:party-popper
+                icon_color: green
+                
+              - type: entities
+                entities:
+                  - entity: input_text.event_note
+                    name: Test Input Text
+              
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:close
+                    content: Close
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#"

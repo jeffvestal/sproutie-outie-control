@@ -40,6 +40,16 @@ lovelace:
       title: Sproutie OS
       icon: mdi:sprout
       filename: ui-lovelace-v3.yaml
+    sproutie-mobile:
+      mode: yaml
+      title: Sproutie Mobile
+      icon: mdi:cellphone
+      filename: ui-lovelace-mobile.yaml
+    sproutie-test:
+      mode: yaml
+      title: Test Dashboard
+      icon: mdi:test-tube
+      filename: ui-lovelace-test.yaml
   resources:
     - url: /hacsfiles/button-card/button-card.js
       type: module
@@ -57,4 +67,6 @@ lovelace:
       type: module
     # browser_mod.js is auto-registered by the integration - no manual resource needed
     - url: /hacsfiles/apexcharts-card/apexcharts-card.js
+      type: module
+    - url: /hacsfiles/Bubble-Card/bubble-card.js
       type: module
