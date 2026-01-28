@@ -426,15 +426,17 @@ views:
               card:
                 - height: 80px
 
-          # SECTION 5: FLOATING FOOTER - Action Bar
+          # ============================================================
+          # SECTION 5: FLOATING FOOTER - Command Bar
+          # ============================================================
           - type: horizontal-stack
             cards:
-              # BUTTON 1: INSPECT MODE
+              # BUTTON 1: INSPECT MODE (Toggle)
               - type: custom:mushroom-template-card
                 entity: input_boolean.inspection_mode
-                primary: Inspect
                 icon: mdi:flashlight
                 icon_color: "{{ 'yellow' if is_state(entity, 'on') else 'grey' }}"
+                layout: vertical
                 tap_action:
                   action: call-service
                   service: script.toggle_inspection_mode
@@ -442,16 +444,47 @@ views:
                   style: |
                     ha-card {
                       background: rgba(30, 30, 30, 0.85) !important;
-                      border-radius: 15px !important;
+                      border-radius: 12px !important;
                       backdrop-filter: blur(10px) !important;
-                      -webkit-backdrop-filter: blur(10px) !important;
                     }
 
-              # BUTTON 2: DESKTOP LINK
+              # 2. CONTROLS (New Popup)
               - type: custom:mushroom-template-card
-                primary: Desktop
-                icon: mdi:monitor
+                icon: mdi:toggle-switch
                 icon_color: blue
+                layout: vertical
+                tap_action:
+                  action: navigate
+                  navigation_path: "#controls-popup"
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(30, 30, 30, 0.85) !important;
+                      border-radius: 12px !important;
+                      backdrop-filter: blur(10px) !important;
+                    }
+
+              # 3. SCHEDULES (New Popup)
+              - type: custom:mushroom-template-card
+                icon: mdi:clock-edit
+                icon_color: purple
+                layout: vertical
+                tap_action:
+                  action: navigate
+                  navigation_path: "#schedules-popup"
+                card_mod:
+                  style: |
+                    ha-card {
+                      background: rgba(30, 30, 30, 0.85) !important;
+                      border-radius: 12px !important;
+                      backdrop-filter: blur(10px) !important;
+                    }
+
+              # 4. DESKTOP (Link)
+              - type: custom:mushroom-template-card
+                icon: mdi:monitor
+                icon_color: grey
+                layout: vertical
                 tap_action:
                   action: navigate
                   navigation_path: /sproutie-os
@@ -459,11 +492,9 @@ views:
                   style: |
                     ha-card {
                       background: rgba(30, 30, 30, 0.85) !important;
-                      border-radius: 15px !important;
+                      border-radius: 12px !important;
                       backdrop-filter: blur(10px) !important;
-                      -webkit-backdrop-filter: blur(10px) !important;
                     }
-
 # ============================================================
       # ROOT CARD 2: THE POPUP SYSTEM
       # This stack contains the Bubble Card + Content.
@@ -768,3 +799,188 @@ views:
                     tap_action:
                       action: navigate
                       navigation_path: "#batch-actions"
+
+      # ============================================================
+      # 5. CONTROLS POPUP (Manual Overrides)
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#controls-popup"
+            name: System Controls
+            icon: mdi:toggle-switch
+            margin_top_mobile: "40vh"
+            bg_color: "#1c1c1e"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+
+          - type: vertical-stack
+            cards:
+              # SYSTEM MASTER (Production Mode)
+              - type: custom:mushroom-template-card
+                entity: input_boolean.production_mode
+                primary: "Production Mode"
+                secondary: "{{ 'ACTIVE' if is_state(entity, 'on') else 'PAUSED' }}"
+                icon: mdi:power
+                icon_color: "{{ 'green' if is_state(entity, 'on') else 'red' }}"
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                    ha-card { background: rgba(255, 255, 255, 0.05) !important; margin-bottom: 12px; }
+
+              # DEVICE GRID
+              - type: grid
+                columns: 2
+                square: false
+                cards:
+                  - type: custom:mushroom-entity-card
+                    entity: switch.top_shelf_lights
+                    name: Top Lights
+                    icon: mdi:lightbulb
+                    tap_action: { action: toggle }
+                    layout: vertical
+                    
+                  - type: custom:mushroom-entity-card
+                    entity: switch.bottom_shelf_lights
+                    name: Bot Lights
+                    icon: mdi:lightbulb
+                    tap_action: { action: toggle }
+                    layout: vertical
+
+                  - type: custom:mushroom-entity-card
+                    entity: switch.top_shelf_fan
+                    name: Top Fan
+                    icon: mdi:fan
+                    tap_action: { action: toggle }
+                    layout: vertical
+
+                  - type: custom:mushroom-entity-card
+                    entity: switch.bottom_shelf_fan
+                    name: Bot Fan
+                    icon: mdi:fan
+                    tap_action: { action: toggle }
+                    layout: vertical
+                    
+                  - type: custom:mushroom-entity-card
+                    entity: switch.exhaust_fan
+                    name: Exhaust
+                    icon: mdi:air-filter
+                    tap_action: { action: toggle }
+                    layout: vertical
+
+              # CLOSE BUTTON
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:close
+                    content: Close
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#"
+
+      # ============================================================
+      # 6. SCHEDULES POPUP (Timers & Settings)
+      # ============================================================
+      - type: vertical-stack
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#schedules-popup"
+            name: Schedules
+            icon: mdi:clock-edit
+            margin_top_mobile: "30vh" 
+            bg_color: "#1c1c1e"
+            styles: |
+              .bubble-pop-up-container { border-radius: 24px 24px 0 0 !important; }
+
+          - type: vertical-stack
+            cards:
+              # LIGHT SCHEDULE
+              - type: custom:mushroom-template-card
+                entity: input_boolean.schedule_lights_enabled
+                primary: "Light Schedule"
+                secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                icon: mdi:lightbulb-auto
+                icon_color: "{{ 'amber' if is_state(entity, 'on') else 'grey' }}"
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                     ha-card { background: transparent !important; border: none; box-shadow: none; }
+
+              - type: horizontal-stack
+                cards:
+                  - type: custom:mushroom-entity-card
+                    entity: input_datetime.lights_on_time
+                    name: ON Time
+                    layout: vertical
+                    fill_container: true
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
+                  - type: custom:mushroom-entity-card
+                    entity: input_datetime.lights_off_time
+                    name: OFF Time
+                    layout: vertical
+                    fill_container: true
+                    card_mod:
+                      style: |
+                        ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
+              
+              # EXHAUST CYCLE
+              - type: custom:mushroom-template-card
+                entity: input_boolean.schedule_exhaust_enabled
+                primary: "Exhaust Cycle"
+                secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                icon: mdi:fan-auto
+                icon_color: "{{ 'teal' if is_state(entity, 'on') else 'grey' }}"
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                     ha-card { background: transparent !important; border: none; box-shadow: none; margin-top: 12px; }
+
+              - type: entities
+                card_mod:
+                  style: |
+                    ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
+                entities:
+                  - entity: input_number.exhaust_on_duration
+                    name: Run Duration (min)
+                  - entity: input_number.exhaust_off_duration
+                    name: Pause Duration (min)
+
+              # PHOTO INTERVAL
+              - type: custom:mushroom-template-card
+                entity: input_boolean.schedule_photos_enabled
+                primary: "Photo Schedule"
+                secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                icon: mdi:camera
+                icon_color: "{{ 'blue' if is_state(entity, 'on') else 'grey' }}"
+                tap_action:
+                  action: toggle
+                card_mod:
+                  style: |
+                     ha-card { background: transparent !important; border: none; box-shadow: none; margin-top: 12px; }
+
+              - type: entities
+                card_mod:
+                  style: |
+                    ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
+                entities:
+                  - entity: input_number.photo_interval
+                    name: Snapshot Interval (min)
+
+              # CLOSE BUTTON
+              - type: custom:mushroom-chips-card
+                alignment: center
+                chips:
+                  - type: template
+                    icon: mdi:close
+                    content: Close
+                    tap_action:
+                      action: navigate
+                      navigation_path: "#"

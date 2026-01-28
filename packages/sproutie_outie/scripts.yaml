@@ -234,7 +234,8 @@ script:
                   snapshot_entities:
                     - switch.top_shelf_lights
                     - switch.bottom_shelf_lights
-                    - switch.camera_flash
+                    - switch.aux_light
+                    - input_boolean.inspection_mode
               # Kill grow lights
               - service: switch.turn_off
                 target:
@@ -244,7 +245,7 @@ script:
               # Enable camera flash (white light)
               - service: switch.turn_on
                 target:
-                  entity_id: switch.camera_flash
+                  entity_id: switch.aux_light
               # Set inspection mode ON
               - service: input_boolean.turn_on
                 target:
@@ -552,28 +553,37 @@ script:
             - variables:
                 batch_id: "{{ repeat.item[0] }}"
                 slot_id: "{{ repeat.item[1] }}"
+                # ADDED: Get the crop name from input_text
+                crop_data: "{{ states('input_text.slot_' ~ slot_id | lower ~ '_data') | from_json(default={}) }}"
+                crop_name: "{{ crop_data.get('crop', 'unknown') | replace(' ', '_') | lower }}"
                 camera_entity: >-
                   {% if slot_id[0] | upper == 'A' %}
                     camera.top_eyes
                   {% else %}
                     camera.bottom_eyes
                   {% endif %}
+                # CHANGED: New filename format
+                full_filename: "{{ crop_name }}_{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
             - service: camera.snapshot
               target:
                 entity_id: "{{ camera_entity }}"
               data:
-                filename: "/config/www/snapshots/{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
+                filename: "/config/www/snapshots/{{ full_filename }}"
               continue_on_error: true
             - delay: "00:00:02"
             - service: shell_command.copy_snapshot
               data:
-                source: "/config/www/snapshots/{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
+                source: "/config/www/snapshots/{{ full_filename }}"
                 target: >-
                   {% if slot_id[0] | upper == 'A' %}
                     /media/snapshots/top_eyes_latest.jpg
                   {% else %}
                     /media/snapshots/bottom_eyes_latest.jpg
                   {% endif %}
+              continue_on_error: true
+            - service: shell_command.upload_snapshot_to_gcp
+              data:
+                filename: "/config/www/snapshots/{{ full_filename }}"
               continue_on_error: true
             - service: rest_command.sproutie_push_to_elastic
               data:
@@ -582,7 +592,7 @@ script:
                 slot_id: "{{ slot_id }}"
                 event_type: "Snapshot"
                 detail: "Periodic photography sequence snapshot"
-                photo_url: "/local/snapshots/{{ batch_id | default('unknown') }}_{{ timestamp }}.jpg"
+                photo_url: "/local/snapshots/{{ full_filename }}"
                 temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
                 humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
               continue_on_error: true

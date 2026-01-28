@@ -28,7 +28,8 @@ rest_command: !include rest_commands.yaml
 
 shell_command:
   copy_snapshot: 'cp "{{ source }}" "{{ target }}"'
-  upload_snapshot_to_gcp: 'curl -X POST -F "file=@{{ filename }}" -H "Authorization: Bearer !secret gcp_bridge_token" !secret gcp_upload_url'
+  upload_snapshot_to_gcp: !secret gcp_upload_command
+  test_curl: 'curl -v -X POST -F "file=@/config/www/snapshots/test_image.jpg" -H "Authorization: Bearer sproutie-secret-token-123" https://us-central1-gen-lang-client-0516054761.cloudfunctions.net/upload_snapshot'
   log_json: 'echo "{{ msg }}" >> /config/.cursor/debug.log'
 
 # Load Lovelace in YAML mode
