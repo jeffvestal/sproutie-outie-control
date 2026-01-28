@@ -71,7 +71,7 @@ views:
                 decimals: 1
             card_mod:
               style: |
-                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-bottom: 16px !important; }
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-top: 8px !important; margin-bottom: 16px !important; }
 
           - type: custom:apexcharts-card
             graph_span: 24h
@@ -314,7 +314,104 @@ views:
               navigation_path: /sproutie-os/workbench
             card_mod:
               style: |
-                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; border: none !important; margin-top: 16px !important; }
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; border: none !important; margin-top: 16px !important; margin-bottom: 16px !important; }
+
+          # Spacer to avoid overlap with chart
+          - type: custom:button-card
+            color_type: blank-card
+            styles:
+              card:
+                - height: 12px
+
+          # --- POWER MONITORING ---
+          - type: custom:apexcharts-card
+            graph_span: 24h
+            header:
+              show: true
+              title: Power Usage
+              show_states: true
+              colorize_states: true
+            now:
+              show: true
+              label: Now
+            apex_config:
+              chart:
+                height: 230
+              xaxis:
+                labels:
+                  format: HH:mm
+                  show: true
+                  rotate: -45
+              grid:
+                show: true
+                borderColor: "rgba(255,255,255,0.05)"
+              legend:
+                show: true
+                position: top
+            series:
+              - entity: sensor.sproutie_outie_smart_power_current_consumption
+                name: Total
+                color: '#e74c3c'
+                stroke_width: 3
+                curve: smooth
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.top_shelf_lights_current_consumption
+                name: Top Lights
+                color: '#ffb74d'
+                stroke_width: 2
+                curve: stepline
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.bottom_shelf_lights_current_consumption
+                name: Btm Lights
+                color: '#ff9800'
+                stroke_width: 2
+                curve: stepline
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.top_shelf_fan_current_consumption
+                name: Top Fan
+                color: '#4dd0e1'
+                stroke_width: 1
+                curve: smooth
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.bottom_shelf_fan_current_consumption
+                name: Btm Fan
+                color: '#00bcd4'
+                stroke_width: 1
+                curve: smooth
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.exhaust_fan_current_consumption
+                name: Exhaust
+                color: '#009688'
+                stroke_width: 2
+                curve: smooth
+                group_by:
+                  func: avg
+                  duration: 5min
+              - entity: sensor.camera_flash_current_consumption
+                name: Camera Flash
+                color: '#9c27b0'
+                stroke_width: 2
+                curve: smooth
+                group_by:
+                  func: avg
+                  duration: 5min
+            yaxis:
+              - show: true
+                decimals: 0
+                min: 0
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; margin-bottom: 16px !important; }
 
       # --- COLUMN 3: OPERATIONS ---
       - type: vertical-stack
