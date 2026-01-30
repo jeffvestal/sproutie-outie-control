@@ -44,6 +44,11 @@ input_datetime:
     has_date: true
     has_time: true
     initial: "1970-01-01 00:00:00"
+  exhaust_last_off_time:
+    name: "Exhaust Last Off Time"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
 
 input_number:
   water_amount:
@@ -58,6 +63,7 @@ input_number:
     min: 0
     max: 60
     step: 1
+    mode: box
     unit_of_measurement: "min"
     icon: mdi:fan-clock
   exhaust_off_duration:
@@ -65,6 +71,7 @@ input_number:
     min: 0
     max: 60
     step: 1
+    mode: box
     unit_of_measurement: "min"
     icon: mdi:timer-off
   seed_weight:
@@ -98,6 +105,7 @@ input_number:
     max: 120
     step: 5
     initial: 60
+    mode: box
     unit_of_measurement: "min"
     icon: mdi:camera-timer
   photo_refresh_trigger:
@@ -106,6 +114,24 @@ input_number:
     max: 9999999999
     step: 1
     mode: box
+  humidity_trigger_max:
+    name: "Humidity Max (%)"
+    min: 50
+    max: 95
+    step: 1
+    initial: 75
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:water-percent
+  humidity_trigger_min:
+    name: "Humidity Min (%)"
+    min: 40
+    max: 90
+    step: 1
+    initial: 65
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:water-percent-alert
 
 # --- CROP INVENTORY ---
 input_text:
@@ -227,3 +253,10 @@ input_select:
       - "Single Slot (Jar)"
     initial: "Full Shelf (10x20)"
     icon: mdi:arrow-expand-horizontal
+  exhaust_mode:
+    name: "Exhaust Control Mode"
+    options:
+      - "Schedule"
+      - "Humidity"
+    initial: "Schedule"
+    icon: mdi:fan-auto

@@ -571,15 +571,32 @@ views:
                       style: |
                         ha-card { background: rgba(76, 175, 80, 0.2) !important; }
 
-                  # HARVEST BUTTON -> Go to Desktop
+                  # HARVEST BUTTON -> Open harvest popup
                   - type: custom:mushroom-template-card
                     primary: Harvest
                     icon: mdi:basket
                     icon_color: orange
                     layout: vertical
                     tap_action:
-                      action: navigate
-                      navigation_path: /sproutie-os
+                      action: fire-dom-event
+                      browser_mod:
+                        service: browser_mod.popup
+                        data:
+                          title: Harvest Batch
+                          content:
+                            type: vertical-stack
+                            cards:
+                              - type: entities
+                                entities:
+                                  - entity: input_number.harvest_weight
+                                  - entity: input_text.event_note
+                              - type: custom:mushroom-template-card
+                                primary: Confirm Harvest
+                                icon: mdi:check
+                                icon_color: orange
+                                tap_action:
+                                  action: call-service
+                                  service: script.sproutie_harvest_batch
                     card_mod:
                       style: |
                         ha-card { background: rgba(255, 152, 0, 0.2) !important; }
@@ -930,11 +947,11 @@ views:
                       style: |
                         ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
               
-              # EXHAUST CYCLE
+              # EXHAUST CONTROL
               - type: custom:mushroom-template-card
                 entity: input_boolean.schedule_exhaust_enabled
-                primary: "Exhaust Cycle"
-                secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                primary: "Exhaust Control"
+                secondary: "{{ states('input_select.exhaust_mode') }} - {{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
                 icon: mdi:fan-auto
                 icon_color: "{{ 'teal' if is_state(entity, 'on') else 'grey' }}"
                 tap_action:
@@ -948,10 +965,29 @@ views:
                   style: |
                     ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
                 entities:
+                  - entity: input_select.exhaust_mode
+                    name: Mode
                   - entity: input_number.exhaust_on_duration
-                    name: Run Duration (min)
+                    name: Run (min)
                   - entity: input_number.exhaust_off_duration
-                    name: Pause Duration (min)
+                    name: Pause/Snooze (min)
+
+              # Humidity thresholds - only show when in Humidity mode
+              - type: conditional
+                conditions:
+                  - condition: state
+                    entity: input_select.exhaust_mode
+                    state: "Humidity"
+                card:
+                  type: entities
+                  card_mod:
+                    style: |
+                      ha-card { background: rgba(255, 255, 255, 0.05) !important; border: none; }
+                  entities:
+                    - entity: input_number.humidity_trigger_max
+                      name: Trigger ON (%)
+                    - entity: input_number.humidity_trigger_min
+                      name: Trigger OFF (%)
 
               # PHOTO INTERVAL
               - type: custom:mushroom-template-card

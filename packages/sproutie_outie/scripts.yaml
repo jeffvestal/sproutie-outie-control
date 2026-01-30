@@ -356,9 +356,17 @@ script:
     description: "Harvests and clears all slots in a batch"
     fields:
       batch_id:
-        description: "The Batch ID to harvest"
+        description: "The Batch ID to harvest (optional - falls back to selected_batch)"
         example: "1768093958"
     sequence:
+      - variables:
+          # Use provided batch_id, or fall back to selected_batch
+          batch_id: >
+            {% if batch_id is defined and batch_id | string | trim not in ['', 'unknown', 'None', 'none', 'unavailable', '{{ states', "{{ states"] %}
+              {{ batch_id }}
+            {% else %}
+              {{ states('input_text.selected_batch') }}
+            {% endif %}
       - if:
           - condition: template
             value_template: "{{ batch_id | string | trim in ['', 'unknown', 'None', 'none', 'unavailable'] }}"

@@ -238,11 +238,16 @@ views:
                     "icon": icon,
                     "icon_color": color,
                     "tap_action": {
-                      "action": "call-service",
-                      "service": "script.sproutie_ui_select_crop",
-                      "data": {
-                        "crop": target_crop,
-                        "batch_id": ns_stats.first_id | string
+                      "action": "fire-dom-event",
+                      "browser_mod": {
+                        "service": "browser_mod.sequence",
+                        "data": {
+                          "sequence": [
+                            { "service": "input_text.set_value", "data": { "entity_id": "input_text.selected_crop", "value": target_crop } },
+                            { "service": "input_text.set_value", "data": { "entity_id": "input_text.selected_batch", "value": ns_stats.first_id | string } },
+                            { "service": "browser_mod.navigate", "data": { "path": "/sproutie-os/crop-details" } }
+                          ]
+                        }
                       }
                     },
                     "card_mod": {
@@ -750,21 +755,23 @@ views:
                         }
                         .card-content { padding: 0 0 0 16px !important; }
 
-                  # --- EXHAUST SCHEDULE ---
+                  # --- EXHAUST CONTROL ---
                   - type: custom:mushroom-template-card
                     entity: input_boolean.schedule_exhaust_enabled
-                    primary: "Exhaust Schedule"
-                    secondary: "{{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
+                    primary: "Exhaust Control"
+                    secondary: "{{ states('input_select.exhaust_mode') }} Mode - {{ 'ENABLED' if is_state(entity, 'on') else 'DISABLED' }}"
                     icon: mdi:fan-auto
                     icon_color: "{{ 'teal' if is_state(entity, 'on') else 'grey' }}"
                     tap_action:
                       action: toggle
                   - type: entities
                     entities:
+                      - entity: input_select.exhaust_mode
+                        name: Mode
                       - entity: input_number.exhaust_on_duration
                         name: Run (min)
                       - entity: input_number.exhaust_off_duration
-                        name: Pause (min)
+                        name: Pause/Snooze (min)
                     card_mod:
                       style: |
                         ha-card { 
@@ -775,6 +782,29 @@ views:
                           transition: opacity 0.3s ease;
                         }
                         .card-content { padding: 0 0 0 16px !important; }
+                  # Humidity thresholds - only show when in Humidity mode
+                  - type: conditional
+                    conditions:
+                      - condition: state
+                        entity: input_select.exhaust_mode
+                        state: "Humidity"
+                    card:
+                      type: entities
+                      entities:
+                        - entity: input_number.humidity_trigger_max
+                          name: Trigger ON (%)
+                        - entity: input_number.humidity_trigger_min
+                          name: Trigger OFF (%)
+                      card_mod:
+                        style: |
+                          ha-card { 
+                            background: transparent !important; 
+                            border: none !important; 
+                            box-shadow: none !important;
+                            opacity: {{ '1.0' if is_state('input_boolean.schedule_exhaust_enabled', 'on') else '0.4' }};
+                            transition: opacity 0.3s ease;
+                          }
+                          .card-content { padding: 0 0 0 16px !important; }
 
                   # --- PHOTO SCHEDULE ---
                   - type: custom:mushroom-template-card
