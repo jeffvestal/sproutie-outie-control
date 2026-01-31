@@ -15,6 +15,9 @@ rest_command:
         "sproutie": {
           {% if event_type == 'System Audit' %}
           "event_type": "System Audit",
+          {% if audit_type is defined and audit_type != '' %}"audit_type": "{{ audit_type }}",{% endif %}
+          {% if device is defined and device != '' %}"device": "{{ device }}",{% endif %}
+          {% if action is defined and action != '' %}"action": "{{ action }}",{% endif %}
           "detail": "{{ detail | default('') }}",
           {% else %}
           "batch_id": "{{ batch_id | default('unknown') }}",
@@ -43,7 +46,7 @@ script:
         description: "Optional representative slot ID (A1-B8)"
         example: "A1"
       event_type:
-        description: "Event type (Water, Phase Change, Issue, Harvest, Note, etc.)"
+        description: "Event type (Water, Phase Change, Issue, Harvest, Note, System Audit, etc.)"
         example: "Phase Change"
       detail:
         description: "Event detail/description"
@@ -51,6 +54,15 @@ script:
       take_photo:
         description: "Whether to capture a photo snapshot"
         default: false
+      audit_type:
+        description: "For System Audit events: Hardware Change, Mode Change, etc."
+        example: "Hardware Change"
+      device:
+        description: "For System Audit events: The device or mode being changed"
+        example: "Exhaust Fan"
+      action:
+        description: "For System Audit events: The action taken (ON, OFF, ACTIVE, INACTIVE)"
+        example: "ON"
     sequence:
       - variables:
           target_slot: >-
@@ -196,6 +208,9 @@ script:
           photo_url: "{{ photo_url }}"
           temp: "{{ current_temp }}"
           humidity: "{{ current_humidity }}"
+          audit_type: "{{ audit_type | default('') }}"
+          device: "{{ device | default('') }}"
+          action: "{{ action | default('') }}"
       - service: browser_mod.notification
         data:
           message: >-
@@ -234,7 +249,7 @@ script:
                   snapshot_entities:
                     - switch.top_shelf_lights
                     - switch.bottom_shelf_lights
-                    - switch.aux_light
+                    - switch.camera_flash
                     - input_boolean.inspection_mode
               # Kill grow lights
               - service: switch.turn_off
@@ -245,7 +260,7 @@ script:
               # Enable camera flash (white light)
               - service: switch.turn_on
                 target:
-                  entity_id: switch.aux_light
+                  entity_id: switch.camera_flash
               # Set inspection mode ON
               - service: input_boolean.turn_on
                 target:
@@ -304,18 +319,7 @@ script:
               "container": container,
               "phase": "Germination",
               "seed_weight": seed_weight,
-              "soak_time": 0,
-              "substrate": "Soil",
-              "notes": "",
-              "harvest_weight": 0,
-              "efficiency": 0,
-              "history": [
-                {
-                  "date": plant_date,
-                  "event": "Planted",
-                  "note": crop ~ " planted in " ~ container
-                }
-              ]
+              "history": []
             } %}
             {{ result | to_json }}
       - repeat:
@@ -550,7 +554,7 @@ script:
               {% if raw not in ['unknown', 'unavailable', 'Empty', ''] %}
                 {% set d = raw | from_json(default={}) %}
                 {% if d.get('id') is defined %}
-                  {% set ns.batches = dict(ns.batches, **{d.get('id'): s}) %}
+                  {% set ns.batches = dict(ns.batches, **{d.get('id') | string: s}) %}
                 {% endif %}
               {% endif %}
             {% endfor %}

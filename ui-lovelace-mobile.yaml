@@ -439,7 +439,9 @@ views:
                 layout: vertical
                 tap_action:
                   action: call-service
-                  service: script.toggle_inspection_mode
+                  service: script.turn_on
+                  target:
+                    entity_id: script.toggle_inspection_mode
                 card_mod:
                   style: |
                     ha-card {

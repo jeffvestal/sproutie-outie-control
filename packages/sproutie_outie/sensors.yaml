@@ -1203,3 +1203,20 @@ sensor:
       - hits
       - total
     scan_interval: 60
+
+  # ═══════════════════════════════════════════════════════════════════════
+  # ELASTICSEARCH ALL LOGS SENSOR
+  # Fetches all recent event logs from Elasticsearch for Data Explorer
+  # ═══════════════════════════════════════════════════════════════════════
+  - platform: rest
+    name: sproutie_all_logs
+    resource: "https://sproutie-outie-ccff9a.es.us-central1.gcp.elastic.cloud:443/sproutie-events/_search?size=100&sort=@timestamp:desc&_source_includes=@timestamp,sproutie.event_type,sproutie.detail,sproutie.batch_id,sproutie.crop,sproutie.audit_type,sproutie.device,sproutie.action"
+    headers:
+      Authorization: !secret es_api_key
+      Content-Type: application/json
+    method: GET
+    value_template: "{{ value_json.hits.total.value | default(0) }}"
+    json_attributes_path: "$.hits"
+    json_attributes:
+      - hits
+    scan_interval: 120

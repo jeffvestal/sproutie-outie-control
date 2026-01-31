@@ -159,6 +159,10 @@ input_text:
   event_note:
     name: "Event Note"
     max: 255
+  log_filter_search:
+    name: "Log Search Filter"
+    max: 100
+    icon: mdi:magnify
 
   # --- THE SLOT MATRIX (A1-A8, B1-B8) ---
   # Each text input stores the JSON state of that slot.
@@ -260,3 +264,18 @@ input_select:
       - "Humidity"
     initial: "Schedule"
     icon: mdi:fan-auto
+  log_filter_event:
+    name: "Log Event Filter"
+    options:
+      - "All"
+      - "System Audit"
+      - "Snapshot"
+      - "Water"
+      - "Phase Change"
+      - "Note"
+      - "Harvested"
+      - "Planted"
+      - "Climate"
+      - "Safety"
+    initial: "All"
+    icon: mdi:filter

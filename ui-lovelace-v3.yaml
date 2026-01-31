@@ -656,8 +656,16 @@ views:
                         icon: mdi:eye
                         icon_color: "{{ 'blue' if is_state(entity, 'on') else 'grey' }}"
                         tap_action:
-                          action: call-service
-                          service: script.toggle_inspection_mode
+                          action: fire-dom-event
+                          browser_mod:
+                            service: browser_mod.sequence
+                            data:
+                              sequence:
+                                - service: browser_mod.toast
+                                  data:
+                                    message: "Toggling inspection mode..."
+                                    duration: 2000
+                                - service: script.toggle_inspection_mode
                       - type: custom:mushroom-template-card
                         entity: switch.exhaust_fan
                         primary: Exhaust
@@ -1117,3 +1125,309 @@ views:
                             tap_action:
                               action: call-service
                               service: script.sproutie_harvest_batch
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # DATA EXPLORER VIEW
+  # Browse and filter all event logs from Elasticsearch
+  # ═══════════════════════════════════════════════════════════════════════════
+  - title: Data Explorer
+    path: data-explorer
+    icon: mdi:database-search
+    type: custom:grid-layout
+    layout:
+      grid-template-columns: 25% 75%
+      grid-template-rows: auto
+      grid-template-areas: |
+        "sidebar main"
+      mediaquery:
+        "(max-width: 1024px)":
+          grid-template-columns: 100%
+          grid-template-areas: |
+            "sidebar"
+            "main"
+    cards:
+      # --- SIDEBAR: FILTERS ---
+      - type: vertical-stack
+        view_layout:
+          grid-area: sidebar
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Filters
+            icon: mdi:filter-variant
+            icon_color: blue
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; padding: 16px !important; }
+            cards:
+              - type: entities
+                card_mod:
+                  style: |
+                    ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                entities:
+                  - entity: input_select.log_filter_event
+                    name: Event Type
+                  - entity: input_text.log_filter_search
+                    name: Search
+
+          - type: custom:mushroom-template-card
+            primary: Event Type Filters
+            icon: mdi:filter-variant
+            icon_color: blue
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 16px !important; }
+                .primary { font-size: 16px !important; font-weight: 600 !important; }
+
+          # Event type quick filter chips
+          - type: custom:auto-entities
+            card:
+              type: custom:mushroom-chips-card
+              alignment: start
+            card_param: chips
+            filter:
+              template: |
+                {%- set current_event = states('input_select.log_filter_event') -%}
+                {%- set events = [
+                  {'name': 'All', 'icon': 'mdi:all-inclusive', 'color': 'cyan'},
+                  {'name': 'System Audit', 'icon': 'mdi:cog', 'color': 'grey'},
+                  {'name': 'Snapshot', 'icon': 'mdi:camera', 'color': 'teal'},
+                  {'name': 'Water', 'icon': 'mdi:water', 'color': 'blue'},
+                  {'name': 'Phase Change', 'icon': 'mdi:swap-horizontal', 'color': 'purple'},
+                  {'name': 'Note', 'icon': 'mdi:note-text', 'color': 'amber'},
+                  {'name': 'Harvested', 'icon': 'mdi:basket', 'color': 'orange'},
+                  {'name': 'Planted', 'icon': 'mdi:sprout', 'color': 'green'},
+                  {'name': 'Climate', 'icon': 'mdi:thermometer', 'color': 'deep-orange'},
+                  {'name': 'Safety', 'icon': 'mdi:alert', 'color': 'red'}
+                ] -%}
+                {%- for evt in events -%}
+                {%- set is_selected = (current_event == evt.name) -%}
+                {{ {
+                  "type": "template",
+                  "content": evt.name,
+                  "icon": evt.icon,
+                  "icon_color": evt.color if is_selected else "grey",
+                  "card_mod": {
+                    "style": ":host { --chip-background: rgba(100, 200, 255, 0.3) !important; }" if is_selected else ""
+                  },
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "input_select.select_option",
+                    "service_data": {
+                      "entity_id": "input_select.log_filter_event",
+                      "option": "All" if is_selected else evt.name
+                    }
+                  }
+                } }},
+                {%- endfor -%}
+
+          - type: custom:mushroom-template-card
+            primary: Crop Filters
+            icon: mdi:sprout
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 12px !important; }
+                .primary { font-size: 16px !important; font-weight: 600 !important; }
+
+          # Crop quick filter chips with toggle behavior
+          - type: custom:auto-entities
+            card:
+              type: custom:mushroom-chips-card
+              alignment: start
+            card_param: chips
+            filter:
+              template: |
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set ns = namespace(crops=[]) -%}
+                {%- for s in slots -%}
+                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                  {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
+                    {%- set d = raw | from_json(default={}) -%}
+                    {%- set crop = d.get('crop', '') -%}
+                    {%- if crop and crop not in ns.crops -%}
+                      {%- set ns.crops = ns.crops + [crop] -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- set current_filter = states('input_text.log_filter_search') -%}
+                {%- set current_filter_lower = current_filter | lower -%}
+                {%- for crop in ns.crops -%}
+                {%- set is_selected = (current_filter_lower == crop | lower) -%}
+                {{ {
+                  "type": "template",
+                  "content": crop,
+                  "icon": "mdi:sprout",
+                  "icon_color": "green" if is_selected else "grey",
+                  "card_mod": {
+                    "style": ":host { --chip-background: rgba(46, 204, 113, 0.4) !important; }" if is_selected else ""
+                  },
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "input_text.set_value",
+                    "service_data": {
+                      "entity_id": "input_text.log_filter_search",
+                      "value": "" if is_selected else crop
+                    }
+                  }
+                } }},
+                {%- endfor -%}
+                {%- set has_filter = (current_filter != '') -%}
+                {{ {
+                  "type": "template",
+                  "content": "Clear",
+                  "icon": "mdi:close-circle",
+                  "icon_color": "red" if has_filter else "grey",
+                  "card_mod": {
+                    "style": ":host { --chip-background: rgba(231, 76, 60, 0.3) !important; }" if has_filter else ""
+                  },
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "input_text.set_value",
+                    "service_data": {
+                      "entity_id": "input_text.log_filter_search",
+                      "value": ""
+                    }
+                  }
+                } }}
+
+          # Refresh button
+          - type: custom:mushroom-template-card
+            primary: Refresh Data
+            icon: mdi:refresh
+            icon_color: teal
+            tap_action:
+              action: call-service
+              service: homeassistant.update_entity
+              service_data:
+                entity_id: sensor.sproutie_all_logs
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.4) !important; border-radius: 12px !important; margin-top: 16px !important; }
+
+      # --- MAIN AREA: DATA TABLE ---
+      - type: vertical-stack
+        view_layout:
+          grid-area: main
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Event Log
+            secondary: "{{ state_attr('sensor.sproutie_all_logs', 'hits') | length | default(0) }} events loaded"
+            icon: mdi:table
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: custom:stack-in-card
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 16px !important; padding: 16px !important; overflow-x: auto !important; }
+            cards:
+              - type: markdown
+                card_mod:
+                  style: |
+                    ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                    ha-markdown { font-size: 13px !important; }
+                    table { width: 100% !important; border-collapse: collapse !important; border-spacing: 0 !important; }
+                    th { background: rgba(52, 152, 219, 0.3) !important; padding: 12px 10px !important; text-align: left !important; font-weight: 600 !important; border-bottom: 2px solid rgba(52, 152, 219, 0.5) !important; }
+                    td { padding: 10px !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; vertical-align: top !important; }
+                    tr:nth-child(even) { background: rgba(255,255,255,0.03) !important; }
+                    tr:hover { background: rgba(52, 152, 219, 0.1) !important; }
+                    .time-col { width: 130px !important; white-space: nowrap !important; color: rgba(255,255,255,0.7) !important; font-family: monospace !important; font-size: 12px !important; }
+                    .event-col { width: 110px !important; }
+                    .subject-col { width: 130px !important; }
+                    .action-col { width: 70px !important; }
+                    .detail-col { min-width: 180px !important; }
+                    .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+                    .badge-water { background: rgba(52, 152, 219, 0.3); color: #5dade2; }
+                    .badge-note { background: rgba(241, 196, 15, 0.3); color: #f7dc6f; }
+                    .badge-harvested { background: rgba(230, 126, 34, 0.3); color: #f0b27a; }
+                    .badge-planted { background: rgba(46, 204, 113, 0.3); color: #58d68d; }
+                    .badge-phase { background: rgba(155, 89, 182, 0.3); color: #bb8fce; }
+                    .badge-climate { background: rgba(26, 188, 156, 0.3); color: #48c9b0; }
+                    .badge-audit { background: rgba(149, 165, 166, 0.3); color: #bdc3c7; }
+                    .badge-snapshot { background: rgba(22, 160, 133, 0.3); color: #1abc9c; }
+                    .badge-safety { background: rgba(231, 76, 60, 0.3); color: #ec7063; }
+                    .badge-other { background: rgba(127, 140, 141, 0.3); color: #95a5a6; }
+                    .crop-badge { display: inline-block; padding: 2px 6px; border-radius: 3px; background: rgba(46, 204, 113, 0.2); color: #58d68d; font-size: 12px; }
+                    .device-badge { display: inline-block; padding: 2px 6px; border-radius: 3px; background: rgba(149, 165, 166, 0.2); color: #bdc3c7; font-size: 12px; }
+                    .action-on { color: #2ecc71; font-weight: 500; }
+                    .action-off { color: #e74c3c; font-weight: 500; }
+                    .action-other { color: #f39c12; font-weight: 500; }
+                content: |
+                  {%- set hits = state_attr('sensor.sproutie_all_logs', 'hits') | default([]) -%}
+                  {%- set filter_event = states('input_select.log_filter_event') -%}
+                  {%- set filter_search = states('input_text.log_filter_search') | lower | trim -%}
+                  {%- set ns = namespace(rows=[], count=0) -%}
+                  
+                  {%- for hit in hits -%}
+                    {%- set src = hit.get('_source', {}) -%}
+                    {%- set sproutie = src.get('sproutie', {}) -%}
+                    {%- set ts = src.get('@timestamp', '')[:16] | replace('T', ' ') -%}
+                    {%- set event_type = sproutie.get('event_type', 'Unknown') -%}
+                    {%- set crop = sproutie.get('crop', '') -%}
+                    {%- set batch = sproutie.get('batch_id', '') | string -%}
+                    {%- set detail = sproutie.get('detail', '') -%}
+                    {%- set device = sproutie.get('device', '') -%}
+                    {%- set action = sproutie.get('action', '') -%}
+                    {%- set audit_type = sproutie.get('audit_type', '') -%}
+                    
+                    {# Apply event type filter #}
+                    {%- set event_match = (filter_event == 'All') or (event_type == filter_event) -%}
+                    
+                    {# Apply search filter - more flexible matching #}
+                    {%- set search_match = (filter_search == '') or 
+                        (filter_search in (crop | default('') | lower)) or 
+                        (filter_search in (event_type | default('') | lower)) or 
+                        (filter_search in (detail | default('') | lower)) or
+                        (filter_search in (batch | default('') | lower)) or
+                        (filter_search in (device | default('') | lower)) or
+                        ((crop | default('') | lower) in filter_search) -%}
+                    
+                    {%- if event_match and search_match -%}
+                      {%- set ns.count = ns.count + 1 -%}
+                      {%- if ns.count <= 50 -%}
+                        {%- set badge_class = 'badge-water' if event_type == 'Water' else 
+                            'badge-note' if event_type == 'Note' else
+                            'badge-harvested' if event_type == 'Harvested' else
+                            'badge-planted' if event_type == 'Planted' else
+                            'badge-phase' if event_type == 'Phase Change' else
+                            'badge-climate' if event_type == 'Climate' else
+                            'badge-audit' if event_type == 'System Audit' else
+                            'badge-snapshot' if event_type == 'Snapshot' else
+                            'badge-safety' if event_type == 'Safety' else 'badge-other' -%}
+                        {%- set subject = device if device else crop -%}
+                        {%- set subject_type = 'device' if device else 'crop' -%}
+                        {%- set info = action if action else (detail | truncate(60)) -%}
+                        {%- set ns.rows = ns.rows + [{'ts': ts, 'event': event_type, 'subject': subject, 'subject_type': subject_type, 'action': action, 'detail': detail | truncate(60), 'badge': badge_class}] -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  
+                  <table>
+                  <thead>
+                  <tr><th class="time-col">Time</th><th class="event-col">Event</th><th class="subject-col">Device/Crop</th><th class="action-col">Action</th><th class="detail-col">Detail</th></tr>
+                  </thead>
+                  <tbody>
+                  {% for row in ns.rows %}
+                  <tr>
+                  <td class="time-col">{{ row.ts }}</td>
+                  <td class="event-col"><span class="badge {{ row.badge }}">{{ row.event }}</span></td>
+                  <td class="subject-col">{% if row.subject %}<span class="{{ 'device-badge' if row.subject_type == 'device' else 'crop-badge' }}">{{ row.subject }}</span>{% else %}-{% endif %}</td>
+                  <td class="action-col">{% if row.action %}<span class="{{ 'action-on' if row.action == 'ON' or row.action == 'ACTIVE' else 'action-off' if row.action == 'OFF' or row.action == 'INACTIVE' else 'action-other' }}">{{ row.action }}</span>{% else %}-{% endif %}</td>
+                  <td class="detail-col">{{ row.detail }}</td>
+                  </tr>
+                  {% endfor %}
+                  {% if ns.rows | length == 0 %}
+                  <tr><td colspan="5" style="text-align: center; padding: 20px; color: rgba(255,255,255,0.5);">No matching events found. Try adjusting your filters.</td></tr>
+                  {% endif %}
+                  </tbody>
+                  </table>
+                  {% if ns.count > 50 %}<p style="color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 10px;">Showing 50 of {{ ns.count }} matching events</p>{% endif %}

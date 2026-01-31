@@ -15,6 +15,9 @@ automation:
       - service: script.sproutie_log_event
         data:
           event_type: "System Audit"
+          audit_type: "Hardware Change"
+          device: "{{ trigger.to_state.name }}"
+          action: "{{ trigger.to_state.state | upper }}"
           detail: >-
             Hardware Change: {{ trigger.to_state.name }} turned {{ trigger.to_state.state | upper }}
           take_photo: false
@@ -38,6 +41,9 @@ automation:
       - service: script.sproutie_log_event
         data:
           event_type: "System Audit"
+          audit_type: "Mode Change"
+          device: "{{ trigger.to_state.name }}"
+          action: "{{ 'ACTIVE' if trigger.to_state.state == 'on' else 'INACTIVE' }}"
           detail: >-
             Mode Change: {{ trigger.to_state.name }} set to {{ 'ACTIVE' if trigger.to_state.state == 'on' else 'INACTIVE' }}
           take_photo: false
