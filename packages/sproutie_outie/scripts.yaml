@@ -177,11 +177,10 @@ script:
                   data:
                     value: >-
                       {% set d = this_slot_raw | from_json(default={}) %}
-                      {% set h = d.get('history', [])[-10:] %}
                       {% set e = {
                         "date": (as_timestamp(event_timestamp) | timestamp_custom('%Y-%m-%d')),
                         "event": event_type,
-                        "note": event_detail
+                        "note": event_detail[:20]
                       } %}
                       {% set result = {
                         "crop": d.get('crop', 'Unknown'),
@@ -190,12 +189,7 @@ script:
                         "container": d.get('container', ''),
                         "phase": (event_detail if event_type == 'Phase Change' else d.get('phase', '')),
                         "seed_weight": d.get('seed_weight', 0),
-                        "soak_time": d.get('soak_time', 0),
-                        "substrate": d.get('substrate', ''),
-                        "notes": d.get('notes', ''),
-                        "harvest_weight": d.get('harvest_weight', 0),
-                        "efficiency": d.get('efficiency', 0),
-                        "history": (h + [e])[-10:]
+                        "history": [e]
                       } %}
                       {{ result | to_json }}
       - service: rest_command.sproutie_push_to_elastic

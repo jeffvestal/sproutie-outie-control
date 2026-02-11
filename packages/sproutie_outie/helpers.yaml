@@ -139,7 +139,7 @@ input_text:
   crop_library_json:
     name: "Hidden Crop Library Database"
     max: 255
-    initial: '{"Radish": {"grow_days": 6, "w": 35}, "Sunflower": {"grow_days": 10, "w": 50}, "Pea": {"grow_days": 8, "w": 40}, "Red Acre Cabbage": {"grow_days": 10, "w": 30, "soak": false, "notes": "Red Cabbage. Fast grower. 4 days germ."}}'
+    initial: '{"Radish":{"grow_days":6,"w":35},"Sunflower":{"grow_days":10,"w":50},"Pea":{"grow_days":8,"w":40},"Red Acre Cabbage":{"grow_days":10,"w":30},"Yellow Mustard":{"grow_days":8,"w":30},"Red Garnet Amaranth":{"grow_days":14,"w":4}}'
   
   log_event_buffer:
     name: "Universal Event Buffer"
@@ -226,6 +226,8 @@ input_select:
       - "Sunflower"
       - "Pea"
       - "Red Acre Cabbage"
+      - "Yellow Mustard"
+      - "Red Garnet Amaranth"
       - "Custom"
     icon: mdi:seed
   container_type:

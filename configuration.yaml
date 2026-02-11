@@ -29,6 +29,8 @@ rest_command: !include rest_commands.yaml
 shell_command:
   copy_snapshot: 'cp "{{ source }}" "{{ target }}"'
   upload_snapshot_to_gcp: !secret gcp_upload_command
+  snapshot_maintenance: !secret gcp_maintenance_command
+  cleanup_old_snapshots: 'find /config/www/snapshots/ -name "*.jpg" -not -name "*_latest.jpg" -mtime +3 -delete'
   test_curl: 'curl -v -X POST -F "file=@/config/www/snapshots/test_image.jpg" -H "Authorization: Bearer sproutie-secret-token-123" https://us-central1-gen-lang-client-0516054761.cloudfunctions.net/upload_snapshot'
   log_json: 'echo "{{ msg }}" >> /config/.cursor/debug.log'
 

@@ -297,3 +297,55 @@ automation:
           lights_top: "{{ 1 if is_state('switch.top_shelf_lights', 'on') else 0 }}"
           lights_bottom: "{{ 1 if is_state('switch.bottom_shelf_lights', 'on') else 0 }}"
     mode: single
+
+  # Daily Snapshot Maintenance: retry failed uploads, clean up old files
+  - id: sproutie_snapshot_maintenance
+    alias: "Daily Snapshot Maintenance"
+    description: "Retries failed GCP uploads, cleans up snapshots older than 3 days, refreshes failure count sensor"
+    trigger:
+      - platform: time
+        at: "03:00:00"
+    action:
+      - service: shell_command.snapshot_maintenance
+      - delay: "00:00:30"
+      - service: homeassistant.update_entity
+        target:
+          entity_id: sensor.sproutie_failed_uploads
+    mode: single
+
+  # Notify on failed snapshot uploads
+  - id: sproutie_upload_failure_alert
+    alias: "Snapshot Upload Failure Alert"
+    description: "Creates a persistent notification when GCP snapshot uploads have failed"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.sproutie_failed_uploads
+        above: 0
+        for: "00:05:00"
+    action:
+      - service: persistent_notification.create
+        data:
+          notification_id: "sproutie_upload_failures"
+          title: "Sproutie: Snapshot Upload Failures"
+          message: >-
+            {{ states('sensor.sproutie_failed_uploads') }} snapshot(s) failed to upload to GCP.
+            The system will retry at 3am. Check /config/www/snapshots/.failed_uploads for details.
+      - service: script.sproutie_log_event
+        data:
+          event_type: "Safety"
+          detail: "GCP upload failures detected: {{ states('sensor.sproutie_failed_uploads') }} files pending retry"
+    mode: single
+
+  # Clear notification when failures are resolved
+  - id: sproutie_upload_failure_resolved
+    alias: "Snapshot Upload Failure Resolved"
+    description: "Clears the failure notification when all uploads have succeeded"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.sproutie_failed_uploads
+        below: 1
+    action:
+      - service: persistent_notification.dismiss
+        data:
+          notification_id: "sproutie_upload_failures"
+    mode: single

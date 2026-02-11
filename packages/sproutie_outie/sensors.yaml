@@ -1220,3 +1220,15 @@ sensor:
     json_attributes:
       - hits
     scan_interval: 120
+
+# ═══════════════════════════════════════════════════════════════════════
+# FAILED UPLOAD TRACKING SENSOR
+# Counts files in .failed_uploads to detect GCP upload failures
+# ═══════════════════════════════════════════════════════════════════════
+command_line:
+  - sensor:
+      name: sproutie_failed_uploads
+      command: "cat /config/www/snapshots/.failed_uploads 2>/dev/null | wc -l | tr -d ' '"
+      value_template: "{{ value | int(0) }}"
+      unit_of_measurement: "files"
+      scan_interval: 3600
