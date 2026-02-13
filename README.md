@@ -110,8 +110,10 @@ The Sproutie Outie Control Center is a high-tech monitoring and control system f
   2. Wait 5s for warmup
   3. Take Snapshots (Top & Bottom cams)
   4. Copy to "latest" reference for Dashboard
-  5. Push metadata to Elasticsearch
-  6. Turn off Flash
+  5. Upload to GCP Cloud Storage (with failure tracking and daily retry)
+  6. Push metadata to Elasticsearch
+  7. Turn off Flash
+- **Maintenance**: Daily at 3am - retries failed GCP uploads, deletes local snapshots older than 3 days, alerts on persistent failures via HA notification.
 
 ## Configuration
 
@@ -138,15 +140,18 @@ sproutie-outie-control/
 ├── packages/
 │   └── sproutie_outie/
 │       ├── scripts.yaml            # Core logic (Photography, Logging, Planting)
-│       ├── automations.yaml        # Schedules, Safety Valves, Auditing
-│       ├── helpers.yaml            # Input definitions (Slots, Modes)
-│       ├── sensors.yaml            # ES History Sensor
+│       ├── automations.yaml        # Schedules, Safety Valves, Auditing, Snapshot Maintenance
+│       ├── helpers.yaml            # Input definitions (Slots, Modes, Crop Library)
+│       ├── sensors.yaml            # ES History Sensor, Failed Upload Sensor
 │       ├── auditing.yaml           # System state change logging
 │       └── views/                  # (Legacy/Partial views)
+├── scripts/
+│   ├── upload_snapshot.sh          # GCP upload wrapper with failure tracking
+│   └── snapshot_maintenance.sh     # Daily retry, cleanup, and failure reporting
 ├── ui-lovelace-v3.yaml             # MAIN V3 DASHBOARD definition
 ├── rest_commands.yaml              # ES API definitions
 ├── elasticsearch/                  # ES configurations
-├── gcp_bridge/                     # Google Cloud Platform integration
+├── gcp_function/                   # Google Cloud Function for snapshot uploads
 └── www/                            # Custom icons and assets
 ```
 
@@ -158,8 +163,14 @@ sproutie-outie-control/
 - Check permissions on `/config/www/snapshots/`.
 
 ### "Unknown" Batch ID
-- If a batch shows as "Unknown", run the `sproutie_repair_sunflower_full` script (or similar) to restore slot data integrity.
+- This was caused by slot data corruption (255-char overflow). Now fixed -- only Phase Change events modify slot data.
+- If it recurs, check Elasticsearch for the batch's Planted event to get the batch ID and planted date, then create a repair script (see `AGENT.md` section 9).
 - Ensure `input_text.selected_batch` is set correctly when navigating.
+
+### GCP Upload Failures
+- Check `sensor.sproutie_failed_uploads` in Developer Tools → States.
+- Failed files are listed in `/config/www/snapshots/.failed_uploads` on the HA server.
+- Retries happen automatically at 3am. A persistent HA notification appears when failures exist.
 
 ## License
 

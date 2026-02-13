@@ -140,6 +140,72 @@ automation:
           color: "#3498db"
     mode: single
 
+  # --- TEMPERATURE-BASED EXHAUST CONTROL ---
+  - id: sproutie_exhaust_temp_control
+    alias: "Exhaust Temperature Control"
+    description: "Controls exhaust fan based on tent temperature thresholds"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.monitor2_temperature
+        above: input_number.temp_trigger_max
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_exhaust_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_select.exhaust_mode
+        state: "Temperature"
+      - condition: state
+        entity_id: switch.exhaust_fan
+        state: "off"
+      # Check snooze - must have waited long enough since last off
+      - condition: template
+        value_template: >
+          {% set snooze_mins = states('input_number.exhaust_off_duration') | int(5) %}
+          {% set last_off = states('input_datetime.exhaust_last_off_time') %}
+          {% if last_off in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+            true
+          {% else %}
+            {% set elapsed = (as_timestamp(now()) - as_timestamp(last_off)) / 60 %}
+            {{ elapsed >= snooze_mins }}
+          {% endif %}
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.exhaust_fan
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: "Exhaust ON - Temp {{ states('sensor.monitor2_temperature') }}°F > {{ states('input_number.temp_trigger_max') }}°F"
+          icon: "mdi:fan"
+          color: "#e74c3c"
+      # Wait for temp to drop OR max run time
+      - wait_template: >
+          {{ states('sensor.monitor2_temperature') | float(100) < states('input_number.temp_trigger_min') | float(75) }}
+        timeout:
+          minutes: "{{ states('input_number.exhaust_on_duration') | int(15) }}"
+      # Turn off exhaust
+      - service: switch.turn_off
+        target:
+          entity_id: switch.exhaust_fan
+      # Record the off time for snooze tracking
+      - service: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.exhaust_last_off_time
+        data:
+          datetime: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: >
+            Exhaust OFF - {% if states('sensor.monitor2_temperature') | float(100) < states('input_number.temp_trigger_min') | float(75) %}Temp dropped to {{ states('sensor.monitor2_temperature') }}°F{% else %}Max run time reached{% endif %}
+          icon: "mdi:fan-off"
+          color: "#3498db"
+    mode: single
+
   # Light Schedule: Turn ON Grow Lights
   - id: sproutie_lights_on
     alias: "Grow Lights ON"

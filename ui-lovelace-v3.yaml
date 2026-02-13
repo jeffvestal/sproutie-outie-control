@@ -813,6 +813,29 @@ views:
                             transition: opacity 0.3s ease;
                           }
                           .card-content { padding: 0 0 0 16px !important; }
+                  # Temperature thresholds - only show when in Temperature mode
+                  - type: conditional
+                    conditions:
+                      - condition: state
+                        entity: input_select.exhaust_mode
+                        state: "Temperature"
+                    card:
+                      type: entities
+                      entities:
+                        - entity: input_number.temp_trigger_max
+                          name: Trigger ON (°F)
+                        - entity: input_number.temp_trigger_min
+                          name: Trigger OFF (°F)
+                      card_mod:
+                        style: |
+                          ha-card { 
+                            background: transparent !important; 
+                            border: none !important; 
+                            box-shadow: none !important;
+                            opacity: {{ '1.0' if is_state('input_boolean.schedule_exhaust_enabled', 'on') else '0.4' }};
+                            transition: opacity 0.3s ease;
+                          }
+                          .card-content { padding: 0 0 0 16px !important; }
 
                   # --- PHOTO SCHEDULE ---
                   - type: custom:mushroom-template-card
@@ -942,35 +965,13 @@ views:
                   {%- endif -%}
                 {%- endfor -%}
                 
-                {# 2. Merge Local Slot History (if not already in ES) #}
+                {# 2. Get planted date from local slot data (history is in ES only) #}
                 {%- for s in slots -%}
                   {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
                   {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
                     {%- set d = raw | from_json(default={}) -%}
                     {%- if d.get('id') | string == batch_id | string -%}
                       {%- set ns.planted_date = d.get('planted', '') -%}
-                      {%- for item in d.get('history', []) -%}
-                        {# Simple check to avoid duplicates from ES #}
-                        {%- set found = namespace(match=false) -%}
-                        {%- set combined = ns.water + ns.phases + ns.notes + ns.system -%}
-                        {%- for existing in combined -%}
-                          {%- if existing.date == item.date and existing.event == item.event and existing.note == item.note -%}
-                            {%- set found.match = true -%}
-                          {%- endif -%}
-                        {%- endfor -%}
-                        
-                        {%- if not found.match -%}
-                          {%- if item.event == 'Water' -%}
-                            {%- set ns.water = ns.water + [item] -%}
-                          {%- elif item.event in ['Phase Change', 'Planted', 'Harvested'] -%}
-                            {%- set ns.phases = ns.phases + [item] -%}
-                          {%- elif item.event == 'Note' -%}
-                            {%- set ns.notes = ns.notes + [item] -%}
-                          {%- else -%}
-                            {%- set ns.system = ns.system + [item] -%}
-                          {%- endif -%}
-                        {%- endif -%}
-                      {%- endfor -%}
                     {%- endif -%}
                   {%- endif -%}
                 {%- endfor -%}

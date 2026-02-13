@@ -87,7 +87,9 @@ flowchart TB
 | `packages/sproutie_outie/automations.yaml` | Triggered automations |
 | `packages/sproutie_outie/sensors.yaml` | Template sensors, REST sensors |
 | `rest_commands.yaml` | Elasticsearch REST calls |
-| `secrets.yaml` | ES credentials (**not in repo** - check `/config/secrets.yaml` on server) |
+| `scripts/upload_snapshot.sh` | GCP upload wrapper with failure tracking |
+| `scripts/snapshot_maintenance.sh` | Daily retry + cleanup of old snapshots |
+| `secrets.yaml` | ES credentials, GCP commands (**not in repo** - check `/config/secrets.yaml` on server) |
 
 ---
 
@@ -116,9 +118,11 @@ User must either:
 ## 7. Data Model
 
 ### Slot Data
-- Stored in `input_text.slot_[a-b][1-8]_data` as minified JSON
-- **255 character limit** - JSON must be compact
-- Example: `{"crop":"Sunflower","id":"1768878531","planted":"2026-01-19","phase":"Blackout","container":"Tray","seed_weight":150,"history":[]}`
+- Stored in `input_text.slot_[a-b][1-8]_data` as JSON
+- **255 character limit** - JSON must stay compact (~140 chars max)
+- **No history field** - all event history lives in Elasticsearch only
+- **Only Phase Change events modify slot data** - Water, Note, Snapshot, etc. go to ES only
+- Example: `{"crop": "Sunflower", "id": "1768878531", "planted": "2026-01-19", "phase": "Blackout", "container": "Tray", "seed_weight": 50}`
 
 ### Batch Concept
 - A **Batch ID** links 8 slots together (one crop planting across a full rack)
@@ -153,17 +157,23 @@ Stored in `input_text.crop_library_json`. Contains `grow_days` per crop type for
 
 ---
 
-## 9. Known Issues
+## 9. Known Issues (Resolved)
 
-### Slot Data Corruption
-Something occasionally triggers phase changes that wipe crop names to "Unknown" and clear planted dates.
+### Slot Data Corruption (FIXED)
+Previously, the `sproutie_log_event` script rewrote all 8 slot JSON strings on every event (water, note, etc.), which could exceed the 255-char `input_text` limit and corrupt the data.
 
-**Repair Method:**
-1. Create temporary script in `packages/sproutie_outie/repair_slots.yaml`
-2. Deploy to server
-3. Reload scripts
-4. Run via Developer Tools → Services
-5. Delete repair script after confirming fix
+**Fix applied:** Only Phase Change events now modify slot data. All other events go to ES only. History field was removed from slot JSON entirely (ES is the single source of truth for event history).
+
+**If corruption somehow recurs, repair method:**
+1. Get batch ID and planted date from Elasticsearch (`sproutie-events` index, filter `event_type: Planted`)
+2. Create temporary script in `packages/sproutie_outie/repair_slots.yaml`
+3. Deploy to server via `sudo tee`
+4. Restart HA (not just reload)
+5. Run via Developer Tools → Services
+6. Delete repair script after confirming fix
+
+### Snapshot Upload Monitoring
+GCP snapshot uploads are tracked via `scripts/upload_snapshot.sh`. Failed uploads are logged to `/config/www/snapshots/.failed_uploads` and retried daily at 3am. A persistent notification appears in HA if failures exist. Old snapshots (>3 days) are cleaned up automatically.
 
 ---
 
@@ -173,7 +183,7 @@ Something occasionally triggers phase changes that wipe crop names to "Unknown" 
 |-------|----------|
 | **Jinja2 loops** | Use `namespace()` for mutable variables: `{% set ns = namespace(items=[]) %}` |
 | **Safe access** | Always use `\| default()` or `.get()` for optional values |
-| **255 char limit** | `input_text` max length - minify JSON, omit empty fields |
+| **255 char limit** | `input_text` max length - no history in slots, only Phase Change updates slots |
 | **YAML errors** | Almost always indentation - validate before deploying |
 | **Template syntax** | Lovelace: `{{ }}`, auto-entities templates return JSON arrays |
 

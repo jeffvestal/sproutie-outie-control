@@ -161,9 +161,11 @@ script:
               filename: "{{ snapshot_path }}"
           - variables:
               photo_url: "/local/snapshots/{{ filename }}"
+      # Only update slot data for Phase Change events.
+      # All other events (Water, Note, etc.) go to ES only.
       - if:
           - condition: template
-            value_template: "{{ target_batch != 'unknown' }}"
+            value_template: "{{ event_type == 'Phase Change' and target_batch != 'unknown' }}"
         then:
           - repeat:
               for_each: "{{ matching_slots }}"
@@ -177,19 +179,13 @@ script:
                   data:
                     value: >-
                       {% set d = this_slot_raw | from_json(default={}) %}
-                      {% set e = {
-                        "date": (as_timestamp(event_timestamp) | timestamp_custom('%Y-%m-%d')),
-                        "event": event_type,
-                        "note": event_detail[:20]
-                      } %}
                       {% set result = {
                         "crop": d.get('crop', 'Unknown'),
-                        "id": target_batch,
+                        "id": d.get('id', target_batch),
                         "planted": d.get('planted', ''),
                         "container": d.get('container', ''),
-                        "phase": (event_detail if event_type == 'Phase Change' else d.get('phase', '')),
-                        "seed_weight": d.get('seed_weight', 0),
-                        "history": [e]
+                        "phase": event_detail,
+                        "seed_weight": d.get('seed_weight', 0)
                       } %}
                       {{ result | to_json }}
       - service: rest_command.sproutie_push_to_elastic

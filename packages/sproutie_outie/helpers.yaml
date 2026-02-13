@@ -132,6 +132,24 @@ input_number:
     mode: box
     unit_of_measurement: "%"
     icon: mdi:water-percent-alert
+  temp_trigger_max:
+    name: "Temp Max (F)"
+    min: 60
+    max: 100
+    step: 1
+    initial: 80
+    mode: box
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer-high
+  temp_trigger_min:
+    name: "Temp Min (F)"
+    min: 55
+    max: 95
+    step: 1
+    initial: 75
+    mode: box
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer-low
 
 # --- CROP INVENTORY ---
 input_text:
@@ -264,6 +282,7 @@ input_select:
     options:
       - "Schedule"
       - "Humidity"
+      - "Temperature"
     initial: "Schedule"
     icon: mdi:fan-auto
   log_filter_event:
