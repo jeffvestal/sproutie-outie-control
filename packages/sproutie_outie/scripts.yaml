@@ -71,7 +71,7 @@ script:
             {% if sid != '' %}
               {{ sid }}
             {% elif bid != '' %}
-              {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+              {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] %}
               {% set ns = namespace(slot='') %}
               {% for s in slots %}
                 {% if ns.slot == '' %}
@@ -90,7 +90,7 @@ script:
             {% endif %}
           matching_slots: >-
             {% set bid = batch_id | default('') %}
-            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] %}
             {% set ns = namespace(list=[]) %}
             {% if bid != '' %}
               {% for s in slots %}
@@ -146,7 +146,7 @@ script:
         then:
           - variables:
               camera_entity: >-
-                {% if target_slot[0] | upper == 'A' %}
+                {% if target_slot[0] | upper == 'A' or target_slot[:4] | upper == 'SC_T' %}
                   camera.top_eyes
                 {% else %}
                   camera.bottom_eyes
@@ -161,33 +161,8 @@ script:
               filename: "{{ snapshot_path }}"
           - variables:
               photo_url: "/local/snapshots/{{ filename }}"
-      # Only update slot data for Phase Change events.
-      # All other events (Water, Note, etc.) go to ES only.
-      - if:
-          - condition: template
-            value_template: "{{ event_type == 'Phase Change' and target_batch != 'unknown' }}"
-        then:
-          - repeat:
-              for_each: "{{ matching_slots }}"
-              sequence:
-                - variables:
-                    this_slot_raw: >-
-                      {{ states('input_text.slot_' ~ repeat.item ~ '_data') }}
-                - service: input_text.set_value
-                  target:
-                    entity_id: "input_text.slot_{{ repeat.item }}_data"
-                  data:
-                    value: >-
-                      {% set d = this_slot_raw | from_json(default={}) %}
-                      {% set result = {
-                        "crop": d.get('crop', 'Unknown'),
-                        "id": d.get('id', target_batch),
-                        "planted": d.get('planted', ''),
-                        "container": d.get('container', ''),
-                        "phase": event_detail,
-                        "seed_weight": d.get('seed_weight', 0)
-                      } %}
-                      {{ result | to_json }}
+      # NOTE: sproutie_log_event does NOT modify slot data. ES only.
+      # Phase changes update slots via the dedicated sproutie_update_phase script.
       - service: rest_command.sproutie_push_to_elastic
         data:
           timestamp: "{{ event_timestamp }}"
@@ -283,11 +258,14 @@ script:
               {{ now().isoformat() }}
             {% endif %}
           target_slot_base: "{{ slot_id | default(states('input_text.selected_slot')) }}"
+          is_sidecar: "{{ target_slot_base[:3] | lower == 'sc_' }}"
           size: "{{ states('input_select.container_size') }}"
-          zone: "{{ target_slot_base[0] | lower }}"
-          num: "{{ target_slot_base[1:] | int }}"
+          zone: "{{ target_slot_base[0] | lower if not is_sidecar else '' }}"
+          num: "{{ target_slot_base[1:] | int(0) if not is_sidecar else 0 }}"
           target_slots: >-
-            {% if size == 'Full Shelf (10x20)' %}
+            {% if is_sidecar %}
+              {{ [target_slot_base | lower] }}
+            {% elif size == 'Full Shelf (10x20)' %}
               {{ [zone~'1', zone~'2', zone~'3', zone~'4', zone~'5', zone~'6', zone~'7', zone~'8'] }}
             {% elif size == 'Half Shelf (10x10)' %}
               {% if num <= 4 %} {{ [zone~'1', zone~'2', zone~'3', zone~'4'] }}
@@ -299,7 +277,7 @@ script:
           batch_id: "{{ (as_timestamp(event_timestamp) | int(0)) + range(1, 999) | random }}"
           crop: "{{ states('input_select.planting_preset') }}"
           container: "{{ states('input_select.container_type') }}"
-          seed_weight: "{{ states('input_number.seed_weight') | int(0) }}"
+          seed_weight: "{{ states('input_number.seed_weight') | float(0) }}"
           plant_date: "{{ as_datetime(event_timestamp).strftime('%Y-%m-%d') }}"
           payload: >-
             {% set result = {
@@ -381,7 +359,7 @@ script:
               {{ now().isoformat() }}
             {% endif %}
           metadata: >-
-            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] %}
             {% set ns = namespace(found=false, crop='Unknown', seed_w=1, slot='', match_list=[]) %}
             {% for s in slots %}
               {% set raw = states('input_text.slot_' ~ s ~ '_data') %}
@@ -402,7 +380,7 @@ script:
           meta: "{{ metadata | trim | from_json(default={}) }}"
           yield_ratio: "{{ (harvest_weight | float(0) / meta.get('seed_weight', 1) | float(1)) | round(2) if meta.get('seed_weight', 1) | float(1) > 0 else 0 }}"
           raw_data: >-
-            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] %}
             {% set ns = namespace(found=false, data={}) %}
             {% for s in slots %}
               {% if not ns.found %}
@@ -467,6 +445,64 @@ script:
           message: "Harvested {{ meta.get('crop', 'Unknown') }} (Batch {{ batch_id | default('unknown') }}): {{ harvest_weight }}g"
           duration: 5000
 
+  sproutie_update_phase:
+    alias: "Update Batch Phase in Slot Data"
+    description: "Surgically updates only the phase field in slot JSON via regex replace. No parse/rebuild cycle."
+    fields:
+      batch_id:
+        description: "The batch ID to update"
+        example: "1768093958"
+      new_phase:
+        description: "The new phase name"
+        example: "Growing"
+    sequence:
+      - variables:
+          bid: "{{ batch_id | string | trim }}"
+          phase_clean: "{{ new_phase | trim }}"
+          all_slots:
+            - a1
+            - a2
+            - a3
+            - a4
+            - a5
+            - a6
+            - a7
+            - a8
+            - b1
+            - b2
+            - b3
+            - b4
+            - b5
+            - b6
+            - b7
+            - b8
+            - sc_tf
+            - sc_tb
+            - sc_bf
+            - sc_bb
+      - repeat:
+          for_each: "{{ all_slots }}"
+          sequence:
+            - variables:
+                raw: "{{ states('input_text.slot_' ~ repeat.item ~ '_data') }}"
+            - variables:
+                parsed: "{{ raw | from_json(default={}) }}"
+                slot_bid: "{{ parsed.get('id', '') | string | trim }}"
+                has_crop: "{{ parsed.get('crop', '') != '' }}"
+            - if:
+                - condition: template
+                  value_template: >
+                    {{ raw not in ['unknown', 'unavailable', 'Empty', '']
+                       and slot_bid == bid
+                       and has_crop == 'True' }}
+              then:
+                - service: input_text.set_value
+                  target:
+                    entity_id: "input_text.slot_{{ repeat.item }}_data"
+                  data:
+                    value: >-
+                      {"crop":"{{ parsed.get('crop','') }}","id":"{{ parsed.get('id','') }}","planted":"{{ parsed.get('planted','') }}","container":"{{ parsed.get('container','') }}","phase":"{{ phase_clean }}","seed_weight":{{ parsed.get('seed_weight',0) }}}
+
   sproutie_advance_phase:
     alias: "Advance to Next Phase"
     description: "Transitions batch to the next growth phase"
@@ -484,6 +520,12 @@ script:
               {{ states('input_text.selected_batch') }}
             {% endif %}
           next_phase: "{{ states('input_select.phase_transition') }}"
+      # Step 1: Update local slot data (surgical regex replace, no parse/rebuild)
+      - service: script.sproutie_update_phase
+        data:
+          batch_id: "{{ safe_batch_id }}"
+          new_phase: "{{ next_phase }}"
+      # Step 2: Log to Elasticsearch
       - service: script.sproutie_log_event
         data:
           batch_id: "{{ safe_batch_id }}"
@@ -537,7 +579,7 @@ script:
       - variables:
           timestamp: "{{ now().strftime('%Y%m%d_%H%M%S') }}"
           active_crops: >-
-            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] %}
+            {% set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] %}
             {% set ns = namespace(batches={}) %}
             {% for s in slots %}
               {% set raw = states('input_text.slot_' ~ s ~ '_data') %}
@@ -559,7 +601,7 @@ script:
                 crop_data: "{{ states('input_text.slot_' ~ slot_id | lower ~ '_data') | from_json(default={}) }}"
                 crop_name: "{{ crop_data.get('crop', 'unknown') | replace(' ', '_') | lower }}"
                 camera_entity: >-
-                  {% if slot_id[0] | upper == 'A' %}
+                  {% if slot_id[0] | upper == 'A' or slot_id[:4] | upper == 'SC_T' %}
                     camera.top_eyes
                   {% else %}
                     camera.bottom_eyes
@@ -577,7 +619,7 @@ script:
               data:
                 source: "/config/www/snapshots/{{ full_filename }}"
                 target: >-
-                  {% if slot_id[0] | upper == 'A' %}
+                  {% if slot_id[0] | upper == 'A' or slot_id[:4] | upper == 'SC_T' %}
                     /media/snapshots/top_eyes_latest.jpg
                   {% else %}
                     /media/snapshots/bottom_eyes_latest.jpg

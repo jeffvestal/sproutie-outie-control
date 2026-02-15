@@ -78,7 +78,7 @@ input_number:
     name: "Seed Weight (g)"
     min: 0
     max: 1000
-    step: 1
+    step: 0.1
     mode: box
     unit_of_measurement: "g"
     icon: mdi:weight-gram
@@ -157,7 +157,7 @@ input_text:
   crop_library_json:
     name: "Hidden Crop Library Database"
     max: 255
-    initial: '{"Radish":{"grow_days":6,"w":35},"Sunflower":{"grow_days":10,"w":50},"Pea":{"grow_days":8,"w":40},"Red Acre Cabbage":{"grow_days":10,"w":30},"Yellow Mustard":{"grow_days":8,"w":30},"Red Garnet Amaranth":{"grow_days":14,"w":4}}'
+    initial: '{"Radish":{"d":6,"w":35},"Sunflower":{"d":10,"w":50},"Pea":{"d":8,"w":40},"Red Acre Cabbage":{"d":10,"w":30},"Yellow Mustard":{"d":8,"w":30},"Red Garnet Amaranth":{"d":14,"w":4},"Genovese Basil":{"d":45,"w":0.2},"Peppermint":{"d":42,"w":0.1}}'
   
   log_event_buffer:
     name: "Universal Event Buffer"
@@ -236,6 +236,21 @@ input_text:
     name: Slot B8 Data
     max: 255
 
+  # --- SIDECAR SLOTS (sc_tf, sc_tb, sc_bf, sc_bb) ---
+  # Independent can-based slots: top-front, top-back, bottom-front, bottom-back
+  slot_sc_tf_data:
+    name: Sidecar Top Front Data
+    max: 255
+  slot_sc_tb_data:
+    name: Sidecar Top Back Data
+    max: 255
+  slot_sc_bf_data:
+    name: Sidecar Bottom Front Data
+    max: 255
+  slot_sc_bb_data:
+    name: Sidecar Bottom Back Data
+    max: 255
+
 input_select:
   planting_preset:
     name: "Crop Preset"
@@ -246,6 +261,8 @@ input_select:
       - "Red Acre Cabbage"
       - "Yellow Mustard"
       - "Red Garnet Amaranth"
+      - "Genovese Basil"
+      - "Peppermint"
       - "Custom"
     icon: mdi:seed
   container_type:
@@ -253,6 +270,7 @@ input_select:
     options:
       - "Tray"
       - "Jar"
+      - "Can"
     icon: mdi:beaker
   phase_transition:
     name: "Next Phase"

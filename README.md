@@ -98,8 +98,8 @@ The Sproutie Outie Control Center is a high-tech monitoring and control system f
 
 ### Crop Cockpit (Detail View)
 - Click any crop in the Active Manifest to enter the Cockpit.
-- **Phase Control**: Advance crops through stages (Germination -> Blackout -> Growing -> Harvest).
-- **Actions**: Log Water, Add Notes, Harvest.
+- **Phase Control**: Advance crops through stages (Germination -> Blackout -> Growing -> Harvest). Phase changes update slot data via a dedicated `sproutie_update_phase` script.
+- **Actions**: Log Water, Add Notes, Harvest (these log to Elasticsearch only, no local slot modification).
 - **History**: Full categorized timeline of the batch's life.
 - **Snapshot**: Latest photo of the specific tray location (Top/Bottom rack).
 

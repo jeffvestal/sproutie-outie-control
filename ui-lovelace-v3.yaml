@@ -190,7 +190,7 @@ views:
             card_param: cards
             filter:
               template: |
-                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
                 {%- set crop_lib = states('input_text.crop_library_json') | from_json(default={}) -%}
                 {%- set active_crops = namespace(names=[]) -%}
                 
@@ -223,7 +223,7 @@ views:
                     {%- endif -%}
                   {%- endfor -%}
                   
-                  {%- set grow_days = crop_lib.get(target_crop, {}).get('grow_days', 10) | int -%}
+                  {%- set grow_days = crop_lib.get(target_crop, {}).get('d', 10) | int -%}
                   {%- set days_left = grow_days - ns_stats.max_age -%}
                   
                   {%- set icon = 'mdi:leaf' -%}
@@ -901,7 +901,7 @@ views:
             filter:
               template: |
                 {%- set batch_id = states('input_text.selected_batch') -%}
-                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
                 {%- set ns = namespace(camera='') -%}
                 {%- for s in slots -%}
                   {%- if ns.camera == '' -%}
@@ -909,7 +909,7 @@ views:
                     {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
                       {%- set d = raw | from_json(default={}) -%}
                       {%- if d.get('id') | string == batch_id | string -%}
-                        {%- if s[0] == 'a' -%}
+                        {%- if s[0] == 'a' or s[:4] == 'sc_t' -%}
                           {%- set ns.camera = 'camera.top_eyes_snapshot' -%}
                         {%- else -%}
                           {%- set ns.camera = 'camera.bottom_eyes_snapshot' -%}
@@ -939,7 +939,7 @@ views:
               template: |
                 {%- set batch_id = states('input_text.selected_batch') -%}
                 {%- set es_hits = state_attr('sensor.sproutie_batch_history', 'hits') | default([]) -%}
-                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
                 {%- set ns = namespace(water=[], phases=[], notes=[], system=[], seen_keys=[], planted_date='') -%}
                 
                 {# 1. Process Elasticsearch Hits #}
@@ -1244,7 +1244,7 @@ views:
             card_param: chips
             filter:
               template: |
-                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
                 {%- set ns = namespace(crops=[]) -%}
                 {%- for s in slots -%}
                   {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}

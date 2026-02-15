@@ -33,7 +33,7 @@ cards:
             card_param: cards
             filter:
               template: |
-                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
                 {%- for s in slots -%}
                   {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
                   {%- set isEmpty = raw in ['unknown', 'unavailable', 'Empty', ''] -%}

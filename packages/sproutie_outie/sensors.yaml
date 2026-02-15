@@ -194,7 +194,7 @@ sensor:
       sproutie_has_radish:
         friendly_name: "Has Radish Active"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set found = false -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -211,7 +211,7 @@ sensor:
       sproutie_has_sunflower:
         friendly_name: "Has Sunflower Active"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set found = false -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -228,7 +228,7 @@ sensor:
       sproutie_has_pea:
         friendly_name: "Has Pea Active"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set found = false -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -245,7 +245,7 @@ sensor:
       sproutie_has_other:
         friendly_name: "Has Other Crops Active"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set known_crops = ['Sunflower', 'Radish', 'Pea'] -%}
           {%- set found = false -%}
           {%- for s in slots -%}
@@ -271,7 +271,7 @@ sensor:
       sproutie_crop_summary:
         friendly_name: "Sproutie Crop Summary"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set ns = namespace(crops=[]) -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -286,7 +286,7 @@ sensor:
         icon_template: mdi:sprout
         attribute_templates:
           crop_names: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops=[]) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -299,7 +299,7 @@ sensor:
             {%- endfor -%}
             {{ ns.crops | join(',') }}
           total_trays: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(count=0) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -324,7 +324,7 @@ sensor:
       sproutie_crop_1:
         friendly_name: "Active Crop 1"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set ns = namespace(crops={}) -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -349,7 +349,7 @@ sensor:
         icon_template: mdi:sprout
         attribute_templates:
           count: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -372,7 +372,7 @@ sensor:
               0
             {%- endif -%}
           max_age: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -412,7 +412,7 @@ sensor:
             {%- endif -%}
             {{ ns2.max_age }}
           phase: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -451,7 +451,7 @@ sensor:
             {%- endif -%}
             {{ ns2.phase }}
           days_to_harvest: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -540,7 +540,7 @@ sensor:
       sproutie_crop_2:
         friendly_name: "Active Crop 2"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set ns = namespace(crops={}) -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -565,7 +565,7 @@ sensor:
         icon_template: mdi:sprout
         attribute_templates:
           count: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -588,7 +588,7 @@ sensor:
               0
             {%- endif -%}
           max_age: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -628,7 +628,7 @@ sensor:
             {%- endif -%}
             {{ ns2.max_age }}
           phase: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -667,7 +667,7 @@ sensor:
             {%- endif -%}
             {{ ns2.phase }}
           days_to_harvest: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -756,7 +756,7 @@ sensor:
       sproutie_crop_3:
         friendly_name: "Active Crop 3"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set ns = namespace(crops={}) -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -781,7 +781,7 @@ sensor:
         icon_template: mdi:sprout
         attribute_templates:
           count: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -804,7 +804,7 @@ sensor:
               0
             {%- endif -%}
           max_age: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -844,7 +844,7 @@ sensor:
             {%- endif -%}
             {{ ns2.max_age }}
           phase: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -883,7 +883,7 @@ sensor:
             {%- endif -%}
             {{ ns2.phase }}
           days_to_harvest: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -972,7 +972,7 @@ sensor:
       sproutie_crop_4:
         friendly_name: "Active Crop 4"
         value_template: >
-          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+          {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
           {%- set ns = namespace(crops={}) -%}
           {%- for s in slots -%}
             {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -997,7 +997,7 @@ sensor:
         icon_template: mdi:sprout
         attribute_templates:
           count: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}) -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -1020,7 +1020,7 @@ sensor:
               0
             {%- endif -%}
           max_age: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -1060,7 +1060,7 @@ sensor:
             {%- endif -%}
             {{ ns2.max_age }}
           phase: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
@@ -1099,7 +1099,7 @@ sensor:
             {%- endif -%}
             {{ ns2.phase }}
           days_to_harvest: >
-            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8'] -%}
+            {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
             {%- set ns = namespace(crops={}, target_crop='') -%}
             {%- for s in slots -%}
               {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}

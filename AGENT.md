@@ -10,7 +10,7 @@ This document helps AI agents quickly understand the Sproutie Outie Control proj
 
 - **Controls:** Grow lights, circulation fans, exhaust fan, camera flash
 - **Monitors:** Temperature, humidity, VPD (calculated)
-- **Tracks:** Crop batches across 16 slots (A1-A8 top rack, B1-B8 bottom rack)
+- **Tracks:** Crop batches across 20 slots (A1-A8 top rack, B1-B8 bottom rack, SC_TF/SC_TB/SC_BF/SC_BB sidecar cans)
 - **Logs:** Events and telemetry to Elasticsearch
 
 ---
@@ -118,7 +118,7 @@ User must either:
 ## 7. Data Model
 
 ### Slot Data
-- Stored in `input_text.slot_[a-b][1-8]_data` as JSON
+- Stored in `input_text.slot_[a-b][1-8]_data` and `input_text.slot_sc_[tf|tb|bf|bb]_data` as JSON
 - **255 character limit** - JSON must stay compact (~140 chars max)
 - **No history field** - all event history lives in Elasticsearch only
 - **Only Phase Change events modify slot data** - Water, Note, Snapshot, etc. go to ES only
@@ -128,12 +128,15 @@ User must either:
 - A **Batch ID** links 8 slots together (one crop planting across a full rack)
 - A1-A8 share one batch ID (top rack)
 - B1-B8 share another batch ID (bottom rack)
+- **Sidecar slots** (SC_TF, SC_TB, SC_BF, SC_BB) are always independent single-slot plantings with their own batch IDs
 
 ### Rack Mapping
 | Slots | Rack | Camera |
 |-------|------|--------|
 | A1-A8 | Top | `camera.top_eyes_snapshot` |
 | B1-B8 | Bottom | `camera.bottom_eyes_snapshot` |
+| SC_TF, SC_TB | Top (sidecar) | `camera.top_eyes_snapshot` |
+| SC_BF, SC_BB | Bottom (sidecar) | `camera.bottom_eyes_snapshot` |
 
 **Note:** There is only ONE temp/humidity sensor inside the tent (`sensor.monitor2_*`) which covers both racks. The room sensor (`sensor.govee_humidity_temp_monitor_*`) is NOT inside the tent.
 
@@ -153,7 +156,7 @@ Germination → Blackout → Growing → Harvest
 ```
 
 ### Crop Library
-Stored in `input_text.crop_library_json`. Contains `grow_days` per crop type for calculating harvest dates.
+Stored in `input_text.crop_library_json`. Contains `d` (grow days) per crop type for calculating harvest dates. The key was shortened from `grow_days` to `d` to fit within the 255-char limit.
 
 ---
 
@@ -162,15 +165,15 @@ Stored in `input_text.crop_library_json`. Contains `grow_days` per crop type for
 ### Slot Data Corruption (FIXED)
 Previously, the `sproutie_log_event` script rewrote all 8 slot JSON strings on every event (water, note, etc.), which could exceed the 255-char `input_text` limit and corrupt the data.
 
-**Fix applied:** Only Phase Change events now modify slot data. All other events go to ES only. History field was removed from slot JSON entirely (ES is the single source of truth for event history).
+**Fix applied:** Only Phase Change events now modify slot data via a dedicated `sproutie_update_phase` script. All other events go to ES only. History field was removed from slot JSON entirely (ES is the single source of truth for event history). The `sproutie_update_phase` script uses single-template blocks (no cross-step variables) to avoid HA's `literal_eval` type coercion issues.
 
 **If corruption somehow recurs, repair method:**
 1. Get batch ID and planted date from Elasticsearch (`sproutie-events` index, filter `event_type: Planted`)
-2. Create temporary script in `packages/sproutie_outie/repair_slots.yaml`
+2. Add a temporary `repair_*` script to `packages/sproutie_outie/scripts.yaml` (NOT a separate file)
 3. Deploy to server via `sudo tee`
-4. Restart HA (not just reload)
+4. Reload Scripts (Developer Tools → YAML → Reload Scripts)
 5. Run via Developer Tools → Services
-6. Delete repair script after confirming fix
+6. Remove repair script from `scripts.yaml` after confirming fix
 
 ### Snapshot Upload Monitoring
 GCP snapshot uploads are tracked via `scripts/upload_snapshot.sh`. Failed uploads are logged to `/config/www/snapshots/.failed_uploads` and retried daily at 3am. A persistent notification appears in HA if failures exist. Old snapshots (>3 days) are cleaned up automatically.
@@ -186,6 +189,7 @@ GCP snapshot uploads are tracked via `scripts/upload_snapshot.sh`. Failed upload
 | **255 char limit** | `input_text` max length - no history in slots, only Phase Change updates slots |
 | **YAML errors** | Almost always indentation - validate before deploying |
 | **Template syntax** | Lovelace: `{{ }}`, auto-entities templates return JSON arrays |
+| **`literal_eval` type coercion** | HA runs `ast.literal_eval()` on script variable template results. Booleans become `True`/`False` (not strings), numeric strings become `int`. **Never compare across variable steps** with `== 'True'` or assume numeric IDs stay as strings. Always use `\| string \| trim` on BOTH sides of comparisons, or keep all logic in a single template block. See `sproutie_update_phase` for the correct pattern. |
 
 ---
 
