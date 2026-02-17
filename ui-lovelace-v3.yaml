@@ -629,6 +629,106 @@ views:
               style: |
                 ha-card { margin-top: 8px !important; }
 
+          - type: picture-entity
+            entity: camera.sidecar_eyes_snapshot
+            show_state: false
+            show_name: false
+            tap_action:
+              action: fire-dom-event
+              browser_mod:
+                service: browser_mod.popup
+                data:
+                  title: "Sidecar Cans Inspector"
+                  size: wide
+                  style: |
+                    --popup-min-width: 900px;
+                    --popup-max-width: 95vw;
+                    --popup-border-radius: 16px;
+                    --popup-background-color: #1c1c1c;
+                  content:
+                    type: vertical-stack
+                    cards:
+                      - type: picture-entity
+                        entity: camera.sidecar_eyes_snapshot
+                        show_state: false
+                        show_name: false
+                      - type: custom:mushroom-template-card
+                        primary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            Snapshot Time: Unknown
+                          {% else %}
+                            Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                          {% endif %}
+                        secondary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            {{ last }}
+                          {% endif %}
+                        icon: mdi:clock
+                        icon_color: grey
+                        card_mod:
+                          style: |
+                            ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                      - type: custom:mushroom-chips-card
+                        alignment: center
+                        card_mod:
+                          style: |
+                            ha-card { padding-bottom: 12px !important; }
+                        chips:
+                          - type: template
+                            icon: mdi:camera-flash
+                            content: Snap New
+                            icon_color: "{{ 'amber' if is_state('script.sequence_crop_photography', 'on') else 'grey' }}"
+                            card_mod:
+                              style: |
+                                ha-card {
+                                  {% if is_state('script.sequence_crop_photography', 'on') %}
+                                    animation: pulse 2s infinite;
+                                    --chip-background: rgba(255, 193, 7, 0.2) !important;
+                                  {% endif %}
+                                }
+                                @keyframes pulse {
+                                  0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+                                  70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
+                                  100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+                                }
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.sequence
+                                data:
+                                  sequence:
+                                    - service: browser_mod.toast
+                                      data:
+                                        message: "Photography sequence started..."
+                                        duration: 3000
+                                    - service: script.sequence_crop_photography
+                          - type: template
+                            icon: mdi:video
+                            content: Live Feed
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.popup
+                                data:
+                                  title: "Live Feed - Sidecar Cam"
+                                  size: wide
+                                  content:
+                                    type: picture-entity
+                                    entity: camera.sproutieos_esp32_1
+                                    camera_view: live
+                          - type: template
+                            icon: mdi:close
+                            content: Close
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.close_popup
+            card_mod:
+              style: |
+                ha-card { margin-top: 8px !important; }
+
           - type: custom:stack-in-card
             card_mod:
               style: |
@@ -909,7 +1009,9 @@ views:
                     {%- if raw not in ['unknown', 'unavailable', 'Empty', ''] -%}
                       {%- set d = raw | from_json(default={}) -%}
                       {%- if d.get('id') | string == batch_id | string -%}
-                        {%- if s[0] == 'a' or s[:4] == 'sc_t' -%}
+                        {%- if s[:3] == 'sc_' -%}
+                          {%- set ns.camera = 'camera.sidecar_eyes_snapshot' -%}
+                        {%- elif s[0] == 'a' -%}
                           {%- set ns.camera = 'camera.top_eyes_snapshot' -%}
                         {%- else -%}
                           {%- set ns.camera = 'camera.bottom_eyes_snapshot' -%}

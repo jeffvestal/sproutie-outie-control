@@ -242,6 +242,89 @@ views:
                       padding: 4px 8px !important;
                     }
 
+          # SIDECAR CANS CAMERA
+          - type: picture-entity
+            entity: camera.sidecar_eyes_snapshot
+            name: Sidecar Cans
+            show_state: false
+            show_name: true
+            camera_view: auto
+            tap_action:
+              action: fire-dom-event
+              browser_mod:
+                service: browser_mod.popup
+                data:
+                  title: "Sidecar Cans Inspector"
+                  size: wide
+                  style: |
+                    --popup-min-width: 320px;
+                    --popup-max-width: 95vw;
+                    --popup-border-radius: 16px;
+                    --popup-background-color: #1c1c1c;
+                  content:
+                    type: vertical-stack
+                    cards:
+                      - type: picture-entity
+                        entity: camera.sidecar_eyes_snapshot
+                        show_state: false
+                        show_name: false
+                      - type: custom:mushroom-template-card
+                        primary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            Snapshot Time: Unknown
+                          {% else %}
+                            Last Updated: {{ relative_time(as_datetime(last) | as_local) }} ago
+                          {% endif %}
+                        secondary: >
+                          {% set last = states('input_datetime.last_photography_success') %}
+                          {% if last not in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+                            {{ last }}
+                          {% endif %}
+                        icon: mdi:clock
+                        icon_color: grey
+                        card_mod:
+                          style: |
+                            ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+                      - type: custom:mushroom-chips-card
+                        alignment: center
+                        card_mod:
+                          style: |
+                            ha-card { padding-bottom: 12px !important; }
+                        chips:
+                          - type: template
+                            icon: mdi:video
+                            content: Live Feed
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.popup
+                                data:
+                                  title: "Live Feed - Sidecar Cam"
+                                  size: wide
+                                  content:
+                                    type: picture-entity
+                                    entity: camera.sproutieos_esp32_1
+                                    camera_view: live
+                          - type: template
+                            icon: mdi:close
+                            content: Close
+                            tap_action:
+                              action: fire-dom-event
+                              browser_mod:
+                                service: browser_mod.close_popup
+            card_mod:
+              style: |
+                ha-card {
+                  border-radius: 15px !important;
+                  overflow: hidden !important;
+                }
+                .footer {
+                  background: rgba(0,0,0,0.6) !important;
+                  font-size: 12px !important;
+                  padding: 4px 8px !important;
+                }
+
           # SECTION 2: THE "PULSE" STRIP - Environment Cards
           # TEMPERATURE CARD
           - type: custom:mini-graph-card

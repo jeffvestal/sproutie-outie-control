@@ -6,6 +6,13 @@ views:
     icon: mdi:test-tube
     # type: panel  <-- CRITICAL: Ensure this is NOT present. Standard view is safer.
     cards:
+      # ESP32-CAM Test Card
+      - type: picture-entity
+        entity: camera.sproutieos_esp32_1
+        name: ESP32 Sidecar Cam
+        show_state: true
+        camera_view: auto
+
       - type: vertical-stack
         cards:
           # 1. THE TRIGGER BUTTON

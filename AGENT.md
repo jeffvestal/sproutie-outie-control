@@ -19,7 +19,7 @@ This document helps AI agents quickly understand the Sproutie Outie Control proj
 
 | Component | Details |
 |-----------|---------|
-| **Cameras** | 2x Eufy cameras (`camera.top_eyes_snapshot`, `camera.bottom_eyes_snapshot`) |
+| **Cameras** | 2x Eufy cameras (`camera.top_eyes_snapshot`, `camera.bottom_eyes_snapshot`), 1x ESP32-CAM for sidecar cans (`camera.sproutieos_esp32_1`, snapshot: `camera.sidecar_eyes_snapshot`) |
 | **Sensors** | Govee temp/humidity: `sensor.monitor2_*` (single sensor inside tent - covers both racks), `sensor.govee_humidity_temp_monitor_*` (room - NOT used for exhaust automation) |
 | **Power** | Kasa/TP-Link 6-port smart strip - controls all switches and reports power consumption |
 
@@ -133,10 +133,9 @@ User must either:
 ### Rack Mapping
 | Slots | Rack | Camera |
 |-------|------|--------|
-| A1-A8 | Top | `camera.top_eyes_snapshot` |
-| B1-B8 | Bottom | `camera.bottom_eyes_snapshot` |
-| SC_TF, SC_TB | Top (sidecar) | `camera.top_eyes_snapshot` |
-| SC_BF, SC_BB | Bottom (sidecar) | `camera.bottom_eyes_snapshot` |
+| A1-A8 | Top | `camera.top_eyes_snapshot` (Eufy) |
+| B1-B8 | Bottom | `camera.bottom_eyes_snapshot` (Eufy) |
+| SC_TF, SC_TB, SC_BF, SC_BB | Sidecar cans | `camera.sidecar_eyes_snapshot` (ESP32-CAM @ 192.168.10.180) |
 
 **Note:** There is only ONE temp/humidity sensor inside the tent (`sensor.monitor2_*`) which covers both racks. The room sensor (`sensor.govee_humidity_temp_monitor_*`) is NOT inside the tent.
 

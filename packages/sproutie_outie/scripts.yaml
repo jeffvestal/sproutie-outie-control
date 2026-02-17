@@ -146,7 +146,9 @@ script:
         then:
           - variables:
               camera_entity: >-
-                {% if target_slot[0] | upper == 'A' or target_slot[:4] | upper == 'SC_T' %}
+                {% if target_slot[:3] | upper == 'SC_' %}
+                  camera.sproutieos_esp32_1
+                {% elif target_slot[0] | upper == 'A' %}
                   camera.top_eyes
                 {% else %}
                   camera.bottom_eyes
@@ -601,7 +603,9 @@ script:
                 crop_data: "{{ states('input_text.slot_' ~ slot_id | lower ~ '_data') | from_json(default={}) }}"
                 crop_name: "{{ crop_data.get('crop', 'unknown') | replace(' ', '_') | lower }}"
                 camera_entity: >-
-                  {% if slot_id[0] | upper == 'A' or slot_id[:4] | upper == 'SC_T' %}
+                  {% if slot_id[:3] | upper == 'SC_' %}
+                    camera.sproutieos_esp32_1
+                  {% elif slot_id[0] | upper == 'A' %}
                     camera.top_eyes
                   {% else %}
                     camera.bottom_eyes
@@ -619,7 +623,9 @@ script:
               data:
                 source: "/config/www/snapshots/{{ full_filename }}"
                 target: >-
-                  {% if slot_id[0] | upper == 'A' or slot_id[:4] | upper == 'SC_T' %}
+                  {% if slot_id[:3] | upper == 'SC_' %}
+                    /config/www/snapshots/sidecar_eyes_latest.jpg
+                  {% elif slot_id[0] | upper == 'A' %}
                     /media/snapshots/top_eyes_latest.jpg
                   {% else %}
                     /media/snapshots/bottom_eyes_latest.jpg
@@ -654,12 +660,14 @@ script:
           entity_id:
             - camera.top_eyes_snapshot
             - camera.bottom_eyes_snapshot
+            - camera.sidecar_eyes_snapshot
       - delay: "00:00:02"
       - service: homeassistant.update_entity
         target:
           entity_id:
             - camera.top_eyes_snapshot
             - camera.bottom_eyes_snapshot
+            - camera.sidecar_eyes_snapshot
       - service: input_datetime.set_datetime
         target:
           entity_id: input_datetime.last_photography_success
