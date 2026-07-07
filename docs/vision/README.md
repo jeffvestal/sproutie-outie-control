@@ -20,6 +20,9 @@ This is the fun tech. Build it like it matters.**
 | [03-scale-and-predict.md](03-scale-and-predict.md) | The entity model that scales to N tents/yards/pots, and the predictive layer (GDD, VPD, camera CV, harvest ETA) |
 | [04-roadmap.md](04-roadmap.md) | Phased build plan — copy-paste briefs for individual Opus sessions |
 | [05-wild-ideas.md](05-wild-ideas.md) | The over-the-top stuff: timelapse reels, Fischoeder the landlord-agronomist, kids' growth races, coffee-can futures |
+| [06-brain-spec.md](06-brain-spec.md) | **Sproutie Brain engineering spec** — invariants, schemas, deadman control, API/MCP surface, tent-sim, migration. The multi-pass Opus doc. |
+| [07-grow-tab-spec.md](07-grow-tab-spec.md) | **Grow tab in Nat iOS** (decided: tab, not separate app) — IA, cards, widgets, intents, two-stage data path |
+| [08-moonshots.md](08-moonshots.md) | The go-crazy pass: agentic ops loop, the Almanac, Seasons, Autopilot, the Colony, digital twin, the Terroir Report |
 
 ## TL;DR of the recommendation
 
