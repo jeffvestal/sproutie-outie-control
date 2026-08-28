@@ -23,6 +23,7 @@ This is the fun tech. Build it like it matters.**
 | [06-brain-spec.md](06-brain-spec.md) | **Sproutie Brain engineering spec** — invariants, schemas, deadman control, API/MCP surface, tent-sim, migration. The multi-pass Opus doc. |
 | [07-grow-tab-spec.md](07-grow-tab-spec.md) | **Grow tab in Nat iOS** (decided: tab, not separate app) — IA, cards, widgets, intents, two-stage data path |
 | [08-moonshots.md](08-moonshots.md) | The go-crazy pass: agentic ops loop, the Almanac, Seasons, Autopilot, the Colony, digital twin, the Terroir Report |
+| [09-rip-and-replace.md](09-rip-and-replace.md) | **← START HERE.** The clean-room build plan (2026-08-28). Supersedes 04's phase order and 06§8's migration. Includes the live diagnostic that reshaped it. |
 
 ## TL;DR of the recommendation
 

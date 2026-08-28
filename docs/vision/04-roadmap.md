@@ -1,5 +1,10 @@
 # 04 — Roadmap: phased briefs for Opus build sessions
 
+> ⚠️ **Phase order superseded by [09-rip-and-replace.md](09-rip-and-replace.md) (2026-08-28).**
+> This roadmap assumed live grows that had to be preserved during migration. Jeff chose rip
+> and replace with a hand-managed tray instead. The *content* of these phases is still valid
+> and referenced by 09 — the sequencing and the parallel-run cutover are not. Follow 09.
+
 Each phase is a self-contained brief. Start an Opus session with:
 *"Read `docs/vision/README.md`, `00-current-state.md`, and the Phase N brief in `04-roadmap.md`.
 Execute Phase N. Respect the guardrails."* Phases ship value independently — stop anywhere and
