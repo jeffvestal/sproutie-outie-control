@@ -1,0 +1,150 @@
+name: Sproutie work item
+description: Capture a feature, defect, investigation, or architecture decision for agent-led delivery.
+title: "[Area] "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for work that may be researched, planned, implemented, reviewed, and validated by different agents.
+        Keep decisions, evidence, and final build/test results in this issue so the next session starts with context.
+        Pipeline guide: https://github.com/jeffvestal/nat/blob/main/docs/CODING_PIPELINE.md
+        Architecture: `docs/vision/` — start with `09-rip-and-replace.md`.
+        Add `agent:ready` only when this issue is ready for an agent to claim.
+
+        **Note:** the Codex dispatcher currently scans `jeffvestal/nat` and `jeffvestal/edith` only.
+        Until this repo is added, run these issues via a manually launched session.
+
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      options:
+        - Bug / regression
+        - Feature
+        - UX / usability improvement
+        - Investigation / decision
+        - Architecture / migration
+        - Reliability / observability
+        - Security
+        - Cleanup / technical debt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Product scope
+      options:
+        - HA config (device layer)
+        - Sproutie Brain (service)
+        - Recipes / grow model
+        - Data / telemetry
+        - Hardware / physical
+        - Nat Grow tab (cross-repo)
+        - Docs / architecture
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user_visible_ui
+    attributes:
+      label: User-visible UI change?
+      options:
+        - "No"
+        - "Nat iOS"
+        - "HA dashboard"
+        - "Both"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ui_preview_inputs
+    attributes:
+      label: UI preview inputs
+      description: For UI work, complete every line. For non-UI work, enter N/A on each line.
+      placeholder: |
+        Affected screens:
+        Current screenshots/source paths:
+        Desired behavior:
+        Required states: Normal, loading, empty, error, disabled, stale-data.
+        Accessibility expectations:
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_problem
+    attributes:
+      label: User problem
+      description: What happened, who feels it, and why it matters. Include screenshots, exact errors, or a short reproduction when useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired_outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the observable result and what "done" means, not a presumed implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Existing evidence and context
+      description: Link relevant paths, commits, branches, prior issues, spec sections, or known data examples.
+
+  - type: textarea
+    id: ownership
+    attributes:
+      label: Data ownership and compatibility
+      description: Name the current and intended source of truth, allowed writers, sync direction, migration needs, and whether historic data must remain readable.
+      placeholder: |
+        Source of truth:
+        Allowed writers:
+        Sync direction:
+        Migration / backward compatibility:
+
+  - type: textarea
+    id: physical_prereqs
+    attributes:
+      label: Physical / access prerequisites
+      description: This project touches real hardware. Name any LAN access, credentials, device state, or in-person steps required — and whether live plants are at risk.
+      placeholder: |
+        Network access required:
+        Credentials required:
+        Device/tent state assumed:
+        Risk to live grows:
+
+  - type: checkboxes
+    id: agent_workflow
+    attributes:
+      label: Agent workflow required
+      options:
+        - label: Research the current implementation before proposing changes.
+        - label: Write a decision-complete implementation plan in an issue comment or linked design document.
+        - label: Use an independent model/provider for code review when the change is consequential.
+        - label: Run focused automated tests before closing.
+        - label: Record manual validation steps and observed device behavior before closing.
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: Concrete, observable results. Include failure/offline behavior.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals and guardrails
+      description: What should not change? Include safety, data-loss, cost, and live-grow constraints.
+
+  - type: textarea
+    id: validation_notes
+    attributes:
+      label: Manual validation notes
+      description: "Fill in after implementation: what was run, against which device state, expected vs actual, and any follow-up issue."
