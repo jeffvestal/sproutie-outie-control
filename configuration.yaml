@@ -31,7 +31,9 @@ shell_command:
   upload_snapshot_to_gcp: !secret gcp_upload_command
   snapshot_maintenance: !secret gcp_maintenance_command
   cleanup_old_snapshots: 'find /config/www/snapshots/ -name "*.jpg" -not -name "*_latest.jpg" -mtime +3 -delete'
-  test_curl: 'curl -v -X POST -F "file=@/config/www/snapshots/test_image.jpg" -H "Authorization: Bearer sproutie-secret-token-123" https://us-central1-gen-lang-client-0516054761.cloudfunctions.net/upload_snapshot'
+  # test_curl removed 2026-08-29 — it hardcoded the GCP bearer token in a public repo and
+  # nothing called it. To test the upload path, run scripts/upload_snapshot.sh directly with
+  # the token from secrets.yaml. See issue #2.
   log_json: 'echo "{{ msg }}" >> /config/.cursor/debug.log'
 
 # Load Lovelace in YAML mode
