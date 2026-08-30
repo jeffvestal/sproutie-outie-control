@@ -97,3 +97,56 @@ their bragging rights, zero extra architecture (05§3).
 - Acceptance: airplane-mode renders last state with staleness banner; plant→water→harvest
   round-trip lands in ES with no direct network path to the tent; a harvest countdown widget
   survives a week without the app being opened.
+
+---
+
+## Control surface — the gap this spec had
+
+**Added 2026-08-30.** Everything above is a *monitoring* surface. The v1 Home Assistant dashboard
+also carried an **Operations panel** — device toggles and schedule editing — and this spec simply
+omitted it, on the unstated assumption that control stays on the HA wall panel (`01-ha-done-right.md`
+Law 8). That assumption is wrong: the point of the Grow tab is that Jeff stops opening Lovelace.
+
+What v1 offered, and what must survive:
+
+| Group | Controls |
+|---|---|
+| Master | System (production mode) · Inspect mode |
+| Devices | Top light · Top fan · Bottom light · Bottom fan · Exhaust · Camera flash |
+| Light schedule | Enabled · ON time · OFF time |
+| Exhaust control | Mode (Schedule / Humidity / Temperature / VPD) · Run min · Pause-snooze min |
+| Photo schedule | Enabled · Interval min |
+
+### The split that matters
+
+These are **two different capabilities with different infrastructure**, and conflating them is how
+this ends up half-built:
+
+- **Commands** — device toggles, inspect mode. A person pressing "lights on" expects the light on
+  *now*. The git bridge has minutes of latency, so commands **require the Stage-2 live rail**
+  (Brain REST/MCP over Tailscale). **Blocked on R3**, when the Brain actually drives devices.
+- **Configuration** — schedules, intervals, exhaust mode and durations. Latency-tolerant: these
+  describe intent, not an immediate action. They can be **git-mediated writes** the Brain picks up
+  on its next pull, and can therefore ship before R3.
+
+Build the configuration half first. It is unblocked, it is most of the screen, and it does not
+require the tent to be reachable.
+
+### Non-negotiable safety rules
+
+- **A phone toggle must not silently fight the schedule.** Manual device commands use the TTL
+  override from `06-brain-spec.md` §5 (`POST /zones/{z}/devices/{d}` with `state` + `ttl`), so an
+  override auto-reverts and the engine reclaims control. Show the remaining TTL in the UI.
+- **Show verified state, not commanded state.** Reuse `devices.<role>.verified` and `watts`. A
+  toggle that flipped but drew no power must read as failed, not on. This is the exact six-month
+  failure from `00-current-state.md`.
+- **Confirm anything that can harm a grow** — lights off during a light phase, exhaust off while
+  the mold index is elevated, disabling the light schedule outright.
+- **Never allow a state that leaves plants dark overnight without an explicit, worded confirmation.**
+- Colin has a login. Device control is **not** part of the kid surface.
+
+### Placement
+
+A fourth segment (`Now · Trends · Plants · Control`) rather than a separate screen — it belongs
+beside the state it acts on. Schedules and settings sit below the device grid, matching the v1
+panel's ordering so the muscle memory carries over.
