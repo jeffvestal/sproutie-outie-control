@@ -1,0 +1,134 @@
+# Sproutie-Outie — canonical device map
+#
+# ONE source of truth for every physical device in the tent. Verified against live hardware
+# 2026-08-30 by reading the entity registry and the TP-Link Kasa app side by side.
+#
+# WHY THIS FILE EXISTS
+# The six switch entity IDs below appear ~64 times across automations.yaml, scripts.yaml,
+# three Lovelace dashboards, and the MCP server. When the Kasa integration dropped in
+# early 2026 every one of those references silently pointed at nothing: HA accepted each
+# service call, returned success, and no relay moved. Nobody found out for six months.
+# Consumers must resolve devices through this file by ROLE, never by hardcoded entity ID.
+#
+# HOW TO EDIT
+# This file is written from observed hardware, not from intention. If a value here
+# disagrees with the tent, the tent is right. Re-verify with:
+#   Developer Tools -> Template:
+#     {% for s in states.switch %}{{ s.entity_id }} = {{ s.state }}
+#     {% endfor %}
+# and cross-check against the Kasa app's own socket labels.
+
+schema_version: 1
+verified_at: 2026-08-30T15:30:00Z
+verified_by: jeff+nat            # live registry dump + Kasa app cross-check
+verified_method: >-
+  Enumerated states.switch, enumerated device_entities() for all six socket devices,
+  and compared against the Kasa app control panel with known physical state
+  (top light, top fan, bottom fan on). Names agree 1:1 across app, HA, and hardware.
+
+# --- The power strip ------------------------------------------------------
+# TP-LINK HS300, 6 metered sockets. Socket aliases live ON THE STRIP and are the
+# authority for naming; HA device names are hand-entered and can drift from them.
+strip:
+  model: HS300
+  ha_device: "TP-LINK_Power Strip_800B HS300"
+  parent_switch: switch.sproutie_outie_smart_power
+  led_switch: switch.sproutie_outie_smart_power_led
+  sockets: 6
+
+# --- Devices, keyed by ROLE ----------------------------------------------
+# Consumers reference roles (rack_top.light), never entity IDs.
+#
+# power: instantaneous draw in watts. NOTE: the HS300 emeter is POLLED and LAGS
+#   actual switch state — a socket can read non-zero for a while after being turned
+#   off. Never treat a single instantaneous reading as verification. See settle_s.
+devices:
+  rack_top:
+    light:
+      switch: switch.top_shelf_lights
+      kasa_alias: "top light"
+      power: sensor.top_shelf_lights_current_consumption
+      energy_today: sensor.top_shelf_lights_today_s_consumption
+      voltage: sensor.top_shelf_lights_voltage
+      current: sensor.top_shelf_lights_current
+      expected_watts_on: [20, 45]     # grow light; refine after a full on/off cycle
+    fan:
+      switch: switch.top_shelf_fan
+      kasa_alias: "top fan"
+      power: sensor.top_shelf_fan_current_consumption
+      energy_today: sensor.top_shelf_fan_today_s_consumption
+      voltage: sensor.top_shelf_fan_voltage
+      current: sensor.top_shelf_fan_current
+      expected_watts_on: [2, 8]
+
+  rack_bottom:
+    light:
+      switch: switch.bottom_shelf_lights
+      kasa_alias: "bottom light"
+      power: sensor.bottom_shelf_lights_current_consumption
+      energy_today: sensor.bottom_shelf_lights_today_s_consumption
+      voltage: sensor.bottom_shelf_lights_voltage
+      current: sensor.bottom_shelf_lights_current
+      expected_watts_on: [20, 45]
+    fan:
+      switch: switch.bottom_shelf_fan
+      kasa_alias: "bottom fan"
+      power: sensor.bottom_shelf_fan_current_consumption
+      energy_today: sensor.bottom_shelf_fan_today_s_consumption
+      voltage: sensor.bottom_shelf_fan_voltage
+      current: sensor.bottom_shelf_fan_current
+      expected_watts_on: [2, 8]
+
+  tent:
+    exhaust:
+      switch: switch.exhaust_fan
+      kasa_alias: "Exhaust Fan"
+      power: sensor.exhaust_fan_current_consumption
+      energy_today: sensor.exhaust_fan_today_s_consumption
+      voltage: sensor.exhaust_fan_voltage
+      current: sensor.exhaust_fan_current
+      expected_watts_on: [15, 35]
+
+  camera:
+    flash:
+      switch: switch.camera_flash
+      kasa_alias: "Flash lights"
+      power: sensor.camera_flash_current_consumption
+      energy_today: sensor.camera_flash_today_s_consumption
+      voltage: sensor.camera_flash_voltage
+      current: sensor.camera_flash_current
+      expected_watts_on: [3, 10]
+
+# --- Verification policy --------------------------------------------------
+# Used by the watchdog / command-and-verify layer (issue #8).
+verification:
+  settle_s: 30          # wait this long after a command before reading power
+  poll_timeout_s: 120   # give up and raise verified:false after this
+  # A command is verified when the power reading, taken at least settle_s after the
+  # command AND carrying a timestamp newer than the command, falls inside
+  # expected_watts_on (for on) or below off_threshold_w (for off).
+  off_threshold_w: 0.5
+  # Never report success from switch state alone. The switch reflects what HA asked
+  # for, not what the relay did — that distinction is the entire point of this project.
+
+# --- Known warts ----------------------------------------------------------
+known_issues:
+  - id: camera-flash-month-sensor-suffix
+    entity: sensor.camera_flash_6_this_month_s_consumption
+    note: >-
+      Carries a _6 suffix from an entity-registry name collision — something else claimed
+      the clean name at some point. Cosmetic; the sensor reports correctly. Clean up during
+      the R1 rebuild rather than renaming live and breaking history.
+  - id: emeter-lag
+    note: >-
+      HS300 power sensors are polled and can lag switch changes by tens of seconds. On
+      2026-08-30 this produced a convincing false reading: sockets showed draw with every
+      switch off. Do not diagnose from instantaneous power alone.
+  - id: dead-aux-light-reference
+    entity: switch.aux_light
+    locations: [fix_scripts.py:179, fix_scripts.py:188]
+    note: >-
+      Referenced twice in fix_scripts.py but does not exist in the entity registry — it was
+      not present in the 2026-08-30 states.switch enumeration. A seventh device that never
+      shipped, or one removed without cleaning up. Delete the references during R1; do not
+      create the entity to satisfy them.
