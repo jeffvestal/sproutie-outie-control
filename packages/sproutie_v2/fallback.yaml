@@ -1,0 +1,186 @@
+# Sproutie-Outie v2 — the dumb fallback layer
+#
+# STATUS: DRAFT. Not deployed. Written 2026-08-30 against the verified entity map
+# (hardware/entity-map.yaml). Do not deploy until #6 confirms the entity IDs and measures
+# the real settle time; the numbers marked TUNE below are estimates.
+#
+# WHAT THIS IS
+# The complete grow automation, in one file, with no crop logic in it. Lights on a schedule,
+# exhaust on a duty cycle, a thermal safety rule, and watchdogs that make silence audible.
+# That is enough to run the tent. Everything cleverer — phases, recipes, harvest prediction —
+# belongs in the Brain (R2+), never here.
+#
+# WHAT THIS REPLACES
+# packages/sproutie_outie/{automations,scripts,templates,helpers,sensors}.yaml — ~2,900 lines
+# of copy-pasted templates and 255-char input_text state. This file is the whole v1 grow
+# behaviour, minus the parts that were lying.
+#
+# THE ONE RULE
+# This layer must keep the tent alive with the Brain switched off. When the Brain exists it
+# takes over on top of this (R3), and this becomes the deadman fallback — so it must stay
+# boring, self-contained, and free of anything that can fail silently.
+
+# --- Safety first ---------------------------------------------------------
+# Runs regardless of any mode flag, schedule, or Brain state. Nothing overrides it.
+automation:
+  - id: sproutie_v2_thermal_guard
+    alias: "Sproutie: thermal guard"
+    description: >-
+      Tent over temperature: kill both lights (the heat source), force exhaust, notify.
+      Deliberately has no condition on production mode — safety is not optional.
+    mode: single
+    triggers:
+      - trigger: numeric_state
+        entity_id: sensor.sproutie_tent_temperature   # TUNE: confirm Govee entity in #6
+        above: 90
+        for: "00:02:00"
+    actions:
+      - action: switch.turn_off
+        target:
+          entity_id: [switch.top_shelf_lights, switch.bottom_shelf_lights]
+      - action: switch.turn_on
+        target: {entity_id: switch.exhaust_fan}
+      - action: notify.persistent_notification
+        data:
+          title: "Sproutie: THERMAL GUARD"
+          message: >-
+            Tent hit {{ states('sensor.sproutie_tent_temperature') }}F. Lights off, exhaust on.
+
+  - id: sproutie_v2_thermal_clear
+    alias: "Sproutie: thermal guard cleared"
+    description: Restores normal scheduling once the tent has cooled with hysteresis.
+    mode: single
+    triggers:
+      - trigger: numeric_state
+        entity_id: sensor.sproutie_tent_temperature
+        below: 82                       # hysteresis gap prevents relay chatter
+        for: "00:10:00"
+    actions:
+      - action: automation.trigger
+        target: {entity_id: automation.sproutie_light_schedule_reconcile}
+
+# --- Lights ---------------------------------------------------------------
+# Per-rack schedules. v1 could not express this; the hardware always could.
+  - id: sproutie_light_schedule_reconcile
+    alias: "Sproutie: reconcile light schedule"
+    description: >-
+      Single source of light behaviour. Runs on a timer rather than on on/off edges, so a
+      missed trigger self-heals on the next pass instead of leaving the tent dark for a day.
+      This is the pattern v1 lacked: state is reconciled, not commanded once and assumed.
+    mode: single
+    triggers:
+      - trigger: time_pattern
+        minutes: "/5"
+      - trigger: homeassistant
+        event: start
+    actions:
+      - repeat:
+          for_each:
+            - {rack: top,    switch: switch.top_shelf_lights,    on_hour: 6, off_hour: 22}
+            - {rack: bottom, switch: switch.bottom_shelf_lights, on_hour: 6, off_hour: 22}
+          sequence:
+            - variables:
+                should_be_on: >-
+                  {{ now().hour >= repeat.item.on_hour and now().hour < repeat.item.off_hour }}
+            - if:
+                - condition: template
+                  value_template: >-
+                    {{ should_be_on and is_state(repeat.item.switch, 'off') }}
+              then:
+                - action: switch.turn_on
+                  target: {entity_id: "{{ repeat.item.switch }}"}
+            - if:
+                - condition: template
+                  value_template: >-
+                    {{ not should_be_on and is_state(repeat.item.switch, 'on') }}
+              then:
+                - action: switch.turn_off
+                  target: {entity_id: "{{ repeat.item.switch }}"}
+
+# --- Exhaust --------------------------------------------------------------
+  - id: sproutie_exhaust_duty_cycle
+    alias: "Sproutie: exhaust duty cycle"
+    description: >-
+      15 min on / 45 min off while lights are on; a single 15 min purge overnight.
+      TUNE in #7 once VPD sensing is trustworthy — this is a safe default, not a good one.
+    mode: single
+    triggers:
+      - trigger: time_pattern
+        minutes: "0"
+    actions:
+      - action: switch.turn_on
+        target: {entity_id: switch.exhaust_fan}
+      - delay: "00:15:00"
+      - condition: template            # never fight the thermal guard
+        value_template: >-
+          {{ states('sensor.sproutie_tent_temperature') | float(0) < 88 }}
+      - action: switch.turn_off
+        target: {entity_id: switch.exhaust_fan}
+
+# --- Watchdogs: make silence audible -------------------------------------
+# The entire reason v1 failed invisibly for six months. Every one of these fires a
+# notification a human actually sees.
+  - id: sproutie_watchdog_sensor_silent
+    alias: "Sproutie: watchdog — environment sensor silent"
+    mode: single
+    triggers:
+      - trigger: state
+        entity_id: sensor.sproutie_tent_temperature
+        to: ["unavailable", "unknown"]
+        for: "00:15:00"
+    actions:
+      - action: notify.persistent_notification
+        data:
+          title: "Sproutie: sensor silent"
+          message: "Tent temperature unavailable 15+ min. Thermal guard is BLIND."
+
+  - id: sproutie_watchdog_switch_unavailable
+    alias: "Sproutie: watchdog — switch unavailable"
+    description: >-
+      Catches the exact failure that killed v1: the Kasa integration dropping and every
+      service call succeeding into nothing.
+    mode: single
+    triggers:
+      - trigger: state
+        entity_id:
+          - switch.top_shelf_lights
+          - switch.bottom_shelf_lights
+          - switch.top_shelf_fan
+          - switch.bottom_shelf_fan
+          - switch.exhaust_fan
+          - switch.camera_flash
+        to: ["unavailable", "unknown"]
+        for: "00:05:00"
+    actions:
+      - action: notify.persistent_notification
+        data:
+          title: "Sproutie: device offline"
+          message: "{{ trigger.entity_id }} unavailable 5+ min. Automation is not reaching it."
+
+  - id: sproutie_watchdog_light_not_drawing
+    alias: "Sproutie: watchdog — commanded on but drawing no power"
+    description: >-
+      Command-and-verify, the cheap version. A light switched on that draws no watts is a
+      dead relay, a dead bulb, or a lying integration. v1 had power sensors and never
+      compared them to anything.
+      NOTE: the HS300 emeter is POLLED and lags switch changes. The 10-minute delay is
+      deliberately far beyond the measured settle time — see #6.
+    mode: single
+    triggers:
+      - trigger: state
+        entity_id: [switch.top_shelf_lights, switch.bottom_shelf_lights]
+        to: "on"
+        for: "00:10:00"
+    conditions:
+      - condition: template
+        value_template: >-
+          {% set power = trigger.entity_id | replace('switch.', 'sensor.')
+             ~ '_current_consumption' %}
+          {{ states(power) | float(-1) < 0.5 }}
+    actions:
+      - action: notify.persistent_notification
+        data:
+          title: "Sproutie: light not drawing power"
+          message: >-
+            {{ trigger.entity_id }} has been ON for 10 min drawing under 0.5 W.
+            The relay, the bulb, or the integration is lying.

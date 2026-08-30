@@ -80,8 +80,13 @@ decided; the live tray has airflow and a hand-log.
 
 **Rebuild Home Assistant deliberately rather than upgrading six months of cruft.**
 
-1. **Fresh HA install** (current stable), or at minimum a clean `/config` built from scratch.
-   Restore *nothing* from the old config automatically.
+1. **Rebuild `/config` from scratch — do NOT reinstall HA or re-pair devices.**
+   *Revised 2026-08-30.* This step originally called for a fresh install because we believed the
+   Kasa entity IDs had drifted. **They had not** — see #4's rewrite. All six switches are live and
+   carry the exact IDs the repo already references, and all six power sensors report real watts.
+   A fresh install would re-pair every device, mint new entity IDs, and destroy the only part of
+   the system that is currently healthy. Rebuild the *configuration*; keep the pairings.
+   Restore *nothing* from the old `/config` automatically.
 2. **Re-pair devices with pinned identity.** Kasa strip, Govee, cameras. At pairing time, set
    entity IDs explicitly and record them in **`config/site.yaml`** (06§1). Verify each outlet's
    `*_current_consumption` sensor reports real watts before moving on — that is the signal that
