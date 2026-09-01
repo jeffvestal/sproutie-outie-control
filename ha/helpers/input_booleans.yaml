@@ -1,0 +1,23 @@
+r1_safety_armed:
+  name: R1 safety armed
+  icon: mdi:shield-lock-outline
+r1_thermal_latch:
+  name: R1 thermal safety latch
+  icon: mdi:thermometer-alert
+  initial: false
+r1_thermal_test_mode:
+  name: R1 thermal test mode
+  icon: mdi:test-tube
+  initial: false
+r1_sensor_fault_test_mode:
+  name: R1 sensor fault test mode
+  icon: mdi:alert-decagram-outline
+  initial: false
+r1_fallback_lights_enabled:
+  name: R1 fallback lights schedule
+  icon: mdi:lightbulb-auto-outline
+  initial: false
+r1_fallback_exhaust_enabled:
+  name: R1 fallback exhaust cycle
+  icon: mdi:fan-auto
+  initial: false

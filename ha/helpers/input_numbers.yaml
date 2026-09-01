@@ -1,0 +1,56 @@
+r1_thermal_trip_f:
+  name: R1 thermal trip temperature
+  min: 80
+  max: 100
+  step: 1
+  unit_of_measurement: °F
+  mode: box
+  initial: 90
+r1_thermal_release_f:
+  name: R1 thermal release temperature
+  min: 70
+  max: 90
+  step: 1
+  unit_of_measurement: °F
+  mode: box
+  initial: 85
+r1_sensor_stale_minutes:
+  name: R1 temperature stale limit
+  min: 5
+  max: 60
+  step: 5
+  unit_of_measurement: min
+  mode: box
+  initial: 15
+r1_exhaust_run_minutes:
+  name: R1 exhaust run duration
+  min: 1
+  max: 30
+  step: 1
+  unit_of_measurement: min
+  mode: box
+  initial: 1
+r1_exhaust_cycle_minutes:
+  name: R1 exhaust cycle interval
+  min: 2
+  max: 60
+  step: 1
+  unit_of_measurement: min
+  mode: box
+  initial: 10
+r1_exhaust_humidity_threshold:
+  name: R1 exhaust humidity threshold
+  min: 40
+  max: 95
+  step: 1
+  unit_of_measurement: "%"
+  mode: box
+  initial: 75
+r1_exhaust_humidity_hold_minutes:
+  name: R1 exhaust humidity hold time
+  min: 1
+  max: 60
+  step: 1
+  unit_of_measurement: min
+  mode: box
+  initial: 5

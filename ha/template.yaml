@@ -1,0 +1,6 @@
+- binary_sensor:
+    - name: R1 tent humidity high
+      unique_id: r1_tent_humidity_high
+      state: >-
+        {{ states('sensor.monitor2_humidity') | float(-1) >=
+           states('input_number.r1_exhaust_humidity_threshold') | float(75) }}

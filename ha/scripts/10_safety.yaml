@@ -1,0 +1,50 @@
+r1_apply_thermal_safety:
+  alias: R1 apply thermal safety
+  mode: restart
+  sequence:
+    # Physical commands happen immediately; each role script then waits for its measured power.
+    - action: switch.turn_off
+      target:
+        entity_id:
+          - switch.top_shelf_lights
+          - switch.bottom_shelf_lights
+    - action: switch.turn_on
+      target:
+        entity_id: switch.exhaust_fan
+    - action: script.r1_set_top_lights
+      data: {desired: "off"}
+    - action: script.r1_set_bottom_lights
+      data: {desired: "off"}
+    - action: script.r1_set_exhaust
+      data: {desired: "on"}
+
+r1_notify_safety:
+  alias: R1 safety notification
+  mode: queued
+  fields:
+    title: {required: true}
+    message: {required: true}
+  sequence:
+    - action: persistent_notification.create
+      data:
+        title: "{{ title }}"
+        message: "{{ message }}"
+    - action: notify.mobile_app_sergeant_bosco
+      data:
+        title: "{{ title }}"
+        message: "{{ message }}"
+
+r1_notify_watchdog:
+  alias: R1 watchdog notification
+  mode: queued
+  fields:
+    message: {required: true}
+  sequence:
+    - action: persistent_notification.create
+      data:
+        title: R1 watchdog alert
+        message: "{{ message }}"
+    - action: input_datetime.set_datetime
+      target: {entity_id: input_datetime.r1_last_watchdog_alert}
+      data:
+        datetime: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"

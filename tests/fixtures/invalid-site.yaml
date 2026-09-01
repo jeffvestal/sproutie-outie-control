@@ -1,0 +1,8 @@
+schema_version: 1
+site:
+  zones:
+    missing-power:
+      ha:
+        devices:
+          lights:
+            switch: switch.example

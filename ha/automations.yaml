@@ -1,0 +1,202 @@
+- id: r1_thermal_priority_latch
+  alias: R1 thermal priority latch
+  mode: restart
+  triggers:
+    - trigger: state
+      entity_id:
+        - sensor.monitor2_temperature
+        - input_boolean.r1_thermal_test_mode
+        - input_boolean.r1_sensor_fault_test_mode
+    - trigger: time_pattern
+      minutes: "/5"
+    - trigger: homeassistant
+      event: start
+  conditions:
+    - condition: state
+      entity_id: input_boolean.r1_safety_armed
+      state: "on"
+  variables:
+    temperature: "{{ states('sensor.monitor2_temperature') | float(none) }}"
+    age_seconds: >-
+      {{ as_timestamp(now()) - as_timestamp(states.sensor.monitor2_temperature.last_updated, 0) }}
+    stale_limit_seconds: "{{ states('input_number.r1_sensor_stale_minutes') | int(15) * 60 }}"
+    sensor_bad: >-
+      {{ is_state('input_boolean.r1_sensor_fault_test_mode', 'on') or
+         temperature is none or age_seconds > stale_limit_seconds }}
+    unsafe: >-
+      {{ is_state('input_boolean.r1_thermal_test_mode', 'on') or sensor_bad or
+         temperature >= states('input_number.r1_thermal_trip_f') | float(90) }}
+    recovered: >-
+      {{ not sensor_bad and not is_state('input_boolean.r1_thermal_test_mode', 'on') and
+         temperature < states('input_number.r1_thermal_release_f') | float(85) }}
+  actions:
+    - choose:
+        - conditions: "{{ unsafe }}"
+          sequence:
+            - action: input_boolean.turn_on
+              target: {entity_id: input_boolean.r1_thermal_latch}
+            - action: script.r1_apply_thermal_safety
+            - action: script.r1_notify_safety
+              data:
+                title: R1 thermal safety active
+                message: >-
+                  Thermal safety latch is active: temperature is unsafe, stale, unavailable, or
+                  a thermal/sensor-fault test mode is on. Lights were commanded off and exhaust
+                  commanded on.
+        - conditions:
+            - condition: state
+              entity_id: input_boolean.r1_thermal_latch
+              state: "on"
+            - condition: template
+              value_template: "{{ recovered }}"
+          sequence:
+            - action: input_boolean.turn_off
+              target: {entity_id: input_boolean.r1_thermal_latch}
+            - action: script.r1_notify_safety
+              data:
+                title: R1 thermal safety cleared
+                message: Temperature is fresh and below the configured release threshold.
+
+- id: r1_fallback_light_schedule
+  alias: R1 fallback light schedule
+  mode: single
+  triggers:
+    - trigger: time
+      at: input_datetime.r1_lights_on
+      id: "on"
+    - trigger: time
+      at: input_datetime.r1_lights_off
+      id: "off"
+    - trigger: homeassistant
+      event: start
+      id: reconcile
+  conditions:
+    - condition: state
+      entity_id: input_boolean.r1_fallback_lights_enabled
+      state: "on"
+    - condition: state
+      entity_id: input_boolean.r1_thermal_latch
+      state: "off"
+  actions:
+    - variables:
+        desired: >-
+          {% if trigger.id == 'on' %}on{% elif trigger.id == 'off' %}off{% else %}
+          {{ 'on' if today_at(states('input_datetime.r1_lights_on')) <= now() or
+             now() < today_at(states('input_datetime.r1_lights_off')) else 'off' }}
+          {% endif %}
+    - action: script.r1_set_top_lights
+      data: {desired: "{{ desired }}"}
+    - action: script.r1_set_bottom_lights
+      data: {desired: "{{ desired }}"}
+
+- id: r1_fallback_exhaust_cycle
+  alias: R1 fallback exhaust cycle
+  mode: single
+  triggers:
+    - trigger: time_pattern
+      minutes: "/1"
+  conditions:
+    - condition: state
+      entity_id: input_boolean.r1_fallback_exhaust_enabled
+      state: "on"
+    - condition: state
+      entity_id: input_boolean.r1_thermal_latch
+      state: "off"
+  actions:
+    - variables:
+        trigger_logic: "{{ states('input_select.r1_exhaust_trigger_logic') }}"
+        cycle_due: >-
+          {{ now().minute % (states('input_number.r1_exhaust_cycle_minutes') | int(10)) == 0 }}
+        humidity_ready: >-
+          {{ is_state('binary_sensor.r1_tent_humidity_high', 'on') and
+             as_timestamp(now()) - as_timestamp(states.binary_sensor.r1_tent_humidity_high.last_changed, 0)
+             >= states('input_number.r1_exhaust_humidity_hold_minutes') | int(5) * 60 }}
+        run_now: >-
+          {% if trigger_logic == 'Cycle only' %}
+            {{ cycle_due }}
+          {% elif trigger_logic == 'Humidity only' %}
+            {{ humidity_ready }}
+          {% elif trigger_logic == 'Both (cycle AND humidity)' %}
+            {{ cycle_due and humidity_ready }}
+          {% else %}
+            {{ cycle_due or humidity_ready }}
+          {% endif %}
+    - condition: template
+      value_template: "{{ run_now }}"
+    - action: script.r1_set_exhaust
+      data: {desired: "on"}
+    - delay:
+        minutes: "{{ states('input_number.r1_exhaust_run_minutes') | int(1) }}"
+    - condition: state
+      entity_id: input_boolean.r1_thermal_latch
+      state: "off"
+    - action: script.r1_set_exhaust
+      data: {desired: "off"}
+
+- id: r1_watchdog_entity_availability
+  alias: R1 watchdog entity availability
+  mode: queued
+  triggers:
+    - trigger: state
+      entity_id:
+        - switch.top_shelf_lights
+        - switch.bottom_shelf_lights
+        - switch.top_shelf_fan
+        - switch.bottom_shelf_fan
+        - switch.exhaust_fan
+        - switch.camera_flash
+      to: unavailable
+      for: "00:05:00"
+      id: switch
+    - trigger: state
+      entity_id:
+        - sensor.exhaust_fan_current_consumption
+        - sensor.bottom_shelf_fan_current_consumption
+        - sensor.bottom_shelf_lights_current_consumption
+        - sensor.top_shelf_fan_current_consumption
+        - sensor.top_shelf_lights_current_consumption
+        - sensor.camera_flash_current_consumption
+      to: unavailable
+      for: "00:10:00"
+      id: power
+    - trigger: state
+      entity_id:
+        - sensor.monitor2_temperature
+        - sensor.monitor2_humidity
+      to: unavailable
+      for: "00:15:00"
+      id: climate
+    - trigger: state
+      entity_id:
+        - camera.top_eyes_snapshot
+        - camera.bottom_eyes_snapshot
+        - camera.sidecar_eyes_snapshot
+      to: unavailable
+      for: "00:15:00"
+      id: camera
+  conditions:
+    - condition: template
+      value_template: >-
+        {{ as_timestamp(now()) - as_timestamp(states('input_datetime.r1_last_watchdog_alert'), 0) > 1800 }}
+  actions:
+    - action: script.r1_notify_watchdog
+      data:
+        message: "{{ trigger.id }} entity unavailable: {{ trigger.entity_id }}"
+
+- id: r1_watchdog_frozen_climate
+  alias: R1 watchdog frozen climate reading
+  mode: single
+  triggers:
+    - trigger: time_pattern
+      minutes: "/15"
+  conditions:
+    - condition: template
+      value_template: >-
+        {{ as_timestamp(now()) - as_timestamp(states.sensor.monitor2_temperature.last_changed, 0) > 7200 }}
+    - condition: template
+      value_template: >-
+        {{ as_timestamp(now()) - as_timestamp(states('input_datetime.r1_last_watchdog_alert'), 0) > 1800 }}
+  actions:
+    - action: script.r1_notify_watchdog
+      data:
+        message: Govee tent temperature has not changed for more than two hours.

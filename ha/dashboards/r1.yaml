@@ -1,0 +1,98 @@
+title: Sproutie R1
+views:
+  - title: Tent
+    path: tent
+    icon: mdi:sprout
+    cards:
+      - type: entities
+        title: Safety controls
+        entities:
+          - entity: input_boolean.r1_safety_armed
+            name: Safety armed (enable only after test gate)
+          - input_boolean.r1_thermal_latch
+          - input_boolean.r1_thermal_test_mode
+          - input_boolean.r1_sensor_fault_test_mode
+          - input_boolean.r1_fallback_lights_enabled
+          - input_boolean.r1_fallback_exhaust_enabled
+          - input_number.r1_thermal_trip_f
+          - input_number.r1_thermal_release_f
+          - input_number.r1_sensor_stale_minutes
+      - type: entities
+        title: Schedule Control Center
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Lights schedule
+          - entity: input_boolean.r1_fallback_lights_enabled
+            name: Enable light schedule
+          - entity: input_datetime.r1_lights_on
+            name: Lights on
+          - entity: input_datetime.r1_lights_off
+            name: Lights off
+          - type: section
+            label: Exhaust controller
+          - entity: input_boolean.r1_fallback_exhaust_enabled
+            name: Enable exhaust controller
+          - entity: input_select.r1_exhaust_trigger_logic
+            name: Run when
+          - entity: input_number.r1_exhaust_run_minutes
+            name: Run duration
+          - entity: input_number.r1_exhaust_cycle_minutes
+            name: Repeat every
+          - entity: input_number.r1_exhaust_humidity_threshold
+            name: Humidity threshold
+          - entity: input_number.r1_exhaust_humidity_hold_minutes
+            name: Humidity must remain high for
+      - type: entities
+        title: Tent conditions
+        entities:
+          - sensor.monitor2_temperature
+          - sensor.monitor2_humidity
+          - sensor.govee_humidity_temp_monitor_humidity
+      - type: grid
+        title: Verified outlet controls
+        columns: 2
+        square: false
+        cards:
+          - type: button
+            entity: switch.top_shelf_lights
+            name: Top lights
+            tap_action: {action: toggle}
+          - type: button
+            entity: switch.bottom_shelf_lights
+            name: Bottom lights
+            tap_action: {action: toggle}
+          - type: button
+            entity: switch.top_shelf_fan
+            name: Top fan
+            tap_action: {action: toggle}
+          - type: button
+            entity: switch.bottom_shelf_fan
+            name: Bottom fan
+            tap_action: {action: toggle}
+          - type: button
+            entity: switch.exhaust_fan
+            name: Exhaust
+            tap_action: {action: toggle}
+          - type: button
+            entity: switch.camera_flash
+            name: Camera flash
+            tap_action: {action: toggle}
+      - type: entities
+        title: Verified power readings
+        entities:
+          - sensor.exhaust_fan_current_consumption
+          - sensor.bottom_shelf_fan_current_consumption
+          - sensor.bottom_shelf_lights_current_consumption
+          - sensor.top_shelf_fan_current_consumption
+          - sensor.top_shelf_lights_current_consumption
+          - sensor.camera_flash_current_consumption
+      - type: picture-entity
+        entity: camera.top_eyes_snapshot
+        name: Top shelf snapshot
+      - type: picture-entity
+        entity: camera.bottom_eyes_snapshot
+        name: Bottom shelf snapshot
+      - type: picture-entity
+        entity: camera.sidecar_eyes_snapshot
+        name: Sidecar snapshot

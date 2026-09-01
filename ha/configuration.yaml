@@ -1,0 +1,30 @@
+# R1 Home Assistant configuration.  This tree is deployed by scripts/deploy_r1_config.py.
+# Device identity lives only in config/site.yaml; role command scripts are generated from it.
+default_config:
+
+stream:
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+homeassistant:
+  allowlist_external_dirs:
+    - /config/www/snapshots
+
+automation: !include automations.yaml
+script: !include_dir_merge_named scripts
+scene: !include scenes.yaml
+input_boolean: !include helpers/input_booleans.yaml
+input_number: !include helpers/input_numbers.yaml
+input_datetime: !include helpers/input_datetimes.yaml
+input_select: !include helpers/input_selects.yaml
+template: !include template.yaml
+
+lovelace:
+  mode: yaml
+  dashboards:
+    sproutie-r1:
+      mode: yaml
+      title: Sproutie R1
+      icon: mdi:sprout
+      filename: dashboards/r1.yaml

@@ -168,7 +168,7 @@ script:
 
   toggle_inspection_mode:
     alias: "Toggle Inspection Mode"
-    description: "Save scene, kill grow lights, turn on Aux light"
+    description: "Save scene, turn off grow lights, and toggle inspection mode"
     sequence:
       - service: scene.create
         data:
@@ -176,16 +176,12 @@ script:
           snapshot_entities:
             - switch.top_shelf_lights
             - switch.bottom_shelf_lights
-            - switch.aux_light
             - input_boolean.inspection_mode
       - service: switch.turn_off
         target:
           entity_id:
             - switch.top_shelf_lights
             - switch.bottom_shelf_lights
-      - service: switch.turn_on
-        target:
-          entity_id: switch.aux_light
       - service: input_boolean.toggle
         target:
           entity_id: input_boolean.inspection_mode

@@ -1,0 +1,9 @@
+r1_exhaust_trigger_logic:
+  name: R1 exhaust trigger logic
+  options:
+    - Cycle only
+    - Humidity only
+    - Either (cycle OR humidity)
+    - Both (cycle AND humidity)
+  initial: Either (cycle OR humidity)
+  icon: mdi:source-branch

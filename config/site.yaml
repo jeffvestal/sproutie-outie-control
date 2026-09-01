@@ -1,0 +1,170 @@
+# Sproutie Brain site contract. This is the one and only device-identity map.
+#
+# Do not copy an entity_id into Brain code or another config file.  To re-pair a
+# device, update this file and follow config/README.md.
+schema_version: 1
+
+site:
+  id: sproutie-outie
+  label: "Sproutie Outie · Office"
+  timezone: America/Chicago
+  identity_verification:
+    verified_at: 2026-08-30T15:30:00Z
+    verified_by: jeff+nat
+    verified_method: "Live HA registry dump plus Kasa app aliases and known physical state."
+    strip:
+      model: HS300
+      ha_device: "TP-LINK_Power Strip_800B HS300"
+      parent_switch: switch.sproutie_outie_smart_power
+      led_switch: switch.sproutie_outie_smart_power_led
+      sockets: 6
+  recipes_dir: recipes
+  state_dir: state
+  status_dir: status
+  bridge:
+    remote: origin
+    branch: main
+  alerts:
+    ha_notify_service: notify.persistent_notification
+
+  zones:
+    tent-1:
+      label: "Tent 1 · Office"
+      capabilities: [light-control, circulation-fan-control, exhaust-control, camera, temp-rh]
+      enabled: true
+      features: {vision: true, forecast: true, voice: false}
+      fallback:
+        photo_cadence_s: 3600
+        # The Brain owns grow control in R2+.  These retain the physical limits
+        # needed by a dumb HA fallback; they do not change existing HA schedules.
+        # 60 s covers the slowest measured stable-on response (camera flash: 57.6 s).
+        device_verification: {settle_s: 60, poll_timeout_s: 120, off_threshold_w: 0.5}
+
+      ha:
+        devices:
+          top_lights:
+            switch: switch.top_shelf_lights
+            power: sensor.exhaust_fan_current_consumption
+            energy_today: sensor.exhaust_fan_today_s_consumption
+            voltage: sensor.exhaust_fan_voltage
+            current: sensor.exhaust_fan_current
+            measured_watts_on: 29.5
+            measured_settle_s: {off: 6.1, on: 9.1}
+            expected_watts_on: [28, 32]
+            kasa_alias: "top light"
+          bottom_lights:
+            switch: switch.bottom_shelf_lights
+            power: sensor.bottom_shelf_fan_current_consumption
+            energy_today: sensor.bottom_shelf_fan_today_s_consumption
+            voltage: sensor.bottom_shelf_fan_voltage
+            current: sensor.bottom_shelf_fan_current
+            measured_watts_on: 30.0
+            measured_settle_s: {off: 6.1, on: 45.4}
+            expected_watts_on: [28, 32]
+            kasa_alias: "bottom light"
+          top_fan:
+            switch: switch.top_shelf_fan
+            power: sensor.bottom_shelf_lights_current_consumption
+            energy_today: sensor.bottom_shelf_lights_today_s_consumption
+            voltage: sensor.bottom_shelf_lights_voltage
+            current: sensor.bottom_shelf_lights_current
+            measured_watts_on: 4.2
+            measured_settle_s: {off: 6.1, on: 39.4}
+            expected_watts_on: [3.5, 5.0]
+            kasa_alias: "top fan"
+          bottom_fan:
+            switch: switch.bottom_shelf_fan
+            power: sensor.top_shelf_fan_current_consumption
+            energy_today: sensor.top_shelf_fan_today_s_consumption
+            voltage: sensor.top_shelf_fan_voltage
+            current: sensor.top_shelf_fan_current
+            measured_watts_on: 4.5
+            measured_settle_s: {off: 6.1, on: 48.4}
+            expected_watts_on: [3.5, 5.5]
+            kasa_alias: "bottom fan"
+          exhaust:
+            switch: switch.exhaust_fan
+            power: sensor.top_shelf_lights_current_consumption
+            energy_today: sensor.top_shelf_lights_today_s_consumption
+            voltage: sensor.top_shelf_lights_voltage
+            current: sensor.top_shelf_lights_current
+            measured_watts_on: 24.9
+            measured_settle_s: {off: 6.1, on: 45.4}
+            expected_watts_on: [23, 29]
+            kasa_alias: "Exhaust Fan"
+          camera_flash:
+            switch: switch.camera_flash
+            power: sensor.camera_flash_current_consumption
+            energy_today: sensor.camera_flash_today_s_consumption
+            # The _6 suffix is a harmless historical entity-registry collision.
+            energy_month: sensor.camera_flash_6_this_month_s_consumption
+            voltage: sensor.camera_flash_voltage
+            current: sensor.camera_flash_current
+            measured_watts_on: 10.2
+            measured_settle_s: {off: 24.2, on: 57.6}
+            expected_watts_on: [9, 11]
+            kasa_alias: "Flash lights"
+
+        telemetry:
+          temp_f: sensor.monitor2_temperature
+          rh: sensor.monitor2_humidity
+          # This room sensor is deliberately not used for exhaust control.
+          room_rh: sensor.govee_humidity_temp_monitor_humidity
+        cameras:
+          top-eyes: {entity: camera.top_eyes_snapshot, covers: [rack-top]}
+          bottom-eyes: {entity: camera.bottom_eyes_snapshot, covers: [rack-bottom]}
+          sidecar-eyes:
+            entity: camera.sidecar_eyes_snapshot
+            covers: [sidecar-tf, sidecar-tb, sidecar-bf, sidecar-bb]
+            ip: 192.168.10.180
+            network_note: >-
+              This is a separate routed subnet via 192.168.1.1, consistent with a VLAN or
+              routed segment, not a typo. An ICMP probe on 2026-08-30 received no reply, so
+              service reachability still requires live HA verification.
+
+      layout:
+        racks:
+          - {id: rack-top, label: "Rack Top", slots: [a1, a2, a3, a4, a5, a6, a7, a8]}
+          - {id: rack-bottom, label: "Rack Bottom", slots: [b1, b2, b3, b4, b5, b6, b7, b8]}
+        sidecars:
+          - {id: sidecar-tf, label: "Sidecar top front", slot: sc_tf}
+          - {id: sidecar-tb, label: "Sidecar top back", slot: sc_tb}
+          - {id: sidecar-bf, label: "Sidecar bottom front", slot: sc_bf}
+          - {id: sidecar-bb, label: "Sidecar bottom back", slot: sc_bb}
+      positions:
+        # crop_region is normalized [left, top, right, bottom] in the named camera image.
+        - {id: rack-top, camera: top-eyes, crop_region: [0.0, 0.0, 1.0, 1.0]}
+        - {id: rack-bottom, camera: bottom-eyes, crop_region: [0.0, 0.0, 1.0, 1.0]}
+        # Sidecar regions are a provisional 2×2 grid; calibrate against a current snapshot
+        # before enabling CV-derived crop observations.
+        - {id: sidecar-tf, camera: sidecar-eyes, crop_region: [0.0, 0.0, 0.5, 0.5]}
+        - {id: sidecar-tb, camera: sidecar-eyes, crop_region: [0.5, 0.0, 1.0, 0.5]}
+        - {id: sidecar-bf, camera: sidecar-eyes, crop_region: [0.0, 0.5, 0.5, 1.0]}
+        - {id: sidecar-bb, camera: sidecar-eyes, crop_region: [0.5, 0.5, 1.0, 1.0]}
+      known_issues:
+        - id: emeter-lag
+          note: >-
+            HS300 power readings are polled and can lag a relay change by tens of seconds.
+            The longest observed stable-on delay was 57.6 s, so command verification waits 60 s;
+            never use a single instantaneous watt reading as command verification.
+        - id: camera-flash-month-sensor-suffix
+          note: >-
+            The camera-flash month sensor has a `_6` suffix from a historical registry-name
+            collision. It reports correctly; defer a live rename until the R1 rebuild.
+
+    # A config-only proof that a second zone can remain offline without a crash.
+    tent-2-sim:
+      label: "Tent 2 · Simulation"
+      capabilities: [light-control, camera, temp-rh]
+      enabled: false
+      features: {vision: false, forecast: false, voice: false}
+      fallback: {photo_cadence_s: 3600}
+      ha:
+        devices:
+          top_lights: {switch: switch.tent_2_top_lights, power: sensor.tent_2_top_lights_power}
+        telemetry: {temp_f: sensor.tent_2_temperature, rh: sensor.tent_2_humidity}
+        cameras: {top-eyes: {entity: camera.tent_2_top_eyes, covers: [rack-top]}}
+      layout:
+        racks: [{id: rack-top, label: "Rack Top", slots: [a1]}]
+        sidecars: []
+      positions: [{id: rack-top, camera: top-eyes, crop_region: [0.0, 0.0, 1.0, 1.0]}]
