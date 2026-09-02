@@ -60,6 +60,7 @@ class VerifyDevicesTests(unittest.TestCase):
     def tearDownClass(cls):
         cls.server.shutdown()
         cls.thread.join()
+        cls.server.server_close()
 
     def test_site_parses_and_live_zone_resolves(self):
         config = verify_devices.load_site(REPO / "config" / "site.yaml")
