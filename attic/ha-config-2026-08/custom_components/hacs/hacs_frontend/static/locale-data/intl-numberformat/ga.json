@@ -1,0 +1,3499 @@
+{
+  "data": {
+    "currencies": {
+      "ADP": {
+        "displayName": {
+          "few": "pheseta And\u00f3ra",
+          "many": "bpeseta And\u00f3ra",
+          "one": "pheseta And\u00f3ra",
+          "other": "peseta And\u00f3ra",
+          "two": "pheseta And\u00f3ra"
+        },
+        "narrow": "ADP",
+        "symbol": "ADP"
+      },
+      "AED": {
+        "displayName": {
+          "few": "dhirham Aontas na n\u00c9im\u00edr\u00edochta\u00ed Arabacha",
+          "many": "ndirham Aontas na n\u00c9im\u00edr\u00edochta\u00ed Arabacha",
+          "other": "dirham Aontas na n\u00c9im\u00edr\u00edochta\u00ed Arabacha",
+          "two": "dhirham Aontas na n\u00c9im\u00edr\u00edochta\u00ed Arabacha"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFA": {
+        "displayName": {
+          "other": "Afgain\u00ed (1927\u20132002)"
+        },
+        "narrow": "AFA",
+        "symbol": "AFA"
+      },
+      "AFN": {
+        "displayName": {
+          "many": "n-afghani na hAfganast\u00e1ine",
+          "other": "afghani na hAfganast\u00e1ine"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALK": {
+        "displayName": {
+          "other": "lek na hAlb\u00e1ine (1946\u20131965)"
+        },
+        "narrow": "ALK",
+        "symbol": "ALK"
+      },
+      "ALL": {
+        "displayName": {
+          "few": "lek na hAlb\u00e1ine",
+          "many": "lek na hAlb\u00e1ine",
+          "one": "lek na hAlb\u00e1ine",
+          "other": "Lek na hAlb\u00e1ine",
+          "two": "lek na hAlb\u00e1ine"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "few": "dhram na hAirm\u00e9ine",
+          "many": "ndram na hAirm\u00e9ine",
+          "other": "dram na hAirm\u00e9ine",
+          "two": "dhram na hAirm\u00e9ine"
+        },
+        "narrow": "\u058f",
+        "symbol": "AMD"
+      },
+      "ANG": {
+        "displayName": {
+          "few": "ghildear Aintill\u00ed na h\u00cdsilt\u00edre",
+          "many": "ngildear Aintill\u00ed na h\u00cdsilt\u00edre",
+          "one": "ghildear Aintill\u00ed na h\u00cdsilt\u00edre",
+          "other": "gildear Aintill\u00ed na h\u00cdsilt\u00edre",
+          "two": "ghildear Aintill\u00ed na h\u00cdsilt\u00edre"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "other": "kwanza Ang\u00f3la"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "AOK": {
+        "displayName": {
+          "other": "Kwanza Ang\u00f3lach (1977\u20131990)"
+        },
+        "narrow": "AOK",
+        "symbol": "AOK"
+      },
+      "AON": {
+        "displayName": {
+          "other": "Kwanza Nua Ang\u00f3lach (1990\u20132000)"
+        },
+        "narrow": "AON",
+        "symbol": "AON"
+      },
+      "AOR": {
+        "displayName": {
+          "other": "Kwanza Reajustado Ang\u00f3lach (1995\u20131999)"
+        },
+        "narrow": "AOR",
+        "symbol": "AOR"
+      },
+      "ARA": {
+        "displayName": {
+          "other": "Austral Airgint\u00edneach"
+        },
+        "narrow": "ARA",
+        "symbol": "ARA"
+      },
+      "ARL": {
+        "displayName": {
+          "other": "Peso Ley na hAirgint\u00edne (1970\u20131983)"
+        },
+        "narrow": "ARL",
+        "symbol": "ARL"
+      },
+      "ARM": {
+        "displayName": {
+          "few": "pheso na hAirgint\u00edne (1881\u20131970)",
+          "many": "bpeso na hAirgint\u00edne (1881\u20131970)",
+          "one": "pheso na hAirgint\u00edne (1881\u20131970)",
+          "other": "peso na hAirgint\u00edne (1881\u20131970)",
+          "two": "pheso na hAirgint\u00edne (1881\u20131970)"
+        },
+        "narrow": "ARM",
+        "symbol": "ARM"
+      },
+      "ARP": {
+        "displayName": {
+          "few": "pheso na hAirgint\u00edne (1983\u20131985)",
+          "many": "bpeso na hAirgint\u00edne (1983\u20131985)",
+          "one": "pheso na hAirgint\u00edne (1983\u20131985)",
+          "other": "peso na hAirgint\u00edne (1983\u20131985)",
+          "two": "pheso na hAirgint\u00edne (1983\u20131985)"
+        },
+        "narrow": "ARP",
+        "symbol": "ARP"
+      },
+      "ARS": {
+        "displayName": {
+          "few": "pheso na hAirgint\u00edne",
+          "many": "bpeso na hAirgint\u00edne",
+          "one": "pheso na hAirgint\u00edne",
+          "other": "peso na hAirgint\u00edne",
+          "two": "pheso na hAirgint\u00edne"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "ATS": {
+        "displayName": {
+          "other": "Scilling Ostarach"
+        },
+        "narrow": "ATS",
+        "symbol": "ATS"
+      },
+      "AUD": {
+        "displayName": {
+          "few": "dhollar na hAstr\u00e1ile",
+          "many": "ndollar na hAstr\u00e1ile",
+          "other": "dollar na hAstr\u00e1ile",
+          "two": "dhollar na hAstr\u00e1ile"
+        },
+        "narrow": "$",
+        "symbol": "A$"
+      },
+      "AWG": {
+        "displayName": {
+          "few": "fhl\u00f3ir\u00edn Ar\u00faba",
+          "many": "bhfl\u00f3ir\u00edn Ar\u00faba",
+          "one": "fhl\u00f3ir\u00edn Ar\u00faba",
+          "other": "fl\u00f3ir\u00edn Ar\u00faba",
+          "two": "fhl\u00f3ir\u00edn Ar\u00faba"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZM": {
+        "displayName": {
+          "few": "mhanat na hAsarbaise\u00e1ine (1993\u20132006)",
+          "one": "mhanat na hAsarbaise\u00e1ine (1993\u20132006)",
+          "other": "manat na hAsarbaise\u00e1ine (1993\u20132006)",
+          "two": "mhanat na hAsarbaise\u00e1ine (1993\u20132006)"
+        },
+        "narrow": "AZM",
+        "symbol": "AZM"
+      },
+      "AZN": {
+        "displayName": {
+          "few": "mhanat na hAsarbaise\u00e1ine",
+          "one": "mhanat na hAsarbaise\u00e1ine",
+          "other": "manat na hAsarbaise\u00e1ine",
+          "two": "mhanat na hAsarbaise\u00e1ine"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAD": {
+        "displayName": {
+          "other": "D\u00ednear Bhoisnia-Heirseagaiv\u00e9in (1992\u20131994)"
+        },
+        "narrow": "BAD",
+        "symbol": "BAD"
+      },
+      "BAM": {
+        "displayName": {
+          "few": "mharg inmhalartaithe na Boisnia-Heirseagaiv\u00e9ine",
+          "one": "mharg inmhalartaithe na Boisnia-Heirseagaiv\u00e9ine",
+          "other": "marg inmhalartaithe na Boisnia-Heirseagaiv\u00e9ine",
+          "two": "mharg inmhalartaithe na Boisnia-Heirseagaiv\u00e9ine"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BBD": {
+        "displayName": {
+          "few": "dhollar Bharbad\u00f3s",
+          "many": "ndollar Bharbad\u00f3s",
+          "other": "dollar Bharbad\u00f3s",
+          "two": "dhollar Bharbad\u00f3s"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "few": "thaka na Banglaid\u00e9ise",
+          "many": "dtaka na Banglaid\u00e9ise",
+          "other": "taka na Banglaid\u00e9ise",
+          "two": "thaka na Banglaid\u00e9ise"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BEC": {
+        "displayName": {
+          "other": "Franc Beilgeach (inathraithe)"
+        },
+        "narrow": "BEC",
+        "symbol": "BEC"
+      },
+      "BEF": {
+        "displayName": {
+          "other": "Franc Beilgeach"
+        },
+        "narrow": "BEF",
+        "symbol": "BEF"
+      },
+      "BEL": {
+        "displayName": {
+          "other": "Franc Beilgeach (airgead\u00fail)"
+        },
+        "narrow": "BEL",
+        "symbol": "BEL"
+      },
+      "BGL": {
+        "displayName": {
+          "few": "lev chrua na Bulg\u00e1ire",
+          "many": "lev chrua na Bulg\u00e1ire",
+          "other": "lev crua na Bulg\u00e1ire",
+          "two": "lev chrua na Bulg\u00e1ire"
+        },
+        "narrow": "BGL",
+        "symbol": "BGL"
+      },
+      "BGM": {
+        "displayName": {
+          "other": "lev s\u00f3isialach na Bulg\u00e1ire"
+        },
+        "narrow": "BGM",
+        "symbol": "BGM"
+      },
+      "BGN": {
+        "displayName": {
+          "other": "lev na Bulg\u00e1ire"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BGO": {
+        "displayName": {
+          "other": "lev na Bulg\u00e1ire (1879\u20131952)"
+        },
+        "narrow": "BGO",
+        "symbol": "BGO"
+      },
+      "BHD": {
+        "displayName": {
+          "few": "dhinar Bhair\u00e9in",
+          "many": "ndinar Bhair\u00e9in",
+          "other": "dinar Bhair\u00e9in",
+          "two": "dhinar Bhair\u00e9in"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "few": "fhranc na Bur\u00faine",
+          "many": "bhfranc na Bur\u00faine",
+          "one": "fhranc na Bur\u00faine",
+          "other": "franc na Bur\u00faine",
+          "two": "fhranc na Bur\u00faine"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "few": "dhollar Bheirmi\u00fada",
+          "many": "ndollar Bheirmi\u00fada",
+          "other": "dollar Bheirmi\u00fada",
+          "two": "dhollar Bheirmi\u00fada"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "few": "dhollar Bhr\u00fain\u00e9",
+          "many": "ndollar Bhr\u00fain\u00e9",
+          "other": "dollar Bhr\u00fain\u00e9",
+          "two": "dhollar Bhr\u00fain\u00e9"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "few": "bholiviano",
+          "many": "mboliviano",
+          "one": "bholiviano",
+          "other": "boliviano",
+          "two": "bholiviano"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BOP": {
+        "displayName": {
+          "few": "pheso na Bolaive",
+          "many": "bpeso na Bolaive",
+          "one": "pheso na Bolaive",
+          "other": "peso na Bolaive",
+          "two": "pheso na Bolaive"
+        },
+        "narrow": "BOP",
+        "symbol": "BOP"
+      },
+      "BOV": {
+        "displayName": {
+          "other": "mvdol na Bolaive"
+        },
+        "narrow": "BOV",
+        "symbol": "BOV"
+      },
+      "BRB": {
+        "displayName": {
+          "few": "chruzeiro nua na Brasa\u00edle (1967\u20131986)",
+          "many": "gcruzeiro nua na Brasa\u00edle (1967\u20131986)",
+          "one": "chruzeiro nua na Brasa\u00edle (1967\u20131986)",
+          "other": "cruzeiro nua na Brasa\u00edle (1967\u20131986)",
+          "two": "chruzeiro nua na Brasa\u00edle (1967\u20131986)"
+        },
+        "narrow": "BRB",
+        "symbol": "BRB"
+      },
+      "BRC": {
+        "displayName": {
+          "few": "chruzado na Brasa\u00edle (1986\u20131989)",
+          "many": "gcruzado na Brasa\u00edle (1986\u20131989)",
+          "one": "chruzado na Brasa\u00edle (1986\u20131989)",
+          "other": "cruzado na Brasa\u00edle (1986\u20131989)",
+          "two": "chruzado na Brasa\u00edle (1986\u20131989)"
+        },
+        "narrow": "BRC",
+        "symbol": "BRC"
+      },
+      "BRE": {
+        "displayName": {
+          "few": "chruzeiro na Brasa\u00edle (1990\u20131993)",
+          "many": "gcruzeiro na Brasa\u00edle (1990\u20131993)",
+          "one": "chruzeiro na Brasa\u00edle (1990\u20131993)",
+          "other": "cruzeiro na Brasa\u00edle (1990\u20131993)",
+          "two": "chruzeiro na Brasa\u00edle (1990\u20131993)"
+        },
+        "narrow": "BRE",
+        "symbol": "BRE"
+      },
+      "BRL": {
+        "displayName": {
+          "other": "real na Brasa\u00edle"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BRN": {
+        "displayName": {
+          "few": "chruzado nua na Brasa\u00edle (1989\u20131990)",
+          "many": "gcruzado nua na Brasa\u00edle (1989\u20131990)",
+          "one": "chruzado nua na Brasa\u00edle (1989\u20131990)",
+          "other": "cruzado nua na Brasa\u00edle (1989\u20131990)",
+          "two": "chruzado nua na Brasa\u00edle (1989\u20131990)"
+        },
+        "narrow": "BRN",
+        "symbol": "BRN"
+      },
+      "BRR": {
+        "displayName": {
+          "few": "chruzeiro na Brasa\u00edle (1993\u20131994)",
+          "many": "gcruzeiro na Brasa\u00edle (1993\u20131994)",
+          "one": "chruzeiro na Brasa\u00edle (1993\u20131994)",
+          "other": "cruzeiro na Brasa\u00edle (1993\u20131994)",
+          "two": "chruzeiro na Brasa\u00edle (1993\u20131994)"
+        },
+        "narrow": "BRR",
+        "symbol": "BRR"
+      },
+      "BRZ": {
+        "displayName": {
+          "few": "chruzeiro na Brasa\u00edle (1942\u20131967)",
+          "many": "gcruzeiro na Brasa\u00edle (1942\u20131967)",
+          "one": "chruzeiro na Brasa\u00edle (1942\u20131967)",
+          "other": "cruzeiro na Brasa\u00edle (1942\u20131967)",
+          "two": "chruzeiro na Brasa\u00edle (1942\u20131967)"
+        },
+        "narrow": "BRZ",
+        "symbol": "BRZ"
+      },
+      "BSD": {
+        "displayName": {
+          "few": "dhollar na mBah\u00e1ma\u00ed",
+          "many": "ndollar na mBah\u00e1ma\u00ed",
+          "other": "dollar na mBah\u00e1ma\u00ed",
+          "two": "dhollar na mBah\u00e1ma\u00ed"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "other": "ngultrum na B\u00fat\u00e1ine"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BUK": {
+        "displayName": {
+          "other": "kyat Bhurma"
+        },
+        "narrow": "BUK",
+        "symbol": "BUK"
+      },
+      "BWP": {
+        "displayName": {
+          "few": "phula na Botsu\u00e1ine",
+          "many": "bpula na Botsu\u00e1ine",
+          "one": "phula na Botsu\u00e1ine",
+          "other": "pula na Botsu\u00e1ine",
+          "two": "phula na Botsu\u00e1ine"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYB": {
+        "displayName": {
+          "other": "r\u00fabal nua na Bealar\u00faise (1994\u20131999)"
+        },
+        "narrow": "BYB",
+        "symbol": "BYB"
+      },
+      "BYN": {
+        "displayName": {
+          "other": "r\u00fabal na Bealar\u00faise"
+        },
+        "narrow": "BYN",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "other": "r\u00fabal na Bealar\u00faise (2000\u20132016)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "few": "dhollar na Beil\u00edse",
+          "many": "ndollar na Beil\u00edse",
+          "other": "dollar na Beil\u00edse",
+          "two": "dhollar na Beil\u00edse"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "few": "dhollar Cheanada",
+          "many": "ndollar Cheanada",
+          "other": "dollar Cheanada",
+          "two": "dhollar Cheanada"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "few": "fhranc an Chong\u00f3",
+          "many": "bhfranc an Chong\u00f3",
+          "one": "fhranc an Chong\u00f3",
+          "other": "franc an Chong\u00f3",
+          "two": "fhranc an Chong\u00f3"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHE": {
+        "displayName": {
+          "one": "WIR euro",
+          "other": "euro WIR"
+        },
+        "narrow": "CHE",
+        "symbol": "CHE"
+      },
+      "CHF": {
+        "displayName": {
+          "few": "fhranc na hEilv\u00e9ise",
+          "many": "bhfranc na hEilv\u00e9ise",
+          "one": "fhranc na hEilv\u00e9ise",
+          "other": "franc na hEilv\u00e9ise",
+          "two": "fhranc na hEilv\u00e9ise"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CHW": {
+        "displayName": {
+          "few": "fhranc WIR",
+          "many": "bhfranc WIR",
+          "one": "fhranc WIR amh\u00e1in",
+          "other": "franc WIR",
+          "two": "fhranc WIR"
+        },
+        "narrow": "CHW",
+        "symbol": "CHW"
+      },
+      "CLE": {
+        "displayName": {
+          "many": "n-escudo na Sile",
+          "other": "escudo na Sile"
+        },
+        "narrow": "CLE",
+        "symbol": "CLE"
+      },
+      "CLF": {
+        "displayName": {
+          "other": "Unidades de Fomento na Sile"
+        },
+        "narrow": "CLF",
+        "symbol": "CLF"
+      },
+      "CLP": {
+        "displayName": {
+          "few": "pheso na Sile",
+          "many": "bpeso na Sile",
+          "one": "pheso na Sile",
+          "other": "peso na Sile",
+          "two": "pheso na Sile"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "other": "Yuan na S\u00edne (seachairgeadra)"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "other": "yuan na S\u00edne"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "few": "pheso na Col\u00f3ime",
+          "many": "bpeso na Col\u00f3ime",
+          "one": "pheso na Col\u00f3ime",
+          "other": "peso na Col\u00f3ime",
+          "two": "pheso na Col\u00f3ime"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "CRC": {
+        "displayName": {
+          "few": "chol\u00f3n Ch\u00f3sta R\u00edce",
+          "many": "gcol\u00f3n Ch\u00f3sta R\u00edce",
+          "one": "chol\u00f3n Ch\u00f3sta R\u00edce",
+          "other": "col\u00f3n Ch\u00f3sta R\u00edce",
+          "two": "chol\u00f3n Ch\u00f3sta R\u00edce"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CSD": {
+        "displayName": {
+          "few": "dhinar na Seirbia (2002\u20132006)",
+          "many": "ndinar na Seirbia (2002\u20132006)",
+          "other": "dinar na Seirbia (2002\u20132006)",
+          "two": "dhinar na Seirbia (2002\u20132006)"
+        },
+        "narrow": "CSD",
+        "symbol": "CSD"
+      },
+      "CSK": {
+        "displayName": {
+          "few": "koruna chrua na Seicsl\u00f3vaice",
+          "many": "koruna chrua na Seicsl\u00f3vaice",
+          "one": "koruna chrua na Seicsl\u00f3vaice",
+          "other": "koruna crua na Seicsl\u00f3vaice",
+          "two": "koruna chrua na Seicsl\u00f3vaice"
+        },
+        "narrow": "CSK",
+        "symbol": "CSK"
+      },
+      "CUC": {
+        "displayName": {
+          "few": "pheso inmhalartaithe Ch\u00faba",
+          "many": "bpeso inmhalartaithe Ch\u00faba",
+          "one": "pheso inmhalartaithe Ch\u00faba",
+          "other": "peso inmhalartaithe Ch\u00faba",
+          "two": "pheso inmhalartaithe Ch\u00faba"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "few": "pheso Ch\u00faba",
+          "many": "bpeso Ch\u00faba",
+          "one": "pheso Ch\u00faba",
+          "other": "peso Ch\u00faba",
+          "two": "pheso Ch\u00faba"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "many": "n-escudo Rinn Verde",
+          "other": "escudo Rinn Verde"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CYP": {
+        "displayName": {
+          "few": "phunt na Cipire",
+          "many": "bpunt na Cipire",
+          "one": "phunt na Cipire",
+          "other": "punt na Cipire",
+          "two": "phunt na Cipire"
+        },
+        "narrow": "CYP",
+        "symbol": "CYP"
+      },
+      "CZK": {
+        "displayName": {
+          "other": "koruna Phoblacht na Seice"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DDM": {
+        "displayName": {
+          "other": "Ostmark na hOirGhearm\u00e1ine"
+        },
+        "narrow": "DDM",
+        "symbol": "DDM"
+      },
+      "DEM": {
+        "displayName": {
+          "other": "Deutsche Mark"
+        },
+        "narrow": "DEM",
+        "symbol": "DEM"
+      },
+      "DJF": {
+        "displayName": {
+          "few": "fhranc Djibouti",
+          "many": "bhfranc Djibouti",
+          "one": "fhranc Djibouti",
+          "other": "franc Djibouti",
+          "two": "fhranc Djibouti"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "few": "chor\u00f3in na Danmhairge",
+          "many": "gcor\u00f3in na Danmhairge",
+          "one": "chor\u00f3in na Danmhairge",
+          "other": "cor\u00f3in na Danmhairge",
+          "two": "chor\u00f3in na Danmhairge"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "few": "pheso na Poblachta Doiminic\u00ed",
+          "many": "bpeso na Poblachta Doiminic\u00ed",
+          "one": "pheso na Poblachta Doiminic\u00ed",
+          "other": "peso na Poblachta Doiminic\u00ed",
+          "two": "pheso na Poblachta Doiminic\u00ed"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "few": "dhinar na hAilg\u00e9ire",
+          "many": "ndinar na hAilg\u00e9ire",
+          "other": "dinar na hAilg\u00e9ire",
+          "two": "dhinar na hAilg\u00e9ire"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "ECS": {
+        "displayName": {
+          "other": "Sucre Eacuad\u00f3ir"
+        },
+        "narrow": "ECS",
+        "symbol": "ECS"
+      },
+      "ECV": {
+        "displayName": {
+          "other": "Unidad de Valor Constante (UVC) Eacuad\u00f3ir"
+        },
+        "narrow": "ECV",
+        "symbol": "ECV"
+      },
+      "EEK": {
+        "displayName": {
+          "other": "Kroon na hEast\u00f3ine"
+        },
+        "narrow": "EEK",
+        "symbol": "EEK"
+      },
+      "EGP": {
+        "displayName": {
+          "few": "phunt na h\u00c9igipte",
+          "many": "bpunt na h\u00c9igipte",
+          "one": "phunt na h\u00c9igipte",
+          "other": "punt na h\u00c9igipte",
+          "two": "phunt na h\u00c9igipte"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "other": "nakfa na hEiritr\u00e9"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESP": {
+        "displayName": {
+          "few": "pheseta na Sp\u00e1inne",
+          "many": "bpeseta na Sp\u00e1inne",
+          "one": "pheseta na Sp\u00e1inne",
+          "other": "peseta na Sp\u00e1inne",
+          "two": "pheseta na Sp\u00e1inne"
+        },
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "few": "bhirr na hAet\u00f3ipe",
+          "many": "mbirr na hAet\u00f3ipe",
+          "one": "bhirr na hAet\u00f3ipe",
+          "other": "birr na hAet\u00f3ipe",
+          "two": "bhirr na hAet\u00f3ipe"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "other": "euro"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FIM": {
+        "displayName": {
+          "other": "Markka Fionnlannach"
+        },
+        "narrow": "FIM",
+        "symbol": "FIM"
+      },
+      "FJD": {
+        "displayName": {
+          "few": "dhollar Fhids\u00ed",
+          "many": "ndollar Fhids\u00ed",
+          "other": "dollar Fhids\u00ed",
+          "two": "dhollar Fhids\u00ed"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "few": "phunt Oile\u00e1in Fh\u00e1clainne",
+          "many": "bpunt Oile\u00e1in Fh\u00e1clainne",
+          "one": "phunt Oile\u00e1in Fh\u00e1clainne",
+          "other": "punt Oile\u00e1in Fh\u00e1clainne",
+          "two": "phunt Oile\u00e1in Fh\u00e1clainne"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "FRF": {
+        "displayName": {
+          "other": "Franc Francach"
+        },
+        "narrow": "FRF",
+        "symbol": "FRF"
+      },
+      "GBP": {
+        "displayName": {
+          "few": "phunt steirling",
+          "many": "bpunt steirling",
+          "one": "phunt steirling",
+          "other": "punt steirling",
+          "two": "phunt steirling"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEK": {
+        "displayName": {
+          "other": "Kupon Larit na Gr\u00faise"
+        },
+        "narrow": "GEK",
+        "symbol": "GEK"
+      },
+      "GEL": {
+        "displayName": {
+          "other": "lari na Seoirsia"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHC": {
+        "displayName": {
+          "few": "chedi Gh\u00e1na (1979\u20132007)",
+          "many": "gcedi Gh\u00e1na (1979\u20132007)",
+          "one": "chedi Gh\u00e1na (1979\u20132007)",
+          "other": "cedi Gh\u00e1na (1979\u20132007)",
+          "two": "chedi Gh\u00e1na (1979\u20132007)"
+        },
+        "narrow": "GHC",
+        "symbol": "GHC"
+      },
+      "GHS": {
+        "displayName": {
+          "few": "chedi Gh\u00e1na",
+          "many": "gcedi Gh\u00e1na",
+          "one": "chedi Gh\u00e1na",
+          "other": "cedi Gh\u00e1na",
+          "two": "chedi Gh\u00e1na"
+        },
+        "narrow": "GH\u20b5",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "few": "phunt Ghiobr\u00e1ltar",
+          "many": "bpunt Ghiobr\u00e1ltar",
+          "one": "phunt Ghiobr\u00e1ltar",
+          "other": "punt Ghiobr\u00e1ltar",
+          "two": "phunt Ghiobr\u00e1ltar"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "few": "dhalasi na Gaimbia",
+          "many": "ndalasi na Gaimbia",
+          "other": "dalasi na Gaimbia",
+          "two": "dhalasi na Gaimbia"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "few": "fhranc na Guine",
+          "many": "bhfranc na Guine",
+          "one": "fhranc na Guine",
+          "other": "franc na Guine",
+          "two": "fhranc na Guine"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GNS": {
+        "displayName": {
+          "other": "Syli Guine"
+        },
+        "narrow": "GNS",
+        "symbol": "GNS"
+      },
+      "GQE": {
+        "displayName": {
+          "few": "Ekwele Guineana na Guine Me\u00e1nchiorcla\u00ed",
+          "many": "Ekwele Guineana na Guine Me\u00e1nchiorcla\u00ed",
+          "one": "Ekwele Guineana na Guine Me\u00e1nchiorcla\u00ed",
+          "other": "Ekwele Guineana na Guine Me\u00e1nchriosa\u00ed",
+          "two": "Ekwele Guineana na Guine Me\u00e1nchiorcla\u00ed"
+        },
+        "narrow": "GQE",
+        "symbol": "GQE"
+      },
+      "GRD": {
+        "displayName": {
+          "other": "Drachma Gr\u00e9agach"
+        },
+        "narrow": "GRD",
+        "symbol": "GRD"
+      },
+      "GTQ": {
+        "displayName": {
+          "other": "quetzal Ghuatamala"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GWE": {
+        "displayName": {
+          "other": "Escudo na Guine Portaing\u00e9ala\u00ed"
+        },
+        "narrow": "GWE",
+        "symbol": "GWE"
+      },
+      "GWP": {
+        "displayName": {
+          "other": "Peso Guine-Bhissau"
+        },
+        "narrow": "GWP",
+        "symbol": "GWP"
+      },
+      "GYD": {
+        "displayName": {
+          "few": "dhollar na Gu\u00e1ine",
+          "many": "ndollar na Gu\u00e1ine",
+          "other": "dollar na Gu\u00e1ine",
+          "two": "dhollar na Gu\u00e1ine"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "few": "dhollar Hong Cong",
+          "many": "ndollar Hong Cong",
+          "other": "dollar Hong Cong",
+          "two": "dhollar Hong Cong"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "other": "lempira Hond\u00faras"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRD": {
+        "displayName": {
+          "other": "D\u00ednear na Cr\u00f3ite"
+        },
+        "narrow": "HRD",
+        "symbol": "HRD"
+      },
+      "HRK": {
+        "displayName": {
+          "other": "kuna na Cr\u00f3ite"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "few": "ghourde H\u00e1\u00edt\u00ed",
+          "many": "ngourde H\u00e1\u00edt\u00ed",
+          "one": "ghourde H\u00e1\u00edt\u00ed",
+          "other": "gourde H\u00e1\u00edt\u00ed",
+          "two": "ghourde H\u00e1\u00edt\u00ed"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "few": "fhorint na hUng\u00e1ire",
+          "many": "bhforint na hUng\u00e1ire",
+          "one": "fhorint na hUng\u00e1ire",
+          "other": "forint na hUng\u00e1ire",
+          "two": "fhorint na hUng\u00e1ire"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "other": "rupiah na hIndin\u00e9ise"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "IEP": {
+        "displayName": {
+          "other": "Punt \u00c9ireannach"
+        },
+        "narrow": "IEP",
+        "symbol": "IEP"
+      },
+      "ILP": {
+        "displayName": {
+          "other": "Punt Iosraelach"
+        },
+        "narrow": "ILP",
+        "symbol": "ILP"
+      },
+      "ILS": {
+        "displayName": {
+          "few": "sheiceal nua Iosrael",
+          "other": "seiceal nua Iosrael",
+          "two": "sheiceal nua Iosrael"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed na hIndia"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "few": "dhinar na hIar\u00e1ice",
+          "many": "ndinar na hIar\u00e1ice",
+          "other": "dinar na hIar\u00e1ice",
+          "two": "dhinar na hIar\u00e1ice"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "other": "rial na hIar\u00e1ine"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "other": "kr\u00f3na na h\u00cdoslainne"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "ITL": {
+        "displayName": {
+          "other": "lira na hIod\u00e1ile"
+        },
+        "narrow": "ITL",
+        "symbol": "ITL"
+      },
+      "JMD": {
+        "displayName": {
+          "few": "dhollar na hIam\u00e1ice",
+          "many": "ndollar na hIam\u00e1ice",
+          "other": "dollar na hIam\u00e1ice",
+          "two": "dhollar na hIam\u00e1ice"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "few": "dhinar na hIord\u00e1ine",
+          "many": "ndinar na hIord\u00e1ine",
+          "other": "dinar na hIord\u00e1ine",
+          "two": "dhinar na hIord\u00e1ine"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "other": "yen na Seap\u00e1ine"
+        },
+        "narrow": "\u00a5",
+        "symbol": "\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "other": "scilling na C\u00e9inia"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "few": "shom na Cirgeast\u00e1ine",
+          "other": "som na Cirgeast\u00e1ine",
+          "two": "shom na Cirgeast\u00e1ine"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "other": "riel na Camb\u00f3ide"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "few": "fhranc Oile\u00e1in Chom\u00f3ra",
+          "many": "bhfranc Oile\u00e1in Chom\u00f3ra",
+          "one": "fhranc Oile\u00e1in Chom\u00f3ra",
+          "other": "franc Oile\u00e1in Chom\u00f3ra",
+          "two": "fhranc Oile\u00e1in Chom\u00f3ra"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "other": "won na C\u00f3ir\u00e9 Thuaidh"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRW": {
+        "displayName": {
+          "other": "won na C\u00f3ir\u00e9 Theas"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "few": "dhinar Chu\u00e1it",
+          "many": "ndinar Chu\u00e1it",
+          "other": "dinar Chu\u00e1it",
+          "two": "dhinar Chu\u00e1it"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "few": "dhollar Oile\u00e1in Cayman",
+          "many": "ndollar Oile\u00e1in Cayman",
+          "other": "dollar Oile\u00e1in Cayman",
+          "two": "dhollar Oile\u00e1in Cayman"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "few": "thenge na Casacst\u00e1ine",
+          "many": "dtenge na Casacst\u00e1ine",
+          "other": "tenge na Casacst\u00e1ine",
+          "two": "thenge na Casacst\u00e1ine"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "other": "kip Laos"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "few": "phunt na Liob\u00e1ine",
+          "many": "bpunt na Liob\u00e1ine",
+          "one": "phunt na Liob\u00e1ine",
+          "other": "punt na Liob\u00e1ine",
+          "two": "phunt na Liob\u00e1ine"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed Shr\u00ed Lanca"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "few": "dhollar na Lib\u00e9ire",
+          "many": "ndollar na Lib\u00e9ire",
+          "other": "dollar na Lib\u00e9ire",
+          "two": "dhollar na Lib\u00e9ire"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "other": "loti Leos\u00f3ta",
+          "two": "Loti Leos\u00f3ta"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "other": "litas na Liotu\u00e1ine"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LTT": {
+        "displayName": {
+          "other": "Talonas Liotu\u00e1nach"
+        },
+        "narrow": "LTT",
+        "symbol": "LTT"
+      },
+      "LUC": {
+        "displayName": {
+          "other": "Franc Inmhalartach Lucsamburgach"
+        },
+        "narrow": "LUC",
+        "symbol": "LUC"
+      },
+      "LUF": {
+        "displayName": {
+          "other": "Franc Lucsamburg"
+        },
+        "narrow": "LUF",
+        "symbol": "LUF"
+      },
+      "LVL": {
+        "displayName": {
+          "other": "lats na Laitvia"
+        },
+        "narrow": "Ls",
+        "symbol": "LVL"
+      },
+      "LVR": {
+        "displayName": {
+          "other": "R\u00fabal Laitviach"
+        },
+        "narrow": "LVR",
+        "symbol": "LVR"
+      },
+      "LYD": {
+        "displayName": {
+          "few": "dhinar na Libia",
+          "many": "ndinar na Libia",
+          "other": "dinar na Libia",
+          "two": "dhinar na Libia"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "few": "dhirham Mharac\u00f3",
+          "many": "ndirham Mharac\u00f3",
+          "other": "dirham Mharac\u00f3",
+          "two": "dhirham Mharac\u00f3"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MAF": {
+        "displayName": {
+          "few": "fhranc Mharac\u00f3",
+          "many": "bhfranc Mharac\u00f3",
+          "one": "fhranc Mharac\u00f3",
+          "other": "franc Mharac\u00f3",
+          "two": "fhranc Mharac\u00f3"
+        },
+        "narrow": "MAF",
+        "symbol": "MAF"
+      },
+      "MDL": {
+        "displayName": {
+          "other": "leu na Mold\u00f3ive"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "many": "n-ariary Mhadagascar",
+          "other": "ariary Mhadagascar"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MGF": {
+        "displayName": {
+          "other": "Franc Madagascar"
+        },
+        "narrow": "MGF",
+        "symbol": "MGF"
+      },
+      "MKD": {
+        "displayName": {
+          "few": "dhenar na Macad\u00f3ine",
+          "many": "ndenar na Macad\u00f3ine",
+          "other": "denar na Macad\u00f3ine",
+          "two": "dhenar na Macad\u00f3ine"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MLF": {
+        "displayName": {
+          "other": "Franc Mhail\u00ed"
+        },
+        "narrow": "MLF",
+        "symbol": "MLF"
+      },
+      "MMK": {
+        "displayName": {
+          "other": "kyat Mhaenmar"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "few": "thugrik na Mong\u00f3ile",
+          "many": "dtugrik na Mong\u00f3ile",
+          "other": "tugrik na Mong\u00f3ile",
+          "two": "thugrik na Mong\u00f3ile"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "few": "phataca Mhacao",
+          "many": "bpataca Mhacao",
+          "one": "phataca Mhacao",
+          "other": "pataca Mhacao",
+          "two": "phataca Mhacao"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "many": "n-ouguiya na M\u00e1rat\u00e1ine (1973\u20132017)",
+          "other": "ouguiya na M\u00e1rat\u00e1ine (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "many": "n-ouguiya na M\u00e1rat\u00e1ine",
+          "other": "ouguiya na M\u00e1rat\u00e1ine"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MTL": {
+        "displayName": {
+          "other": "lira Mh\u00e1lta"
+        },
+        "narrow": "MTL",
+        "symbol": "MTL"
+      },
+      "MTP": {
+        "displayName": {
+          "few": "phunt Mh\u00e1lta",
+          "many": "bpunt Mh\u00e1lta",
+          "one": "phunt Mh\u00e1lta",
+          "other": "punt Mh\u00e1lta",
+          "two": "phunt Mh\u00e1lta"
+        },
+        "narrow": "MTP",
+        "symbol": "MTP"
+      },
+      "MUR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed Oile\u00e1n Mhuir\u00eds"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVP": {
+        "displayName": {
+          "other": "r\u00faip\u00ed Oile\u00e1in Mhaild\u00edve"
+        },
+        "narrow": "MVP",
+        "symbol": "MVP"
+      },
+      "MVR": {
+        "displayName": {
+          "other": "rufiyaa Oile\u00e1in Mhaild\u00edve"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "other": "kwacha na Mal\u00e1ive"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "few": "pheso Mheicsiceo",
+          "many": "bpeso Mheicsiceo",
+          "one": "pheso Mheicsiceo",
+          "other": "peso Mheicsiceo",
+          "two": "pheso Mheicsiceo"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MXP": {
+        "displayName": {
+          "few": "pheso airgid Mheicsiceo (1861\u20131992)",
+          "many": "bpeso airgid Mheicsiceo (1861\u20131992)",
+          "one": "pheso airgid Mheicsiceo (1861\u20131992)",
+          "other": "peso airgid Mheicsiceo (1861\u20131992)",
+          "two": "pheso airgid Mheicsiceo (1861\u20131992)"
+        },
+        "narrow": "MXP",
+        "symbol": "MXP"
+      },
+      "MXV": {
+        "displayName": {
+          "other": "Unidad de Inversion (UDI) Meicsiceo"
+        },
+        "narrow": "MXV",
+        "symbol": "MXV"
+      },
+      "MYR": {
+        "displayName": {
+          "other": "ringgit na Malaeisia"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZE": {
+        "displayName": {
+          "other": "Escudo M\u00f3saimb\u00edce"
+        },
+        "narrow": "MZE",
+        "symbol": "MZE"
+      },
+      "MZM": {
+        "displayName": {
+          "other": "Metical M\u00f3saimb\u00edce"
+        },
+        "narrow": "MZM",
+        "symbol": "MZM"
+      },
+      "MZN": {
+        "displayName": {
+          "few": "mhetical Mh\u00f3saimb\u00edc",
+          "one": "mhetical Mh\u00f3saimb\u00edc",
+          "other": "metical Mh\u00f3saimb\u00edc",
+          "two": "mhetical Mh\u00f3saimb\u00edc"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "few": "dhollar na Namaibe",
+          "many": "ndollar na Namaibe",
+          "other": "dollar na Namaibe",
+          "two": "dhollar na Namaibe"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "other": "naira na Nig\u00e9ire"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIC": {
+        "displayName": {
+          "few": "ch\u00f3rdoba Nicearagua (1988\u20131991)",
+          "many": "gc\u00f3rdoba Nicearagua (1988\u20131991)",
+          "one": "ch\u00f3rdoba Nicearagua (1988\u20131991)",
+          "other": "c\u00f3rdoba Nicearagua (1988\u20131991)",
+          "two": "ch\u00f3rdoba Nicearagua (1988\u20131991)"
+        },
+        "narrow": "NIC",
+        "symbol": "NIC"
+      },
+      "NIO": {
+        "displayName": {
+          "few": "ch\u00f3rdoba Nicearagua",
+          "many": "gc\u00f3rdoba Nicearagua",
+          "one": "ch\u00f3rdoba Nicearagua",
+          "other": "c\u00f3rdoba Nicearagua",
+          "two": "ch\u00f3rdoba Nicearagua"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NLG": {
+        "displayName": {
+          "other": "Guilder \u00cdsilt\u00edreach"
+        },
+        "narrow": "NLG",
+        "symbol": "NLG"
+      },
+      "NOK": {
+        "displayName": {
+          "few": "chor\u00f3in na hIorua",
+          "many": "gcor\u00f3in na hIorua",
+          "one": "chor\u00f3in na hIorua",
+          "other": "cor\u00f3in na hIorua",
+          "two": "chor\u00f3in na hIorua"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed Neipeal"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "few": "dhollar na Nua-Sh\u00e9alainne",
+          "many": "ndollar na Nua-Sh\u00e9alainne",
+          "other": "dollar na Nua-Sh\u00e9alainne",
+          "two": "dhollar na Nua-Sh\u00e9alainne"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "other": "rial \u00d3man"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "few": "bhalboa Phanama",
+          "many": "mbalboa Phanama",
+          "one": "bhalboa Phanama",
+          "other": "balboa Phanama",
+          "two": "bhalboa Phanama"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEI": {
+        "displayName": {
+          "other": "Inti Pheiri\u00fa"
+        },
+        "narrow": "PEI",
+        "symbol": "PEI"
+      },
+      "PEN": {
+        "displayName": {
+          "few": "sol Pheiri\u00fa",
+          "many": "sol Pheiri\u00fa",
+          "one": "sol Pheiri\u00fa",
+          "other": "Sol Pheiri\u00fa",
+          "two": "shol Pheiri\u00fa"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PES": {
+        "displayName": {
+          "few": "shol Pheiri\u00fa (1863\u20131965)",
+          "other": "sol Pheiri\u00fa (1863\u20131965)",
+          "two": "shol Pheiri\u00fa (1863\u20131965)"
+        },
+        "narrow": "PES",
+        "symbol": "PES"
+      },
+      "PGK": {
+        "displayName": {
+          "other": "kina Nua-Ghuine Phapua"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "few": "pheso na nOile\u00e1n Filip\u00edneach",
+          "many": "bpeso na nOile\u00e1n Filip\u00edneach",
+          "one": "pheso na nOile\u00e1n Filip\u00edneach",
+          "other": "peso na nOile\u00e1n Filip\u00edneach",
+          "two": "pheso na nOile\u00e1n Filip\u00edneach"
+        },
+        "narrow": "\u20b1",
+        "symbol": "\u20b1"
+      },
+      "PKR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed na Pacast\u00e1ine"
+        },
+        "narrow": "Rs",
+        "symbol": "PKR"
+      },
+      "PLN": {
+        "displayName": {
+          "other": "zloty na Polainne"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PLZ": {
+        "displayName": {
+          "other": "Zloty Polannach (1950\u20131995)"
+        },
+        "narrow": "PLZ",
+        "symbol": "PLZ"
+      },
+      "PTE": {
+        "displayName": {
+          "many": "n-escudo na Portaing\u00e9ile",
+          "other": "escudo na Portaing\u00e9ile"
+        },
+        "narrow": "PTE",
+        "symbol": "PTE"
+      },
+      "PYG": {
+        "displayName": {
+          "few": "ghuaran\u00ed Pharagua",
+          "many": "nguaran\u00ed Pharagua",
+          "one": "ghuaran\u00ed Pharagua",
+          "other": "guaran\u00ed Pharagua",
+          "two": "ghuaran\u00ed Pharagua"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "other": "riyal Chatar"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "ROL": {
+        "displayName": {
+          "other": "leu na R\u00f3m\u00e1ine (1952\u20132006)"
+        },
+        "narrow": "ROL",
+        "symbol": "ROL"
+      },
+      "RON": {
+        "displayName": {
+          "other": "leu na R\u00f3m\u00e1ine"
+        },
+        "narrow": "lei",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "few": "dhinar na Seirbia",
+          "many": "ndinar na Seirbia",
+          "other": "dinar na Seirbia",
+          "two": "dhinar na Seirbia"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "other": "r\u00fabal na R\u00faise"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RUR": {
+        "displayName": {
+          "other": "r\u00fabal na R\u00faise (1991\u20131998)"
+        },
+        "narrow": "\u0440.",
+        "symbol": "RUR"
+      },
+      "RWF": {
+        "displayName": {
+          "few": "fhranc Ruanda",
+          "many": "bhfranc Ruanda",
+          "one": "fhranc Ruanda",
+          "other": "franc Ruanda",
+          "two": "fhranc Ruanda"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "other": "riyal na hAraibe S\u00e1da\u00ed"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "few": "dhollar Oile\u00e1in Sholom\u00f3n",
+          "many": "ndollar Oile\u00e1in Sholom\u00f3n",
+          "other": "dollar Oile\u00e1in Sholom\u00f3n",
+          "two": "dhollar Oile\u00e1in Sholom\u00f3n"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "other": "r\u00faip\u00ed na S\u00e9is\u00e9al"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDD": {
+        "displayName": {
+          "few": "dhinar na S\u00fad\u00e1ine (1992\u20132007)",
+          "many": "ndinar na S\u00fad\u00e1ine (1992\u20132007)",
+          "other": "dinar na S\u00fad\u00e1ine (1992\u20132007)",
+          "two": "dhinar na S\u00fad\u00e1ine (1992\u20132007)"
+        },
+        "narrow": "SDD",
+        "symbol": "SDD"
+      },
+      "SDG": {
+        "displayName": {
+          "few": "phunt na S\u00fad\u00e1ine",
+          "many": "bpunt na S\u00fad\u00e1ine",
+          "one": "phunt na S\u00fad\u00e1ine",
+          "other": "punt na S\u00fad\u00e1ine",
+          "two": "phunt na S\u00fad\u00e1ine"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SDP": {
+        "displayName": {
+          "few": "phunt na S\u00fad\u00e1ine (1957\u20131998)",
+          "many": "bpunt na S\u00fad\u00e1ine (1957\u20131998)",
+          "one": "phunt na S\u00fad\u00e1ine (1957\u20131998)",
+          "other": "punt na S\u00fad\u00e1ine (1957\u20131998)",
+          "two": "phunt na S\u00fad\u00e1ine (1957\u20131998)"
+        },
+        "narrow": "SDP",
+        "symbol": "SDP"
+      },
+      "SEK": {
+        "displayName": {
+          "few": "chor\u00f3in na Sualainne",
+          "many": "gcor\u00f3in na Sualainne",
+          "one": "chor\u00f3in na Sualainne",
+          "other": "cor\u00f3in na Sualainne",
+          "two": "chor\u00f3in na Sualainne"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "few": "dhollar Shingeap\u00f3r",
+          "many": "ndollar Shingeap\u00f3r",
+          "other": "dollar Shingeap\u00f3r",
+          "two": "dhollar Shingeap\u00f3r"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "few": "phunt San H\u00e9ilin",
+          "many": "bpunt San H\u00e9ilin",
+          "one": "phunt San H\u00e9ilin",
+          "other": "punt San H\u00e9ilin",
+          "two": "phunt San H\u00e9ilin"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SIT": {
+        "displayName": {
+          "few": "tholar na Sl\u00f3iv\u00e9ine",
+          "many": "dtolar na Sl\u00f3iv\u00e9ine",
+          "other": "tolar na Sl\u00f3iv\u00e9ine",
+          "two": "tholar na Sl\u00f3iv\u00e9ine"
+        },
+        "narrow": "SIT",
+        "symbol": "SIT"
+      },
+      "SKK": {
+        "displayName": {
+          "other": "koruna na Sl\u00f3vaice"
+        },
+        "narrow": "SKK",
+        "symbol": "SKK"
+      },
+      "SLE": {
+        "displayName": {
+          "other": "leone Shiarra Leon"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "leone Shiarra Leon (1964\u20142022)"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "other": "scilling na Som\u00e1ile"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "few": "dhollar Shuranam",
+          "many": "ndollar Shuranam",
+          "other": "dollar Shuranam",
+          "two": "dhollar Shuranam"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SRG": {
+        "displayName": {
+          "few": "ghildear Shuranam",
+          "many": "ngildear Shuranam",
+          "one": "ghildear Shuranam",
+          "other": "gildear Shuranam",
+          "two": "ghildear Shuranam"
+        },
+        "narrow": "SRG",
+        "symbol": "SRG"
+      },
+      "SSP": {
+        "displayName": {
+          "few": "phunt na S\u00fad\u00e1ine Theas",
+          "many": "bpunt na S\u00fad\u00e1ine Theas",
+          "one": "phunt na S\u00fad\u00e1ine Theas",
+          "other": "punt na S\u00fad\u00e1ine Theas",
+          "two": "phunt na S\u00fad\u00e1ine Theas"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "few": "dhobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe (1977\u20132017)",
+          "many": "ndobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe (1977\u20132017)",
+          "other": "dobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe (1977\u20132017)",
+          "two": "dhobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "few": "dhobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe",
+          "many": "ndobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe",
+          "other": "dobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe",
+          "two": "dhobra S\u00e3o Tom\u00e9 agus Pr\u00edncipe"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SUR": {
+        "displayName": {
+          "other": "r\u00fabal an Aontais Sh\u00f3iv\u00e9adaigh"
+        },
+        "narrow": "SUR",
+        "symbol": "SUR"
+      },
+      "SVC": {
+        "displayName": {
+          "few": "chol\u00f3n na Salvad\u00f3ire",
+          "many": "gcol\u00f3n na Salvad\u00f3ire",
+          "one": "chol\u00f3n na Salvad\u00f3ire",
+          "other": "col\u00f3n na Salvad\u00f3ire",
+          "two": "chol\u00f3n na Salvad\u00f3ire"
+        },
+        "narrow": "SVC",
+        "symbol": "SVC"
+      },
+      "SYP": {
+        "displayName": {
+          "few": "phunt na Siria",
+          "many": "bpunt na Siria",
+          "one": "phunt na Siria",
+          "other": "punt na Siria",
+          "two": "phunt na Siria"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "other": "lilangeni na Suasalainne"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "few": "bhaht na T\u00e9alainne",
+          "many": "mbaht na T\u00e9alainne",
+          "one": "bhaht na T\u00e9alainne",
+          "other": "baht na T\u00e9alainne",
+          "two": "bhaht na T\u00e9alainne"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "\u0e3f"
+      },
+      "TJR": {
+        "displayName": {
+          "other": "R\u00fabal na T\u00e1ids\u00edceast\u00e1ine"
+        },
+        "narrow": "TJR",
+        "symbol": "TJR"
+      },
+      "TJS": {
+        "displayName": {
+          "few": "shomoni na T\u00e1ids\u00edceast\u00e1ine",
+          "other": "somoni na T\u00e1ids\u00edceast\u00e1ine",
+          "two": "shomoni na T\u00e1ids\u00edceast\u00e1ine"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMM": {
+        "displayName": {
+          "other": "Manat na Tuircm\u00e9anast\u00e1ine (1993\u20132009)"
+        },
+        "narrow": "TMM",
+        "symbol": "TMM"
+      },
+      "TMT": {
+        "displayName": {
+          "few": "mhanat na Tuircm\u00e9anast\u00e1ine",
+          "one": "mhanat na Tuircm\u00e9anast\u00e1ine",
+          "other": "manat na Tuircm\u00e9anast\u00e1ine",
+          "two": "mhanat na Tuircm\u00e9anast\u00e1ine"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "few": "dhinar na T\u00fain\u00e9ise",
+          "many": "ndinar na T\u00fain\u00e9ise",
+          "other": "dinar na T\u00fain\u00e9ise",
+          "two": "dhinar na T\u00fain\u00e9ise"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "few": "pha\u02bbanga Thonga",
+          "many": "bpa\u02bbanga Thonga",
+          "one": "pha\u02bbanga Thonga",
+          "other": "pa\u02bbanga Thonga",
+          "two": "pha\u02bbanga Thonga"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TPE": {
+        "displayName": {
+          "other": "Escudo T\u00edom\u00f3ir"
+        },
+        "narrow": "TPE",
+        "symbol": "TPE"
+      },
+      "TRL": {
+        "displayName": {
+          "other": "lira na Tuirce (1922\u20132005)"
+        },
+        "narrow": "TRL",
+        "symbol": "TRL"
+      },
+      "TRY": {
+        "displayName": {
+          "other": "lira na Tuirce"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "few": "dhollar Oile\u00e1n na Tr\u00edon\u00f3ide agus Tob\u00e1ga",
+          "many": "ndollar Oile\u00e1n na Tr\u00edon\u00f3ide agus Tob\u00e1ga",
+          "other": "dollar Oile\u00e1n na Tr\u00edon\u00f3ide agus Tob\u00e1ga",
+          "two": "dhollar Oile\u00e1n na Tr\u00edon\u00f3ide agus Tob\u00e1ga"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "few": "dhollar nua na T\u00e9av\u00e1ine",
+          "many": "ndollar nua na T\u00e9av\u00e1ine",
+          "other": "dollar nua na T\u00e9av\u00e1ine",
+          "two": "dhollar nua na T\u00e9av\u00e1ine"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "other": "scilling na Tans\u00e1ine"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "other": "hryvnia na h\u00dacr\u00e1ine"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UAK": {
+        "displayName": {
+          "other": "Karbovanets \u00dacr\u00e1nach"
+        },
+        "narrow": "UAK",
+        "symbol": "UAK"
+      },
+      "UGS": {
+        "displayName": {
+          "other": "Scilling Uganda (1966\u20131987)"
+        },
+        "narrow": "UGS",
+        "symbol": "UGS"
+      },
+      "UGX": {
+        "displayName": {
+          "other": "scilling Uganda"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "few": "dhollar S.A.M.",
+          "many": "ndollar S.A.M.",
+          "other": "dollar S.A.M.",
+          "two": "dhollar S.A.M."
+        },
+        "narrow": "$",
+        "symbol": "$"
+      },
+      "USN": {
+        "displayName": {
+          "few": "dhollar S.A.M. (an ch\u00e9ad l\u00e1 eile)",
+          "many": "ndollar S.A.M. (an ch\u00e9ad l\u00e1 eile)",
+          "other": "dollar S.A.M. (an ch\u00e9ad l\u00e1 eile)",
+          "two": "dhollar S.A.M. (an ch\u00e9ad l\u00e1 eile)"
+        },
+        "narrow": "USN",
+        "symbol": "USN"
+      },
+      "USS": {
+        "displayName": {
+          "few": "dhollar S.A.M. (an l\u00e1 c\u00e9anna)",
+          "many": "ndollar S.A.M. (an l\u00e1 c\u00e9anna)",
+          "other": "dollar S.A.M. (an l\u00e1 c\u00e9anna)",
+          "two": "dhollar S.A.M. (an l\u00e1 c\u00e9anna)"
+        },
+        "narrow": "USS",
+        "symbol": "USS"
+      },
+      "UYP": {
+        "displayName": {
+          "few": "pheso Uragua (1975\u20131993)",
+          "many": "bpeso Uragua (1975\u20131993)",
+          "one": "pheso Uragua (1975\u20131993)",
+          "other": "peso Uragua (1975\u20131993)",
+          "two": "pheso Uragua (1975\u20131993)"
+        },
+        "narrow": "UYP",
+        "symbol": "UYP"
+      },
+      "UYU": {
+        "displayName": {
+          "few": "pheso Uragua",
+          "many": "bpeso Uragua",
+          "one": "pheso Uragua",
+          "other": "peso Uragua",
+          "two": "pheso Uragua"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "few": "shum na h\u00daisb\u00e9iceast\u00e1ine",
+          "other": "sum na h\u00daisb\u00e9iceast\u00e1ine",
+          "two": "shum na h\u00daisb\u00e9iceast\u00e1ine"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEB": {
+        "displayName": {
+          "few": "bhol\u00edvar Veinis\u00e9ala (1871\u20132008)",
+          "many": "mbol\u00edvar Veinis\u00e9ala (1871\u20132008)",
+          "one": "bhol\u00edvar Veinis\u00e9ala (1871\u20132008)",
+          "other": "bol\u00edvar Veinis\u00e9ala (1871\u20132008)",
+          "two": "bhol\u00edvar Veinis\u00e9ala (1871\u20132008)"
+        },
+        "narrow": "VEB",
+        "symbol": "VEB"
+      },
+      "VEF": {
+        "displayName": {
+          "few": "bhol\u00edvar Veinis\u00e9ala (2008\u20132018)",
+          "many": "mbol\u00edvar Veinis\u00e9ala (2008\u20132018)",
+          "one": "bhol\u00edvar Veinis\u00e9ala (2008\u20132018)",
+          "other": "bol\u00edvar Veinis\u00e9ala (2008\u20132018)",
+          "two": "bhol\u00edvar Veinis\u00e9ala (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "few": "bhol\u00edvar Veinis\u00e9ala",
+          "many": "mbol\u00edvar Veinis\u00e9ala",
+          "one": "bhol\u00edvar Veinis\u00e9ala",
+          "other": "bol\u00edvar Veinis\u00e9ala",
+          "two": "bhol\u00edvar Veinis\u00e9ala"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "few": "dhong V\u00edtneam",
+          "many": "ndong V\u00edtneam",
+          "one": "dong V\u00edtneam",
+          "other": "Dong V\u00edtneam",
+          "two": "dhong V\u00edtneam"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VNN": {
+        "displayName": {
+          "few": "dhong V\u00edtneam (1978\u20131985)",
+          "many": "ndong V\u00edtneam (1978\u20131985)",
+          "other": "dong V\u00edtneam (1978\u20131985)",
+          "two": "dhong V\u00edtneam (1978\u20131985)"
+        },
+        "narrow": "VNN",
+        "symbol": "VNN"
+      },
+      "VUV": {
+        "displayName": {
+          "other": "vatu Vanuat\u00fa"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "few": "thala Sham\u00f3",
+          "many": "dtala Sham\u00f3",
+          "other": "tala Sham\u00f3",
+          "two": "thala Sham\u00f3"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "few": "fhranc CFA na hAfraice L\u00e1ir",
+          "many": "bhfranc CFA na hAfraice L\u00e1ir",
+          "one": "fhranc CFA na hAfraice L\u00e1ir",
+          "other": "franc CFA na hAfraice L\u00e1ir",
+          "two": "fhranc CFA na hAfraice L\u00e1ir"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XAG": {
+        "displayName": {
+          "one": "unsa tro\u00ed airgid",
+          "other": "unsa\u00ed tro\u00ed airgid",
+          "two": "unsa tro\u00ed airgid"
+        },
+        "narrow": "XAG",
+        "symbol": "XAG"
+      },
+      "XAU": {
+        "displayName": {
+          "one": "unsa tro\u00ed \u00f3ir",
+          "other": "unsa\u00ed tro\u00ed \u00f3ir",
+          "two": "unsa tro\u00ed \u00f3ir"
+        },
+        "narrow": "XAU",
+        "symbol": "XAU"
+      },
+      "XBA": {
+        "displayName": {
+          "other": "Aonad Ilchodach Eorpach"
+        },
+        "narrow": "XBA",
+        "symbol": "XBA"
+      },
+      "XBB": {
+        "displayName": {
+          "other": "Aonad Airgeada\u00edochta Eorpach"
+        },
+        "narrow": "XBB",
+        "symbol": "XBB"
+      },
+      "XBC": {
+        "displayName": {
+          "other": "Aonad Cuntais Eorpach (XBC)"
+        },
+        "narrow": "XBC",
+        "symbol": "XBC"
+      },
+      "XBD": {
+        "displayName": {
+          "other": "Aonad Cuntais Eorpach (XBD)"
+        },
+        "narrow": "XBD",
+        "symbol": "XBD"
+      },
+      "XCD": {
+        "displayName": {
+          "few": "dhollar na Cairibe Thoir",
+          "many": "ndollar na Cairibe Thoir",
+          "other": "dollar na Cairibe Thoir",
+          "two": "dhollar na Cairibe Thoir"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XDR": {
+        "displayName": {
+          "other": "Cearta Speisialta Tarraingthe"
+        },
+        "narrow": "XDR",
+        "symbol": "XDR"
+      },
+      "XEU": {
+        "displayName": {
+          "other": "Aonad Airgeadra Eorpach"
+        },
+        "narrow": "XEU",
+        "symbol": "XEU"
+      },
+      "XFO": {
+        "displayName": {
+          "other": "Franc \u00d3r Francach"
+        },
+        "narrow": "XFO",
+        "symbol": "XFO"
+      },
+      "XFU": {
+        "displayName": {
+          "other": "UIC-Franc Francach"
+        },
+        "narrow": "XFU",
+        "symbol": "XFU"
+      },
+      "XOF": {
+        "displayName": {
+          "few": "fhranc CFA Iarthar na hAfraice",
+          "many": "bhfranc CFA Iarthar na hAfraice",
+          "one": "fhranc CFA Iarthar na hAfraice",
+          "other": "franc CFA Iarthar na hAfraice",
+          "two": "fhranc CFA Iarthar na hAfraice"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPD": {
+        "displayName": {
+          "one": "unsa tro\u00ed pallaidiam",
+          "other": "unsa\u00ed tro\u00ed pallaidiam",
+          "two": "unsa tro\u00ed pallaidiam"
+        },
+        "narrow": "XPD",
+        "symbol": "XPD"
+      },
+      "XPF": {
+        "displayName": {
+          "few": "fhranc CFP",
+          "many": "bhfranc CFP",
+          "one": "fhranc CFP",
+          "other": "franc CFP",
+          "two": "fhranc CFP"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XPT": {
+        "displayName": {
+          "one": "unsa tro\u00ed platanaim",
+          "other": "unsa\u00ed tro\u00ed platanaim",
+          "two": "unsa tro\u00ed platanaim"
+        },
+        "narrow": "XPT",
+        "symbol": "XPT"
+      },
+      "XXX": {
+        "displayName": {
+          "other": "(airgeadra anaithnid)"
+        },
+        "narrow": "XXX",
+        "symbol": "XXX"
+      },
+      "YDD": {
+        "displayName": {
+          "other": "D\u00ednear \u00c9imin"
+        },
+        "narrow": "YDD",
+        "symbol": "YDD"
+      },
+      "YER": {
+        "displayName": {
+          "other": "rial \u00c9imin"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "YUD": {
+        "displayName": {
+          "other": "D\u00ednear Crua I\u00fagslavach (1966\u20131990)"
+        },
+        "narrow": "YUD",
+        "symbol": "YUD"
+      },
+      "YUM": {
+        "displayName": {
+          "other": "D\u00ednear Nua I\u00fagslavach (1994\u20132002)"
+        },
+        "narrow": "YUM",
+        "symbol": "YUM"
+      },
+      "YUN": {
+        "displayName": {
+          "other": "D\u00ednear Inathraithe I\u00fagslavach"
+        },
+        "narrow": "YUN",
+        "symbol": "YUN"
+      },
+      "YUR": {
+        "displayName": {
+          "few": "Dinar Leasaithe na hI\u00fagsl\u00e1ive (1992\u20131993)",
+          "many": "Dinar Leasaithe na hI\u00fagsl\u00e1ive (1992\u20131993)",
+          "one": "Dinar Leasaithe na hI\u00fagsl\u00e1ive (1992\u20131993)",
+          "other": "Dinars Leasaithe na hI\u00fagsl\u00e1ive (1992\u20131993)",
+          "two": "Dinar Leasaithe na hI\u00fagsl\u00e1ive (1992\u20131993)"
+        },
+        "narrow": "YUR",
+        "symbol": "YUR"
+      },
+      "ZAL": {
+        "displayName": {
+          "other": "Rand na hAfraice Theas (airgead\u00fail)"
+        },
+        "narrow": "ZAL",
+        "symbol": "ZAL"
+      },
+      "ZAR": {
+        "displayName": {
+          "other": "rand na hAfraice Theas"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "other": "Kwacha Saimbiach (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "other": "kwacha na Saimbia"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      },
+      "ZRN": {
+        "displayName": {
+          "other": "Zaire Nua S\u00e1\u00edreach"
+        },
+        "narrow": "ZRN",
+        "symbol": "ZRN"
+      },
+      "ZRZ": {
+        "displayName": {
+          "other": "Zaire S\u00e1\u00edreach"
+        },
+        "narrow": "ZRZ",
+        "symbol": "ZRZ"
+      },
+      "ZWD": {
+        "displayName": {
+          "other": "Dollar Siomb\u00e1bach (1980\u20132008)"
+        },
+        "narrow": "ZWD",
+        "symbol": "ZWD"
+      },
+      "ZWL": {
+        "displayName": {
+          "other": "Dollar na Siomb\u00e1ibe (2009)"
+        },
+        "narrow": "ZWL",
+        "symbol": "ZWL"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "\u00a4#,##0.00;(\u00a4#,##0.00)",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "\u00a40k"
+            },
+            "10000": {
+              "other": "\u00a400k"
+            },
+            "100000": {
+              "other": "\u00a4000k"
+            },
+            "1000000": {
+              "other": "\u00a40M"
+            },
+            "10000000": {
+              "other": "\u00a400M"
+            },
+            "100000000": {
+              "other": "\u00a4000M"
+            },
+            "1000000000": {
+              "other": "\u00a40B"
+            },
+            "10000000000": {
+              "other": "\u00a400B"
+            },
+            "100000000000": {
+              "other": "\u00a4000B"
+            },
+            "1000000000000": {
+              "other": "\u00a40T"
+            },
+            "10000000000000": {
+              "other": "\u00a400T"
+            },
+            "100000000000000": {
+              "other": "\u00a4000T"
+            }
+          },
+          "standard": "\u00a4#,##0.00",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "few": "0 mh\u00edle",
+              "one": "0 mh\u00edle",
+              "other": "0 m\u00edle",
+              "two": "0 mh\u00edle"
+            },
+            "10000": {
+              "other": "00 m\u00edle"
+            },
+            "100000": {
+              "other": "000 m\u00edle"
+            },
+            "1000000": {
+              "few": "0 mhilli\u00fan",
+              "one": "0 mhilli\u00fan",
+              "other": "0 milli\u00fan",
+              "two": "0 mhilli\u00fan"
+            },
+            "10000000": {
+              "other": "00 milli\u00fan"
+            },
+            "100000000": {
+              "other": "000 milli\u00fan"
+            },
+            "1000000000": {
+              "few": "0 bhilli\u00fan",
+              "many": "0 mbilli\u00fan",
+              "one": "0 bhilli\u00fan",
+              "other": "0 billi\u00fan",
+              "two": "0 bhilli\u00fan"
+            },
+            "10000000000": {
+              "many": "00 mbilli\u00fan",
+              "other": "00 billi\u00fan"
+            },
+            "100000000000": {
+              "other": "000 billi\u00fan"
+            },
+            "1000000000000": {
+              "few": "0 thrilli\u00fan",
+              "many": "0 dtrilli\u00fan",
+              "other": "0 trilli\u00fan",
+              "two": "0 thrilli\u00fan"
+            },
+            "10000000000000": {
+              "many": "00 dtrilli\u00fan",
+              "other": "00 trilli\u00fan"
+            },
+            "100000000000000": {
+              "other": "000 trilli\u00fan"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0k"
+            },
+            "10000": {
+              "other": "00k"
+            },
+            "100000": {
+              "other": "000k"
+            },
+            "1000000": {
+              "other": "0M"
+            },
+            "10000000": {
+              "other": "00M"
+            },
+            "100000000": {
+              "other": "000M"
+            },
+            "1000000000": {
+              "other": "0B"
+            },
+            "10000000000": {
+              "other": "00B"
+            },
+            "100000000000": {
+              "other": "000B"
+            },
+            "1000000000000": {
+              "other": "0T"
+            },
+            "10000000000000": {
+              "other": "00T"
+            },
+            "100000000000000": {
+              "other": "000T"
+            }
+          },
+          "standard": "#,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ".",
+          "exponential": "E",
+          "group": ",",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "-",
+          "nan": "Nuimh",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "+",
+          "rangeSign": "\u2013",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{0} sa {1}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "many": "{0} n-acra",
+            "other": "{0} acra"
+          },
+          "narrow": {
+            "other": "{0} ac"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ac"
+          }
+        },
+        "bit": {
+          "long": {
+            "few": "{0} ghiot\u00e1n",
+            "many": "{0} ngiot\u00e1n",
+            "one": "{0} ghiot\u00e1n",
+            "other": "{0} giot\u00e1n",
+            "two": "{0} ghiot\u00e1n"
+          },
+          "narrow": {
+            "few": "{0} ghiot.",
+            "many": "{0} ngiot.",
+            "one": "{0} ghiot.",
+            "other": "{0} giot.",
+            "two": "{0} ghiot."
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} ghiot\u00e1n",
+            "many": "{0} ngiot\u00e1n",
+            "one": "{0} ghiot\u00e1n",
+            "other": "{0} giot\u00e1n",
+            "two": "{0} ghiot\u00e1n"
+          }
+        },
+        "byte": {
+          "long": {
+            "few": "{0} bheart",
+            "many": "{0} mbeart",
+            "one": "{0} bheart",
+            "other": "{0} beart",
+            "two": "{0} bheart"
+          },
+          "narrow": {
+            "other": "{0}B"
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} bheart",
+            "many": "{0} mbeart",
+            "one": "{0} bheart",
+            "other": "{0} beart",
+            "two": "{0} bheart"
+          }
+        },
+        "celsius": {
+          "long": {
+            "few": "{0} ch\u00e9im Celsius",
+            "many": "{0} gc\u00e9im Celsius",
+            "one": "{0} ch\u00e9im Celsius",
+            "other": "{0} c\u00e9im Celsius",
+            "two": "{0} ch\u00e9im Celsius"
+          },
+          "narrow": {
+            "other": "{0}\u00b0C"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0C"
+          }
+        },
+        "centimeter": {
+          "long": {
+            "few": "{0} cheintim\u00e9adar",
+            "many": "{0} gceintim\u00e9adar",
+            "one": "{0} cheintim\u00e9adar",
+            "other": "{0} ceintim\u00e9adar",
+            "two": "{0} cheintim\u00e9adar"
+          },
+          "narrow": {
+            "other": "{0}cm"
+          },
+          "perUnit": {
+            "long": "{0} sa cheintim\u00e9adar",
+            "narrow": "{0}/cm",
+            "short": "{0}/cm"
+          },
+          "short": {
+            "other": "{0} cm"
+          }
+        },
+        "day": {
+          "long": {
+            "other": "{0} l\u00e1"
+          },
+          "narrow": {
+            "other": "{0} l\u00e1"
+          },
+          "perUnit": {
+            "long": "{0} sa l\u00e1",
+            "narrow": "{0}/l\u00e1",
+            "short": "{0}/l\u00e1"
+          },
+          "short": {
+            "other": "{0} l\u00e1"
+          }
+        },
+        "degree": {
+          "long": {
+            "few": "{0} ch\u00e9im",
+            "many": "{0} gc\u00e9im",
+            "one": "{0} ch\u00e9im",
+            "other": "{0} c\u00e9im",
+            "two": "{0} ch\u00e9im"
+          },
+          "narrow": {
+            "other": "{0}\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0"
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "few": "{0} ch\u00e9im Fahrenheit",
+            "many": "{0} gc\u00e9im Fahrenheit",
+            "one": "{0} ch\u00e9im Fahrenheit",
+            "other": "{0} c\u00e9im Fahrenheit",
+            "two": "{0} ch\u00e9im Fahrenheit"
+          },
+          "narrow": {
+            "other": "{0}\u00b0F"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0F"
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "few": "{0} unsa leachtacha",
+            "many": "{0} n-unsa leachtacha",
+            "other": "{0} unsa leachtach",
+            "two": "{0} unsa leachtacha"
+          },
+          "narrow": {
+            "other": "{0} unsa l."
+          },
+          "perUnit": {},
+          "short": {
+            "many": "{0} n-unsa l.",
+            "other": "{0} unsa l."
+          }
+        },
+        "foot": {
+          "long": {
+            "few": "{0} thr.",
+            "many": "{0} dtr.",
+            "one": "{0} troigh",
+            "other": "{0} tr.",
+            "two": "{0} thr."
+          },
+          "narrow": {
+            "other": "{0} tr."
+          },
+          "perUnit": {
+            "long": "{0} sa troigh",
+            "narrow": "{0}/tr.",
+            "short": "{0}/tr."
+          },
+          "short": {
+            "other": "{0} tr."
+          }
+        },
+        "gallon": {
+          "long": {
+            "few": "{0} ghal\u00fan",
+            "many": "{0} ngal\u00fan",
+            "one": "{0} ghal\u00fan",
+            "other": "{0} gal\u00fan",
+            "two": "{0} ghal\u00fan"
+          },
+          "narrow": {
+            "few": "{0} ghal.",
+            "many": "{0} ngal.",
+            "one": "{0} ghal.",
+            "other": "{0} gal.",
+            "two": "{0} ghal."
+          },
+          "perUnit": {
+            "long": "{0} sa ghal\u00fan",
+            "narrow": "{0}/gal.",
+            "short": "{0}/gal."
+          },
+          "short": {
+            "few": "{0} ghal.",
+            "many": "{0} ngal.",
+            "one": "{0} ghal.",
+            "other": "{0} gal.",
+            "two": "{0} ghal."
+          }
+        },
+        "gigabit": {
+          "long": {
+            "few": "{0} ghigighiot\u00e1n",
+            "many": "{0} ngigighiot\u00e1n",
+            "one": "{0} ghigighiot\u00e1n",
+            "other": "{0} gigighiot\u00e1n",
+            "two": "{0} ghigighiot\u00e1n"
+          },
+          "narrow": {
+            "other": "{0}Gb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Gb"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "few": "{0} ghigibheart",
+            "many": "{0} ngigibheart",
+            "one": "{0} ghigibheart",
+            "other": "{0} gigibheart",
+            "two": "{0} ghigibheart"
+          },
+          "narrow": {
+            "other": "{0}GB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} GB"
+          }
+        },
+        "gram": {
+          "long": {
+            "few": "{0} ghram",
+            "many": "{0} ngram",
+            "one": "{0} ghram",
+            "other": "{0} gram",
+            "two": "{0} ghram"
+          },
+          "narrow": {
+            "other": "{0}g"
+          },
+          "perUnit": {
+            "long": "{0} sa ghram",
+            "narrow": "{0}/g",
+            "short": "{0}/g"
+          },
+          "short": {
+            "other": "{0} g"
+          }
+        },
+        "hectare": {
+          "long": {
+            "other": "{0} heicte\u00e1r"
+          },
+          "narrow": {
+            "other": "{0} ha"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ha"
+          }
+        },
+        "hour": {
+          "long": {
+            "other": "{0} u"
+          },
+          "narrow": {
+            "other": "{0} u"
+          },
+          "perUnit": {
+            "long": "{0}/u",
+            "narrow": "{0}/u",
+            "short": "{0}/u"
+          },
+          "short": {
+            "other": "{0} u"
+          }
+        },
+        "inch": {
+          "long": {
+            "many": "{0} or.",
+            "other": "{0} orlach"
+          },
+          "narrow": {
+            "many": "{0} n-or.",
+            "other": "{0} or."
+          },
+          "perUnit": {
+            "long": "{0}/or.",
+            "narrow": "{0}/or.",
+            "short": "{0}/or."
+          },
+          "short": {
+            "other": "{0} or."
+          }
+        },
+        "kilobit": {
+          "long": {
+            "few": "{0} chilighiot\u00e1n",
+            "many": "{0} gcilighiot\u00e1n",
+            "one": "{0} chilighiot\u00e1n",
+            "other": "{0} cilighiot\u00e1n",
+            "two": "{0} chilighiot\u00e1n"
+          },
+          "narrow": {
+            "other": "{0}kb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kb"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "few": "{0} chilibheart",
+            "many": "{0} gcilibheart",
+            "one": "{0} chilibheart",
+            "other": "{0} cilibheart",
+            "two": "{0} chilibheart"
+          },
+          "narrow": {
+            "other": "{0}kB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kB"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "few": "{0} chileagram",
+            "many": "{0} gcileagram",
+            "one": "{0} chileagram",
+            "other": "{0} cileagram",
+            "two": "{0} chileagram"
+          },
+          "narrow": {
+            "other": "{0}kg"
+          },
+          "perUnit": {
+            "long": "{0} sa chileagram",
+            "narrow": "{0}/kg",
+            "short": "{0}/kg"
+          },
+          "short": {
+            "other": "{0} kg"
+          }
+        },
+        "kilometer": {
+          "long": {
+            "few": "{0} chilim\u00e9adar",
+            "many": "{0} gcilim\u00e9adar",
+            "one": "{0} chilim\u00e9adar",
+            "other": "{0} cilim\u00e9adar",
+            "two": "{0} chilim\u00e9adar"
+          },
+          "narrow": {
+            "other": "{0}km"
+          },
+          "perUnit": {
+            "long": "{0} sa chilim\u00e9adar",
+            "narrow": "{0}/km",
+            "short": "{0}/km"
+          },
+          "short": {
+            "other": "{0} km"
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "other": "{0} km/u"
+          },
+          "narrow": {
+            "other": "{0} km/u"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} km/u"
+          }
+        },
+        "liter": {
+          "long": {
+            "other": "{0} l\u00edtear"
+          },
+          "narrow": {
+            "other": "{0}l"
+          },
+          "perUnit": {
+            "long": "{0} sa l\u00edtear",
+            "narrow": "{0}/l",
+            "short": "{0}/l"
+          },
+          "short": {
+            "other": "{0} l"
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "other": "{0} l\u00edtear sa chilim\u00e9adar"
+          },
+          "narrow": {
+            "other": "{0}l/km"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} l/km"
+          }
+        },
+        "megabit": {
+          "long": {
+            "few": "{0} mheigighiot\u00e1n",
+            "one": "{0} mheigighiot\u00e1n",
+            "other": "{0} meigighiot\u00e1n",
+            "two": "{0} mheigighiot\u00e1n"
+          },
+          "narrow": {
+            "other": "{0}Mb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Mb"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "few": "{0} mheigibheart",
+            "one": "{0} mheigibheart",
+            "other": "{0} meigibheart",
+            "two": "{0} mheigibheart"
+          },
+          "narrow": {
+            "other": "{0}MB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} MB"
+          }
+        },
+        "meter": {
+          "long": {
+            "few": "{0} mh\u00e9adar",
+            "one": "{0} mh\u00e9adar",
+            "other": "{0} m\u00e9adar",
+            "two": "{0} mh\u00e9adar"
+          },
+          "narrow": {
+            "other": "{0}m"
+          },
+          "perUnit": {
+            "long": "{0} sa mh\u00e9adar",
+            "narrow": "{0}/m",
+            "short": "{0}/m"
+          },
+          "short": {
+            "other": "{0} m"
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "other": "{0} m/s"
+          },
+          "narrow": {
+            "other": "{0} m/s"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} m/s"
+          }
+        },
+        "mile": {
+          "long": {
+            "few": "{0} mh\u00edle",
+            "one": "{0} mh\u00edle",
+            "other": "{0} m\u00edle",
+            "two": "{0} mh\u00edle"
+          },
+          "narrow": {
+            "few": "{0} mh\u00edle",
+            "one": "{0} mh\u00edle",
+            "other": "{0} m\u00edle",
+            "two": "{0} mh\u00edle"
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} mh\u00edle",
+            "many": "{0} m\u00edle",
+            "one": "{0} mh\u00edle",
+            "other": "{0} mi",
+            "two": "{0} mh\u00edle"
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "few": "{0} mh\u00edle an gal\u00fan",
+            "one": "{0} mh\u00edle an gal\u00fan",
+            "other": "{0} m\u00edle an gal\u00fan",
+            "two": "{0} mh\u00edle an gal\u00fan"
+          },
+          "narrow": {
+            "other": "{0}m\u00edle/g"
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} mh\u00edle/gal",
+            "one": "{0} mh\u00edle/gal",
+            "other": "{0} m\u00edle/gal",
+            "two": "{0} mh\u00edle/gal"
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "other": "{0} msu"
+          },
+          "narrow": {
+            "other": "{0} msu"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} msu"
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "few": "{0} mh\u00edle Lochlannacha",
+            "many": "{0} m\u00edle Lochlannacha",
+            "one": "{0} mh\u00edle Lochlannach",
+            "other": "{0} m\u00edle Lochlannach",
+            "two": "{0} mh\u00edle Lochlannacha"
+          },
+          "narrow": {
+            "other": "{0} m lch",
+            "two": "{0} mh lch"
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} mh\u00edle Lch",
+            "other": "{0} m\u00edle Lch",
+            "two": "{0} mh\u00edle Lch"
+          }
+        },
+        "milliliter": {
+          "long": {
+            "few": "{0} mhillil\u00edtear",
+            "one": "{0} mhillil\u00edtear",
+            "other": "{0} millil\u00edtear",
+            "two": "{0} mhillil\u00edtear"
+          },
+          "narrow": {
+            "other": "{0} ml"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ml"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "few": "{0} mhillim\u00e9adar",
+            "one": "{0} mhillim\u00e9adar",
+            "other": "{0} millim\u00e9adar",
+            "two": "{0} mhillim\u00e9adar"
+          },
+          "narrow": {
+            "other": "{0}mm"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mm"
+          }
+        },
+        "millisecond": {
+          "long": {
+            "other": "{0} ms"
+          },
+          "narrow": {
+            "other": "{0} ms"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ms"
+          }
+        },
+        "minute": {
+          "long": {
+            "other": "{0} n\u00f3im"
+          },
+          "narrow": {
+            "many": "{0}n",
+            "other": "{0} n\u00f3im"
+          },
+          "perUnit": {
+            "long": "{0}/n\u00f3im",
+            "narrow": "{0}/n\u00f3im",
+            "short": "{0}/n\u00f3im"
+          },
+          "short": {
+            "other": "{0} n\u00f3im"
+          }
+        },
+        "month": {
+          "long": {
+            "few": "{0} mh\u00ed",
+            "one": "{0} mh\u00ed",
+            "other": "{0} m\u00ed",
+            "two": "{0} mh\u00ed"
+          },
+          "narrow": {
+            "few": "{0}m",
+            "many": "{0}m",
+            "one": "{0}m",
+            "other": "{0} m",
+            "two": "{0}m"
+          },
+          "perUnit": {
+            "long": "{0}/m\u00ed",
+            "narrow": "{0}/m\u00ed",
+            "short": "{0}/m\u00ed"
+          },
+          "short": {
+            "few": "{0} m\u00ed",
+            "many": "{0} m\u00ed",
+            "one": "{0} m\u00ed",
+            "other": "{0} m",
+            "two": "{0} m\u00ed"
+          }
+        },
+        "ounce": {
+          "long": {
+            "many": "{0} n-unsa",
+            "other": "{0} unsa"
+          },
+          "narrow": {
+            "many": "{0} n-unsa",
+            "other": "{0} unsa"
+          },
+          "perUnit": {
+            "long": "{0} san unsa",
+            "narrow": "{0}/unsa",
+            "short": "{0}/unsa"
+          },
+          "short": {
+            "many": "{0} n-unsa",
+            "other": "{0} unsa"
+          }
+        },
+        "percent": {
+          "long": {
+            "few": "{0}%",
+            "many": "{0}%",
+            "other": "{0} faoin gc\u00e9ad",
+            "two": "{0}%"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "few": "{0} PB",
+            "many": "{0} PB",
+            "one": "{0} peitibheart",
+            "other": "{0} petabytes",
+            "two": "{0} PB"
+          },
+          "narrow": {
+            "other": "{0} PB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} PB"
+          }
+        },
+        "pound": {
+          "long": {
+            "few": "{0} phunt",
+            "many": "{0} bpunt",
+            "one": "{0} phunt",
+            "other": "{0} punt",
+            "two": "{0} phunt"
+          },
+          "narrow": {
+            "few": "{0} phunt",
+            "many": "{0} bpunt",
+            "one": "{0} phunt",
+            "other": "{0} punt",
+            "two": "{0} phunt"
+          },
+          "perUnit": {
+            "long": "{0} sa phunt",
+            "narrow": "{0}/punt",
+            "short": "{0}/punt"
+          },
+          "short": {
+            "few": "{0} phunt",
+            "many": "{0} bpunt",
+            "one": "{0} phunt",
+            "other": "{0} punt",
+            "two": "{0} phunt"
+          }
+        },
+        "second": {
+          "long": {
+            "few": "{0} shoic",
+            "other": "{0} soic",
+            "two": "{0} shoic"
+          },
+          "narrow": {
+            "other": "{0} soic"
+          },
+          "perUnit": {
+            "long": "{0}/s",
+            "narrow": "{0}/s",
+            "short": "{0}/s"
+          },
+          "short": {
+            "other": "{0} soic"
+          }
+        },
+        "stone": {
+          "long": {
+            "few": "{0} chloch",
+            "many": "{0} gcloch",
+            "one": "{0} chloch",
+            "other": "{0} cloch",
+            "two": "{0} chloch"
+          },
+          "narrow": {
+            "few": "{0} chl.",
+            "many": "{0} gcl.",
+            "one": "{0} chl.",
+            "other": "{0} cl.",
+            "two": "{0} chl."
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} chl.",
+            "many": "{0} gcl.",
+            "one": "{0} chl.",
+            "other": "{0} cl.",
+            "two": "{0} chl."
+          }
+        },
+        "terabit": {
+          "long": {
+            "few": "{0} theirighiot\u00e1n",
+            "many": "{0} dteirighiot\u00e1n",
+            "other": "{0} teirighiot\u00e1n",
+            "two": "{0} theirighiot\u00e1n"
+          },
+          "narrow": {
+            "other": "{0}Tb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Tb"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "few": "{0} theiribheart",
+            "many": "{0} dteiribheart",
+            "other": "{0} teiribheart",
+            "two": "{0} theiribheart"
+          },
+          "narrow": {
+            "other": "{0}TB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} TB"
+          }
+        },
+        "week": {
+          "long": {
+            "other": "{0} scht"
+          },
+          "narrow": {
+            "other": "{0} scht"
+          },
+          "perUnit": {
+            "long": "{0}/scht",
+            "narrow": "{0}/scht",
+            "short": "{0}/scht"
+          },
+          "short": {
+            "other": "{0} scht"
+          }
+        },
+        "yard": {
+          "long": {
+            "few": "{0} shlat",
+            "other": "{0} slat",
+            "two": "{0} shlat"
+          },
+          "narrow": {
+            "other": "{0}sl"
+          },
+          "perUnit": {},
+          "short": {
+            "few": "{0} shl.",
+            "other": "{0} sl.",
+            "two": "{0} shl."
+          }
+        },
+        "year": {
+          "long": {
+            "many": "{0} mbl",
+            "one": "{0} bhliain",
+            "other": "{0} bl",
+            "two": "{0} bhl"
+          },
+          "narrow": {
+            "other": "{0} bl"
+          },
+          "perUnit": {
+            "long": "{0} sa bhliain",
+            "narrow": "{0}/bl",
+            "short": "{0}/y"
+          },
+          "short": {
+            "other": "{0} bl"
+          }
+        }
+      }
+    }
+  },
+  "locale": "ga"
+}

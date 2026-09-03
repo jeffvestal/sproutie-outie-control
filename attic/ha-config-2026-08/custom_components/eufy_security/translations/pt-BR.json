@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "reauth_successful": "Code is received, reloading the integration in background automatically!",
+      "single_instance_allowed": "Apenas uma \u00fanica inst\u00e2ncia \u00e9 permitida."
+    },
+    "error": {
+      "auth": "O host/porta est\u00e1 errado."
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "captcha_input": "Captcha"
+        },
+        "description": "{captcha_img}",
+        "title": "Eufy Security: Captcha"
+      },
+      "user": {
+        "data": {
+          "host": "Host Endere\u00e7o IP (eg 192.168.178.22)",
+          "port": "Porta (eg 3000)"
+        },
+        "description": "Digite o endere\u00e7o IP e a porta da inst\u00e2ncia do Eufy Security Web Socket",
+        "title": "Eufy Security: Configura\u00e7\u00e3o"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name_for_custom1": "Nome de substitui\u00e7\u00e3o para o modo de guarda personalizado 1",
+          "name_for_custom2": "Nome de substitui\u00e7\u00e3o para o modo de guarda personalizado 2",
+          "name_for_custom3": "Nome de substitui\u00e7\u00e3o para o modo de guarda personalizado 3",
+          "no_stream_in_hass": "Do not use STREAM module inside Home Assistant (if you do not watch the video inside Home Assistant native streaming or you are using WebRTC, enable this to decrease CPU usage",
+          "rtsp_server_address": "Endere\u00e7o IP do host para add-on GO2RTC(P2P)",
+          "sync_interval": "Intervalo de escaneamento na nuvem em segundos [1 to 9999]"
+        },
+        "title": "Eufy Security: Configura\u00e7\u00e3o"
+      }
+    }
+  }
+}

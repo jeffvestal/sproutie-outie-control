@@ -1,0 +1,68 @@
+esphome:
+  name: esp32-cam
+  friendly_name: SproutieOS Vision System
+
+esp32:
+  board: esp32cam
+  framework:
+    type: arduino
+
+psram:
+  mode: quad
+  speed: 40MHz
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  # This stops the reboot loop even if HA disconnects
+  reboot_timeout: 0s
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: "Cypress Creek Promenade_2.4G"
+  password: <redacted>
+  use_address: 192.168.10.180
+
+  # Enable fallback hotspot (captive portal) in case wifi fails
+  ap:
+    ssid: "Esp32-Cam Fallback Hotspot"
+    password: <redacted>
+
+captive_portal:
+
+esp32_camera:
+  name: SproutieOS Vision System
+  external_clock:
+    pin: GPIO0
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO26
+    scl: GPIO27
+  data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
+  vsync_pin: GPIO25
+  href_pin: GPIO23
+  pixel_clock_pin: GPIO22
+  power_down_pin: GPIO32
+
+  aec_mode: manual
+  aec_value: 600
+  
+  vertical_flip: false
+  horizontal_mirror: false
+
+  resolution: 1024x768      # was UXGA (1600x1200) -- way too high, causes buffer fills
+  jpeg_quality: 12           # was 20 -- lower = better quality (range 10-63)
+  max_framerate: 5fps        # cap active streaming
+  idle_framerate: 0 fps 
+
+  # CRITICAL: increase from 1 to 2
+  frame_buffer_count: 2      # was 1 -- allows capture while previous frame is being read
+
+
+# Enables the local web server to view the stream directly on port 80
+web_server:
+  port: 80

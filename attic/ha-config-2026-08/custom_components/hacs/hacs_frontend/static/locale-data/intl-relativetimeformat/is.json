@@ -1,0 +1,308 @@
+{
+  "data": {
+    "day": {
+      "-1": "\u00ed g\u00e6r",
+      "-2": "\u00ed fyrradag",
+      "0": "\u00ed dag",
+      "1": "\u00e1 morgun",
+      "2": "eftir tvo daga",
+      "future": {
+        "one": "eftir {0} dag",
+        "other": "eftir {0} daga"
+      },
+      "past": {
+        "one": "fyrir {0} degi",
+        "other": "fyrir {0} d\u00f6gum"
+      }
+    },
+    "day-narrow": {
+      "-1": "\u00ed g\u00e6r",
+      "-2": "\u00ed fyrradag",
+      "0": "\u00ed dag",
+      "1": "\u00e1 morgun",
+      "2": "eftir tvo daga",
+      "future": {
+        "one": "eftir {0} dag",
+        "other": "eftir {0} daga"
+      },
+      "past": {
+        "one": "fyrir {0} degi",
+        "other": "fyrir {0} d\u00f6gum"
+      }
+    },
+    "day-short": {
+      "-1": "\u00ed g\u00e6r",
+      "-2": "\u00ed fyrradag",
+      "0": "\u00ed dag",
+      "1": "\u00e1 morgun",
+      "2": "eftir tvo daga",
+      "future": {
+        "one": "eftir {0} dag",
+        "other": "eftir {0} daga"
+      },
+      "past": {
+        "one": "fyrir {0} degi",
+        "other": "fyrir {0} d\u00f6gum"
+      }
+    },
+    "hour": {
+      "0": "\u00feessa stundina",
+      "future": {
+        "one": "eftir {0} klukkustund",
+        "other": "eftir {0} klukkustundir"
+      },
+      "past": {
+        "one": "fyrir {0} klukkustund",
+        "other": "fyrir {0} klukkustundum"
+      }
+    },
+    "hour-narrow": {
+      "0": "\u00feessa stundina",
+      "future": {
+        "one": "+{0} klst.",
+        "other": "+{0} klst."
+      },
+      "past": {
+        "one": "-{0} klst.",
+        "other": "-{0} klst."
+      }
+    },
+    "hour-short": {
+      "0": "\u00feessa stundina",
+      "future": {
+        "one": "eftir {0} klst.",
+        "other": "eftir {0} klst."
+      },
+      "past": {
+        "one": "fyrir {0} klst.",
+        "other": "fyrir {0} klst."
+      }
+    },
+    "minute": {
+      "0": "\u00e1 \u00feessari m\u00edn\u00fatu",
+      "future": {
+        "one": "eftir {0} m\u00edn\u00fatu",
+        "other": "eftir {0} m\u00edn\u00fatur"
+      },
+      "past": {
+        "one": "fyrir {0} m\u00edn\u00fatu",
+        "other": "fyrir {0} m\u00edn\u00fatum"
+      }
+    },
+    "minute-narrow": {
+      "0": "\u00e1 \u00feessari m\u00edn\u00fatu",
+      "future": {
+        "one": "+{0} m\u00edn.",
+        "other": "+{0} m\u00edn."
+      },
+      "past": {
+        "one": "-{0} m\u00edn.",
+        "other": "-{0} m\u00edn."
+      }
+    },
+    "minute-short": {
+      "0": "\u00e1 \u00feessari m\u00edn\u00fatu",
+      "future": {
+        "one": "eftir {0} m\u00edn.",
+        "other": "eftir {0} m\u00edn."
+      },
+      "past": {
+        "one": "fyrir {0} m\u00edn.",
+        "other": "fyrir {0} m\u00edn."
+      }
+    },
+    "month": {
+      "-1": "\u00ed s\u00ed\u00f0asta m\u00e1nu\u00f0i",
+      "0": "\u00ed \u00feessum m\u00e1nu\u00f0i",
+      "1": "\u00ed n\u00e6sta m\u00e1nu\u00f0i",
+      "future": {
+        "one": "eftir {0} m\u00e1nu\u00f0",
+        "other": "eftir {0} m\u00e1nu\u00f0i"
+      },
+      "past": {
+        "one": "fyrir {0} m\u00e1nu\u00f0i",
+        "other": "fyrir {0} m\u00e1nu\u00f0um"
+      }
+    },
+    "month-narrow": {
+      "-1": "\u00ed s\u00ed\u00f0asta m\u00e1n.",
+      "0": "\u00ed \u00feessum m\u00e1n.",
+      "1": "\u00ed n\u00e6sta m\u00e1n.",
+      "future": {
+        "one": "eftir {0} m\u00e1n.",
+        "other": "eftir {0} m\u00e1n."
+      },
+      "past": {
+        "one": "fyrir {0} m\u00e1n.",
+        "other": "fyrir {0} m\u00e1n."
+      }
+    },
+    "month-short": {
+      "-1": "\u00ed s\u00ed\u00f0asta m\u00e1n.",
+      "0": "\u00ed \u00feessum m\u00e1n.",
+      "1": "\u00ed n\u00e6sta m\u00e1n.",
+      "future": {
+        "one": "eftir {0} m\u00e1n.",
+        "other": "eftir {0} m\u00e1n."
+      },
+      "past": {
+        "one": "fyrir {0} m\u00e1n.",
+        "other": "fyrir {0} m\u00e1n."
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "s\u00ed\u00f0asti \u00e1rsfj\u00f3r\u00f0ungur",
+      "0": "\u00feessi \u00e1rsfj\u00f3r\u00f0ungur",
+      "1": "n\u00e6sti \u00e1rsfj\u00f3r\u00f0ungur",
+      "future": {
+        "one": "eftir {0} \u00e1rsfj\u00f3r\u00f0ung",
+        "other": "eftir {0} \u00e1rsfj\u00f3r\u00f0unga"
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1rsfj\u00f3r\u00f0ungi",
+        "other": "fyrir {0} \u00e1rsfj\u00f3r\u00f0ungum"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "s\u00ed\u00f0asti \u00e1rsfj.",
+      "0": "\u00feessi \u00e1rsfj.",
+      "1": "n\u00e6sti \u00e1rsfj.",
+      "future": {
+        "one": "eftir {0} \u00e1rsfj.",
+        "other": "eftir {0} \u00e1rsfj."
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1rsfj.",
+        "other": "fyrir {0} \u00e1rsfj."
+      }
+    },
+    "quarter-short": {
+      "-1": "s\u00ed\u00f0asti \u00e1rsfj.",
+      "0": "\u00feessi \u00e1rsfj.",
+      "1": "n\u00e6sti \u00e1rsfj.",
+      "future": {
+        "one": "eftir {0} \u00e1rsfj.",
+        "other": "eftir {0} \u00e1rsfj."
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1rsfj.",
+        "other": "fyrir {0} \u00e1rsfj."
+      }
+    },
+    "second": {
+      "0": "n\u00fana",
+      "future": {
+        "one": "eftir {0} sek\u00fandu",
+        "other": "eftir {0} sek\u00fandur"
+      },
+      "past": {
+        "one": "fyrir {0} sek\u00fandu",
+        "other": "fyrir {0} sek\u00fandum"
+      }
+    },
+    "second-narrow": {
+      "0": "n\u00fana",
+      "future": {
+        "one": "+{0} sek.",
+        "other": "+{0} sek."
+      },
+      "past": {
+        "one": "-{0} sek.",
+        "other": "-{0} sek."
+      }
+    },
+    "second-short": {
+      "0": "n\u00fana",
+      "future": {
+        "one": "eftir {0} sek.",
+        "other": "eftir {0} sek."
+      },
+      "past": {
+        "one": "fyrir {0} sek.",
+        "other": "fyrir {0} sek."
+      }
+    },
+    "week": {
+      "-1": "\u00ed s\u00ed\u00f0ustu viku",
+      "0": "\u00ed \u00feessari viku",
+      "1": "\u00ed n\u00e6stu viku",
+      "future": {
+        "one": "eftir {0} viku",
+        "other": "eftir {0} vikur"
+      },
+      "past": {
+        "one": "fyrir {0} viku",
+        "other": "fyrir {0} vikum"
+      }
+    },
+    "week-narrow": {
+      "-1": "\u00ed s\u00ed\u00f0ustu viku",
+      "0": "\u00ed \u00feessari viku",
+      "1": "\u00ed n\u00e6stu viku",
+      "future": {
+        "one": "eftir {0} viku",
+        "other": "eftir {0} vikur"
+      },
+      "past": {
+        "one": "fyrir {0} viku",
+        "other": "fyrir {0} vikum"
+      }
+    },
+    "week-short": {
+      "-1": "\u00ed s\u00ed\u00f0ustu viku",
+      "0": "\u00ed \u00feessari viku",
+      "1": "\u00ed n\u00e6stu viku",
+      "future": {
+        "one": "eftir {0} viku",
+        "other": "eftir {0} vikur"
+      },
+      "past": {
+        "one": "fyrir {0} viku",
+        "other": "fyrir {0} vikum"
+      }
+    },
+    "year": {
+      "-1": "\u00e1 s\u00ed\u00f0asta \u00e1ri",
+      "0": "\u00e1 \u00feessu \u00e1ri",
+      "1": "\u00e1 n\u00e6sta \u00e1ri",
+      "future": {
+        "one": "eftir {0} \u00e1r",
+        "other": "eftir {0} \u00e1r"
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1ri",
+        "other": "fyrir {0} \u00e1rum"
+      }
+    },
+    "year-narrow": {
+      "-1": "\u00e1 s\u00ed\u00f0asta \u00e1ri",
+      "0": "\u00e1 \u00feessu \u00e1ri",
+      "1": "\u00e1 n\u00e6sta \u00e1ri",
+      "future": {
+        "one": "eftir {0} \u00e1r",
+        "other": "eftir {0} \u00e1r"
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1ri",
+        "other": "fyrir {0} \u00e1rum"
+      }
+    },
+    "year-short": {
+      "-1": "\u00e1 s\u00ed\u00f0asta \u00e1ri",
+      "0": "\u00e1 \u00feessu \u00e1ri",
+      "1": "\u00e1 n\u00e6sta \u00e1ri",
+      "future": {
+        "one": "eftir {0} \u00e1r",
+        "other": "eftir {0} \u00e1r"
+      },
+      "past": {
+        "one": "fyrir {0} \u00e1ri",
+        "other": "fyrir {0} \u00e1rum"
+      }
+    }
+  },
+  "locale": "is"
+}

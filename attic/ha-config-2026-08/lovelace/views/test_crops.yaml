@@ -1,0 +1,329 @@
+# Test Page: Dynamic Styled Crop Summary
+title: Test Crops
+path: test-crops
+cards:
+  - type: vertical-stack
+    cards:
+      # ═══════════════════════════════════════════════════════════════════════
+      # DYNAMIC STYLED CROP CARDS
+      # Each sensor.sproutie_crop_N dynamically represents the Nth active crop
+      # Cards are styled Mushroom cards with conditional visibility
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              padding: 16px !important;
+            }
+        cards:
+          - type: custom:mushroom-template-card
+            primary: "Active Crops"
+            secondary: >
+              {{ state_attr('sensor.sproutie_crop_summary', 'total_trays') | int(0) }} trays · {{ states('sensor.sproutie_crop_summary') | int(0) }} varieties
+            icon: mdi:sprout
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-bottom: 8px !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: grid
+            columns: 2
+            square: false
+            cards:
+              # ─────────────────────────────────────────────────────────────
+              # CROP SLOT 1
+              # ─────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_1
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_1
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_1', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 16px !important;
+                        cursor: pointer !important;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+                      }
+                      ha-card:hover {
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "{{ states('sensor.sproutie_crop_1') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_1', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_1', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_1', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_1') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                          mushroom-shape-icon { --icon-size: 32px !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "{{ state_attr('sensor.sproutie_crop_1', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_1', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "~{{ state_attr('sensor.sproutie_crop_1', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # ─────────────────────────────────────────────────────────────
+              # CROP SLOT 2
+              # ─────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_2
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_2
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_2', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 16px !important;
+                        cursor: pointer !important;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+                      }
+                      ha-card:hover {
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "{{ states('sensor.sproutie_crop_2') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_2', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_2', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_2', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_2') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                          mushroom-shape-icon { --icon-size: 32px !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "{{ state_attr('sensor.sproutie_crop_2', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_2', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "~{{ state_attr('sensor.sproutie_crop_2', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # ─────────────────────────────────────────────────────────────
+              # CROP SLOT 3
+              # ─────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_3
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_3
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_3', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 16px !important;
+                        cursor: pointer !important;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+                      }
+                      ha-card:hover {
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "{{ states('sensor.sproutie_crop_3') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_3', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_3', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_3', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_3') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                          mushroom-shape-icon { --icon-size: 32px !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "{{ state_attr('sensor.sproutie_crop_3', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_3', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "~{{ state_attr('sensor.sproutie_crop_3', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # ─────────────────────────────────────────────────────────────
+              # CROP SLOT 4
+              # ─────────────────────────────────────────────────────────────
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_4
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_4
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_4', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 16px !important;
+                        cursor: pointer !important;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+                      }
+                      ha-card:hover {
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0px 6px 16px rgba(0,0,0,0.4) !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "{{ states('sensor.sproutie_crop_4') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_4', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_4', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_4', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_4') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 20px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                          mushroom-shape-icon { --icon-size: 32px !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "{{ state_attr('sensor.sproutie_crop_4', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_4', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; color: rgba(255,255,255,0.85) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "~{{ state_attr('sensor.sproutie_crop_4', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # SENSOR DEBUG INFO
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              padding: 16px !important;
+              margin-top: 16px !important;
+            }
+        cards:
+          - type: custom:mushroom-template-card
+            primary: "Sensor Debug"
+            secondary: "Dynamic Crop Slot Sensors"
+            icon: mdi:bug
+            icon_color: orange
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; }
+          - type: entities
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; }
+            entities:
+              - entity: sensor.sproutie_crop_1
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_2
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_3
+                secondary_info: attribute
+                attribute: count
+              - entity: sensor.sproutie_crop_4
+                secondary_info: attribute
+                attribute: count

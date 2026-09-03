@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "reauth_successful": "Code is received, reloading the integration in background automatically!",
+      "single_instance_allowed": "Dozwolona jest tylko jedna instancja."
+    },
+    "error": {
+      "auth": "Host lub Port jest nieprawid\u0142owy."
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "captcha_input": "Captcha"
+        },
+        "description": "{captcha_img}",
+        "title": "Eufy Security: Captcha"
+      },
+      "user": {
+        "data": {
+          "host": "Adres IP hosta (np. 192.168.178.22)",
+          "port": "Port (np. 3000)"
+        },
+        "description": "Wprowad\u017a adres IP i port Eufy Security Web Socket",
+        "title": "Eufy Security: Instalacja"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name_for_custom1": "Zast\u0105p nazw\u0119 dla pierwszego niestandardowego trybu ochrony (Bypass)",
+          "name_for_custom2": "Zast\u0105p nazw\u0119 dla drugiego niestandardowego trybu ochrony (Night)",
+          "name_for_custom3": "Zast\u0105p nazw\u0119 dla trzeciego niestandardowego trybu ochrony (Vacation)",
+          "no_stream_in_hass": "Nie u\u017cywaj modu\u0142u STREAM w Home Assistant (je\u015bli nie ogl\u0105dasz wideo w natywnym streamingu Home Assistant lub u\u017cywasz WebRTC, w\u0142\u0105cz to ustawienia, aby zmniejszy\u0107 zu\u017cycie procesora",
+          "rtsp_server_address": "Adres IP dla dodatku GO2RTC (P2P)",
+          "sync_interval": "Interwa\u0142 skanowania chmury w sekundach [1 to 9999]"
+        },
+        "title": "Eufy Security: Konfiguracja"
+      }
+    }
+  }
+}

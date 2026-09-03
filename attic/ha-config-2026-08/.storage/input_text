@@ -1,0 +1,25 @@
+{
+  "data": {
+    "items": [
+      {
+        "icon": "mdi:ray-start-arrow",
+        "id": "selection_start",
+        "max": 100,
+        "min": 0,
+        "mode": "text",
+        "name": "Selection Start"
+      },
+      {
+        "icon": "mdi:ray-end-arrow",
+        "id": "selection_end",
+        "max": 100,
+        "min": 0,
+        "mode": "text",
+        "name": "Selection End"
+      }
+    ]
+  },
+  "key": "input_text",
+  "minor_version": 1,
+  "version": 1
+}

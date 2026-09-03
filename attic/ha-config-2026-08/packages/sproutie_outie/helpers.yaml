@@ -1,0 +1,320 @@
+# packages/sproutie_outie/helpers.yaml
+
+# --- SYSTEM CONTROLS ---
+input_boolean:
+  production_mode:
+    name: "Production Mode (Master System)"
+    icon: mdi:power
+  inspection_mode:
+    name: "Inspection Lights (Slot 6)"
+    icon: mdi:magnify
+  soak_seeds:
+    name: "Soak Seeds"
+    icon: mdi:water-circle
+  schedule_lights_enabled:
+    name: "Light Schedule Enabled"
+    icon: mdi:lightbulb-auto
+    initial: true
+  schedule_exhaust_enabled:
+    name: "Exhaust Schedule Enabled"
+    icon: mdi:fan-auto
+    initial: true
+  schedule_photos_enabled:
+    name: "Photo Schedule Enabled"
+    icon: mdi:camera-auto
+    initial: true
+
+# --- HARDWARE SCHEDULES ---
+input_datetime:
+  lights_on_time:
+    name: "Grow Lights ON"
+    has_date: false
+    has_time: true
+  lights_off_time:
+    name: "Grow Lights OFF"
+    has_date: false
+    has_time: true
+  manual_event_date:
+    name: "Event Date Override"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
+  last_photography_success:
+    name: "Last Photography Success"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
+  exhaust_last_off_time:
+    name: "Exhaust Last Off Time"
+    has_date: true
+    has_time: true
+    initial: "1970-01-01 00:00:00"
+
+input_number:
+  water_amount:
+    name: "Water Amount (ml)"
+    min: 0
+    max: 1000
+    step: 50
+    unit_of_measurement: "ml"
+    icon: mdi:water-plus
+  exhaust_on_duration:
+    name: "Exhaust ON (Mins)"
+    min: 0
+    max: 60
+    step: 1
+    mode: box
+    unit_of_measurement: "min"
+    icon: mdi:fan-clock
+  exhaust_off_duration:
+    name: "Exhaust PAUSE (Mins)"
+    min: 0
+    max: 60
+    step: 1
+    mode: box
+    unit_of_measurement: "min"
+    icon: mdi:timer-off
+  seed_weight:
+    name: "Seed Weight (g)"
+    min: 0
+    max: 1000
+    step: 0.1
+    mode: box
+    unit_of_measurement: "g"
+    icon: mdi:weight-gram
+  soak_time:
+    name: "Soak Time (hours)"
+    min: 0
+    max: 48
+    step: 1
+    initial: 8
+    mode: box
+    unit_of_measurement: "hrs"
+    icon: mdi:timer-sand
+  harvest_weight:
+    name: "Harvest Weight (g)"
+    min: 0
+    max: 5000
+    step: 0.1
+    mode: box
+    unit_of_measurement: "g"
+    icon: mdi:basket-fill
+  photo_interval:
+    name: "Photo Interval (Mins)"
+    min: 10
+    max: 120
+    step: 5
+    initial: 60
+    mode: box
+    unit_of_measurement: "min"
+    icon: mdi:camera-timer
+  photo_refresh_trigger:
+    name: "Photo Refresh Trigger"
+    min: 0
+    max: 9999999999
+    step: 1
+    mode: box
+  humidity_trigger_max:
+    name: "Humidity Max (%)"
+    min: 50
+    max: 95
+    step: 1
+    initial: 75
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:water-percent
+  humidity_trigger_min:
+    name: "Humidity Min (%)"
+    min: 40
+    max: 90
+    step: 1
+    initial: 65
+    mode: box
+    unit_of_measurement: "%"
+    icon: mdi:water-percent-alert
+  temp_trigger_max:
+    name: "Temp Max (F)"
+    min: 60
+    max: 100
+    step: 1
+    initial: 80
+    mode: box
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer-high
+  temp_trigger_min:
+    name: "Temp Min (F)"
+    min: 55
+    max: 95
+    step: 1
+    initial: 75
+    mode: box
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer-low
+
+# --- CROP INVENTORY ---
+input_text:
+  # NOTE: 255 char limit. We store minimal JSON here.
+  crop_library_json:
+    name: "Hidden Crop Library Database"
+    max: 255
+    initial: '{"Radish":{"d":6,"w":35},"Sunflower":{"d":10,"w":50},"Pea":{"d":8,"w":40},"Red Acre Cabbage":{"d":10,"w":30},"Yellow Mustard":{"d":8,"w":30},"Red Garnet Amaranth":{"d":14,"w":4},"Genovese Basil":{"d":45,"w":0.2},"Peppermint":{"d":42,"w":0.1}}'
+  
+  log_event_buffer:
+    name: "Universal Event Buffer"
+    max: 255
+  issue_note:
+    name: "Issue Note"
+    max: 255
+  selected_slot:
+    name: "Selected Slot"
+    max: 10
+  selected_batch:
+    name: "Selected Batch ID"
+    max: 50
+  selected_crop:
+    name: "Selected Crop Name"
+    max: 50
+  event_note:
+    name: "Event Note"
+    max: 255
+  log_filter_search:
+    name: "Log Search Filter"
+    max: 100
+    icon: mdi:magnify
+
+  # --- THE SLOT MATRIX (A1-A8, B1-B8) ---
+  # Each text input stores the JSON state of that slot.
+  # MAX LENGTH 255: We must keep JSON keys short.
+  # Example: {"b": "123", "c": "Radish", "p": "Germ", "d": "2026-01-01"}
+  slot_a1_data:
+    name: Slot A1 Data
+    max: 255
+  slot_a2_data:
+    name: Slot A2 Data
+    max: 255
+  slot_a3_data:
+    name: Slot A3 Data
+    max: 255
+  slot_a4_data:
+    name: Slot A4 Data
+    max: 255
+  slot_a5_data:
+    name: Slot A5 Data
+    max: 255
+  slot_a6_data:
+    name: Slot A6 Data
+    max: 255
+  slot_a7_data:
+    name: Slot A7 Data
+    max: 255
+  slot_a8_data:
+    name: Slot A8 Data
+    max: 255
+
+  slot_b1_data:
+    name: Slot B1 Data
+    max: 255
+  slot_b2_data:
+    name: Slot B2 Data
+    max: 255
+  slot_b3_data:
+    name: Slot B3 Data
+    max: 255
+  slot_b4_data:
+    name: Slot B4 Data
+    max: 255
+  slot_b5_data:
+    name: Slot B5 Data
+    max: 255
+  slot_b6_data:
+    name: Slot B6 Data
+    max: 255
+  slot_b7_data:
+    name: Slot B7 Data
+    max: 255
+  slot_b8_data:
+    name: Slot B8 Data
+    max: 255
+
+  # --- SIDECAR SLOTS (sc_tf, sc_tb, sc_bf, sc_bb) ---
+  # Independent can-based slots: top-front, top-back, bottom-front, bottom-back
+  slot_sc_tf_data:
+    name: Sidecar Top Front Data
+    max: 255
+  slot_sc_tb_data:
+    name: Sidecar Top Back Data
+    max: 255
+  slot_sc_bf_data:
+    name: Sidecar Bottom Front Data
+    max: 255
+  slot_sc_bb_data:
+    name: Sidecar Bottom Back Data
+    max: 255
+
+input_select:
+  planting_preset:
+    name: "Crop Preset"
+    options:
+      - "Radish"
+      - "Sunflower"
+      - "Pea"
+      - "Red Acre Cabbage"
+      - "Yellow Mustard"
+      - "Red Garnet Amaranth"
+      - "Genovese Basil"
+      - "Peppermint"
+      - "Custom"
+    icon: mdi:seed
+  container_type:
+    name: "Container Type"
+    options:
+      - "Tray"
+      - "Jar"
+      - "Can"
+    icon: mdi:beaker
+  phase_transition:
+    name: "Next Phase"
+    options:
+      - "Germination"
+      - "Blackout"
+      - "Growing"
+      - "Harvest Ready"
+    icon: mdi:step-forward
+  watering_type:
+    name: "Watering Type"
+    options:
+      - "Bottom Fill"
+      - "Top Mist Plain"
+      - "Top Mist with H2O2"
+    icon: mdi:water-sync
+  container_size:
+    name: "Planting Footprint"
+    options:
+      - "Full Shelf (10x20)"
+      - "Half Shelf (10x10)"
+      - "Single Slot (Jar)"
+    initial: "Full Shelf (10x20)"
+    icon: mdi:arrow-expand-horizontal
+  exhaust_mode:
+    name: "Exhaust Control Mode"
+    options:
+      - "Schedule"
+      - "Humidity"
+      - "Temperature"
+    initial: "Schedule"
+    icon: mdi:fan-auto
+  log_filter_event:
+    name: "Log Event Filter"
+    options:
+      - "All"
+      - "System Audit"
+      - "Snapshot"
+      - "Water"
+      - "Phase Change"
+      - "Note"
+      - "Harvested"
+      - "Planted"
+      - "Climate"
+      - "Safety"
+    initial: "All"
+    icon: mdi:filter

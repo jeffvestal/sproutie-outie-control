@@ -1,0 +1,121 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Nur eine Konfiguration von BLE-Monitor ist erlaubt."
+    },
+    "error": {
+      "cannot_change_mac": "MAC-Adresse kann nicht ge\u00e4ndert werden.",
+      "cannot_change_uuid": "Beacon-UUID kann nicht ge\u00e4ndert werden.",
+      "cannot_delete_device": "Ger\u00e4t kann nicht gel\u00f6scht werden.",
+      "cannot_disable_bt_interface": "Bluetooth-Interface kann nicht deaktiviert werden, solange eines oder mehrere BT-Interfaces noch ausgew\u00e4hlt sind. W\u00e4hle alle BT-Interfaces ab.",
+      "invalid_key": "Verschl\u00fcsselungscode muss 32 hexadezimale Zeichen sein (24 f\u00fcr Yeelight-Sensoren).",
+      "invalid_mac": "MAC-Adresse muss im Format 'AA:BB:CC:DD:EE:FF' sein.",
+      "invalid_uuid": "Beacon-UUID muss im Format '00000000-0000-0000-0000-000000000000' sein."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Intervall f\u00fcr Ger\u00e4te-Tracking 'Zuhause' betrachten (in Sekunden)",
+          "delete device": "Ger\u00e4t l\u00f6schen",
+          "encryption_key": "Verschl\u00fcsselungscode",
+          "mac": "MAC-Adresse",
+          "report_unknown": "Melde unbekannte BLE-Anzeigen im HA-Protokoll",
+          "reset_timer": "Timer zur\u00fccksetzen (in Sekunden, 0 = aus)",
+          "restore_state": "Stelle den Zustand nach einem Neustart wieder her",
+          "temperature_unit": "Temperatureinheit [wie vom Ger\u00e4t gesendet]",
+          "track_device": "Verfolge Ger\u00e4t",
+          "tracker_scan_interval": "Intervall f\u00fcr Ger\u00e4te-Tracking-Scan (in Sekunden)",
+          "use_median": "Verwende Median anstelle von Mittelwert",
+          "uuid": "Beacon-UUID"
+        },
+        "title": "Ger\u00e4t hinzuf\u00fcgen"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Verwende aktiven Scan anstelle von passivem Scan (beeinflusst die Batterie)",
+          "bt_auto_restart": "Starte Bluetooth-Adapter bei Ausfall automatisch neu",
+          "bt_interface": "MAC-Adresse des Bluetooth-Interface/Adapters",
+          "devices": "Ger\u00e4te",
+          "discovery": "Entdecke Ger\u00e4te und Sensoren automatisch",
+          "log_spikes": "Protokolliere Spitzen",
+          "period": "Zeitraum f\u00fcr die Durchschnittsberechnung",
+          "report_unknown": "Melde unbekannte BLE-Anzeigen im HA-Protokoll",
+          "restore_state": "Stelle den Zustand nach einem Neustart wieder her",
+          "use_median": "Verwende Median anstelle von Mittelwert"
+        },
+        "description": "Richte deine BLE-Monitor-Konfiguration ein",
+        "title": "Passiver BLE-Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Du hast BLE-Monitor in YAML konfiguriert. Bitte \u00e4ndere deine Optionen in YAML."
+    },
+    "error": {
+      "cannot_change_mac": "MAC-Adresse kann nicht ge\u00e4ndert werden.",
+      "cannot_change_uuid": "Beacon-UUID kann nicht ge\u00e4ndert werden.",
+      "cannot_delete_device": "Ger\u00e4t kann nicht gel\u00f6scht werden.",
+      "cannot_disable_bt_interface": "Bluetooth-Interface kann nicht deaktiviert werden, solange eines oder mehrere BT-Interfaces noch ausgew\u00e4hlt sind. W\u00e4hle alle BT-Interfaces ab.",
+      "invalid_key": "Verschl\u00fcsselungscode muss 32 hexadezimale Zeichen lang sein (24 f\u00fcr Yeelight-Sensoren).",
+      "invalid_mac": "MAC-Adresse muss im Format 'AA:BB:CC:DD:EE:FF' sein.",
+      "invalid_uuid": "Beacon-UUID muss im Format '00000000-0000-0000-0000-000000000000' sein."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Intervall f\u00fcr Ger\u00e4te-Tracking 'Zuhause' betrachten (in Sekunden)",
+          "delete device": "Ger\u00e4t l\u00f6schen",
+          "encryption_key": "Verschl\u00fcsselungscode (auf '-' setzen, um zu entfernen)",
+          "mac": "MAC-Adresse",
+          "report_unknown": "Melde unbekannte BLE-Anzeigen im HA-Protokoll",
+          "reset_timer": "Timer zur\u00fccksetzen (in Sekunden, 0 = aus)",
+          "restore_state": "Stelle den Zustand nach einem Neustart wieder her",
+          "temperature_unit": "Temperatureinheit [wie vom Ger\u00e4t gesendet]",
+          "track_device": "Verfolge Ger\u00e4t",
+          "tracker_scan_interval": "Intervall f\u00fcr Ger\u00e4te-Tracking-Scan (in Sekunden)",
+          "use_median": "Verwende Median anstelle von Mittelwert",
+          "uuid": "Beacon-UUID"
+        },
+        "title": "Ger\u00e4t konfigurieren"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Verwende aktiven Scan anstelle von passivem Scan (beeinflusst die Batterie)",
+          "bt_auto_restart": "Starte Bluetooth-Adapter bei Ausfall automatisch neu",
+          "bt_interface": "MAC-Adresse des Bluetooth-Interface/Adapters",
+          "devices": "Ger\u00e4te",
+          "discovery": "Entdecke Ger\u00e4te und Sensoren automatisch",
+          "log_spikes": "Protokolliere Spitzen",
+          "not_in_use": "YAML wird verwendet, \u00e4ndere Optionen in YAML",
+          "period": "Zeitraum f\u00fcr die Durchschnittsberechnung",
+          "report_unknown": "Melde unbekannte BLE-Anzeigen im HA-Protokoll",
+          "restore_state": "Stelle den Zustand nach einem Neustart wieder her",
+          "use_median": "Verwende Median anstelle von Mittelwert"
+        },
+        "description": "Das Scannen wird nach Dr\u00fccken von 'Absenden' neu gestartet",
+        "title": "Optionen f\u00fcr passiven BLE-Monitor"
+      }
+    }
+  },
+  "services": {
+    "cleanup_entries": {
+      "description": "Bereinigung von herumliegenden Ger\u00e4ten der BLE-Monitor-Integration.",
+      "name": "Eintr\u00e4ge bereinigen"
+    },
+    "parse_data": {
+      "description": "Sende RAW-HCI-Paketdaten an die BLE-Monitor-Integration.",
+      "fields": {
+        "gateway_id": {
+          "description": "Kennung des Gateways, das die RAW-HCI-Paketdaten sendet (nur f\u00fcr Ger\u00e4te-Tracker).",
+          "name": "Gateway-ID"
+        },
+        "packet": {
+          "description": "RAW-HCI-Paketdaten hex.",
+          "name": "Paket"
+        }
+      },
+      "name": "Daten parsen"
+    }
+  }
+}

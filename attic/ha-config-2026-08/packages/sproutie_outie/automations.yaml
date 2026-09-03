@@ -1,0 +1,417 @@
+# Sproutie OS v2.1 - Automations
+# Schedules and Duty Cycles
+
+automation:
+  # Duty Cycle: Exhaust Fan Control
+  # Runs every minute, checks production_mode, toggles exhaust fan based on on/off durations
+  - id: sproutie_exhaust_fan_duty_cycle
+    alias: "Exhaust Fan Duty Cycle"
+    description: "Controls exhaust fan based on on/off duration settings when production mode is enabled"
+    trigger:
+      - platform: time_pattern
+        minutes: "/1"
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_exhaust_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_select.exhaust_mode
+        state: "Schedule"
+    action:
+      - variables:
+          fan_state: "{{ states('switch.exhaust_fan') }}"
+          last_changed: "{{ states.switch.exhaust_fan.last_changed }}"
+          on_duration: "{{ states('input_number.exhaust_on_duration') | int(15) }}"
+          off_duration: "{{ states('input_number.exhaust_off_duration') | int(45) }}"
+          elapsed_minutes: >
+            {% set last_ts = as_timestamp(last_changed) | int(0) %}
+            {% set now_ts = as_timestamp(now()) | int(0) %}
+            {{ ((now_ts - last_ts) / 60) | int }}
+      - choose:
+          # Fan is ON - check if we've exceeded on_duration
+          - conditions:
+              - condition: state
+                entity_id: switch.exhaust_fan
+                state: "on"
+            sequence:
+              - if:
+                  - condition: template
+                    value_template: "{{ elapsed_minutes >= on_duration }}"
+                then:
+                  - service: switch.turn_off
+                    target:
+                      entity_id: switch.exhaust_fan
+                  - service: script.sproutie_log_event
+                    data:
+                      type: "Climate"
+                      message: "Exhaust Cycle Complete"
+                      icon: "mdi:fan-off"
+                      color: "#3498db"
+          # Fan is OFF - check if we've exceeded off_duration
+          - conditions:
+              - condition: state
+                entity_id: switch.exhaust_fan
+                state: "off"
+            sequence:
+              - if:
+                  - condition: template
+                    value_template: "{{ elapsed_minutes >= off_duration }}"
+                then:
+                  - service: switch.turn_on
+                    target:
+                      entity_id: switch.exhaust_fan
+                  - service: script.sproutie_log_event
+                    data:
+                      type: "Climate"
+                      message: "Exhaust Cycle Active"
+                      icon: "mdi:fan"
+                      color: "#3498db"
+    mode: single
+
+  # Humidity-Driven Exhaust Control
+  # Triggers exhaust when tent humidity exceeds max threshold
+  # Turns off when humidity drops below min OR run time expires
+  # Respects snooze period to prevent rapid cycling
+  - id: sproutie_exhaust_humidity_control
+    alias: "Exhaust Humidity Control"
+    description: "Controls exhaust fan based on tent humidity thresholds"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.monitor2_humidity
+        above: input_number.humidity_trigger_max
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_exhaust_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_select.exhaust_mode
+        state: "Humidity"
+      - condition: state
+        entity_id: switch.exhaust_fan
+        state: "off"
+      # Check snooze - must have waited long enough since last off
+      - condition: template
+        value_template: >
+          {% set snooze_mins = states('input_number.exhaust_off_duration') | int(5) %}
+          {% set last_off = states('input_datetime.exhaust_last_off_time') %}
+          {% if last_off in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+            true
+          {% else %}
+            {% set elapsed = (as_timestamp(now()) - as_timestamp(last_off)) / 60 %}
+            {{ elapsed >= snooze_mins }}
+          {% endif %}
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.exhaust_fan
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: "Exhaust ON - Humidity {{ states('sensor.monitor2_humidity') }}% > {{ states('input_number.humidity_trigger_max') }}%"
+          icon: "mdi:fan"
+          color: "#e74c3c"
+      # Wait for humidity to drop OR max run time
+      - wait_template: >
+          {{ states('sensor.monitor2_humidity') | float(100) < states('input_number.humidity_trigger_min') | float(65) }}
+        timeout:
+          minutes: "{{ states('input_number.exhaust_on_duration') | int(15) }}"
+      # Turn off exhaust
+      - service: switch.turn_off
+        target:
+          entity_id: switch.exhaust_fan
+      # Record the off time for snooze tracking
+      - service: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.exhaust_last_off_time
+        data:
+          datetime: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: >
+            Exhaust OFF - {% if states('sensor.monitor2_humidity') | float(100) < states('input_number.humidity_trigger_min') | float(65) %}Humidity dropped to {{ states('sensor.monitor2_humidity') }}%{% else %}Max run time reached{% endif %}
+          icon: "mdi:fan-off"
+          color: "#3498db"
+    mode: single
+
+  # --- TEMPERATURE-BASED EXHAUST CONTROL ---
+  - id: sproutie_exhaust_temp_control
+    alias: "Exhaust Temperature Control"
+    description: "Controls exhaust fan based on tent temperature thresholds"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.monitor2_temperature
+        above: input_number.temp_trigger_max
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_exhaust_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_select.exhaust_mode
+        state: "Temperature"
+      - condition: state
+        entity_id: switch.exhaust_fan
+        state: "off"
+      # Check snooze - must have waited long enough since last off
+      - condition: template
+        value_template: >
+          {% set snooze_mins = states('input_number.exhaust_off_duration') | int(5) %}
+          {% set last_off = states('input_datetime.exhaust_last_off_time') %}
+          {% if last_off in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+            true
+          {% else %}
+            {% set elapsed = (as_timestamp(now()) - as_timestamp(last_off)) / 60 %}
+            {{ elapsed >= snooze_mins }}
+          {% endif %}
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.exhaust_fan
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: "Exhaust ON - Temp {{ states('sensor.monitor2_temperature') }}°F > {{ states('input_number.temp_trigger_max') }}°F"
+          icon: "mdi:fan"
+          color: "#e74c3c"
+      # Wait for temp to drop OR max run time
+      - wait_template: >
+          {{ states('sensor.monitor2_temperature') | float(100) < states('input_number.temp_trigger_min') | float(75) }}
+        timeout:
+          minutes: "{{ states('input_number.exhaust_on_duration') | int(15) }}"
+      # Turn off exhaust
+      - service: switch.turn_off
+        target:
+          entity_id: switch.exhaust_fan
+      # Record the off time for snooze tracking
+      - service: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.exhaust_last_off_time
+        data:
+          datetime: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }}"
+      - service: script.sproutie_log_event
+        data:
+          type: "Climate"
+          message: >
+            Exhaust OFF - {% if states('sensor.monitor2_temperature') | float(100) < states('input_number.temp_trigger_min') | float(75) %}Temp dropped to {{ states('sensor.monitor2_temperature') }}°F{% else %}Max run time reached{% endif %}
+          icon: "mdi:fan-off"
+          color: "#3498db"
+    mode: single
+
+  # Light Schedule: Turn ON Grow Lights
+  - id: sproutie_lights_on
+    alias: "Grow Lights ON"
+    description: "Turns on grow lights at scheduled time when production mode is enabled"
+    trigger:
+      - platform: template
+        value_template: >
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_on_time')[:5] }}
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_lights_enabled
+        state: "on"
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+    mode: single
+
+  # Light Schedule: Turn OFF Grow Lights
+  - id: sproutie_lights_off
+    alias: "Grow Lights OFF"
+    description: "Turns off grow lights at scheduled time when production mode is enabled"
+    trigger:
+      - platform: template
+        value_template: >
+          {{ now().strftime('%H:%M') == states('input_datetime.lights_off_time')[:5] }}
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_lights_enabled
+        state: "on"
+    action:
+      - service: switch.turn_off
+        target:
+          entity_id:
+            - switch.top_shelf_lights
+            - switch.bottom_shelf_lights
+    mode: single
+
+  # Photography System: Interval snapshots
+  - id: sproutie_crop_photography_interval
+    alias: "Crop Photography Interval"
+    mode: single
+    max_exceeded: silent
+    description: "Triggers crop photography sequence based on the photo_interval setting with retry"
+    trigger:
+      - platform: time_pattern
+        minutes: "/5"
+    condition:
+      - condition: state
+        entity_id: input_boolean.production_mode
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.schedule_photos_enabled
+        state: "on"
+      - condition: template
+        value_template: >
+          {% set interval = states('input_number.photo_interval') | int(60) %}
+          {% set last_success = states('input_datetime.last_photography_success') %}
+          {% if last_success in ['unknown', 'unavailable', '1970-01-01 00:00:00'] %}
+            true
+          {% else %}
+            {% set diff = (as_timestamp(now()) - as_timestamp(last_success)) / 60 %}
+            {{ diff >= interval }}
+          {% endif %}
+    action:
+      - service: script.sequence_crop_photography
+
+      - delay: "00:02:00"
+      - if:
+          - condition: template
+            value_template: >
+              {% set last_success = states('input_datetime.last_photography_success') %}
+              {% set diff = (as_timestamp(now()) - as_timestamp(last_success)) / 60 %}
+              {{ diff > 2 }}
+        then:
+          - delay: "00:05:00"
+          - service: script.sequence_crop_photography
+
+
+  # Safety Valve: Ensure white lights are turned off after 6 minutes
+  - id: sproutie_photography_lights_safety_valve
+    alias: "Photography Lights Safety Valve"
+    description: "Turns off white lights and restores grow lights if left on too long"
+    trigger:
+      - platform: state
+        entity_id: switch.camera_flash
+        to: "on"
+        for: "00:06:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.inspection_mode
+        state: "off"
+    action:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.camera_flash
+      - service: scene.turn_on
+        target:
+          entity_id: scene.sproutie_snapshot_restore_scene
+        continue_on_error: true
+      - service: browser_mod.notification
+        data:
+          title: "Safety Valve Triggered"
+          message: "White lights were on for 6 minutes. Restoring grow lights automatically."
+          duration: 10000
+      - service: script.sproutie_log_event
+        data:
+          event_type: "Safety"
+          detail: "Photography Lights Safety Valve Triggered - White lights forced OFF after 6 minutes"
+    mode: single
+
+  # Refresh ES Batch History when selected batch changes
+  - id: sproutie_refresh_batch_history
+    alias: "Refresh Batch History from ES"
+    description: "Updates the ES batch history sensor when a different batch is selected"
+    trigger:
+      - platform: state
+        entity_id: input_text.selected_batch
+    condition:
+      - condition: template
+        value_template: "{{ trigger.to_state.state not in ['', 'unknown', 'unavailable'] }}"
+    action:
+      - delay: "00:00:01"
+      - service: homeassistant.update_entity
+        target:
+          entity_id: sensor.sproutie_batch_history
+    mode: restart
+
+  # Telemetry Auditing: Periodic push to Elasticsearch
+  - id: sproutie_telemetry_audit_push
+    alias: "Telemetry Audit Push"
+    description: "Periodically pushes system telemetry (temp, humidity, hardware states) to Elasticsearch"
+    trigger:
+      - platform: time_pattern
+        minutes: "/5"
+    action:
+      - service: rest_command.sproutie_es_bulk_index
+        data:
+          timestamp: "{{ now().isoformat() }}"
+          tent_temp: "{{ states('sensor.sproutie_outie_internal_temp') | float(0) }}"
+          tent_humidity: "{{ states('sensor.sproutie_outie_internal_humidity') | float(0) }}"
+          room_temp: "{{ states('sensor.caffrey_taffy_co_internal_temp') | float(0) }}"
+          room_humidity: "{{ states('sensor.caffrey_taffy_co_internal_humidity') | float(0) }}"
+          fan_exhaust: "{{ 1 if is_state('switch.exhaust_fan', 'on') else 0 }}"
+          fan_top: "{{ 1 if is_state('switch.top_shelf_fan', 'on') else 0 }}"
+          fan_bottom: "{{ 1 if is_state('switch.bottom_shelf_fan', 'on') else 0 }}"
+          lights_top: "{{ 1 if is_state('switch.top_shelf_lights', 'on') else 0 }}"
+          lights_bottom: "{{ 1 if is_state('switch.bottom_shelf_lights', 'on') else 0 }}"
+    mode: single
+
+  # Daily Snapshot Maintenance: retry failed uploads, clean up old files
+  - id: sproutie_snapshot_maintenance
+    alias: "Daily Snapshot Maintenance"
+    description: "Retries failed GCP uploads, cleans up snapshots older than 3 days, refreshes failure count sensor"
+    trigger:
+      - platform: time
+        at: "03:00:00"
+    action:
+      - service: shell_command.snapshot_maintenance
+      - delay: "00:00:30"
+      - service: homeassistant.update_entity
+        target:
+          entity_id: sensor.sproutie_failed_uploads
+    mode: single
+
+  # Notify on failed snapshot uploads
+  - id: sproutie_upload_failure_alert
+    alias: "Snapshot Upload Failure Alert"
+    description: "Creates a persistent notification when GCP snapshot uploads have failed"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.sproutie_failed_uploads
+        above: 0
+        for: "00:05:00"
+    action:
+      - service: persistent_notification.create
+        data:
+          notification_id: "sproutie_upload_failures"
+          title: "Sproutie: Snapshot Upload Failures"
+          message: >-
+            {{ states('sensor.sproutie_failed_uploads') }} snapshot(s) failed to upload to GCP.
+            The system will retry at 3am. Check /config/www/snapshots/.failed_uploads for details.
+      - service: script.sproutie_log_event
+        data:
+          event_type: "Safety"
+          detail: "GCP upload failures detected: {{ states('sensor.sproutie_failed_uploads') }} files pending retry"
+    mode: single
+
+  # Clear notification when failures are resolved
+  - id: sproutie_upload_failure_resolved
+    alias: "Snapshot Upload Failure Resolved"
+    description: "Clears the failure notification when all uploads have succeeded"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.sproutie_failed_uploads
+        below: 1
+    action:
+      - service: persistent_notification.dismiss
+        data:
+          notification_id: "sproutie_upload_failures"
+    mode: single

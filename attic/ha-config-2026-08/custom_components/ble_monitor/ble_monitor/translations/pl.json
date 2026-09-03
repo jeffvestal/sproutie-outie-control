@@ -1,0 +1,101 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Dozwolona jest tylko jedna konfiguracja monitora BLE."
+    },
+    "error": {
+      "cannot_change_mac": "Nie mo\u017cna zmieni\u0107 adresu MAC.",
+      "cannot_change_uuid": "Nie mo\u017cna zmieni\u0107 identyfikatora UUID beaconu.",
+      "cannot_delete_device": "Nie mo\u017cna usun\u0105\u0107 urz\u0105dzenia.",
+      "cannot_disable_bt_interface": "Nie mo\u017cna wy\u0142\u0105czy\u0107 interfejsu BT, gdy co najmniej jeden z interfejs\u00f3w BT jest nadal wybrany. Usu\u0144 zaznaczenie wszystkich interfejs\u00f3w BT.",
+      "invalid_key": "Klucz szyfrowania musi sk\u0142ada\u0107 si\u0119 z 32 znak\u00f3w szesnastkowych (24 dla czujnik\u00f3w Yeelight).",
+      "invalid_mac": "Adres MAC musi by\u0107 w formie 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Identyfikator UUID beaconu musi mie\u0107 form\u0119 '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Przyjmij stan trackera 'w domu' po interwale (w sekundach)",
+          "delete device": "Usu\u0144 urz\u0105dzenie",
+          "encryption_key": "Klucz szyfrowania",
+          "mac": "Adres MAC",
+          "report_unknown": "Zg\u0142o\u015b nieznane",
+          "reset_timer": "Resetuj timer (w sekundach, 0 = wy\u0142\u0105czony)",
+          "restore_state": "Przywr\u00f3\u0107 stan po restarcie",
+          "temperature_unit": "Jednostka temperatury [tylko czujniki temperatury]",
+          "track_device": "\u015aled\u017a urz\u0105dzenie (tracker)",
+          "tracker_scan_interval": "Interwa\u0142 skanowania trackera (w sekundach)",
+          "use_median": "U\u017cyj mediany zamiast \u015bredniej",
+          "uuid": "Identyfikator UUID beaconu"
+        },
+        "title": "Dodaj urz\u0105dzenie"
+      },
+      "user": {
+        "data": {
+          "active_scan": "U\u017cyj skanowania aktywnego zamiast skanowania pasywnego (wp\u0142ywa na zu\u017cycie baterii)",
+          "bt_auto_restart": "Automatycznie uruchom ponownie adapter Bluetooth w przypadku awarii",
+          "bt_interface": "Adres MAC interfejsu/adaptera Bluetooth",
+          "devices": "Urz\u0105dzenia",
+          "discovery": "Automatyczne wykrywanie urz\u0105dze\u0144 i czujnik\u00f3w",
+          "log_spikes": "Zapisuj piki",
+          "period": "Okres do u\u015bredniania",
+          "report_unknown": "Zg\u0142o\u015b nieznane",
+          "restore_state": "Przywr\u00f3\u0107 stan po restarcie",
+          "use_median": "U\u017cyj mediany zamiast \u015bredniej"
+        },
+        "description": "Ustawienia konfiguracji monitora BLE",
+        "title": "Pasywny monitor BLE"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Monitor BLE zosta\u0142 skonfigurowany w YAML. Prosz\u0119 zmieni\u0107 opcje w YAML."
+    },
+    "error": {
+      "cannot_change_mac": "Nie mo\u017cna zmieni\u0107 adresu MAC.",
+      "cannot_change_uuid": "Nie mo\u017cna zmieni\u0107 identyfikatora UUID beaconu.",
+      "cannot_delete_device": "Nie mo\u017cna usun\u0105\u0107 urz\u0105dzenia.",
+      "cannot_disable_bt_interface": "Nie mo\u017cna wy\u0142\u0105czy\u0107 interfejsu BT, gdy co najmniej jeden z interfejs\u00f3w BT jest nadal wybrany. Usu\u0144 zaznaczenie wszystkich interfejs\u00f3w BT.",
+      "invalid_key": "Klucz szyfrowania musi sk\u0142ada\u0107 si\u0119 z 32 znak\u00f3w szesnastkowych (24 dla czujnik\u00f3w Yeelight).",
+      "invalid_mac": "Adres MAC musi by\u0107 w formie 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Identyfikator UUID beaconu musi mie\u0107 form\u0119 '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Przyjmij stan trackera 'w domu' po interwale (w sekundach)",
+          "delete device": "Usu\u0144 urz\u0105dzenie",
+          "encryption_key": "Klucz szyfrowania (aby usun\u0105\u0107 ustaw na '-')",
+          "mac": "Adres MAC",
+          "report_unknown": "Zg\u0142o\u015b nieznane",
+          "reset_timer": "Resetuj timer (w sekundach, 0 = wy\u0142\u0105czony)",
+          "restore_state": "Przywr\u00f3\u0107 stan po restarcie",
+          "temperature_unit": "Jednostka temperatury",
+          "track_device": "\u015aled\u017a urz\u0105dzenie (tracker)",
+          "tracker_scan_interval": "Interwa\u0142 skanowania trackera (w sekundach)",
+          "use_median": "U\u017cyj mediany zamiast \u015bredniej",
+          "uuid": "Identyfikator UUID beaconu"
+        },
+        "title": "Skonfiguruj urz\u0105dzenie"
+      },
+      "init": {
+        "data": {
+          "active_scan": "U\u017cyj skanowania aktywnego zamiast skanowania pasywnego (wp\u0142ywa na zu\u017cycie baterii)",
+          "bt_auto_restart": "Automatycznie uruchom ponownie adapter Bluetooth w przypadku awarii",
+          "bt_interface": "Adres MAC interfejsu/adaptera Bluetooth",
+          "devices": "Urz\u0105dzenia",
+          "discovery": "Automatyczne wykrywanie urz\u0105dze\u0144 i czujnik\u00f3w",
+          "log_spikes": "Zapisuj piki",
+          "not_in_use": "U\u017cywany jest YAML, zmie\u0144 opcje w YAML",
+          "period": "Okres do u\u015bredniania",
+          "report_unknown": "Zg\u0142o\u015b nieznane",
+          "restore_state": "Przywr\u00f3\u0107 stan po restarcie",
+          "use_median": "U\u017cyj mediany zamiast \u015bredniej"
+        },
+        "description": "Skanowanie zostanie wznowione po naci\u015bni\u0119ciu 'ZATWIERD\u0179'",
+        "title": "Opcje pasywnego monitora BLE"
+      }
+    }
+  }
+}

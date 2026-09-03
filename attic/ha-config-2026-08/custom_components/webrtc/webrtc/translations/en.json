@@ -1,0 +1,88 @@
+{
+  "config": {
+    "abort": {
+      "arch": "Unsupported OS architecture: {uname}",
+      "single_instance_allowed": "Already configured. Only a single configuration possible."
+    },
+    "error": {
+      "connect": "Can't connect to go2rtc server"
+    },
+    "step": {
+      "config": {
+        "data": {
+          "api": "Public WebUI on port 1984",
+          "password": "<redacted>",
+          "rtsp": "Public RTSP on port 8554",
+          "username": "<redacted>"
+        },
+        "description": "Path: `{path}`",
+        "title": "go2rtc config"
+      },
+      "user": {
+        "data": {
+          "url": "URL"
+        },
+        "description": "Select [go2rtc](https://github.com/AlexxIT/go2rtc) streaming server version:\n1. Leave blank if you want the built-in go2rtc version (*basic users*)\n2. Set `http://localhost:1984` if you install [go2rtc](https://github.com/AlexxIT/go2rtc#go2rtc-home-assistant-add-on) or [Frigate 12+](https://docs.frigate.video/) add-on (*advanced users*)\n3. Set custom address if you install go2rtc on another server (*hackers*)",
+        "title": "go2rtc url"
+      }
+    }
+  },
+  "services": {
+    "create_link": {
+      "description": "Create a temporary or permanent link to a stream (enter `url` or `entity`)",
+      "fields": {
+        "entity": {
+          "description": "Camera entity_id",
+          "name": "Entity"
+        },
+        "link_id": {
+          "description": "Create a random or permanent ID for your link",
+          "name": "Link ID"
+        },
+        "open_limit": {
+          "description": "How many times a link can be opened (0 - unlimit)",
+          "name": "Open limit"
+        },
+        "time_to_live": {
+          "description": "How many seconds will the link live (0 - unlimit)",
+          "name": "Time to live"
+        },
+        "url": {
+          "description": "Link to RTSP-stream",
+          "name": "URL"
+        }
+      },
+      "name": "Create Link"
+    },
+    "dash_cast": {
+      "description": "Cast stream to Chromecast device via DashCast application",
+      "fields": {
+        "entity": {
+          "description": "Camera entity_id",
+          "name": "Entity"
+        },
+        "entity_id": {
+          "description": "Media player entity_id",
+          "name": "Media Entity"
+        },
+        "extra": {
+          "description": "Additional card params",
+          "name": "Extra"
+        },
+        "force": {
+          "description": "Force restart DashCast application",
+          "name": "Force"
+        },
+        "hass_url": {
+          "description": "Manual base URL to Hass server",
+          "name": "Hass URL"
+        },
+        "url": {
+          "description": "Link to RTSP-stream",
+          "name": "URL"
+        }
+      },
+      "name": "DashCast"
+    }
+  }
+}

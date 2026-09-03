@@ -1,0 +1,24 @@
+{
+  "data": {
+    "items": [
+      {
+        "conversation_engine": "conversation.home_assistant",
+        "conversation_language": "en",
+        "id": "01j5hgsynbw3tmgg58m90b4amc",
+        "language": "en",
+        "name": "Home Assistant",
+        "stt_engine": null,
+        "stt_language": null,
+        "tts_engine": "cloud",
+        "tts_language": "en-US",
+        "tts_voice": "JennyNeural",
+        "wake_word_entity": null,
+        "wake_word_id": null
+      }
+    ],
+    "preferred_item": "01j5hgsynbw3tmgg58m90b4amc"
+  },
+  "key": "assist_pipeline.pipelines",
+  "minor_version": 2,
+  "version": 1
+}

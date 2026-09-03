@@ -1,0 +1,88 @@
+{
+  "config": {
+    "abort": {
+      "arch": "Arquitetura de SO n\u00e3o suportada: {uname}",
+      "single_instance_allowed": "J\u00e1 configurado. Apenas \u00e9 poss\u00edvel uma \u00fanica configura\u00e7\u00e3o."
+    },
+    "error": {
+      "connect": "N\u00e3o \u00e9 poss\u00edvel ligar ao servidor go2rtc"
+    },
+    "step": {
+      "config": {
+        "data": {
+          "api": "Public WebUI na porta 1984",
+          "password": "<redacted>",
+          "rtsp": "RTSP p\u00fablico na porta 8554",
+          "username": "<redacted>"
+        },
+        "description": "Caminho: `{path}`",
+        "title": "Configura\u00e7\u00e3o go2rtc"
+      },
+      "user": {
+        "data": {
+          "url": "URL"
+        },
+        "description": "Selecione a vers\u00e3o do servidor de streaming [go2rtc](https://github.com/AlexxIT/go2rtc):\n1. Deixe em branco se desejar utilizar a vers\u00e3o go2rtc incorporada (*utilizadores b\u00e1sicos*)\n2. Defina `http://localhost:1984` se instalar o add-on [go2rtc](https://github.com/AlexxIT/go2rtc#go2rtc-home-assistant-add-on) ou [Frigate 12+](https://docs.frigate.video/) (*utilizadores avan\u00e7ados*)\n3. Defina um endere\u00e7o personalizado se instalar go2rtc num outro servidor (*utilizadores experientes*)",
+        "title": "URL do go2rtc"
+      }
+    }
+  },
+  "services": {
+    "create_link": {
+      "description": "Crie um link tempor\u00e1rio ou permanente para um stream (introduza `url` ou `entidade`)",
+      "fields": {
+        "entity": {
+          "description": "ID de entidade da c\u00e2mara",
+          "name": "Entidade"
+        },
+        "link_id": {
+          "description": "Crie um ID aleat\u00f3rio ou permanente para o seu link",
+          "name": "ID do Link"
+        },
+        "open_limit": {
+          "description": "Quantas vezes o link pode ser aberto (0 - sem limite)",
+          "name": "Limite de aberturas"
+        },
+        "time_to_live": {
+          "description": "Quantos segundos o link permanecer\u00e1 ativo (0 - sem limite)",
+          "name": "Tempo de vida"
+        },
+        "url": {
+          "description": "Link para o stream RTSP",
+          "name": "URL"
+        }
+      },
+      "name": "Criar Link"
+    },
+    "dash_cast": {
+      "description": "Transmitir stream para dispositivo Chromecast atrav\u00e9s da aplica\u00e7\u00e3o DashCast",
+      "fields": {
+        "entity": {
+          "description": "ID de entidade da c\u00e2mara",
+          "name": "Entidade"
+        },
+        "entity_id": {
+          "description": "ID de entidade do leitor de m\u00e9dia",
+          "name": "Entidade de M\u00e9dia"
+        },
+        "extra": {
+          "description": "Par\u00e2metros adicionais do cart\u00e3o",
+          "name": "Extra"
+        },
+        "force": {
+          "description": "For\u00e7ar rein\u00edcio da aplica\u00e7\u00e3o DashCast",
+          "name": "For\u00e7ar"
+        },
+        "hass_url": {
+          "description": "URL base manual para o servidor Hass",
+          "name": "URL do Hass"
+        },
+        "url": {
+          "description": "Link para o stream RTSP",
+          "name": "URL"
+        }
+      },
+      "name": "DashCast"
+    }
+  }
+}

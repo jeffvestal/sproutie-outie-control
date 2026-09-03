@@ -1,0 +1,308 @@
+{
+  "data": {
+    "day": {
+      "-1": "eile",
+      "-2": "\u00fcleeile",
+      "0": "t\u00e4na",
+      "1": "homme",
+      "2": "\u00fclehomme",
+      "future": {
+        "one": "{0} p\u00e4eva p\u00e4rast",
+        "other": "{0} p\u00e4eva p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} p\u00e4eva eest",
+        "other": "{0} p\u00e4eva eest"
+      }
+    },
+    "day-narrow": {
+      "-1": "eile",
+      "-2": "\u00fcleeile",
+      "0": "t\u00e4na",
+      "1": "homme",
+      "2": "\u00fclehomme",
+      "future": {
+        "one": "{0} p p\u00e4rast",
+        "other": "{0} p p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} p eest",
+        "other": "{0} p eest"
+      }
+    },
+    "day-short": {
+      "-1": "eile",
+      "-2": "\u00fcleeile",
+      "0": "t\u00e4na",
+      "1": "homme",
+      "2": "\u00fclehomme",
+      "future": {
+        "one": "{0} p p\u00e4rast",
+        "other": "{0} p p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} p eest",
+        "other": "{0} p eest"
+      }
+    },
+    "hour": {
+      "0": "praegusel tunnil",
+      "future": {
+        "one": "{0} tunni p\u00e4rast",
+        "other": "{0} tunni p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} tunni eest",
+        "other": "{0} tunni eest"
+      }
+    },
+    "hour-narrow": {
+      "0": "praegusel tunnil",
+      "future": {
+        "one": "{0} t p\u00e4rast",
+        "other": "{0} t p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} t eest",
+        "other": "{0} t eest"
+      }
+    },
+    "hour-short": {
+      "0": "praegusel tunnil",
+      "future": {
+        "one": "{0} t p\u00e4rast",
+        "other": "{0} t p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} t eest",
+        "other": "{0} t eest"
+      }
+    },
+    "minute": {
+      "0": "praegusel minutil",
+      "future": {
+        "one": "{0} minuti p\u00e4rast",
+        "other": "{0} minuti p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} minuti eest",
+        "other": "{0} minuti eest"
+      }
+    },
+    "minute-narrow": {
+      "0": "praegusel minutil",
+      "future": {
+        "one": "{0} min p\u00e4rast",
+        "other": "{0} min p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} min eest",
+        "other": "{0} min eest"
+      }
+    },
+    "minute-short": {
+      "0": "praegusel minutil",
+      "future": {
+        "one": "{0} min p\u00e4rast",
+        "other": "{0} min p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} min eest",
+        "other": "{0} min eest"
+      }
+    },
+    "month": {
+      "-1": "eelmine kuu",
+      "0": "k\u00e4esolev kuu",
+      "1": "j\u00e4rgmine kuu",
+      "future": {
+        "one": "{0} kuu p\u00e4rast",
+        "other": "{0} kuu p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} kuu eest",
+        "other": "{0} kuu eest"
+      }
+    },
+    "month-narrow": {
+      "-1": "eelm. k",
+      "0": "see k",
+      "1": "j\u00e4rgm. k",
+      "future": {
+        "one": "{0} k p\u00e4rast",
+        "other": "{0} k p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} k eest",
+        "other": "{0} k eest"
+      }
+    },
+    "month-short": {
+      "-1": "eelm. kuu",
+      "0": "see kuu",
+      "1": "j\u00e4rgm. kuu",
+      "future": {
+        "one": "{0} kuu p\u00e4rast",
+        "other": "{0} kuu p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} kuu eest",
+        "other": "{0} kuu eest"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "eelmine kvartal",
+      "0": "k\u00e4esolev kvartal",
+      "1": "j\u00e4rgmine kvartal",
+      "future": {
+        "one": "{0} kvartali p\u00e4rast",
+        "other": "{0} kvartali p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} kvartali eest",
+        "other": "{0} kvartali eest"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "eelmine kv",
+      "0": "k\u00e4esolev kv",
+      "1": "j\u00e4rgmine kv",
+      "future": {
+        "one": "{0} kv p\u00e4rast",
+        "other": "{0} kv p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} kv eest",
+        "other": "{0} kv eest"
+      }
+    },
+    "quarter-short": {
+      "-1": "eelmine kv",
+      "0": "k\u00e4esolev kv",
+      "1": "j\u00e4rgmine kv",
+      "future": {
+        "one": "{0} kv p\u00e4rast",
+        "other": "{0} kv p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} kv eest",
+        "other": "{0} kv eest"
+      }
+    },
+    "second": {
+      "0": "n\u00fc\u00fcd",
+      "future": {
+        "one": "{0} sekundi p\u00e4rast",
+        "other": "{0} sekundi p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} sekundi eest",
+        "other": "{0} sekundi eest"
+      }
+    },
+    "second-narrow": {
+      "0": "n\u00fc\u00fcd",
+      "future": {
+        "one": "{0} s p\u00e4rast",
+        "other": "{0} s p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} s eest",
+        "other": "{0} s eest"
+      }
+    },
+    "second-short": {
+      "0": "n\u00fc\u00fcd",
+      "future": {
+        "one": "{0} sek p\u00e4rast",
+        "other": "{0} sek p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} sek eest",
+        "other": "{0} sek eest"
+      }
+    },
+    "week": {
+      "-1": "eelmine n\u00e4dal",
+      "0": "k\u00e4esolev n\u00e4dal",
+      "1": "j\u00e4rgmine n\u00e4dal",
+      "future": {
+        "one": "{0} n\u00e4dala p\u00e4rast",
+        "other": "{0} n\u00e4dala p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} n\u00e4dala eest",
+        "other": "{0} n\u00e4dala eest"
+      }
+    },
+    "week-narrow": {
+      "-1": "eelm. n",
+      "0": "see n",
+      "1": "j\u00e4rgm. n",
+      "future": {
+        "one": "{0} n\u00e4d p\u00e4rast",
+        "other": "{0} n\u00e4d p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} n\u00e4d eest",
+        "other": "{0} n\u00e4d eest"
+      }
+    },
+    "week-short": {
+      "-1": "eelm. n\u00e4d",
+      "0": "see n\u00e4d",
+      "1": "j\u00e4rgm. n\u00e4d",
+      "future": {
+        "one": "{0} n\u00e4d p\u00e4rast",
+        "other": "{0} n\u00e4d p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} n\u00e4d eest",
+        "other": "{0} n\u00e4d eest"
+      }
+    },
+    "year": {
+      "-1": "eelmine aasta",
+      "0": "k\u00e4esolev aasta",
+      "1": "j\u00e4rgmine aasta",
+      "future": {
+        "one": "{0} aasta p\u00e4rast",
+        "other": "{0} aasta p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} aasta eest",
+        "other": "{0} aasta eest"
+      }
+    },
+    "year-narrow": {
+      "-1": "eelm. a",
+      "0": "see a",
+      "1": "j\u00e4rgm. a",
+      "future": {
+        "one": "{0} a p\u00e4rast",
+        "other": "{0} a p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} a eest",
+        "other": "{0} a eest"
+      }
+    },
+    "year-short": {
+      "-1": "eelmine a",
+      "0": "k\u00e4esolev a",
+      "1": "j\u00e4rgmine a",
+      "future": {
+        "one": "{0} a p\u00e4rast",
+        "other": "{0} a p\u00e4rast"
+      },
+      "past": {
+        "one": "{0} a eest",
+        "other": "{0} a eest"
+      }
+    }
+  },
+  "locale": "et"
+}

@@ -1,0 +1,2973 @@
+{
+  "data": {
+    "am": "am",
+    "ca": [
+      "gregory"
+    ],
+    "dateFormat": {
+      "full": "EEEE, d MMMM y",
+      "long": "d MMMM y",
+      "medium": "d MMM y",
+      "short": "dd/MM/y"
+    },
+    "dateTimeFormat": {
+      "full": "{1}, {0}",
+      "long": "{1}, {0}",
+      "medium": "{1}, {0}",
+      "short": "{1}, {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "Anno Domini",
+        "BC": "Before Christ"
+      },
+      "narrow": {
+        "AD": "A",
+        "BC": "B"
+      },
+      "short": {
+        "AD": "AD",
+        "BC": "BC"
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h B",
+        "Bhm": "h:mm B",
+        "Bhms": "h:mm:ss B",
+        "E": "ccc",
+        "E, Bh": "ccc, h B",
+        "E, Bhm": "ccc, h:mm B",
+        "E, Bhms": "ccc, h:mm:ss B",
+        "E, H": "ccc, HH",
+        "E, HH:mm": "ccc, HH:mm",
+        "E, HH:mm:ss": "ccc, HH:mm:ss",
+        "E, HH:mm:ss z": "ccc, HH:mm:ss z",
+        "E, HH:mm:ss zzzz": "ccc, HH:mm:ss zzzz",
+        "E, Hm": "ccc, HH:mm",
+        "E, Hms": "ccc, HH:mm:ss",
+        "E, Hmsv": "ccc, HH:mm:ss v",
+        "E, Hmv": "ccc, HH:mm v",
+        "E, h": "ccc, h\u202fa",
+        "E, h:mm a": "ccc, h:mm a",
+        "E, h:mm:ss a": "ccc, h:mm:ss a",
+        "E, h:mm:ss a z": "ccc, h:mm:ss a z",
+        "E, h:mm:ss a zzzz": "ccc, h:mm:ss a zzzz",
+        "E, hm": "ccc, h:mm\u202fa",
+        "E, hms": "ccc, h:mm:ss\u202fa",
+        "E, hmsv": "ccc, h:mm:ss\u202fa v",
+        "E, hmv": "ccc, h:mm\u202fa v",
+        "E, ms": "ccc, mm:ss",
+        "EBhm": "E h:mm B",
+        "EBhms": "E h:mm:ss B",
+        "EEEE, d MMMM y": "EEEE, d MMMM y",
+        "EEEE, d MMMM y, Bh": "EEEE, d MMMM y, h B",
+        "EEEE, d MMMM y, Bhm": "EEEE, d MMMM y, h:mm B",
+        "EEEE, d MMMM y, Bhms": "EEEE, d MMMM y, h:mm:ss B",
+        "EEEE, d MMMM y, H": "EEEE, d MMMM y, HH",
+        "EEEE, d MMMM y, HH:mm": "EEEE, d MMMM y, HH:mm",
+        "EEEE, d MMMM y, HH:mm:ss": "EEEE, d MMMM y, HH:mm:ss",
+        "EEEE, d MMMM y, HH:mm:ss z": "EEEE, d MMMM y, HH:mm:ss z",
+        "EEEE, d MMMM y, HH:mm:ss zzzz": "EEEE, d MMMM y, HH:mm:ss zzzz",
+        "EEEE, d MMMM y, Hm": "EEEE, d MMMM y, HH:mm",
+        "EEEE, d MMMM y, Hms": "EEEE, d MMMM y, HH:mm:ss",
+        "EEEE, d MMMM y, Hmsv": "EEEE, d MMMM y, HH:mm:ss v",
+        "EEEE, d MMMM y, Hmv": "EEEE, d MMMM y, HH:mm v",
+        "EEEE, d MMMM y, h": "EEEE, d MMMM y, h\u202fa",
+        "EEEE, d MMMM y, h:mm a": "EEEE, d MMMM y, h:mm a",
+        "EEEE, d MMMM y, h:mm:ss a": "EEEE, d MMMM y, h:mm:ss a",
+        "EEEE, d MMMM y, h:mm:ss a z": "EEEE, d MMMM y, h:mm:ss a z",
+        "EEEE, d MMMM y, h:mm:ss a zzzz": "EEEE, d MMMM y, h:mm:ss a zzzz",
+        "EEEE, d MMMM y, hm": "EEEE, d MMMM y, h:mm\u202fa",
+        "EEEE, d MMMM y, hms": "EEEE, d MMMM y, h:mm:ss\u202fa",
+        "EEEE, d MMMM y, hmsv": "EEEE, d MMMM y, h:mm:ss\u202fa v",
+        "EEEE, d MMMM y, hmv": "EEEE, d MMMM y, h:mm\u202fa v",
+        "EEEE, d MMMM y, ms": "EEEE, d MMMM y, mm:ss",
+        "EHm": "E HH:mm",
+        "EHms": "E HH:mm:ss",
+        "Ed": "E d",
+        "Ed, Bh": "E d, h B",
+        "Ed, Bhm": "E d, h:mm B",
+        "Ed, Bhms": "E d, h:mm:ss B",
+        "Ed, H": "E d, HH",
+        "Ed, HH:mm": "E d, HH:mm",
+        "Ed, HH:mm:ss": "E d, HH:mm:ss",
+        "Ed, HH:mm:ss z": "E d, HH:mm:ss z",
+        "Ed, HH:mm:ss zzzz": "E d, HH:mm:ss zzzz",
+        "Ed, Hm": "E d, HH:mm",
+        "Ed, Hms": "E d, HH:mm:ss",
+        "Ed, Hmsv": "E d, HH:mm:ss v",
+        "Ed, Hmv": "E d, HH:mm v",
+        "Ed, h": "E d, h\u202fa",
+        "Ed, h:mm a": "E d, h:mm a",
+        "Ed, h:mm:ss a": "E d, h:mm:ss a",
+        "Ed, h:mm:ss a z": "E d, h:mm:ss a z",
+        "Ed, h:mm:ss a zzzz": "E d, h:mm:ss a zzzz",
+        "Ed, hm": "E d, h:mm\u202fa",
+        "Ed, hms": "E d, h:mm:ss\u202fa",
+        "Ed, hmsv": "E d, h:mm:ss\u202fa v",
+        "Ed, hmv": "E d, h:mm\u202fa v",
+        "Ed, ms": "E d, mm:ss",
+        "Ehm": "E h:mm\u202fa",
+        "Ehm-alt-ascii": "E h:mm a",
+        "Ehms": "E h:mm:ss\u202fa",
+        "Ehms-alt-ascii": "E h:mm:ss a",
+        "Gy": "y G",
+        "Gy, Bh": "y G, h B",
+        "Gy, Bhm": "y G, h:mm B",
+        "Gy, Bhms": "y G, h:mm:ss B",
+        "Gy, H": "y G, HH",
+        "Gy, HH:mm": "y G, HH:mm",
+        "Gy, HH:mm:ss": "y G, HH:mm:ss",
+        "Gy, HH:mm:ss z": "y G, HH:mm:ss z",
+        "Gy, HH:mm:ss zzzz": "y G, HH:mm:ss zzzz",
+        "Gy, Hm": "y G, HH:mm",
+        "Gy, Hms": "y G, HH:mm:ss",
+        "Gy, Hmsv": "y G, HH:mm:ss v",
+        "Gy, Hmv": "y G, HH:mm v",
+        "Gy, h": "y G, h\u202fa",
+        "Gy, h:mm a": "y G, h:mm a",
+        "Gy, h:mm:ss a": "y G, h:mm:ss a",
+        "Gy, h:mm:ss a z": "y G, h:mm:ss a z",
+        "Gy, h:mm:ss a zzzz": "y G, h:mm:ss a zzzz",
+        "Gy, hm": "y G, h:mm\u202fa",
+        "Gy, hms": "y G, h:mm:ss\u202fa",
+        "Gy, hmsv": "y G, h:mm:ss\u202fa v",
+        "Gy, hmv": "y G, h:mm\u202fa v",
+        "Gy, ms": "y G, mm:ss",
+        "GyMMM": "MMM y G",
+        "GyMMM, Bh": "MMM y G, h B",
+        "GyMMM, Bhm": "MMM y G, h:mm B",
+        "GyMMM, Bhms": "MMM y G, h:mm:ss B",
+        "GyMMM, H": "MMM y G, HH",
+        "GyMMM, HH:mm": "MMM y G, HH:mm",
+        "GyMMM, HH:mm:ss": "MMM y G, HH:mm:ss",
+        "GyMMM, HH:mm:ss z": "MMM y G, HH:mm:ss z",
+        "GyMMM, HH:mm:ss zzzz": "MMM y G, HH:mm:ss zzzz",
+        "GyMMM, Hm": "MMM y G, HH:mm",
+        "GyMMM, Hms": "MMM y G, HH:mm:ss",
+        "GyMMM, Hmsv": "MMM y G, HH:mm:ss v",
+        "GyMMM, Hmv": "MMM y G, HH:mm v",
+        "GyMMM, h": "MMM y G, h\u202fa",
+        "GyMMM, h:mm a": "MMM y G, h:mm a",
+        "GyMMM, h:mm:ss a": "MMM y G, h:mm:ss a",
+        "GyMMM, h:mm:ss a z": "MMM y G, h:mm:ss a z",
+        "GyMMM, h:mm:ss a zzzz": "MMM y G, h:mm:ss a zzzz",
+        "GyMMM, hm": "MMM y G, h:mm\u202fa",
+        "GyMMM, hms": "MMM y G, h:mm:ss\u202fa",
+        "GyMMM, hmsv": "MMM y G, h:mm:ss\u202fa v",
+        "GyMMM, hmv": "MMM y G, h:mm\u202fa v",
+        "GyMMM, ms": "MMM y G, mm:ss",
+        "GyMMMEEEEd": "EEEE, d MMM y G",
+        "GyMMMEEEEd, Bh": "EEEE, d MMM y G, h B",
+        "GyMMMEEEEd, Bhm": "EEEE, d MMM y G, h:mm B",
+        "GyMMMEEEEd, Bhms": "EEEE, d MMM y G, h:mm:ss B",
+        "GyMMMEEEEd, H": "EEEE, d MMM y G, HH",
+        "GyMMMEEEEd, HH:mm": "EEEE, d MMM y G, HH:mm",
+        "GyMMMEEEEd, HH:mm:ss": "EEEE, d MMM y G, HH:mm:ss",
+        "GyMMMEEEEd, HH:mm:ss z": "EEEE, d MMM y G, HH:mm:ss z",
+        "GyMMMEEEEd, HH:mm:ss zzzz": "EEEE, d MMM y G, HH:mm:ss zzzz",
+        "GyMMMEEEEd, Hm": "EEEE, d MMM y G, HH:mm",
+        "GyMMMEEEEd, Hms": "EEEE, d MMM y G, HH:mm:ss",
+        "GyMMMEEEEd, Hmsv": "EEEE, d MMM y G, HH:mm:ss v",
+        "GyMMMEEEEd, Hmv": "EEEE, d MMM y G, HH:mm v",
+        "GyMMMEEEEd, h": "EEEE, d MMM y G, h\u202fa",
+        "GyMMMEEEEd, h:mm a": "EEEE, d MMM y G, h:mm a",
+        "GyMMMEEEEd, h:mm:ss a": "EEEE, d MMM y G, h:mm:ss a",
+        "GyMMMEEEEd, h:mm:ss a z": "EEEE, d MMM y G, h:mm:ss a z",
+        "GyMMMEEEEd, h:mm:ss a zzzz": "EEEE, d MMM y G, h:mm:ss a zzzz",
+        "GyMMMEEEEd, hm": "EEEE, d MMM y G, h:mm\u202fa",
+        "GyMMMEEEEd, hms": "EEEE, d MMM y G, h:mm:ss\u202fa",
+        "GyMMMEEEEd, hmsv": "EEEE, d MMM y G, h:mm:ss\u202fa v",
+        "GyMMMEEEEd, hmv": "EEEE, d MMM y G, h:mm\u202fa v",
+        "GyMMMEEEEd, ms": "EEEE, d MMM y G, mm:ss",
+        "GyMMMEd": "E, d MMM y G",
+        "GyMMMEd, Bh": "E, d MMM y G, h B",
+        "GyMMMEd, Bhm": "E, d MMM y G, h:mm B",
+        "GyMMMEd, Bhms": "E, d MMM y G, h:mm:ss B",
+        "GyMMMEd, H": "E, d MMM y G, HH",
+        "GyMMMEd, HH:mm": "E, d MMM y G, HH:mm",
+        "GyMMMEd, HH:mm:ss": "E, d MMM y G, HH:mm:ss",
+        "GyMMMEd, HH:mm:ss z": "E, d MMM y G, HH:mm:ss z",
+        "GyMMMEd, HH:mm:ss zzzz": "E, d MMM y G, HH:mm:ss zzzz",
+        "GyMMMEd, Hm": "E, d MMM y G, HH:mm",
+        "GyMMMEd, Hms": "E, d MMM y G, HH:mm:ss",
+        "GyMMMEd, Hmsv": "E, d MMM y G, HH:mm:ss v",
+        "GyMMMEd, Hmv": "E, d MMM y G, HH:mm v",
+        "GyMMMEd, h": "E, d MMM y G, h\u202fa",
+        "GyMMMEd, h:mm a": "E, d MMM y G, h:mm a",
+        "GyMMMEd, h:mm:ss a": "E, d MMM y G, h:mm:ss a",
+        "GyMMMEd, h:mm:ss a z": "E, d MMM y G, h:mm:ss a z",
+        "GyMMMEd, h:mm:ss a zzzz": "E, d MMM y G, h:mm:ss a zzzz",
+        "GyMMMEd, hm": "E, d MMM y G, h:mm\u202fa",
+        "GyMMMEd, hms": "E, d MMM y G, h:mm:ss\u202fa",
+        "GyMMMEd, hmsv": "E, d MMM y G, h:mm:ss\u202fa v",
+        "GyMMMEd, hmv": "E, d MMM y G, h:mm\u202fa v",
+        "GyMMMEd, ms": "E, d MMM y G, mm:ss",
+        "GyMMMd": "d MMM y G",
+        "GyMMMd, Bh": "d MMM y G, h B",
+        "GyMMMd, Bhm": "d MMM y G, h:mm B",
+        "GyMMMd, Bhms": "d MMM y G, h:mm:ss B",
+        "GyMMMd, H": "d MMM y G, HH",
+        "GyMMMd, HH:mm": "d MMM y G, HH:mm",
+        "GyMMMd, HH:mm:ss": "d MMM y G, HH:mm:ss",
+        "GyMMMd, HH:mm:ss z": "d MMM y G, HH:mm:ss z",
+        "GyMMMd, HH:mm:ss zzzz": "d MMM y G, HH:mm:ss zzzz",
+        "GyMMMd, Hm": "d MMM y G, HH:mm",
+        "GyMMMd, Hms": "d MMM y G, HH:mm:ss",
+        "GyMMMd, Hmsv": "d MMM y G, HH:mm:ss v",
+        "GyMMMd, Hmv": "d MMM y G, HH:mm v",
+        "GyMMMd, h": "d MMM y G, h\u202fa",
+        "GyMMMd, h:mm a": "d MMM y G, h:mm a",
+        "GyMMMd, h:mm:ss a": "d MMM y G, h:mm:ss a",
+        "GyMMMd, h:mm:ss a z": "d MMM y G, h:mm:ss a z",
+        "GyMMMd, h:mm:ss a zzzz": "d MMM y G, h:mm:ss a zzzz",
+        "GyMMMd, hm": "d MMM y G, h:mm\u202fa",
+        "GyMMMd, hms": "d MMM y G, h:mm:ss\u202fa",
+        "GyMMMd, hmsv": "d MMM y G, h:mm:ss\u202fa v",
+        "GyMMMd, hmv": "d MMM y G, h:mm\u202fa v",
+        "GyMMMd, ms": "d MMM y G, mm:ss",
+        "GyMd": "dd/MM/y G",
+        "GyMd, Bh": "dd/MM/y G, h B",
+        "GyMd, Bhm": "dd/MM/y G, h:mm B",
+        "GyMd, Bhms": "dd/MM/y G, h:mm:ss B",
+        "GyMd, H": "dd/MM/y G, HH",
+        "GyMd, HH:mm": "dd/MM/y G, HH:mm",
+        "GyMd, HH:mm:ss": "dd/MM/y G, HH:mm:ss",
+        "GyMd, HH:mm:ss z": "dd/MM/y G, HH:mm:ss z",
+        "GyMd, HH:mm:ss zzzz": "dd/MM/y G, HH:mm:ss zzzz",
+        "GyMd, Hm": "dd/MM/y G, HH:mm",
+        "GyMd, Hms": "dd/MM/y G, HH:mm:ss",
+        "GyMd, Hmsv": "dd/MM/y G, HH:mm:ss v",
+        "GyMd, Hmv": "dd/MM/y G, HH:mm v",
+        "GyMd, h": "dd/MM/y G, h\u202fa",
+        "GyMd, h:mm a": "dd/MM/y G, h:mm a",
+        "GyMd, h:mm:ss a": "dd/MM/y G, h:mm:ss a",
+        "GyMd, h:mm:ss a z": "dd/MM/y G, h:mm:ss a z",
+        "GyMd, h:mm:ss a zzzz": "dd/MM/y G, h:mm:ss a zzzz",
+        "GyMd, hm": "dd/MM/y G, h:mm\u202fa",
+        "GyMd, hms": "dd/MM/y G, h:mm:ss\u202fa",
+        "GyMd, hmsv": "dd/MM/y G, h:mm:ss\u202fa v",
+        "GyMd, hmv": "dd/MM/y G, h:mm\u202fa v",
+        "GyMd, ms": "dd/MM/y G, mm:ss",
+        "H": "HH",
+        "HH:mm": "HH:mm",
+        "HH:mm:ss": "HH:mm:ss",
+        "HH:mm:ss z": "HH:mm:ss z",
+        "HH:mm:ss zzzz": "HH:mm:ss zzzz",
+        "Hm": "HH:mm",
+        "Hms": "HH:mm:ss",
+        "Hmsv": "HH:mm:ss v",
+        "Hmv": "HH:mm v",
+        "M": "L",
+        "M, Bh": "L, h B",
+        "M, Bhm": "L, h:mm B",
+        "M, Bhms": "L, h:mm:ss B",
+        "M, H": "L, HH",
+        "M, HH:mm": "L, HH:mm",
+        "M, HH:mm:ss": "L, HH:mm:ss",
+        "M, HH:mm:ss z": "L, HH:mm:ss z",
+        "M, HH:mm:ss zzzz": "L, HH:mm:ss zzzz",
+        "M, Hm": "L, HH:mm",
+        "M, Hms": "L, HH:mm:ss",
+        "M, Hmsv": "L, HH:mm:ss v",
+        "M, Hmv": "L, HH:mm v",
+        "M, h": "L, h\u202fa",
+        "M, h:mm a": "L, h:mm a",
+        "M, h:mm:ss a": "L, h:mm:ss a",
+        "M, h:mm:ss a z": "L, h:mm:ss a z",
+        "M, h:mm:ss a zzzz": "L, h:mm:ss a zzzz",
+        "M, hm": "L, h:mm\u202fa",
+        "M, hms": "L, h:mm:ss\u202fa",
+        "M, hmsv": "L, h:mm:ss\u202fa v",
+        "M, hmv": "L, h:mm\u202fa v",
+        "M, ms": "L, mm:ss",
+        "MEd": "E dd/MM",
+        "MEd, Bh": "E dd/MM, h B",
+        "MEd, Bhm": "E dd/MM, h:mm B",
+        "MEd, Bhms": "E dd/MM, h:mm:ss B",
+        "MEd, H": "E dd/MM, HH",
+        "MEd, HH:mm": "E dd/MM, HH:mm",
+        "MEd, HH:mm:ss": "E dd/MM, HH:mm:ss",
+        "MEd, HH:mm:ss z": "E dd/MM, HH:mm:ss z",
+        "MEd, HH:mm:ss zzzz": "E dd/MM, HH:mm:ss zzzz",
+        "MEd, Hm": "E dd/MM, HH:mm",
+        "MEd, Hms": "E dd/MM, HH:mm:ss",
+        "MEd, Hmsv": "E dd/MM, HH:mm:ss v",
+        "MEd, Hmv": "E dd/MM, HH:mm v",
+        "MEd, h": "E dd/MM, h\u202fa",
+        "MEd, h:mm a": "E dd/MM, h:mm a",
+        "MEd, h:mm:ss a": "E dd/MM, h:mm:ss a",
+        "MEd, h:mm:ss a z": "E dd/MM, h:mm:ss a z",
+        "MEd, h:mm:ss a zzzz": "E dd/MM, h:mm:ss a zzzz",
+        "MEd, hm": "E dd/MM, h:mm\u202fa",
+        "MEd, hms": "E dd/MM, h:mm:ss\u202fa",
+        "MEd, hmsv": "E dd/MM, h:mm:ss\u202fa v",
+        "MEd, hmv": "E dd/MM, h:mm\u202fa v",
+        "MEd, ms": "E dd/MM, mm:ss",
+        "MMM": "LLL",
+        "MMM, Bh": "LLL, h B",
+        "MMM, Bhm": "LLL, h:mm B",
+        "MMM, Bhms": "LLL, h:mm:ss B",
+        "MMM, H": "LLL, HH",
+        "MMM, HH:mm": "LLL, HH:mm",
+        "MMM, HH:mm:ss": "LLL, HH:mm:ss",
+        "MMM, HH:mm:ss z": "LLL, HH:mm:ss z",
+        "MMM, HH:mm:ss zzzz": "LLL, HH:mm:ss zzzz",
+        "MMM, Hm": "LLL, HH:mm",
+        "MMM, Hms": "LLL, HH:mm:ss",
+        "MMM, Hmsv": "LLL, HH:mm:ss v",
+        "MMM, Hmv": "LLL, HH:mm v",
+        "MMM, h": "LLL, h\u202fa",
+        "MMM, h:mm a": "LLL, h:mm a",
+        "MMM, h:mm:ss a": "LLL, h:mm:ss a",
+        "MMM, h:mm:ss a z": "LLL, h:mm:ss a z",
+        "MMM, h:mm:ss a zzzz": "LLL, h:mm:ss a zzzz",
+        "MMM, hm": "LLL, h:mm\u202fa",
+        "MMM, hms": "LLL, h:mm:ss\u202fa",
+        "MMM, hmsv": "LLL, h:mm:ss\u202fa v",
+        "MMM, hmv": "LLL, h:mm\u202fa v",
+        "MMM, ms": "LLL, mm:ss",
+        "MMMEEEEd": "EEEE d MMM",
+        "MMMEEEEd, Bh": "EEEE d MMM, h B",
+        "MMMEEEEd, Bhm": "EEEE d MMM, h:mm B",
+        "MMMEEEEd, Bhms": "EEEE d MMM, h:mm:ss B",
+        "MMMEEEEd, H": "EEEE d MMM, HH",
+        "MMMEEEEd, HH:mm": "EEEE d MMM, HH:mm",
+        "MMMEEEEd, HH:mm:ss": "EEEE d MMM, HH:mm:ss",
+        "MMMEEEEd, HH:mm:ss z": "EEEE d MMM, HH:mm:ss z",
+        "MMMEEEEd, HH:mm:ss zzzz": "EEEE d MMM, HH:mm:ss zzzz",
+        "MMMEEEEd, Hm": "EEEE d MMM, HH:mm",
+        "MMMEEEEd, Hms": "EEEE d MMM, HH:mm:ss",
+        "MMMEEEEd, Hmsv": "EEEE d MMM, HH:mm:ss v",
+        "MMMEEEEd, Hmv": "EEEE d MMM, HH:mm v",
+        "MMMEEEEd, h": "EEEE d MMM, h\u202fa",
+        "MMMEEEEd, h:mm a": "EEEE d MMM, h:mm a",
+        "MMMEEEEd, h:mm:ss a": "EEEE d MMM, h:mm:ss a",
+        "MMMEEEEd, h:mm:ss a z": "EEEE d MMM, h:mm:ss a z",
+        "MMMEEEEd, h:mm:ss a zzzz": "EEEE d MMM, h:mm:ss a zzzz",
+        "MMMEEEEd, hm": "EEEE d MMM, h:mm\u202fa",
+        "MMMEEEEd, hms": "EEEE d MMM, h:mm:ss\u202fa",
+        "MMMEEEEd, hmsv": "EEEE d MMM, h:mm:ss\u202fa v",
+        "MMMEEEEd, hmv": "EEEE d MMM, h:mm\u202fa v",
+        "MMMEEEEd, ms": "EEEE d MMM, mm:ss",
+        "MMMEd": "E d MMM",
+        "MMMEd, Bh": "E d MMM, h B",
+        "MMMEd, Bhm": "E d MMM, h:mm B",
+        "MMMEd, Bhms": "E d MMM, h:mm:ss B",
+        "MMMEd, H": "E d MMM, HH",
+        "MMMEd, HH:mm": "E d MMM, HH:mm",
+        "MMMEd, HH:mm:ss": "E d MMM, HH:mm:ss",
+        "MMMEd, HH:mm:ss z": "E d MMM, HH:mm:ss z",
+        "MMMEd, HH:mm:ss zzzz": "E d MMM, HH:mm:ss zzzz",
+        "MMMEd, Hm": "E d MMM, HH:mm",
+        "MMMEd, Hms": "E d MMM, HH:mm:ss",
+        "MMMEd, Hmsv": "E d MMM, HH:mm:ss v",
+        "MMMEd, Hmv": "E d MMM, HH:mm v",
+        "MMMEd, h": "E d MMM, h\u202fa",
+        "MMMEd, h:mm a": "E d MMM, h:mm a",
+        "MMMEd, h:mm:ss a": "E d MMM, h:mm:ss a",
+        "MMMEd, h:mm:ss a z": "E d MMM, h:mm:ss a z",
+        "MMMEd, h:mm:ss a zzzz": "E d MMM, h:mm:ss a zzzz",
+        "MMMEd, hm": "E d MMM, h:mm\u202fa",
+        "MMMEd, hms": "E d MMM, h:mm:ss\u202fa",
+        "MMMEd, hmsv": "E d MMM, h:mm:ss\u202fa v",
+        "MMMEd, hmv": "E d MMM, h:mm\u202fa v",
+        "MMMEd, ms": "E d MMM, mm:ss",
+        "MMMMEEEEd": "EEEE d MMMM",
+        "MMMMEEEEd, Bh": "EEEE d MMMM, h B",
+        "MMMMEEEEd, Bhm": "EEEE d MMMM, h:mm B",
+        "MMMMEEEEd, Bhms": "EEEE d MMMM, h:mm:ss B",
+        "MMMMEEEEd, H": "EEEE d MMMM, HH",
+        "MMMMEEEEd, HH:mm": "EEEE d MMMM, HH:mm",
+        "MMMMEEEEd, HH:mm:ss": "EEEE d MMMM, HH:mm:ss",
+        "MMMMEEEEd, HH:mm:ss z": "EEEE d MMMM, HH:mm:ss z",
+        "MMMMEEEEd, HH:mm:ss zzzz": "EEEE d MMMM, HH:mm:ss zzzz",
+        "MMMMEEEEd, Hm": "EEEE d MMMM, HH:mm",
+        "MMMMEEEEd, Hms": "EEEE d MMMM, HH:mm:ss",
+        "MMMMEEEEd, Hmsv": "EEEE d MMMM, HH:mm:ss v",
+        "MMMMEEEEd, Hmv": "EEEE d MMMM, HH:mm v",
+        "MMMMEEEEd, h": "EEEE d MMMM, h\u202fa",
+        "MMMMEEEEd, h:mm a": "EEEE d MMMM, h:mm a",
+        "MMMMEEEEd, h:mm:ss a": "EEEE d MMMM, h:mm:ss a",
+        "MMMMEEEEd, h:mm:ss a z": "EEEE d MMMM, h:mm:ss a z",
+        "MMMMEEEEd, h:mm:ss a zzzz": "EEEE d MMMM, h:mm:ss a zzzz",
+        "MMMMEEEEd, hm": "EEEE d MMMM, h:mm\u202fa",
+        "MMMMEEEEd, hms": "EEEE d MMMM, h:mm:ss\u202fa",
+        "MMMMEEEEd, hmsv": "EEEE d MMMM, h:mm:ss\u202fa v",
+        "MMMMEEEEd, hmv": "EEEE d MMMM, h:mm\u202fa v",
+        "MMMMEEEEd, ms": "EEEE d MMMM, mm:ss",
+        "MMMMd": "d MMMM",
+        "MMMMd, Bh": "d MMMM, h B",
+        "MMMMd, Bhm": "d MMMM, h:mm B",
+        "MMMMd, Bhms": "d MMMM, h:mm:ss B",
+        "MMMMd, H": "d MMMM, HH",
+        "MMMMd, HH:mm": "d MMMM, HH:mm",
+        "MMMMd, HH:mm:ss": "d MMMM, HH:mm:ss",
+        "MMMMd, HH:mm:ss z": "d MMMM, HH:mm:ss z",
+        "MMMMd, HH:mm:ss zzzz": "d MMMM, HH:mm:ss zzzz",
+        "MMMMd, Hm": "d MMMM, HH:mm",
+        "MMMMd, Hms": "d MMMM, HH:mm:ss",
+        "MMMMd, Hmsv": "d MMMM, HH:mm:ss v",
+        "MMMMd, Hmv": "d MMMM, HH:mm v",
+        "MMMMd, h": "d MMMM, h\u202fa",
+        "MMMMd, h:mm a": "d MMMM, h:mm a",
+        "MMMMd, h:mm:ss a": "d MMMM, h:mm:ss a",
+        "MMMMd, h:mm:ss a z": "d MMMM, h:mm:ss a z",
+        "MMMMd, h:mm:ss a zzzz": "d MMMM, h:mm:ss a zzzz",
+        "MMMMd, hm": "d MMMM, h:mm\u202fa",
+        "MMMMd, hms": "d MMMM, h:mm:ss\u202fa",
+        "MMMMd, hmsv": "d MMMM, h:mm:ss\u202fa v",
+        "MMMMd, hmv": "d MMMM, h:mm\u202fa v",
+        "MMMMd, ms": "d MMMM, mm:ss",
+        "MMMd": "d MMM",
+        "MMMd, Bh": "d MMM, h B",
+        "MMMd, Bhm": "d MMM, h:mm B",
+        "MMMd, Bhms": "d MMM, h:mm:ss B",
+        "MMMd, H": "d MMM, HH",
+        "MMMd, HH:mm": "d MMM, HH:mm",
+        "MMMd, HH:mm:ss": "d MMM, HH:mm:ss",
+        "MMMd, HH:mm:ss z": "d MMM, HH:mm:ss z",
+        "MMMd, HH:mm:ss zzzz": "d MMM, HH:mm:ss zzzz",
+        "MMMd, Hm": "d MMM, HH:mm",
+        "MMMd, Hms": "d MMM, HH:mm:ss",
+        "MMMd, Hmsv": "d MMM, HH:mm:ss v",
+        "MMMd, Hmv": "d MMM, HH:mm v",
+        "MMMd, h": "d MMM, h\u202fa",
+        "MMMd, h:mm a": "d MMM, h:mm a",
+        "MMMd, h:mm:ss a": "d MMM, h:mm:ss a",
+        "MMMd, h:mm:ss a z": "d MMM, h:mm:ss a z",
+        "MMMd, h:mm:ss a zzzz": "d MMM, h:mm:ss a zzzz",
+        "MMMd, hm": "d MMM, h:mm\u202fa",
+        "MMMd, hms": "d MMM, h:mm:ss\u202fa",
+        "MMMd, hmsv": "d MMM, h:mm:ss\u202fa v",
+        "MMMd, hmv": "d MMM, h:mm\u202fa v",
+        "MMMd, ms": "d MMM, mm:ss",
+        "MMdd": "dd/MM",
+        "MMdd, Bh": "dd/MM, h B",
+        "MMdd, Bhm": "dd/MM, h:mm B",
+        "MMdd, Bhms": "dd/MM, h:mm:ss B",
+        "MMdd, H": "dd/MM, HH",
+        "MMdd, HH:mm": "dd/MM, HH:mm",
+        "MMdd, HH:mm:ss": "dd/MM, HH:mm:ss",
+        "MMdd, HH:mm:ss z": "dd/MM, HH:mm:ss z",
+        "MMdd, HH:mm:ss zzzz": "dd/MM, HH:mm:ss zzzz",
+        "MMdd, Hm": "dd/MM, HH:mm",
+        "MMdd, Hms": "dd/MM, HH:mm:ss",
+        "MMdd, Hmsv": "dd/MM, HH:mm:ss v",
+        "MMdd, Hmv": "dd/MM, HH:mm v",
+        "MMdd, h": "dd/MM, h\u202fa",
+        "MMdd, h:mm a": "dd/MM, h:mm a",
+        "MMdd, h:mm:ss a": "dd/MM, h:mm:ss a",
+        "MMdd, h:mm:ss a z": "dd/MM, h:mm:ss a z",
+        "MMdd, h:mm:ss a zzzz": "dd/MM, h:mm:ss a zzzz",
+        "MMdd, hm": "dd/MM, h:mm\u202fa",
+        "MMdd, hms": "dd/MM, h:mm:ss\u202fa",
+        "MMdd, hmsv": "dd/MM, h:mm:ss\u202fa v",
+        "MMdd, hmv": "dd/MM, h:mm\u202fa v",
+        "MMdd, ms": "dd/MM, mm:ss",
+        "Md": "dd/MM",
+        "Md, Bh": "dd/MM, h B",
+        "Md, Bhm": "dd/MM, h:mm B",
+        "Md, Bhms": "dd/MM, h:mm:ss B",
+        "Md, H": "dd/MM, HH",
+        "Md, HH:mm": "dd/MM, HH:mm",
+        "Md, HH:mm:ss": "dd/MM, HH:mm:ss",
+        "Md, HH:mm:ss z": "dd/MM, HH:mm:ss z",
+        "Md, HH:mm:ss zzzz": "dd/MM, HH:mm:ss zzzz",
+        "Md, Hm": "dd/MM, HH:mm",
+        "Md, Hms": "dd/MM, HH:mm:ss",
+        "Md, Hmsv": "dd/MM, HH:mm:ss v",
+        "Md, Hmv": "dd/MM, HH:mm v",
+        "Md, h": "dd/MM, h\u202fa",
+        "Md, h:mm a": "dd/MM, h:mm a",
+        "Md, h:mm:ss a": "dd/MM, h:mm:ss a",
+        "Md, h:mm:ss a z": "dd/MM, h:mm:ss a z",
+        "Md, h:mm:ss a zzzz": "dd/MM, h:mm:ss a zzzz",
+        "Md, hm": "dd/MM, h:mm\u202fa",
+        "Md, hms": "dd/MM, h:mm:ss\u202fa",
+        "Md, hmsv": "dd/MM, h:mm:ss\u202fa v",
+        "Md, hmv": "dd/MM, h:mm\u202fa v",
+        "Md, ms": "dd/MM, mm:ss",
+        "d": "d",
+        "d MMM y": "d MMM y",
+        "d MMM y, Bh": "d MMM y, h B",
+        "d MMM y, Bhm": "d MMM y, h:mm B",
+        "d MMM y, Bhms": "d MMM y, h:mm:ss B",
+        "d MMM y, H": "d MMM y, HH",
+        "d MMM y, HH:mm": "d MMM y, HH:mm",
+        "d MMM y, HH:mm:ss": "d MMM y, HH:mm:ss",
+        "d MMM y, HH:mm:ss z": "d MMM y, HH:mm:ss z",
+        "d MMM y, HH:mm:ss zzzz": "d MMM y, HH:mm:ss zzzz",
+        "d MMM y, Hm": "d MMM y, HH:mm",
+        "d MMM y, Hms": "d MMM y, HH:mm:ss",
+        "d MMM y, Hmsv": "d MMM y, HH:mm:ss v",
+        "d MMM y, Hmv": "d MMM y, HH:mm v",
+        "d MMM y, h": "d MMM y, h\u202fa",
+        "d MMM y, h:mm a": "d MMM y, h:mm a",
+        "d MMM y, h:mm:ss a": "d MMM y, h:mm:ss a",
+        "d MMM y, h:mm:ss a z": "d MMM y, h:mm:ss a z",
+        "d MMM y, h:mm:ss a zzzz": "d MMM y, h:mm:ss a zzzz",
+        "d MMM y, hm": "d MMM y, h:mm\u202fa",
+        "d MMM y, hms": "d MMM y, h:mm:ss\u202fa",
+        "d MMM y, hmsv": "d MMM y, h:mm:ss\u202fa v",
+        "d MMM y, hmv": "d MMM y, h:mm\u202fa v",
+        "d MMM y, ms": "d MMM y, mm:ss",
+        "d MMMM y": "d MMMM y",
+        "d MMMM y, Bh": "d MMMM y, h B",
+        "d MMMM y, Bhm": "d MMMM y, h:mm B",
+        "d MMMM y, Bhms": "d MMMM y, h:mm:ss B",
+        "d MMMM y, H": "d MMMM y, HH",
+        "d MMMM y, HH:mm": "d MMMM y, HH:mm",
+        "d MMMM y, HH:mm:ss": "d MMMM y, HH:mm:ss",
+        "d MMMM y, HH:mm:ss z": "d MMMM y, HH:mm:ss z",
+        "d MMMM y, HH:mm:ss zzzz": "d MMMM y, HH:mm:ss zzzz",
+        "d MMMM y, Hm": "d MMMM y, HH:mm",
+        "d MMMM y, Hms": "d MMMM y, HH:mm:ss",
+        "d MMMM y, Hmsv": "d MMMM y, HH:mm:ss v",
+        "d MMMM y, Hmv": "d MMMM y, HH:mm v",
+        "d MMMM y, h": "d MMMM y, h\u202fa",
+        "d MMMM y, h:mm a": "d MMMM y, h:mm a",
+        "d MMMM y, h:mm:ss a": "d MMMM y, h:mm:ss a",
+        "d MMMM y, h:mm:ss a z": "d MMMM y, h:mm:ss a z",
+        "d MMMM y, h:mm:ss a zzzz": "d MMMM y, h:mm:ss a zzzz",
+        "d MMMM y, hm": "d MMMM y, h:mm\u202fa",
+        "d MMMM y, hms": "d MMMM y, h:mm:ss\u202fa",
+        "d MMMM y, hmsv": "d MMMM y, h:mm:ss\u202fa v",
+        "d MMMM y, hmv": "d MMMM y, h:mm\u202fa v",
+        "d MMMM y, ms": "d MMMM y, mm:ss",
+        "d, Bh": "d, h B",
+        "d, Bhm": "d, h:mm B",
+        "d, Bhms": "d, h:mm:ss B",
+        "d, H": "d, HH",
+        "d, HH:mm": "d, HH:mm",
+        "d, HH:mm:ss": "d, HH:mm:ss",
+        "d, HH:mm:ss z": "d, HH:mm:ss z",
+        "d, HH:mm:ss zzzz": "d, HH:mm:ss zzzz",
+        "d, Hm": "d, HH:mm",
+        "d, Hms": "d, HH:mm:ss",
+        "d, Hmsv": "d, HH:mm:ss v",
+        "d, Hmv": "d, HH:mm v",
+        "d, h": "d, h\u202fa",
+        "d, h:mm a": "d, h:mm a",
+        "d, h:mm:ss a": "d, h:mm:ss a",
+        "d, h:mm:ss a z": "d, h:mm:ss a z",
+        "d, h:mm:ss a zzzz": "d, h:mm:ss a zzzz",
+        "d, hm": "d, h:mm\u202fa",
+        "d, hms": "d, h:mm:ss\u202fa",
+        "d, hmsv": "d, h:mm:ss\u202fa v",
+        "d, hmv": "d, h:mm\u202fa v",
+        "d, ms": "d, mm:ss",
+        "dd/MM/y": "dd/MM/y",
+        "dd/MM/y, Bh": "dd/MM/y, h B",
+        "dd/MM/y, Bhm": "dd/MM/y, h:mm B",
+        "dd/MM/y, Bhms": "dd/MM/y, h:mm:ss B",
+        "dd/MM/y, H": "dd/MM/y, HH",
+        "dd/MM/y, HH:mm": "dd/MM/y, HH:mm",
+        "dd/MM/y, HH:mm:ss": "dd/MM/y, HH:mm:ss",
+        "dd/MM/y, HH:mm:ss z": "dd/MM/y, HH:mm:ss z",
+        "dd/MM/y, HH:mm:ss zzzz": "dd/MM/y, HH:mm:ss zzzz",
+        "dd/MM/y, Hm": "dd/MM/y, HH:mm",
+        "dd/MM/y, Hms": "dd/MM/y, HH:mm:ss",
+        "dd/MM/y, Hmsv": "dd/MM/y, HH:mm:ss v",
+        "dd/MM/y, Hmv": "dd/MM/y, HH:mm v",
+        "dd/MM/y, h": "dd/MM/y, h\u202fa",
+        "dd/MM/y, h:mm a": "dd/MM/y, h:mm a",
+        "dd/MM/y, h:mm:ss a": "dd/MM/y, h:mm:ss a",
+        "dd/MM/y, h:mm:ss a z": "dd/MM/y, h:mm:ss a z",
+        "dd/MM/y, h:mm:ss a zzzz": "dd/MM/y, h:mm:ss a zzzz",
+        "dd/MM/y, hm": "dd/MM/y, h:mm\u202fa",
+        "dd/MM/y, hms": "dd/MM/y, h:mm:ss\u202fa",
+        "dd/MM/y, hmsv": "dd/MM/y, h:mm:ss\u202fa v",
+        "dd/MM/y, hmv": "dd/MM/y, h:mm\u202fa v",
+        "dd/MM/y, ms": "dd/MM/y, mm:ss",
+        "h": "h\u202fa",
+        "h-alt-ascii": "h a",
+        "h:mm a": "h:mm a",
+        "h:mm:ss a": "h:mm:ss a",
+        "h:mm:ss a z": "h:mm:ss a z",
+        "h:mm:ss a zzzz": "h:mm:ss a zzzz",
+        "hm": "h:mm\u202fa",
+        "hm-alt-ascii": "h:mm a",
+        "hms": "h:mm:ss\u202fa",
+        "hms-alt-ascii": "h:mm:ss a",
+        "hmsv": "h:mm:ss\u202fa v",
+        "hmsv-alt-ascii": "h:mm:ss a v",
+        "hmv": "h:mm\u202fa v",
+        "hmv-alt-ascii": "h:mm a v",
+        "ms": "mm:ss",
+        "y": "y",
+        "y, Bh": "y, h B",
+        "y, Bhm": "y, h:mm B",
+        "y, Bhms": "y, h:mm:ss B",
+        "y, H": "y, HH",
+        "y, HH:mm": "y, HH:mm",
+        "y, HH:mm:ss": "y, HH:mm:ss",
+        "y, HH:mm:ss z": "y, HH:mm:ss z",
+        "y, HH:mm:ss zzzz": "y, HH:mm:ss zzzz",
+        "y, Hm": "y, HH:mm",
+        "y, Hms": "y, HH:mm:ss",
+        "y, Hmsv": "y, HH:mm:ss v",
+        "y, Hmv": "y, HH:mm v",
+        "y, h": "y, h\u202fa",
+        "y, h:mm a": "y, h:mm a",
+        "y, h:mm:ss a": "y, h:mm:ss a",
+        "y, h:mm:ss a z": "y, h:mm:ss a z",
+        "y, h:mm:ss a zzzz": "y, h:mm:ss a zzzz",
+        "y, hm": "y, h:mm\u202fa",
+        "y, hms": "y, h:mm:ss\u202fa",
+        "y, hmsv": "y, h:mm:ss\u202fa v",
+        "y, hmv": "y, h:mm\u202fa v",
+        "y, ms": "y, mm:ss",
+        "yM": "MM/y",
+        "yM, Bh": "MM/y, h B",
+        "yM, Bhm": "MM/y, h:mm B",
+        "yM, Bhms": "MM/y, h:mm:ss B",
+        "yM, H": "MM/y, HH",
+        "yM, HH:mm": "MM/y, HH:mm",
+        "yM, HH:mm:ss": "MM/y, HH:mm:ss",
+        "yM, HH:mm:ss z": "MM/y, HH:mm:ss z",
+        "yM, HH:mm:ss zzzz": "MM/y, HH:mm:ss zzzz",
+        "yM, Hm": "MM/y, HH:mm",
+        "yM, Hms": "MM/y, HH:mm:ss",
+        "yM, Hmsv": "MM/y, HH:mm:ss v",
+        "yM, Hmv": "MM/y, HH:mm v",
+        "yM, h": "MM/y, h\u202fa",
+        "yM, h:mm a": "MM/y, h:mm a",
+        "yM, h:mm:ss a": "MM/y, h:mm:ss a",
+        "yM, h:mm:ss a z": "MM/y, h:mm:ss a z",
+        "yM, h:mm:ss a zzzz": "MM/y, h:mm:ss a zzzz",
+        "yM, hm": "MM/y, h:mm\u202fa",
+        "yM, hms": "MM/y, h:mm:ss\u202fa",
+        "yM, hmsv": "MM/y, h:mm:ss\u202fa v",
+        "yM, hmv": "MM/y, h:mm\u202fa v",
+        "yM, ms": "MM/y, mm:ss",
+        "yMEd": "E, dd/MM/y",
+        "yMEd, Bh": "E, dd/MM/y, h B",
+        "yMEd, Bhm": "E, dd/MM/y, h:mm B",
+        "yMEd, Bhms": "E, dd/MM/y, h:mm:ss B",
+        "yMEd, H": "E, dd/MM/y, HH",
+        "yMEd, HH:mm": "E, dd/MM/y, HH:mm",
+        "yMEd, HH:mm:ss": "E, dd/MM/y, HH:mm:ss",
+        "yMEd, HH:mm:ss z": "E, dd/MM/y, HH:mm:ss z",
+        "yMEd, HH:mm:ss zzzz": "E, dd/MM/y, HH:mm:ss zzzz",
+        "yMEd, Hm": "E, dd/MM/y, HH:mm",
+        "yMEd, Hms": "E, dd/MM/y, HH:mm:ss",
+        "yMEd, Hmsv": "E, dd/MM/y, HH:mm:ss v",
+        "yMEd, Hmv": "E, dd/MM/y, HH:mm v",
+        "yMEd, h": "E, dd/MM/y, h\u202fa",
+        "yMEd, h:mm a": "E, dd/MM/y, h:mm a",
+        "yMEd, h:mm:ss a": "E, dd/MM/y, h:mm:ss a",
+        "yMEd, h:mm:ss a z": "E, dd/MM/y, h:mm:ss a z",
+        "yMEd, h:mm:ss a zzzz": "E, dd/MM/y, h:mm:ss a zzzz",
+        "yMEd, hm": "E, dd/MM/y, h:mm\u202fa",
+        "yMEd, hms": "E, dd/MM/y, h:mm:ss\u202fa",
+        "yMEd, hmsv": "E, dd/MM/y, h:mm:ss\u202fa v",
+        "yMEd, hmv": "E, dd/MM/y, h:mm\u202fa v",
+        "yMEd, ms": "E, dd/MM/y, mm:ss",
+        "yMMM": "MMM y",
+        "yMMM, Bh": "MMM y, h B",
+        "yMMM, Bhm": "MMM y, h:mm B",
+        "yMMM, Bhms": "MMM y, h:mm:ss B",
+        "yMMM, H": "MMM y, HH",
+        "yMMM, HH:mm": "MMM y, HH:mm",
+        "yMMM, HH:mm:ss": "MMM y, HH:mm:ss",
+        "yMMM, HH:mm:ss z": "MMM y, HH:mm:ss z",
+        "yMMM, HH:mm:ss zzzz": "MMM y, HH:mm:ss zzzz",
+        "yMMM, Hm": "MMM y, HH:mm",
+        "yMMM, Hms": "MMM y, HH:mm:ss",
+        "yMMM, Hmsv": "MMM y, HH:mm:ss v",
+        "yMMM, Hmv": "MMM y, HH:mm v",
+        "yMMM, h": "MMM y, h\u202fa",
+        "yMMM, h:mm a": "MMM y, h:mm a",
+        "yMMM, h:mm:ss a": "MMM y, h:mm:ss a",
+        "yMMM, h:mm:ss a z": "MMM y, h:mm:ss a z",
+        "yMMM, h:mm:ss a zzzz": "MMM y, h:mm:ss a zzzz",
+        "yMMM, hm": "MMM y, h:mm\u202fa",
+        "yMMM, hms": "MMM y, h:mm:ss\u202fa",
+        "yMMM, hmsv": "MMM y, h:mm:ss\u202fa v",
+        "yMMM, hmv": "MMM y, h:mm\u202fa v",
+        "yMMM, ms": "MMM y, mm:ss",
+        "yMMMEEEEd": "EEEE, d MMM y",
+        "yMMMEEEEd, Bh": "EEEE, d MMM y, h B",
+        "yMMMEEEEd, Bhm": "EEEE, d MMM y, h:mm B",
+        "yMMMEEEEd, Bhms": "EEEE, d MMM y, h:mm:ss B",
+        "yMMMEEEEd, H": "EEEE, d MMM y, HH",
+        "yMMMEEEEd, HH:mm": "EEEE, d MMM y, HH:mm",
+        "yMMMEEEEd, HH:mm:ss": "EEEE, d MMM y, HH:mm:ss",
+        "yMMMEEEEd, HH:mm:ss z": "EEEE, d MMM y, HH:mm:ss z",
+        "yMMMEEEEd, HH:mm:ss zzzz": "EEEE, d MMM y, HH:mm:ss zzzz",
+        "yMMMEEEEd, Hm": "EEEE, d MMM y, HH:mm",
+        "yMMMEEEEd, Hms": "EEEE, d MMM y, HH:mm:ss",
+        "yMMMEEEEd, Hmsv": "EEEE, d MMM y, HH:mm:ss v",
+        "yMMMEEEEd, Hmv": "EEEE, d MMM y, HH:mm v",
+        "yMMMEEEEd, h": "EEEE, d MMM y, h\u202fa",
+        "yMMMEEEEd, h:mm a": "EEEE, d MMM y, h:mm a",
+        "yMMMEEEEd, h:mm:ss a": "EEEE, d MMM y, h:mm:ss a",
+        "yMMMEEEEd, h:mm:ss a z": "EEEE, d MMM y, h:mm:ss a z",
+        "yMMMEEEEd, h:mm:ss a zzzz": "EEEE, d MMM y, h:mm:ss a zzzz",
+        "yMMMEEEEd, hm": "EEEE, d MMM y, h:mm\u202fa",
+        "yMMMEEEEd, hms": "EEEE, d MMM y, h:mm:ss\u202fa",
+        "yMMMEEEEd, hmsv": "EEEE, d MMM y, h:mm:ss\u202fa v",
+        "yMMMEEEEd, hmv": "EEEE, d MMM y, h:mm\u202fa v",
+        "yMMMEEEEd, ms": "EEEE, d MMM y, mm:ss",
+        "yMMMEd": "E, d MMM y",
+        "yMMMEd, Bh": "E, d MMM y, h B",
+        "yMMMEd, Bhm": "E, d MMM y, h:mm B",
+        "yMMMEd, Bhms": "E, d MMM y, h:mm:ss B",
+        "yMMMEd, H": "E, d MMM y, HH",
+        "yMMMEd, HH:mm": "E, d MMM y, HH:mm",
+        "yMMMEd, HH:mm:ss": "E, d MMM y, HH:mm:ss",
+        "yMMMEd, HH:mm:ss z": "E, d MMM y, HH:mm:ss z",
+        "yMMMEd, HH:mm:ss zzzz": "E, d MMM y, HH:mm:ss zzzz",
+        "yMMMEd, Hm": "E, d MMM y, HH:mm",
+        "yMMMEd, Hms": "E, d MMM y, HH:mm:ss",
+        "yMMMEd, Hmsv": "E, d MMM y, HH:mm:ss v",
+        "yMMMEd, Hmv": "E, d MMM y, HH:mm v",
+        "yMMMEd, h": "E, d MMM y, h\u202fa",
+        "yMMMEd, h:mm a": "E, d MMM y, h:mm a",
+        "yMMMEd, h:mm:ss a": "E, d MMM y, h:mm:ss a",
+        "yMMMEd, h:mm:ss a z": "E, d MMM y, h:mm:ss a z",
+        "yMMMEd, h:mm:ss a zzzz": "E, d MMM y, h:mm:ss a zzzz",
+        "yMMMEd, hm": "E, d MMM y, h:mm\u202fa",
+        "yMMMEd, hms": "E, d MMM y, h:mm:ss\u202fa",
+        "yMMMEd, hmsv": "E, d MMM y, h:mm:ss\u202fa v",
+        "yMMMEd, hmv": "E, d MMM y, h:mm\u202fa v",
+        "yMMMEd, ms": "E, d MMM y, mm:ss",
+        "yMMMM": "MMMM y",
+        "yMMMM, Bh": "MMMM y, h B",
+        "yMMMM, Bhm": "MMMM y, h:mm B",
+        "yMMMM, Bhms": "MMMM y, h:mm:ss B",
+        "yMMMM, H": "MMMM y, HH",
+        "yMMMM, HH:mm": "MMMM y, HH:mm",
+        "yMMMM, HH:mm:ss": "MMMM y, HH:mm:ss",
+        "yMMMM, HH:mm:ss z": "MMMM y, HH:mm:ss z",
+        "yMMMM, HH:mm:ss zzzz": "MMMM y, HH:mm:ss zzzz",
+        "yMMMM, Hm": "MMMM y, HH:mm",
+        "yMMMM, Hms": "MMMM y, HH:mm:ss",
+        "yMMMM, Hmsv": "MMMM y, HH:mm:ss v",
+        "yMMMM, Hmv": "MMMM y, HH:mm v",
+        "yMMMM, h": "MMMM y, h\u202fa",
+        "yMMMM, h:mm a": "MMMM y, h:mm a",
+        "yMMMM, h:mm:ss a": "MMMM y, h:mm:ss a",
+        "yMMMM, h:mm:ss a z": "MMMM y, h:mm:ss a z",
+        "yMMMM, h:mm:ss a zzzz": "MMMM y, h:mm:ss a zzzz",
+        "yMMMM, hm": "MMMM y, h:mm\u202fa",
+        "yMMMM, hms": "MMMM y, h:mm:ss\u202fa",
+        "yMMMM, hmsv": "MMMM y, h:mm:ss\u202fa v",
+        "yMMMM, hmv": "MMMM y, h:mm\u202fa v",
+        "yMMMM, ms": "MMMM y, mm:ss",
+        "yMMMMEEEEd": "EEEE, d MMMM y",
+        "yMMMMEEEEd, Bh": "EEEE, d MMMM y, h B",
+        "yMMMMEEEEd, Bhm": "EEEE, d MMMM y, h:mm B",
+        "yMMMMEEEEd, Bhms": "EEEE, d MMMM y, h:mm:ss B",
+        "yMMMMEEEEd, H": "EEEE, d MMMM y, HH",
+        "yMMMMEEEEd, HH:mm": "EEEE, d MMMM y, HH:mm",
+        "yMMMMEEEEd, HH:mm:ss": "EEEE, d MMMM y, HH:mm:ss",
+        "yMMMMEEEEd, HH:mm:ss z": "EEEE, d MMMM y, HH:mm:ss z",
+        "yMMMMEEEEd, HH:mm:ss zzzz": "EEEE, d MMMM y, HH:mm:ss zzzz",
+        "yMMMMEEEEd, Hm": "EEEE, d MMMM y, HH:mm",
+        "yMMMMEEEEd, Hms": "EEEE, d MMMM y, HH:mm:ss",
+        "yMMMMEEEEd, Hmsv": "EEEE, d MMMM y, HH:mm:ss v",
+        "yMMMMEEEEd, Hmv": "EEEE, d MMMM y, HH:mm v",
+        "yMMMMEEEEd, h": "EEEE, d MMMM y, h\u202fa",
+        "yMMMMEEEEd, h:mm a": "EEEE, d MMMM y, h:mm a",
+        "yMMMMEEEEd, h:mm:ss a": "EEEE, d MMMM y, h:mm:ss a",
+        "yMMMMEEEEd, h:mm:ss a z": "EEEE, d MMMM y, h:mm:ss a z",
+        "yMMMMEEEEd, h:mm:ss a zzzz": "EEEE, d MMMM y, h:mm:ss a zzzz",
+        "yMMMMEEEEd, hm": "EEEE, d MMMM y, h:mm\u202fa",
+        "yMMMMEEEEd, hms": "EEEE, d MMMM y, h:mm:ss\u202fa",
+        "yMMMMEEEEd, hmsv": "EEEE, d MMMM y, h:mm:ss\u202fa v",
+        "yMMMMEEEEd, hmv": "EEEE, d MMMM y, h:mm\u202fa v",
+        "yMMMMEEEEd, ms": "EEEE, d MMMM y, mm:ss",
+        "yMMMd": "d MMM y",
+        "yMMMd, Bh": "d MMM y, h B",
+        "yMMMd, Bhm": "d MMM y, h:mm B",
+        "yMMMd, Bhms": "d MMM y, h:mm:ss B",
+        "yMMMd, H": "d MMM y, HH",
+        "yMMMd, HH:mm": "d MMM y, HH:mm",
+        "yMMMd, HH:mm:ss": "d MMM y, HH:mm:ss",
+        "yMMMd, HH:mm:ss z": "d MMM y, HH:mm:ss z",
+        "yMMMd, HH:mm:ss zzzz": "d MMM y, HH:mm:ss zzzz",
+        "yMMMd, Hm": "d MMM y, HH:mm",
+        "yMMMd, Hms": "d MMM y, HH:mm:ss",
+        "yMMMd, Hmsv": "d MMM y, HH:mm:ss v",
+        "yMMMd, Hmv": "d MMM y, HH:mm v",
+        "yMMMd, h": "d MMM y, h\u202fa",
+        "yMMMd, h:mm a": "d MMM y, h:mm a",
+        "yMMMd, h:mm:ss a": "d MMM y, h:mm:ss a",
+        "yMMMd, h:mm:ss a z": "d MMM y, h:mm:ss a z",
+        "yMMMd, h:mm:ss a zzzz": "d MMM y, h:mm:ss a zzzz",
+        "yMMMd, hm": "d MMM y, h:mm\u202fa",
+        "yMMMd, hms": "d MMM y, h:mm:ss\u202fa",
+        "yMMMd, hmsv": "d MMM y, h:mm:ss\u202fa v",
+        "yMMMd, hmv": "d MMM y, h:mm\u202fa v",
+        "yMMMd, ms": "d MMM y, mm:ss",
+        "yMd": "dd/MM/y",
+        "yMd, Bh": "dd/MM/y, h B",
+        "yMd, Bhm": "dd/MM/y, h:mm B",
+        "yMd, Bhms": "dd/MM/y, h:mm:ss B",
+        "yMd, H": "dd/MM/y, HH",
+        "yMd, HH:mm": "dd/MM/y, HH:mm",
+        "yMd, HH:mm:ss": "dd/MM/y, HH:mm:ss",
+        "yMd, HH:mm:ss z": "dd/MM/y, HH:mm:ss z",
+        "yMd, HH:mm:ss zzzz": "dd/MM/y, HH:mm:ss zzzz",
+        "yMd, Hm": "dd/MM/y, HH:mm",
+        "yMd, Hms": "dd/MM/y, HH:mm:ss",
+        "yMd, Hmsv": "dd/MM/y, HH:mm:ss v",
+        "yMd, Hmv": "dd/MM/y, HH:mm v",
+        "yMd, h": "dd/MM/y, h\u202fa",
+        "yMd, h:mm a": "dd/MM/y, h:mm a",
+        "yMd, h:mm:ss a": "dd/MM/y, h:mm:ss a",
+        "yMd, h:mm:ss a z": "dd/MM/y, h:mm:ss a z",
+        "yMd, h:mm:ss a zzzz": "dd/MM/y, h:mm:ss a zzzz",
+        "yMd, hm": "dd/MM/y, h:mm\u202fa",
+        "yMd, hms": "dd/MM/y, h:mm:ss\u202fa",
+        "yMd, hmsv": "dd/MM/y, h:mm:ss\u202fa v",
+        "yMd, hmv": "dd/MM/y, h:mm\u202fa v",
+        "yMd, ms": "dd/MM/y, mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23",
+      "h12",
+      "",
+      ""
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h B\u2009\u2013\u2009h B",
+        "h": "h\u2009\u2013\u2009h B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2009\u2013\u2009h:mm B",
+        "m": "h:mm\u2009\u2013\u2009h:mm B"
+      },
+      "Gy": {
+        "G": "y G\u2009\u2013\u2009y G",
+        "y": "y\u2009\u2013\u2009y G"
+      },
+      "GyM": {
+        "G": "M/y G\u2009\u2013\u2009M/y G",
+        "M": "M/y\u2009\u2013\u2009M/y G",
+        "y": "M/y\u2009\u2013\u2009M/y G"
+      },
+      "GyMEd": {
+        "G": "E, dd/MM/y G\u2009\u2013\u2009E, dd/MM/y G",
+        "M": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y G",
+        "d": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y G",
+        "y": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y G"
+      },
+      "GyMMM": {
+        "G": "MMM y G\u2009\u2013\u2009MMM y G",
+        "M": "MMM\u2009\u2013\u2009MMM y G",
+        "y": "MMM y\u2009\u2013\u2009MMM y G"
+      },
+      "GyMMMEEEEd": {
+        "G": "EEEE d MMM y G\u2009\u2013\u2009EEEE d MMM y G",
+        "M": "EEEE d MMM\u2009\u2013\u2009EEEE d MMM y G",
+        "d": "EEEE d MMM\u2009\u2013\u2009EEEE d MMM y G",
+        "y": "EEEE d MMM y\u2009\u2013\u2009EEEE d MMM y G"
+      },
+      "GyMMMEd": {
+        "G": "E, d MMM y G\u2009\u2013\u2009E, d MMM y G",
+        "M": "E, d MMM\u2009\u2013\u2009E, d MMM y G",
+        "d": "E, d MMM\u2009\u2013\u2009E, d MMM y G",
+        "y": "E, d MMM y\u2009\u2013\u2009E, d MMM y G"
+      },
+      "GyMMMd": {
+        "G": "d MMM y G\u2009\u2013\u2009d MMM y G",
+        "M": "d MMM\u2009\u2013\u2009d MMM y G",
+        "d": "d\u2009\u2013\u2009d MMM y G",
+        "y": "d MMM y\u2009\u2013\u2009d MMM y G"
+      },
+      "GyMd": {
+        "G": "dd/MM/y G\u2009\u2013\u2009dd/MM/y G",
+        "M": "dd/MM/y\u2009\u2013\u2009dd/MM/y G",
+        "d": "dd/MM/y\u2009\u2013\u2009dd/MM/y G",
+        "y": "dd/MM/y\u2009\u2013\u2009dd/MM/y G"
+      },
+      "H": {
+        "H": "HH\u2013HH"
+      },
+      "Hm": {
+        "H": "HH:mm\u2013HH:mm",
+        "m": "HH:mm\u2013HH:mm"
+      },
+      "Hmv": {
+        "H": "HH:mm\u2013HH:mm v",
+        "m": "HH:mm\u2013HH:mm v"
+      },
+      "Hv": {
+        "H": "HH\u2013HH v"
+      },
+      "M": {
+        "M": "M\u2013M"
+      },
+      "MEd": {
+        "M": "E dd/MM\u2009\u2013\u2009E dd/MM",
+        "d": "E dd/MM\u2009\u2013\u2009E dd/MM"
+      },
+      "MMM": {
+        "M": "MMM\u2009\u2013\u2009MMM"
+      },
+      "MMMEd": {
+        "M": "E d MMM\u2009\u2013\u2009E d MMM",
+        "d": "E d MMM\u2009\u2013\u2009E d MMM"
+      },
+      "MMMd": {
+        "M": "d MMM\u2009\u2013\u2009d MMM",
+        "d": "d\u2013d MMM"
+      },
+      "Md": {
+        "M": "dd/MM\u2009\u2013\u2009dd/MM",
+        "d": "dd/MM\u2009\u2013\u2009dd/MM"
+      },
+      "d": {
+        "d": "d\u2013d"
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2013h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa",
+        "h": "h:mm\u2009\u2013\u2009h:mm\u202fa",
+        "m": "h:mm\u2009\u2013\u2009h:mm\u202fa"
+      },
+      "hmv": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa v",
+        "h": "h:mm\u2009\u2013\u2009h:mm\u202fa v",
+        "m": "h:mm\u2009\u2013\u2009h:mm\u202fa v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2013h\u202fa v"
+      },
+      "intervalFormatFallback": "{0}\u2009\u2013\u2009{1}",
+      "y": {
+        "y": "y\u2013y"
+      },
+      "yM": {
+        "M": "MM/y\u2009\u2013\u2009MM/y",
+        "y": "MM/y\u2009\u2013\u2009MM/y"
+      },
+      "yMEd": {
+        "M": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y",
+        "d": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y",
+        "y": "E, dd/MM/y\u2009\u2013\u2009E, dd/MM/y"
+      },
+      "yMMM": {
+        "M": "MMM\u2009\u2013\u2009MMM y",
+        "y": "MMM y\u2009\u2013\u2009MMM y"
+      },
+      "yMMMEEEEd": {
+        "M": "EEEE d MMM\u2009\u2013\u2009EEEE d MMM y",
+        "d": "EEEE d\u2009MMM \u2013\u2009EEEE d MMM y",
+        "y": "EEEE d MMM y\u2009\u2013\u2009EEEE d MMM y"
+      },
+      "yMMMEd": {
+        "M": "E, d MMM\u2009\u2013\u2009E, d MMM y",
+        "d": "E, d\u2009MMM \u2013\u2009E, d MMM y",
+        "y": "E, d MMM y\u2009\u2013\u2009E, d MMM y"
+      },
+      "yMMMM": {
+        "M": "MMMM\u2009\u2013\u2009MMMM y",
+        "y": "MMMM y\u2009\u2013\u2009MMMM y"
+      },
+      "yMMMMEEEEd": {
+        "M": "EEEE d MMMM\u2009\u2013\u2009EEEE d MMMM y",
+        "d": "EEEE d\u2009MMMM \u2013\u2009EEEE d MMMM y",
+        "y": "EEEE d MMMM y\u2009\u2013\u2009EEEE d MMMM y"
+      },
+      "yMMMd": {
+        "M": "d MMM\u2009\u2013\u2009d MMM y",
+        "d": "d\u2013d MMM y",
+        "y": "d MMM y\u2009\u2013\u2009d MMM y"
+      },
+      "yMd": {
+        "M": "dd/MM/y\u2009\u2013\u2009dd/MM/y",
+        "d": "dd/MM/y\u2009\u2013\u2009dd/MM/y",
+        "y": "dd/MM/y\u2009\u2013\u2009dd/MM/y"
+      }
+    },
+    "month": {
+      "long": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ],
+      "short": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "pm",
+    "timeFormat": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "South Africa Standard Time",
+          "South Africa Standard Time"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "Central Africa Time",
+          "Central Africa Time"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "South Africa Standard Time",
+          "South Africa Standard Time"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "South Africa Standard Time",
+          "South Africa Standard Time"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "West Africa Standard Time",
+          "West Africa Summer Time"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "Western Argentina Standard Time",
+          "Western Argentina Summer Time"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "Paraguay Standard Time",
+          "Paraguay Summer Time"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "Colombia Standard Time",
+          "Colombia Summer Time"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "Argentina Standard Time",
+          "Argentina Summer Time"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "Venezuela Time",
+          "Venezuela Time"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "French Guiana Time",
+          "French Guiana Time"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "Mountain Standard Time",
+          "Mountain Daylight Time"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "Mountain Standard Time",
+          "Mountain Daylight Time"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "West Greenland Standard Time",
+          "West Greenland Summer Time"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "Ecuador Time",
+          "Ecuador Time"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "Guyana Time",
+          "Guyana Time"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "Cuba Standard Time",
+          "Cuba Daylight Time"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "Alaska Standard Time",
+          "Alaska Daylight Time"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "Bolivia Time",
+          "Bolivia Time"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "Peru Standard Time",
+          "Peru Summer Time"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "Pacific Standard Time",
+          "Pacific Daylight Time"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "Amazon Standard Time",
+          "Amazon Summer Time"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "Mexican Pacific Standard Time",
+          "Mexican Pacific Daylight Time"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "St Pierre & Miquelon Standard Time",
+          "St Pierre & Miquelon Daylight Time"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "Uruguay Standard Time",
+          "Uruguay Summer Time"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "Fernando de Noronha Standard Time",
+          "Fernando de Noronha Summer Time"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "Suriname Time",
+          "Suriname Time"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Rio_Branco": {
+        "long": [
+          "Acre Standard Time",
+          "Acre Summer Time"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "Chile Standard Time",
+          "Chile Summer Time"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "Brasilia Standard Time",
+          "Brasilia Summer Time"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "East Greenland Standard Time",
+          "East Greenland Summer Time"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "Newfoundland Standard Time",
+          "Newfoundland Daylight Time"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "Pacific Standard Time",
+          "Pacific Daylight Time"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "Eastern Standard Time",
+          "Eastern Daylight Time"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "Pacific Standard Time",
+          "Pacific Daylight Time"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "Yukon Time",
+          "Yukon Time"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "Central Standard Time",
+          "Central Daylight Time"
+        ]
+      },
+      "Antarctica/Casey": {
+        "long": [
+          "Casey Time",
+          "Casey Time"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "Davis Time",
+          "Davis Time"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "Dumont-d\u2019Urville Time",
+          "Dumont-d\u2019Urville Time"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "Mawson Time",
+          "Mawson Time"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "New Zealand Standard Time",
+          "New Zealand Daylight Time"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "Rothera Time",
+          "Rothera Time"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "Syowa Time",
+          "Syowa Time"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "Vostok Time",
+          "Vostok Time"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "East Kazakhstan Time",
+          "East Kazakhstan Time"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "Anadyr Standard Time",
+          "Anadyr Summer Time"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "West Kazakhstan Time",
+          "West Kazakhstan Time"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "Turkmenistan Standard Time",
+          "Turkmenistan Summer Time"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "Indochina Time",
+          "Indochina Time"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "Kyrgyzstan Time",
+          "Kyrgyzstan Time"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "Brunei Darussalam Time",
+          "Brunei Darussalam Time"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "India Standard Time",
+          "India Standard Time"
+        ]
+      },
+      "Asia/Colombo": {
+        "long": [
+          "Lanka Time",
+          "Lanka Time"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "East Timor Time",
+          "East Timor Time"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "Gulf Standard Time",
+          "Gulf Standard Time"
+        ],
+        "short": [
+          "GST",
+          "GST"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "Tajikistan Time",
+          "Tajikistan Time"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "Hong Kong Standard Time",
+          "Hong Kong Summer Time"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "Hovd Standard Time",
+          "Hovd Summer Time"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "Irkutsk Standard Time",
+          "Irkutsk Summer Time"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "Western Indonesia Time",
+          "Western Indonesia Time"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "Eastern Indonesia Time",
+          "Eastern Indonesia Time"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "Israel Standard Time",
+          "Israel Daylight Time"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "Afghanistan Time",
+          "Afghanistan Time"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "Petropavlovsk-Kamchatski Standard Time",
+          "Petropavlovsk-Kamchatski Summer Time"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "Pakistan Standard Time",
+          "Pakistan Summer Time"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "Nepal Time",
+          "Nepal Time"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "Krasnoyarsk Standard Time",
+          "Krasnoyarsk Summer Time"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "Malaysia Time",
+          "Malaysia Time"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Macau": {
+        "long": [
+          "Macao Standard Time",
+          "Macao Summer Time"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "Magadan Standard Time",
+          "Magadan Summer Time"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "Central Indonesia Time",
+          "Central Indonesia Time"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "Philippine Standard Time",
+          "Philippine Summer Time"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "Gulf Standard Time",
+          "Gulf Standard Time"
+        ],
+        "short": [
+          "GST",
+          "GST"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "Novosibirsk Standard Time",
+          "Novosibirsk Summer Time"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "Omsk Standard Time",
+          "Omsk Summer Time"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "Indochina Time",
+          "Indochina Time"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "Pyongyang Time",
+          "Pyongyang Time"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Qyzylorda": {
+        "long": [
+          "Qyzylorda Standard Time",
+          "Qyzylorda Summer Time"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "Myanmar Time",
+          "Myanmar Time"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "Arabian Standard Time",
+          "Arabian Daylight Time"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "Sakhalin Standard Time",
+          "Sakhalin Summer Time"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "Korean Standard Time",
+          "Korean Daylight Time"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "China Standard Time",
+          "China Daylight Time"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "Singapore Standard Time",
+          "Singapore Standard Time"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "Taipei Standard Time",
+          "Taipei Daylight Time"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "Uzbekistan Standard Time",
+          "Uzbekistan Summer Time"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "Iran Standard Time",
+          "Iran Daylight Time"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "Bhutan Time",
+          "Bhutan Time"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "Japan Standard Time",
+          "Japan Daylight Time"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "Ulaanbaatar Standard Time",
+          "Ulaanbaatar Summer Time"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "Indochina Time",
+          "Indochina Time"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "Vladivostok Standard Time",
+          "Vladivostok Summer Time"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "Yakutsk Standard Time",
+          "Yakutsk Summer Time"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "Yekaterinburg Standard Time",
+          "Yekaterinburg Summer Time"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "Azores Standard Time",
+          "Azores Summer Time"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "Atlantic Standard Time",
+          "Atlantic Daylight Time"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "Western European Standard Time",
+          "Western European Summer Time"
+        ],
+        "short": [
+          "WET",
+          "WEST"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "Cape Verde Standard Time",
+          "Cape Verde Summer Time"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "Western European Standard Time",
+          "Western European Summer Time"
+        ],
+        "short": [
+          "WET",
+          "WEST"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "South Georgia Time",
+          "South Georgia Time"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "Falkland Islands Standard Time",
+          "Falkland Islands Summer Time"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "Australian Central Standard Time",
+          "Australian Central Daylight Time"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "Australian Central Western Standard Time",
+          "Australian Central Western Daylight Time"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "Lord Howe Standard Time",
+          "Lord Howe Daylight Time"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "Australian Western Standard Time",
+          "Australian Western Daylight Time"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "Australian Eastern Standard Time",
+          "Australian Eastern Daylight Time"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "Further-eastern European Time",
+          "Further-eastern European Time"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "Greenwich Mean Time",
+          "Greenwich Mean Time"
+        ],
+        "short": [
+          "GMT",
+          "GMT"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "Further-eastern European Time",
+          "Further-eastern European Time"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "Moscow Standard Time",
+          "Moscow Summer Time"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "Samara Standard Time",
+          "Samara Summer Time"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "Eastern European Standard Time",
+          "Eastern European Summer Time"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "Volgograd Standard Time",
+          "Volgograd Summer Time"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "Central European Standard Time",
+          "Central European Summer Time"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "Indian Ocean Time",
+          "Indian Ocean Time"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "Christmas Island Time",
+          "Christmas Island Time"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "Cocos Islands Time",
+          "Cocos Islands Time"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "French Southern & Antarctic Time",
+          "French Southern & Antarctic Time"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "Seychelles Time",
+          "Seychelles Time"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "Maldives Time",
+          "Maldives Time"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "Mauritius Standard Time",
+          "Mauritius Summer Time"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "East Africa Time",
+          "East Africa Time"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "R\u00e9union Time",
+          "R\u00e9union Time"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "Apia Standard Time",
+          "Apia Daylight Time"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "New Zealand Standard Time",
+          "New Zealand Daylight Time"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "Chatham Standard Time",
+          "Chatham Daylight Time"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "Easter Island Standard Time",
+          "Easter Island Summer Time"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "Vanuatu Standard Time",
+          "Vanuatu Summer Time"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "Phoenix Islands Time",
+          "Phoenix Islands Time"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "Tokelau Time",
+          "Tokelau Time"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "Fiji Standard Time",
+          "Fiji Summer Time"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "Tuvalu Time",
+          "Tuvalu Time"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "Galapagos Time",
+          "Galapagos Time"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "Gambier Time",
+          "Gambier Time"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "Solomon Islands Time",
+          "Solomon Islands Time"
+        ]
+      },
+      "Pacific/Guam": {
+        "long": [
+          "Guam Standard Time",
+          "Guam Standard Time"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "Hawaii-Aleutian Standard Time",
+          "Hawaii-Aleutian Daylight Time"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "Line Islands Time",
+          "Line Islands Time"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "Kosrae Time",
+          "Kosrae Time"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "Marshall Islands Time",
+          "Marshall Islands Time"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "Marquesas Time",
+          "Marquesas Time"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "Nauru Time",
+          "Nauru Time"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "Niue Time",
+          "Niue Time"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "Norfolk Island Standard Time",
+          "Norfolk Island Daylight Time"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "New Caledonia Standard Time",
+          "New Caledonia Summer Time"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "Samoa Standard Time",
+          "Samoa Daylight Time"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "Palau Time",
+          "Palau Time"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "Pitcairn Time",
+          "Pitcairn Time"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "Ponape Time",
+          "Ponape Time"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "Papua New Guinea Time",
+          "Papua New Guinea Time"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "Cook Islands Standard Time",
+          "Cook Islands Half Summer Time"
+        ]
+      },
+      "Pacific/Saipan": {
+        "long": [
+          "North Mariana Islands Time",
+          "North Mariana Islands Time"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "Tahiti Time",
+          "Tahiti Time"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "Gilbert Islands Time",
+          "Gilbert Islands Time"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "Tonga Standard Time",
+          "Tonga Summer Time"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "Chuuk Time",
+          "Chuuk Time"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "Wake Island Time",
+          "Wake Island Time"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "Wallis & Futuna Time",
+          "Wallis & Futuna Time"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "Coordinated Universal Time",
+          "Coordinated Universal Time"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S"
+      ],
+      "short": [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ]
+    }
+  },
+  "locale": "en-GB"
+}

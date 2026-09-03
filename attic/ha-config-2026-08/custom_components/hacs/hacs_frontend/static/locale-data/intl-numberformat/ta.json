@@ -1,0 +1,2188 @@
+{
+  "data": {
+    "currencies": {
+      "AED": {
+        "displayName": {
+          "one": "\u0b90\u0b95\u0bcd\u0b95\u0bbf\u0baf \u0b85\u0bb0\u0baa\u0bc1 \u0b8e\u0bae\u0bbf\u0bb0\u0bc7\u0b9f\u0bcd\u0bb8\u0bcd \u0ba4\u0bbf\u0bb0\u0bcd\u0bb9\u0bbe\u0bae\u0bcd",
+          "other": "\u0b90\u0b95\u0bcd\u0b95\u0bbf\u0baf \u0b85\u0bb0\u0baa\u0bc1 \u0b8e\u0bae\u0bbf\u0bb0\u0bc7\u0b9f\u0bcd\u0bb8\u0bcd \u0ba4\u0bbf\u0bb0\u0bcd\u0bb9\u0bbe\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFN": {
+        "displayName": {
+          "one": "\u0b86\u0b83\u0baa\u0bcd\u0b95\u0bbe\u0ba9\u0bcd \u0b86\u0b83\u0baa\u0bcd\u0b95\u0bbe\u0ba9\u0bbf",
+          "other": "\u0b86\u0b83\u0baa\u0bcd\u0b95\u0bbe\u0ba9\u0bcd \u0b86\u0b83\u0baa\u0bcd\u0b95\u0bbe\u0ba9\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALL": {
+        "displayName": {
+          "one": "\u0b85\u0bb2\u0bcd\u0baa\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bc6\u0b95\u0bcd",
+          "other": "\u0b85\u0bb2\u0bcd\u0baa\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bc6\u0b95\u0bc7"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "one": "\u0b86\u0bb0\u0bcd\u0bae\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bcd\u0bb0\u0bbe\u0bae\u0bcd",
+          "other": "\u0b86\u0bb0\u0bcd\u0bae\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bcd\u0bb0\u0bbe\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u058f",
+        "symbol": "AMD"
+      },
+      "ANG": {
+        "displayName": {
+          "one": "\u0ba8\u0bc6\u0ba4\u0bb0\u0bcd\u0bb2\u0bc7\u0ba3\u0bcd\u0b9f\u0bcd\u0bb8\u0bcd \u0b85\u0ba9\u0bcd\u0b9f\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bbf\u0bb2\u0bcd\u0b9f\u0bb0\u0bcd",
+          "other": "\u0ba8\u0bc6\u0ba4\u0bb0\u0bcd\u0bb2\u0bc7\u0ba3\u0bcd\u0b9f\u0bcd\u0bb8\u0bcd \u0b85\u0ba9\u0bcd\u0b9f\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bbf\u0bb2\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "one": "\u0b85\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0ba9\u0bcd \u0b95\u0bcd\u0bb5\u0bbe\u0ba9\u0bcd\u0bb8\u0bbe",
+          "other": "\u0b85\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0ba9\u0bcd \u0b95\u0bcd\u0bb5\u0bbe\u0ba9\u0bcd\u0bb8\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "ARS": {
+        "displayName": {
+          "one": "\u0b85\u0bb0\u0bcd\u0b9c\u0bc6\u0ba9\u0bcd\u0b9f\u0bc8\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b85\u0bb0\u0bcd\u0b9c\u0bc6\u0ba9\u0bcd\u0b9f\u0bc8\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "AUD": {
+        "displayName": {
+          "one": "\u0b86\u0bb8\u0bcd\u0ba4\u0bbf\u0bb0\u0bc7\u0bb2\u0bbf\u0baf \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b86\u0bb8\u0bcd\u0ba4\u0bbf\u0bb0\u0bc7\u0bb2\u0bbf\u0baf \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "A$"
+      },
+      "AWG": {
+        "displayName": {
+          "other": "\u0b85\u0bb0\u0bc1\u0baa\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb3\u0bcb\u0bb0\u0bbf\u0ba9\u0bcd"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZN": {
+        "displayName": {
+          "one": "\u0b85\u0b9c\u0bb0\u0bcd\u0baa\u0bc8\u0b9a\u0bbe\u0ba9\u0bbf \u0bae\u0ba9\u0ba4\u0bcd",
+          "other": "\u0b85\u0b9a\u0bb0\u0bcd\u0baa\u0bc8\u0b9c\u0bbe\u0ba9\u0bbf \u0bae\u0ba9\u0ba4\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAM": {
+        "displayName": {
+          "one": "\u0baa\u0bcb\u0bb8\u0bcd\u0ba9\u0bbf\u0baf\u0bbe-\u0bb9\u0bc6\u0bb0\u0bcd\u0bb8\u0bc7\u0b95\u0bcb\u0bb5\u0bbf\u0ba9\u0bbe \u0b95\u0ba9\u0bcd\u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baa\u0bbf\u0bb2\u0bcd \u0bae\u0bbe\u0bb0\u0bcd\u0b95\u0bcd",
+          "other": "\u0baa\u0bcb\u0bb8\u0bcd\u0ba9\u0bbf\u0baf\u0bbe-\u0bb9\u0bc6\u0bb0\u0bcd\u0bb8\u0bc7\u0b95\u0bcb\u0bb5\u0bbf\u0ba9\u0bbe \u0b95\u0ba9\u0bcd\u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baa\u0bbf\u0bb2\u0bcd \u0bae\u0bbe\u0bb0\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BBD": {
+        "displayName": {
+          "one": "\u0baa\u0bbe\u0bb0\u0bcd\u0baa\u0bc7\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bbe\u0bb0\u0bcd\u0baa\u0bc7\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "one": "\u0baa\u0b99\u0bcd\u0b95\u0bb3\u0bbe\u0ba4\u0bc7\u0bb7\u0bbf \u0b9f\u0bbe\u0b95\u0bbe",
+          "other": "\u0baa\u0b99\u0bcd\u0b95\u0bb3\u0bbe\u0ba4\u0bc7\u0bb7\u0bbf \u0b9f\u0bbe\u0b95\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BGN": {
+        "displayName": {
+          "one": "\u0baa\u0bb2\u0bcd\u0b95\u0bc7\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bc7\u0bb5\u0bcd",
+          "other": "\u0baa\u0bb2\u0bcd\u0b95\u0bc7\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bc7\u0bb5\u0bbe"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BHD": {
+        "displayName": {
+          "one": "\u0baa\u0bb9\u0bcd\u0bb0\u0bc8\u0ba9\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0baa\u0bb9\u0bcd\u0bb0\u0bc8\u0ba9\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "one": "\u0baa\u0bc1\u0bb0\u0bc1\u0ba3\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0baa\u0bc1\u0bb0\u0bc1\u0ba3\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "one": "\u0baa\u0bc6\u0bb0\u0bcd\u0bae\u0bc1\u0b9f\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bc6\u0bb0\u0bcd\u0bae\u0bc1\u0b9f\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "one": "\u0baa\u0bc1\u0bb0\u0bc2\u0ba9\u0bc7 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bc1\u0bb0\u0bc2\u0ba9\u0bc7 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "one": "\u0baa\u0bca\u0bb2\u0bbf\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bca\u0bb2\u0bbf\u0bb5\u0bbf\u0baf\u0bbe\u0ba9\u0bcb",
+          "other": "\u0baa\u0bca\u0bb2\u0bbf\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bca\u0bb2\u0bbf\u0bb5\u0bbf\u0baf\u0bbe\u0ba9\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BRL": {
+        "displayName": {
+          "one": "\u0baa\u0bbf\u0bb0\u0bc7\u0b9a\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0baa\u0bbf\u0bb0\u0bc7\u0b9a\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BSD": {
+        "displayName": {
+          "one": "\u0baa\u0bb9\u0bbe\u0bae\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bb9\u0bbe\u0bae\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "one": "\u0baa\u0bc2\u0b9f\u0bcd\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0b95\u0bc1\u0bb2\u0bcd\u0b9f\u0bcd\u0bb0\u0bae\u0bcd",
+          "other": "\u0baa\u0bc2\u0b9f\u0bcd\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0b95\u0bc1\u0bb2\u0bcd\u0b9f\u0bcd\u0bb0\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BWP": {
+        "displayName": {
+          "one": "\u0baa\u0bcb\u0b9f\u0bcd\u0bb8\u0bcd\u0bb5\u0bbe\u0ba9\u0ba9\u0bcd \u0baa\u0bc1\u0bb2\u0bbe",
+          "other": "\u0baa\u0bcb\u0b9f\u0bcd\u0bb8\u0bcd\u0bb5\u0bbe\u0ba9\u0ba9\u0bcd \u0baa\u0bc1\u0bb2\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYN": {
+        "displayName": {
+          "one": "\u0baa\u0bc6\u0bb2\u0bb0\u0bc1\u0b9a\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd",
+          "other": "\u0baa\u0bc6\u0bb2\u0bb0\u0bc1\u0b9a\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u0440.",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "one": "\u0baa\u0bc6\u0bb2\u0bb0\u0bc1\u0b9a\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd (2000\u20132016)",
+          "other": "\u0baa\u0bc6\u0bb2\u0bb0\u0bc1\u0b9a\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd\u0b95\u0bb3\u0bcd (2000\u20132016)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "one": "\u0baa\u0bc6\u0bb2\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bc6\u0bb2\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "one": "\u0b95\u0ba9\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b95\u0ba9\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "one": "\u0b95\u0bbe\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0bc0\u0bb8\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0b95\u0bbe\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0bc0\u0bb8\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHF": {
+        "displayName": {
+          "one": "\u0b9a\u0bc1\u0bb5\u0bbf\u0bb8\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0b9a\u0bc1\u0bb5\u0bbf\u0bb8\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CLP": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b9a\u0bbf\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "other": "\u0b9a\u0bc0\u0ba9 \u0baf\u0bc1\u0bb5\u0bbe\u0ba9\u0bcd (\u0b86\u0b83\u0baa\u0bcd\u0bb7\u0bcb\u0bb0\u0bcd)"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "other": "\u0b9a\u0bc0\u0ba9 \u0baf\u0bc1\u0bb5\u0bbe\u0ba9\u0bcd"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "one": "\u0b95\u0bca\u0bb2\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b95\u0bca\u0bb2\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "CRC": {
+        "displayName": {
+          "one": "\u0b95\u0bcb\u0bb8\u0bcd\u0b9f\u0bbe \u0bb0\u0bbf\u0b95\u0ba9\u0bcd \u0b95\u0bca\u0bb2\u0bcb\u0ba9\u0bcd",
+          "other": "\u0b95\u0bcb\u0bb8\u0bcd\u0b9f\u0bbe \u0bb0\u0bbf\u0b95\u0ba9\u0bcd \u0b95\u0bca\u0bb2\u0bcb\u0ba9\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CUC": {
+        "displayName": {
+          "one": "\u0b95\u0bbf\u0baf\u0bc2\u0baa\u0ba9\u0bcd \u0b95\u0ba9\u0bcd\u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baa\u0bbf\u0bb2\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b95\u0bbf\u0baf\u0bc2\u0baa\u0ba9\u0bcd \u0b95\u0ba9\u0bcd\u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baa\u0bbf\u0bb2\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "one": "\u0b95\u0bbf\u0baf\u0bc2\u0baa\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b95\u0bbf\u0baf\u0bc2\u0baa\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "one": "\u0b95\u0bc7\u0baa\u0bcd \u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b8e\u0bb8\u0bcd\u0b95\u0bc1\u0b9f\u0bcb",
+          "other": "\u0b95\u0bc7\u0baa\u0bcd \u0bb5\u0bc6\u0bb0\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b8e\u0bb8\u0bcd\u0b95\u0bc1\u0b9f\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CZK": {
+        "displayName": {
+          "one": "\u0b9a\u0bc6\u0b95\u0bcd \u0b95\u0bc1\u0b9f\u0bbf\u0baf\u0bb0\u0b9a\u0bc1 \u0b95\u0bca\u0bb0\u0bc1\u0ba9\u0bbe",
+          "other": "\u0b9a\u0bc6\u0b95\u0bcd \u0b95\u0bc1\u0b9f\u0bbf\u0baf\u0bb0\u0b9a\u0bc1 \u0b95\u0bca\u0bb0\u0bc1\u0ba9\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DJF": {
+        "displayName": {
+          "one": "\u0b9c\u0bbf\u0baa\u0bb5\u0bcd\u0b9f\u0bbf\u0baf\u0bc6\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0b9c\u0bbf\u0baa\u0bb5\u0bcd\u0b9f\u0bbf\u0baf\u0bc6\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "one": "\u0b9f\u0bc7\u0ba9\u0bbf\u0bb7\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bcd",
+          "other": "\u0b9f\u0bc7\u0ba9\u0bbf\u0bb7\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bb0\u0bcd"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "one": "\u0b9f\u0bca\u0bae\u0bbf\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b9f\u0bca\u0bae\u0bbf\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "one": "\u0b85\u0bb2\u0bcd\u0b9c\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0b85\u0bb2\u0bcd\u0b9c\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "EGP": {
+        "displayName": {
+          "one": "\u0b8e\u0b95\u0bbf\u0baa\u0bcd\u0ba4\u0bbf\u0baf \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b8e\u0b95\u0bbf\u0baa\u0bcd\u0ba4\u0bbf\u0baf \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "one": "\u0b8e\u0bb0\u0bbf\u0ba4\u0bcd\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba8\u0b95\u0bcd\u0b83\u0baa\u0bbe",
+          "other": "\u0b8e\u0bb0\u0bbf\u0ba4\u0bcd\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba8\u0b95\u0bcd\u0b83\u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESP": {
+        "displayName": {},
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "one": "\u0b8e\u0ba4\u0bcd\u0ba4\u0bbf\u0baf\u0bcb\u0baa\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bbf\u0bb0\u0bcd",
+          "other": "\u0b8e\u0ba4\u0bcd\u0ba4\u0bbf\u0baf\u0bcb\u0baa\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bbf\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "one": "\u0baf\u0bc2\u0bb0\u0bcb",
+          "other": "\u0baf\u0bc2\u0bb0\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FJD": {
+        "displayName": {
+          "one": "\u0b83\u0baa\u0bbf\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b83\u0baa\u0bbf\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "one": "\u0b83\u0baa\u0bbe\u0b95\u0bcd\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1 \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b83\u0baa\u0bbe\u0b95\u0bcd\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1 \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "GBP": {
+        "displayName": {
+          "one": "\u0baa\u0bbf\u0bb0\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf\u0bb7\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0baa\u0bbf\u0bb0\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf\u0bb7\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEL": {
+        "displayName": {
+          "one": "\u0b9c\u0bbe\u0bb0\u0bcd\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbe\u0bb0\u0bbf",
+          "other": "\u0b9c\u0bbe\u0bb0\u0bcd\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbe\u0bb0\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHS": {
+        "displayName": {
+          "one": "\u0b95\u0bbe\u0ba9\u0baf\u0ba9\u0bcd \u0b9a\u0bc7\u0b9f\u0bbf",
+          "other": "\u0b95\u0bbe\u0ba9\u0baf\u0ba9\u0bcd \u0b9a\u0bc7\u0b9f\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "GH\u20b5",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "one": "\u0b9c\u0bbf\u0baa\u0bcd\u0bb0\u0bbe\u0bb2\u0bcd\u0b9f\u0bb0\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b9c\u0bbf\u0baa\u0bcd\u0bb0\u0bbe\u0bb2\u0bcd\u0b9f\u0bb0\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "one": "\u0b95\u0bc7\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bb2\u0bbe\u0b9a\u0bbf",
+          "other": "\u0b95\u0bc7\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bb2\u0bbe\u0b9a\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "one": "\u0b95\u0bbf\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0b95\u0bbf\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GTQ": {
+        "displayName": {
+          "one": "\u0b95\u0bc1\u0bb5\u0bbe\u0ba4\u0bc6\u0bae\u0bbe\u0bb2\u0ba9\u0bcd \u0b95\u0bcd\u0baf\u0bc1\u0b9f\u0bcd\u0bb8\u0bb2\u0bcd",
+          "other": "\u0b95\u0bc1\u0bb5\u0bbe\u0ba4\u0bc6\u0bae\u0bbe\u0bb2\u0ba9\u0bcd \u0b95\u0bcd\u0baf\u0bc1\u0b9f\u0bcd\u0bb8\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GYD": {
+        "displayName": {
+          "one": "\u0b95\u0baf\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b95\u0baf\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "one": "\u0bb9\u0bbe\u0b99\u0bcd\u0b95\u0bbe\u0b99\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0bb9\u0bbe\u0b99\u0bcd\u0b95\u0bbe\u0b99\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "one": "\u0bb9\u0bcb\u0ba9\u0bcd\u0b9f\u0bc2\u0bb0\u0ba9\u0bcd \u0bb2\u0bc6\u0bae\u0bcd\u0baa\u0bc0\u0bb0\u0bbe",
+          "other": "\u0bb9\u0bcb\u0ba9\u0bcd\u0b9f\u0bc2\u0bb0\u0ba9\u0bcd \u0bb2\u0bc6\u0bae\u0bcd\u0baa\u0bc0\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRK": {
+        "displayName": {
+          "one": "\u0b95\u0bc1\u0bb0\u0bcb\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0ba9\u0bbe",
+          "other": "\u0b95\u0bc1\u0bb0\u0bcb\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0ba9\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "one": "\u0bb9\u0bc8\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bcb\u0bb0\u0bcd\u0b9f\u0bc7",
+          "other": "\u0bb9\u0bc8\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bcb\u0bb0\u0bcd\u0b9f\u0bc7\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "one": "\u0bb9\u0b99\u0bcd\u0b95\u0bc7\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcb\u0bb0\u0bbf\u0ba9\u0bcd\u0b9f\u0bcd",
+          "other": "\u0bb9\u0b99\u0bcd\u0b95\u0bc7\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcb\u0bb0\u0bbf\u0ba9\u0bcd\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "one": "\u0b87\u0ba8\u0bcd\u0ba4\u0bcb\u0ba9\u0bc7\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc1\u0baa\u0bbf\u0baf\u0bbe",
+          "other": "\u0b87\u0ba8\u0bcd\u0ba4\u0bcb\u0ba9\u0bc7\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc1\u0baa\u0bbf\u0baf\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "ILS": {
+        "displayName": {
+          "one": "\u0b87\u0bb8\u0bcd\u0bb0\u0bc7\u0bb2\u0bbf \u0ba8\u0bbf\u0baf\u0bc2 \u0bb7\u0bbf\u0b95\u0bc7\u0bb2\u0bcd",
+          "other": "\u0b87\u0bb8\u0bcd\u0bb0\u0bc7\u0bb2\u0bbf \u0ba8\u0bbf\u0baf\u0bc2 \u0bb7\u0bbf\u0b95\u0bc7\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "one": "\u0b87\u0ba8\u0bcd\u0ba4\u0bbf\u0baf \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd",
+          "other": "\u0b87\u0ba8\u0bcd\u0ba4\u0bbf\u0baf \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "one": "\u0b88\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0b88\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "one": "\u0b88\u0bb0\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0b88\u0bb0\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "one": "\u0b90\u0bb8\u0bcd\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bbf\u0b95\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bbe",
+          "other": "\u0b90\u0bb8\u0bcd\u0bb2\u0bbe\u0ba3\u0bcd\u0b9f\u0bbf\u0b95\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bb0\u0bcd"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "JMD": {
+        "displayName": {
+          "one": "\u0b9c\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b9c\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "one": "\u0b9c\u0bcb\u0bb0\u0bcd\u0b9f\u0bbe\u0ba9\u0bbf\u0baf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0b9c\u0bcb\u0bb0\u0bcd\u0b9f\u0bbe\u0ba9\u0bbf\u0baf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "other": "\u0b9c\u0baa\u0bcd\u0baa\u0bbe\u0ba9\u0bbf\u0baf \u0baf\u0bc6\u0ba9\u0bcd"
+        },
+        "narrow": "\u00a5",
+        "symbol": "\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "one": "\u0b95\u0bc6\u0ba9\u0bcd\u0baf\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd",
+          "other": "\u0b95\u0bc6\u0ba9\u0bcd\u0baf\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "one": "\u0b95\u0bbf\u0bb0\u0bbf\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9a\u0bcb\u0bae\u0bcd",
+          "other": "\u0b95\u0bbf\u0bb0\u0bcd\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9a\u0bcb\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "one": "\u0b95\u0bae\u0bcd\u0baa\u0bcb\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bc6\u0bb2\u0bcd",
+          "other": "\u0b95\u0bae\u0bcd\u0baa\u0bcb\u0b9f\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0baf\u0bc6\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "one": "\u0b95\u0bae\u0bcb\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0b95\u0bae\u0bcb\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "other": "\u0bb5\u0b9f \u0b95\u0bca\u0bb0\u0bbf\u0baf \u0bb5\u0bbe\u0ba9\u0bcd"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRW": {
+        "displayName": {
+          "other": "\u0ba4\u0bc6\u0ba9\u0bcd \u0b95\u0bca\u0bb0\u0bbf\u0baf \u0bb5\u0bbe\u0ba9\u0bcd"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "one": "\u0b95\u0bc1\u0bb5\u0bc8\u0ba4\u0bcd\u0ba4\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0b95\u0bc1\u0bb5\u0bc8\u0ba4\u0bcd\u0ba4\u0bbf \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "one": "\u0b95\u0bc7\u0bae\u0ba9\u0bcd \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b95\u0bc7\u0bae\u0ba9\u0bcd \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "one": "\u0b95\u0bb8\u0b95\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9f\u0bc6\u0ba9\u0bcd\u0b95\u0bc7",
+          "other": "\u0b95\u0bb8\u0b95\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9f\u0bc6\u0ba9\u0bcd\u0b95\u0bc7\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "one": "\u0bb2\u0bb5\u0bcb\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bbf\u0baa\u0bcd",
+          "other": "\u0bb2\u0bb5\u0bcb\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bbf\u0baa\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "one": "\u0bb2\u0bc6\u0baa\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0bb2\u0bc6\u0baa\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "one": "\u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8 \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd",
+          "other": "\u0b87\u0bb2\u0b99\u0bcd\u0b95\u0bc8 \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "one": "\u0bb2\u0bc8\u0baa\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0bb2\u0bc8\u0baa\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "one": "\u0bb2\u0bc6\u0b9a\u0bcb\u0ba4\u0bcb \u0bb2\u0bcb\u0b9f\u0bcd\u0b9f\u0bbf",
+          "other": "\u0bb2\u0bc6\u0b9a\u0bcb\u0ba4\u0bcb \u0bb2\u0bcb\u0b9f\u0bcd\u0b9f\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "one": "\u0bb2\u0bbf\u0ba4\u0bc1\u0bb5\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0b9f\u0bbe\u0bb8\u0bcd",
+          "other": "\u0bb2\u0bbf\u0ba4\u0bc1\u0bb5\u0bc7\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0b9f\u0bc8"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LVL": {
+        "displayName": {
+          "one": "\u0bb2\u0bbe\u0ba4\u0bcd\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbe\u0b9f\u0bcd\u0bb8\u0bcd",
+          "other": "\u0bb2\u0ba4\u0bcd\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbe\u0b9f\u0bcd\u0b9f\u0bbf"
+        },
+        "narrow": "Ls",
+        "symbol": "LVL"
+      },
+      "LYD": {
+        "displayName": {
+          "one": "\u0bb2\u0bbf\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0bb2\u0bbf\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "one": "\u0bae\u0bca\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0ba4\u0bbf\u0bb0\u0bcd\u0bb9\u0bbe\u0bae\u0bcd",
+          "other": "\u0bae\u0bca\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0ba9\u0bcd \u0ba4\u0bbf\u0bb0\u0bcd\u0bb9\u0bbe\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MDL": {
+        "displayName": {
+          "one": "\u0bae\u0bbe\u0bb2\u0bcd\u0b9f\u0bcb\u0bb5\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bc2",
+          "other": "\u0bae\u0bbe\u0bb2\u0bcd\u0b9f\u0bcb\u0bb5\u0ba9\u0bcd \u0bb2\u0bc7\u0baf\u0bcd"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "one": "\u0bae\u0bb2\u0b95\u0bbe\u0b9a\u0bbf \u0b8f\u0bb0\u0bbf\u0baf\u0bb0\u0bbf",
+          "other": "\u0bae\u0bb2\u0b95\u0bbe\u0b9a\u0bbf \u0b8f\u0bb0\u0bbf\u0baf\u0bb0\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MKD": {
+        "displayName": {
+          "one": "\u0bae\u0bbe\u0b9a\u0bbf\u0b9f\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bc7\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0bae\u0bbe\u0b9a\u0bbf\u0b9f\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bc7\u0ba9\u0bbe\u0bb0\u0bbf"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MMK": {
+        "displayName": {
+          "one": "\u0bae\u0bbf\u0baf\u0bbe\u0ba9\u0bcd\u0bae\u0bb0\u0bcd \u0b95\u0bbf\u0baf\u0bbe\u0ba4\u0bcd",
+          "other": "\u0bae\u0bbf\u0baf\u0bbe\u0ba9\u0bcd\u0bae\u0bb0\u0bcd \u0b95\u0bbf\u0baf\u0bbe\u0ba4\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "one": "\u0bae\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bc1\u0b95\u0bcd\u0bb0\u0bbf\u0b95\u0bcd",
+          "other": "\u0bae\u0b99\u0bcd\u0b95\u0bcb\u0bb2\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bc1\u0b95\u0bcd\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "one": "\u0bae\u0bc6\u0b95\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0b9f\u0bbe\u0b95\u0bbe",
+          "other": "\u0bae\u0bc6\u0b95\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0b9f\u0bbe\u0b95\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "one": "\u0bae\u0bca\u0bb0\u0bbf\u0bb7\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b92\u0b95\u0bc1\u0baf\u0bbe (1973\u20132017)",
+          "other": "\u0bae\u0bca\u0bb0\u0bbf\u0bb7\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b92\u0b95\u0bc1\u0baf\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "one": "\u0bae\u0bca\u0bb0\u0bbf\u0bb7\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b92\u0b95\u0bc1\u0baf\u0bbe",
+          "other": "\u0bae\u0bca\u0bb0\u0bbf\u0bb7\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b92\u0b95\u0bc1\u0baf\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MUR": {
+        "displayName": {
+          "one": "\u0bae\u0bca\u0bb0\u0bc0\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc1\u0baa\u0bc0",
+          "other": "\u0bae\u0bca\u0bb0\u0bc0\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc1\u0baa\u0bc0\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVR": {
+        "displayName": {
+          "one": "\u0bae\u0bbe\u0bb2\u0ba4\u0bcd\u0ba4\u0bc0\u0bb5\u0bc1 \u0bb0\u0bc1\u0b83\u0baa\u0bbf\u0baf\u0bbe",
+          "other": "\u0bae\u0bbe\u0bb2\u0ba4\u0bcd\u0ba4\u0bc0\u0bb5\u0bc1 \u0bb0\u0bc1\u0b83\u0baa\u0bbf\u0baf\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "one": "\u0bae\u0bb2\u0bbe\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0b9a\u0bcd\u0b9a\u0bbe",
+          "other": "\u0bae\u0bb2\u0bbe\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0b9a\u0bcd\u0b9a\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "one": "\u0bae\u0bc6\u0b95\u0bcd\u0bb8\u0bbf\u0b95\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0bae\u0bc6\u0b95\u0bcd\u0bb8\u0bbf\u0b95\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MYR": {
+        "displayName": {
+          "one": "\u0bae\u0bb2\u0bc7\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0b99\u0bcd\u0b95\u0bbf\u0b9f\u0bcd",
+          "other": "\u0bae\u0bb2\u0bc7\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bbf\u0b99\u0bcd\u0b95\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZN": {
+        "displayName": {
+          "one": "\u0bae\u0bca\u0b9a\u0bbe\u0bae\u0bcd\u0baa\u0bbf\u0b95\u0ba9\u0bcd \u0bae\u0bc6\u0b9f\u0bbf\u0b95\u0bb2\u0bcd",
+          "other": "\u0bae\u0bca\u0b9a\u0bbe\u0bae\u0bcd\u0baa\u0bbf\u0b95\u0ba9\u0bcd \u0bae\u0bc6\u0b9f\u0bbf\u0b95\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "one": "\u0ba8\u0bae\u0bc0\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0ba8\u0bae\u0bc0\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "one": "\u0ba8\u0bc8\u0b9c\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba8\u0bc8\u0bb0\u0bbe",
+          "other": "\u0ba8\u0bc8\u0b9c\u0bc0\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0ba8\u0bc8\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIO": {
+        "displayName": {
+          "one": "\u0ba8\u0bbf\u0b95\u0bb0\u0b95\u0bc1\u0bb5\u0ba9\u0bcd \u0b95\u0bcb\u0bb0\u0bcd\u0b9f\u0bcb\u0baa\u0bbe",
+          "other": "\u0ba8\u0bbf\u0b95\u0bb0\u0b95\u0bc1\u0bb5\u0ba9\u0bcd \u0b95\u0bcb\u0bb0\u0bcd\u0b9f\u0bcb\u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NOK": {
+        "displayName": {
+          "one": "\u0ba8\u0bbe\u0bb0\u0bcd\u0bb5\u0bc7\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bcd",
+          "other": "\u0ba8\u0bbe\u0bb0\u0bcd\u0bb5\u0bc7\u0b9c\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bb0\u0bcd"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "one": "\u0ba8\u0bc7\u0baa\u0bbe\u0bb3\u0bc0\u0bb8\u0bcd \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd",
+          "other": "\u0ba8\u0bc7\u0baa\u0bbe\u0bb3\u0bc0\u0bb8\u0bcd \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "one": "\u0ba8\u0bbf\u0baf\u0bc2\u0b9a\u0bbf\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0ba8\u0bbf\u0baf\u0bc2\u0b9a\u0bbf\u0bb2\u0bbe\u0ba8\u0bcd\u0ba4\u0bc1 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "one": "\u0b93\u0bae\u0bbe\u0ba9\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0b93\u0bae\u0bbe\u0ba9\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "one": "\u0baa\u0ba9\u0bbe\u0bae\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bbe\u0bb2\u0bcd\u0baa\u0bcb\u0bb5\u0bbe",
+          "other": "\u0baa\u0ba9\u0bbe\u0bae\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bbe\u0bb2\u0bcd\u0baa\u0bcb\u0bb5\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEN": {
+        "displayName": {
+          "one": "\u0baa\u0bc6\u0bb0\u0bc2\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0b9a\u0bcb\u0bb2\u0bcd",
+          "other": "\u0baa\u0bc6\u0bb0\u0bc2\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0b9a\u0bcb\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PGK": {
+        "displayName": {
+          "other": "\u0baa\u0baa\u0bc1\u0bb5\u0bbe \u0ba8\u0bbf\u0baf\u0bc2 \u0b95\u0bbf\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bbf\u0ba9\u0bbe"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "one": "\u0baa\u0bbf\u0bb2\u0bbf\u0baa\u0bcd\u0baa\u0bc8\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0baa\u0bbf\u0bb2\u0bbf\u0baa\u0bcd\u0baa\u0bc8\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20b1",
+        "symbol": "PHP"
+      },
+      "PKR": {
+        "displayName": {
+          "one": "\u0baa\u0bbe\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd",
+          "other": "\u0baa\u0bbe\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Rs",
+        "symbol": "PKR"
+      },
+      "PLN": {
+        "displayName": {
+          "one": "\u0baa\u0bcb\u0bb2\u0bbf\u0bb7\u0bcd \u0bb8\u0bcd\u0bb2\u0bbe\u0b9f\u0bcd\u0b9f\u0bbf",
+          "other": "\u0baa\u0bcb\u0bb2\u0bbf\u0bb7\u0bcd \u0bb8\u0bcd\u0bb2\u0bbe\u0b9f\u0bcd\u0b9f\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PYG": {
+        "displayName": {
+          "one": "\u0baa\u0bb0\u0bbe\u0b95\u0bc1\u0bb5\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0bb0\u0bbe\u0ba9\u0bbf",
+          "other": "\u0baa\u0bb0\u0bbe\u0b95\u0bc1\u0bb5\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0bb0\u0bbe\u0ba9\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "one": "\u0b95\u0ba4\u0bcd\u0ba4\u0bbe\u0bb0\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0b95\u0ba4\u0bcd\u0ba4\u0bbe\u0bb0\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "RON": {
+        "displayName": {
+          "one": "\u0bb0\u0bcb\u0bae\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bc2",
+          "other": "\u0bb0\u0bcb\u0bae\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bc7\u0baf\u0bcd"
+        },
+        "narrow": "lei",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "one": "\u0b9a\u0bc6\u0bb0\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0b9a\u0bc6\u0bb0\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "one": "\u0bb0\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd",
+          "other": "\u0bb0\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0bb0\u0bc2\u0baa\u0bbf\u0bb3\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RWF": {
+        "displayName": {
+          "one": "\u0bb0\u0bc1\u0bb5\u0bbe\u0ba3\u0bcd\u0b9f\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0bb0\u0bc1\u0bb5\u0bbe\u0ba3\u0bcd\u0b9f\u0ba9\u0bcd \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "one": "\u0b9a\u0bb5\u0bc1\u0ba4\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0b9a\u0bb5\u0bc1\u0ba4\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "one": "\u0b9a\u0bbe\u0bb2\u0bae\u0ba9\u0bcd \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b9a\u0bbe\u0bb2\u0bae\u0ba9\u0bcd \u0ba4\u0bc0\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0b9a\u0bc0\u0bb2\u0bcb\u0baf\u0bbf\u0bb8\u0bcd \u0bb0\u0bc1\u0baa\u0bc0",
+          "other": "\u0b9a\u0bbf\u0b9a\u0bc0\u0bb2\u0bcb\u0baf\u0bbf\u0bb8\u0bcd \u0bb0\u0bc1\u0baa\u0bc0\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDG": {
+        "displayName": {
+          "one": "\u0b9a\u0bc2\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b9a\u0bc2\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SEK": {
+        "displayName": {
+          "one": "\u0bb8\u0bcd\u0bb5\u0bc0\u0b9f\u0bbf\u0bb7\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bbe",
+          "other": "\u0bb8\u0bcd\u0bb5\u0bc0\u0b9f\u0bbf\u0bb7\u0bcd \u0b95\u0bcd\u0bb0\u0bcb\u0ba9\u0bb0\u0bcd"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0bc2\u0bb0\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0bc2\u0bb0\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "one": "\u0b9a\u0bc6\u0baf\u0bbf\u0ba9\u0bcd\u0b9f\u0bcd \u0bb9\u0bc6\u0bb2\u0bc7\u0ba9\u0bbe \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b9a\u0bc6\u0baf\u0bbf\u0ba9\u0bcd\u0b9f\u0bcd \u0bb9\u0bc6\u0bb2\u0bc7\u0ba9\u0bbe \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SLE": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0baf\u0bbe\u0bb0\u0bbe \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bcd",
+          "other": "\u0b9a\u0bbf\u0baf\u0bbe\u0bb0\u0bbe \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0baf\u0bbe\u0bb0\u0bbe \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bcd (1964\u20142022)",
+          "other": "\u0b9a\u0bbf\u0baf\u0bbe\u0bb0\u0bbe \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb2\u0bbf\u0baf\u0bcb\u0ba9\u0bcd\u0b95\u0bb3\u0bcd (1964\u20142022)"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "one": "\u0b9a\u0bcb\u0bae\u0bbe\u0bb2\u0bbf \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd",
+          "other": "\u0b9a\u0bcb\u0bae\u0bbe\u0bb2\u0bbf \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "one": "\u0b9a\u0bc1\u0bb0\u0bbf\u0ba9\u0bbe\u0bae\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b9a\u0bc1\u0bb0\u0bbf\u0ba9\u0bbe\u0bae\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SSP": {
+        "displayName": {
+          "one": "\u0ba4\u0bc6\u0bb1\u0bcd\u0b95\u0bc1 \u0b9a\u0bc2\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0ba4\u0bc6\u0bb1\u0bcd\u0b95\u0bc1 \u0b9a\u0bc2\u0b9f\u0bbe\u0ba9\u0bc0\u0bb8\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "one": "\u0b9a\u0bbe\u0bb5\u0bcd \u0b9f\u0bcb\u0bae\u0bbf \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0baa\u0bbf\u0bb0\u0bbf\u0ba9\u0bcd\u0bb8\u0bcd\u0baa\u0bbf \u0b9f\u0bcb\u0baa\u0bcd\u0bb0\u0bbe (1977\u20132017)",
+          "other": "\u0b9a\u0bbe\u0bb5\u0bcd \u0b9f\u0bcb\u0bae\u0bbf \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0baa\u0bbf\u0bb0\u0bbf\u0ba9\u0bcd\u0bb8\u0bcd\u0baa\u0bbf \u0b9f\u0bcb\u0baa\u0bcd\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "one": "\u0b9a\u0bbe\u0bb5\u0bcd \u0b9f\u0bcb\u0bae\u0bbf \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0baa\u0bbf\u0bb0\u0bbf\u0ba9\u0bcd\u0bb8\u0bcd\u0baa\u0bbf \u0b9f\u0bcb\u0baa\u0bcd\u0bb0\u0bbe",
+          "other": "\u0b9a\u0bbe\u0bb5\u0bcd \u0b9f\u0bcb\u0bae\u0bbf \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0baa\u0bbf\u0bb0\u0bbf\u0ba9\u0bcd\u0bb8\u0bcd\u0baa\u0bbf \u0b9f\u0bcb\u0baa\u0bcd\u0bb0\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SYP": {
+        "displayName": {
+          "one": "\u0b9a\u0bbf\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+          "other": "\u0b9a\u0bbf\u0bb0\u0bbf\u0baf\u0ba9\u0bcd \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "one": "\u0b9a\u0bc1\u0bb5\u0bbe\u0bb8\u0bbf \u0bb2\u0bbf\u0bb2\u0bbe\u0b99\u0bcd\u0b95\u0ba9\u0bbf",
+          "other": "\u0b9a\u0bc1\u0bb5\u0bbe\u0bb8\u0bbf \u0b8e\u0bae\u0bbe\u0bb2\u0bbe\u0b99\u0bcd\u0b95\u0ba9\u0bbf"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "other": "\u0ba4\u0bbe\u0baf\u0bcd \u0baa\u0bbe\u0b9f\u0bcd"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "\u0e3f"
+      },
+      "TJS": {
+        "displayName": {
+          "one": "\u0ba4\u0b9c\u0bbf\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9a\u0bcb\u0bae\u0bcb\u0ba9\u0bbf",
+          "other": "\u0ba4\u0b9c\u0bbf\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9a\u0bcb\u0bae\u0bcb\u0ba9\u0bbf\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMT": {
+        "displayName": {
+          "other": "\u0ba4\u0bc1\u0bb0\u0bcd\u0b95\u0bcd\u0bae\u0bc6\u0ba9\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0bae\u0ba9\u0ba4\u0bcd"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "one": "\u0ba4\u0bc1\u0ba9\u0bbf\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd",
+          "other": "\u0ba4\u0bc1\u0ba9\u0bbf\u0bb7\u0bbf\u0baf\u0ba9\u0bcd \u0ba4\u0bbf\u0ba9\u0bbe\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "other": "\u0ba4\u0bca\u0b99\u0bcd\u0b95\u0bbe\u0ba9\u0bcd \u0baa\u0b99\u0bcd\u0b95\u0bbe"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TRY": {
+        "displayName": {
+          "other": "\u0ba4\u0bc1\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bbf\u0bb7\u0bcd \u0bb2\u0bc0\u0bb0\u0bbe"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "one": "\u0b9f\u0bbf\u0bb0\u0bbf\u0ba9\u0bbf\u0b9f\u0bbe\u0b9f\u0bcd \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0b9f\u0bcb\u0baa\u0bbe\u0b95\u0bcb \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b9f\u0bbf\u0bb0\u0bbf\u0ba9\u0bbf\u0b9f\u0bbe\u0b9f\u0bcd \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0b9f\u0bcb\u0baa\u0bbe\u0b95\u0bcb \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "one": "\u0baa\u0bc1\u0ba4\u0bbf\u0baf \u0ba4\u0bc8\u0bb5\u0bbe\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0baa\u0bc1\u0ba4\u0bbf\u0baf \u0ba4\u0bc8\u0bb5\u0bbe\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "one": "\u0ba4\u0bbe\u0ba9\u0bcd\u0b9a\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd",
+          "other": "\u0ba4\u0bbe\u0ba9\u0bcd\u0b9a\u0bbe\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "one": "\u0b89\u0b95\u0bcd\u0bb0\u0bc8\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb9\u0bbf\u0bb0\u0bc8\u0bb5\u0bcd\u0ba9\u0bbf\u0baf\u0bbe",
+          "other": "\u0b89\u0b95\u0bcd\u0bb0\u0bc8\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb9\u0bbf\u0bb0\u0bc8\u0bb5\u0bcd\u0ba9\u0bbf\u0baf\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UGX": {
+        "displayName": {
+          "one": "\u0b89\u0b95\u0bbe\u0ba3\u0bcd\u0b9f\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd",
+          "other": "\u0b89\u0b95\u0bbe\u0ba3\u0bcd\u0b9f\u0ba9\u0bcd \u0bb7\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "one": "\u0b85\u0bae\u0bc6\u0bb0\u0bbf\u0b95\u0bcd\u0b95 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b85\u0bae\u0bc6\u0bb0\u0bbf\u0b95\u0bcd\u0b95 \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "$"
+      },
+      "UYU": {
+        "displayName": {
+          "one": "\u0b89\u0bb0\u0bc1\u0b95\u0bc1\u0bb5\u0bc7\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb",
+          "other": "\u0b89\u0bb0\u0bc1\u0b95\u0bc1\u0bb5\u0bc7\u0baf\u0ba9\u0bcd \u0baa\u0bc6\u0b9a\u0bcb\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "other": "\u0b89\u0bb8\u0bcd\u0baa\u0bc6\u0b95\u0bcd\u0b95\u0bbf\u0bb8\u0bcd\u0ba4\u0bbe\u0ba9\u0bbf \u0b9a\u0bcb\u0bae\u0bcd"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEF": {
+        "displayName": {
+          "one": "\u0bb5\u0bc6\u0ba9\u0bbf\u0b9a\u0bc1\u0bb2\u0ba9\u0bcd \u0baa\u0bcb\u0bb2\u0bbf\u0bb5\u0bb0\u0bcd (2008\u20132018)",
+          "other": "\u0bb5\u0bc6\u0ba9\u0bbf\u0b9a\u0bc1\u0bb2\u0ba9\u0bcd \u0baa\u0bcb\u0bb2\u0bbf\u0bb5\u0bb0\u0bcd\u0b95\u0bb3\u0bcd (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "one": "\u0bb5\u0bc6\u0ba9\u0bbf\u0b9a\u0bc1\u0bb2\u0ba9\u0bcd \u0baa\u0bcb\u0bb2\u0bbf\u0bb5\u0bb0\u0bcd",
+          "other": "\u0bb5\u0bc6\u0ba9\u0bbf\u0b9a\u0bc1\u0bb2\u0ba9\u0bcd \u0baa\u0bcb\u0bb2\u0bbf\u0bb5\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "other": "\u0bb5\u0bbf\u0baf\u0b9f\u0bcd\u0ba8\u0bbe\u0bae\u0bc0\u0bb8\u0bcd \u0b9f\u0bbe\u0b99\u0bcd"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VUV": {
+        "displayName": {
+          "one": "\u0bb5\u0ba9\u0bc1\u0bb5\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1 \u0bb5\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1",
+          "other": "\u0bb5\u0ba9\u0bc1\u0bb5\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1 \u0bb5\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "other": "\u0b9a\u0bae\u0bcb\u0bb5\u0bbe\u0ba9\u0bcd \u0ba4\u0bbe\u0bb2\u0bbe"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "one": "\u0bae\u0ba4\u0bcd\u0ba4\u0bbf\u0baf \u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95 CFA \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0bae\u0ba4\u0bcd\u0ba4\u0bbf\u0baf \u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95 CFA \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XCD": {
+        "displayName": {
+          "one": "\u0b95\u0bbf\u0bb4\u0b95\u0bcd\u0b95\u0bc1 \u0b95\u0bb0\u0bc0\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd",
+          "other": "\u0b95\u0bbf\u0bb4\u0b95\u0bcd\u0b95\u0bc1 \u0b95\u0bb0\u0bc0\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b9f\u0bbe\u0bb2\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XOF": {
+        "displayName": {
+          "one": "\u0bae\u0bc7\u0bb1\u0bcd\u0b95\u0bc1 \u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95 CFA \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd",
+          "other": "\u0bae\u0bc7\u0bb1\u0bcd\u0b95\u0bc1 \u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95 CFA \u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPF": {
+        "displayName": {
+          "one": "\u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bcd (CFP)",
+          "other": "\u0b83\u0baa\u0bcd\u0bb0\u0bbe\u0b99\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd (CFP)"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XXX": {
+        "displayName": {
+          "one": "(\u0ba4\u0bc6\u0bb0\u0bbf\u0baf\u0bbe\u0ba4 \u0ba8\u0bbe\u0ba3\u0baf \u0b85\u0bb2\u0b95\u0bc1)",
+          "other": "(\u0ba4\u0bc6\u0bb0\u0bbf\u0baf\u0bbe\u0ba4 \u0ba8\u0bbe\u0ba3\u0baf\u0bae\u0bcd)"
+        },
+        "narrow": "\u00a4",
+        "symbol": "\u00a4"
+      },
+      "YER": {
+        "displayName": {
+          "one": "\u0b8f\u0bae\u0ba9\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd",
+          "other": "\u0b8f\u0bae\u0ba9\u0bbf \u0bb0\u0bbf\u0baf\u0bbe\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "ZAR": {
+        "displayName": {
+          "other": "\u0ba4\u0bc6\u0ba9\u0bcd \u0b86\u0baa\u0bcd\u0bb0\u0bbf\u0b95\u0bcd\u0b95 \u0bb0\u0bbe\u0ba3\u0bcd\u0b9f\u0bcd"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "other": "\u0bb8\u0bbe\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0b9a\u0bbe (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "one": "\u0bb8\u0bbe\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0b9a\u0bcd\u0b9a\u0bbe",
+          "other": "\u0bb8\u0bbe\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0ba9\u0bcd \u0b95\u0bc1\u0bb5\u0bbe\u0b9a\u0bcd\u0b9a\u0bbe\u0b95\u0bcd\u0b95\u0bb3\u0bcd"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "\u00a4#,##0.00;(\u00a4#,##0.00)",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "\u00a4\u00a00\u0b86"
+            },
+            "10000": {
+              "other": "\u00a4\u00a000\u0b86"
+            },
+            "100000": {
+              "other": "\u00a4\u00a0000\u0b86"
+            },
+            "1000000": {
+              "other": "\u00a4\u00a00\u0bae\u0bbf"
+            },
+            "10000000": {
+              "other": "\u00a4\u00a000\u0bae\u0bbf"
+            },
+            "100000000": {
+              "other": "\u00a4\u00a0000\u0bae\u0bbf"
+            },
+            "1000000000": {
+              "one": "\u00a4\u00a00\u0baa\u0bbf",
+              "other": "\u00a40\u0baa\u0bbf"
+            },
+            "10000000000": {
+              "other": "\u00a4\u00a000\u0baa\u0bbf"
+            },
+            "100000000000": {
+              "one": "\u00a4\u00a0000\u0baa\u0bbf",
+              "other": "\u00a4000\u0baa\u0bbf"
+            },
+            "1000000000000": {
+              "other": "\u00a4\u00a00\u0b9f\u0bbf"
+            },
+            "10000000000000": {
+              "other": "\u00a4\u00a000\u0b9f\u0bbf"
+            },
+            "100000000000000": {
+              "other": "\u00a4\u00a0000\u0b9f\u0bbf"
+            }
+          },
+          "standard": "\u00a4#,##,##0.00",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "other": "0 \u0b86\u0baf\u0bbf\u0bb0\u0bae\u0bcd"
+            },
+            "10000": {
+              "other": "00 \u0b86\u0baf\u0bbf\u0bb0\u0bae\u0bcd"
+            },
+            "100000": {
+              "other": "000 \u0b86\u0baf\u0bbf\u0bb0\u0bae\u0bcd"
+            },
+            "1000000": {
+              "other": "0 \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "10000000": {
+              "other": "00 \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "100000000": {
+              "other": "000 \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "1000000000": {
+              "other": "0 \u0baa\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "10000000000": {
+              "other": "00 \u0baa\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "100000000000": {
+              "other": "000 \u0baa\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "1000000000000": {
+              "other": "0 \u0b9f\u0bbf\u0bb0\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "10000000000000": {
+              "other": "00 \u0b9f\u0bbf\u0bb0\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            },
+            "100000000000000": {
+              "other": "000 \u0b9f\u0bbf\u0bb0\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0baf\u0ba9\u0bcd"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0\u0b86"
+            },
+            "10000": {
+              "other": "00\u0b86"
+            },
+            "100000": {
+              "other": "000\u0b86"
+            },
+            "1000000": {
+              "other": "0\u0bae\u0bbf"
+            },
+            "10000000": {
+              "other": "00\u0bae\u0bbf"
+            },
+            "100000000": {
+              "other": "000\u0bae\u0bbf"
+            },
+            "1000000000": {
+              "other": "0\u0baa\u0bbf"
+            },
+            "10000000000": {
+              "other": "00\u0baa\u0bbf"
+            },
+            "100000000000": {
+              "other": "000\u0baa\u0bbf"
+            },
+            "1000000000000": {
+              "other": "0\u0b9f\u0bbf"
+            },
+            "10000000000000": {
+              "other": "00\u0b9f\u0bbf"
+            },
+            "100000000000000": {
+              "other": "000\u0b9f\u0bbf"
+            }
+          },
+          "standard": "#,##,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ".",
+          "exponential": "E",
+          "group": ",",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "-",
+          "nan": "NaN",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "+",
+          "rangeSign": "\u2013",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{0}/{1}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "other": "{0} \u0b8f\u0b95\u0bcd\u0b95\u0bb0\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b8f\u0b95\u0bcd."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0b8f\u0b95\u0bcd."
+          }
+        },
+        "bit": {
+          "long": {
+            "one": "{0} \u0baa\u0bbf\u0b9f\u0bcd",
+            "other": "{0} \u0baa\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0baa\u0bbf\u0b9f\u0bcd"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0baa\u0bbf\u0b9f\u0bcd"
+          }
+        },
+        "byte": {
+          "long": {
+            "one": "{0} \u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0baa\u0bc8."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0baa\u0bc8."
+          }
+        },
+        "celsius": {
+          "long": {
+            "other": "{0} \u0b9f\u0bbf\u0b95\u0bbf\u0bb0\u0bbf \u0b9a\u0bc6\u0bb2\u0bcd\u0b9a\u0bbf\u0baf\u0bb8\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u00b0\u0b9a\u0bc6."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0\u0b9a\u0bc6."
+          }
+        },
+        "centimeter": {
+          "long": {
+            "one": "{0} \u0b9a\u0bc6\u0ba9\u0bcd\u0b9f\u0bbf\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0b9a\u0bc6\u0ba9\u0bcd\u0b9f\u0bbf\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0b9a\u0bc6.\u0bae\u0bc0."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b9a\u0bc6\u0ba9\u0bcd\u0b9f\u0bbf\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "narrow": "{0}/\u0b9a\u0bc6.\u0bae\u0bc0.",
+            "short": "{0}/\u0b9a\u0bc6.\u0bae\u0bc0."
+          },
+          "short": {
+            "other": "{0} \u0b9a\u0bc6.\u0bae\u0bc0."
+          }
+        },
+        "day": {
+          "long": {
+            "one": "{0} \u0ba8\u0bbe\u0bb3\u0bcd",
+            "other": "{0} \u0ba8\u0bbe\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0ba8\u0bbe"
+          },
+          "perUnit": {
+            "long": "{0} / \u0ba8\u0bbe\u0bb3\u0bcd",
+            "narrow": "{0}/\u0ba8\u0bbe",
+            "short": "{0}/\u0ba8\u0bbe"
+          },
+          "short": {
+            "one": "{0} \u0ba8\u0bbe\u0bb3\u0bcd",
+            "other": "{0} \u0ba8\u0bbe\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          }
+        },
+        "degree": {
+          "long": {
+            "one": "{0} \u0b9f\u0bbf\u0b95\u0bbf\u0bb0\u0bbf",
+            "other": "{0} \u0b9f\u0bbf\u0b95\u0bbf\u0bb0\u0bc0\u0bb8\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0b9f\u0bbf\u0b95\u0bbf."
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "other": "{0} \u0b9f\u0bbf\u0b95\u0bbf\u0bb0\u0bbf \u0b83\u0baa\u0bbe\u0bb0\u0ba9\u0bcd\u0bb9\u0bc0\u0b9f\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u00b0\u0b83\u0baa\u0bbe."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0\u0b83\u0baa\u0bbe."
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "one": "{0} \u0ba4\u0bbf\u0bb0\u0bb5 \u0b85\u0bb5\u0bc1\u0ba9\u0bcd\u0bb8\u0bcd",
+            "other": "{0} \u0ba4\u0bbf\u0bb0\u0bb5 \u0b85\u0bb5\u0bc1\u0ba9\u0bcd\u0bb8\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0ba4\u0bbf.\u0b85\u0bb5\u0bc1."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0ba4\u0bbf. \u0b85\u0bb5\u0bc1."
+          }
+        },
+        "foot": {
+          "long": {
+            "other": "{0} \u0b85\u0b9f\u0bbf"
+          },
+          "narrow": {
+            "other": "{0} \u0b85\u0b9f\u0bbf"
+          },
+          "perUnit": {
+            "long": "{0}/\u0b85\u0b9f\u0bbf",
+            "narrow": "{0}/\u0b85\u0b9f\u0bbf",
+            "short": "{0}/\u0b85\u0b9f\u0bbf"
+          },
+          "short": {
+            "other": "{0} \u0b85\u0b9f\u0bbf"
+          }
+        },
+        "gallon": {
+          "long": {
+            "one": "{0} \u0b95\u0bc7\u0bb2\u0ba9\u0bcd",
+            "other": "{0} \u0b95\u0bc7\u0bb2\u0ba9\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0b95\u0bc7\u0bb2."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b95\u0bc7\u0bb2\u0ba9\u0bcd",
+            "narrow": "{0}/\u0b95\u0bc7\u0bb2.",
+            "short": "{0}/\u0b95\u0bc7\u0bb2."
+          },
+          "short": {
+            "other": "{0} \u0b95\u0bc7\u0bb2."
+          }
+        },
+        "gigabit": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0b95\u0bbe\u0baa\u0bbf\u0b9f\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0b95\u0bbe\u0baa\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}Gb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Gb"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0b95\u0bbe\u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0b95\u0bbe\u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}GB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} GB"
+          }
+        },
+        "gram": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b95\u0bbf."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd",
+            "narrow": "{0}/\u0b95\u0bbf.",
+            "short": "{0}/\u0b95\u0bbf."
+          },
+          "short": {
+            "other": "{0} \u0b95\u0bbf."
+          }
+        },
+        "hectare": {
+          "long": {
+            "one": "{0} \u0bb9\u0bc6\u0b95\u0bcd\u0b9f\u0bc7\u0bb0\u0bcd",
+            "other": "{0} \u0bb9\u0bc6\u0b95\u0bcd\u0b9f\u0bc7\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bb9\u0bc6\u0b95\u0bcd."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bb9\u0bc6\u0b95\u0bcd."
+          }
+        },
+        "hour": {
+          "long": {
+            "one": "{0} \u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd",
+            "other": "{0} \u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0b99\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bae.\u0ba8\u0bc7."
+          },
+          "perUnit": {
+            "long": "{0} / \u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd",
+            "narrow": "{0} /\u0bae.\u0ba8\u0bc7",
+            "short": "{0} /\u0bae.\u0ba8\u0bc7"
+          },
+          "short": {
+            "other": "{0} \u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd"
+          }
+        },
+        "inch": {
+          "long": {
+            "one": "{0} \u0b85\u0b99\u0bcd\u0b95\u0bc1\u0bb2\u0bae\u0bcd",
+            "other": "{0} \u0b85\u0b99\u0bcd\u0b95\u0bc1\u0bb2\u0b99\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b85\u0b99\u0bcd."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b85\u0b99\u0bcd\u0b95\u0bc1\u0bb2\u0bae\u0bcd",
+            "narrow": "{0}/\u0b85\u0b99\u0bcd.",
+            "short": "{0}/\u0b85\u0b99\u0bcd."
+          },
+          "short": {
+            "other": "{0} \u0b85\u0b99\u0bcd."
+          }
+        },
+        "kilobit": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0baa\u0bbf\u0b9f\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0baa\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}kb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kb"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}kB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kB"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0b95\u0bbf.\u0b95\u0bbf."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b95\u0bbf\u0bb2\u0bcb\u0b95\u0bbf\u0bb0\u0bbe\u0bae\u0bcd",
+            "narrow": "{0}/\u0b95\u0bbf.\u0b95\u0bbf.",
+            "short": "{0}/\u0b95\u0bbf.\u0b95\u0bbf."
+          },
+          "short": {
+            "other": "{0} \u0b95\u0bbf.\u0b95\u0bbf."
+          }
+        },
+        "kilometer": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0b95\u0bbf.\u0bae\u0bc0."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "narrow": "{0}/\u0b95\u0bbf.\u0bae\u0bc0.",
+            "short": "{0}/\u0b95\u0bbf.\u0bae\u0bc0."
+          },
+          "short": {
+            "other": "{0} \u0b95\u0bbf.\u0bae\u0bc0."
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "one": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd/\u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd",
+            "other": "{0} \u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd/\u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0b95\u0bbf.\u0bae\u0bc0./\u0bae."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0b95\u0bbf.\u0bae\u0bc0./\u0bae.\u0ba8\u0bc7."
+          }
+        },
+        "liter": {
+          "long": {
+            "one": "{0} \u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bb2\u0bbf."
+          },
+          "perUnit": {
+            "long": "{0}/\u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "narrow": "{0}/\u0bb2\u0bbf.",
+            "short": "{0}/\u0bb2\u0bbf."
+          },
+          "short": {
+            "other": "{0} \u0bb2\u0bbf."
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "one": "{0} \u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd/\u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd/\u0b95\u0bbf\u0bb2\u0bcb\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bb2\u0bbf./\u0b95\u0bbf.\u0bae\u0bc0."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bb2\u0bbf./\u0b95\u0bbf.\u0bae\u0bc0."
+          }
+        },
+        "megabit": {
+          "long": {
+            "one": "{0} \u0bae\u0bc6\u0b95\u0bbe\u0baa\u0bbf\u0b9f\u0bcd",
+            "other": "{0} \u0bae\u0bc6\u0b95\u0bbe\u0baa\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}Mb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Mb"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "one": "{0} \u0bae\u0bc6\u0b95\u0bbe\u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0bae\u0bc6\u0b95\u0bbe\u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}MB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} MB"
+          }
+        },
+        "meter": {
+          "long": {
+            "one": "{0} \u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bae\u0bc0."
+          },
+          "perUnit": {
+            "long": "{0}/\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "narrow": "{0}/\u0bae\u0bc0.",
+            "short": "{0}/\u0bae\u0bc0."
+          },
+          "short": {
+            "other": "{0} \u0bae\u0bc0."
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "one": "{0} \u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd/\u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf",
+            "other": "{0} \u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd/\u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf"
+          },
+          "narrow": {
+            "other": "{0} \u0bae\u0bc0/\u0bb5\u0bbf"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bc0/\u0bb5\u0bbf"
+          }
+        },
+        "mile": {
+          "long": {
+            "one": "{0} \u0bae\u0bc8\u0bb2\u0bcd",
+            "other": "{0} \u0bae\u0bc8\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bae\u0bc8."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bc8."
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "one": "{0} \u0bae\u0bc8\u0bb2\u0bcd/\u0b95\u0bc7\u0bb2\u0ba9\u0bcd",
+            "other": "{0} \u0bae\u0bc8\u0bb2\u0bcd\u0b95\u0bb3\u0bcd/\u0b95\u0bc7\u0bb2\u0ba9\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bae\u0bc8./\u0b95\u0bc7."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bc8./\u0b95\u0bc7."
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "one": "{0} \u0bae\u0bc8\u0bb2\u0bcd/\u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd",
+            "other": "{0} \u0bae\u0bc8\u0bb2\u0bcd\u0b95\u0bb3\u0bcd/\u0bae\u0ba3\u0bbf\u0ba8\u0bc7\u0bb0\u0bae\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bae\u0bc8/\u0bae.\u0ba8\u0bc7."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bc8/\u0bae.\u0ba8\u0bc7."
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "one": "{0} \u0bb8\u0bcd\u0b95\u0bc7\u0ba3\u0bcd\u0b9f\u0bbf\u0ba8\u0bc7\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0bae\u0bc8\u0bb2\u0bcd",
+            "other": "{0} \u0bb8\u0bcd\u0b95\u0bc7\u0ba3\u0bcd\u0b9f\u0bbf\u0ba8\u0bc7\u0bb5\u0bbf\u0baf\u0ba9\u0bcd \u0bae\u0bc8\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bb8\u0bcd.\u0bae\u0bc8."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bb8\u0bcd.\u0bae\u0bc8."
+          }
+        },
+        "milliliter": {
+          "long": {
+            "one": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bae\u0bbf\u0bb2\u0bbf"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bbf\u0bb2\u0bbf"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "one": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+            "other": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bae\u0bc0\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}\u0bae\u0bbf.\u0bae\u0bc0."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bbf.\u0bae\u0bc0."
+          }
+        },
+        "millisecond": {
+          "long": {
+            "one": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf",
+            "other": "{0} \u0bae\u0bbf\u0bb2\u0bcd\u0bb2\u0bbf\u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bae\u0bbf.\u0bb5\u0bbf."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bae\u0bbf.\u0bb5\u0bbf."
+          }
+        },
+        "minute": {
+          "long": {
+            "one": "{0} \u0ba8\u0bbf\u0bae\u0bbf\u0b9f\u0bae\u0bcd",
+            "other": "{0} \u0ba8\u0bbf\u0bae\u0bbf\u0b9f\u0b99\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0ba8\u0bbf\u0bae\u0bbf."
+          },
+          "perUnit": {
+            "long": "{0} / \u0ba8\u0bbf\u0bae\u0bbf\u0b9f\u0bae\u0bcd",
+            "narrow": "{0}/\u0ba8\u0bbf\u0bae\u0bbf.",
+            "short": "{0}/\u0ba8\u0bbf\u0bae\u0bbf\u0b9f"
+          },
+          "short": {
+            "one": "{0} \u0ba8\u0bbf\u0bae\u0bbf\u0b9f\u0bae\u0bcd",
+            "other": "{0} \u0ba8\u0bbf\u0bae\u0bbf\u0b9f"
+          }
+        },
+        "month": {
+          "long": {
+            "one": "{0} \u0bae\u0bbe\u0ba4\u0bae\u0bcd",
+            "other": "{0} \u0bae\u0bbe\u0ba4\u0b99\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bae\u0bbe"
+          },
+          "perUnit": {
+            "long": "{0} / \u0bae\u0bbe\u0ba4\u0bae\u0bcd",
+            "narrow": "{0}/\u0bae\u0bbe",
+            "short": "{0}/\u0bae\u0bbe"
+          },
+          "short": {
+            "one": "{0} \u0bae\u0bbe\u0ba4\u0bae\u0bcd",
+            "other": "{0} \u0bae\u0bbe\u0ba4."
+          }
+        },
+        "ounce": {
+          "long": {
+            "one": "{0} \u0b85\u0bb5\u0bc1\u0ba9\u0bcd\u0bb8\u0bcd",
+            "other": "{0} \u0b85\u0bb5\u0bc1\u0ba9\u0bcd\u0bb8\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b85\u0bb5\u0bc1."
+          },
+          "perUnit": {
+            "long": "{0}/\u0b85\u0bb5\u0bc1\u0ba9\u0bcd\u0bb8\u0bcd",
+            "narrow": "{0}/\u0b85\u0bb5\u0bc1.",
+            "short": "{0}/\u0b85\u0bb5\u0bc1."
+          },
+          "short": {
+            "other": "{0} \u0b85\u0bb5\u0bc1."
+          }
+        },
+        "percent": {
+          "long": {
+            "other": "{0} \u0b9a\u0ba4\u0bb5\u0bc0\u0ba4\u0bae\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "one": "{0} \u0baa\u0bc6\u0b9f\u0bbe\u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0baa\u0bc6\u0b9f\u0bbe\u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}PB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} PB"
+          }
+        },
+        "pound": {
+          "long": {
+            "one": "{0} \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+            "other": "{0} \u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0baa\u0bb5\u0bc1."
+          },
+          "perUnit": {
+            "long": "{0}/\u0baa\u0bb5\u0bc1\u0ba3\u0bcd\u0b9f\u0bc1",
+            "narrow": "{0}/\u0baa\u0bb5\u0bc1.",
+            "short": "{0}/\u0baa\u0bb5\u0bc1."
+          },
+          "short": {
+            "other": "{0} \u0baa\u0bb5\u0bc1."
+          }
+        },
+        "second": {
+          "long": {
+            "one": "{0} \u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf",
+            "other": "{0} \u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bb5\u0bbf."
+          },
+          "perUnit": {
+            "long": "{0}/\u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf",
+            "narrow": "{0}/\u0bb5\u0bbf.",
+            "short": "{0}/\u0bb5\u0bbf."
+          },
+          "short": {
+            "other": "{0} \u0bb5\u0bbf\u0ba8\u0bbe\u0b9f\u0bbf"
+          }
+        },
+        "stone": {
+          "long": {
+            "one": "{0} \u0bb8\u0bcd\u0b9f\u0bcb\u0ba9\u0bcd",
+            "other": "{0} \u0bb8\u0bcd\u0b9f\u0bcb\u0ba9\u0bcd\u0bb8\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bb8\u0bcd\u0b9f\u0bcb."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0bb8\u0bcd\u0b9f\u0bcb."
+          }
+        },
+        "terabit": {
+          "long": {
+            "one": "{0} \u0b9f\u0bc6\u0bb0\u0bbe\u0baa\u0bbf\u0b9f\u0bcd",
+            "other": "{0} \u0b9f\u0bc6\u0bb0\u0bbe\u0baa\u0bbf\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}Tb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Tb"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "one": "{0} \u0b9f\u0bc6\u0bb0\u0bbe\u0baa\u0bc8\u0b9f\u0bcd",
+            "other": "{0} \u0b9f\u0bc6\u0bb0\u0bbe\u0baa\u0bc8\u0b9f\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0}TB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} TB"
+          }
+        },
+        "week": {
+          "long": {
+            "one": "{0} \u0bb5\u0bbe\u0bb0\u0bae\u0bcd",
+            "other": "{0} \u0bb5\u0bbe\u0bb0\u0b99\u0bcd\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0bb5\u0bbe"
+          },
+          "perUnit": {
+            "long": "{0} / \u0bb5\u0bbe\u0bb0\u0bae\u0bcd",
+            "narrow": "{0}/\u0bb5\u0bbe.",
+            "short": "{0}/\u0bb5\u0bbe."
+          },
+          "short": {
+            "one": "{0} \u0bb5\u0bbe\u0bb0\u0bae\u0bcd",
+            "other": "{0} \u0bb5\u0bbe\u0bb0."
+          }
+        },
+        "yard": {
+          "long": {
+            "other": "{0} \u0b95\u0bc6\u0b9c\u0bae\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b95\u0bc6\u0b9c."
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0b95\u0bc6\u0b9c."
+          }
+        },
+        "year": {
+          "long": {
+            "one": "{0} \u0b86\u0ba3\u0bcd\u0b9f\u0bc1",
+            "other": "{0} \u0b86\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+          },
+          "narrow": {
+            "other": "{0} \u0b86"
+          },
+          "perUnit": {
+            "long": "\u0b92\u0bb0\u0bc1 \u0bb5\u0bb0\u0bc1\u0b9f\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd {0}",
+            "narrow": "{0}/\u0b86.",
+            "short": "{0}/\u0b86."
+          },
+          "short": {
+            "one": "{0} \u0b86\u0ba3\u0bcd\u0b9f\u0bc1",
+            "other": "{0} \u0b86\u0ba3\u0bcd\u0b9f\u0bc1."
+          }
+        }
+      }
+    }
+  },
+  "locale": "ta"
+}

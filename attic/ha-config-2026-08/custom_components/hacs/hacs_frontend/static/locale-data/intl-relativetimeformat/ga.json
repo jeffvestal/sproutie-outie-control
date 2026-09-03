@@ -1,0 +1,452 @@
+{
+  "data": {
+    "day": {
+      "-1": "inn\u00e9",
+      "-2": "ar\u00fa inn\u00e9",
+      "0": "inniu",
+      "1": "am\u00e1rach",
+      "2": "ar\u00fa am\u00e1rach",
+      "future": {
+        "few": "i gceann {0} l\u00e1",
+        "many": "i gceann {0} l\u00e1",
+        "one": "i gceann {0} l\u00e1",
+        "other": "i gceann {0} l\u00e1",
+        "two": "i gceann {0} l\u00e1"
+      },
+      "past": {
+        "few": "{0} l\u00e1 \u00f3 shin",
+        "many": "{0} l\u00e1 \u00f3 shin",
+        "one": "{0} l\u00e1 \u00f3 shin",
+        "other": "{0} l\u00e1 \u00f3 shin",
+        "two": "{0} l\u00e1 \u00f3 shin"
+      }
+    },
+    "day-narrow": {
+      "-1": "inn\u00e9",
+      "-2": "ar\u00fa inn\u00e9",
+      "0": "inniu",
+      "1": "am\u00e1rach",
+      "2": "ar\u00fa am\u00e1rach",
+      "future": {
+        "few": "+{0} l\u00e1",
+        "many": "+{0} l\u00e1",
+        "one": "+{0} l\u00e1",
+        "other": "+{0} l\u00e1",
+        "two": "+{0} l\u00e1"
+      },
+      "past": {
+        "few": "-{0} l\u00e1",
+        "many": "-{0} l\u00e1",
+        "one": "-{0} l\u00e1",
+        "other": "-{0} l\u00e1",
+        "two": "-{0} l\u00e1"
+      }
+    },
+    "day-short": {
+      "-1": "inn\u00e9",
+      "-2": "ar\u00fa inn\u00e9",
+      "0": "inniu",
+      "1": "am\u00e1rach",
+      "2": "ar\u00fa am\u00e1rach",
+      "future": {
+        "few": "i gceann {0} l\u00e1",
+        "many": "i gceann {0} l\u00e1",
+        "one": "i gceann {0} l\u00e1",
+        "other": "i gceann {0} l\u00e1",
+        "two": "i gceann {0} l\u00e1"
+      },
+      "past": {
+        "few": "{0} l\u00e1 \u00f3 shin",
+        "many": "{0} l\u00e1 \u00f3 shin",
+        "one": "{0} l\u00e1 \u00f3 shin",
+        "other": "{0} l\u00e1 \u00f3 shin",
+        "two": "{0} l\u00e1 \u00f3 shin"
+      }
+    },
+    "hour": {
+      "0": "an uair seo",
+      "future": {
+        "few": "i gceann {0} uair an chloig",
+        "many": "i gceann {0} n-uair an chloig",
+        "one": "i gceann {0} uair an chloig",
+        "other": "i gceann {0} uair an chloig",
+        "two": "i gceann {0} uair an chloig"
+      },
+      "past": {
+        "few": "{0} uair an chloig \u00f3 shin",
+        "many": "{0} n-uair an chloig \u00f3 shin",
+        "one": "{0} uair an chloig \u00f3 shin",
+        "other": "{0} uair an chloig \u00f3 shin",
+        "two": "{0} uair an chloig \u00f3 shin"
+      }
+    },
+    "hour-narrow": {
+      "0": "an uair seo",
+      "future": {
+        "few": "+{0} u",
+        "many": "+{0} u",
+        "one": "+{0} u",
+        "other": "+{0} u",
+        "two": "+{0} u"
+      },
+      "past": {
+        "few": "-{0} u",
+        "many": "-{0} u",
+        "one": "-{0} u",
+        "other": "-{0} u",
+        "two": "-{0} u"
+      }
+    },
+    "hour-short": {
+      "0": "an uair seo",
+      "future": {
+        "few": "i gceann {0} huaire",
+        "many": "i gceann {0} n-uaire",
+        "one": "i gceann {0} uair",
+        "other": "i gceann {0} uair",
+        "two": "i gceann {0} uair"
+      },
+      "past": {
+        "few": "{0} huaire \u00f3 shin",
+        "many": "{0} n-uaire \u00f3 shin",
+        "one": "{0} uair \u00f3 shin",
+        "other": "{0} uair \u00f3 shin",
+        "two": "{0} uair \u00f3 shin"
+      }
+    },
+    "minute": {
+      "0": "an n\u00f3im\u00e9ad seo",
+      "future": {
+        "few": "i gceann {0} n\u00f3im\u00e9ad",
+        "many": "i gceann {0} n\u00f3im\u00e9ad",
+        "one": "i gceann {0} n\u00f3im\u00e9ad",
+        "other": "i gceann {0} n\u00f3im\u00e9ad",
+        "two": "i gceann {0} n\u00f3im\u00e9ad"
+      },
+      "past": {
+        "few": "{0} n\u00f3im\u00e9ad \u00f3 shin",
+        "many": "{0} n\u00f3im\u00e9ad \u00f3 shin",
+        "one": "{0} n\u00f3im\u00e9ad \u00f3 shin",
+        "other": "{0} n\u00f3im\u00e9ad \u00f3 shin",
+        "two": "{0} n\u00f3im\u00e9ad \u00f3 shin"
+      }
+    },
+    "minute-narrow": {
+      "0": "an n\u00f3im\u00e9ad seo",
+      "future": {
+        "few": "+{0} n",
+        "many": "+{0} n",
+        "one": "+{0} n",
+        "other": "+{0} n",
+        "two": "+{0} n"
+      },
+      "past": {
+        "few": "-{0} n",
+        "many": "-{0} n",
+        "one": "-{0} n",
+        "other": "-{0} n",
+        "two": "-{0} n"
+      }
+    },
+    "minute-short": {
+      "0": "an n\u00f3im\u00e9ad seo",
+      "future": {
+        "few": "i gceann {0} n\u00f3im.",
+        "many": "i gceann {0} n\u00f3im.",
+        "one": "i gceann {0} n\u00f3im.",
+        "other": "i gceann {0} n\u00f3im.",
+        "two": "i gceann {0} n\u00f3im."
+      },
+      "past": {
+        "few": "{0} n\u00f3im. \u00f3 shin",
+        "many": "{0} n\u00f3im. \u00f3 shin",
+        "one": "{0} n\u00f3im. \u00f3 shin",
+        "other": "{0} n\u00f3im. \u00f3 shin",
+        "two": "{0} n\u00f3im. \u00f3 shin"
+      }
+    },
+    "month": {
+      "-1": "an mh\u00ed seo caite",
+      "0": "an mh\u00ed seo",
+      "1": "an mh\u00ed seo chugainn",
+      "future": {
+        "few": "i gceann {0} mh\u00ed",
+        "many": "i gceann {0} m\u00ed",
+        "one": "i gceann {0} mh\u00ed",
+        "other": "i gceann {0} m\u00ed",
+        "two": "i gceann {0} mh\u00ed"
+      },
+      "past": {
+        "few": "{0} mh\u00ed \u00f3 shin",
+        "many": "{0} m\u00ed \u00f3 shin",
+        "one": "{0} mh\u00ed \u00f3 shin",
+        "other": "{0} m\u00ed \u00f3 shin",
+        "two": "{0} mh\u00ed \u00f3 shin"
+      }
+    },
+    "month-narrow": {
+      "-1": "an mh\u00ed seo caite",
+      "0": "an mh\u00ed seo",
+      "1": "an mh\u00ed seo chugainn",
+      "future": {
+        "few": "+{0} mh\u00ed",
+        "many": "+{0} m\u00ed",
+        "one": "+{0} mh\u00ed",
+        "other": "+{0} m\u00ed",
+        "two": "+{0} mh\u00ed"
+      },
+      "past": {
+        "few": "-{0} mh\u00ed",
+        "many": "-{0} m\u00ed",
+        "one": "-{0} mh\u00ed",
+        "other": "-{0} m\u00ed",
+        "two": "-{0} mh\u00ed"
+      }
+    },
+    "month-short": {
+      "-1": "an mh\u00ed seo caite",
+      "0": "an mh\u00ed seo",
+      "1": "an mh\u00ed seo chugainn",
+      "future": {
+        "few": "i gceann {0} mh\u00ed",
+        "many": "i gceann {0} m\u00ed",
+        "one": "i gceann {0} m\u00edosa",
+        "other": "i gceann {0} m\u00ed",
+        "two": "i gceann {0} mh\u00ed"
+      },
+      "past": {
+        "few": "{0} mh\u00ed \u00f3 shin",
+        "many": "{0} m\u00ed \u00f3 shin",
+        "one": "{0} mh\u00ed \u00f3 shin",
+        "other": "{0} m\u00ed \u00f3 shin",
+        "two": "{0} mh\u00ed \u00f3 shin"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "an r\u00e1ithe seo caite",
+      "0": "an r\u00e1ithe seo",
+      "1": "an r\u00e1ithe seo chugainn",
+      "future": {
+        "few": "i gceann {0} r\u00e1ithe",
+        "many": "i gceann {0} r\u00e1ithe",
+        "one": "i gceann {0} r\u00e1ithe",
+        "other": "i gceann {0} r\u00e1ithe",
+        "two": "i gceann {0} r\u00e1ithe"
+      },
+      "past": {
+        "few": "{0} r\u00e1ithe \u00f3 shin",
+        "many": "{0} r\u00e1ithe \u00f3 shin",
+        "one": "{0} r\u00e1ithe \u00f3 shin",
+        "other": "{0} r\u00e1ithe \u00f3 shin",
+        "two": "{0} r\u00e1ithe \u00f3 shin"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "an r\u00e1ithe seo caite",
+      "0": "an r\u00e1ithe seo",
+      "1": "an r\u00e1ithe seo chugainn",
+      "future": {
+        "few": "+{0} R",
+        "many": "+{0} R",
+        "one": "+{0} R",
+        "other": "+{0} R",
+        "two": "+{0} R"
+      },
+      "past": {
+        "few": "-{0} R",
+        "many": "-{0} R",
+        "one": "-{0} R",
+        "other": "-{0} R",
+        "two": "-{0} R"
+      }
+    },
+    "quarter-short": {
+      "-1": "an r\u00e1ithe seo caite",
+      "0": "an r\u00e1ithe seo",
+      "1": "an r\u00e1ithe seo chugainn",
+      "future": {
+        "few": "i gceann {0} r\u00e1ithe",
+        "many": "i gceann {0} r\u00e1ithe",
+        "one": "i gceann {0} r\u00e1ithe",
+        "other": "i gceann {0} r\u00e1ithe",
+        "two": "i gceann {0} r\u00e1ithe"
+      },
+      "past": {
+        "few": "{0} r\u00e1ithe \u00f3 shin",
+        "many": "{0} r\u00e1ithe \u00f3 shin",
+        "one": "{0} r\u00e1ithe \u00f3 shin",
+        "other": "{0} r\u00e1ithe \u00f3 shin",
+        "two": "{0} r\u00e1ithe \u00f3 shin"
+      }
+    },
+    "second": {
+      "0": "anois",
+      "future": {
+        "few": "i gceann {0} shoicind",
+        "many": "i gceann {0} soicind",
+        "one": "i gceann {0} soicind",
+        "other": "i gceann {0} soicind",
+        "two": "i gceann {0} shoicind"
+      },
+      "past": {
+        "few": "{0} shoicind \u00f3 shin",
+        "many": "{0} soicind \u00f3 shin",
+        "one": "{0} soicind \u00f3 shin",
+        "other": "{0} soicind \u00f3 shin",
+        "two": "{0} shoicind \u00f3 shin"
+      }
+    },
+    "second-narrow": {
+      "0": "anois",
+      "future": {
+        "few": "+{0} s",
+        "many": "+{0} s",
+        "one": "+{0} s",
+        "other": "+{0} s",
+        "two": "+{0} s"
+      },
+      "past": {
+        "few": "-{0} s",
+        "many": "-{0} s",
+        "one": "-{0} s",
+        "other": "-{0} s",
+        "two": "-{0} s"
+      }
+    },
+    "second-short": {
+      "0": "anois",
+      "future": {
+        "few": "i gceann {0} shoic.",
+        "many": "i gceann {0} soic.",
+        "one": "i gceann {0} soic.",
+        "other": "i gceann {0} soic.",
+        "two": "i gceann {0} shoic."
+      },
+      "past": {
+        "few": "{0} shoic. \u00f3 shin",
+        "many": "{0} soic. \u00f3 shin",
+        "one": "{0} soic. \u00f3 shin",
+        "other": "{0} soic. \u00f3 shin",
+        "two": "{0} shoic. \u00f3 shin"
+      }
+    },
+    "week": {
+      "-1": "an tseachtain seo caite",
+      "0": "an tseachtain seo",
+      "1": "an tseachtain seo chugainn",
+      "future": {
+        "few": "i gceann {0} seachtaine",
+        "many": "i gceann {0} seachtaine",
+        "one": "i gceann {0} seachtaine",
+        "other": "i gceann {0} seachtain",
+        "two": "i gceann {0} sheachtain"
+      },
+      "past": {
+        "few": "{0} seachtaine \u00f3 shin",
+        "many": "{0} seachtaine \u00f3 shin",
+        "one": "{0} seachtain \u00f3 shin",
+        "other": "{0} seachtain \u00f3 shin",
+        "two": "{0} sheachtain \u00f3 shin"
+      }
+    },
+    "week-narrow": {
+      "-1": "an tscht. seo caite",
+      "0": "an tscht. seo",
+      "1": "an tscht. seo chugainn",
+      "future": {
+        "few": "i gceann {0} shcht.",
+        "many": "+{0} scht.",
+        "one": "+{0} scht.",
+        "other": "+{0} scht.",
+        "two": "i gceann {0} shcht."
+      },
+      "past": {
+        "few": "{0} shcht. \u00f3 shin",
+        "many": "-{0} scht.",
+        "one": "-{0} scht.",
+        "other": "-{0} scht.",
+        "two": "{0} shcht. \u00f3 shin"
+      }
+    },
+    "week-short": {
+      "-1": "an tscht. seo caite",
+      "0": "an tscht. seo",
+      "1": "an tscht. seo chugainn",
+      "future": {
+        "few": "i gceann {0} shcht.",
+        "many": "i gceann {0} scht.",
+        "one": "i gceann {0} scht.",
+        "other": "i gceann {0} scht.",
+        "two": "i gceann {0} shcht."
+      },
+      "past": {
+        "few": "{0} shcht. \u00f3 shin",
+        "many": "{0} scht. \u00f3 shin",
+        "one": "{0} scht. \u00f3 shin",
+        "other": "{0} scht. \u00f3 shin",
+        "two": "{0} shcht. \u00f3 shin"
+      }
+    },
+    "year": {
+      "-1": "anuraidh",
+      "0": "i mbliana",
+      "1": "an bhliain seo chugainn",
+      "future": {
+        "few": "i gceann {0} bliana",
+        "many": "i gceann {0} mbliana",
+        "one": "i gceann {0} bliana",
+        "other": "i gceann {0} bliain",
+        "two": "i gceann {0} bhliain"
+      },
+      "past": {
+        "few": "{0} bliana \u00f3 shin",
+        "many": "{0} mbliana \u00f3 shin",
+        "one": "{0} bhliain \u00f3 shin",
+        "other": "{0} bliain \u00f3 shin",
+        "two": "{0} bhliain \u00f3 shin"
+      }
+    },
+    "year-narrow": {
+      "-1": "anuraidh",
+      "0": "i mbl.",
+      "1": "an bhl. seo chugainn",
+      "future": {
+        "few": "+{0} bl.",
+        "many": "+{0} mbl.",
+        "one": "+{0} bhl.",
+        "other": "+{0} bl.",
+        "two": "+{0} bhl."
+      },
+      "past": {
+        "few": "-{0} bl.",
+        "many": "-{0} mbl.",
+        "one": "-{0} bhl.",
+        "other": "-{0} bl.",
+        "two": "-{0} bhl."
+      }
+    },
+    "year-short": {
+      "-1": "anuraidh",
+      "0": "i mbl.",
+      "1": "an bhl. seo chugainn",
+      "future": {
+        "few": "i gceann {0} bl.",
+        "many": "i gceann {0} mbl.",
+        "one": "i gceann {0} bl.",
+        "other": "i gceann {0} bl.",
+        "two": "i gceann {0} bhl."
+      },
+      "past": {
+        "few": "{0} bl. \u00f3 shin",
+        "many": "{0} mbl. \u00f3 shin",
+        "one": "{0} bhl. \u00f3 shin",
+        "other": "{0} bl. \u00f3 shin",
+        "two": "{0} bhl. \u00f3 shin"
+      }
+    }
+  },
+  "locale": "ga"
+}

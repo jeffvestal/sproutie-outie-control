@@ -1,0 +1,94 @@
+- id: '1724549550978'
+  alias: Test toggle button
+  description: ''
+  trigger:
+  - device_id: 52a19f1214abf2fd0938746ed5d7f6d4
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: button_1
+  condition: []
+  action:
+  - type: toggle
+    device_id: dd51e4c0d0a0494be7e4d3aa53acea8d
+    entity_id: 3f4a224f651fde9b0481c125c59aca77
+    domain: switch
+  - action: notify.notify
+    metadata: {}
+    data:
+      message: Switch toggled
+  mode: single
+- id: '1725330815858'
+  alias: Holiday outside lights - off
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: eccd614297d64a6a3a73e213c97500c3
+    entity_id: cde3dea50f8a0c0ea8515e6071d7334a
+    domain: switch
+  mode: single
+- id: '1725330923891'
+  alias: Holiday outside lights - on
+  description: ''
+  trigger:
+  - platform: time
+    at: '18:00:00'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: eccd614297d64a6a3a73e213c97500c3
+    entity_id: cde3dea50f8a0c0ea8515e6071d7334a
+    domain: switch
+  mode: single
+- id: '1726509017824'
+  alias: Cozy Closet Toggle On/Off
+  description: ''
+  trigger:
+  - device_id: 52a19f1214abf2fd0938746ed5d7f6d4
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: button_1
+  condition: []
+  action:
+  - type: toggle
+    device_id: 17fbca1cb2a7953b0667ef6b0e9c8018
+    entity_id: 20d89ed16194dbd750aff46cd9c798d7
+    domain: light
+  mode: single
+- id: '1726509421198'
+  alias: Cozy Closet Light Increase
+  description: Double press up
+  trigger:
+  - device_id: 3ce94fa4a467254bbd5fe7041f73fe89
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+  condition: []
+  action:
+  - device_id: 17fbca1cb2a7953b0667ef6b0e9c8018
+    domain: light
+    entity_id: 20d89ed16194dbd750aff46cd9c798d7
+    type: brightness_increase
+  mode: single
+- id: '1726509478251'
+  alias: Cozy Closet Light down
+  description: ''
+  trigger:
+  - device_id: 3ce94fa4a467254bbd5fe7041f73fe89
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: remote_button_long_press
+  condition: []
+  action:
+  - device_id: 17fbca1cb2a7953b0667ef6b0e9c8018
+    domain: light
+    entity_id: 20d89ed16194dbd750aff46cd9c798d7
+    type: brightness_decrease
+  mode: single

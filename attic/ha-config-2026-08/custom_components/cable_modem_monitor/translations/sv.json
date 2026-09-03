@@ -1,0 +1,116 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Detta modem \u00e4r redan konfigurerat"
+    },
+    "error": {
+      "cannot_connect": "Kunde inte ansluta till modemet.\n\nV\u00e4nligen verifiera:\n1. IP-adressen \u00e4r korrekt (vanligtvis 192.168.100.1)\n2. Om modemet kr\u00e4ver autentisering, ange anv\u00e4ndarnamn/l\u00f6senord\n3. Modemets webbgr\u00e4nssnitt \u00e4r tillg\u00e4ngligt fr\u00e5n Home Assistants n\u00e4tverk\n\nOm ditt modem inte st\u00f6ds, v\u00e4lj 'Ok\u00e4nt Modem (Reservl\u00e4ge)' f\u00f6r att aktivera grundl\u00e4ggande \u00f6vervakning och HTML-f\u00e5ngst.",
+      "invalid_auth": "Ogiltigt anv\u00e4ndarnamn eller l\u00f6senord. Kontrollera dina uppgifter och f\u00f6rs\u00f6k igen.",
+      "invalid_input": "Ogiltig inmatning. Kontrollera v\u00e4rdena och f\u00f6rs\u00f6k igen.",
+      "network_unreachable": "Kan inte n\u00e5 modemet - problem med n\u00e4tverksanslutning.\n\nV\u00e4nligen kontrollera:\n1. N\u00e4tverksanslutning - \u00c4r du p\u00e5 r\u00e4tt WiFi-n\u00e4tverk?\n2. G\u00e4st-WiFi - G\u00e4stn\u00e4tverk blockerar ofta \u00e5tkomst till lokala enheter\n3. VPN - Koppla fr\u00e5n aktiva VPN-anslutningar\n4. IP-adress - Verifiera modemets IP (vanligtvis 192.168.100.1)\n5. Modemets webbgr\u00e4nssnitt - Se till att det \u00e4r aktiverat och tillg\u00e4ngligt\n6. L\u00e5ngsam respons - Vissa modem tar n\u00e5gra sekunder att vakna upp; f\u00f6rs\u00f6k skicka igen\n\nF\u00f6rs\u00f6k komma \u00e5t modemet direkt i din webbl\u00e4sare f\u00f6r att verifiera anslutningen.",
+      "unknown": "Ett ov\u00e4ntat fel intr\u00e4ffade. Kontrollera Home Assistant-loggarna f\u00f6r detaljer.",
+      "unsupported_modem": "Automatisk detektering kunde inte identifiera din modemmodell.\n\nF\u00f6r att forts\u00e4tta:\n1. V\u00e4lj 'Ok\u00e4nt Modem (Reservl\u00e4ge)' fr\u00e5n rullgardinsmenyn nedan\n2. Detta aktiverar grundl\u00e4ggande anslutnings\u00f6vervakning (ping/HTTP-latens)\n3. Efter installation, klicka p\u00e5 knappen 'F\u00e5nga HTML'\n4. Ladda ner diagnostik och dela med utvecklare f\u00f6r att l\u00e4gga till fullt st\u00f6d"
+    },
+    "progress": {
+      "validate": "Ansluter till modem..."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Modemets IP-adress",
+          "modem_choice": "Modemmodell",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Vanligtvis 192.168.100.1",
+          "modem_choice": "Anv\u00e4nd 'auto' f\u00f6r automatisk detektering",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "description": "Anslut till ditt kabelmodem. Modeller markerade med * \u00e4r overifierade.",
+        "title": "Cable Modem Monitor"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "host": "Modem-IP",
+          "modem_choice": "Modemmodell",
+          "password": "<redacted>",
+          "scan_interval": "Pollningsintervall (sek)",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Vanligtvis 192.168.100.1",
+          "modem_choice": "Anv\u00e4nd 'auto' f\u00f6r detektering. \u00c4ndra om felaktig.",
+          "password": "<redacted>",
+          "scan_interval": "60-1800 sek. Standard 600 (10 min)",
+          "username": "<redacted>"
+        },
+        "description": "Nuvarande: {detected_modem}\nSenast kontrollerad: {last_detection}",
+        "title": "Cable Modem-inst\u00e4llningar"
+      }
+    }
+  },
+  "services": {
+    "clear_history": {
+      "description": "Clear historical data for cable modem sensors older than a specified date.",
+      "fields": {
+        "days_to_keep": {
+          "description": "Number of days of history to keep (older data will be deleted).",
+          "name": "Days to Keep"
+        }
+      },
+      "name": "Clear History"
+    },
+    "generate_dashboard": {
+      "description": "Generates ready-to-use Lovelace YAML for your cable modem dashboard. Copy the output and paste it into a Manual card.",
+      "fields": {
+        "graph_hours": {
+          "description": "Hours of history for power/SNR graphs (errors and latency use fixed timeframes).",
+          "name": "Graph History (hours)"
+        },
+        "include_downstream_frequency": {
+          "description": "Frequency for all downstream channels.",
+          "name": "Downstream Frequency Graph"
+        },
+        "include_downstream_power": {
+          "description": "Power levels for all downstream channels.",
+          "name": "Downstream Power Graph"
+        },
+        "include_downstream_snr": {
+          "description": "Signal-to-noise ratio for all downstream channels.",
+          "name": "Downstream SNR Graph"
+        },
+        "include_errors": {
+          "description": "Corrected and uncorrected error counts (7-day view).",
+          "name": "Error Graphs"
+        },
+        "include_latency": {
+          "description": "Ping and HTTP response times (6-hour view).",
+          "name": "Latency Graph"
+        },
+        "include_status_card": {
+          "description": "Modem status, uptime, channel counts, and restart button.",
+          "name": "Status Card"
+        },
+        "include_upstream_frequency": {
+          "description": "Frequency for all upstream channels.",
+          "name": "Upstream Frequency Graph"
+        },
+        "include_upstream_power": {
+          "description": "Power levels for all upstream channels.",
+          "name": "Upstream Power Graph"
+        },
+        "short_titles": {
+          "description": "Short: 'DS Power (dBmV)' vs Long: 'Downstream Power Levels (dBmV)'.",
+          "name": "Use Short Titles"
+        }
+      },
+      "name": "Generate Dashboard"
+    }
+  }
+}

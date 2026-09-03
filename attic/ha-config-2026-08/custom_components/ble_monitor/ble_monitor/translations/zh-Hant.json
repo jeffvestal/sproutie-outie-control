@@ -1,0 +1,101 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "BLE monitor \u50c5\u5141\u8a31\u4e00\u7d44\u8a2d\u5b9a\u3002"
+    },
+    "error": {
+      "cannot_change_mac": "MAC \u4f4d\u5740\u7121\u6cd5\u8b8a\u66f4\u3002",
+      "cannot_change_uuid": "\u4fe1\u6a19 UUID \u7121\u6cd5\u8b8a\u66f4\u3002",
+      "cannot_delete_device": "\u88dd\u7f6e\u7121\u6cd5\u522a\u9664\u3002",
+      "cannot_disable_bt_interface": "\u7576\u9078\u64c7\u4e00\u500b\u6216\u4ee5\u4e0a\u7684\u85cd\u82bd\u4ecb\u9762\u6642\uff0c\u5c07\u7121\u6cd5\u9032\u884c\u95dc\u9589\u3002\u8acb\u5148\u89e3\u9664\u9078\u64c7\u3002",
+      "invalid_key": "\u5bc6\u9470\u5fc5\u9808\u70ba 32 \u500b\u5341\u516d\u9032\u4f4d\u5b57\u5143\uff08Yeelight \u5247\u70ba 24\uff09\u3002",
+      "invalid_mac": "MAC \u4f4d\u5740\u5fc5\u9808\u70ba 'AA:BB:CC:DD:EE:FF' \u683c\u5f0f\u3002",
+      "invalid_uuid": "\u4fe1\u6a19 UUID \u683c\u5f0f\u5fc5\u9808\u70ba '0000000-0000-0000-0000-000000000000' \u683c\u5f0f\u3002"
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "\u8ffd\u8e64\u88dd\u7f6e\u8996\u70ba\u5728\u5bb6\uff08\u79d2\uff09",
+          "delete device": "\u522a\u9664\u88dd\u7f6e",
+          "encryption_key": "\u5bc6\u9470",
+          "mac": "MAC \u4f4d\u5740",
+          "report_unknown": "\u56de\u5831\u672a\u77e5\u88dd\u7f6e",
+          "reset_timer": "\u91cd\u7f6e\u8a08\u6642\u5668\uff08\u79d2\u3001\u8a2d\u5b9a\u70ba 0 = \u95dc\u9589\uff09",
+          "restore_state": "\u65bc\u91cd\u555f\u5f8c\u56de\u5fa9\u72c0\u614b",
+          "temperature_unit": "\u6eab\u5ea6\u55ae\u4f4d [\u50c5\u91dd\u5c0d\u6eab\u5ea6\u611f\u6e2c\u5668]",
+          "track_device": "\u8ffd\u8e64\u88dd\u7f6e",
+          "tracker_scan_interval": "\u8ffd\u8e64\u88dd\u7f6e\u6383\u63cf\u9593\u9694\uff08\u79d2\uff09",
+          "use_median": "\u4f7f\u7528\u4e2d\u4f4d\u6578\uff08\u975e\u5e73\u5747\u503c\uff09",
+          "uuid": "\u4fe1\u6a19 UUID"
+        },
+        "title": "\u65b0\u589e\u88dd\u7f6e"
+      },
+      "user": {
+        "data": {
+          "active_scan": "\u4e3b\u52d5\u6383\u63cf\uff08\u5c07\u5f71\u97ff\u96fb\u529b\uff09",
+          "bt_auto_restart": "\u914d\u63a5\u5668\u5931\u6557\u5f8c\u81ea\u52d5\u91cd\u555f",
+          "bt_interface": "\u85cd\u82bd\u4ecb\u9762/\u914d\u63a5\u5668 MAC \u4f4d\u5740",
+          "devices": "\u88dd\u7f6e",
+          "discovery": "\u81ea\u52d5\u63a2\u7d22\u88dd\u7f6e\u8207\u50b3\u611f\u5668",
+          "log_spikes": "\u7d00\u9304\u65e5\u8a8c",
+          "period": "\u6383\u63cf\u9593\u9694",
+          "report_unknown": "\u56de\u5831\u672a\u77e5\u88dd\u7f6e",
+          "restore_state": "\u65bc\u91cd\u555f\u5f8c\u56de\u5fa9\u72c0\u614b",
+          "use_median": "\u4f7f\u7528\u4e2d\u4f4d\u6578\uff08\u975e\u5e73\u5747\u503c\uff09"
+        },
+        "description": "\u8a2d\u5b9a BLE monitor \u9078\u9805",
+        "title": "Passive BLE Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "\u5df2\u7d93\u65bc YAML \u5167\u8a2d\u5b9a BLE monitor\u3001\u8acb\u65bc YAML \u5167\u8b8a\u66f4\u9078\u9805"
+    },
+    "error": {
+      "cannot_change_mac": "MAC \u4f4d\u5740\u7121\u6cd5\u8b8a\u66f4\u3002",
+      "cannot_change_uuid": "\u4fe1\u6a19 UUID \u7121\u6cd5\u8b8a\u66f4\u3002",
+      "cannot_delete_device": "\u88dd\u7f6e\u7121\u6cd5\u522a\u9664\u3002",
+      "cannot_disable_bt_interface": "\u7576\u9078\u64c7\u4e00\u500b\u6216\u4ee5\u4e0a\u7684\u85cd\u82bd\u4ecb\u9762\u6642\uff0c\u5c07\u7121\u6cd5\u9032\u884c\u95dc\u9589\u3002\u8acb\u5148\u89e3\u9664\u9078\u64c7\u3002",
+      "invalid_key": "\u5bc6\u9470\u5fc5\u9808\u70ba 32 \u500b\u5341\u516d\u9032\u4f4d\u5b57\u5143\uff08Yeelight \u5247\u70ba 24\uff09\u3002",
+      "invalid_mac": "MAC \u4f4d\u5740\u5fc5\u9808\u70ba 'AA:BB:CC:DD:EE:FF' \u683c\u5f0f\u3002",
+      "invalid_uuid": "\u4fe1\u6a19 UUID \u683c\u5f0f\u5fc5\u9808\u70ba '0000000-0000-0000-0000-000000000000' \u683c\u5f0f\u3002"
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "\u8ffd\u8e64\u88dd\u7f6e\u8996\u70ba\u5728\u5bb6\uff08\u79d2\uff09",
+          "delete device": "\u522a\u9664\u88dd\u7f6e",
+          "encryption_key": "\u5bc6\u9470\uff08\u82e5\u8f38\u5165\u70ba\u300c-\u300d\u9032\u884c\u79fb\u9664\uff09",
+          "mac": "MAC \u4f4d\u5740",
+          "report_unknown": "\u56de\u5831\u672a\u77e5\u88dd\u7f6e",
+          "reset_timer": "\u91cd\u7f6e\u8a08\u6642\u5668\uff08\u79d2\u3001\u8a2d\u5b9a\u70ba 0 = \u95dc\u9589\uff09",
+          "restore_state": "\u65bc\u91cd\u555f\u5f8c\u56de\u5fa9\u72c0\u614b",
+          "temperature_unit": "\u6eab\u5ea6\u55ae\u4f4d",
+          "track_device": "\u8ffd\u8e64\u88dd\u7f6e",
+          "tracker_scan_interval": "\u8ffd\u8e64\u88dd\u7f6e\u6383\u63cf\u9593\u9694\uff08\u79d2\uff09",
+          "use_median": "\u4f7f\u7528\u4e2d\u4f4d\u6578\uff08\u975e\u5e73\u5747\u503c\uff09",
+          "uuid": "\u4fe1\u6a19 UUID"
+        },
+        "title": "\u8a2d\u5b9a\u88dd\u7f6e"
+      },
+      "init": {
+        "data": {
+          "active_scan": "\u4e3b\u52d5\u6383\u63cf\uff08\u5c07\u5f71\u97ff\u96fb\u529b\uff09",
+          "bt_auto_restart": "\u914d\u63a5\u5668\u5931\u6557\u5f8c\u81ea\u52d5\u91cd\u555f",
+          "bt_interface": "\u85cd\u82bd\u4ecb\u9762/\u914d\u63a5\u5668 MAC \u4f4d\u5740",
+          "devices": "\u88dd\u7f6e",
+          "discovery": "\u81ea\u52d5\u63a2\u7d22\u88dd\u7f6e\u8207\u50b3\u611f\u5668",
+          "log_spikes": "\u7d00\u9304\u65e5\u8a8c",
+          "not_in_use": "\u5df2\u4f7f\u7528 YAML\u3001\u65bc YAML \u8b8a\u66f4\u9078\u9805",
+          "period": "\u6383\u63cf\u9593\u9694",
+          "report_unknown": "\u56de\u5831\u672a\u77e5\u88dd\u7f6e",
+          "restore_state": "\u65bc\u91cd\u555f\u5f8c\u56de\u5fa9\u72c0\u614b",
+          "use_median": "\u4f7f\u7528\u4e2d\u4f4d\u6578\uff08\u975e\u5e73\u5747\u503c\uff09"
+        },
+        "description": "\u65bc\u6309\u4e0b\u300c\u50b3\u9001\u5f8c\u300d\u5c07\u6703\u91cd\u65b0\u958b\u59cb\u6383\u63cf",
+        "title": "Passive BLE Monitor \u9078\u9805"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Apenas \u00e9 permitida uma configura\u00e7\u00e3o do monitor BLE."
+    },
+    "error": {
+      "cannot_change_mac": "O endere\u00e7o MAC n\u00e3o pode ser alterado.",
+      "cannot_change_uuid": "O UUID do Beacon n\u00e3o pode ser alterado.",
+      "cannot_delete_device": "O dispositivo n\u00e3o pode ser apagado.",
+      "cannot_disable_bt_interface": "N\u00e3o \u00e9 poss\u00edvel desabilitar a interface BT enquanto uma ou mais interfaces BT ainda est\u00e3o selecionadas. Desmarque todas as interfaces BT.",
+      "invalid_key": "A chave de criptografia deve ter 32 caracteres hexadecimais (24 para sensores Yeelight).",
+      "invalid_mac": "O endere\u00e7o MAC deve estar no formato 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "O UUID do Beacon deve estar no formato '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "O rastreador do dispositivo considera o intervalo inicial (em segundos)",
+          "delete device": "Apagar dispositivo",
+          "encryption_key": "Chave de encripta\u00e7\u00e3o",
+          "mac": "Endere\u00e7o MAC",
+          "report_unknown": "Relat\u00f3rio desconhecido",
+          "reset_timer": "Redefinir temporizador (em segundos, 0 = desligado)",
+          "restore_state": "Restaurar estado ap\u00f3s uma reinicializa\u00e7\u00e3o",
+          "temperature_unit": "Unidade de temperatura [somente sensores de temperatura]",
+          "track_device": "Rastrear dispositivo",
+          "tracker_scan_interval": "Intervalo de verifica\u00e7\u00e3o do rastreador de dispositivo (em segundos)",
+          "use_median": "Use mediana em vez de m\u00e9dia",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Adicionar Dispositivo"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Use a pesquisa ativa em vez de pesquisa passiva (afeta a bateria)",
+          "bt_auto_restart": "Reinicie automaticamente o adaptador Bluetooth em caso de falha",
+          "bt_interface": "Endere\u00e7o MAC da interface/adaptador Bluetooth",
+          "devices": "Dispositivos",
+          "discovery": "Descubra dispositivos e sensores automaticamente",
+          "log_spikes": "Logs de registro",
+          "period": "Per\u00edodo a ser usado para calcular a m\u00e9dia",
+          "report_unknown": "Relat\u00f3rio desconhecido",
+          "restore_state": "Restaurar estado ap\u00f3s uma reinicializa\u00e7\u00e3o",
+          "use_median": "Use mediana em vez de m\u00e9dia"
+        },
+        "description": "Configurar seu monitor BLE",
+        "title": "Monitor BLE passivo"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Configurou o monitor BLE em YAML. Altere suas op\u00e7\u00f5es no YAML."
+    },
+    "error": {
+      "cannot_change_mac": "O endere\u00e7o MAC n\u00e3o pode ser alterado.",
+      "cannot_change_uuid": "O UUID do Beacon n\u00e3o pode ser alterado.",
+      "cannot_delete_device": "O dispositivo n\u00e3o pode ser exclu\u00eddo.",
+      "cannot_disable_bt_interface": "N\u00e3o \u00e9 poss\u00edvel desctivar a interface BT enquanto uma ou mais interfaces BT ainda est\u00e3o selecionadas. Desmarque todas as interfaces BT.",
+      "invalid_key": "A chave de criptografia deve ter 32 caracteres hexadecimais (24 para sensores Yeelight).",
+      "invalid_mac": "O endere\u00e7o MAC deve estar no formato 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "O UUID do Beacon deve estar no formato '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "A pesquisa do dispositivo considera o intervalo inicial (em segundos)",
+          "delete device": "Excluir dispositivo",
+          "encryption_key": "Chave de criptografia (definida como '-' para remover)",
+          "mac": "Endere\u00e7o MAC",
+          "report_unknown": "Relat\u00f3rio desconhecido",
+          "reset_timer": "Redefinir temporizador (em segundos, 0 = desligado)",
+          "restore_state": "Restaurar estado ap\u00f3s uma reinicializa\u00e7\u00e3o",
+          "temperature_unit": "Unidade de temperatura",
+          "track_device": "Rastrear dispositivo",
+          "tracker_scan_interval": "Intervalo de verifica\u00e7\u00e3o do rastreador de dispositivo (em segundos)",
+          "use_median": "Use mediana em vez de m\u00e9dia",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Configurar dispositivo"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Use varredura ativa em vez de varredura passiva (afeta a bateria)",
+          "bt_auto_restart": "Reiniciar automaticamente o adaptador Bluetooth em caso de falha",
+          "bt_interface": "Endere\u00e7o MAC da interface/adaptador Bluetooth",
+          "devices": "Dispositivos",
+          "discovery": "Descubra dispositivos e sensores automaticamente",
+          "log_spikes": "Logs de registro",
+          "not_in_use": "YAML \u00e9 usado, altere as op\u00e7\u00f5es em YAML",
+          "period": "Per\u00edodo a ser usado para calcular a m\u00e9dia",
+          "report_unknown": "Relat\u00f3rio desconhecido",
+          "restore_state": "Restaurar estado ap\u00f3s uma reinicializa\u00e7\u00e3o",
+          "use_median": "Use mediana em vez de m\u00e9dia"
+        },
+        "description": "A digitaliza\u00e7\u00e3o ser\u00e1 reiniciada ap\u00f3s pressionar 'ENVIAR'",
+        "title": "Op\u00e7\u00f5es de monitor BLE passivo"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+esphome:
+  name: testy
+  friendly_name: testy
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "9qDVHJefQRxjnL6yHvBtsCUMXF2WfgUHb/suJB1FPu4="
+
+ota:
+  - platform: esphome
+    password: <redacted>
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: <redacted>
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Testy Fallback Hotspot"
+    password: <redacted>
+
+captive_portal:
+
+esp32_ble_tracker:
+  scan_parameters:
+    interval: 1100ms
+    window: 1100ms
+    active: true
+
+bluetooth_proxy:
+  active: true
+
+    

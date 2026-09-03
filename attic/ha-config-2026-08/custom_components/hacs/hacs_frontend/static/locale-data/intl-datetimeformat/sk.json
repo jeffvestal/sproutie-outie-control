@@ -1,0 +1,2668 @@
+{
+  "data": {
+    "am": "AM",
+    "ca": [
+      "gregory"
+    ],
+    "dateFormat": {
+      "full": "EEEE d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "d. M. y",
+      "short": "d. M. y"
+    },
+    "dateTimeFormat": {
+      "full": "{1}, {0}",
+      "long": "{1}, {0}",
+      "medium": "{1}, {0}",
+      "short": "{1} {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "po Kristovi",
+        "BC": "pred Kristom"
+      },
+      "narrow": {
+        "AD": "po Kr.",
+        "BC": "pred Kr."
+      },
+      "short": {
+        "AD": "po Kr.",
+        "BC": "pred Kr."
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h B",
+        "Bhm": "h:mm B",
+        "Bhms": "h:mm:ss B",
+        "E": "ccc",
+        "E Bh": "ccc h B",
+        "E Bhm": "ccc h:mm B",
+        "E Bhms": "ccc h:mm:ss B",
+        "E H": "ccc H",
+        "E H:mm": "ccc H:mm",
+        "E H:mm:ss": "ccc H:mm:ss",
+        "E H:mm:ss z": "ccc H:mm:ss z",
+        "E H:mm:ss zzzz": "ccc H:mm:ss zzzz",
+        "E Hm": "ccc H:mm",
+        "E Hms": "ccc H:mm:ss",
+        "E Hmsv": "ccc H:mm:ss v",
+        "E Hmv": "ccc H:mm v",
+        "E h": "ccc h\u202fa",
+        "E hm": "ccc h:mm\u202fa",
+        "E hms": "ccc h:mm:ss\u202fa",
+        "E hmsv": "ccc h:mm:ss\u202fa v",
+        "E hmv": "ccc h:mm\u202fa v",
+        "E mmss": "ccc mm:ss",
+        "E ms": "ccc mm:ss",
+        "EBhm": "E h:mm B",
+        "EBhms": "E h:mm:ss B",
+        "EEEE d. MMMM y": "EEEE d. MMMM y",
+        "EEEE d. MMMM y, Bh": "EEEE d. MMMM y, h B",
+        "EEEE d. MMMM y, Bhm": "EEEE d. MMMM y, h:mm B",
+        "EEEE d. MMMM y, Bhms": "EEEE d. MMMM y, h:mm:ss B",
+        "EEEE d. MMMM y, H": "EEEE d. MMMM y, H",
+        "EEEE d. MMMM y, H:mm": "EEEE d. MMMM y, H:mm",
+        "EEEE d. MMMM y, H:mm:ss": "EEEE d. MMMM y, H:mm:ss",
+        "EEEE d. MMMM y, H:mm:ss z": "EEEE d. MMMM y, H:mm:ss z",
+        "EEEE d. MMMM y, H:mm:ss zzzz": "EEEE d. MMMM y, H:mm:ss zzzz",
+        "EEEE d. MMMM y, Hm": "EEEE d. MMMM y, H:mm",
+        "EEEE d. MMMM y, Hms": "EEEE d. MMMM y, H:mm:ss",
+        "EEEE d. MMMM y, Hmsv": "EEEE d. MMMM y, H:mm:ss v",
+        "EEEE d. MMMM y, Hmv": "EEEE d. MMMM y, H:mm v",
+        "EEEE d. MMMM y, h": "EEEE d. MMMM y, h\u202fa",
+        "EEEE d. MMMM y, hm": "EEEE d. MMMM y, h:mm\u202fa",
+        "EEEE d. MMMM y, hms": "EEEE d. MMMM y, h:mm:ss\u202fa",
+        "EEEE d. MMMM y, hmsv": "EEEE d. MMMM y, h:mm:ss\u202fa v",
+        "EEEE d. MMMM y, hmv": "EEEE d. MMMM y, h:mm\u202fa v",
+        "EEEE d. MMMM y, mmss": "EEEE d. MMMM y, mm:ss",
+        "EEEE d. MMMM y, ms": "EEEE d. MMMM y, mm:ss",
+        "EHm": "E HH:mm",
+        "EHms": "E HH:mm:ss",
+        "Ed": "E d.",
+        "Ed Bh": "E d. h B",
+        "Ed Bhm": "E d. h:mm B",
+        "Ed Bhms": "E d. h:mm:ss B",
+        "Ed H": "E d. H",
+        "Ed H:mm": "E d. H:mm",
+        "Ed H:mm:ss": "E d. H:mm:ss",
+        "Ed H:mm:ss z": "E d. H:mm:ss z",
+        "Ed H:mm:ss zzzz": "E d. H:mm:ss zzzz",
+        "Ed Hm": "E d. H:mm",
+        "Ed Hms": "E d. H:mm:ss",
+        "Ed Hmsv": "E d. H:mm:ss v",
+        "Ed Hmv": "E d. H:mm v",
+        "Ed h": "E d. h\u202fa",
+        "Ed hm": "E d. h:mm\u202fa",
+        "Ed hms": "E d. h:mm:ss\u202fa",
+        "Ed hmsv": "E d. h:mm:ss\u202fa v",
+        "Ed hmv": "E d. h:mm\u202fa v",
+        "Ed mmss": "E d. mm:ss",
+        "Ed ms": "E d. mm:ss",
+        "Ehm": "E h:mm\u202fa",
+        "Ehms": "E h:mm:ss\u202fa",
+        "Gy": "y G",
+        "Gy Bh": "y G h B",
+        "Gy Bhm": "y G h:mm B",
+        "Gy Bhms": "y G h:mm:ss B",
+        "Gy H": "y G H",
+        "Gy H:mm": "y G H:mm",
+        "Gy H:mm:ss": "y G H:mm:ss",
+        "Gy H:mm:ss z": "y G H:mm:ss z",
+        "Gy H:mm:ss zzzz": "y G H:mm:ss zzzz",
+        "Gy Hm": "y G H:mm",
+        "Gy Hms": "y G H:mm:ss",
+        "Gy Hmsv": "y G H:mm:ss v",
+        "Gy Hmv": "y G H:mm v",
+        "Gy h": "y G h\u202fa",
+        "Gy hm": "y G h:mm\u202fa",
+        "Gy hms": "y G h:mm:ss\u202fa",
+        "Gy hmsv": "y G h:mm:ss\u202fa v",
+        "Gy hmv": "y G h:mm\u202fa v",
+        "Gy mmss": "y G mm:ss",
+        "Gy ms": "y G mm:ss",
+        "GyMMM": "LLLL y G",
+        "GyMMM, Bh": "LLLL y G, h B",
+        "GyMMM, Bhm": "LLLL y G, h:mm B",
+        "GyMMM, Bhms": "LLLL y G, h:mm:ss B",
+        "GyMMM, H": "LLLL y G, H",
+        "GyMMM, H:mm": "LLLL y G, H:mm",
+        "GyMMM, H:mm:ss": "LLLL y G, H:mm:ss",
+        "GyMMM, H:mm:ss z": "LLLL y G, H:mm:ss z",
+        "GyMMM, H:mm:ss zzzz": "LLLL y G, H:mm:ss zzzz",
+        "GyMMM, Hm": "LLLL y G, H:mm",
+        "GyMMM, Hms": "LLLL y G, H:mm:ss",
+        "GyMMM, Hmsv": "LLLL y G, H:mm:ss v",
+        "GyMMM, Hmv": "LLLL y G, H:mm v",
+        "GyMMM, h": "LLLL y G, h\u202fa",
+        "GyMMM, hm": "LLLL y G, h:mm\u202fa",
+        "GyMMM, hms": "LLLL y G, h:mm:ss\u202fa",
+        "GyMMM, hmsv": "LLLL y G, h:mm:ss\u202fa v",
+        "GyMMM, hmv": "LLLL y G, h:mm\u202fa v",
+        "GyMMM, mmss": "LLLL y G, mm:ss",
+        "GyMMM, ms": "LLLL y G, mm:ss",
+        "GyMMMEd": "E d. M. y G",
+        "GyMMMEd, Bh": "E d. M. y G, h B",
+        "GyMMMEd, Bhm": "E d. M. y G, h:mm B",
+        "GyMMMEd, Bhms": "E d. M. y G, h:mm:ss B",
+        "GyMMMEd, H": "E d. M. y G, H",
+        "GyMMMEd, H:mm": "E d. M. y G, H:mm",
+        "GyMMMEd, H:mm:ss": "E d. M. y G, H:mm:ss",
+        "GyMMMEd, H:mm:ss z": "E d. M. y G, H:mm:ss z",
+        "GyMMMEd, H:mm:ss zzzz": "E d. M. y G, H:mm:ss zzzz",
+        "GyMMMEd, Hm": "E d. M. y G, H:mm",
+        "GyMMMEd, Hms": "E d. M. y G, H:mm:ss",
+        "GyMMMEd, Hmsv": "E d. M. y G, H:mm:ss v",
+        "GyMMMEd, Hmv": "E d. M. y G, H:mm v",
+        "GyMMMEd, h": "E d. M. y G, h\u202fa",
+        "GyMMMEd, hm": "E d. M. y G, h:mm\u202fa",
+        "GyMMMEd, hms": "E d. M. y G, h:mm:ss\u202fa",
+        "GyMMMEd, hmsv": "E d. M. y G, h:mm:ss\u202fa v",
+        "GyMMMEd, hmv": "E d. M. y G, h:mm\u202fa v",
+        "GyMMMEd, mmss": "E d. M. y G, mm:ss",
+        "GyMMMEd, ms": "E d. M. y G, mm:ss",
+        "GyMMMMd": "d. M. y G",
+        "GyMMMMd, Bh": "d. M. y G, h B",
+        "GyMMMMd, Bhm": "d. M. y G, h:mm B",
+        "GyMMMMd, Bhms": "d. M. y G, h:mm:ss B",
+        "GyMMMMd, H": "d. M. y G, H",
+        "GyMMMMd, H:mm": "d. M. y G, H:mm",
+        "GyMMMMd, H:mm:ss": "d. M. y G, H:mm:ss",
+        "GyMMMMd, H:mm:ss z": "d. M. y G, H:mm:ss z",
+        "GyMMMMd, H:mm:ss zzzz": "d. M. y G, H:mm:ss zzzz",
+        "GyMMMMd, Hm": "d. M. y G, H:mm",
+        "GyMMMMd, Hms": "d. M. y G, H:mm:ss",
+        "GyMMMMd, Hmsv": "d. M. y G, H:mm:ss v",
+        "GyMMMMd, Hmv": "d. M. y G, H:mm v",
+        "GyMMMMd, h": "d. M. y G, h\u202fa",
+        "GyMMMMd, hm": "d. M. y G, h:mm\u202fa",
+        "GyMMMMd, hms": "d. M. y G, h:mm:ss\u202fa",
+        "GyMMMMd, hmsv": "d. M. y G, h:mm:ss\u202fa v",
+        "GyMMMMd, hmv": "d. M. y G, h:mm\u202fa v",
+        "GyMMMMd, mmss": "d. M. y G, mm:ss",
+        "GyMMMMd, ms": "d. M. y G, mm:ss",
+        "GyMMMd": "d. M. y G",
+        "GyMMMd, Bh": "d. M. y G, h B",
+        "GyMMMd, Bhm": "d. M. y G, h:mm B",
+        "GyMMMd, Bhms": "d. M. y G, h:mm:ss B",
+        "GyMMMd, H": "d. M. y G, H",
+        "GyMMMd, H:mm": "d. M. y G, H:mm",
+        "GyMMMd, H:mm:ss": "d. M. y G, H:mm:ss",
+        "GyMMMd, H:mm:ss z": "d. M. y G, H:mm:ss z",
+        "GyMMMd, H:mm:ss zzzz": "d. M. y G, H:mm:ss zzzz",
+        "GyMMMd, Hm": "d. M. y G, H:mm",
+        "GyMMMd, Hms": "d. M. y G, H:mm:ss",
+        "GyMMMd, Hmsv": "d. M. y G, H:mm:ss v",
+        "GyMMMd, Hmv": "d. M. y G, H:mm v",
+        "GyMMMd, h": "d. M. y G, h\u202fa",
+        "GyMMMd, hm": "d. M. y G, h:mm\u202fa",
+        "GyMMMd, hms": "d. M. y G, h:mm:ss\u202fa",
+        "GyMMMd, hmsv": "d. M. y G, h:mm:ss\u202fa v",
+        "GyMMMd, hmv": "d. M. y G, h:mm\u202fa v",
+        "GyMMMd, mmss": "d. M. y G, mm:ss",
+        "GyMMMd, ms": "d. M. y G, mm:ss",
+        "GyMd": "d. M. y GGGGG",
+        "GyMd Bh": "d. M. y GGGGG h B",
+        "GyMd Bhm": "d. M. y GGGGG h:mm B",
+        "GyMd Bhms": "d. M. y GGGGG h:mm:ss B",
+        "GyMd H": "d. M. y GGGGG H",
+        "GyMd H:mm": "d. M. y GGGGG H:mm",
+        "GyMd H:mm:ss": "d. M. y GGGGG H:mm:ss",
+        "GyMd H:mm:ss z": "d. M. y GGGGG H:mm:ss z",
+        "GyMd H:mm:ss zzzz": "d. M. y GGGGG H:mm:ss zzzz",
+        "GyMd Hm": "d. M. y GGGGG H:mm",
+        "GyMd Hms": "d. M. y GGGGG H:mm:ss",
+        "GyMd Hmsv": "d. M. y GGGGG H:mm:ss v",
+        "GyMd Hmv": "d. M. y GGGGG H:mm v",
+        "GyMd h": "d. M. y GGGGG h\u202fa",
+        "GyMd hm": "d. M. y GGGGG h:mm\u202fa",
+        "GyMd hms": "d. M. y GGGGG h:mm:ss\u202fa",
+        "GyMd hmsv": "d. M. y GGGGG h:mm:ss\u202fa v",
+        "GyMd hmv": "d. M. y GGGGG h:mm\u202fa v",
+        "GyMd mmss": "d. M. y GGGGG mm:ss",
+        "GyMd ms": "d. M. y GGGGG mm:ss",
+        "H": "H",
+        "H:mm": "H:mm",
+        "H:mm:ss": "H:mm:ss",
+        "H:mm:ss z": "H:mm:ss z",
+        "H:mm:ss zzzz": "H:mm:ss zzzz",
+        "Hm": "H:mm",
+        "Hms": "H:mm:ss",
+        "Hmsv": "H:mm:ss v",
+        "Hmv": "H:mm v",
+        "M": "L.",
+        "M Bh": "L. h B",
+        "M Bhm": "L. h:mm B",
+        "M Bhms": "L. h:mm:ss B",
+        "M H": "L. H",
+        "M H:mm": "L. H:mm",
+        "M H:mm:ss": "L. H:mm:ss",
+        "M H:mm:ss z": "L. H:mm:ss z",
+        "M H:mm:ss zzzz": "L. H:mm:ss zzzz",
+        "M Hm": "L. H:mm",
+        "M Hms": "L. H:mm:ss",
+        "M Hmsv": "L. H:mm:ss v",
+        "M Hmv": "L. H:mm v",
+        "M h": "L. h\u202fa",
+        "M hm": "L. h:mm\u202fa",
+        "M hms": "L. h:mm:ss\u202fa",
+        "M hmsv": "L. h:mm:ss\u202fa v",
+        "M hmv": "L. h:mm\u202fa v",
+        "M mmss": "L. mm:ss",
+        "M ms": "L. mm:ss",
+        "MEd": "E d. M.",
+        "MEd Bh": "E d. M. h B",
+        "MEd Bhm": "E d. M. h:mm B",
+        "MEd Bhms": "E d. M. h:mm:ss B",
+        "MEd H": "E d. M. H",
+        "MEd H:mm": "E d. M. H:mm",
+        "MEd H:mm:ss": "E d. M. H:mm:ss",
+        "MEd H:mm:ss z": "E d. M. H:mm:ss z",
+        "MEd H:mm:ss zzzz": "E d. M. H:mm:ss zzzz",
+        "MEd Hm": "E d. M. H:mm",
+        "MEd Hms": "E d. M. H:mm:ss",
+        "MEd Hmsv": "E d. M. H:mm:ss v",
+        "MEd Hmv": "E d. M. H:mm v",
+        "MEd h": "E d. M. h\u202fa",
+        "MEd hm": "E d. M. h:mm\u202fa",
+        "MEd hms": "E d. M. h:mm:ss\u202fa",
+        "MEd hmsv": "E d. M. h:mm:ss\u202fa v",
+        "MEd hmv": "E d. M. h:mm\u202fa v",
+        "MEd mmss": "E d. M. mm:ss",
+        "MEd ms": "E d. M. mm:ss",
+        "MMM": "LLL",
+        "MMM, Bh": "LLL, h B",
+        "MMM, Bhm": "LLL, h:mm B",
+        "MMM, Bhms": "LLL, h:mm:ss B",
+        "MMM, H": "LLL, H",
+        "MMM, H:mm": "LLL, H:mm",
+        "MMM, H:mm:ss": "LLL, H:mm:ss",
+        "MMM, H:mm:ss z": "LLL, H:mm:ss z",
+        "MMM, H:mm:ss zzzz": "LLL, H:mm:ss zzzz",
+        "MMM, Hm": "LLL, H:mm",
+        "MMM, Hms": "LLL, H:mm:ss",
+        "MMM, Hmsv": "LLL, H:mm:ss v",
+        "MMM, Hmv": "LLL, H:mm v",
+        "MMM, h": "LLL, h\u202fa",
+        "MMM, hm": "LLL, h:mm\u202fa",
+        "MMM, hms": "LLL, h:mm:ss\u202fa",
+        "MMM, hmsv": "LLL, h:mm:ss\u202fa v",
+        "MMM, hmv": "LLL, h:mm\u202fa v",
+        "MMM, mmss": "LLL, mm:ss",
+        "MMM, ms": "LLL, mm:ss",
+        "MMMEd": "E d. M.",
+        "MMMEd, Bh": "E d. M., h B",
+        "MMMEd, Bhm": "E d. M., h:mm B",
+        "MMMEd, Bhms": "E d. M., h:mm:ss B",
+        "MMMEd, H": "E d. M., H",
+        "MMMEd, H:mm": "E d. M., H:mm",
+        "MMMEd, H:mm:ss": "E d. M., H:mm:ss",
+        "MMMEd, H:mm:ss z": "E d. M., H:mm:ss z",
+        "MMMEd, H:mm:ss zzzz": "E d. M., H:mm:ss zzzz",
+        "MMMEd, Hm": "E d. M., H:mm",
+        "MMMEd, Hms": "E d. M., H:mm:ss",
+        "MMMEd, Hmsv": "E d. M., H:mm:ss v",
+        "MMMEd, Hmv": "E d. M., H:mm v",
+        "MMMEd, h": "E d. M., h\u202fa",
+        "MMMEd, hm": "E d. M., h:mm\u202fa",
+        "MMMEd, hms": "E d. M., h:mm:ss\u202fa",
+        "MMMEd, hmsv": "E d. M., h:mm:ss\u202fa v",
+        "MMMEd, hmv": "E d. M., h:mm\u202fa v",
+        "MMMEd, mmss": "E d. M., mm:ss",
+        "MMMEd, ms": "E d. M., mm:ss",
+        "MMMMEd": "E d. MMMM",
+        "MMMMEd, Bh": "E d. MMMM, h B",
+        "MMMMEd, Bhm": "E d. MMMM, h:mm B",
+        "MMMMEd, Bhms": "E d. MMMM, h:mm:ss B",
+        "MMMMEd, H": "E d. MMMM, H",
+        "MMMMEd, H:mm": "E d. MMMM, H:mm",
+        "MMMMEd, H:mm:ss": "E d. MMMM, H:mm:ss",
+        "MMMMEd, H:mm:ss z": "E d. MMMM, H:mm:ss z",
+        "MMMMEd, H:mm:ss zzzz": "E d. MMMM, H:mm:ss zzzz",
+        "MMMMEd, Hm": "E d. MMMM, H:mm",
+        "MMMMEd, Hms": "E d. MMMM, H:mm:ss",
+        "MMMMEd, Hmsv": "E d. MMMM, H:mm:ss v",
+        "MMMMEd, Hmv": "E d. MMMM, H:mm v",
+        "MMMMEd, h": "E d. MMMM, h\u202fa",
+        "MMMMEd, hm": "E d. MMMM, h:mm\u202fa",
+        "MMMMEd, hms": "E d. MMMM, h:mm:ss\u202fa",
+        "MMMMEd, hmsv": "E d. MMMM, h:mm:ss\u202fa v",
+        "MMMMEd, hmv": "E d. MMMM, h:mm\u202fa v",
+        "MMMMEd, mmss": "E d. MMMM, mm:ss",
+        "MMMMEd, ms": "E d. MMMM, mm:ss",
+        "MMMMd": "d. MMMM",
+        "MMMMd, Bh": "d. MMMM, h B",
+        "MMMMd, Bhm": "d. MMMM, h:mm B",
+        "MMMMd, Bhms": "d. MMMM, h:mm:ss B",
+        "MMMMd, H": "d. MMMM, H",
+        "MMMMd, H:mm": "d. MMMM, H:mm",
+        "MMMMd, H:mm:ss": "d. MMMM, H:mm:ss",
+        "MMMMd, H:mm:ss z": "d. MMMM, H:mm:ss z",
+        "MMMMd, H:mm:ss zzzz": "d. MMMM, H:mm:ss zzzz",
+        "MMMMd, Hm": "d. MMMM, H:mm",
+        "MMMMd, Hms": "d. MMMM, H:mm:ss",
+        "MMMMd, Hmsv": "d. MMMM, H:mm:ss v",
+        "MMMMd, Hmv": "d. MMMM, H:mm v",
+        "MMMMd, h": "d. MMMM, h\u202fa",
+        "MMMMd, hm": "d. MMMM, h:mm\u202fa",
+        "MMMMd, hms": "d. MMMM, h:mm:ss\u202fa",
+        "MMMMd, hmsv": "d. MMMM, h:mm:ss\u202fa v",
+        "MMMMd, hmv": "d. MMMM, h:mm\u202fa v",
+        "MMMMd, mmss": "d. MMMM, mm:ss",
+        "MMMMd, ms": "d. MMMM, mm:ss",
+        "MMMd": "d. M.",
+        "MMMd, Bh": "d. M., h B",
+        "MMMd, Bhm": "d. M., h:mm B",
+        "MMMd, Bhms": "d. M., h:mm:ss B",
+        "MMMd, H": "d. M., H",
+        "MMMd, H:mm": "d. M., H:mm",
+        "MMMd, H:mm:ss": "d. M., H:mm:ss",
+        "MMMd, H:mm:ss z": "d. M., H:mm:ss z",
+        "MMMd, H:mm:ss zzzz": "d. M., H:mm:ss zzzz",
+        "MMMd, Hm": "d. M., H:mm",
+        "MMMd, Hms": "d. M., H:mm:ss",
+        "MMMd, Hmsv": "d. M., H:mm:ss v",
+        "MMMd, Hmv": "d. M., H:mm v",
+        "MMMd, h": "d. M., h\u202fa",
+        "MMMd, hm": "d. M., h:mm\u202fa",
+        "MMMd, hms": "d. M., h:mm:ss\u202fa",
+        "MMMd, hmsv": "d. M., h:mm:ss\u202fa v",
+        "MMMd, hmv": "d. M., h:mm\u202fa v",
+        "MMMd, mmss": "d. M., mm:ss",
+        "MMMd, ms": "d. M., mm:ss",
+        "Md": "d. M.",
+        "Md Bh": "d. M. h B",
+        "Md Bhm": "d. M. h:mm B",
+        "Md Bhms": "d. M. h:mm:ss B",
+        "Md H": "d. M. H",
+        "Md H:mm": "d. M. H:mm",
+        "Md H:mm:ss": "d. M. H:mm:ss",
+        "Md H:mm:ss z": "d. M. H:mm:ss z",
+        "Md H:mm:ss zzzz": "d. M. H:mm:ss zzzz",
+        "Md Hm": "d. M. H:mm",
+        "Md Hms": "d. M. H:mm:ss",
+        "Md Hmsv": "d. M. H:mm:ss v",
+        "Md Hmv": "d. M. H:mm v",
+        "Md h": "d. M. h\u202fa",
+        "Md hm": "d. M. h:mm\u202fa",
+        "Md hms": "d. M. h:mm:ss\u202fa",
+        "Md hmsv": "d. M. h:mm:ss\u202fa v",
+        "Md hmv": "d. M. h:mm\u202fa v",
+        "Md mmss": "d. M. mm:ss",
+        "Md ms": "d. M. mm:ss",
+        "d": "d.",
+        "d Bh": "d. h B",
+        "d Bhm": "d. h:mm B",
+        "d Bhms": "d. h:mm:ss B",
+        "d H": "d. H",
+        "d H:mm": "d. H:mm",
+        "d H:mm:ss": "d. H:mm:ss",
+        "d H:mm:ss z": "d. H:mm:ss z",
+        "d H:mm:ss zzzz": "d. H:mm:ss zzzz",
+        "d Hm": "d. H:mm",
+        "d Hms": "d. H:mm:ss",
+        "d Hmsv": "d. H:mm:ss v",
+        "d Hmv": "d. H:mm v",
+        "d h": "d. h\u202fa",
+        "d hm": "d. h:mm\u202fa",
+        "d hms": "d. h:mm:ss\u202fa",
+        "d hmsv": "d. h:mm:ss\u202fa v",
+        "d hmv": "d. h:mm\u202fa v",
+        "d mmss": "d. mm:ss",
+        "d ms": "d. mm:ss",
+        "d. M. y": "d. M. y",
+        "d. M. y Bh": "d. M. y h B",
+        "d. M. y Bhm": "d. M. y h:mm B",
+        "d. M. y Bhms": "d. M. y h:mm:ss B",
+        "d. M. y H": "d. M. y H",
+        "d. M. y H:mm": "d. M. y H:mm",
+        "d. M. y H:mm:ss": "d. M. y H:mm:ss",
+        "d. M. y H:mm:ss z": "d. M. y H:mm:ss z",
+        "d. M. y H:mm:ss zzzz": "d. M. y H:mm:ss zzzz",
+        "d. M. y Hm": "d. M. y H:mm",
+        "d. M. y Hms": "d. M. y H:mm:ss",
+        "d. M. y Hmsv": "d. M. y H:mm:ss v",
+        "d. M. y Hmv": "d. M. y H:mm v",
+        "d. M. y h": "d. M. y h\u202fa",
+        "d. M. y hm": "d. M. y h:mm\u202fa",
+        "d. M. y hms": "d. M. y h:mm:ss\u202fa",
+        "d. M. y hmsv": "d. M. y h:mm:ss\u202fa v",
+        "d. M. y hmv": "d. M. y h:mm\u202fa v",
+        "d. M. y mmss": "d. M. y mm:ss",
+        "d. M. y ms": "d. M. y mm:ss",
+        "d. MMMM y": "d. MMMM y",
+        "d. MMMM y, Bh": "d. MMMM y, h B",
+        "d. MMMM y, Bhm": "d. MMMM y, h:mm B",
+        "d. MMMM y, Bhms": "d. MMMM y, h:mm:ss B",
+        "d. MMMM y, H": "d. MMMM y, H",
+        "d. MMMM y, H:mm": "d. MMMM y, H:mm",
+        "d. MMMM y, H:mm:ss": "d. MMMM y, H:mm:ss",
+        "d. MMMM y, H:mm:ss z": "d. MMMM y, H:mm:ss z",
+        "d. MMMM y, H:mm:ss zzzz": "d. MMMM y, H:mm:ss zzzz",
+        "d. MMMM y, Hm": "d. MMMM y, H:mm",
+        "d. MMMM y, Hms": "d. MMMM y, H:mm:ss",
+        "d. MMMM y, Hmsv": "d. MMMM y, H:mm:ss v",
+        "d. MMMM y, Hmv": "d. MMMM y, H:mm v",
+        "d. MMMM y, h": "d. MMMM y, h\u202fa",
+        "d. MMMM y, hm": "d. MMMM y, h:mm\u202fa",
+        "d. MMMM y, hms": "d. MMMM y, h:mm:ss\u202fa",
+        "d. MMMM y, hmsv": "d. MMMM y, h:mm:ss\u202fa v",
+        "d. MMMM y, hmv": "d. MMMM y, h:mm\u202fa v",
+        "d. MMMM y, mmss": "d. MMMM y, mm:ss",
+        "d. MMMM y, ms": "d. MMMM y, mm:ss",
+        "h": "h\u202fa",
+        "hm": "h:mm\u202fa",
+        "hms": "h:mm:ss\u202fa",
+        "hmsv": "h:mm:ss\u202fa v",
+        "hmv": "h:mm\u202fa v",
+        "mmss": "mm:ss",
+        "ms": "mm:ss",
+        "y": "y",
+        "y Bh": "y h B",
+        "y Bhm": "y h:mm B",
+        "y Bhms": "y h:mm:ss B",
+        "y H": "y H",
+        "y H:mm": "y H:mm",
+        "y H:mm:ss": "y H:mm:ss",
+        "y H:mm:ss z": "y H:mm:ss z",
+        "y H:mm:ss zzzz": "y H:mm:ss zzzz",
+        "y Hm": "y H:mm",
+        "y Hms": "y H:mm:ss",
+        "y Hmsv": "y H:mm:ss v",
+        "y Hmv": "y H:mm v",
+        "y h": "y h\u202fa",
+        "y hm": "y h:mm\u202fa",
+        "y hms": "y h:mm:ss\u202fa",
+        "y hmsv": "y h:mm:ss\u202fa v",
+        "y hmv": "y h:mm\u202fa v",
+        "y mmss": "y mm:ss",
+        "y ms": "y mm:ss",
+        "yM": "M/y",
+        "yM Bh": "M/y h B",
+        "yM Bhm": "M/y h:mm B",
+        "yM Bhms": "M/y h:mm:ss B",
+        "yM H": "M/y H",
+        "yM H:mm": "M/y H:mm",
+        "yM H:mm:ss": "M/y H:mm:ss",
+        "yM H:mm:ss z": "M/y H:mm:ss z",
+        "yM H:mm:ss zzzz": "M/y H:mm:ss zzzz",
+        "yM Hm": "M/y H:mm",
+        "yM Hms": "M/y H:mm:ss",
+        "yM Hmsv": "M/y H:mm:ss v",
+        "yM Hmv": "M/y H:mm v",
+        "yM h": "M/y h\u202fa",
+        "yM hm": "M/y h:mm\u202fa",
+        "yM hms": "M/y h:mm:ss\u202fa",
+        "yM hmsv": "M/y h:mm:ss\u202fa v",
+        "yM hmv": "M/y h:mm\u202fa v",
+        "yM mmss": "M/y mm:ss",
+        "yM ms": "M/y mm:ss",
+        "yMEd": "E d. M. y",
+        "yMEd Bh": "E d. M. y h B",
+        "yMEd Bhm": "E d. M. y h:mm B",
+        "yMEd Bhms": "E d. M. y h:mm:ss B",
+        "yMEd H": "E d. M. y H",
+        "yMEd H:mm": "E d. M. y H:mm",
+        "yMEd H:mm:ss": "E d. M. y H:mm:ss",
+        "yMEd H:mm:ss z": "E d. M. y H:mm:ss z",
+        "yMEd H:mm:ss zzzz": "E d. M. y H:mm:ss zzzz",
+        "yMEd Hm": "E d. M. y H:mm",
+        "yMEd Hms": "E d. M. y H:mm:ss",
+        "yMEd Hmsv": "E d. M. y H:mm:ss v",
+        "yMEd Hmv": "E d. M. y H:mm v",
+        "yMEd h": "E d. M. y h\u202fa",
+        "yMEd hm": "E d. M. y h:mm\u202fa",
+        "yMEd hms": "E d. M. y h:mm:ss\u202fa",
+        "yMEd hmsv": "E d. M. y h:mm:ss\u202fa v",
+        "yMEd hmv": "E d. M. y h:mm\u202fa v",
+        "yMEd mmss": "E d. M. y mm:ss",
+        "yMEd ms": "E d. M. y mm:ss",
+        "yMMM": "M/y",
+        "yMMM, Bh": "M/y, h B",
+        "yMMM, Bhm": "M/y, h:mm B",
+        "yMMM, Bhms": "M/y, h:mm:ss B",
+        "yMMM, H": "M/y, H",
+        "yMMM, H:mm": "M/y, H:mm",
+        "yMMM, H:mm:ss": "M/y, H:mm:ss",
+        "yMMM, H:mm:ss z": "M/y, H:mm:ss z",
+        "yMMM, H:mm:ss zzzz": "M/y, H:mm:ss zzzz",
+        "yMMM, Hm": "M/y, H:mm",
+        "yMMM, Hms": "M/y, H:mm:ss",
+        "yMMM, Hmsv": "M/y, H:mm:ss v",
+        "yMMM, Hmv": "M/y, H:mm v",
+        "yMMM, h": "M/y, h\u202fa",
+        "yMMM, hm": "M/y, h:mm\u202fa",
+        "yMMM, hms": "M/y, h:mm:ss\u202fa",
+        "yMMM, hmsv": "M/y, h:mm:ss\u202fa v",
+        "yMMM, hmv": "M/y, h:mm\u202fa v",
+        "yMMM, mmss": "M/y, mm:ss",
+        "yMMM, ms": "M/y, mm:ss",
+        "yMMMEd": "E d. M. y",
+        "yMMMEd, Bh": "E d. M. y, h B",
+        "yMMMEd, Bhm": "E d. M. y, h:mm B",
+        "yMMMEd, Bhms": "E d. M. y, h:mm:ss B",
+        "yMMMEd, H": "E d. M. y, H",
+        "yMMMEd, H:mm": "E d. M. y, H:mm",
+        "yMMMEd, H:mm:ss": "E d. M. y, H:mm:ss",
+        "yMMMEd, H:mm:ss z": "E d. M. y, H:mm:ss z",
+        "yMMMEd, H:mm:ss zzzz": "E d. M. y, H:mm:ss zzzz",
+        "yMMMEd, Hm": "E d. M. y, H:mm",
+        "yMMMEd, Hms": "E d. M. y, H:mm:ss",
+        "yMMMEd, Hmsv": "E d. M. y, H:mm:ss v",
+        "yMMMEd, Hmv": "E d. M. y, H:mm v",
+        "yMMMEd, h": "E d. M. y, h\u202fa",
+        "yMMMEd, hm": "E d. M. y, h:mm\u202fa",
+        "yMMMEd, hms": "E d. M. y, h:mm:ss\u202fa",
+        "yMMMEd, hmsv": "E d. M. y, h:mm:ss\u202fa v",
+        "yMMMEd, hmv": "E d. M. y, h:mm\u202fa v",
+        "yMMMEd, mmss": "E d. M. y, mm:ss",
+        "yMMMEd, ms": "E d. M. y, mm:ss",
+        "yMMMM": "LLLL y",
+        "yMMMM, Bh": "LLLL y, h B",
+        "yMMMM, Bhm": "LLLL y, h:mm B",
+        "yMMMM, Bhms": "LLLL y, h:mm:ss B",
+        "yMMMM, H": "LLLL y, H",
+        "yMMMM, H:mm": "LLLL y, H:mm",
+        "yMMMM, H:mm:ss": "LLLL y, H:mm:ss",
+        "yMMMM, H:mm:ss z": "LLLL y, H:mm:ss z",
+        "yMMMM, H:mm:ss zzzz": "LLLL y, H:mm:ss zzzz",
+        "yMMMM, Hm": "LLLL y, H:mm",
+        "yMMMM, Hms": "LLLL y, H:mm:ss",
+        "yMMMM, Hmsv": "LLLL y, H:mm:ss v",
+        "yMMMM, Hmv": "LLLL y, H:mm v",
+        "yMMMM, h": "LLLL y, h\u202fa",
+        "yMMMM, hm": "LLLL y, h:mm\u202fa",
+        "yMMMM, hms": "LLLL y, h:mm:ss\u202fa",
+        "yMMMM, hmsv": "LLLL y, h:mm:ss\u202fa v",
+        "yMMMM, hmv": "LLLL y, h:mm\u202fa v",
+        "yMMMM, mmss": "LLLL y, mm:ss",
+        "yMMMM, ms": "LLLL y, mm:ss",
+        "yMMMMd": "d. MMMM y",
+        "yMMMMd, Bh": "d. MMMM y, h B",
+        "yMMMMd, Bhm": "d. MMMM y, h:mm B",
+        "yMMMMd, Bhms": "d. MMMM y, h:mm:ss B",
+        "yMMMMd, H": "d. MMMM y, H",
+        "yMMMMd, H:mm": "d. MMMM y, H:mm",
+        "yMMMMd, H:mm:ss": "d. MMMM y, H:mm:ss",
+        "yMMMMd, H:mm:ss z": "d. MMMM y, H:mm:ss z",
+        "yMMMMd, H:mm:ss zzzz": "d. MMMM y, H:mm:ss zzzz",
+        "yMMMMd, Hm": "d. MMMM y, H:mm",
+        "yMMMMd, Hms": "d. MMMM y, H:mm:ss",
+        "yMMMMd, Hmsv": "d. MMMM y, H:mm:ss v",
+        "yMMMMd, Hmv": "d. MMMM y, H:mm v",
+        "yMMMMd, h": "d. MMMM y, h\u202fa",
+        "yMMMMd, hm": "d. MMMM y, h:mm\u202fa",
+        "yMMMMd, hms": "d. MMMM y, h:mm:ss\u202fa",
+        "yMMMMd, hmsv": "d. MMMM y, h:mm:ss\u202fa v",
+        "yMMMMd, hmv": "d. MMMM y, h:mm\u202fa v",
+        "yMMMMd, mmss": "d. MMMM y, mm:ss",
+        "yMMMMd, ms": "d. MMMM y, mm:ss",
+        "yMMMd": "d. M. y",
+        "yMMMd, Bh": "d. M. y, h B",
+        "yMMMd, Bhm": "d. M. y, h:mm B",
+        "yMMMd, Bhms": "d. M. y, h:mm:ss B",
+        "yMMMd, H": "d. M. y, H",
+        "yMMMd, H:mm": "d. M. y, H:mm",
+        "yMMMd, H:mm:ss": "d. M. y, H:mm:ss",
+        "yMMMd, H:mm:ss z": "d. M. y, H:mm:ss z",
+        "yMMMd, H:mm:ss zzzz": "d. M. y, H:mm:ss zzzz",
+        "yMMMd, Hm": "d. M. y, H:mm",
+        "yMMMd, Hms": "d. M. y, H:mm:ss",
+        "yMMMd, Hmsv": "d. M. y, H:mm:ss v",
+        "yMMMd, Hmv": "d. M. y, H:mm v",
+        "yMMMd, h": "d. M. y, h\u202fa",
+        "yMMMd, hm": "d. M. y, h:mm\u202fa",
+        "yMMMd, hms": "d. M. y, h:mm:ss\u202fa",
+        "yMMMd, hmsv": "d. M. y, h:mm:ss\u202fa v",
+        "yMMMd, hmv": "d. M. y, h:mm\u202fa v",
+        "yMMMd, mmss": "d. M. y, mm:ss",
+        "yMMMd, ms": "d. M. y, mm:ss",
+        "yMd": "d. M. y",
+        "yMd Bh": "d. M. y h B",
+        "yMd Bhm": "d. M. y h:mm B",
+        "yMd Bhms": "d. M. y h:mm:ss B",
+        "yMd H": "d. M. y H",
+        "yMd H:mm": "d. M. y H:mm",
+        "yMd H:mm:ss": "d. M. y H:mm:ss",
+        "yMd H:mm:ss z": "d. M. y H:mm:ss z",
+        "yMd H:mm:ss zzzz": "d. M. y H:mm:ss zzzz",
+        "yMd Hm": "d. M. y H:mm",
+        "yMd Hms": "d. M. y H:mm:ss",
+        "yMd Hmsv": "d. M. y H:mm:ss v",
+        "yMd Hmv": "d. M. y H:mm v",
+        "yMd h": "d. M. y h\u202fa",
+        "yMd hm": "d. M. y h:mm\u202fa",
+        "yMd hms": "d. M. y h:mm:ss\u202fa",
+        "yMd hmsv": "d. M. y h:mm:ss\u202fa v",
+        "yMd hmv": "d. M. y h:mm\u202fa v",
+        "yMd mmss": "d. M. y mm:ss",
+        "yMd ms": "d. M. y mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23"
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h B\u2009\u2013\u2009h B",
+        "h": "h\u2009\u2013\u2009h B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2009\u2013\u2009h:mm B",
+        "m": "h:mm\u2009\u2013\u2009h:mm B"
+      },
+      "Gy": {
+        "G": "y G\u2009\u2013\u2009y G",
+        "y": "y\u2009\u2013\u2009y G"
+      },
+      "GyM": {
+        "G": "M/y GGGGG\u2009\u2013\u2009M/y GGGGG",
+        "M": "M/y\u2009\u2013\u2009M/y GGGGG",
+        "y": "M/y\u2009\u2013\u2009M/y GGGGG"
+      },
+      "GyMEd": {
+        "G": "E d. M. y GGGGG\u2009\u2013\u2009E d. M. y GGGGG",
+        "M": "E d. M. y\u2009\u2013\u2009E d. M. y GGGGG",
+        "d": "E d. M. y\u2009\u2013\u2009E d. M. y GGGGG",
+        "y": "E d. M. y\u2009\u2013\u2009E d. M. y GGGGG"
+      },
+      "GyMMM": {
+        "G": "LLLL y G\u2009\u2013\u2009LLLL y G",
+        "M": "LLLL\u2009\u2013\u2009LLLL y G",
+        "y": "LLLL y\u2009\u2013\u2009LLLL y G"
+      },
+      "GyMMMEd": {
+        "G": "E d. M. y G\u2009\u2013\u2009E d. M. y G",
+        "M": "E d. M.\u2009\u2013\u2009E d. M. y G",
+        "d": "E d. M.\u2009\u2013\u2009E d. M. y G",
+        "y": "E d. M. y\u2009\u2013\u2009E d. M. y G"
+      },
+      "GyMMMd": {
+        "G": "d. M. y G\u2009\u2013\u2009d. M. y G",
+        "M": "d. M.\u2009\u2013\u2009d. M. y G",
+        "d": "d.\u2009\u2013\u2009d. M. y G",
+        "y": "d. M. y\u2009\u2013\u2009d. M. y G"
+      },
+      "GyMd": {
+        "G": "d. M. y GGGGG\u2009\u2013\u2009d. M. y GGGGG",
+        "M": "d. M. y\u2009\u2013\u2009d. M. y GGGGG",
+        "d": "d. M. y\u2009\u2013\u2009d. M. y GGGGG",
+        "y": "d. M. y\u2009\u2013\u2009d. M. y GGGGG"
+      },
+      "H": {
+        "H": "HH\u2009\u2013\u2009HH"
+      },
+      "Hm": {
+        "H": "H:mm\u2009\u2013\u2009H:mm",
+        "m": "H:mm\u2009\u2013\u2009H:mm"
+      },
+      "Hmv": {
+        "H": "H:mm\u2009\u2013\u2009H:mm v",
+        "m": "H:mm\u2009\u2013\u2009H:mm v"
+      },
+      "Hv": {
+        "H": "HH\u2009\u2013\u2009HH v"
+      },
+      "M": {
+        "M": "M.\u2009\u2013\u2009M."
+      },
+      "MEd": {
+        "M": "E d. M.\u2009\u2013\u2009E d. M.",
+        "d": "E d. M.\u2009\u2013\u2009E d. M."
+      },
+      "MMM": {
+        "M": "LLL\u2009\u2013\u2009LLL"
+      },
+      "MMMEd": {
+        "M": "E d. M.\u2009\u2013\u2009E d. M.",
+        "d": "E d.\u2009\u2013\u2009E d. M."
+      },
+      "MMMM": {
+        "M": "LLLL\u2009\u2013\u2009LLLL"
+      },
+      "MMMd": {
+        "M": "d. M.\u2009\u2013\u2009d. M.",
+        "d": "d.\u2009\u2013\u2009d. M."
+      },
+      "Md": {
+        "M": "d. M.\u2009\u2013\u2009d. M.",
+        "d": "d.\u00a0M.\u2009\u2013\u2009d. M."
+      },
+      "d": {
+        "d": "d.\u2009\u2013\u2009d."
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2009\u2013\u2009h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa",
+        "h": "h:mm\u2009\u2013\u2009h:mm\u202fa",
+        "m": "h:mm\u2009\u2013\u2009h:mm\u202fa"
+      },
+      "hmv": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa v",
+        "h": "h:mm\u2009\u2013\u2009h:mm\u202fa v",
+        "m": "h:mm\u2009\u2013\u2009h:mm\u202fa v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2009\u2013\u2009h\u202fa v"
+      },
+      "intervalFormatFallback": "{0}\u2009\u2013\u2009{1}",
+      "y": {
+        "y": "y\u2009\u2013\u2009y"
+      },
+      "yM": {
+        "M": "M/y\u2009\u2013\u2009M/y",
+        "y": "M/y\u2009\u2013\u2009M/y"
+      },
+      "yMEd": {
+        "M": "E d. M. y\u2009\u2013\u2009E d. M. y",
+        "d": "E d. M. y\u2009\u2013\u2009E d. M. y",
+        "y": "E d. M. y\u2009\u2013\u2009E d. M. y"
+      },
+      "yMMM": {
+        "M": "M\u2009\u2013\u2009M/y",
+        "y": "M/y\u2009\u2013\u2009M/y"
+      },
+      "yMMMEd": {
+        "M": "E d. M.\u2009\u2013\u2009E d. M. y",
+        "d": "E d.\u2009\u2013\u2009E d. M. y",
+        "y": "E d. M. y\u2009\u2013\u2009E d. M. y"
+      },
+      "yMMMM": {
+        "M": "LLLL\u2009\u2013\u2009LLLL y",
+        "y": "LLLL y\u2009\u2013\u2009LLLL y"
+      },
+      "yMMMd": {
+        "M": "d. M.\u2009\u2013\u2009d. M. y",
+        "d": "d.\u2009\u2013\u2009d. M. y",
+        "y": "d. M. y\u2009\u2013\u2009d. M. y"
+      },
+      "yMd": {
+        "M": "d. M. y\u2009\u2013\u2009d. M. y",
+        "d": "d. M. y\u2009\u2013\u2009d. M. y",
+        "y": "d. M. y\u2009\u2013\u2009d. M. y"
+      }
+    },
+    "month": {
+      "long": [
+        "janu\u00e1ra",
+        "febru\u00e1ra",
+        "marca",
+        "apr\u00edla",
+        "m\u00e1ja",
+        "j\u00fana",
+        "j\u00fala",
+        "augusta",
+        "septembra",
+        "okt\u00f3bra",
+        "novembra",
+        "decembra"
+      ],
+      "narrow": [
+        "j",
+        "f",
+        "m",
+        "a",
+        "m",
+        "j",
+        "j",
+        "a",
+        "s",
+        "o",
+        "n",
+        "d"
+      ],
+      "short": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "m\u00e1j",
+        "j\u00fan",
+        "j\u00fal",
+        "aug",
+        "sep",
+        "okt",
+        "nov",
+        "dec"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "PM",
+    "timeFormat": {
+      "full": "H:mm:ss zzzz",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "juhoafrick\u00fd \u010das",
+          "juhoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "stredoafrick\u00fd \u010das",
+          "stredoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "juhoafrick\u00fd \u010das",
+          "juhoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "juhoafrick\u00fd \u010das",
+          "juhoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "z\u00e1padoafrick\u00fd \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoafrick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "z\u00e1padoargent\u00ednsky \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoargent\u00ednsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "paraguajsk\u00fd \u0161tandardn\u00fd \u010das",
+          "paraguajsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "kolumbijsk\u00fd \u0161tandardn\u00fd \u010das",
+          "kolumbijsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "argent\u00ednsky \u0161tandardn\u00fd \u010das",
+          "argent\u00ednsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "venezuelsk\u00fd \u010das",
+          "venezuelsk\u00fd \u010das"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "franc\u00fazskoguyansk\u00fd \u010das",
+          "franc\u00fazskoguyansk\u00fd \u010das"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "severoamerick\u00fd horsk\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd horsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "severoamerick\u00fd horsk\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd horsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "z\u00e1padogr\u00f3nsky \u0161tandardn\u00fd \u010das",
+          "z\u00e1padogr\u00f3nsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "ekv\u00e1dorsk\u00fd \u010das",
+          "ekv\u00e1dorsk\u00fd \u010das"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "guyansk\u00fd \u010das",
+          "guyansk\u00fd \u010das"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "kub\u00e1nsky \u0161tandardn\u00fd \u010das",
+          "kub\u00e1nsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "alja\u0161sk\u00fd \u0161tandardn\u00fd \u010das",
+          "alja\u0161sk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "bol\u00edvijsk\u00fd \u010das",
+          "bol\u00edvijsk\u00fd \u010das"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "peru\u00e1nsky \u0161tandardn\u00fd \u010das",
+          "peru\u00e1nsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "severoamerick\u00fd tichomorsk\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd tichomorsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "amazonsk\u00fd \u0161tandardn\u00fd \u010das",
+          "amazonsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "mexick\u00fd tichomorsk\u00fd \u0161tandardn\u00fd \u010das",
+          "mexick\u00fd tichomorsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "pierre-miquelonsk\u00fd \u0161tandardn\u00fd \u010das",
+          "pierre-miquelonsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "uruguajsk\u00fd \u0161tandardn\u00fd \u010das",
+          "uruguajsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das s\u00faostrovia Fernando de Noronha",
+          "letn\u00fd \u010das s\u00faostrovia Fernando de Noronha"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "surinamsk\u00fd \u010das",
+          "surinamsk\u00fd \u010das"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Rio_Branco": {
+        "long": [
+          "acrejsk\u00fd \u0161tandardn\u00fd \u010das",
+          "acrejsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "\u010dilsk\u00fd \u0161tandardn\u00fd \u010das",
+          "\u010dilsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "braz\u00edlsky \u0161tandardn\u00fd \u010das",
+          "braz\u00edlsky letn\u00fd \u010das"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "v\u00fdchodogr\u00f3nsky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodogr\u00f3nsky letn\u00fd \u010das"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "newfoundlandsk\u00fd \u0161tandardn\u00fd \u010das",
+          "newfoundlandsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "severoamerick\u00fd tichomorsk\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd tichomorsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "severoamerick\u00fd v\u00fdchodn\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd v\u00fdchodn\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "severoamerick\u00fd tichomorsk\u00fd \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd tichomorsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "yukonsk\u00fd \u010das",
+          "yukonsk\u00fd \u010das"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "severoamerick\u00fd centr\u00e1lny \u0161tandardn\u00fd \u010das",
+          "severoamerick\u00fd centr\u00e1lny letn\u00fd \u010das"
+        ]
+      },
+      "Antarctica/Casey": {
+        "long": [
+          "\u010das Caseyho stanice",
+          "\u010das Caseyho stanice"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "\u010das Davisovej stanice",
+          "\u010das Davisovej stanice"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "\u010das stanice Dumonta d\u2019Urvillea",
+          "\u010das stanice Dumonta d\u2019Urvillea"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "\u010das Mawsonovej stanice",
+          "\u010das Mawsonovej stanice"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "novoz\u00e9landsk\u00fd \u0161tandardn\u00fd \u010das",
+          "novoz\u00e9landsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "\u010das Rotherovej stanice",
+          "\u010das Rotherovej stanice"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "\u010das stanice \u0160\u00f3wa",
+          "\u010das stanice \u0160\u00f3wa"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "\u010das stanice Vostok",
+          "\u010das stanice Vostok"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "v\u00fdchodokazachstansk\u00fd \u010das",
+          "v\u00fdchodokazachstansk\u00fd \u010das"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "Anadyrsk\u00fd \u0161tandardn\u00fd \u010das",
+          "Anadyrsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "z\u00e1padokazachstansk\u00fd \u010das",
+          "z\u00e1padokazachstansk\u00fd \u010das"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "turkm\u00e9nsky \u0161tandardn\u00fd \u010das",
+          "turkm\u00e9nsky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "indo\u010d\u00ednsky \u010das",
+          "indo\u010d\u00ednsky \u010das"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "kirgizsk\u00fd \u010das",
+          "kirgizsk\u00fd \u010das"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "brunejsk\u00fd \u010das",
+          "brunejsk\u00fd \u010das"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "indick\u00fd \u010das",
+          "indick\u00fd \u010das"
+        ]
+      },
+      "Asia/Colombo": {
+        "long": [
+          "sr\u00edlansk\u00fd \u010das",
+          "sr\u00edlansk\u00fd \u010das"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "v\u00fdchodotimorsk\u00fd \u010das",
+          "v\u00fdchodotimorsk\u00fd \u010das"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das Perzsk\u00e9ho z\u00e1livu",
+          "\u0161tandardn\u00fd \u010das Perzsk\u00e9ho z\u00e1livu"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "tad\u017eick\u00fd \u010das",
+          "tad\u017eick\u00fd \u010das"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "hongkonsk\u00fd \u0161tandardn\u00fd \u010das",
+          "hongkonsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "chovdsk\u00fd \u0161tandardn\u00fd \u010das",
+          "chovdsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "irkutsk\u00fd \u0161tandardn\u00fd \u010das",
+          "irkutsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "z\u00e1padoindon\u00e9zsky \u010das",
+          "z\u00e1padoindon\u00e9zsky \u010das"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "v\u00fdchodoindon\u00e9zsky \u010das",
+          "v\u00fdchodoindon\u00e9zsky \u010das"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "izraelsk\u00fd \u0161tandardn\u00fd \u010das",
+          "izraelsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "afgansk\u00fd \u010das",
+          "afgansk\u00fd \u010das"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "Petropavlovsk-Kam\u010datsk\u00fd \u0161tandardn\u00fd \u010das",
+          "Petropavlovsk-Kam\u010datskijsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "pakistansk\u00fd \u0161tandardn\u00fd \u010das",
+          "pakistansk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "nep\u00e1lsky \u010das",
+          "nep\u00e1lsky \u010das"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "krasnojarsk\u00fd \u0161tandardn\u00fd \u010das",
+          "krasnojarsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "malajzijsk\u00fd \u010das",
+          "malajzijsk\u00fd \u010das"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Macau": {
+        "long": [
+          "macajsk\u00fd \u0161tandardn\u00fd \u010das",
+          "macajsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "magadansk\u00fd \u0161tandardn\u00fd \u010das",
+          "magadansk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "stredoindon\u00e9zsky \u010das",
+          "stredoindon\u00e9zsky \u010das"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "filip\u00ednsky \u0161tandardn\u00fd \u010das",
+          "filip\u00ednsky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das Perzsk\u00e9ho z\u00e1livu",
+          "\u0161tandardn\u00fd \u010das Perzsk\u00e9ho z\u00e1livu"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "novosibirsk\u00fd \u0161tandardn\u00fd \u010das",
+          "novosibirsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "omsk\u00fd \u0161tandardn\u00fd \u010das",
+          "omsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "indo\u010d\u00ednsky \u010das",
+          "indo\u010d\u00ednsky \u010das"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "pchjongjansk\u00fd \u010das",
+          "pchjongjansk\u00fd \u010das"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Qyzylorda": {
+        "long": [
+          "kyzylordsk\u00fd \u0161tandardn\u00fd \u010das",
+          "kyzylordsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "mjanmarsk\u00fd \u010das",
+          "mjanmarsk\u00fd \u010das"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "arabsk\u00fd \u0161tandardn\u00fd \u010das",
+          "arabsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "sachalinsk\u00fd \u0161tandardn\u00fd \u010das",
+          "sachalinsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "k\u00f3rejsk\u00fd \u0161tandardn\u00fd \u010das",
+          "k\u00f3rejsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "\u010d\u00ednsky \u0161tandardn\u00fd \u010das",
+          "\u010d\u00ednsky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "singapursk\u00fd \u0161tandardn\u00fd \u010das",
+          "singapursk\u00fd \u0161tandardn\u00fd \u010das"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "tchajpejsk\u00fd \u0161tandardn\u00fd \u010das",
+          "tchajpejsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "uzbeck\u00fd \u0161tandardn\u00fd \u010das",
+          "uzbeck\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "ir\u00e1nsky \u0161tandardn\u00fd \u010das",
+          "ir\u00e1nsky letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "bhut\u00e1nsky \u010das",
+          "bhut\u00e1nsky \u010das"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "japonsk\u00fd \u0161tandardn\u00fd \u010das",
+          "japonsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "ulanb\u00e1tarsk\u00fd \u0161tandardn\u00fd \u010das",
+          "ulanb\u00e1tarsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "indo\u010d\u00ednsky \u010das",
+          "indo\u010d\u00ednsky \u010das"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "vladivostock\u00fd \u0161tandardn\u00fd \u010das",
+          "vladivostock\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "jakutsk\u00fd \u0161tandardn\u00fd \u010das",
+          "jakutsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "jekaterinbursk\u00fd \u0161tandardn\u00fd \u010das",
+          "jekaterinbursk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "azorsk\u00fd \u0161tandardn\u00fd \u010das",
+          "azorsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "atlantick\u00fd \u0161tandardn\u00fd \u010das",
+          "atlantick\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "z\u00e1padoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "kapverdsk\u00fd \u0161tandardn\u00fd \u010das",
+          "kapverdsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "z\u00e1padoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "\u010das Ju\u017enej Georgie",
+          "\u010das Ju\u017enej Georgie"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "falklandsk\u00fd \u0161tandardn\u00fd \u010das",
+          "falklandsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "stredoaustr\u00e1lsky \u0161tandardn\u00fd \u010das",
+          "stredoaustr\u00e1lsky letn\u00fd \u010das"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "stredoz\u00e1padn\u00fd austr\u00e1lsky \u0161tandardn\u00fd \u010das",
+          "stredoz\u00e1padn\u00fd austr\u00e1lsky letn\u00fd \u010das"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das ostrova lorda Howa",
+          "letn\u00fd \u010das ostrova lorda Howa"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "z\u00e1padoaustr\u00e1lsky \u0161tandardn\u00fd \u010das",
+          "z\u00e1padoaustr\u00e1lsky letn\u00fd \u010das"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "v\u00fdchodoaustr\u00e1lsky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoaustr\u00e1lsky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "minsk\u00fd \u010das",
+          "minsk\u00fd \u010das"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "greenwichsk\u00fd \u010das",
+          "greenwichsk\u00fd \u010das"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "minsk\u00fd \u010das",
+          "minsk\u00fd \u010das"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "moskovsk\u00fd \u0161tandardn\u00fd \u010das",
+          "moskovsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "Samarsk\u00fd \u0161tandardn\u00fd \u010das",
+          "Samarsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "v\u00fdchodoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "v\u00fdchodoeur\u00f3psky letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "volgogradsk\u00fd \u0161tandardn\u00fd \u010das",
+          "volgogradsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "stredoeur\u00f3psky \u0161tandardn\u00fd \u010das",
+          "stredoeur\u00f3psky letn\u00fd \u010das"
+        ],
+        "short": [
+          "SE\u010c",
+          "SEL\u010c"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "indickooce\u00e1nsky \u010das",
+          "indickooce\u00e1nsky \u010das"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "\u010das Viano\u010dn\u00e9ho ostrova",
+          "\u010das Viano\u010dn\u00e9ho ostrova"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "\u010das Kokosov\u00fdch ostrovov",
+          "\u010das Kokosov\u00fdch ostrovov"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "\u010das Franc\u00fazskych ju\u017en\u00fdch a antarktick\u00fdch \u00fazem\u00ed",
+          "\u010das Franc\u00fazskych ju\u017en\u00fdch a antarktick\u00fdch \u00fazem\u00ed"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "seychelsk\u00fd \u010das",
+          "seychelsk\u00fd \u010das"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "maldivsk\u00fd \u010das",
+          "maldivsk\u00fd \u010das"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "maur\u00edcijsk\u00fd \u0161tandardn\u00fd \u010das",
+          "maur\u00edcijsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "v\u00fdchodoafrick\u00fd \u010das",
+          "v\u00fdchodoafrick\u00fd \u010das"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "r\u00e9unionsk\u00fd \u010das",
+          "r\u00e9unionsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "apijsk\u00fd \u0161tandardn\u00fd \u010das",
+          "apijsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "novoz\u00e9landsk\u00fd \u0161tandardn\u00fd \u010das",
+          "novoz\u00e9landsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "chathamsk\u00fd \u0161tandardn\u00fd \u010das",
+          "chathamsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das Ve\u013ekono\u010dn\u00e9ho ostrova",
+          "letn\u00fd \u010das Ve\u013ekono\u010dn\u00e9ho ostrova"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "vanuatsk\u00fd \u0161tandardn\u00fd \u010das",
+          "vanuatsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "\u010das F\u00e9nixov\u00fdch ostrovov",
+          "\u010das F\u00e9nixov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "tokelausk\u00fd \u010das",
+          "tokelausk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "fid\u017eijsk\u00fd \u0161tandardn\u00fd \u010das",
+          "fid\u017eijsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "tuvalsk\u00fd \u010das",
+          "tuvalsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "galap\u00e1gsky \u010das",
+          "galap\u00e1gsky \u010das"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "gambiersk\u00fd \u010das",
+          "gambiersk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "\u010das \u0160alam\u00fanov\u00fdch ostrovov",
+          "\u010das \u0160alam\u00fanov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Guam": {
+        "long": [
+          "guamsk\u00fd \u010das",
+          "guamsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "havajsko-aleutsk\u00fd \u0161tandardn\u00fd \u010das",
+          "havajsko-aleutsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "\u010das Rovn\u00edkov\u00fdch ostrovov",
+          "\u010das Rovn\u00edkov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "kosrajsk\u00fd \u010das",
+          "kosrajsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "\u010das Marshallov\u00fdch ostrovov",
+          "\u010das Marshallov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "mark\u00e9zsky \u010das",
+          "mark\u00e9zsky \u010das"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "naurusk\u00fd \u010das",
+          "naurusk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "niuejsk\u00fd \u010das",
+          "niuejsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "norfolsk\u00fd \u0161tandardn\u00fd \u010das",
+          "norfolsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "novokaled\u00f3nsky \u0161tandardn\u00fd \u010das",
+          "novokaled\u00f3nsky letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "samojsk\u00fd \u0161tandardn\u00fd \u010das",
+          "samojsk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "palausk\u00fd \u010das",
+          "palausk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "\u010das Pitcairnov\u00fdch ostrovov",
+          "\u010das Pitcairnov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "ponapsk\u00fd \u010das",
+          "ponapsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "\u010das Papuy-Novej Guiney",
+          "\u010das Papuy-Novej Guiney"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "\u0161tandardn\u00fd \u010das Cookov\u00fdch ostrovov",
+          "letn\u00fd \u010das Cookov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Saipan": {
+        "long": [
+          "severomari\u00e1nsky \u010das",
+          "severomari\u00e1nsky \u010das"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "tahitsk\u00fd \u010das",
+          "tahitsk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "\u010das Gilbertov\u00fdch ostrovov",
+          "\u010das Gilbertov\u00fdch ostrovov"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "ton\u017esk\u00fd \u0161tandardn\u00fd \u010das",
+          "ton\u017esk\u00fd letn\u00fd \u010das"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "chuuksk\u00fd \u010das",
+          "chuuksk\u00fd \u010das"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "\u010das ostrova Wake",
+          "\u010das ostrova Wake"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "\u010das ostrovov Wallis a Futuna",
+          "\u010das ostrovov Wallis a Futuna"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "koordinovan\u00fd svetov\u00fd \u010das",
+          "koordinovan\u00fd svetov\u00fd \u010das"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "nede\u013ea",
+        "pondelok",
+        "utorok",
+        "streda",
+        "\u0161tvrtok",
+        "piatok",
+        "sobota"
+      ],
+      "narrow": [
+        "n",
+        "p",
+        "u",
+        "s",
+        "\u0161",
+        "p",
+        "s"
+      ],
+      "short": [
+        "ne",
+        "po",
+        "ut",
+        "st",
+        "\u0161t",
+        "pi",
+        "so"
+      ]
+    }
+  },
+  "locale": "sk"
+}

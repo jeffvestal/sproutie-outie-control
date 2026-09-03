@@ -1,0 +1,404 @@
+{
+  "data": {
+    "day": {
+      "-1": "v\u010dera",
+      "-2": "p\u0159edev\u010d\u00edrem",
+      "0": "dnes",
+      "1": "z\u00edtra",
+      "2": "poz\u00edt\u0159\u00ed",
+      "future": {
+        "few": "za {0} dny",
+        "many": "za {0} dne",
+        "one": "za {0} den",
+        "other": "za {0} dn\u00ed"
+      },
+      "past": {
+        "few": "p\u0159ed {0} dny",
+        "many": "p\u0159ed {0} dne",
+        "one": "p\u0159ed {0} dnem",
+        "other": "p\u0159ed {0} dny"
+      }
+    },
+    "day-narrow": {
+      "-1": "v\u010dera",
+      "-2": "p\u0159edev\u010d\u00edrem",
+      "0": "dnes",
+      "1": "z\u00edtra",
+      "2": "poz\u00edt\u0159\u00ed",
+      "future": {
+        "few": "za {0} dny",
+        "many": "za {0} dne",
+        "one": "za {0} den",
+        "other": "za {0} dn\u00ed"
+      },
+      "past": {
+        "few": "p\u0159ed {0} dny",
+        "many": "p\u0159ed {0} dne",
+        "one": "p\u0159ed {0} dnem",
+        "other": "p\u0159ed {0} dny"
+      }
+    },
+    "day-short": {
+      "-1": "v\u010dera",
+      "-2": "p\u0159edev\u010d\u00edrem",
+      "0": "dnes",
+      "1": "z\u00edtra",
+      "2": "poz\u00edt\u0159\u00ed",
+      "future": {
+        "few": "za {0} dny",
+        "many": "za {0} dne",
+        "one": "za {0} den",
+        "other": "za {0} dn\u00ed"
+      },
+      "past": {
+        "few": "p\u0159ed {0} dny",
+        "many": "p\u0159ed {0} dne",
+        "one": "p\u0159ed {0} dnem",
+        "other": "p\u0159ed {0} dny"
+      }
+    },
+    "hour": {
+      "0": "tuto hodinu",
+      "future": {
+        "few": "za {0} hodiny",
+        "many": "za {0} hodiny",
+        "one": "za {0} hodinu",
+        "other": "za {0} hodin"
+      },
+      "past": {
+        "few": "p\u0159ed {0} hodinami",
+        "many": "p\u0159ed {0} hodiny",
+        "one": "p\u0159ed {0} hodinou",
+        "other": "p\u0159ed {0} hodinami"
+      }
+    },
+    "hour-narrow": {
+      "0": "tuto hodinu",
+      "future": {
+        "few": "za {0} h",
+        "many": "za {0} h",
+        "one": "za {0} h",
+        "other": "za {0} h"
+      },
+      "past": {
+        "few": "p\u0159ed {0} h",
+        "many": "p\u0159ed {0} h",
+        "one": "p\u0159ed {0} h",
+        "other": "p\u0159ed {0} h"
+      }
+    },
+    "hour-short": {
+      "0": "tuto hodinu",
+      "future": {
+        "few": "za {0} h",
+        "many": "za {0} h",
+        "one": "za {0} h",
+        "other": "za {0} h"
+      },
+      "past": {
+        "few": "p\u0159ed {0} h",
+        "many": "p\u0159ed {0} h",
+        "one": "p\u0159ed {0} h",
+        "other": "p\u0159ed {0} h"
+      }
+    },
+    "minute": {
+      "0": "tuto minutu",
+      "future": {
+        "few": "za {0} minuty",
+        "many": "za {0} minuty",
+        "one": "za {0} minutu",
+        "other": "za {0} minut"
+      },
+      "past": {
+        "few": "p\u0159ed {0} minutami",
+        "many": "p\u0159ed {0} minuty",
+        "one": "p\u0159ed {0} minutou",
+        "other": "p\u0159ed {0} minutami"
+      }
+    },
+    "minute-narrow": {
+      "0": "tuto minutu",
+      "future": {
+        "few": "za {0} min",
+        "many": "za {0} min",
+        "one": "za {0} min",
+        "other": "za {0} min"
+      },
+      "past": {
+        "few": "p\u0159ed {0} min",
+        "many": "p\u0159ed {0} min",
+        "one": "p\u0159ed {0} min",
+        "other": "p\u0159ed {0} min"
+      }
+    },
+    "minute-short": {
+      "0": "tuto minutu",
+      "future": {
+        "few": "za {0} min",
+        "many": "za {0} min",
+        "one": "za {0} min",
+        "other": "za {0} min"
+      },
+      "past": {
+        "few": "p\u0159ed {0} min",
+        "many": "p\u0159ed {0} min",
+        "one": "p\u0159ed {0} min",
+        "other": "p\u0159ed {0} min"
+      }
+    },
+    "month": {
+      "-1": "minul\u00fd m\u011bs\u00edc",
+      "0": "tento m\u011bs\u00edc",
+      "1": "p\u0159\u00ed\u0161t\u00ed m\u011bs\u00edc",
+      "future": {
+        "few": "za {0} m\u011bs\u00edce",
+        "many": "za {0} m\u011bs\u00edce",
+        "one": "za {0} m\u011bs\u00edc",
+        "other": "za {0} m\u011bs\u00edc\u016f"
+      },
+      "past": {
+        "few": "p\u0159ed {0} m\u011bs\u00edci",
+        "many": "p\u0159ed {0} m\u011bs\u00edce",
+        "one": "p\u0159ed {0} m\u011bs\u00edcem",
+        "other": "p\u0159ed {0} m\u011bs\u00edci"
+      }
+    },
+    "month-narrow": {
+      "-1": "minul\u00fd m\u011bs.",
+      "0": "tento m\u011bs.",
+      "1": "p\u0159\u00ed\u0161t\u00ed m\u011bs.",
+      "future": {
+        "few": "za {0} m\u011bs.",
+        "many": "za {0} m\u011bs.",
+        "one": "za {0} m\u011bs.",
+        "other": "za {0} m\u011bs."
+      },
+      "past": {
+        "few": "p\u0159ed {0} m\u011bs.",
+        "many": "p\u0159ed {0} m\u011bs.",
+        "one": "p\u0159ed {0} m\u011bs.",
+        "other": "p\u0159ed {0} m\u011bs."
+      }
+    },
+    "month-short": {
+      "-1": "minul\u00fd m\u011bs.",
+      "0": "tento m\u011bs.",
+      "1": "p\u0159\u00ed\u0161t\u00ed m\u011bs.",
+      "future": {
+        "few": "za {0} m\u011bs.",
+        "many": "za {0} m\u011bs.",
+        "one": "za {0} m\u011bs.",
+        "other": "za {0} m\u011bs."
+      },
+      "past": {
+        "few": "p\u0159ed {0} m\u011bs.",
+        "many": "p\u0159ed {0} m\u011bs.",
+        "one": "p\u0159ed {0} m\u011bs.",
+        "other": "p\u0159ed {0} m\u011bs."
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "minul\u00e9 \u010dtvrtlet\u00ed",
+      "0": "toto \u010dtvrtlet\u00ed",
+      "1": "p\u0159\u00ed\u0161t\u00ed \u010dtvrtlet\u00ed",
+      "future": {
+        "few": "za {0} \u010dtvrtlet\u00ed",
+        "many": "za {0} \u010dtvrtlet\u00ed",
+        "one": "za {0} \u010dtvrtlet\u00ed",
+        "other": "za {0} \u010dtvrtlet\u00ed"
+      },
+      "past": {
+        "few": "p\u0159ed {0} \u010dtvrtlet\u00edmi",
+        "many": "p\u0159ed {0} \u010dtvrtlet\u00ed",
+        "one": "p\u0159ed {0} \u010dtvrtlet\u00edm",
+        "other": "p\u0159ed {0} \u010dtvrtlet\u00edmi"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "minul\u00e9 \u010dtvrtlet\u00ed",
+      "0": "toto \u010dtvrtlet\u00ed",
+      "1": "p\u0159\u00ed\u0161t\u00ed \u010dtvrtlet\u00ed",
+      "future": {
+        "few": "+{0} Q",
+        "many": "+{0} Q",
+        "one": "+{0} Q",
+        "other": "+{0} Q"
+      },
+      "past": {
+        "few": "-{0} Q",
+        "many": "-{0} Q",
+        "one": "-{0} Q",
+        "other": "-{0} Q"
+      }
+    },
+    "quarter-short": {
+      "-1": "minul\u00e9 \u010dtvrtlet\u00ed",
+      "0": "toto \u010dtvrtlet\u00ed",
+      "1": "p\u0159\u00ed\u0161t\u00ed \u010dtvrtlet\u00ed",
+      "future": {
+        "few": "+{0} Q",
+        "many": "+{0} Q",
+        "one": "+{0} Q",
+        "other": "+{0} Q"
+      },
+      "past": {
+        "few": "-{0} Q",
+        "many": "-{0} Q",
+        "one": "-{0} Q",
+        "other": "-{0} Q"
+      }
+    },
+    "second": {
+      "0": "nyn\u00ed",
+      "future": {
+        "few": "za {0} sekundy",
+        "many": "za {0} sekundy",
+        "one": "za {0} sekundu",
+        "other": "za {0} sekund"
+      },
+      "past": {
+        "few": "p\u0159ed {0} sekundami",
+        "many": "p\u0159ed {0} sekundy",
+        "one": "p\u0159ed {0} sekundou",
+        "other": "p\u0159ed {0} sekundami"
+      }
+    },
+    "second-narrow": {
+      "0": "nyn\u00ed",
+      "future": {
+        "few": "za {0} s",
+        "many": "za {0} s",
+        "one": "za {0} s",
+        "other": "za {0} s"
+      },
+      "past": {
+        "few": "p\u0159ed {0} s",
+        "many": "p\u0159ed {0} s",
+        "one": "p\u0159ed {0} s",
+        "other": "p\u0159ed {0} s"
+      }
+    },
+    "second-short": {
+      "0": "nyn\u00ed",
+      "future": {
+        "few": "za {0} s",
+        "many": "za {0} s",
+        "one": "za {0} s",
+        "other": "za {0} s"
+      },
+      "past": {
+        "few": "p\u0159ed {0} s",
+        "many": "p\u0159ed {0} s",
+        "one": "p\u0159ed {0} s",
+        "other": "p\u0159ed {0} s"
+      }
+    },
+    "week": {
+      "-1": "minul\u00fd t\u00fdden",
+      "0": "tento t\u00fdden",
+      "1": "p\u0159\u00ed\u0161t\u00ed t\u00fdden",
+      "future": {
+        "few": "za {0} t\u00fddny",
+        "many": "za {0} t\u00fddne",
+        "one": "za {0} t\u00fdden",
+        "other": "za {0} t\u00fddn\u016f"
+      },
+      "past": {
+        "few": "p\u0159ed {0} t\u00fddny",
+        "many": "p\u0159ed {0} t\u00fddne",
+        "one": "p\u0159ed {0} t\u00fddnem",
+        "other": "p\u0159ed {0} t\u00fddny"
+      }
+    },
+    "week-narrow": {
+      "-1": "minul\u00fd t\u00fdd.",
+      "0": "tento t\u00fdd.",
+      "1": "p\u0159\u00ed\u0161t\u00ed t\u00fdd.",
+      "future": {
+        "few": "za {0} t\u00fdd.",
+        "many": "za {0} t\u00fdd.",
+        "one": "za {0} t\u00fdd.",
+        "other": "za {0} t\u00fdd."
+      },
+      "past": {
+        "few": "p\u0159ed {0} t\u00fdd.",
+        "many": "p\u0159ed {0} t\u00fdd.",
+        "one": "p\u0159ed {0} t\u00fdd.",
+        "other": "p\u0159ed {0} t\u00fdd."
+      }
+    },
+    "week-short": {
+      "-1": "minul\u00fd t\u00fdd.",
+      "0": "tento t\u00fdd.",
+      "1": "p\u0159\u00ed\u0161t\u00ed t\u00fdd.",
+      "future": {
+        "few": "za {0} t\u00fdd.",
+        "many": "za {0} t\u00fdd.",
+        "one": "za {0} t\u00fdd.",
+        "other": "za {0} t\u00fdd."
+      },
+      "past": {
+        "few": "p\u0159ed {0} t\u00fdd.",
+        "many": "p\u0159ed {0} t\u00fdd.",
+        "one": "p\u0159ed {0} t\u00fdd.",
+        "other": "p\u0159ed {0} t\u00fdd."
+      }
+    },
+    "year": {
+      "-1": "minul\u00fd rok",
+      "0": "tento rok",
+      "1": "p\u0159\u00ed\u0161t\u00ed rok",
+      "future": {
+        "few": "za {0} roky",
+        "many": "za {0} roku",
+        "one": "za {0} rok",
+        "other": "za {0} let"
+      },
+      "past": {
+        "few": "p\u0159ed {0} lety",
+        "many": "p\u0159ed {0} roku",
+        "one": "p\u0159ed {0} rokem",
+        "other": "p\u0159ed {0} lety"
+      }
+    },
+    "year-narrow": {
+      "-1": "minul\u00fd rok",
+      "0": "tento rok",
+      "1": "p\u0159\u00ed\u0161t\u00ed rok",
+      "future": {
+        "few": "za {0} r.",
+        "many": "za {0} r.",
+        "one": "za {0} r.",
+        "other": "za {0} l."
+      },
+      "past": {
+        "few": "p\u0159ed {0} r.",
+        "many": "p\u0159ed {0} r.",
+        "one": "p\u0159ed {0} r.",
+        "other": "p\u0159ed {0} l."
+      }
+    },
+    "year-short": {
+      "-1": "minul\u00fd rok",
+      "0": "tento rok",
+      "1": "p\u0159\u00ed\u0161t\u00ed rok",
+      "future": {
+        "few": "za {0} r.",
+        "many": "za {0} r.",
+        "one": "za {0} r.",
+        "other": "za {0} l."
+      },
+      "past": {
+        "few": "p\u0159ed {0} r.",
+        "many": "p\u0159ed {0} r.",
+        "one": "p\u0159ed {0} r.",
+        "other": "p\u0159ed {0} l."
+      }
+    }
+  },
+  "locale": "cs"
+}

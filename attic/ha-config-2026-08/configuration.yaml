@@ -1,0 +1,75 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+browser_mod:
+
+# Enable stream for camera support
+stream:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+eufy:
+  username: <redacted>
+  password: <redacted>
+
+homeassistant:
+  packages: !include_dir_named packages
+  allowlist_external_dirs:
+    - "/config"
+    - "/media"
+
+rest_command: !include rest_commands.yaml
+
+shell_command:
+  copy_snapshot: 'cp "{{ source }}" "{{ target }}"'
+  upload_snapshot_to_gcp: !secret gcp_upload_command
+  snapshot_maintenance: !secret gcp_maintenance_command
+  cleanup_old_snapshots: 'find /config/www/snapshots/ -name "*.jpg" -not -name "*_latest.jpg" -mtime +3 -delete'
+  test_curl: 'curl -v -X POST -F "file=@/config/www/snapshots/test_image.jpg" -H "Authorization: Bearer <redacted>" https://us-central1-gen-lang-client-0516054761.cloudfunctions.net/upload_snapshot'
+  log_json: 'echo "{{ msg }}" >> /config/.cursor/debug.log'
+
+# Load Lovelace in YAML mode
+lovelace:
+  mode: yaml
+  dashboards:
+    sproutie-os:
+      mode: yaml
+      title: Sproutie OS
+      icon: mdi:sprout
+      filename: ui-lovelace-v3.yaml
+    sproutie-mobile:
+      mode: yaml
+      title: Sproutie Mobile
+      icon: mdi:cellphone
+      filename: ui-lovelace-mobile.yaml
+    sproutie-test:
+      mode: yaml
+      title: Test Dashboard
+      icon: mdi:test-tube
+      filename: ui-lovelace-test.yaml
+  resources:
+    - url: /hacsfiles/button-card/button-card.js
+      type: module
+    - url: /hacsfiles/lovelace-card-mod/card-mod.js
+      type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
+    - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+      type: module
+    - url: /hacsfiles/lovelace-mushroom/mushroom.js
+      type: module
+    - url: /hacsfiles/stack-in-card/stack-in-card.js
+      type: module
+    - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+      type: module
+    # browser_mod.js is auto-registered by the integration - no manual resource needed
+    - url: /hacsfiles/apexcharts-card/apexcharts-card.js
+      type: module
+    - url: /hacsfiles/Bubble-Card/bubble-card.js
+      type: module

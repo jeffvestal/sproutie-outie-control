@@ -1,0 +1,2738 @@
+{
+  "data": {
+    "am": "SA",
+    "ca": [
+      "gregory"
+    ],
+    "dateFormat": {
+      "full": "EEEE, d MMMM, y",
+      "long": "d MMMM, y",
+      "medium": "d MMM, y",
+      "short": "d/M/yy"
+    },
+    "dateTimeFormat": {
+      "full": "{0} {1}",
+      "long": "{0} {1}",
+      "medium": "{0} {1}",
+      "short": "{0} {1}"
+    },
+    "era": {
+      "long": {
+        "AD": "Sau C\u00f4ng Nguy\u00ean",
+        "BC": "Tr\u01b0\u1edbc Ch\u00faa Gi\u00e1ng Sinh"
+      },
+      "narrow": {
+        "AD": "CN",
+        "BC": "TCN"
+      },
+      "short": {
+        "AD": "SCN",
+        "BC": "TCN"
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h 'gi\u1edd' B",
+        "Bh E": "h 'gi\u1edd' B ccc",
+        "Bh EEEE, d MMMM, y": "h 'gi\u1edd' B EEEE, d MMMM, y",
+        "Bh Ed": "h 'gi\u1edd' B E, 'ng\u00e0y' d",
+        "Bh Gy": "h 'gi\u1edd' B y G",
+        "Bh GyMMM": "h 'gi\u1edd' B MMM y G",
+        "Bh GyMMMEd": "h 'gi\u1edd' B E, d MMM, y G",
+        "Bh GyMMMd": "h 'gi\u1edd' B d MMM, y G",
+        "Bh GyMd": "h 'gi\u1edd' B d/M/y G",
+        "Bh M": "h 'gi\u1edd' B L",
+        "Bh MEd": "h 'gi\u1edd' B E, d/M",
+        "Bh MMM": "h 'gi\u1edd' B LLL",
+        "Bh MMMEd": "h 'gi\u1edd' B E, d MMM",
+        "Bh MMMMEd": "h 'gi\u1edd' B E, d MMMM",
+        "Bh MMMMd": "h 'gi\u1edd' B d MMMM",
+        "Bh MMMd": "h 'gi\u1edd' B d MMM",
+        "Bh MMdd": "h 'gi\u1edd' B dd-MM",
+        "Bh Md": "h 'gi\u1edd' B d/M",
+        "Bh d": "h 'gi\u1edd' B d",
+        "Bh d MMM, y": "h 'gi\u1edd' B d MMM, y",
+        "Bh d MMMM, y": "h 'gi\u1edd' B d MMMM, y",
+        "Bh d/M/yy": "h 'gi\u1edd' B d/M/yy",
+        "Bh y": "h 'gi\u1edd' B y",
+        "Bh yM": "h 'gi\u1edd' B M/y",
+        "Bh yMEd": "h 'gi\u1edd' B E, d/M/y",
+        "Bh yMM": "h 'gi\u1edd' B 'th\u00e1ng' MM, y",
+        "Bh yMMM": "h 'gi\u1edd' B MMM y",
+        "Bh yMMMEd": "h 'gi\u1edd' B E, d MMM, y",
+        "Bh yMMMM": "h 'gi\u1edd' B MMMM 'n\u0103m' y",
+        "Bh yMMMd": "h 'gi\u1edd' B d MMM, y",
+        "Bh yMd": "h 'gi\u1edd' B d/M/y",
+        "Bhm": "h:mm B",
+        "Bhm E": "h:mm B ccc",
+        "Bhm EEEE, d MMMM, y": "h:mm B EEEE, d MMMM, y",
+        "Bhm Ed": "h:mm B E, 'ng\u00e0y' d",
+        "Bhm Gy": "h:mm B y G",
+        "Bhm GyMMM": "h:mm B MMM y G",
+        "Bhm GyMMMEd": "h:mm B E, d MMM, y G",
+        "Bhm GyMMMd": "h:mm B d MMM, y G",
+        "Bhm GyMd": "h:mm B d/M/y G",
+        "Bhm M": "h:mm B L",
+        "Bhm MEd": "h:mm B E, d/M",
+        "Bhm MMM": "h:mm B LLL",
+        "Bhm MMMEd": "h:mm B E, d MMM",
+        "Bhm MMMMEd": "h:mm B E, d MMMM",
+        "Bhm MMMMd": "h:mm B d MMMM",
+        "Bhm MMMd": "h:mm B d MMM",
+        "Bhm MMdd": "h:mm B dd-MM",
+        "Bhm Md": "h:mm B d/M",
+        "Bhm d": "h:mm B d",
+        "Bhm d MMM, y": "h:mm B d MMM, y",
+        "Bhm d MMMM, y": "h:mm B d MMMM, y",
+        "Bhm d/M/yy": "h:mm B d/M/yy",
+        "Bhm y": "h:mm B y",
+        "Bhm yM": "h:mm B M/y",
+        "Bhm yMEd": "h:mm B E, d/M/y",
+        "Bhm yMM": "h:mm B 'th\u00e1ng' MM, y",
+        "Bhm yMMM": "h:mm B MMM y",
+        "Bhm yMMMEd": "h:mm B E, d MMM, y",
+        "Bhm yMMMM": "h:mm B MMMM 'n\u0103m' y",
+        "Bhm yMMMd": "h:mm B d MMM, y",
+        "Bhm yMd": "h:mm B d/M/y",
+        "Bhms": "h:mm:ss B",
+        "Bhms E": "h:mm:ss B ccc",
+        "Bhms EEEE, d MMMM, y": "h:mm:ss B EEEE, d MMMM, y",
+        "Bhms Ed": "h:mm:ss B E, 'ng\u00e0y' d",
+        "Bhms Gy": "h:mm:ss B y G",
+        "Bhms GyMMM": "h:mm:ss B MMM y G",
+        "Bhms GyMMMEd": "h:mm:ss B E, d MMM, y G",
+        "Bhms GyMMMd": "h:mm:ss B d MMM, y G",
+        "Bhms GyMd": "h:mm:ss B d/M/y G",
+        "Bhms M": "h:mm:ss B L",
+        "Bhms MEd": "h:mm:ss B E, d/M",
+        "Bhms MMM": "h:mm:ss B LLL",
+        "Bhms MMMEd": "h:mm:ss B E, d MMM",
+        "Bhms MMMMEd": "h:mm:ss B E, d MMMM",
+        "Bhms MMMMd": "h:mm:ss B d MMMM",
+        "Bhms MMMd": "h:mm:ss B d MMM",
+        "Bhms MMdd": "h:mm:ss B dd-MM",
+        "Bhms Md": "h:mm:ss B d/M",
+        "Bhms d": "h:mm:ss B d",
+        "Bhms d MMM, y": "h:mm:ss B d MMM, y",
+        "Bhms d MMMM, y": "h:mm:ss B d MMMM, y",
+        "Bhms d/M/yy": "h:mm:ss B d/M/yy",
+        "Bhms y": "h:mm:ss B y",
+        "Bhms yM": "h:mm:ss B M/y",
+        "Bhms yMEd": "h:mm:ss B E, d/M/y",
+        "Bhms yMM": "h:mm:ss B 'th\u00e1ng' MM, y",
+        "Bhms yMMM": "h:mm:ss B MMM y",
+        "Bhms yMMMEd": "h:mm:ss B E, d MMM, y",
+        "Bhms yMMMM": "h:mm:ss B MMMM 'n\u0103m' y",
+        "Bhms yMMMd": "h:mm:ss B d MMM, y",
+        "Bhms yMd": "h:mm:ss B d/M/y",
+        "E": "ccc",
+        "EBhm": "h:mm B E",
+        "EBhms": "h:mm:ss B E",
+        "EEEE, d MMMM, y": "EEEE, d MMMM, y",
+        "EHm": "HH:mm E",
+        "EHms": "HH:mm:ss E",
+        "Ed": "E, 'ng\u00e0y' d",
+        "Ehm": "h:mm\u202fa E",
+        "Ehms": "h:mm:ss\u202fa E",
+        "Gy": "y G",
+        "GyMMM": "MMM y G",
+        "GyMMMEd": "E, d MMM, y G",
+        "GyMMMd": "d MMM, y G",
+        "GyMd": "d/M/y G",
+        "H": "HH 'gi\u1edd'",
+        "H E": "HH 'gi\u1edd' ccc",
+        "H EEEE, d MMMM, y": "HH 'gi\u1edd' EEEE, d MMMM, y",
+        "H Ed": "HH 'gi\u1edd' E, 'ng\u00e0y' d",
+        "H Gy": "HH 'gi\u1edd' y G",
+        "H GyMMM": "HH 'gi\u1edd' MMM y G",
+        "H GyMMMEd": "HH 'gi\u1edd' E, d MMM, y G",
+        "H GyMMMd": "HH 'gi\u1edd' d MMM, y G",
+        "H GyMd": "HH 'gi\u1edd' d/M/y G",
+        "H M": "HH 'gi\u1edd' L",
+        "H MEd": "HH 'gi\u1edd' E, d/M",
+        "H MMM": "HH 'gi\u1edd' LLL",
+        "H MMMEd": "HH 'gi\u1edd' E, d MMM",
+        "H MMMMEd": "HH 'gi\u1edd' E, d MMMM",
+        "H MMMMd": "HH 'gi\u1edd' d MMMM",
+        "H MMMd": "HH 'gi\u1edd' d MMM",
+        "H MMdd": "HH 'gi\u1edd' dd-MM",
+        "H Md": "HH 'gi\u1edd' d/M",
+        "H d": "HH 'gi\u1edd' d",
+        "H d MMM, y": "HH 'gi\u1edd' d MMM, y",
+        "H d MMMM, y": "HH 'gi\u1edd' d MMMM, y",
+        "H d/M/yy": "HH 'gi\u1edd' d/M/yy",
+        "H y": "HH 'gi\u1edd' y",
+        "H yM": "HH 'gi\u1edd' M/y",
+        "H yMEd": "HH 'gi\u1edd' E, d/M/y",
+        "H yMM": "HH 'gi\u1edd' 'th\u00e1ng' MM, y",
+        "H yMMM": "HH 'gi\u1edd' MMM y",
+        "H yMMMEd": "HH 'gi\u1edd' E, d MMM, y",
+        "H yMMMM": "HH 'gi\u1edd' MMMM 'n\u0103m' y",
+        "H yMMMd": "HH 'gi\u1edd' d MMM, y",
+        "H yMd": "HH 'gi\u1edd' d/M/y",
+        "HH:mm": "HH:mm",
+        "HH:mm E": "HH:mm ccc",
+        "HH:mm EEEE, d MMMM, y": "HH:mm EEEE, d MMMM, y",
+        "HH:mm Ed": "HH:mm E, 'ng\u00e0y' d",
+        "HH:mm Gy": "HH:mm y G",
+        "HH:mm GyMMM": "HH:mm MMM y G",
+        "HH:mm GyMMMEd": "HH:mm E, d MMM, y G",
+        "HH:mm GyMMMd": "HH:mm d MMM, y G",
+        "HH:mm GyMd": "HH:mm d/M/y G",
+        "HH:mm M": "HH:mm L",
+        "HH:mm MEd": "HH:mm E, d/M",
+        "HH:mm MMM": "HH:mm LLL",
+        "HH:mm MMMEd": "HH:mm E, d MMM",
+        "HH:mm MMMMEd": "HH:mm E, d MMMM",
+        "HH:mm MMMMd": "HH:mm d MMMM",
+        "HH:mm MMMd": "HH:mm d MMM",
+        "HH:mm MMdd": "HH:mm dd-MM",
+        "HH:mm Md": "HH:mm d/M",
+        "HH:mm d": "HH:mm d",
+        "HH:mm d MMM, y": "HH:mm d MMM, y",
+        "HH:mm d MMMM, y": "HH:mm d MMMM, y",
+        "HH:mm d/M/yy": "HH:mm d/M/yy",
+        "HH:mm y": "HH:mm y",
+        "HH:mm yM": "HH:mm M/y",
+        "HH:mm yMEd": "HH:mm E, d/M/y",
+        "HH:mm yMM": "HH:mm 'th\u00e1ng' MM, y",
+        "HH:mm yMMM": "HH:mm MMM y",
+        "HH:mm yMMMEd": "HH:mm E, d MMM, y",
+        "HH:mm yMMMM": "HH:mm MMMM 'n\u0103m' y",
+        "HH:mm yMMMd": "HH:mm d MMM, y",
+        "HH:mm yMd": "HH:mm d/M/y",
+        "HH:mm:ss": "HH:mm:ss",
+        "HH:mm:ss E": "HH:mm:ss ccc",
+        "HH:mm:ss EEEE, d MMMM, y": "HH:mm:ss EEEE, d MMMM, y",
+        "HH:mm:ss Ed": "HH:mm:ss E, 'ng\u00e0y' d",
+        "HH:mm:ss Gy": "HH:mm:ss y G",
+        "HH:mm:ss GyMMM": "HH:mm:ss MMM y G",
+        "HH:mm:ss GyMMMEd": "HH:mm:ss E, d MMM, y G",
+        "HH:mm:ss GyMMMd": "HH:mm:ss d MMM, y G",
+        "HH:mm:ss GyMd": "HH:mm:ss d/M/y G",
+        "HH:mm:ss M": "HH:mm:ss L",
+        "HH:mm:ss MEd": "HH:mm:ss E, d/M",
+        "HH:mm:ss MMM": "HH:mm:ss LLL",
+        "HH:mm:ss MMMEd": "HH:mm:ss E, d MMM",
+        "HH:mm:ss MMMMEd": "HH:mm:ss E, d MMMM",
+        "HH:mm:ss MMMMd": "HH:mm:ss d MMMM",
+        "HH:mm:ss MMMd": "HH:mm:ss d MMM",
+        "HH:mm:ss MMdd": "HH:mm:ss dd-MM",
+        "HH:mm:ss Md": "HH:mm:ss d/M",
+        "HH:mm:ss d": "HH:mm:ss d",
+        "HH:mm:ss d MMM, y": "HH:mm:ss d MMM, y",
+        "HH:mm:ss d MMMM, y": "HH:mm:ss d MMMM, y",
+        "HH:mm:ss d/M/yy": "HH:mm:ss d/M/yy",
+        "HH:mm:ss y": "HH:mm:ss y",
+        "HH:mm:ss yM": "HH:mm:ss M/y",
+        "HH:mm:ss yMEd": "HH:mm:ss E, d/M/y",
+        "HH:mm:ss yMM": "HH:mm:ss 'th\u00e1ng' MM, y",
+        "HH:mm:ss yMMM": "HH:mm:ss MMM y",
+        "HH:mm:ss yMMMEd": "HH:mm:ss E, d MMM, y",
+        "HH:mm:ss yMMMM": "HH:mm:ss MMMM 'n\u0103m' y",
+        "HH:mm:ss yMMMd": "HH:mm:ss d MMM, y",
+        "HH:mm:ss yMd": "HH:mm:ss d/M/y",
+        "HH:mm:ss z": "HH:mm:ss z",
+        "HH:mm:ss z E": "HH:mm:ss z ccc",
+        "HH:mm:ss z EEEE, d MMMM, y": "HH:mm:ss z EEEE, d MMMM, y",
+        "HH:mm:ss z Ed": "HH:mm:ss z E, 'ng\u00e0y' d",
+        "HH:mm:ss z Gy": "HH:mm:ss z y G",
+        "HH:mm:ss z GyMMM": "HH:mm:ss z MMM y G",
+        "HH:mm:ss z GyMMMEd": "HH:mm:ss z E, d MMM, y G",
+        "HH:mm:ss z GyMMMd": "HH:mm:ss z d MMM, y G",
+        "HH:mm:ss z GyMd": "HH:mm:ss z d/M/y G",
+        "HH:mm:ss z M": "HH:mm:ss z L",
+        "HH:mm:ss z MEd": "HH:mm:ss z E, d/M",
+        "HH:mm:ss z MMM": "HH:mm:ss z LLL",
+        "HH:mm:ss z MMMEd": "HH:mm:ss z E, d MMM",
+        "HH:mm:ss z MMMMEd": "HH:mm:ss z E, d MMMM",
+        "HH:mm:ss z MMMMd": "HH:mm:ss z d MMMM",
+        "HH:mm:ss z MMMd": "HH:mm:ss z d MMM",
+        "HH:mm:ss z MMdd": "HH:mm:ss z dd-MM",
+        "HH:mm:ss z Md": "HH:mm:ss z d/M",
+        "HH:mm:ss z d": "HH:mm:ss z d",
+        "HH:mm:ss z d MMM, y": "HH:mm:ss z d MMM, y",
+        "HH:mm:ss z d MMMM, y": "HH:mm:ss z d MMMM, y",
+        "HH:mm:ss z d/M/yy": "HH:mm:ss z d/M/yy",
+        "HH:mm:ss z y": "HH:mm:ss z y",
+        "HH:mm:ss z yM": "HH:mm:ss z M/y",
+        "HH:mm:ss z yMEd": "HH:mm:ss z E, d/M/y",
+        "HH:mm:ss z yMM": "HH:mm:ss z 'th\u00e1ng' MM, y",
+        "HH:mm:ss z yMMM": "HH:mm:ss z MMM y",
+        "HH:mm:ss z yMMMEd": "HH:mm:ss z E, d MMM, y",
+        "HH:mm:ss z yMMMM": "HH:mm:ss z MMMM 'n\u0103m' y",
+        "HH:mm:ss z yMMMd": "HH:mm:ss z d MMM, y",
+        "HH:mm:ss z yMd": "HH:mm:ss z d/M/y",
+        "HH:mm:ss zzzz": "HH:mm:ss zzzz",
+        "HH:mm:ss zzzz E": "HH:mm:ss zzzz ccc",
+        "HH:mm:ss zzzz EEEE, d MMMM, y": "HH:mm:ss zzzz EEEE, d MMMM, y",
+        "HH:mm:ss zzzz Ed": "HH:mm:ss zzzz E, 'ng\u00e0y' d",
+        "HH:mm:ss zzzz Gy": "HH:mm:ss zzzz y G",
+        "HH:mm:ss zzzz GyMMM": "HH:mm:ss zzzz MMM y G",
+        "HH:mm:ss zzzz GyMMMEd": "HH:mm:ss zzzz E, d MMM, y G",
+        "HH:mm:ss zzzz GyMMMd": "HH:mm:ss zzzz d MMM, y G",
+        "HH:mm:ss zzzz GyMd": "HH:mm:ss zzzz d/M/y G",
+        "HH:mm:ss zzzz M": "HH:mm:ss zzzz L",
+        "HH:mm:ss zzzz MEd": "HH:mm:ss zzzz E, d/M",
+        "HH:mm:ss zzzz MMM": "HH:mm:ss zzzz LLL",
+        "HH:mm:ss zzzz MMMEd": "HH:mm:ss zzzz E, d MMM",
+        "HH:mm:ss zzzz MMMMEd": "HH:mm:ss zzzz E, d MMMM",
+        "HH:mm:ss zzzz MMMMd": "HH:mm:ss zzzz d MMMM",
+        "HH:mm:ss zzzz MMMd": "HH:mm:ss zzzz d MMM",
+        "HH:mm:ss zzzz MMdd": "HH:mm:ss zzzz dd-MM",
+        "HH:mm:ss zzzz Md": "HH:mm:ss zzzz d/M",
+        "HH:mm:ss zzzz d": "HH:mm:ss zzzz d",
+        "HH:mm:ss zzzz d MMM, y": "HH:mm:ss zzzz d MMM, y",
+        "HH:mm:ss zzzz d MMMM, y": "HH:mm:ss zzzz d MMMM, y",
+        "HH:mm:ss zzzz d/M/yy": "HH:mm:ss zzzz d/M/yy",
+        "HH:mm:ss zzzz y": "HH:mm:ss zzzz y",
+        "HH:mm:ss zzzz yM": "HH:mm:ss zzzz M/y",
+        "HH:mm:ss zzzz yMEd": "HH:mm:ss zzzz E, d/M/y",
+        "HH:mm:ss zzzz yMM": "HH:mm:ss zzzz 'th\u00e1ng' MM, y",
+        "HH:mm:ss zzzz yMMM": "HH:mm:ss zzzz MMM y",
+        "HH:mm:ss zzzz yMMMEd": "HH:mm:ss zzzz E, d MMM, y",
+        "HH:mm:ss zzzz yMMMM": "HH:mm:ss zzzz MMMM 'n\u0103m' y",
+        "HH:mm:ss zzzz yMMMd": "HH:mm:ss zzzz d MMM, y",
+        "HH:mm:ss zzzz yMd": "HH:mm:ss zzzz d/M/y",
+        "Hm": "H:mm",
+        "Hm E": "H:mm ccc",
+        "Hm EEEE, d MMMM, y": "H:mm EEEE, d MMMM, y",
+        "Hm Ed": "H:mm E, 'ng\u00e0y' d",
+        "Hm Gy": "H:mm y G",
+        "Hm GyMMM": "H:mm MMM y G",
+        "Hm GyMMMEd": "H:mm E, d MMM, y G",
+        "Hm GyMMMd": "H:mm d MMM, y G",
+        "Hm GyMd": "H:mm d/M/y G",
+        "Hm M": "H:mm L",
+        "Hm MEd": "H:mm E, d/M",
+        "Hm MMM": "H:mm LLL",
+        "Hm MMMEd": "H:mm E, d MMM",
+        "Hm MMMMEd": "H:mm E, d MMMM",
+        "Hm MMMMd": "H:mm d MMMM",
+        "Hm MMMd": "H:mm d MMM",
+        "Hm MMdd": "H:mm dd-MM",
+        "Hm Md": "H:mm d/M",
+        "Hm d": "H:mm d",
+        "Hm d MMM, y": "H:mm d MMM, y",
+        "Hm d MMMM, y": "H:mm d MMMM, y",
+        "Hm d/M/yy": "H:mm d/M/yy",
+        "Hm y": "H:mm y",
+        "Hm yM": "H:mm M/y",
+        "Hm yMEd": "H:mm E, d/M/y",
+        "Hm yMM": "H:mm 'th\u00e1ng' MM, y",
+        "Hm yMMM": "H:mm MMM y",
+        "Hm yMMMEd": "H:mm E, d MMM, y",
+        "Hm yMMMM": "H:mm MMMM 'n\u0103m' y",
+        "Hm yMMMd": "H:mm d MMM, y",
+        "Hm yMd": "H:mm d/M/y",
+        "Hms": "HH:mm:ss",
+        "Hms E": "HH:mm:ss ccc",
+        "Hms EEEE, d MMMM, y": "HH:mm:ss EEEE, d MMMM, y",
+        "Hms Ed": "HH:mm:ss E, 'ng\u00e0y' d",
+        "Hms Gy": "HH:mm:ss y G",
+        "Hms GyMMM": "HH:mm:ss MMM y G",
+        "Hms GyMMMEd": "HH:mm:ss E, d MMM, y G",
+        "Hms GyMMMd": "HH:mm:ss d MMM, y G",
+        "Hms GyMd": "HH:mm:ss d/M/y G",
+        "Hms M": "HH:mm:ss L",
+        "Hms MEd": "HH:mm:ss E, d/M",
+        "Hms MMM": "HH:mm:ss LLL",
+        "Hms MMMEd": "HH:mm:ss E, d MMM",
+        "Hms MMMMEd": "HH:mm:ss E, d MMMM",
+        "Hms MMMMd": "HH:mm:ss d MMMM",
+        "Hms MMMd": "HH:mm:ss d MMM",
+        "Hms MMdd": "HH:mm:ss dd-MM",
+        "Hms Md": "HH:mm:ss d/M",
+        "Hms d": "HH:mm:ss d",
+        "Hms d MMM, y": "HH:mm:ss d MMM, y",
+        "Hms d MMMM, y": "HH:mm:ss d MMMM, y",
+        "Hms d/M/yy": "HH:mm:ss d/M/yy",
+        "Hms y": "HH:mm:ss y",
+        "Hms yM": "HH:mm:ss M/y",
+        "Hms yMEd": "HH:mm:ss E, d/M/y",
+        "Hms yMM": "HH:mm:ss 'th\u00e1ng' MM, y",
+        "Hms yMMM": "HH:mm:ss MMM y",
+        "Hms yMMMEd": "HH:mm:ss E, d MMM, y",
+        "Hms yMMMM": "HH:mm:ss MMMM 'n\u0103m' y",
+        "Hms yMMMd": "HH:mm:ss d MMM, y",
+        "Hms yMd": "HH:mm:ss d/M/y",
+        "Hmsv": "HH:mm:ss v",
+        "Hmsv E": "HH:mm:ss v ccc",
+        "Hmsv EEEE, d MMMM, y": "HH:mm:ss v EEEE, d MMMM, y",
+        "Hmsv Ed": "HH:mm:ss v E, 'ng\u00e0y' d",
+        "Hmsv Gy": "HH:mm:ss v y G",
+        "Hmsv GyMMM": "HH:mm:ss v MMM y G",
+        "Hmsv GyMMMEd": "HH:mm:ss v E, d MMM, y G",
+        "Hmsv GyMMMd": "HH:mm:ss v d MMM, y G",
+        "Hmsv GyMd": "HH:mm:ss v d/M/y G",
+        "Hmsv M": "HH:mm:ss v L",
+        "Hmsv MEd": "HH:mm:ss v E, d/M",
+        "Hmsv MMM": "HH:mm:ss v LLL",
+        "Hmsv MMMEd": "HH:mm:ss v E, d MMM",
+        "Hmsv MMMMEd": "HH:mm:ss v E, d MMMM",
+        "Hmsv MMMMd": "HH:mm:ss v d MMMM",
+        "Hmsv MMMd": "HH:mm:ss v d MMM",
+        "Hmsv MMdd": "HH:mm:ss v dd-MM",
+        "Hmsv Md": "HH:mm:ss v d/M",
+        "Hmsv d": "HH:mm:ss v d",
+        "Hmsv d MMM, y": "HH:mm:ss v d MMM, y",
+        "Hmsv d MMMM, y": "HH:mm:ss v d MMMM, y",
+        "Hmsv d/M/yy": "HH:mm:ss v d/M/yy",
+        "Hmsv y": "HH:mm:ss v y",
+        "Hmsv yM": "HH:mm:ss v M/y",
+        "Hmsv yMEd": "HH:mm:ss v E, d/M/y",
+        "Hmsv yMM": "HH:mm:ss v 'th\u00e1ng' MM, y",
+        "Hmsv yMMM": "HH:mm:ss v MMM y",
+        "Hmsv yMMMEd": "HH:mm:ss v E, d MMM, y",
+        "Hmsv yMMMM": "HH:mm:ss v MMMM 'n\u0103m' y",
+        "Hmsv yMMMd": "HH:mm:ss v d MMM, y",
+        "Hmsv yMd": "HH:mm:ss v d/M/y",
+        "Hmv": "HH:mm v",
+        "Hmv E": "HH:mm v ccc",
+        "Hmv EEEE, d MMMM, y": "HH:mm v EEEE, d MMMM, y",
+        "Hmv Ed": "HH:mm v E, 'ng\u00e0y' d",
+        "Hmv Gy": "HH:mm v y G",
+        "Hmv GyMMM": "HH:mm v MMM y G",
+        "Hmv GyMMMEd": "HH:mm v E, d MMM, y G",
+        "Hmv GyMMMd": "HH:mm v d MMM, y G",
+        "Hmv GyMd": "HH:mm v d/M/y G",
+        "Hmv M": "HH:mm v L",
+        "Hmv MEd": "HH:mm v E, d/M",
+        "Hmv MMM": "HH:mm v LLL",
+        "Hmv MMMEd": "HH:mm v E, d MMM",
+        "Hmv MMMMEd": "HH:mm v E, d MMMM",
+        "Hmv MMMMd": "HH:mm v d MMMM",
+        "Hmv MMMd": "HH:mm v d MMM",
+        "Hmv MMdd": "HH:mm v dd-MM",
+        "Hmv Md": "HH:mm v d/M",
+        "Hmv d": "HH:mm v d",
+        "Hmv d MMM, y": "HH:mm v d MMM, y",
+        "Hmv d MMMM, y": "HH:mm v d MMMM, y",
+        "Hmv d/M/yy": "HH:mm v d/M/yy",
+        "Hmv y": "HH:mm v y",
+        "Hmv yM": "HH:mm v M/y",
+        "Hmv yMEd": "HH:mm v E, d/M/y",
+        "Hmv yMM": "HH:mm v 'th\u00e1ng' MM, y",
+        "Hmv yMMM": "HH:mm v MMM y",
+        "Hmv yMMMEd": "HH:mm v E, d MMM, y",
+        "Hmv yMMMM": "HH:mm v MMMM 'n\u0103m' y",
+        "Hmv yMMMd": "HH:mm v d MMM, y",
+        "Hmv yMd": "HH:mm v d/M/y",
+        "M": "L",
+        "MEd": "E, d/M",
+        "MMM": "LLL",
+        "MMMEd": "E, d MMM",
+        "MMMMEd": "E, d MMMM",
+        "MMMMd": "d MMMM",
+        "MMMd": "d MMM",
+        "MMdd": "dd-MM",
+        "Md": "d/M",
+        "d": "d",
+        "d MMM, y": "d MMM, y",
+        "d MMMM, y": "d MMMM, y",
+        "d/M/yy": "d/M/yy",
+        "h": "h\u202fa",
+        "h E": "h\u202fa ccc",
+        "h EEEE, d MMMM, y": "h\u202fa EEEE, d MMMM, y",
+        "h Ed": "h\u202fa E, 'ng\u00e0y' d",
+        "h Gy": "h\u202fa y G",
+        "h GyMMM": "h\u202fa MMM y G",
+        "h GyMMMEd": "h\u202fa E, d MMM, y G",
+        "h GyMMMd": "h\u202fa d MMM, y G",
+        "h GyMd": "h\u202fa d/M/y G",
+        "h M": "h\u202fa L",
+        "h MEd": "h\u202fa E, d/M",
+        "h MMM": "h\u202fa LLL",
+        "h MMMEd": "h\u202fa E, d MMM",
+        "h MMMMEd": "h\u202fa E, d MMMM",
+        "h MMMMd": "h\u202fa d MMMM",
+        "h MMMd": "h\u202fa d MMM",
+        "h MMdd": "h\u202fa dd-MM",
+        "h Md": "h\u202fa d/M",
+        "h d": "h\u202fa d",
+        "h d MMM, y": "h\u202fa d MMM, y",
+        "h d MMMM, y": "h\u202fa d MMMM, y",
+        "h d/M/yy": "h\u202fa d/M/yy",
+        "h y": "h\u202fa y",
+        "h yM": "h\u202fa M/y",
+        "h yMEd": "h\u202fa E, d/M/y",
+        "h yMM": "h\u202fa 'th\u00e1ng' MM, y",
+        "h yMMM": "h\u202fa MMM y",
+        "h yMMMEd": "h\u202fa E, d MMM, y",
+        "h yMMMM": "h\u202fa MMMM 'n\u0103m' y",
+        "h yMMMd": "h\u202fa d MMM, y",
+        "h yMd": "h\u202fa d/M/y",
+        "hm": "h:mm\u202fa",
+        "hm E": "h:mm\u202fa ccc",
+        "hm EEEE, d MMMM, y": "h:mm\u202fa EEEE, d MMMM, y",
+        "hm Ed": "h:mm\u202fa E, 'ng\u00e0y' d",
+        "hm Gy": "h:mm\u202fa y G",
+        "hm GyMMM": "h:mm\u202fa MMM y G",
+        "hm GyMMMEd": "h:mm\u202fa E, d MMM, y G",
+        "hm GyMMMd": "h:mm\u202fa d MMM, y G",
+        "hm GyMd": "h:mm\u202fa d/M/y G",
+        "hm M": "h:mm\u202fa L",
+        "hm MEd": "h:mm\u202fa E, d/M",
+        "hm MMM": "h:mm\u202fa LLL",
+        "hm MMMEd": "h:mm\u202fa E, d MMM",
+        "hm MMMMEd": "h:mm\u202fa E, d MMMM",
+        "hm MMMMd": "h:mm\u202fa d MMMM",
+        "hm MMMd": "h:mm\u202fa d MMM",
+        "hm MMdd": "h:mm\u202fa dd-MM",
+        "hm Md": "h:mm\u202fa d/M",
+        "hm d": "h:mm\u202fa d",
+        "hm d MMM, y": "h:mm\u202fa d MMM, y",
+        "hm d MMMM, y": "h:mm\u202fa d MMMM, y",
+        "hm d/M/yy": "h:mm\u202fa d/M/yy",
+        "hm y": "h:mm\u202fa y",
+        "hm yM": "h:mm\u202fa M/y",
+        "hm yMEd": "h:mm\u202fa E, d/M/y",
+        "hm yMM": "h:mm\u202fa 'th\u00e1ng' MM, y",
+        "hm yMMM": "h:mm\u202fa MMM y",
+        "hm yMMMEd": "h:mm\u202fa E, d MMM, y",
+        "hm yMMMM": "h:mm\u202fa MMMM 'n\u0103m' y",
+        "hm yMMMd": "h:mm\u202fa d MMM, y",
+        "hm yMd": "h:mm\u202fa d/M/y",
+        "hms": "h:mm:ss\u202fa",
+        "hms E": "h:mm:ss\u202fa ccc",
+        "hms EEEE, d MMMM, y": "h:mm:ss\u202fa EEEE, d MMMM, y",
+        "hms Ed": "h:mm:ss\u202fa E, 'ng\u00e0y' d",
+        "hms Gy": "h:mm:ss\u202fa y G",
+        "hms GyMMM": "h:mm:ss\u202fa MMM y G",
+        "hms GyMMMEd": "h:mm:ss\u202fa E, d MMM, y G",
+        "hms GyMMMd": "h:mm:ss\u202fa d MMM, y G",
+        "hms GyMd": "h:mm:ss\u202fa d/M/y G",
+        "hms M": "h:mm:ss\u202fa L",
+        "hms MEd": "h:mm:ss\u202fa E, d/M",
+        "hms MMM": "h:mm:ss\u202fa LLL",
+        "hms MMMEd": "h:mm:ss\u202fa E, d MMM",
+        "hms MMMMEd": "h:mm:ss\u202fa E, d MMMM",
+        "hms MMMMd": "h:mm:ss\u202fa d MMMM",
+        "hms MMMd": "h:mm:ss\u202fa d MMM",
+        "hms MMdd": "h:mm:ss\u202fa dd-MM",
+        "hms Md": "h:mm:ss\u202fa d/M",
+        "hms d": "h:mm:ss\u202fa d",
+        "hms d MMM, y": "h:mm:ss\u202fa d MMM, y",
+        "hms d MMMM, y": "h:mm:ss\u202fa d MMMM, y",
+        "hms d/M/yy": "h:mm:ss\u202fa d/M/yy",
+        "hms y": "h:mm:ss\u202fa y",
+        "hms yM": "h:mm:ss\u202fa M/y",
+        "hms yMEd": "h:mm:ss\u202fa E, d/M/y",
+        "hms yMM": "h:mm:ss\u202fa 'th\u00e1ng' MM, y",
+        "hms yMMM": "h:mm:ss\u202fa MMM y",
+        "hms yMMMEd": "h:mm:ss\u202fa E, d MMM, y",
+        "hms yMMMM": "h:mm:ss\u202fa MMMM 'n\u0103m' y",
+        "hms yMMMd": "h:mm:ss\u202fa d MMM, y",
+        "hms yMd": "h:mm:ss\u202fa d/M/y",
+        "hmsv": "h:mm:ss\u202fa v",
+        "hmsv E": "h:mm:ss\u202fa v ccc",
+        "hmsv EEEE, d MMMM, y": "h:mm:ss\u202fa v EEEE, d MMMM, y",
+        "hmsv Ed": "h:mm:ss\u202fa v E, 'ng\u00e0y' d",
+        "hmsv Gy": "h:mm:ss\u202fa v y G",
+        "hmsv GyMMM": "h:mm:ss\u202fa v MMM y G",
+        "hmsv GyMMMEd": "h:mm:ss\u202fa v E, d MMM, y G",
+        "hmsv GyMMMd": "h:mm:ss\u202fa v d MMM, y G",
+        "hmsv GyMd": "h:mm:ss\u202fa v d/M/y G",
+        "hmsv M": "h:mm:ss\u202fa v L",
+        "hmsv MEd": "h:mm:ss\u202fa v E, d/M",
+        "hmsv MMM": "h:mm:ss\u202fa v LLL",
+        "hmsv MMMEd": "h:mm:ss\u202fa v E, d MMM",
+        "hmsv MMMMEd": "h:mm:ss\u202fa v E, d MMMM",
+        "hmsv MMMMd": "h:mm:ss\u202fa v d MMMM",
+        "hmsv MMMd": "h:mm:ss\u202fa v d MMM",
+        "hmsv MMdd": "h:mm:ss\u202fa v dd-MM",
+        "hmsv Md": "h:mm:ss\u202fa v d/M",
+        "hmsv d": "h:mm:ss\u202fa v d",
+        "hmsv d MMM, y": "h:mm:ss\u202fa v d MMM, y",
+        "hmsv d MMMM, y": "h:mm:ss\u202fa v d MMMM, y",
+        "hmsv d/M/yy": "h:mm:ss\u202fa v d/M/yy",
+        "hmsv y": "h:mm:ss\u202fa v y",
+        "hmsv yM": "h:mm:ss\u202fa v M/y",
+        "hmsv yMEd": "h:mm:ss\u202fa v E, d/M/y",
+        "hmsv yMM": "h:mm:ss\u202fa v 'th\u00e1ng' MM, y",
+        "hmsv yMMM": "h:mm:ss\u202fa v MMM y",
+        "hmsv yMMMEd": "h:mm:ss\u202fa v E, d MMM, y",
+        "hmsv yMMMM": "h:mm:ss\u202fa v MMMM 'n\u0103m' y",
+        "hmsv yMMMd": "h:mm:ss\u202fa v d MMM, y",
+        "hmsv yMd": "h:mm:ss\u202fa v d/M/y",
+        "hmv": "h:mm\u202fa v",
+        "hmv E": "h:mm\u202fa v ccc",
+        "hmv EEEE, d MMMM, y": "h:mm\u202fa v EEEE, d MMMM, y",
+        "hmv Ed": "h:mm\u202fa v E, 'ng\u00e0y' d",
+        "hmv Gy": "h:mm\u202fa v y G",
+        "hmv GyMMM": "h:mm\u202fa v MMM y G",
+        "hmv GyMMMEd": "h:mm\u202fa v E, d MMM, y G",
+        "hmv GyMMMd": "h:mm\u202fa v d MMM, y G",
+        "hmv GyMd": "h:mm\u202fa v d/M/y G",
+        "hmv M": "h:mm\u202fa v L",
+        "hmv MEd": "h:mm\u202fa v E, d/M",
+        "hmv MMM": "h:mm\u202fa v LLL",
+        "hmv MMMEd": "h:mm\u202fa v E, d MMM",
+        "hmv MMMMEd": "h:mm\u202fa v E, d MMMM",
+        "hmv MMMMd": "h:mm\u202fa v d MMMM",
+        "hmv MMMd": "h:mm\u202fa v d MMM",
+        "hmv MMdd": "h:mm\u202fa v dd-MM",
+        "hmv Md": "h:mm\u202fa v d/M",
+        "hmv d": "h:mm\u202fa v d",
+        "hmv d MMM, y": "h:mm\u202fa v d MMM, y",
+        "hmv d MMMM, y": "h:mm\u202fa v d MMMM, y",
+        "hmv d/M/yy": "h:mm\u202fa v d/M/yy",
+        "hmv y": "h:mm\u202fa v y",
+        "hmv yM": "h:mm\u202fa v M/y",
+        "hmv yMEd": "h:mm\u202fa v E, d/M/y",
+        "hmv yMM": "h:mm\u202fa v 'th\u00e1ng' MM, y",
+        "hmv yMMM": "h:mm\u202fa v MMM y",
+        "hmv yMMMEd": "h:mm\u202fa v E, d MMM, y",
+        "hmv yMMMM": "h:mm\u202fa v MMMM 'n\u0103m' y",
+        "hmv yMMMd": "h:mm\u202fa v d MMM, y",
+        "hmv yMd": "h:mm\u202fa v d/M/y",
+        "mmss": "mm:ss",
+        "mmss E": "mm:ss ccc",
+        "mmss EEEE, d MMMM, y": "mm:ss EEEE, d MMMM, y",
+        "mmss Ed": "mm:ss E, 'ng\u00e0y' d",
+        "mmss Gy": "mm:ss y G",
+        "mmss GyMMM": "mm:ss MMM y G",
+        "mmss GyMMMEd": "mm:ss E, d MMM, y G",
+        "mmss GyMMMd": "mm:ss d MMM, y G",
+        "mmss GyMd": "mm:ss d/M/y G",
+        "mmss M": "mm:ss L",
+        "mmss MEd": "mm:ss E, d/M",
+        "mmss MMM": "mm:ss LLL",
+        "mmss MMMEd": "mm:ss E, d MMM",
+        "mmss MMMMEd": "mm:ss E, d MMMM",
+        "mmss MMMMd": "mm:ss d MMMM",
+        "mmss MMMd": "mm:ss d MMM",
+        "mmss MMdd": "mm:ss dd-MM",
+        "mmss Md": "mm:ss d/M",
+        "mmss d": "mm:ss d",
+        "mmss d MMM, y": "mm:ss d MMM, y",
+        "mmss d MMMM, y": "mm:ss d MMMM, y",
+        "mmss d/M/yy": "mm:ss d/M/yy",
+        "mmss y": "mm:ss y",
+        "mmss yM": "mm:ss M/y",
+        "mmss yMEd": "mm:ss E, d/M/y",
+        "mmss yMM": "mm:ss 'th\u00e1ng' MM, y",
+        "mmss yMMM": "mm:ss MMM y",
+        "mmss yMMMEd": "mm:ss E, d MMM, y",
+        "mmss yMMMM": "mm:ss MMMM 'n\u0103m' y",
+        "mmss yMMMd": "mm:ss d MMM, y",
+        "mmss yMd": "mm:ss d/M/y",
+        "ms": "mm:ss",
+        "ms E": "mm:ss ccc",
+        "ms EEEE, d MMMM, y": "mm:ss EEEE, d MMMM, y",
+        "ms Ed": "mm:ss E, 'ng\u00e0y' d",
+        "ms Gy": "mm:ss y G",
+        "ms GyMMM": "mm:ss MMM y G",
+        "ms GyMMMEd": "mm:ss E, d MMM, y G",
+        "ms GyMMMd": "mm:ss d MMM, y G",
+        "ms GyMd": "mm:ss d/M/y G",
+        "ms M": "mm:ss L",
+        "ms MEd": "mm:ss E, d/M",
+        "ms MMM": "mm:ss LLL",
+        "ms MMMEd": "mm:ss E, d MMM",
+        "ms MMMMEd": "mm:ss E, d MMMM",
+        "ms MMMMd": "mm:ss d MMMM",
+        "ms MMMd": "mm:ss d MMM",
+        "ms MMdd": "mm:ss dd-MM",
+        "ms Md": "mm:ss d/M",
+        "ms d": "mm:ss d",
+        "ms d MMM, y": "mm:ss d MMM, y",
+        "ms d MMMM, y": "mm:ss d MMMM, y",
+        "ms d/M/yy": "mm:ss d/M/yy",
+        "ms y": "mm:ss y",
+        "ms yM": "mm:ss M/y",
+        "ms yMEd": "mm:ss E, d/M/y",
+        "ms yMM": "mm:ss 'th\u00e1ng' MM, y",
+        "ms yMMM": "mm:ss MMM y",
+        "ms yMMMEd": "mm:ss E, d MMM, y",
+        "ms yMMMM": "mm:ss MMMM 'n\u0103m' y",
+        "ms yMMMd": "mm:ss d MMM, y",
+        "ms yMd": "mm:ss d/M/y",
+        "y": "y",
+        "yM": "M/y",
+        "yMEd": "E, d/M/y",
+        "yMM": "'th\u00e1ng' MM, y",
+        "yMMM": "MMM y",
+        "yMMMEd": "E, d MMM, y",
+        "yMMMM": "MMMM 'n\u0103m' y",
+        "yMMMd": "d MMM, y",
+        "yMd": "d/M/y"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23",
+      "h12"
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h 'gi\u1edd' B\u2009\u2013\u2009h 'gi\u1edd' B",
+        "h": "h\u2009\u2013\u2009h 'gi\u1edd' B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2009\u2013\u2009h:mm B",
+        "m": "h:mm\u2009\u2013\u2009h:mm B"
+      },
+      "Gy": {
+        "G": "y G\u2009\u2013\u2009y G",
+        "y": "y\u2009\u2013\u2009y G"
+      },
+      "GyM": {
+        "G": "M/y G\u2009\u2013\u2009M/y G",
+        "M": "M/y\u2013\u2009M/y G",
+        "y": "M/y\u2009\u2013\u2009M/y G"
+      },
+      "GyMEd": {
+        "G": "E, d/M/y G\u2009\u2013\u2009E, d/M/y G",
+        "M": "E, d/M/y\u2009\u2013\u2009E, d/M/y G",
+        "d": "E, d/M/y\u2009\u2013\u2009E, d/M/y G",
+        "y": "E, d/M/y\u2009\u2013\u2009E, d/M/y G"
+      },
+      "GyMMM": {
+        "G": "MMM y G\u2009\u2013\u2009MMM y G",
+        "M": "MMM\u2009\u2013\u2009MMM y G",
+        "y": "MMM y\u2009\u2013\u2009MMM y G"
+      },
+      "GyMMMEd": {
+        "G": "E, d MMM y G\u2009\u2013\u2009E, d MMM y G",
+        "M": "E, d MMM\u2009\u2013\u2009E, d MMM y G",
+        "d": "E, d MMM\u2009\u2013\u2009E, d MMM y G",
+        "y": "E, d MMM y\u2009\u2013\u2009E, d MMM y G"
+      },
+      "GyMMMd": {
+        "G": "d MMM y G\u2009\u2013\u2009d MMM y G",
+        "M": "d MMM\u2009\u2013\u2009d MMM y G",
+        "d": "d\u2009\u2013\u2009d MMM y G",
+        "y": "d MMM y\u2009\u2013\u2009d MMM y G"
+      },
+      "GyMd": {
+        "G": "d/M/y G\u2009\u2013\u2009d/M/y G",
+        "M": "d/M/y\u2009\u2013\u2009d/M/y G",
+        "d": "d/M/y\u2009\u2013\u2009d/M/y G",
+        "y": "d/M/y\u2009\u2013\u2009d/M/y G"
+      },
+      "H": {
+        "H": "HH\u2013HH"
+      },
+      "Hm": {
+        "H": "HH:mm\u2013HH:mm",
+        "m": "HH:mm\u2013HH:mm"
+      },
+      "Hmv": {
+        "H": "HH:mm\u2013HH:mm v",
+        "m": "HH:mm\u2013HH:mm v"
+      },
+      "Hv": {
+        "H": "HH\u2013HH v"
+      },
+      "M": {
+        "M": "'Th\u00e1ng' M\u2009\u2013\u2009M"
+      },
+      "MEd": {
+        "M": "E, d/M\u2009\u2013\u2009E, d/M",
+        "d": "E, d/M\u2009\u2013\u2009E, d/M"
+      },
+      "MMM": {
+        "M": "MMM\u2009\u2013\u2009MMM"
+      },
+      "MMMEd": {
+        "M": "E, d MMM\u2009\u2013\u2009E, d MMM",
+        "d": "E, d MMM\u2009\u2013\u2009E, d MMM"
+      },
+      "MMMd": {
+        "M": "d MMM\u2009\u2013\u2009d MMM",
+        "d": "d\u2009\u2013\u2009d MMM"
+      },
+      "Md": {
+        "M": "d/M\u2009\u2013\u2009d/M",
+        "d": "d/M\u2009\u2013\u2009d/M"
+      },
+      "d": {
+        "d": "d\u2009\u2013\u2009d"
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2013h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa",
+        "h": "h:mm\u2013h:mm\u202fa",
+        "m": "h:mm\u2013h:mm\u202fa"
+      },
+      "hmv": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa v",
+        "h": "h:mm\u2013h:mm\u202fa v",
+        "m": "h:mm\u2013h:mm\u202fa v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2013h\u202fa v"
+      },
+      "intervalFormatFallback": "{0}\u2009\u2013\u2009{1}",
+      "y": {
+        "y": "y\u2013y"
+      },
+      "yM": {
+        "M": "M/y\u2009\u2013\u2009M/y",
+        "y": "M/y\u2009\u2013\u2009M/y"
+      },
+      "yMEd": {
+        "M": "E, d/M/y\u2009\u2013\u2009E, d/M/y",
+        "d": "E, d/M/y\u2009\u2013\u2009E, d/M/y",
+        "y": "E, d/M/y\u2009\u2013\u2009E, d/M/y"
+      },
+      "yMMM": {
+        "M": "MMM\u2009\u2013\u2009MMM y",
+        "y": "MMM y\u2009\u2013\u2009MMM y"
+      },
+      "yMMMEd": {
+        "M": "E, d MMM\u2009\u2013\u2009E, d MMM, y",
+        "d": "E, d MMM\u2009\u2013\u2009E, d MMM, y",
+        "y": "E, d MMM, y\u2009\u2013\u2009E, d MMM, y"
+      },
+      "yMMMM": {
+        "M": "MMMM\u2009\u2013\u2009MMMM 'n\u0103m' y",
+        "y": "MMMM 'n\u0103m' y\u2009\u2013\u2009MMMM 'n\u0103m' y"
+      },
+      "yMMMd": {
+        "M": "d MMM\u2009\u2013\u2009d MMM, y",
+        "d": "d\u2009\u2013\u2009d MMM, y",
+        "y": "d MMM, y\u2009\u2013\u2009d MMM, y"
+      },
+      "yMd": {
+        "M": "d/M/y\u2009\u2013\u2009d/M/y",
+        "d": "d/M/y\u2009\u2013\u2009d/M/y",
+        "y": "d/M/y\u2009\u2013\u2009d/M/y"
+      }
+    },
+    "month": {
+      "long": [
+        "th\u00e1ng 1",
+        "th\u00e1ng 2",
+        "th\u00e1ng 3",
+        "th\u00e1ng 4",
+        "th\u00e1ng 5",
+        "th\u00e1ng 6",
+        "th\u00e1ng 7",
+        "th\u00e1ng 8",
+        "th\u00e1ng 9",
+        "th\u00e1ng 10",
+        "th\u00e1ng 11",
+        "th\u00e1ng 12"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "short": [
+        "thg 1",
+        "thg 2",
+        "thg 3",
+        "thg 4",
+        "thg 5",
+        "thg 6",
+        "thg 7",
+        "thg 8",
+        "thg 9",
+        "thg 10",
+        "thg 11",
+        "thg 12"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "CH",
+    "timeFormat": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Nam Phi",
+          "Gi\u1edd Chu\u1ea9n Nam Phi"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "Gi\u1edd Trung Phi",
+          "Gi\u1edd Trung Phi"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Nam Phi",
+          "Gi\u1edd Chu\u1ea9n Nam Phi"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Nam Phi",
+          "Gi\u1edd Chu\u1ea9n Nam Phi"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y Phi",
+          "Gi\u1edd M\u00f9a H\u00e8 T\u00e2y Phi"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n t\u00e2y Argentina",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n t\u00e2y Argentina"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Paraguay",
+          "Gi\u1edd M\u00f9a H\u00e8 Paraguay"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Colombia",
+          "Gi\u1edd M\u00f9a H\u00e8 Colombia"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Argentina",
+          "Gi\u1edd M\u00f9a H\u00e8 Argentina"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "Gi\u1edd Venezuela",
+          "Gi\u1edd Venezuela"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "Gi\u1edd Guiana thu\u1ed9c Ph\u00e1p",
+          "Gi\u1edd Guiana thu\u1ed9c Ph\u00e1p"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n n\u00fai",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n n\u00fai"
+        ],
+        "short": [
+          "MST",
+          "MDT"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n n\u00fai",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n n\u00fai"
+        ],
+        "short": [
+          "MST",
+          "MDT"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n T\u00e2y Greenland",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n T\u00e2y Greenland"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "Gi\u1edd Ecuador",
+          "Gi\u1edd Ecuador"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "Gi\u1edd Guyana",
+          "Gi\u1edd Guyana"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Cuba",
+          "Gi\u1edd M\u00f9a H\u00e8 Cuba"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Alaska",
+          "Gi\u1edd M\u00f9a H\u00e8 Alaska"
+        ],
+        "short": [
+          "AKST",
+          "AKDT"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "Gi\u1edd Bolivia",
+          "Gi\u1edd Bolivia"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Peru",
+          "Gi\u1edd M\u00f9a H\u00e8 Peru"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Th\u00e1i B\u00ecnh D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 Th\u00e1i B\u00ecnh D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "PST",
+          "PDT"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Amazon",
+          "Gi\u1edd M\u00f9a H\u00e8 Amazon"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Th\u00e1i B\u00ecnh D\u01b0\u01a1ng Mexico",
+          "Gi\u1edd M\u00f9a H\u00e8 Th\u00e1i B\u00ecnh D\u01b0\u01a1ng Mexico"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n St. Pierre v\u00e0 Miquelon",
+          "Gi\u1edd M\u00f9a H\u00e8 Saint Pierre v\u00e0 Miquelon"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Uruguay",
+          "Gi\u1edd M\u00f9a H\u00e8 Uruguay"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Fernando de Noronha",
+          "Gi\u1edd M\u00f9a H\u00e8 Fernando de Noronha"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "Gi\u1edd Suriname",
+          "Gi\u1edd Suriname"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Rio_Branco": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Acre",
+          "Gi\u1edd M\u00f9a H\u00e8 Acre"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Chile",
+          "Gi\u1edd M\u00f9a H\u00e8 Chile"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Brasilia",
+          "Gi\u1edd M\u00f9a H\u00e8 Brasilia"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n \u0110\u00f4ng Greenland",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n \u0110\u00f4ng Greenland"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Newfoundland",
+          "Gi\u1edd M\u00f9a H\u00e8 Newfoundland"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Th\u00e1i B\u00ecnh D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 Th\u00e1i B\u00ecnh D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "PST",
+          "PDT"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n \u0110\u00f4ng",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n \u0110\u00f4ng"
+        ],
+        "short": [
+          "EST",
+          "EDT"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Th\u00e1i B\u00ecnh D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 Th\u00e1i B\u00ecnh D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "PST",
+          "PDT"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "Gi\u1edd Yukon",
+          "Gi\u1edd Yukon"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n mi\u1ec1n Trung",
+          "Gi\u1edd m\u00f9a h\u00e8 mi\u1ec1n Trung"
+        ],
+        "short": [
+          "CST",
+          "CDT"
+        ]
+      },
+      "Antarctica/Casey": {
+        "long": [
+          "Gi\u1edd Casey",
+          "Gi\u1edd Casey"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "Gi\u1edd Davis",
+          "Gi\u1edd Davis"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "Gi\u1edd Dumont-d\u2019Urville",
+          "Gi\u1edd Dumont-d\u2019Urville"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "Gi\u1edd Mawson",
+          "Gi\u1edd Mawson"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n New Zealand",
+          "Gi\u1edd M\u00f9a H\u00e8 New Zealand"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "Gi\u1edd Rothera",
+          "Gi\u1edd Rothera"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "Gi\u1edd Syowa",
+          "Gi\u1edd Syowa"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "Gi\u1edd Vostok",
+          "Gi\u1edd Vostok"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "Gi\u1edd Mi\u1ec1n \u0110\u00f4ng Kazakhstan",
+          "Gi\u1edd Mi\u1ec1n \u0110\u00f4ng Kazakhstan"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Anadyr",
+          "Gi\u1edd m\u00f9a h\u00e8 Anadyr"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "Gi\u1edd Mi\u1ec1n T\u00e2y Kazakhstan",
+          "Gi\u1edd Mi\u1ec1n T\u00e2y Kazakhstan"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Turkmenistan",
+          "Gi\u1edd M\u00f9a H\u00e8 Turkmenistan"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng",
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "Gi\u1edd Kyrgystan",
+          "Gi\u1edd Kyrgystan"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "Gi\u1edd Brunei Darussalam",
+          "Gi\u1edd Brunei Darussalam"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u1ea4n \u0110\u1ed9",
+          "Gi\u1edd Chu\u1ea9n \u1ea4n \u0110\u1ed9"
+        ]
+      },
+      "Asia/Colombo": {
+        "long": [
+          "Gi\u1edd Lanka",
+          "Gi\u1edd Lanka"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Timor",
+          "Gi\u1edd \u0110\u00f4ng Timor"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n V\u00f9ng V\u1ecbnh",
+          "Gi\u1edd Chu\u1ea9n V\u00f9ng V\u1ecbnh"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "Gi\u1edd Tajikistan",
+          "Gi\u1edd Tajikistan"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n H\u1ed3ng K\u00f4ng",
+          "Gi\u1edd M\u00f9a H\u00e8 H\u1ed3ng K\u00f4ng"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Hovd",
+          "Gi\u1edd M\u00f9a H\u00e8 Hovd"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Irkutsk",
+          "Gi\u1edd M\u00f9a H\u00e8 Irkutsk"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "Gi\u1edd Mi\u1ec1n T\u00e2y Indonesia",
+          "Gi\u1edd Mi\u1ec1n T\u00e2y Indonesia"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "Gi\u1edd Mi\u1ec1n \u0110\u00f4ng Indonesia",
+          "Gi\u1edd Mi\u1ec1n \u0110\u00f4ng Indonesia"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Israel",
+          "Gi\u1edd M\u00f9a H\u00e8 Israel"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "Gi\u1edd Afghanistan",
+          "Gi\u1edd Afghanistan"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Petropavlovsk-Kamchatski",
+          "Gi\u1edd m\u00f9a h\u00e8 Petropavlovsk-Kamchatski"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Pakistan",
+          "Gi\u1edd M\u00f9a H\u00e8 Pakistan"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "Gi\u1edd Nepal",
+          "Gi\u1edd Nepal"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Krasnoyarsk",
+          "Gi\u1edd M\u00f9a H\u00e8 Krasnoyarsk"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "Gi\u1edd Malaysia",
+          "Gi\u1edd Malaysia"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Macau": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Ma Cao",
+          "Gi\u1edd M\u00f9a H\u00e8 Ma Cao"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Magadan",
+          "Gi\u1edd m\u00f9a h\u00e8 Magadan"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "Gi\u1edd Mi\u1ec1n Trung Indonesia",
+          "Gi\u1edd Mi\u1ec1n Trung Indonesia"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Philippin",
+          "Gi\u1edd M\u00f9a H\u00e8 Philippin"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n V\u00f9ng V\u1ecbnh",
+          "Gi\u1edd Chu\u1ea9n V\u00f9ng V\u1ecbnh"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Novosibirsk",
+          "Gi\u1edd m\u00f9a h\u00e8 Novosibirsk"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Omsk",
+          "Gi\u1edd m\u00f9a h\u00e8 Omsk"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng",
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "Gi\u1edd B\u00ecnh Nh\u01b0\u1ee1ng",
+          "Gi\u1edd B\u00ecnh Nh\u01b0\u1ee1ng"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Qyzylorda": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Qyzylorda",
+          "Gi\u1edd M\u00f9a H\u00e8 Qyzylorda"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "Gi\u1edd Myanmar",
+          "Gi\u1edd Myanmar"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u1ea2 R\u1eadp",
+          "Gi\u1edd M\u00f9a H\u00e8 \u1ea2 R\u1eadp"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Sakhalin",
+          "Gi\u1edd m\u00f9a h\u00e8 Sakhalin"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n H\u00e0n Qu\u1ed1c",
+          "Gi\u1edd M\u00f9a H\u00e8 H\u00e0n Qu\u1ed1c"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Trung Qu\u1ed1c",
+          "Gi\u1edd M\u00f9a H\u00e8 Trung Qu\u1ed1c"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "Gi\u1edd Singapore",
+          "Gi\u1edd Singapore"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u00e0i B\u1eafc",
+          "Gi\u1edd M\u00f9a H\u00e8 \u0110\u00e0i B\u1eafc"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Uzbekistan",
+          "Gi\u1edd M\u00f9a H\u00e8 Uzbekistan"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Iran",
+          "Gi\u1edd M\u00f9a H\u00e8 Iran"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "Gi\u1edd Bhutan",
+          "Gi\u1edd Bhutan"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Nh\u1eadt B\u1ea3n",
+          "Gi\u1edd M\u00f9a H\u00e8 Nh\u1eadt B\u1ea3n"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Ulan Bator",
+          "Gi\u1edd m\u00f9a h\u00e8 Ulan Bator"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng",
+          "Gi\u1edd \u0110\u00f4ng D\u01b0\u01a1ng"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Vladivostok",
+          "Gi\u1edd m\u00f9a h\u00e8 Vladivostok"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Yakutsk",
+          "Gi\u1edd m\u00f9a h\u00e8 Yakutsk"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Yekaterinburg",
+          "Gi\u1edd m\u00f9a h\u00e8 Yekaterinburg"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Azores",
+          "Gi\u1edd m\u00f9a h\u00e8 Azores"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u1ea1i T\u00e2y D\u01b0\u01a1ng"
+        ],
+        "short": [
+          "AST",
+          "ADT"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 T\u00e2y \u00c2u"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Cape Verde",
+          "Gi\u1edd M\u00f9a H\u00e8 Cape Verde"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n T\u00e2y \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 T\u00e2y \u00c2u"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "Gi\u1edd Nam Georgia",
+          "Gi\u1edd Nam Georgia"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Qu\u1ea7n \u0110\u1ea3o Falkland",
+          "Gi\u1edd M\u00f9a H\u00e8 Qu\u1ea7n \u0110\u1ea3o Falkland"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n Trung Australia",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n Trung Australia"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n Trung T\u00e2y Australia",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n Trung T\u00e2y Australia"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Lord Howe",
+          "Gi\u1edd M\u00f9a H\u00e8 Lord Howe"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n T\u00e2y Australia",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n T\u00e2y Australia"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mi\u1ec1n \u0110\u00f4ng Australia",
+          "Gi\u1edd M\u00f9a H\u00e8 Mi\u1ec1n \u0110\u00f4ng Australia"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "Gi\u1edd Vi\u1ec5n \u0111\u00f4ng Ch\u00e2u \u00c2u",
+          "Gi\u1edd Vi\u1ec5n \u0111\u00f4ng Ch\u00e2u \u00c2u"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "Gi\u1edd Trung b\u00ecnh Greenwich",
+          "Gi\u1edd Trung b\u00ecnh Greenwich"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "Gi\u1edd Vi\u1ec5n \u0111\u00f4ng Ch\u00e2u \u00c2u",
+          "Gi\u1edd Vi\u1ec5n \u0111\u00f4ng Ch\u00e2u \u00c2u"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Matxc\u01a1va",
+          "Gi\u1edd M\u00f9a H\u00e8 Matxc\u01a1va"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Samara",
+          "Gi\u1edd m\u00f9a h\u00e8 Samara"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n \u0110\u00f4ng \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 \u0110\u00f4ng \u00c2u"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Volgograd",
+          "Gi\u1edd M\u00f9a H\u00e8 Volgograd"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "Gi\u1edd chu\u1ea9n Trung \u00c2u",
+          "Gi\u1edd m\u00f9a h\u00e8 Trung \u00c2u"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "Gi\u1edd \u1ea4n \u0110\u1ed9 D\u01b0\u01a1ng",
+          "Gi\u1edd \u1ea4n \u0110\u1ed9 D\u01b0\u01a1ng"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "Gi\u1edd \u0110\u1ea3o Christmas",
+          "Gi\u1edd \u0110\u1ea3o Christmas"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Cocos",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Cocos"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "Gi\u1edd Nam C\u1ef1c v\u00e0 Nam N\u01b0\u1edbc Ph\u00e1p",
+          "Gi\u1edd Nam C\u1ef1c v\u00e0 Nam N\u01b0\u1edbc Ph\u00e1p"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "Gi\u1edd Seychelles",
+          "Gi\u1edd Seychelles"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "Gi\u1edd Maldives",
+          "Gi\u1edd Maldives"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Mauritius",
+          "Gi\u1edd M\u00f9a H\u00e8 Mauritius"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "Gi\u1edd \u0110\u00f4ng Phi",
+          "Gi\u1edd \u0110\u00f4ng Phi"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "Gi\u1edd Reunion",
+          "Gi\u1edd Reunion"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Apia",
+          "Gi\u1edd M\u00f9a H\u00e8 Apia"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n New Zealand",
+          "Gi\u1edd M\u00f9a H\u00e8 New Zealand"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Chatham",
+          "Gi\u1edd M\u00f9a H\u00e8 Chatham"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea3o Ph\u1ee5c Sinh",
+          "Gi\u1edd M\u00f9a H\u00e8 \u0110\u1ea3o Ph\u1ee5c Sinh"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Vanuatu",
+          "Gi\u1edd M\u00f9a H\u00e8 Vanuatu"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Phoenix",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Phoenix"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "Gi\u1edd Tokelau",
+          "Gi\u1edd Tokelau"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Fiji",
+          "Gi\u1edd M\u00f9a H\u00e8 Fiji"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "Gi\u1edd Tuvalu",
+          "Gi\u1edd Tuvalu"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "Gi\u1edd Galapagos",
+          "Gi\u1edd Galapagos"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "Gi\u1edd Gambier",
+          "Gi\u1edd Gambier"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Solomon",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Solomon"
+        ]
+      },
+      "Pacific/Guam": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Guam",
+          "Gi\u1edd Chu\u1ea9n Guam"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Hawaii-Aleut",
+          "Gi\u1edd M\u00f9a H\u00e8 Hawaii-Aleut"
+        ],
+        "short": [
+          "HAST",
+          "HADT"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Line",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Line"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "Gi\u1edd Kosrae",
+          "Gi\u1edd Kosrae"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Marshall",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Marshall"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "Gi\u1edd Marquesas",
+          "Gi\u1edd Marquesas"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "Gi\u1edd Nauru",
+          "Gi\u1edd Nauru"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "Gi\u1edd Niue",
+          "Gi\u1edd Niue"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n \u0110\u1ea3o Norfolk",
+          "Gi\u1edd M\u00f9a H\u00e8 \u0110\u1ea3o Norfolk"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n New Caledonia",
+          "Gi\u1edd M\u00f9a H\u00e8 New Caledonia"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Samoa",
+          "Gi\u1edd ban ng\u00e0y Samoa"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "Gi\u1edd Palau",
+          "Gi\u1edd Palau"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "Gi\u1edd Pitcairn",
+          "Gi\u1edd Pitcairn"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "Gi\u1edd Ponape",
+          "Gi\u1edd Ponape"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "Gi\u1edd Papua New Guinea",
+          "Gi\u1edd Papua New Guinea"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Qu\u1ea7n \u0110\u1ea3o Cook",
+          "Gi\u1edd N\u1eeda M\u00f9a H\u00e8 Qu\u1ea7n \u0110\u1ea3o Cook"
+        ]
+      },
+      "Pacific/Saipan": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o B\u1eafc Mariana",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o B\u1eafc Mariana"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "Gi\u1edd Tahiti",
+          "Gi\u1edd Tahiti"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Gilbert",
+          "Gi\u1edd Qu\u1ea7n \u0110\u1ea3o Gilbert"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "Gi\u1edd Chu\u1ea9n Tonga",
+          "Gi\u1edd M\u00f9a H\u00e8 Tonga"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "Gi\u1edd Chuuk",
+          "Gi\u1edd Chuuk"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "Gi\u1edd \u0110\u1ea3o Wake",
+          "Gi\u1edd \u0110\u1ea3o Wake"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "Gi\u1edd Wallis v\u00e0 Futuna",
+          "Gi\u1edd Wallis v\u00e0 Futuna"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "Gi\u1edd Ph\u1ed1i h\u1ee3p Qu\u1ed1c t\u1ebf",
+          "Gi\u1edd Ph\u1ed1i h\u1ee3p Qu\u1ed1c t\u1ebf"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "Ch\u1ee7 Nh\u1eadt",
+        "Th\u1ee9 Hai",
+        "Th\u1ee9 Ba",
+        "Th\u1ee9 T\u01b0",
+        "Th\u1ee9 N\u0103m",
+        "Th\u1ee9 S\u00e1u",
+        "Th\u1ee9 B\u1ea3y"
+      ],
+      "narrow": [
+        "CN",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7"
+      ],
+      "short": [
+        "CN",
+        "Th 2",
+        "Th 3",
+        "Th 4",
+        "Th 5",
+        "Th 6",
+        "Th 7"
+      ]
+    }
+  },
+  "locale": "vi"
+}

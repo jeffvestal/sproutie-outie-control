@@ -1,0 +1,52 @@
+{
+  "data": {
+    "items": [
+      {
+        "icon": "mdi:sprout-outline",
+        "id": "tray_1_crop",
+        "name": "Tray 1 Crop",
+        "options": [
+          "None",
+          "Spicy Salad",
+          "Radish",
+          "Pea Shoots",
+          "Sunflower"
+        ]
+      },
+      {
+        "icon": "mdi:sprout-outline",
+        "id": "tray_2_crop",
+        "name": "Tray 2 Crop",
+        "options": [
+          "None",
+          "Spicy Salad",
+          "Radish",
+          "Pea Shoots",
+          "Sunflower"
+        ]
+      },
+      {
+        "icon": "mdi:arrow-split-horizontal",
+        "id": "active_zone",
+        "name": "Active Zone",
+        "options": [
+          "Zone A",
+          "Zone B"
+        ]
+      },
+      {
+        "id": "batch_crop_type",
+        "name": "Batch Crop Type",
+        "options": [
+          "Radish",
+          "Sunflower",
+          "Peas",
+          "Basil"
+        ]
+      }
+    ]
+  },
+  "key": "input_select",
+  "minor_version": 2,
+  "version": 1
+}

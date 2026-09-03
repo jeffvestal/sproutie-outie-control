@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "reauth_successful": "Code is received, reloading the integration in background automatically!",
+      "single_instance_allowed": "Une seule instance est autoris\u00e9e."
+    },
+    "error": {
+      "auth": "L'h\u00f4te/le port est incorrect."
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "captcha_input": "Captcha"
+        },
+        "description": "{captcha_img}",
+        "title": "Eufy S\u00e9curit\u00e9: Captcha"
+      },
+      "user": {
+        "data": {
+          "host": "Adresse IP de l'h\u00f4te (par exemple 192.168.178.22)",
+          "port": "Port (par exemple 3000)"
+        },
+        "description": "Entrez l'adresse IP et le port de l'instance Eufy Security Web Socket",
+        "title": "Eufy Security: Configuration"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name_for_custom1": "Remplacer le nom pour le mode de garde Personnalis\u00e91",
+          "name_for_custom2": "Remplacer le nom pour le mode de garde Personnalis\u00e92",
+          "name_for_custom3": "Remplacer le nom pour le mode de garde Personnalis\u00e93",
+          "no_stream_in_hass": "Do not use STREAM module inside Home Assistant (if you do not watch the video inside Home Assistant native streaming or you are using WebRTC, enable this to decrease CPU usage",
+          "rtsp_server_address": "Adresse IP de l'h\u00f4te pour le module compl\u00e9mentaire GO2RTC (P2P)",
+          "sync_interval": "Cloud Scan Intervalle en secondes [1 \u00e0 9999]"
+        },
+        "title": "Eufy Security: Configuration"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "data": {
+    "api_version": {
+      "major": 1,
+      "minor": 13
+    },
+    "camera": [
+      {
+        "device_id": 0,
+        "disabled_by_default": false,
+        "entity_category": 0,
+        "icon": "",
+        "key": 650808151,
+        "name": "SproutieOS Vision System",
+        "object_id": "sproutieos_vision_system"
+      }
+    ],
+    "device_info": {
+      "api_encryption_supported": false,
+      "area": {
+        "area_id": 0,
+        "name": ""
+      },
+      "areas": [],
+      "bluetooth_mac_address": "",
+      "bluetooth_proxy_feature_flags": 0,
+      "compilation_time": "Feb 16 2026, 17:30:05",
+      "devices": [],
+      "esphome_version": "2025.12.5",
+      "friendly_name": "SproutieOS Vision System",
+      "has_deep_sleep": false,
+      "legacy_bluetooth_proxy_version": 0,
+      "legacy_voice_assistant_version": 0,
+      "mac_address": "D4:E9:F4:A1:E6:F8",
+      "manufacturer": "Espressif",
+      "model": "esp32cam",
+      "name": "esp32-cam",
+      "project_name": "",
+      "project_version": "",
+      "suggested_area": "",
+      "uses_password": "<redacted>",
+      "voice_assistant_feature_flags": 0,
+      "webserver_port": 80,
+      "zwave_home_id": 0,
+      "zwave_proxy_feature_flags": 0
+    },
+    "services": [],
+    "update": []
+  },
+  "key": "esphome.01KHJ59W30KMKGPDPHYNMVAMM4",
+  "minor_version": 1,
+  "version": 1
+}

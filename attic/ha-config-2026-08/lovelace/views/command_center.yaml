@@ -1,0 +1,482 @@
+# Sproutie OS v2.6 - Command Center
+title: Command Center
+path: command-center
+type: panel
+cards:
+  - type: vertical-stack
+    cards:
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 0: CROP OVERVIEW
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              padding: 16px !important;
+            }
+        cards:
+          - type: custom:mushroom-template-card
+            primary: "Active Crops"
+            secondary: >
+              {{ state_attr('sensor.sproutie_crop_summary', 'total_trays') | int(0) }} trays · {{ states('sensor.sproutie_crop_summary') | int(0) }} varieties
+            icon: mdi:sprout
+            icon_color: green
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; margin-bottom: 8px !important; }
+                .primary { font-size: 20px !important; font-weight: 700 !important; }
+
+          - type: grid
+            columns: 4
+            square: false
+            cards:
+              # CROP SLOT 1
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_1
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_1
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_1', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 12px !important;
+                        cursor: pointer !important;
+                        max-width: 280px !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "{{ states('sensor.sproutie_crop_1') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_1', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_1', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_1', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_1') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "{{ state_attr('sensor.sproutie_crop_1', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_1', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_1
+                      primary: "~{{ state_attr('sensor.sproutie_crop_1', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # CROP SLOT 2
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_2
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_2
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_2', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 12px !important;
+                        cursor: pointer !important;
+                        max-width: 280px !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "{{ states('sensor.sproutie_crop_2') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_2', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_2', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_2', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_2') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "{{ state_attr('sensor.sproutie_crop_2', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_2', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_2
+                      primary: "~{{ state_attr('sensor.sproutie_crop_2', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # CROP SLOT 3
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_3
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_3
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_3', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 12px !important;
+                        cursor: pointer !important;
+                        max-width: 280px !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "{{ states('sensor.sproutie_crop_3') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_3', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_3', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_3', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_3') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "{{ state_attr('sensor.sproutie_crop_3', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_3', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_3
+                      primary: "~{{ state_attr('sensor.sproutie_crop_3', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+              # CROP SLOT 4
+              - type: conditional
+                conditions:
+                  - entity: sensor.sproutie_crop_4
+                    state_not: "none"
+                  - entity: sensor.sproutie_crop_4
+                    state_not: "unavailable"
+                card:
+                  type: custom:stack-in-card
+                  card_mod:
+                    style: |
+                      ha-card {
+                        background: {{ state_attr('sensor.sproutie_crop_4', 'bg_color') }} !important;
+                        border-radius: 20px !important;
+                        border: none !important;
+                        box-shadow: 0px 4px 12px rgba(0,0,0,0.3) !important;
+                        padding: 12px !important;
+                        cursor: pointer !important;
+                        max-width: 280px !important;
+                      }
+                  cards:
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "{{ states('sensor.sproutie_crop_4') }}"
+                      secondary: "{{ state_attr('sensor.sproutie_crop_4', 'count') }} tray{{ 's' if state_attr('sensor.sproutie_crop_4', 'count') | int > 1 else '' }}"
+                      icon: "{{ state_attr('sensor.sproutie_crop_4', 'icon') }}"
+                      icon_color: >
+                        {% set crop = states('sensor.sproutie_crop_4') %}
+                        {% if crop == 'Radish' %}pink{% elif crop == 'Sunflower' %}amber{% elif crop == 'Pea' %}green{% elif crop == 'Wheatgrass' %}lime{% else %}cyan{% endif %}
+                      tap_action:
+                        action: navigate
+                        navigation_path: /lovelace/workbench
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 4px 0 !important; }
+                          .primary { font-size: 18px !important; font-weight: 700 !important; color: rgba(255,255,255,0.95) !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "{{ state_attr('sensor.sproutie_crop_4', 'phase') }}"
+                      secondary: "Day {{ state_attr('sensor.sproutie_crop_4', 'max_age') }}"
+                      icon: mdi:leaf-circle
+                      icon_color: green
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+                          .primary { font-size: 14px !important; font-weight: 600 !important; color: rgba(255,255,255,0.95) !important; }
+                          .secondary { font-size: 12px !important; opacity: 0.75 !important; }
+                    - type: custom:mushroom-template-card
+                      entity: sensor.sproutie_crop_4
+                      primary: "~{{ state_attr('sensor.sproutie_crop_4', 'days_to_harvest') }} days to harvest"
+                      icon: mdi:calendar-clock
+                      icon_color: orange
+                      card_mod:
+                        style: |
+                          ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; margin-top: 4px !important; border-top: 1px solid rgba(255,255,255,0.1) !important; padding-top: 8px !important; }
+                          .primary { font-size: 12px !important; font-weight: 500 !important; color: rgba(255,255,255,0.8) !important; }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 1: VITALS
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: horizontal-stack
+        cards:
+          - type: custom:mini-graph-card
+            name: Temperature
+            icon: mdi:thermometer
+            entities:
+              - entity: sensor.monitor2_temperature
+                name: Tent
+                color: "#e74c3c"
+              - entity: sensor.govee_humidity_temp_monitor_temperature
+                name: Room
+                color: "#95a5a6"
+                show_state: true
+                y_axis: secondary
+            hours_to_show: 24
+            points_per_hour: 2
+            line_width: 2
+            show:
+              graph: true
+              fill: false
+              labels: false
+              legend: true
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
+
+          - type: custom:mini-graph-card
+            name: Humidity
+            icon: mdi:water-percent
+            entities:
+              - entity: sensor.monitor2_humidity
+                name: Tent
+                color: "#3498db"
+              - entity: sensor.govee_humidity_temp_monitor_humidity
+                name: Room
+                color: "#95a5a6"
+                show_state: true
+                y_axis: secondary
+            hours_to_show: 24
+            points_per_hour: 2
+            line_width: 2
+            show:
+              graph: true
+              fill: false
+              labels: false
+              legend: true
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
+
+          - type: custom:mini-graph-card
+            name: VPD
+            icon: mdi:gauge
+            entities:
+              - entity: sensor.sproutie_vpd
+                name: Tent
+                color: "#2ecc71"
+            hours_to_show: 24
+            points_per_hour: 2
+            line_width: 2
+            show:
+              graph: true
+              fill: true
+            card_mod:
+              style: |
+                ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; border: none !important; }
+
+      # ═══════════════════════════════════════════════════════════════════════
+      # SECTION 2: CONTROL DECK
+      # ═══════════════════════════════════════════════════════════════════════
+      - type: custom:layout-card
+        layout_type: custom:grid-layout
+        layout:
+          grid-template-columns: 1fr 1fr
+          gap: 16px
+        cards:
+          # LEFT: Cameras
+          - type: vertical-stack
+            cards:
+              - type: picture-entity
+                entity: camera.top_eyes
+                name: Top Rack
+                show_state: false
+                aspect_ratio: 16:7
+                card_mod:
+                  style: |
+                    ha-card { border-radius: 16px !important; overflow: hidden !important; }
+              - type: picture-entity
+                entity: camera.bottom_eyes
+                name: Bottom Rack
+                show_state: false
+                aspect_ratio: 16:7
+                card_mod:
+                  style: |
+                    ha-card { border-radius: 16px !important; overflow: hidden !important; margin-top: 12px !important; }
+
+          # RIGHT: Hardware & Controls
+          - type: vertical-stack
+            cards:
+              - type: custom:stack-in-card
+                card_mod:
+                  style: |
+                    ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; padding: 16px !important; }
+                cards:
+                  - type: grid
+                    columns: 2
+                    square: false
+                    cards:
+                      - type: custom:mushroom-entity-card
+                        entity: switch.top_shelf_lights
+                        name: Top Lights
+                        icon: mdi:lightbulb-group
+                        icon_color: amber
+                        tap_action:
+                          action: toggle
+                        layout: vertical
+                      - type: custom:mushroom-entity-card
+                        entity: switch.bottom_shelf_lights
+                        name: Bot Lights
+                        icon: mdi:lightbulb-group
+                        icon_color: amber
+                        tap_action:
+                          action: toggle
+                        layout: vertical
+                      - type: custom:mushroom-entity-card
+                        entity: switch.top_shelf_fan
+                        name: Top Fan
+                        icon: mdi:fan
+                        icon_color: cyan
+                        tap_action:
+                          action: toggle
+                        layout: vertical
+                      - type: custom:mushroom-entity-card
+                        entity: switch.bottom_shelf_fan
+                        name: Bot Fan
+                        icon: mdi:fan
+                        icon_color: cyan
+                        tap_action:
+                          action: toggle
+                        layout: vertical
+                      - type: custom:mushroom-entity-card
+                        entity: switch.exhaust_fan
+                        name: Exhaust
+                        icon: mdi:weather-windy
+                        icon_color: teal
+                        tap_action:
+                          action: toggle
+                        layout: vertical
+                      - type: custom:mushroom-entity-card
+                        entity: input_boolean.inspection_mode
+                        name: Inspect
+                        icon: mdi:eye
+                        icon_color: purple
+                        tap_action:
+                          action: call-service
+                          service: script.toggle_inspection_mode
+                        layout: vertical
+
+              - type: custom:stack-in-card
+                card_mod:
+                  style: |
+                    ha-card { background: rgba(30, 30, 30, 0.6) !important; border-radius: 24px !important; padding: 16px !important; margin-top: 16px !important; }
+                cards:
+                  - type: custom:mushroom-template-card
+                    entity: input_boolean.production_mode
+                    primary: Production Mode
+                    secondary: "{% if is_state('input_boolean.production_mode', 'on') %}ACTIVE{% else %}STANDBY{% endif %}"
+                    icon: mdi:power
+                    icon_color: "{% if is_state('input_boolean.production_mode', 'on') %}green{% else %}red{% endif %}"
+                    tap_action:
+                      action: toggle
+                    card_mod:
+                      style: |
+                        ha-card {
+                          background: {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.15){% else %}rgba(231, 76, 60, 0.15){% endif %} !important;
+                          border: 1px solid {% if is_state('input_boolean.production_mode', 'on') %}rgba(46, 204, 113, 0.5){% else %}rgba(231, 76, 60, 0.5){% endif %} !important;
+                          border-radius: 12px !important;
+                          margin-bottom: 12px !important;
+                        }
+
+                  - type: custom:mushroom-template-card
+                    primary: "Lights Schedule"
+                    secondary: "{{ states('input_datetime.lights_on_time')[:5] }} - {{ states('input_datetime.lights_off_time')[:5] }}"
+                    icon: mdi:clock-time-four-outline
+                    icon_color: orange
+                    tap_action:
+                      action: fire-dom-event
+                      browser_mod:
+                        service: browser_mod.popup
+                        data:
+                          title: "Light Schedule"
+                          content:
+                            type: entities
+                            entities:
+                              - entity: input_datetime.lights_on_time
+                                name: "Turn ON at"
+                              - entity: input_datetime.lights_off_time
+                                name: "Turn OFF at"
+
+                  - type: custom:mushroom-template-card
+                    primary: "Exhaust Cycle"
+                    secondary: "{{ states('input_number.exhaust_on_duration')|int }}m ON / {{ states('input_number.exhaust_off_duration')|int }}m OFF"
+                    icon: mdi:fan-clock
+                    icon_color: teal
+                    tap_action:
+                      action: fire-dom-event
+                      browser_mod:
+                        service: browser_mod.popup
+                        data:
+                          title: "Exhaust Cycle Settings"
+                          content:
+                            type: entities
+                            entities:
+                              - entity: input_number.exhaust_on_duration
+                                name: "Run for (minutes)"
+                              - entity: input_number.exhaust_off_duration
+                                name: "Pause for (minutes)"

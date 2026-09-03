@@ -1,0 +1,885 @@
+cyberpunk_stat:
+  show_icon: true
+  show_name: true
+  show_state: true
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: '1px solid #00f3ff'
+      - border-radius: '4px'
+      - box-shadow: '0 0 10px #00f3ff40'
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: '#00f3ff'
+      - min-height: '150px'
+      - position: relative
+    name:
+      - font-size: '14px'
+      - text-transform: uppercase
+      - letter-spacing: '2px'
+      - color: '#00f3ff'
+      - opacity: 0.9
+      - margin-bottom: '12px'
+    state:
+      - font-size: '48px'
+      - font-weight: bold
+      - color: '#00f3ff'
+      - text-shadow: '0 0 15px #00f3ff, 0 0 30px #00f3ff40'
+      - margin: '12px 0'
+    icon:
+      - color: '#00f3ff'
+      - width: '48px'
+      - opacity: 0.9
+      - filter: 'drop-shadow(0 0 8px #00f3ff)'
+  card_mod:
+    style: |
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 10px #00f3ff40, 0 0 20px #00f3ff20; }
+        50% { box-shadow: 0 0 20px #00f3ff80, 0 0 40px #00f3ff40, 0 0 60px #00f3ff20; }
+      }
+      @keyframes border-pulse {
+        0%, 100% { border-color: #00f3ff; }
+        50% { border-color: #ff00ff; }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 4px; }
+      }
+      ha-card {
+        animation: pulse-glow 3s ease-in-out infinite, border-pulse 4s ease-in-out infinite, scanlines 2s linear infinite;
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 243, 255, 0.25) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7));
+        background-size: 100% 4px, 100% 100%;
+      }
+
+holo_toggle:
+  show_icon: true
+  show_name: true
+  show_state: false
+  tap_action:
+    action: toggle
+  hold_action:
+    action: more-info
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: |
+          [[[
+            return entity.state === 'on' ? '1px solid #00f3ff' : '1px solid #333';
+          ]]]
+      - border-radius: '4px'
+      - box-shadow: |
+          [[[
+            return entity.state === 'on' ? '0 0 15px #00f3ff40' : 'none';
+          ]]]
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - cursor: pointer
+      - transition: 'all 0.3s ease'
+      - filter: |
+          [[[
+            return entity.state === 'on' ? 'none' : 'grayscale(100%)';
+          ]]]
+      - opacity: |
+          [[[
+            return entity.state === 'on' ? '1' : '0.5';
+          ]]]
+      - min-height: '120px'
+      - position: relative
+    icon:
+      - width: '64px'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - filter: |
+          [[[
+            return entity.state === 'on' ? 'drop-shadow(0 0 20px #00f3ff)' : 'none';
+          ]]]
+      - animation: |
+          [[[
+            const isFan = entity.entity_id.includes('fan');
+            return (entity.state === 'on' && isFan) ? 'spin 2s linear infinite' : 'none';
+          ]]]
+    name:
+      - font-size: '14px'
+      - text-transform: uppercase
+      - letter-spacing: '2px'
+      - margin-top: '16px'
+      - color: |
+          [[[
+            return entity.state === 'on' ? '#00f3ff' : '#666';
+          ]]]
+      - opacity: |
+          [[[
+            return entity.state === 'on' ? '1' : '0.6';
+          ]]]
+  card_mod:
+    style: |
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse-glow-strong {
+        0%, 100% { box-shadow: 0 0 15px #00f3ff40, 0 0 30px #00f3ff20; }
+        50% { box-shadow: 0 0 30px #00f3ff80, 0 0 60px #00f3ff40, 0 0 90px #00f3ff20; }
+      }
+      @keyframes border-gradient {
+        0% { border-color: #00f3ff; }
+        50% { border-color: #ff00ff; }
+        100% { border-color: #00f3ff; }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 4px; }
+      }
+      ha-card[data-state="on"] {
+        animation: pulse-glow-strong 2s ease-in-out infinite, border-gradient 3s ease-in-out infinite, scanlines 2s linear infinite !important;
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 243, 255, 0.3) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7)) !important;
+        background-size: 100% 4px, 100% 100% !important;
+      }
+      ha-card:not([data-state="on"]) {
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 243, 255, 0.2) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7)) !important;
+        background-size: 100% 4px, 100% 100% !important;
+        animation: scanlines 2s linear infinite !important;
+      }
+
+threat_level:
+  show_icon: false
+  show_name: true
+  show_state: false
+  name: 'THREAT ASSESSMENT'
+  styles:
+    card:
+      - background: 'rgba(8, 8, 8, 0.7)'
+      - backdrop-filter: 'blur(10px)'
+      - border: '1px solid #666'
+      - border-radius: '4px'
+      - padding: '24px'
+      - font-family: '"Courier New", "Roboto Mono", monospace'
+      - color: '#00f3ff'
+      - min-height: '150px'
+      - position: relative
+    name:
+      - font-size: '16px'
+      - text-transform: uppercase
+      - letter-spacing: '3px'
+      - margin-bottom: '20px'
+      - color: '#00f3ff'
+      - text-align: center
+      - font-weight: bold
+  custom_fields:
+    threat_bar: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="height: 30px; background: #333; border: 1px solid #666; border-radius: 2px; margin: 12px 0; display: flex; align-items: center; justify-content: center; color: #666; font-size: 12px;">ML JOB NOT CONFIGURED</div>`;
+        }
+        return `<div style="height: 30px; background: linear-gradient(to right, #00ff00 0%, #00ff00 33%, #ffbf00 33%, #ffbf00 66%, #ff00ff 66%, #ff00ff 100%); border: 1px solid #333; border-radius: 2px; margin: 12px 0;"></div>`;
+      ]]]
+    threat_label: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="font-size: 28px; font-weight: bold; color: #666; text-align: center; margin-top: 12px;">OFFLINE</div>`;
+        }
+        const score = parseFloat(state) || 0;
+        let level = 'NOMINAL';
+        let color = '#00ff00';
+        if (score > 70) { level = 'CRITICAL'; color = '#ff00ff'; }
+        else if (score > 40) { level = 'ELEVATED'; color = '#ffbf00'; }
+        else if (score > 20) { level = 'CAUTION'; color = '#ffbf00'; }
+        return `<div style="font-size: 28px; font-weight: bold; color: ${color}; text-shadow: 0 0 15px ${color}, 0 0 30px ${color}40; text-align: center; margin-top: 12px;">${level}</div>`;
+      ]]]
+    score_label: |
+      [[[
+        const state = entity ? entity.state : 'unknown';
+        if (state === 'N/A' || state === 'unavailable' || state === 'unknown') {
+          return `<div style="font-size: 12px; opacity: 0.7; text-align: center; margin-top: 8px;">Connect Elasticsearch to enable</div>`;
+        }
+        return `<div style="font-size: 14px; opacity: 0.8; text-align: center; margin-top: 8px; color: #00f3ff;">Anomaly Score: ${state}</div>`;
+      ]]]
+  card_mod:
+    style: |
+      @keyframes threat-pulse {
+        0%, 100% { box-shadow: 0 0 10px rgba(102, 102, 102, 0.3); }
+        50% { box-shadow: 0 0 20px rgba(102, 102, 102, 0.5); }
+      }
+      @keyframes scanlines {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 4px; }
+      }
+      ha-card {
+        background-image: 
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 243, 255, 0.25) 0px,
+            transparent 1px,
+            transparent 2px
+          ),
+          linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.7));
+        background-size: 100% 4px, 100% 100%;
+        animation: threat-pulse 3s ease-in-out infinite, scanlines 2s linear infinite;
+      }
+
+# Aerospace Industrial Templates
+
+grid_slot_interactive:
+  show_icon: false
+  show_name: true
+  show_state: false
+  variables:
+    id: |
+      [[[
+        return variables.id || '1';
+      ]]]
+  name: |
+    [[[
+      const slotId = variables.id || '1';
+      const zone = states['input_select.active_zone']?.state || 'Zone A';
+      const prefix = zone === 'Zone A' ? 'a' : 'b';
+      const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+      const slotData = states[slotEntity]?.state || '';
+      
+      // Try to parse JSON and extract crop name
+      if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+        try {
+          const data = JSON.parse(slotData);
+          if (data.crop) {
+            return data.crop;
+          }
+        } catch (e) {
+          // Not valid JSON, show slot ID
+        }
+      }
+      return slotId;
+    ]]]
+  styles:
+    card:
+      - background: |
+          [[[
+            const slotId = parseInt(variables.id) || 1;
+            const start = states['input_text.selection_start']?.state || '';
+            const end = states['input_text.selection_end']?.state || '';
+            const active = states['input_boolean.selection_active']?.state === 'on';
+            
+            // Convert slot ID to row/col
+            const row = slotId <= 4 ? 1 : 2;
+            const col = slotId <= 4 ? slotId : slotId - 4;
+            
+            // Selection states take priority (anchor)
+            if (active && (start === String(slotId) || end === String(slotId))) {
+              return 'rgba(255, 255, 255, 0.05)';
+            }
+            
+            // Check if in rectangular selection range
+            if (active && start && end) {
+              const startId = parseInt(start) || 1;
+              const endId = parseInt(end) || 1;
+              const startRow = startId <= 4 ? 1 : 2;
+              const startCol = startId <= 4 ? startId : startId - 4;
+              const endRow = endId <= 4 ? 1 : 2;
+              const endCol = endId <= 4 ? endId : endId - 4;
+              
+              const minRow = Math.min(startRow, endRow);
+              const maxRow = Math.max(startRow, endRow);
+              const minCol = Math.min(startCol, endCol);
+              const maxCol = Math.max(startCol, endCol);
+              
+              if (row >= minRow && row <= maxRow && col >= minCol && col <= maxCol) {
+                return 'rgba(41, 128, 185, 0.15)';
+              }
+            }
+            
+            // Check if slot is occupied (has crop data)
+            const zone = states['input_select.active_zone']?.state || 'Zone A';
+            const prefix = zone === 'Zone A' ? 'a' : 'b';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return 'rgba(46, 204, 113, 0.2)';
+                }
+              } catch (e) {}
+            }
+            
+            return 'transparent';
+          ]]]
+      - border: |
+          [[[
+            const slotId = parseInt(variables.id) || 1;
+            const start = states['input_text.selection_start']?.state || '';
+            const end = states['input_text.selection_end']?.state || '';
+            const active = states['input_boolean.selection_active']?.state === 'on';
+            
+            // Selection states take priority (anchor)
+            if (active && (start === String(slotId) || end === String(slotId))) {
+              return '2px solid #ffffff';
+            }
+            
+            // Check if in rectangular selection range
+            if (active && start && end) {
+              const startId = parseInt(start) || 1;
+              const endId = parseInt(end) || 1;
+              const startRow = startId <= 4 ? 1 : 2;
+              const startCol = startId <= 4 ? startId : startId - 4;
+              const endRow = endId <= 4 ? 1 : 2;
+              const endCol = endId <= 4 ? endId : endId - 4;
+              
+              const minRow = Math.min(startRow, endRow);
+              const maxRow = Math.max(startRow, endRow);
+              const minCol = Math.min(startCol, endCol);
+              const maxCol = Math.max(startCol, endCol);
+              
+              const row = slotId <= 4 ? 1 : 2;
+              const col = slotId <= 4 ? slotId : slotId - 4;
+              
+              if (row >= minRow && row <= maxRow && col >= minCol && col <= maxCol) {
+                return '1px solid #2980b9';
+              }
+            }
+            
+            // Check if slot is occupied (has crop data)
+            const zone = states['input_select.active_zone']?.state || 'Zone A';
+            const prefix = zone === 'Zone A' ? 'a' : 'b';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return '1px solid #2ecc71';
+                }
+              } catch (e) {}
+            }
+            
+            return '1px solid #333333';
+          ]]]
+      - border-radius: '8px'
+      - padding: '24px'
+      - font-family: "'SF Pro Display', 'Inter', -apple-system, sans-serif"
+      - color: |
+          [[[
+            const slotId = parseInt(variables.id) || 1;
+            const zone = states['input_select.active_zone']?.state || 'Zone A';
+            const prefix = zone === 'Zone A' ? 'a' : 'b';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return '#2ecc71';
+                }
+              } catch (e) {}
+            }
+            return '#e0e0e0';
+          ]]]
+      - min-height: '120px'
+      - cursor: pointer
+      - transition: 'all 0.2s ease'
+      - position: relative
+    name:
+      - font-size: '14px'
+      - font-weight: 600
+      - text-align: center
+      - text-transform: uppercase
+      - letter-spacing: '1px'
+  card_mod:
+    style: |
+      @keyframes anchor-pulse {
+        0%, 100% { box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); }
+        50% { box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); }
+      }
+      ha-card {
+        animation: |
+          [[[
+            const slotId = parseInt(variables.id) || 1;
+            const start = states['input_text.selection_start']?.state || '';
+            const end = states['input_text.selection_end']?.state || '';
+            const active = states['input_boolean.selection_active']?.state === 'on';
+            
+            if (active && (start === String(slotId) || end === String(slotId))) {
+              return 'anchor-pulse 2s ease-in-out infinite';
+            }
+            return 'none';
+          ]]]
+      }
+  tap_action:
+    action: call-service
+    service: script.sproutie_update_selection
+    service_data:
+      slot_id: |
+        [[[
+          return variables.id || '1';
+        ]]]
+
+# Read-only Rack Slot Template (for Command Center display)
+# Shows crop name if occupied, slot ID if empty
+# Zone prefix passed as variable (a or b)
+rack_slot_readonly:
+  show_icon: false
+  show_name: true
+  show_state: false
+  variables:
+    id: "1"
+    zone_prefix: "a"
+  name: |
+    [[[
+      const slotId = variables.id || '1';
+      const prefix = variables.zone_prefix || 'a';
+      const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+      const slotData = states[slotEntity]?.state || '';
+      
+      if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+        try {
+          const data = JSON.parse(slotData);
+          if (data.crop) {
+            return data.crop;
+          }
+        } catch (e) {}
+      }
+      return slotId;
+    ]]]
+  styles:
+    card:
+      - background: |
+          [[[
+            const slotId = variables.id || '1';
+            const prefix = variables.zone_prefix || 'a';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return 'rgba(46, 204, 113, 0.2)';
+                }
+              } catch (e) {}
+            }
+            return 'transparent';
+          ]]]
+      - border: |
+          [[[
+            const slotId = variables.id || '1';
+            const prefix = variables.zone_prefix || 'a';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return '1px solid #2ecc71';
+                }
+              } catch (e) {}
+            }
+            return '1px solid #333333';
+          ]]]
+      - border-radius: '4px'
+      - padding: '12px 8px'
+      - font-family: "'SF Pro Display', 'Inter', -apple-system, sans-serif"
+      - color: |
+          [[[
+            const slotId = variables.id || '1';
+            const prefix = variables.zone_prefix || 'a';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return '#2ecc71';
+                }
+              } catch (e) {}
+            }
+            return '#666666';
+          ]]]
+      - min-height: '60px'
+      - display: flex
+      - align-items: center
+      - justify-content: center
+    name:
+      - font-size: '11px'
+      - font-weight: 600
+      - text-align: center
+      - text-transform: uppercase
+      - letter-spacing: '0.5px'
+  tap_action:
+    action: none
+
+# Smart Slot Display Template (for Command Center Rack Map)
+# Shows crop name, days elapsed, and harvest date
+grid_slot_display:
+  show_icon: false
+  show_name: false
+  show_state: false
+  variables:
+    id: "1"
+    zone_prefix: "a"
+  custom_fields:
+    crop_name: |
+      [[[
+        const slotId = variables.id || '1';
+        const prefix = variables.zone_prefix || 'a';
+        const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+        const slotData = states[slotEntity]?.state || '';
+        
+        if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+          try {
+            const data = JSON.parse(slotData);
+            if (data.crop) {
+              return `<div style="position: absolute; top: 8px; left: 8px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #2ecc71;">${data.crop}</div>`;
+            }
+          } catch (e) {}
+        }
+        return '';
+      ]]]
+    day_count: |
+      [[[
+        const slotId = variables.id || '1';
+        const prefix = variables.zone_prefix || 'a';
+        const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+        const slotData = states[slotEntity]?.state || '';
+        
+        if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+          try {
+            const data = JSON.parse(slotData);
+            if (data.planted) {
+              const plantedDate = new Date(data.planted);
+              const today = new Date();
+              const daysElapsed = Math.floor((today - plantedDate) / (1000 * 60 * 60 * 24));
+              return `<div style="font-size: 20px; font-weight: bold; color: #ffffff; text-align: center; margin-top: 20px; margin-bottom: 4px; opacity: 0.8;">DAY ${daysElapsed}</div>`;
+            }
+          } catch (e) {}
+        }
+        return '';
+      ]]]
+    harvest_date: |
+      [[[
+        const slotId = variables.id || '1';
+        const prefix = variables.zone_prefix || 'a';
+        const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+        const slotData = states[slotEntity]?.state || '';
+        
+        if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+          try {
+            const data = JSON.parse(slotData);
+            if (data.planted) {
+              const plantedDate = new Date(data.planted);
+              const harvestDate = new Date(plantedDate);
+              harvestDate.setDate(harvestDate.getDate() + 10);
+              const month = String(harvestDate.getMonth() + 1).padStart(2, '0');
+              const day = String(harvestDate.getDate()).padStart(2, '0');
+              return `<div style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: 600; color: #999999;">Harv: ${month}/${day}</div>`;
+            }
+          } catch (e) {}
+        }
+        return '';
+      ]]]
+    empty_label: |
+      [[[
+        const slotId = variables.id || '1';
+        const prefix = variables.zone_prefix || 'a';
+        const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+        const slotData = states[slotEntity]?.state || '';
+        
+        if (!slotData || slotData.trim() === '' || slotData === 'unknown') {
+          return `<div style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #666666; text-align: center; margin-top: 20px;">EMPTY</div>`;
+        }
+        return '';
+      ]]]
+  styles:
+    card:
+      - background: |
+          [[[
+            const slotId = variables.id || '1';
+            const prefix = variables.zone_prefix || 'a';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return 'rgba(46, 204, 113, 0.2)';
+                }
+              } catch (e) {}
+            }
+            return 'transparent';
+          ]]]
+      - border: |
+          [[[
+            const slotId = variables.id || '1';
+            const prefix = variables.zone_prefix || 'a';
+            const slotEntity = `input_text.slot_${prefix}${slotId}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop && data.planted) {
+                  const plantedDate = new Date(data.planted);
+                  const today = new Date();
+                  const daysElapsed = Math.floor((today - plantedDate) / (1000 * 60 * 60 * 24));
+                  if (daysElapsed > 10) {
+                    return '2px solid #f39c12';
+                  }
+                  return '1px solid #2ecc71';
+                }
+              } catch (e) {}
+            }
+            return '1px solid #333333';
+          ]]]
+      - border-radius: '4px'
+      - padding: '12px 8px'
+      - font-family: "'SF Pro Display', 'Inter', -apple-system, sans-serif"
+      - min-height: '80px'
+      - position: relative
+      - display: flex
+      - flex-direction: column
+      - align-items: center
+      - justify-content: center
+  tap_action:
+    action: none
+
+# Workbench Slot Template
+# For The Workbench view - supports multi-select and container type icons
+workbench_slot:
+  show_icon: true
+  show_name: true
+  show_state: false
+  variables:
+    slot_id: |
+      [[[
+        return variables.slot_id || 'A1';
+      ]]]
+  icon: |
+    [[[
+      const slotId = variables.slot_id || 'A1';
+      const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+      const slotData = states[slotEntity]?.state || '';
+      
+      // Parse slot data to get container type
+      if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+        try {
+          const data = JSON.parse(slotData);
+          if (data.container === 'Jar') {
+            return 'mdi:jar';
+          }
+        } catch (e) {}
+      }
+      // Default to tray icon
+      return 'mdi:square-rounded';
+    ]]]
+  name: |
+    [[[
+      const slotId = variables.slot_id || 'A1';
+      const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+      const slotData = states[slotEntity]?.state || '';
+      
+      // Try to parse JSON and extract crop name
+      if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+        try {
+          const data = JSON.parse(slotData);
+          if (data.crop) {
+            return data.crop.toUpperCase();
+          }
+        } catch (e) {}
+      }
+      return slotId;
+    ]]]
+  styles:
+    card:
+      - background: |
+          [[[
+            const slotId = variables.slot_id || 'A1';
+            const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            const selectedSlots = (states['input_text.selected_slots']?.state || '').split(',').map(s => s.trim());
+            const isSelected = selectedSlots.includes(slotId);
+            
+            // Selection highlight takes priority
+            if (isSelected) {
+              return 'rgba(41, 128, 185, 0.2)';
+            }
+            
+            // Occupied slots get green background
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return 'rgba(46, 204, 113, 0.15)';
+                }
+              } catch (e) {}
+            }
+            
+            return 'transparent';
+          ]]]
+      - border: |
+          [[[
+            const slotId = variables.slot_id || 'A1';
+            const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            const selectedSlots = (states['input_text.selected_slots']?.state || '').split(',').map(s => s.trim());
+            const isSelected = selectedSlots.includes(slotId);
+            
+            // Selection border takes priority (yellow for Mushroom style)
+            if (isSelected) {
+              return '2px solid #ffeb3b';
+            }
+            
+            // Occupied slots get green border
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  // Harvest ready (phase check or days > 10)
+                  if (data.phase === 'Growing') {
+                    const plantedDate = data.planted ? new Date(data.planted) : null;
+                    if (plantedDate) {
+                      const daysElapsed = Math.floor((new Date() - plantedDate) / (1000 * 60 * 60 * 24));
+                      if (daysElapsed > 10) {
+                        return '2px solid #f39c12';
+                      }
+                    }
+                  }
+                  return '1px solid #2ecc71';
+                }
+              } catch (e) {}
+            }
+            
+            return '1px solid #333333';
+          ]]]
+      - border-radius: |
+          [[[
+            const slotId = variables.slot_id || 'A1';
+            const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            
+            // Dynamic border-radius based on container type
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.container === 'Jar') {
+                  return '50%'; // Circle for jars
+                }
+              } catch (e) {}
+            }
+            return '12px'; // Rounded rectangle for trays
+          ]]]
+      - padding: '8px 4px'
+      - font-family: "'SF Pro Display', 'Inter', -apple-system, sans-serif"
+      - min-height: '50px'
+      - position: relative
+      - display: flex
+      - flex-direction: column
+      - align-items: center
+      - justify-content: center
+    icon:
+      - color: |
+          [[[
+            const slotId = variables.slot_id || 'A1';
+            const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            const selectedSlots = (states['input_text.selected_slots']?.state || '').split(',').map(s => s.trim());
+            const isSelected = selectedSlots.includes(slotId);
+            
+            // Selection color takes priority
+            if (isSelected) {
+              return '#2980b9';
+            }
+            
+            // Crop-based colors
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  // Color mapping for different crops
+                  const cropColors = {
+                    'Radish': '#e74c3c',
+                    'Sunflower': '#f39c12',
+                    'Broccoli': '#27ae60',
+                    'Kale': '#2ecc71',
+                    'Arugula': '#3498db',
+                    'Mustard': '#9b59b6',
+                    'Pea Shoots': '#1abc9c'
+                  };
+                  return cropColors[data.crop] || '#2ecc71';
+                }
+              } catch (e) {}
+            }
+            
+            return '#666666';
+          ]]]
+      - width: '20px'
+      - height: '20px'
+    name:
+      - color: |
+          [[[
+            const slotId = variables.slot_id || 'A1';
+            const slotEntity = `input_text.slot_${slotId.toLowerCase()}_data`;
+            const slotData = states[slotEntity]?.state || '';
+            const selectedSlots = (states['input_text.selected_slots']?.state || '').split(',').map(s => s.trim());
+            const isSelected = selectedSlots.includes(slotId);
+            
+            // Selection color takes priority
+            if (isSelected) {
+              return '#2980b9';
+            }
+            
+            // Occupied slots get green text
+            if (slotData && slotData.trim() !== '' && slotData !== 'unknown' && slotData !== 'Empty') {
+              try {
+                const data = JSON.parse(slotData);
+                if (data.crop) {
+                  return '#2ecc71';
+                }
+              } catch (e) {}
+            }
+            
+            return '#ffffff';
+          ]]]
+      - font-size: '10px'
+      - font-weight: 600
+      - text-transform: uppercase
+      - letter-spacing: '0.05em'
+      - margin-top: '4px'
+  tap_action:
+    action: call-service
+    service: script.sproutie_smart_slot_selection
+    service_data:
+      slot_id: "[[[ return variables.slot_id || 'A1'; ]]]"

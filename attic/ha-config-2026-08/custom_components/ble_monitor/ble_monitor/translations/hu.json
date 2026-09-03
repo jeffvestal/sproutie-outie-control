@@ -1,0 +1,105 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Csak egyetlen BLE-monitor konfigur\u00e1ci\u00f3 enged\u00e9lyezett."
+    },
+    "error": {
+      "cannot_change_mac": "A MAC-c\u00edm nem m\u00f3dos\u00edthat\u00f3.",
+      "cannot_change_uuid": "A jelad\u00f3 UUID nem m\u00f3dos\u00edthat\u00f3.",
+      "cannot_delete_device": "Az eszk\u00f6zt nem lehet t\u00f6r\u00f6lni.",
+      "cannot_disable_bt_interface": "A BT interf\u00e9sz nem tilthat\u00f3 le, mik\u00f6zben egy vagy t\u00f6bb BT interf\u00e9sz m\u00e9g ki van v\u00e1lasztva. T\u00f6r\u00f6lje az \u00f6sszes BT interf\u00e9sz kijel\u00f6l\u00e9s\u00e9t.",
+      "invalid_key": "A titkos\u00edt\u00e1si kulcsnak 32 hexadecim\u00e1lis karakterb\u0151l kell \u00e1llnia (24 a Yeelight \u00e9rz\u00e9kel\u0151k eset\u00e9ben).",
+      "invalid_mac": "A MAC-c\u00edmnek \u201eAA:BB:CC:DD:EE:FF\u201d form\u00e1tum\u00fanak kell lennie.",
+      "invalid_uuid": "A jelad\u00f3 UUID azonos\u00edt\u00f3j\u00e1nak a k\u00f6vetkez\u0151 form\u00e1tumban kell lennie: \u201e00000000-0000-0000-0000-000000000000\u201d."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Az eszk\u00f6zk\u00f6vet\u0151 vegye figyelembe az otthoni intervallumot (m\u00e1sodpercben)",
+          "decimals": "Tizedesjegyek sz\u00e1ma",
+          "delete device": "Eszk\u00f6z t\u00f6rl\u00e9se",
+          "encryption_key": "Titkos\u00edt\u00e1si kulcs",
+          "mac": "MAC c\u00edm",
+          "report_unknown": "Ismeretlen BLE jelek ment\u00e9se a HA napl\u00f3ba",
+          "reset_timer": "Id\u0151z\u00edt\u0151 vissza\u00e1ll\u00edt\u00e1sa (m\u00e1sodpercben, 0 = kikapcsolva)",
+          "restore_state": "\u00c1llapot vissza\u00e1ll\u00edt\u00e1sa \u00fajraind\u00edt\u00e1s ut\u00e1n",
+          "temperature_unit": "H\u0151m\u00e9rs\u00e9klet egys\u00e9g [csak h\u0151m\u00e9rs\u00e9klet-\u00e9rz\u00e9kel\u0151k eset\u00e9n]",
+          "track_device": "Nyomk\u00f6vet\u0151 eszk\u00f6z",
+          "tracker_scan_interval": "Az eszk\u00f6zk\u00f6vet\u0151 keres\u00e9si id\u0151k\u00f6ze (m\u00e1sodpercben)",
+          "use_median": "Haszn\u00e1ljon medi\u00e1nt az \u00e1tlag helyett",
+          "uuid": "Jelad\u00f3 UUID"
+        },
+        "title": "Eszk\u00f6z hozz\u00e1ad\u00e1sa"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Akt\u00edv keres\u00e9s haszn\u00e1lata passz\u00edv keres\u00e9s helyett (az elem jobban mer\u00fcl)",
+          "bt_auto_restart": "A Bluetooth adapter automatikus \u00fajraind\u00edt\u00e1sa hiba eset\u00e9n",
+          "bt_interface": "A Bluetooth interf\u00e9sz/adapter MAC-c\u00edme",
+          "decimals": "Tizedesjegyek sz\u00e1ma",
+          "devices": "Eszk\u00f6z\u00f6k",
+          "discovery": "Automatikusan fedezze fel az eszk\u00f6z\u00f6ket \u00e9s az \u00e9rz\u00e9kel\u0151ket",
+          "log_spikes": "Napl\u00f3 t\u00fcsk\u00e9k",
+          "period": "Az \u00e1tlagol\u00e1shoz haszn\u00e1lt id\u0151szak",
+          "report_unknown": "Ismeretlen BLE jelek ment\u00e9se a HA napl\u00f3ba",
+          "restore_state": "\u00c1llapot vissza\u00e1ll\u00edt\u00e1sa \u00fajraind\u00edt\u00e1s ut\u00e1n",
+          "use_median": "Haszn\u00e1ljon medi\u00e1nt az \u00e1tlag helyett"
+        },
+        "description": "A BLE monitor konfigur\u00e1ci\u00f3j\u00e1nak be\u00e1ll\u00edt\u00e1sa",
+        "title": "Passz\u00edv BLE Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Be\u00e1ll\u00edtotta a BLE monitort a YAML-ben. K\u00e9rj\u00fck, m\u00f3dos\u00edtsa a be\u00e1ll\u00edt\u00e1sokat a YAML-ben."
+    },
+    "error": {
+      "cannot_change_mac": "A MAC-c\u00edm nem m\u00f3dos\u00edthat\u00f3.",
+      "cannot_change_uuid": "Jelad\u00f3 Beacon UUID nem m\u00f3dos\u00edthat\u00f3.",
+      "cannot_delete_device": "Az eszk\u00f6zt nem lehet t\u00f6r\u00f6lni.",
+      "cannot_disable_bt_interface": "A BT interf\u00e9sz nem tilthat\u00f3 le, mik\u00f6zben egy vagy t\u00f6bb BT interf\u00e9sz m\u00e9g ki van v\u00e1lasztva. T\u00f6r\u00f6lje az \u00f6sszes BT interf\u00e9sz kijel\u00f6l\u00e9s\u00e9t.",
+      "invalid_key": "A titkos\u00edt\u00e1si kulcsnak 32 hexadecim\u00e1lis karakterb\u0151l kell \u00e1llnia (24 a Yeelight \u00e9rz\u00e9kel\u0151k eset\u00e9ben).",
+      "invalid_mac": "A MAC-c\u00edmnek \u201eAA:BB:CC:DD:EE:FF\u201d form\u00e1tum\u00fanak kell lennie.",
+      "invalid_uuid": "A beacon UUID azonos\u00edt\u00f3j\u00e1nak a k\u00f6vetkez\u0151 form\u00e1tumban kell lennie: \u201e00000000-0000-0000-0000-000000000000\u201d."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Az eszk\u00f6zk\u00f6vet\u0151 vegye figyelembe az otthoni intervallumot (m\u00e1sodpercben)",
+          "decimals": "Tizedesjegyek sz\u00e1ma",
+          "delete device": "Eszk\u00f6z t\u00f6rl\u00e9se",
+          "encryption_key": "Titkos\u00edt\u00f3 kulcs (az elt\u00e1vol\u00edt\u00e1shoz \u201e-\u201d \u00e9rt\u00e9ket \u00edrjon)",
+          "mac": "MAC c\u00edme",
+          "report_unknown": "Ismeretlen BLE jelek r\u00f6gz\u00edt\u00e9se a HA napl\u00f3ba",
+          "reset_timer": "Id\u0151z\u00edt\u0151 vissza\u00e1ll\u00edt\u00e1sa (m\u00e1sodpercben, 0 = kikapcsolva)",
+          "restore_state": "\u00c1llapot vissza\u00e1ll\u00edt\u00e1sa \u00fajraind\u00edt\u00e1s ut\u00e1n",
+          "temperature_unit": "H\u0151m\u00e9rs\u00e9klet m\u00e9rt\u00e9kegys\u00e9ge",
+          "track_device": "Nyomk\u00f6vet\u0151 eszk\u00f6z",
+          "tracker_scan_interval": "Az eszk\u00f6zk\u00f6vet\u0151 keres\u00e9si id\u0151k\u00f6ze (m\u00e1sodpercben)",
+          "use_median": "Haszn\u00e1ljon medi\u00e1nt az \u00e1tlag helyett",
+          "uuid": "Jelad\u00f3 UUID"
+        },
+        "title": "Konfigur\u00e1lja az eszk\u00f6zt"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Akt\u00edv keres\u00e9s haszn\u00e1lata passz\u00edv keres\u00e9s helyett (az elem jobban mer\u00fcl)",
+          "bt_auto_restart": "Automatically restart Bluetooth adapter on failure",
+          "bt_interface": "A Bluetooth interf\u00e9sz/adapter MAC-c\u00edme",
+          "decimals": "Tizedesjegyek sz\u00e1ma",
+          "devices": "Eszk\u00f6z\u00f6k",
+          "discovery": "Automatikusan fedezze fel az eszk\u00f6z\u00f6ket \u00e9s az \u00e9rz\u00e9kel\u0151ket",
+          "log_spikes": "Napl\u00f3 t\u00fcsk\u00e9k",
+          "not_in_use": "YAML haszn\u00e1latban van, m\u00f3dos\u00edtsa a YAML be\u00e1ll\u00edt\u00e1sait",
+          "period": "Az \u00e1tlagol\u00e1shoz haszn\u00e1lt id\u0151szak",
+          "report_unknown": "Ismeretlen BLE jelek r\u00f6gz\u00edt\u00e9se a HA napl\u00f3ba",
+          "restore_state": "\u00c1llapot vissza\u00e1ll\u00edt\u00e1sa \u00fajraind\u00edt\u00e1s ut\u00e1n",
+          "use_median": "Haszn\u00e1ljon medi\u00e1nt az \u00e1tlag helyett"
+        },
+        "description": "A szkennel\u00e9s a \u201eK\u00dcLD\u00c9S\u201d megnyom\u00e1sa ut\u00e1n \u00fajraindul",
+        "title": "Passz\u00edv BLE monitor opci\u00f3k"
+      }
+    }
+  }
+}
