@@ -1,0 +1,50 @@
+  sproutie_rescue_data:
+    alias: "RESCUE: Restore Crop Data"
+    description: "Emergency script to restore Radish and Sunflower data"
+    sequence:
+      - variables:
+          radish_json: >
+            {
+              "crop": "Radish",
+              "id": "1768093958",
+              "planted": "2026-01-09",
+              "container": "Tray",
+              "phase": "Germination",
+              "seed_weight": 50,
+              "soak_time": 4,
+              "substrate": "Coco Coir",
+              "notes": ""
+            }
+          sunflower_json: >
+            {
+              "crop": "Sunflower",
+              "id": "1768093453",
+              "planted": "2026-01-09",
+              "container": "Tray",
+              "phase": "Germination",
+              "seed_weight": 100,
+              "soak_time": 4,
+              "substrate": "Coco Coir",
+              "notes": "150 grams"
+            }
+      - repeat:
+          for_each: ["a3", "a4", "a5", "a6", "a7", "a8"]
+          sequence:
+            - service: input_text.set_value
+              target:
+                entity_id: "input_text.slot_{{ repeat.item }}_data"
+              data:
+                value: "{{ radish_json }}"
+      - repeat:
+          for_each: ["b1", "b2", "b3", "b4", "b5", "b7"]
+          sequence:
+            - service: input_text.set_value
+              target:
+                entity_id: "input_text.slot_{{ repeat.item }}_data"
+              data:
+                value: "{{ sunflower_json }}"
+      - service: browser_mod.notification
+        data:
+          message: "Data Rescue Complete. Radish and Sunflower restored."
+          duration: 5000
+

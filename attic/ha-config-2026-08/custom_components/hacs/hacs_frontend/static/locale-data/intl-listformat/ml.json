@@ -1,0 +1,65 @@
+{
+  "data": {
+    "conjunction": {
+      "long": {
+        "end": "{0}, {1} \u0d0e\u0d28\u0d4d\u0d28\u0d3f\u0d35",
+        "middle": "{0}, {1}",
+        "pair": "{0} \u0d15\u0d42\u0d1f\u0d3e\u0d24\u0d46 {1}",
+        "start": "{0}, {1}"
+      },
+      "narrow": {
+        "end": "{0}, {1} \u0d0e\u0d28\u0d4d\u0d28\u0d3f\u0d35",
+        "middle": "{0}, {1}",
+        "pair": "{0}, {1}",
+        "start": "{0}, {1}"
+      },
+      "short": {
+        "end": "{0}, {1} \u0d0e\u0d28\u0d4d\u0d28\u0d3f\u0d35",
+        "middle": "{0}, {1}",
+        "pair": "{0} \u0d15\u0d42\u0d1f\u0d3e\u0d24\u0d46 {1}",
+        "start": "{0}, {1}"
+      }
+    },
+    "disjunction": {
+      "long": {
+        "end": "{0}, \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "middle": "{0}, {1}",
+        "pair": "{0} \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "start": "{0}, {1}"
+      },
+      "narrow": {
+        "end": "{0}, \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "middle": "{0}, {1}",
+        "pair": "{0} \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "start": "{0}, {1}"
+      },
+      "short": {
+        "end": "{0}, \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "middle": "{0}, {1}",
+        "pair": "{0} \u0d05\u0d32\u0d4d\u0d32\u0d46\u0d19\u0d4d\u0d15\u0d3f\u0d7d {1}",
+        "start": "{0}, {1}"
+      }
+    },
+    "unit": {
+      "long": {
+        "end": "{0}, {1}",
+        "middle": "{0}, {1}",
+        "pair": "{0}, {1}",
+        "start": "{0}, {1}"
+      },
+      "narrow": {
+        "end": "{0} {1}",
+        "middle": "{0} {1}",
+        "pair": "{0}, {1}",
+        "start": "{0} {1}"
+      },
+      "short": {
+        "end": "{0}, {1}",
+        "middle": "{0}, {1}",
+        "pair": "{0}, {1}",
+        "start": "{0}, {1}"
+      }
+    }
+  },
+  "locale": "ml"
+}

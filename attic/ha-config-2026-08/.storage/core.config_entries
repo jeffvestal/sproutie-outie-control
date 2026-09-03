@@ -1,0 +1,936 @@
+{
+  "data": {
+    "entries": [
+      {
+        "created_at": "2024-08-18T01:14:40.898801+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "sun",
+        "entry_id": "01J5HGSYW28MVV48CQ31JB2WKC",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:14:40.898817+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "subentries": [],
+        "title": "Sun",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:14:41.663963+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "hassio",
+        "entry_id": "01J5HGSZKZRRNRZWNH189GDHBT",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:14:41.663979+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "subentries": [],
+        "title": "Supervisor",
+        "unique_id": "hassio",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:14:56.373181+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "homeassistant_green",
+        "entry_id": "01J5HGTDZNRJXEAW856ZVDEFRF",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:14:56.373196+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "subentries": [],
+        "title": "Home Assistant Green",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:24:26.363136+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "shopping_list",
+        "entry_id": "01J5HHBTKV501GT6AT54NW3M2H",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:24:26.363155+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "subentries": [],
+        "title": "Shopping list",
+        "unique_id": "shopping_list",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:24:27.213805+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "radio_browser",
+        "entry_id": "01J5HHBVED7EQQY2H5BN27Y4SH",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:24:27.213821+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "subentries": [],
+        "title": "Radio Browser",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:24:27.229176+00:00",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "google_translate",
+        "entry_id": "01J5HHBVEXEZQMGKTKDVG12NFE",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:24:27.229191+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "subentries": [],
+        "title": "Google Translate text-to-speech",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:24:27.281346+00:00",
+        "data": {
+          "track_home": true
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "met",
+        "entry_id": "01J5HHBVGH1WZZQXN1629MZS8S",
+        "minor_version": 1,
+        "modified_at": "2024-08-18T01:24:27.281360+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "subentries": [],
+        "title": "Home",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:26:27.956179+00:00",
+        "data": {
+          "app_data": {
+            "push_token": "<redacted>",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "app_id": "io.robbie.HomeAssistant",
+          "app_name": "Home Assistant",
+          "app_version": "2025.12.1 (2025.1546)",
+          "device_id": "47CF6435-E736-4507-8AC5-3AE83F35AF69",
+          "device_name": "Sergeant Bosco",
+          "manufacturer": "Apple",
+          "model": "iPhone17,1",
+          "no_legacy_encryption": true,
+          "os_name": "iOS",
+          "os_version": "26.1",
+          "secret": "<redacted>",
+          "supports_encryption": true,
+          "user_id": "4a0e30daa695437f9389dca7658871a1",
+          "webhook_id": "1b52e55c965aabda89d7bcfa2bed0fb0bc40e9d2aef8c9b1318257d0b34f9ca6"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "mobile_app",
+        "entry_id": "01J5HHFHBMNPV32MDFSGYFRCJ9",
+        "minor_version": 1,
+        "modified_at": "2026-01-05T03:44:32.761292+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "subentries": [],
+        "title": "Sergeant Bosco",
+        "unique_id": "io.robbie.HomeAssistant-47CF6435-E736-4507-8AC5-3AE83F35AF69",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T01:38:45.830778+00:00",
+        "data": {
+          "description": "Home Assistant Connect ZBT-1",
+          "device": "/dev/serial/by-id/usb-Nabu_Casa_Home_Assistant_Connect_ZBT-1_247729b9eacaed1191f8c771cda106c3-if00-port0",
+          "firmware": "ezsp",
+          "firmware_version": "7.4.4.5 build 0",
+          "manufacturer": "Nabu Casa",
+          "pid": "EA60",
+          "product": "Home Assistant Connect ZBT-1",
+          "serial_number": "247729b9eacaed1191f8c771cda106c3",
+          "vid": "10C4"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "homeassistant_sky_connect",
+        "entry_id": "01J5HJ61Y6XRYGYPDCE6TPNWR9",
+        "minor_version": 4,
+        "modified_at": "2026-01-04T00:44:40.469754+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "usb",
+        "subentries": [],
+        "title": "Home Assistant Connect ZBT-1",
+        "unique_id": "10C4:EA60_247729b9eacaed1191f8c771cda106c3_Nabu Casa_Home Assistant Connect ZBT-1",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-18T23:26:09.633446+00:00",
+        "data": {
+          "device": {
+            "baudrate": 115200,
+            "flow_control": null,
+            "path": "/dev/serial/by-id/usb-Nabu_Casa_Home_Assistant_Connect_ZBT-1_247729b9eacaed1191f8c771cda106c3-if00-port0"
+          },
+          "radio_type": "ezsp"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "zha",
+        "entry_id": "01J5KWZZ7139F41AV9YQJEZKSZ",
+        "minor_version": 1,
+        "modified_at": "2026-01-03T23:35:57.607382+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Home Assistant Connect ZBT-1, s/n: 247729b9eacaed1191f8c771cda106c3 - Nabu Casa",
+        "unique_id": "epid=78:4c:ad:d4:a7:5b:15:d2",
+        "version": 5
+      },
+      {
+        "created_at": "2024-08-25T21:41:00.130598+00:00",
+        "data": {
+          "token": "<redacted>"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "hacs",
+        "entry_id": "01J65QREK2EYQEQM3K5718QP4N",
+        "minor_version": 1,
+        "modified_at": "2026-01-06T17:20:54.319053+00:00",
+        "options": {
+          "experimental": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T01:34:18.807244+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "webrtc",
+        "entry_id": "01J6653N5Q54YMK3PTSB43A8NC",
+        "minor_version": 1,
+        "modified_at": "2024-08-26T01:34:18.807253+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "WebRTC Camera",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T14:23:49.450310+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "ble_monitor",
+        "entry_id": "01J67H4NPAMJ48V48S5S4V0YG8",
+        "minor_version": 1,
+        "modified_at": "2024-08-26T17:36:13.730222+00:00",
+        "options": {
+          "active_scan": true,
+          "bt_auto_restart": false,
+          "bt_interface": [
+            "disable"
+          ],
+          "devices": [],
+          "discovery": true,
+          "hci_interface": [
+            "disable"
+          ],
+          "is_flow": true,
+          "log_spikes": false,
+          "period": 60,
+          "report_unknown": "Off",
+          "restore_state": false,
+          "use_median": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Bluetooth Low Energy Monitor",
+        "unique_id": "01J67H4NPAMJ48V48S5S4V0YG8",
+        "version": 5
+      },
+      {
+        "created_at": "2024-08-26T17:10:20.377560+00:00",
+        "data": {
+          "host": "192.168.1.1",
+          "location": "http://192.168.1.1:34230/rootDesc.xml",
+          "mac_address": "00:11:32:d7:da:c7",
+          "original_udn": "uuid:61bba385-b987-44a2-874b-0e9848b49bfa",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "udn": "uuid:61bba385-b987-44a2-874b-0e9848b49bfa"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "upnp",
+        "entry_id": "01J67TNJESYH8GW3D6B0DTYVTJ",
+        "minor_version": 1,
+        "modified_at": "2024-08-26T17:10:20.377575+00:00",
+        "options": {
+          "force_poll": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "Synology SRM",
+        "unique_id": "uuid:61bba385-b987-44a2-874b-0e9848b49bfa::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T17:10:22.720206+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {
+          "ssdp": [
+            {
+              "domain": "ssdp",
+              "key": "uuid:73796E6F-6473-6D00-0000-001132d7dac7",
+              "version": 1
+            },
+            {
+              "domain": "ssdp",
+              "key": "uuid:73796E6F-6473-6D00-0000-001132e37a50",
+              "version": 1
+            }
+          ]
+        },
+        "domain": "synology_dsm",
+        "entry_id": "01J67TNMR0MRE18NHMQTCNQ881",
+        "minor_version": 1,
+        "modified_at": "2026-07-25T19:51:28.504340+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "SynologyRouter (192.168.1.1)",
+        "unique_id": "001132D7DAC7",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T17:10:24.728912+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {
+          "ssdp": [
+            {
+              "domain": "ssdp",
+              "key": "uuid:73796E6F-6473-6D00-0000-001132d7daca",
+              "version": 1
+            }
+          ]
+        },
+        "domain": "synology_dsm",
+        "entry_id": "01J67TNPPRF7XTJJG384T09473",
+        "minor_version": 1,
+        "modified_at": "2026-01-03T23:36:17.962527+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "SynologyRouter (192.168.10.1)",
+        "unique_id": "001132D7DACA",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T17:10:26.641550+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {
+          "ssdp": [
+            {
+              "domain": "ssdp",
+              "key": "uuid:73796E6F-6473-6D00-0000-001132d7dac6",
+              "version": 1
+            }
+          ],
+          "zeroconf": [
+            {
+              "domain": "zeroconf",
+              "key": [
+                "_http._tcp.local.",
+                "SynologyRouter._http._tcp.local."
+              ],
+              "version": 1
+            },
+            {
+              "domain": "zeroconf",
+              "key": [
+                "_http._tcp.local.",
+                "SynologyRouter #2._http._tcp.local."
+              ],
+              "version": 1
+            }
+          ]
+        },
+        "domain": "synology_dsm",
+        "entry_id": "01J67TNRJHM1QAS4SXC5T21FGY",
+        "minor_version": 1,
+        "modified_at": "2026-02-24T20:06:30.410896+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "SynologyRouter (192.168.5.1)",
+        "unique_id": "001132D7DAC6",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T17:49:42.283712+00:00",
+        "data": {
+          "host": "192.168.1.243",
+          "name": "Brother HL-L8350CDW series @ Maureen\u2019s MacBook Air"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "ipp",
+        "entry_id": "01J67WXN0BFYXYMMC4BQ5RXWY2",
+        "minor_version": 1,
+        "modified_at": "2024-09-17T00:45:18.129068+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "Brother HL-L8350CDW series @ Maureen\u2019s MacBook Air",
+        "unique_id": "685a240d-351a-39a2-7c4d-0961a7eabde6",
+        "version": 1
+      },
+      {
+        "created_at": "2024-08-26T17:49:46.383752+00:00",
+        "data": {
+          "host": "192.168.1.243",
+          "name": "Canon SELPHY CP1300 @ Maureen\u2019s MacBook Air"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "ipp",
+        "entry_id": "01J67WXS0FN3A66Z3T467NQAW6",
+        "minor_version": 1,
+        "modified_at": "2024-09-17T00:45:18.074149+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "subentries": [],
+        "title": "Canon SELPHY CP1300 @ Maureen\u2019s MacBook Air",
+        "unique_id": "4a6151fd-bf33-32aa-76b4-545ef0a3ef8e",
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-03T23:36:14.991408+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "go2rtc",
+        "entry_id": "01KE33FZCF84YH13MYGBKJBYM2",
+        "minor_version": 1,
+        "modified_at": "2026-01-03T23:36:14.991424+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "subentries": [],
+        "title": "go2rtc",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-03T23:36:15.035716+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "backup",
+        "entry_id": "01KE33FZDVCKTPJVDFNCAT3AN4",
+        "minor_version": 1,
+        "modified_at": "2026-01-03T23:36:15.035731+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "subentries": [],
+        "title": "Backup",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-05T02:50:09.723564+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "bluetooth",
+        "entry_id": "01KE60ZRDVCT9N64SHGGMM6KT8",
+        "minor_version": 1,
+        "modified_at": "2026-01-05T02:50:09.723572+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "subentries": [],
+        "title": "TP-Link Systems Inc. TP-Link Bluetooth USB Adapter (8C:90:2D:E8:5F:41)",
+        "unique_id": "8C:90:2D:E8:5F:41",
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-05T02:52:42.559662+00:00",
+        "data": {
+          "device_type": "H5075"
+        },
+        "disabled_by": null,
+        "discovery_keys": {
+          "bluetooth": [
+            {
+              "domain": "bluetooth",
+              "key": "A4:C1:38:BC:7D:10",
+              "version": 1
+            }
+          ]
+        },
+        "domain": "govee_ble",
+        "entry_id": "01KE614DNZ3K1VVX0EJ02085V2",
+        "minor_version": 1,
+        "modified_at": "2026-01-05T02:52:42.559671+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "subentries": [],
+        "title": "H5075 7D10",
+        "unique_id": "A4:C1:38:BC:7D:10",
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-05T02:54:00.819310+00:00",
+        "data": {
+          "device_type": "H5075"
+        },
+        "disabled_by": null,
+        "discovery_keys": {
+          "bluetooth": [
+            {
+              "domain": "bluetooth",
+              "key": "A4:C1:38:55:B3:3F",
+              "version": 1
+            }
+          ]
+        },
+        "domain": "govee_ble",
+        "entry_id": "01KE616T3K0APG1GDANYMBFWR7",
+        "minor_version": 1,
+        "modified_at": "2026-01-05T02:54:00.819318+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "subentries": [],
+        "title": "H5075 B33F",
+        "unique_id": "A4:C1:38:55:B3:3F",
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-05T03:56:50.901052+00:00",
+        "data": {
+          "app_data": {
+            "live_activity_push_to_start_apns_environment": "production",
+            "live_activity_token": "<redacted>",
+            "push_token": "<redacted>",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "app_id": "io.robbie.HomeAssistant",
+          "app_name": "Home Assistant",
+          "app_version": "2026.6.0 (2026.2018)",
+          "device_id": "69942633-F6B6-426F-A2B3-FC4934045B54",
+          "device_name": "Sergeant Bosco Current",
+          "manufacturer": "Apple",
+          "model": "iPhone17,1",
+          "no_legacy_encryption": true,
+          "os_name": "iOS",
+          "os_version": "26.5",
+          "secret": "<redacted>",
+          "supports_encryption": true,
+          "user_id": "4a0e30daa695437f9389dca7658871a1",
+          "webhook_id": "009fe19e681cdfad525397ea03e56aa981f8f05d350920ed8acc20e6fd5184c9"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "mobile_app",
+        "entry_id": "01KE64SVTMZASYH3QYWX5JK4T3",
+        "minor_version": 1,
+        "modified_at": "2026-06-15T12:16:04.797827+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "subentries": [],
+        "title": "Sergeant Bosco Current",
+        "unique_id": "io.robbie.HomeAssistant-69942633-F6B6-426F-A2B3-FC4934045B54",
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-11T21:22:44.815996+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "browser_mod",
+        "entry_id": "01KEQF18YFZ489C209AK7ZFCWJ",
+        "minor_version": 1,
+        "modified_at": "2026-01-11T21:22:44.816011+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Browser Mod",
+        "unique_id": null,
+        "version": 2
+      },
+      {
+        "created_at": "2026-01-14T02:30:00.196875+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "generic",
+        "entry_id": "01KEX5DA84DWPHX4K3W16RMH68",
+        "minor_version": 1,
+        "modified_at": "2026-01-14T02:30:00.196891+00:00",
+        "options": {
+          "advanced": {
+            "authentication": "basic",
+            "framerate": 2.0,
+            "rtsp_transport": "tcp",
+            "verify_ssl": false
+          },
+          "content_type": "image/jpeg",
+          "stream_source": "rtsp://<redacted>@192.168.10.96/live0"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "192_168_10_96",
+        "unique_id": null,
+        "version": 2
+      },
+      {
+        "created_at": "2026-01-14T02:31:59.709716+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "generic",
+        "entry_id": "01KEX5GYYXGQZEJGK76JT875YV",
+        "minor_version": 1,
+        "modified_at": "2026-01-14T02:31:59.709731+00:00",
+        "options": {
+          "advanced": {
+            "authentication": "basic",
+            "framerate": 2.0,
+            "rtsp_transport": "tcp",
+            "verify_ssl": false
+          },
+          "content_type": "image/jpeg",
+          "stream_source": "rtsp://<redacted>@192.168.10.90/live0"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "192_168_10_90",
+        "unique_id": null,
+        "version": 2
+      },
+      {
+        "created_at": "2026-01-16T00:13:41.831771+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "local_file",
+        "entry_id": "01KF22D5J7SNK4BTK9CA9T6W5T",
+        "minor_version": 1,
+        "modified_at": "2026-01-16T00:13:41.831785+00:00",
+        "options": {
+          "file_path": "/media/snapshots/top_eyes_latest.jpg",
+          "name": "Top Eyes Snapshot"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Top Eyes Snapshot",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2026-01-16T00:14:14.642248+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "local_file",
+        "entry_id": "01KF22E5KJQVA2GRE2ST72G8HY",
+        "minor_version": 1,
+        "modified_at": "2026-01-16T00:14:14.642262+00:00",
+        "options": {
+          "file_path": "/media/snapshots/bottom_eyes_latest.jpg",
+          "name": "Bottom Eyes Snapshot"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Bottom Eyes Snapshot",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2026-02-02T01:14:33.004955+00:00",
+        "data": {
+          "auth_implementation": "google_956760801897_r0dprblu4soue9i0vg2oameqqd7lcqsc_apps_googleusercontent_com",
+          "credential_type": "<redacted>",
+          "token": "<redacted>"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "google",
+        "entry_id": "01KGDYMT5CRXF7C98E05099H9F",
+        "minor_version": 1,
+        "modified_at": "2026-02-04T15:14:35.279437+00:00",
+        "options": {
+          "calendar_access": "read_write"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "kegsofduff@gmail.com",
+        "unique_id": "kegsofduff@gmail.com",
+        "version": 1
+      },
+      {
+        "created_at": "2026-02-02T02:32:50.123358+00:00",
+        "data": {
+          "app_data": {
+            "push_token": "<redacted>",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "app_id": "io.robbie.HomeAssistant",
+          "app_name": "Home Assistant",
+          "app_version": "2026.1.1 (2026.1652)",
+          "device_id": "F52C33D9-E5FC-5301-8EA2-57C8503C58A0",
+          "device_name": "Miss LaBonz",
+          "manufacturer": "Apple",
+          "model": "Mac16,7",
+          "no_legacy_encryption": true,
+          "os_name": "macOS",
+          "os_version": "26.2.0",
+          "secret": "<redacted>",
+          "supports_encryption": true,
+          "user_id": "4a0e30daa695437f9389dca7658871a1",
+          "webhook_id": "03eefb97f46f92807fde0c5685d112dfc0dfd73399d26b8f24c9279514dd73d1"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "mobile_app",
+        "entry_id": "01KGE3456B8VTCGGESMEPGZJF1",
+        "minor_version": 1,
+        "modified_at": "2026-02-02T02:32:50.308681+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "subentries": [],
+        "title": "Miss LaBonz",
+        "unique_id": "io.robbie.HomeAssistant-F52C33D9-E5FC-5301-8EA2-57C8503C58A0",
+        "version": 1
+      },
+      {
+        "created_at": "2026-02-16T02:43:34.112969+00:00",
+        "data": {
+          "device_name": "esp32-cam",
+          "host": "192.168.10.180",
+          "noise_psk": "",
+          "password": "<redacted>",
+          "port": 6053
+        },
+        "disabled_by": null,
+        "discovery_keys": {
+          "dhcp": [
+            {
+              "domain": "dhcp",
+              "key": "d4e9f4a1e6f8",
+              "version": 1
+            }
+          ],
+          "zeroconf": [
+            {
+              "domain": "zeroconf",
+              "key": [
+                "_esphomelib._tcp.local.",
+                "esphome-web-a1e6f8._esphomelib._tcp.local."
+              ],
+              "version": 1
+            },
+            {
+              "domain": "zeroconf",
+              "key": [
+                "_esphomelib._tcp.local.",
+                "esp32-cam._esphomelib._tcp.local."
+              ],
+              "version": 1
+            }
+          ]
+        },
+        "domain": "esphome",
+        "entry_id": "01KHJ59W30KMKGPDPHYNMVAMM4",
+        "minor_version": 1,
+        "modified_at": "2026-02-16T14:26:39.729361+00:00",
+        "options": {
+          "allow_service_calls": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "subentries": [],
+        "title": "ESPHome Web a1e6f8",
+        "unique_id": "d4:e9:f4:a1:e6:f8",
+        "version": 1
+      },
+      {
+        "created_at": "2026-02-17T00:57:55.581458+00:00",
+        "data": {},
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "local_file",
+        "entry_id": "01KHMHN53X18T7H75V3ZM4FY3F",
+        "minor_version": 1,
+        "modified_at": "2026-02-17T00:57:55.581473+00:00",
+        "options": {
+          "file_path": "/config/www/snapshots/sidecar_eyes_latest.jpg",
+          "name": "Sidecar Eyes Snapshot"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Sidecar Eyes Snapshot",
+        "unique_id": null,
+        "version": 1
+      },
+      {
+        "created_at": "2026-08-30T14:32:03.242619+00:00",
+        "data": {
+          "alias": "TP-LINK_Smart Plug_EE68",
+          "connection_parameters": {
+            "device_family": "IOT.SMARTPLUGSWITCH",
+            "encryption_type": "XOR",
+            "https": false
+          },
+          "host": "192.168.10.235",
+          "model": "KP400",
+          "uses_http": false
+        },
+        "disabled_by": null,
+        "discovery_keys": {
+          "dhcp": [
+            {
+              "domain": "dhcp",
+              "key": "98dac40cee68",
+              "version": 1
+            }
+          ]
+        },
+        "domain": "tplink",
+        "entry_id": "01M19HB9XA190K5QD4VREHZ9K8",
+        "minor_version": 5,
+        "modified_at": "2026-08-30T14:32:03.242630+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "dhcp",
+        "subentries": [],
+        "title": "TP-LINK_Smart Plug_EE68 KP400",
+        "unique_id": "98:da:c4:0c:ee:68",
+        "version": 1
+      },
+      {
+        "created_at": "2026-08-30T19:38:15.435844+00:00",
+        "data": {
+          "alias": "TP-LINK_Power Strip_800B",
+          "connection_parameters": {
+            "device_family": "IOT.SMARTPLUGSWITCH",
+            "encryption_type": "XOR",
+            "https": false
+          },
+          "host": "192.168.10.223",
+          "model": "HS300",
+          "uses_http": false
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "tplink",
+        "entry_id": "01M1A2VZGB3YKQNQ14QMSBJZ15",
+        "minor_version": 5,
+        "modified_at": "2026-08-30T19:38:15.435856+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "TP-LINK_Power Strip_800B HS300",
+        "unique_id": "78:20:51:a0:80:0b",
+        "version": 1
+      }
+    ]
+  },
+  "key": "core.config_entries",
+  "minor_version": 5,
+  "version": 1
+}

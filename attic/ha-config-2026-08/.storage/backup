@@ -1,0 +1,39 @@
+{
+  "data": {
+    "backups": [
+      {
+        "backup_id": "c8c30f76",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      }
+    ],
+    "config": {
+      "agents": {},
+      "automatic_backups_configured": false,
+      "create_backup": {
+        "agent_ids": [],
+        "include_addons": null,
+        "include_all_addons": false,
+        "include_database": true,
+        "include_folders": null,
+        "name": null,
+        "password": "<redacted>"
+      },
+      "last_attempted_automatic_backup": "2026-01-06T19:18:28.361427-06:00",
+      "last_completed_automatic_backup": null,
+      "retention": {
+        "copies": null,
+        "days": null
+      },
+      "schedule": {
+        "days": [],
+        "recurrence": "never",
+        "time": null
+      }
+    }
+  },
+  "key": "backup",
+  "minor_version": 7,
+  "version": 1
+}

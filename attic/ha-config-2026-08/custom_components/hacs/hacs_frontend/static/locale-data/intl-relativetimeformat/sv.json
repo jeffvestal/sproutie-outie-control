@@ -1,0 +1,308 @@
+{
+  "data": {
+    "day": {
+      "-1": "i g\u00e5r",
+      "-2": "i f\u00f6rrg\u00e5r",
+      "0": "i dag",
+      "1": "i morgon",
+      "2": "i \u00f6vermorgon",
+      "future": {
+        "one": "om {0} dag",
+        "other": "om {0} dagar"
+      },
+      "past": {
+        "one": "f\u00f6r {0} dag sedan",
+        "other": "f\u00f6r {0} dagar sedan"
+      }
+    },
+    "day-narrow": {
+      "-1": "ig\u00e5r",
+      "-2": "i f\u00f6rrg\u00e5r",
+      "0": "idag",
+      "1": "imorgon",
+      "2": "i \u00f6vermorgon",
+      "future": {
+        "one": "+{0} d",
+        "other": "+{0} d"
+      },
+      "past": {
+        "one": "\u2212{0} d",
+        "other": "\u2212{0} d"
+      }
+    },
+    "day-short": {
+      "-1": "i g\u00e5r",
+      "-2": "i f\u00f6rrg\u00e5r",
+      "0": "i dag",
+      "1": "i morgon",
+      "2": "i \u00f6vermorgon",
+      "future": {
+        "one": "om {0} d",
+        "other": "om {0} d"
+      },
+      "past": {
+        "one": "f\u00f6r {0} d sedan",
+        "other": "f\u00f6r\u00a0{0}\u00a0d sedan"
+      }
+    },
+    "hour": {
+      "0": "denna timme",
+      "future": {
+        "one": "om {0} timme",
+        "other": "om {0} timmar"
+      },
+      "past": {
+        "one": "f\u00f6r {0} timme sedan",
+        "other": "f\u00f6r {0} timmar sedan"
+      }
+    },
+    "hour-narrow": {
+      "0": "denna timme",
+      "future": {
+        "one": "+{0} h",
+        "other": "+{0} h"
+      },
+      "past": {
+        "one": "\u2212{0} h",
+        "other": "\u2212{0} h"
+      }
+    },
+    "hour-short": {
+      "0": "denna timme",
+      "future": {
+        "one": "om {0} tim",
+        "other": "om {0} tim"
+      },
+      "past": {
+        "one": "f\u00f6r {0} tim sedan",
+        "other": "f\u00f6r {0} tim sedan"
+      }
+    },
+    "minute": {
+      "0": "denna minut",
+      "future": {
+        "one": "om {0} minut",
+        "other": "om {0} minuter"
+      },
+      "past": {
+        "one": "f\u00f6r {0} minut sedan",
+        "other": "f\u00f6r {0} minuter sedan"
+      }
+    },
+    "minute-narrow": {
+      "0": "denna minut",
+      "future": {
+        "one": "+{0} min",
+        "other": "+{0} min"
+      },
+      "past": {
+        "one": "\u2212{0} min",
+        "other": "\u2212{0} min"
+      }
+    },
+    "minute-short": {
+      "0": "denna minut",
+      "future": {
+        "one": "om\u00a0{0} min",
+        "other": "om\u00a0{0} min"
+      },
+      "past": {
+        "one": "f\u00f6r {0} min sen",
+        "other": "f\u00f6r {0} min sen"
+      }
+    },
+    "month": {
+      "-1": "f\u00f6rra m\u00e5naden",
+      "0": "den h\u00e4r m\u00e5naden",
+      "1": "n\u00e4sta m\u00e5nad",
+      "future": {
+        "one": "om {0} m\u00e5nad",
+        "other": "om {0} m\u00e5nader"
+      },
+      "past": {
+        "one": "f\u00f6r {0} m\u00e5nad sedan",
+        "other": "f\u00f6r {0} m\u00e5nader sedan"
+      }
+    },
+    "month-narrow": {
+      "-1": "f\u00f6rra m\u00e5n.",
+      "0": "denna m\u00e5n.",
+      "1": "n\u00e4sta m\u00e5n.",
+      "future": {
+        "one": "+{0} m\u00e5n.",
+        "other": "+{0} m\u00e5n."
+      },
+      "past": {
+        "one": "\u2212{0} m\u00e5n",
+        "other": "\u2212{0} m\u00e5n"
+      }
+    },
+    "month-short": {
+      "-1": "f\u00f6rra m\u00e5n.",
+      "0": "denna m\u00e5n.",
+      "1": "n\u00e4sta m\u00e5n.",
+      "future": {
+        "one": "om {0} m\u00e5n.",
+        "other": "om {0} m\u00e5n."
+      },
+      "past": {
+        "one": "f\u00f6r {0} m\u00e5n. sen",
+        "other": "f\u00f6r {0} m\u00e5n. sen"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "f\u00f6rra kvartalet",
+      "0": "detta kvartal",
+      "1": "n\u00e4sta kvartal",
+      "future": {
+        "one": "om {0} kvartal",
+        "other": "om {0} kvartal"
+      },
+      "past": {
+        "one": "f\u00f6r {0} kvartal sedan",
+        "other": "f\u00f6r {0} kvartal sedan"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "f\u00f6rra kv.",
+      "0": "detta kv.",
+      "1": "n\u00e4sta kv.",
+      "future": {
+        "one": "+{0} kv.",
+        "other": "+{0} kv."
+      },
+      "past": {
+        "one": "\u2212{0} kv",
+        "other": "\u2212{0} kv"
+      }
+    },
+    "quarter-short": {
+      "-1": "f\u00f6rra kv.",
+      "0": "detta kv.",
+      "1": "n\u00e4sta kv.",
+      "future": {
+        "one": "om {0} kv.",
+        "other": "om {0} kv."
+      },
+      "past": {
+        "one": "f\u00f6r {0} kv. sen",
+        "other": "f\u00f6r {0} kv. sen"
+      }
+    },
+    "second": {
+      "0": "nu",
+      "future": {
+        "one": "om {0} sekund",
+        "other": "om {0} sekunder"
+      },
+      "past": {
+        "one": "f\u00f6r {0} sekund sedan",
+        "other": "f\u00f6r {0} sekunder sedan"
+      }
+    },
+    "second-narrow": {
+      "0": "nu",
+      "future": {
+        "one": "+{0} s",
+        "other": "+{0} s"
+      },
+      "past": {
+        "one": "\u2212{0} s",
+        "other": "\u2212{0} s"
+      }
+    },
+    "second-short": {
+      "0": "nu",
+      "future": {
+        "one": "om\u00a0{0} sek",
+        "other": "om {0} sek"
+      },
+      "past": {
+        "one": "f\u00f6r {0} s sen",
+        "other": "f\u00f6r {0} s sen"
+      }
+    },
+    "week": {
+      "-1": "f\u00f6rra veckan",
+      "0": "denna vecka",
+      "1": "n\u00e4sta vecka",
+      "future": {
+        "one": "om {0} vecka",
+        "other": "om {0} veckor"
+      },
+      "past": {
+        "one": "f\u00f6r {0} vecka sedan",
+        "other": "f\u00f6r {0} veckor sedan"
+      }
+    },
+    "week-narrow": {
+      "-1": "f\u00f6rra v.",
+      "0": "denna v.",
+      "1": "n\u00e4sta v.",
+      "future": {
+        "one": "+{0} v.",
+        "other": "+{0} v."
+      },
+      "past": {
+        "one": "\u2212{0} v",
+        "other": "\u2212{0} v"
+      }
+    },
+    "week-short": {
+      "-1": "f\u00f6rra v.",
+      "0": "denna v.",
+      "1": "n\u00e4sta v.",
+      "future": {
+        "one": "om {0} v.",
+        "other": "om {0} v."
+      },
+      "past": {
+        "one": "f\u00f6r {0} v. sedan",
+        "other": "f\u00f6r {0} v. sedan"
+      }
+    },
+    "year": {
+      "-1": "i fjol",
+      "0": "i \u00e5r",
+      "1": "n\u00e4sta \u00e5r",
+      "future": {
+        "one": "om {0} \u00e5r",
+        "other": "om {0} \u00e5r"
+      },
+      "past": {
+        "one": "f\u00f6r {0} \u00e5r sedan",
+        "other": "f\u00f6r {0} \u00e5r sedan"
+      }
+    },
+    "year-narrow": {
+      "-1": "i fjol",
+      "0": "i \u00e5r",
+      "1": "n\u00e4sta \u00e5r",
+      "future": {
+        "one": "+{0} \u00e5r",
+        "other": "+{0} \u00e5r"
+      },
+      "past": {
+        "one": "\u2212{0} \u00e5r",
+        "other": "\u2212{0} \u00e5r"
+      }
+    },
+    "year-short": {
+      "-1": "i fjol",
+      "0": "i \u00e5r",
+      "1": "n\u00e4sta \u00e5r",
+      "future": {
+        "one": "om {0} \u00e5r",
+        "other": "om {0} \u00e5r"
+      },
+      "past": {
+        "one": "f\u00f6r {0} \u00e5r sen",
+        "other": "f\u00f6r {0} \u00e5r sen"
+      }
+    }
+  },
+  "locale": "sv"
+}

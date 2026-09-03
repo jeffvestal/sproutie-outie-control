@@ -1,0 +1,111 @@
+# Sproutie OS v3.0 - Inventory & Seeding
+title: Inventory & Seeding
+path: workbench
+type: panel
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:stack-in-card
+        card_mod:
+          style: |
+            ha-card {
+              background: rgba(30, 30, 30, 0.6) !important;
+              border-radius: 24px !important;
+              border: none !important;
+              padding: 16px !important;
+            }
+        cards:
+          - type: custom:mushroom-template-card
+            primary: "Slot Matrix"
+            secondary: "Visual layout of all trays"
+            icon: mdi:grid
+            icon_color: amber
+            card_mod:
+              style: |
+                ha-card { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 0 8px 0 !important; }
+                .primary { font-size: 16px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 1px !important; }
+
+          - type: custom:auto-entities
+            card:
+              type: grid
+              columns: 4
+              square: false
+            card_param: cards
+            filter:
+              template: |
+                {%- set slots = ['a1','a2','a3','a4','a5','a6','a7','a8','b1','b2','b3','b4','b5','b6','b7','b8','sc_tf','sc_tb','sc_bf','sc_bb'] -%}
+                {%- for s in slots -%}
+                  {%- set raw = states('input_text.slot_' ~ s ~ '_data') -%}
+                  {%- set isEmpty = raw in ['unknown', 'unavailable', 'Empty', ''] -%}
+                  {%- set d = raw | from_json(default={}) -%}
+                  {{ {
+                    'type': 'custom:mushroom-template-card',
+                    'primary': s | upper if isEmpty else (d.crop | default('Unknown')) ~ ' • ' ~ ((as_timestamp(now()) - as_timestamp(d.planted | default(now()))) / 86400) | int ~ 'd',
+                    'secondary': 'EMPTY' if isEmpty else d.phase | default('Growing'),
+                    'icon': 'mdi:plus-circle-outline' if isEmpty else 'mdi:sprout',
+                    'icon_color': 'amber' if isEmpty else 'green',
+                    'card_mod': {
+                      'style': 'ha-card { background: ' ~ ('rgba(255, 193, 7, 0.1)' if isEmpty else 'rgba(46, 204, 113, 0.1)') ~ ' !important; border-radius: 12px !important; }'
+                    },
+                    'tap_action': {
+                      'action': 'call-service',
+                      'service': 'script.sproutie_ui_select_crop',
+                      'service_data': {
+                        'crop': d.crop | default('Unknown'),
+                        'batch_id': d.get('id') | default('0')
+                      }
+                    } if not isEmpty else {
+                      'action': 'fire-dom-event',
+                      'browser_mod': {
+                        'service': 'browser_mod.sequence',
+                        'data': {
+                          'sequence': [
+                            {
+                              'service': 'input_text.set_value',
+                              'data': {
+                                'entity_id': 'input_text.selected_batch',
+                                'value': s | upper
+                              }
+                            },
+                            {
+                              'service': 'browser_mod.popup',
+                              'data': {
+                                'title': 'Plant New Batch - ' ~ s | upper,
+                                'content': {
+                                  'type': 'vertical-stack',
+                                  'cards': [
+                                    {
+                                      'type': 'entities',
+                                      'entities': [
+                                        'input_select.container_size',
+                                        'input_select.planting_preset',
+                                        'input_select.container_type',
+                                        'input_number.seed_weight',
+                                        'input_boolean.soak_seeds',
+                                        'input_number.soak_time',
+                                        'input_datetime.manual_event_date',
+                                        'input_text.event_note'
+                                      ]
+                                    },
+                                    {
+                                      'type': 'custom:mushroom-template-card',
+                                      'primary': 'START PLANTING',
+                                      'secondary': 'Fills slots based on footprint',
+                                      'icon': 'mdi:seed',
+                                      'icon_color': 'green',
+                                      'tap_action': {
+                                        'action': 'call-service',
+                                        'service': 'script.sproutie_plant_batch',
+                                        'service_data': { 'slot_id': s | upper }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  } }},
+                {%- endfor -%}

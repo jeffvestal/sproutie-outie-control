@@ -1,0 +1,108 @@
+# REST Command definitions for Sproutie Outie Control Center
+# Add these to your Home Assistant configuration.yaml or packages/sproutie_outie/rest_commands.yaml
+
+# Elasticsearch Bulk Index Command
+sproutie_es_bulk_index:
+  url: !secret es_url_bulk
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/x-ndjson"
+  payload: |
+    {"index":{}}
+    {"@timestamp":"{{ timestamp }}","tent_temp":{{ tent_temp | default(0) }},"tent_humidity":{{ tent_humidity | default(0) }},"room_temp":{{ room_temp | default(0) }},"room_humidity":{{ room_humidity | default(0) }},"fan_exhaust":{{ fan_exhaust | default(0) }},"fan_top":{{ fan_top | default(0) }},"fan_bottom":{{ fan_bottom | default(0) }},"lights_top":{{ lights_top | default(0) }},"lights_bottom":{{ lights_bottom | default(0) }}}
+  content_type: "application/x-ndjson"
+
+# Get Anomaly Score from Elasticsearch
+sproutie_es_get_anomaly_score:
+  url: !secret es_url_anomaly
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/json"
+  payload: |
+    {
+      "size": 1,
+      "sort": [{"@timestamp": {"order": "desc"}}],
+      "_source": ["anomaly_score", "@timestamp"]
+    }
+  content_type: "application/json"
+
+# Store Botany Log Entry
+sproutie_es_store_botany_log:
+  url: !secret es_url_botany
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/json"
+  payload: |
+    {
+      "@timestamp": "{{ timestamp }}",
+      "log_type": "{{ log_type }}",
+      "content": "{{ log_content }}",
+      "conditions_summary": {
+        "temp": {{ current_temp }},
+        "humidity": {{ current_humidity }},
+        "tray_1_crop": "{{ tray_1_crop }}",
+        "tray_2_crop": "{{ tray_2_crop }}"
+      }
+    }
+  content_type: "application/json"
+
+# Get Recent Events for Botany Log Context
+sproutie_es_get_recent_events:
+  url: !secret es_url_sensors_search
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/json"
+  payload: |
+    {
+      "size": 100,
+      "query": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-{{ hours }}h"
+          }
+        }
+      },
+      "sort": [{"@timestamp": {"order": "desc"}}]
+    }
+  content_type: "application/json"
+
+# Log Alert Event
+sproutie_es_log_alert:
+  url: !secret es_url_alerts
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/json"
+  payload: |
+    {
+      "@timestamp": "{{ timestamp }}",
+      "alert_type": "{{ alert_type }}",
+      "value": {{ value }}
+    }
+  content_type: "application/json"
+
+# Log Harvest Event (New for v3)
+sproutie_es_log_harvest:
+  url: !secret elastic_url_doc
+  method: POST
+  headers:
+    Authorization: <redacted>
+    Content-Type: "application/json"
+  payload: |
+    {
+      "@timestamp": "{{ timestamp }}",
+      "id": "{{ batch_id | default('unknown') }}",
+      "crop": "{{ crop | default('Unknown') }}",
+      "planted_date": "{{ planted_date | default('') }}",
+      "harvest_date": "{{ now().strftime('%Y-%m-%d') }}",
+      "seed_weight": {{ seed_weight | default(0) }},
+      "harvest_weight": {{ harvest_weight | default(0) }},
+      "efficiency": {{ efficiency | default(0) }},
+      "notes": "{{ notes | default('') }}",
+      "history": {{ history | default([]) | to_json }}
+    }
+  content_type: "application/json"

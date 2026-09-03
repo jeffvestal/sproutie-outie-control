@@ -1,0 +1,86 @@
+"""Utility functions for the Cable Modem Monitor integration."""
+
+from __future__ import annotations
+
+import re
+
+
+def extract_number(text: str) -> int | None:
+    """Extract integer from text."""
+    try:
+        cleaned = "".join(c for c in text if c.isdigit() or c == "-")
+        return int(cleaned) if cleaned else None
+    except ValueError:
+        return None
+
+
+def extract_float(text: str) -> float | None:
+    """Extract float from text."""
+    try:
+        cleaned = "".join(c for c in text if c.isdigit() or c in ".-")
+        return float(cleaned) if cleaned else None
+    except ValueError:
+        return None
+
+
+def parse_uptime_to_seconds(uptime_str: str | None) -> int | None:
+    """Parse uptime string to total seconds.
+
+    Args:
+        uptime_str: Uptime string in various formats:
+                   - "2 days 5 hours" or "0 days 08h:37m:20s"
+                   - "47d 12h 34m 56s"
+                   - "1308:19:22" (hours:minutes:seconds - CM600 format)
+                   - "7 days 12:34:56" (days + HH:MM:SS - S33 format)
+                   - None for unknown/missing uptime
+
+    Returns:
+        Total seconds or None if parsing fails
+    """
+    if not uptime_str or uptime_str == "Unknown":
+        return None
+
+    try:
+        total_seconds = 0
+
+        # Check for HH:MM:SS or HHHH:MM:SS format (e.g., "1308:19:22")
+        # This format is hours:minutes:seconds with no unit suffixes
+        hms_match = re.match(r"^(\d+):(\d{1,2}):(\d{1,2})$", uptime_str.strip())
+        if hms_match:
+            hours = int(hms_match.group(1))
+            minutes = int(hms_match.group(2))
+            seconds = int(hms_match.group(3))
+            return hours * 3600 + minutes * 60 + seconds
+
+        # Parse days (handles "2 days" or "2d")
+        days_match = re.search(r"(\d+)\s*(?:days?|d)", uptime_str, re.IGNORECASE)
+        if days_match:
+            total_seconds += int(days_match.group(1)) * 86400
+
+        # Check for HH:MM:SS embedded in string (e.g., "7 days 12:34:56")
+        # This handles S33 format where time follows days
+        embedded_hms_match = re.search(r"(\d{1,2}):(\d{1,2}):(\d{1,2})", uptime_str)
+        if embedded_hms_match:
+            hours = int(embedded_hms_match.group(1))
+            minutes = int(embedded_hms_match.group(2))
+            seconds = int(embedded_hms_match.group(3))
+            total_seconds += hours * 3600 + minutes * 60 + seconds
+        else:
+            # Parse hours (handles "5 hours", "5h", "05h")
+            hours_match = re.search(r"(\d+)\s*(?:hours?|h)", uptime_str, re.IGNORECASE)
+            if hours_match:
+                total_seconds += int(hours_match.group(1)) * 3600
+
+            # Parse minutes (handles "37 minutes", "37 min", "37m")
+            minutes_match = re.search(r"(\d+)\s*(?:minutes?|mins?|m)", uptime_str, re.IGNORECASE)
+            if minutes_match:
+                total_seconds += int(minutes_match.group(1)) * 60
+
+            # Parse seconds (handles "20 seconds", "20 sec", "20s")
+            seconds_match = re.search(r"(\d+)\s*(?:seconds?|secs?|s)", uptime_str, re.IGNORECASE)
+            if seconds_match:
+                total_seconds += int(seconds_match.group(1))
+
+        return total_seconds if total_seconds > 0 else None
+    except Exception:
+        return None

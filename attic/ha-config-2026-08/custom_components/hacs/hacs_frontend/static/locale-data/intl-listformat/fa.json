@@ -1,0 +1,65 @@
+{
+  "data": {
+    "conjunction": {
+      "long": {
+        "end": "{0}\u060c \u0648 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u0648 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      },
+      "narrow": {
+        "end": "{0}\u060c\u200f {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0}\u060c\u200f {1}",
+        "start": "{0}\u060c\u200f {1}"
+      },
+      "short": {
+        "end": "{0}\u060c \u0648 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u0648 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      }
+    },
+    "disjunction": {
+      "long": {
+        "end": "{0}\u060c \u06cc\u0627 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u06cc\u0627 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      },
+      "narrow": {
+        "end": "{0}\u060c \u06cc\u0627 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u06cc\u0627 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      },
+      "short": {
+        "end": "{0}\u060c \u06cc\u0627 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u06cc\u0627 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      }
+    },
+    "unit": {
+      "long": {
+        "end": "{0}\u060c \u0648 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0} \u0648 {1}",
+        "start": "{0}\u060c\u200f {1}"
+      },
+      "narrow": {
+        "end": "{0} {1}",
+        "middle": "{0} {1}",
+        "pair": "{0} {1}",
+        "start": "{0} {1}"
+      },
+      "short": {
+        "end": "{0}\u060c \u0648 {1}",
+        "middle": "{0}\u060c\u200f {1}",
+        "pair": "{0}\u060c\u200f {1}",
+        "start": "{0}\u060c\u200f {1}"
+      }
+    }
+  },
+  "locale": "fa"
+}

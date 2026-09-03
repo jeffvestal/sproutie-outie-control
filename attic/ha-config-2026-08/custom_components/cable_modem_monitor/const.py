@@ -1,0 +1,70 @@
+"""Constants for the Cable Modem Monitor integration."""
+
+from __future__ import annotations
+
+VERSION = "3.12.1"
+
+DOMAIN = "cable_modem_monitor"
+CONF_HOST = "host"
+CONF_USERNAME = "username"
+CONF_PASSWORD = "password"
+CONF_SCAN_INTERVAL = "scan_interval"
+CONF_MODEM_CHOICE = "modem_choice"
+
+# SSL/TLS Certificate Verification
+# Hardcoded to False for the following reasons:
+# 1. Consumer cable modems universally use self-signed certificates (no CA-signed certs)
+# 2. Modems operate on private LANs (192.168.x.x) where MITM attacks are a different threat model
+# 3. No known cable modem manufacturer provides valid CA-signed certificates
+# 4. Enabling verification would break 99%+ of installations with no security benefit
+# 5. Users on compromised LANs have larger security issues than modem HTTPS
+#
+# Security Analysis: The risk of MITM attacks on local cable modem traffic is negligible compared to
+# the usability cost. If an attacker has access to the local network to perform MITM attacks, they
+# already have access to intercept unencrypted modem traffic and can compromise the network directly.
+# The self-signed certificate still provides encryption in transit on the LAN.
+VERIFY_SSL = False
+
+# Modem detection cache fields
+CONF_PARSER_NAME = "parser_name"  # Cached parser class name for quick lookup
+CONF_DETECTED_MODEM = "detected_modem"  # Display name for UI
+CONF_DETECTED_MANUFACTURER = "detected_manufacturer"  # Display manufacturer for UI
+CONF_DOCSIS_VERSION = "docsis_version"  # DOCSIS version (3.0, 3.1) for entity migration
+CONF_WORKING_URL = "working_url"  # Last successful URL
+CONF_LAST_DETECTION = "last_detection"  # Timestamp of last detection
+CONF_SUPPORTS_ICMP = "supports_icmp"  # Auto-detected ICMP ping support for configured host
+CONF_ACTUAL_MODEL = "actual_model"  # Actual model name extracted from modem (e.g., "C3700-100NAS")
+CONF_LEGACY_SSL = "legacy_ssl"  # Auto-detected: True if modem requires SECLEVEL=0 ciphers
+CONF_DETECTION_METHOD = "detection_method"  # How parser was selected: "auto_detected" or "user_selected"
+
+# Auth discovery fields
+CONF_AUTH_STRATEGY = "auth_strategy"  # Discovered auth strategy type
+CONF_AUTH_FORM_CONFIG = "auth_form_config"  # Discovered form config (for form-based auth)
+CONF_AUTH_HNAP_CONFIG = "auth_hnap_config"  # HNAP config (endpoint, namespace, etc.)
+CONF_AUTH_URL_TOKEN_CONFIG = "auth_url_token_config"  # URL token config (login_prefix, etc.)
+CONF_AUTH_DISCOVERY_STATUS = "auth_discovery_status"  # "success", "unknown_pattern", etc.
+CONF_AUTH_DISCOVERY_FAILED = "auth_discovery_failed"  # True if discovery failed but modem works
+CONF_AUTH_DISCOVERY_ERROR = "auth_discovery_error"  # Error message if discovery failed
+CONF_AUTH_CAPTURED_RESPONSE = "auth_captured_response"  # Captured response for unknown patterns
+
+# Polling interval defaults based on industry best practices
+# References:
+# - SNMP Polling: https://obkio.com/blog/snmp-polling/
+#   "5-10 minute intervals are standard for network devices"
+# - API Polling Best Practices: https://www.merge.dev/blog/api-polling-best-practices
+#   "Polling more than once per second can overload servers"
+# - Network Device Polling: https://community.broadcom.com/communities/community-home/digestviewer/viewthread?MID=824934
+#   "Client data polling should not be lower than 5 minutes"
+DEFAULT_SCAN_INTERVAL = 600  # 10 minutes - balanced default for network monitoring
+MIN_SCAN_INTERVAL = 60  # 1 minute - minimum to avoid device strain
+MAX_SCAN_INTERVAL = 1800  # 30 minutes - maximum useful interval
+
+# HTTP request timeouts (seconds)
+# Used throughout parsers and core modules for consistent behavior
+DEFAULT_TIMEOUT = 20  # Standard timeout for modem requests (some modems take 12+ seconds)
+QUICK_TIMEOUT = 5  # For link crawling and secondary requests
+DISCOVERY_TIMEOUT = 3  # For initial modem discovery probes
+
+# Host validation - characters that could enable command injection
+# Used by both config_flow and health_monitor for input validation
+INVALID_HOST_CHARS = [";", "&", "|", "$", "`", "\n", "\r", "\t", " ", "<", ">", "(", ")", "{", "}", "\\"]

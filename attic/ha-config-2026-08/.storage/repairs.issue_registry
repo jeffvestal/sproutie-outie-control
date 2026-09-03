@@ -1,0 +1,471 @@
+{
+  "data": {
+    "issues": [
+      {
+        "created": "2024-08-26T01:35:07.814284+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.shortcuts"
+      },
+      {
+        "created": "2024-08-26T01:35:07.815813+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.ui"
+      },
+      {
+        "created": "2024-08-26T01:35:07.816908+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.entity"
+      },
+      {
+        "created": "2024-08-26T01:35:07.817911+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.poster"
+      },
+      {
+        "created": "2024-08-26T01:35:07.820634+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.type"
+      },
+      {
+        "created": "2024-08-26T14:11:49.003470+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_234983286_tags/v0.10.3"
+      },
+      {
+        "created": "2024-08-26T14:15:13.120808+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_223993584_tags/12.15.0"
+      },
+      {
+        "created": "2024-09-09T01:06:04.555157+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_380367845_tags/v8.0.3"
+      },
+      {
+        "created": "2026-01-03T23:21:21.464473+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant_alerts",
+        "is_persistent": false,
+        "issue_id": "august.markdown_august"
+      },
+      {
+        "created": "2026-01-04T02:17:50.924420+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_380367845_tags/v8.2.2"
+      },
+      {
+        "created": "2026-01-04T02:18:01.385644+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_356778495_tags/v3.6.1"
+      },
+      {
+        "created": "2026-01-04T02:24:04.594173+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_172733314_tags/2.0.5"
+      },
+      {
+        "created": "2026-01-04T02:28:07.755642+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_223993584_tags/13.10.1"
+      },
+      {
+        "created": "2026-01-06T20:00:42.607136+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_latest_botany_log_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-06T20:00:42.611241+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_system_status_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-06T20:00:42.615137+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_tray_1_days_to_harvest_f3bae3e082a1f3348c640f9545a84b4f"
+      },
+      {
+        "created": "2026-01-06T20:00:42.616013+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_tray_2_days_to_harvest_f3bae3e082a1f3348c640f9545a84b4f"
+      },
+      {
+        "created": "2026-01-06T20:00:42.624305+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_es_connection_status_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-06T20:00:42.705903+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_anomaly_score_f3bae3e082a1f3348c640f9545a84b4f"
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-06T20:10:00.085704+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.fetch_anomaly_score_from_es_service_not_found_rest_command.sproutie_es_get_anomaly_score",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_fetch_anomaly_score",
+          "entity_id": "automation.fetch_anomaly_score_from_es",
+          "name": "Fetch Anomaly Score from ES",
+          "service": "rest_command.sproutie_es_get_anomaly_score"
+        }
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-06T22:32:03.121266+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.alert_on_high_temperature_service_not_found_rest_command.sproutie_es_log_alert",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_alert_high_temp",
+          "entity_id": "automation.alert_on_high_temperature",
+          "name": "Alert on High Temperature",
+          "service": "rest_command.sproutie_es_log_alert"
+        }
+      },
+      {
+        "created": "2026-01-07T01:08:59.067798+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_days_to_harvest_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-07T01:18:28.364980+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "backup",
+        "is_fixable": false,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automatic_backup_failed",
+        "learn_more_url": "homeassistant://config/backup",
+        "severity": "warning",
+        "translation_key": "automatic_backup_failed_create",
+        "translation_placeholders": null
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-07T02:00:00.236485+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.generate_evening_botany_log_service_not_found_rest_command.sproutie_es_get_recent_events",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_botany_log_evening",
+          "entity_id": "automation.generate_evening_botany_log",
+          "name": "Generate Evening Botany Log",
+          "service": "rest_command.sproutie_es_get_recent_events"
+        }
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-07T14:00:00.252865+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.generate_morning_botany_log_service_not_found_rest_command.sproutie_es_get_recent_events",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_botany_log_morning",
+          "entity_id": "automation.generate_morning_botany_log",
+          "name": "Generate Morning Botany Log",
+          "service": "rest_command.sproutie_es_get_recent_events"
+        }
+      },
+      {
+        "created": "2026-01-07T20:49:45.168658+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_vpd_f3bae3e082a1f3348c640f9545a84b4f"
+      },
+      {
+        "created": "2026-01-08T17:26:37.806462+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_outie_internal_temp_e43c1415befe02996d38b376a09b8224"
+      },
+      {
+        "created": "2026-01-08T17:26:37.808378+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_outie_internal_humidity_e43c1415befe02996d38b376a09b8224"
+      },
+      {
+        "created": "2026-01-08T17:26:37.820104+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_caffrey_taffy_co_internal_temp_e43c1415befe02996d38b376a09b8224"
+      },
+      {
+        "created": "2026-01-08T17:26:37.821529+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_caffrey_taffy_co_internal_humidity_e43c1415befe02996d38b376a09b8224"
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-08T18:10:32.264568+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.alert_on_low_humidity_service_not_found_rest_command.sproutie_es_log_alert",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_alert_low_humidity",
+          "entity_id": "automation.alert_on_low_humidity",
+          "name": "Alert on Low Humidity",
+          "service": "rest_command.sproutie_es_log_alert"
+        }
+      },
+      {
+        "created": "2026-01-08T20:37:42.659270+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_camera_generic"
+      },
+      {
+        "created": "2026-01-09T17:18:03.604297+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "integration_not_found.eufy_security"
+      },
+      {
+        "created": "2026-01-11T18:49:45.362010+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_194140521_tags/v2.6.4"
+      },
+      {
+        "created": "2026-01-12T21:31:02.232651+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_es_anomaly_score_val_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-12T21:31:02.259491+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_has_radish_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-12T21:31:02.260402+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_has_sunflower_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-12T21:31:02.261179+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_has_pea_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-12T21:31:02.262281+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_has_other_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-13T02:50:16.297823+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_crop_summary_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-13T02:59:20.171149+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_crop_1_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-13T02:59:20.173117+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_crop_2_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-13T02:59:20.174704+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_crop_3_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-13T02:59:20.176071+00:00",
+        "dismissed_version": null,
+        "domain": "template",
+        "is_persistent": false,
+        "issue_id": "deprecate_legacy_templates_sensor_sproutie_crop_4_090ac956675e706db306b8e437ee79db"
+      },
+      {
+        "created": "2026-01-15T03:06:24.909199+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_camera_local_file"
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-17T16:42:31.750700+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.crop_photography_interval_service_not_found_script.sequence_crop_photography",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_crop_photography_interval",
+          "entity_id": "automation.crop_photography_interval",
+          "name": "Crop Photography Interval",
+          "service": "script.sequence_crop_photography"
+        }
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-20T03:10:00.459826+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.exhaust_fan_duty_cycle_service_not_found_script.log_sproutie_event",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_exhaust_fan_duty_cycle",
+          "entity_id": "automation.exhaust_fan_duty_cycle",
+          "name": "Exhaust Fan Duty Cycle",
+          "service": "script.log_sproutie_event"
+        }
+      },
+      {
+        "breaks_in_ha_version": null,
+        "created": "2026-01-21T02:36:09.476791+00:00",
+        "data": null,
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_fixable": true,
+        "is_persistent": true,
+        "issue_domain": null,
+        "issue_id": "automation.audit_system_mode_changes_service_not_found_script.sproutie_log_event",
+        "learn_more_url": null,
+        "severity": "error",
+        "translation_key": "service_not_found",
+        "translation_placeholders": {
+          "edit": "/config/automation/edit/sproutie_audit_mode_changes",
+          "entity_id": "automation.audit_system_mode_changes",
+          "name": "Audit: System Mode Changes",
+          "service": "script.sproutie_log_event"
+        }
+      },
+      {
+        "created": "2026-01-24T14:31:53.327062+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_1079994733_tags/v3.12.1"
+      },
+      {
+        "created": "2026-02-06T18:18:20.166325+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "config_entry_reauth_google_01KGDYMT5CRXF7C98E05099H9F"
+      }
+    ]
+  },
+  "key": "repairs.issue_registry",
+  "minor_version": 2,
+  "version": 1
+}

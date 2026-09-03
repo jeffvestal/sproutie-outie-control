@@ -1,0 +1,2478 @@
+{
+  "data": {
+    "am": "AM",
+    "ca": [
+      "gregory",
+      "hebrew",
+      "islamic",
+      "islamicc",
+      "islamic-tbla"
+    ],
+    "dateFormat": {
+      "full": "EEEE, d \u05d1MMMM y",
+      "long": "d \u05d1MMMM y",
+      "medium": "d \u05d1MMM y",
+      "short": "d.M.y"
+    },
+    "dateTimeFormat": {
+      "full": "{1}, {0}",
+      "long": "{1}, {0}",
+      "medium": "{1}, {0}",
+      "short": "{1}, {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "\u05dc\u05e1\u05e4\u05d9\u05e8\u05d4",
+        "BC": "\u05dc\u05e4\u05e0\u05d9 \u05d4\u05e1\u05e4\u05d9\u05e8\u05d4"
+      },
+      "narrow": {
+        "AD": "\u05d0\u05d7\u05e8\u05d9\u05d9",
+        "BC": "\u05dc\u05e4\u05e0\u05d9"
+      },
+      "short": {
+        "AD": "\u05dc\u05e1\u05e4\u05d9\u05e8\u05d4",
+        "BC": "\u05dc\u05e4\u05e0\u05d4\u05f4\u05e1"
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h B",
+        "Bhm": "h:mm B",
+        "Bhms": "h:mm:ss B",
+        "E": "ccc",
+        "E, Bh": "ccc, h B",
+        "E, Bhm": "ccc, h:mm B",
+        "E, Bhms": "ccc, h:mm:ss B",
+        "E, H": "ccc, H",
+        "E, H:mm": "ccc, H:mm",
+        "E, H:mm:ss": "ccc, H:mm:ss",
+        "E, H:mm:ss z": "ccc, H:mm:ss z",
+        "E, H:mm:ss zzzz": "ccc, H:mm:ss zzzz",
+        "E, Hm": "ccc, H:mm",
+        "E, Hms": "ccc, H:mm:ss",
+        "E, Hmsv": "ccc, HH:mm:ss v",
+        "E, Hmv": "ccc, HH:mm v",
+        "E, h": "ccc, \u200fh a",
+        "E, hm": "ccc, h:mm a",
+        "E, hms": "ccc, h:mm:ss a",
+        "E, hmsv": "ccc, h:mm:ss a v",
+        "E, hmv": "ccc, h:mm a v",
+        "E, ms": "ccc, mm:ss",
+        "EBhm": "E h:mm B",
+        "EBhms": "E h:mm:ss B",
+        "EEEE, d \u05d1MMMM y": "EEEE, d \u05d1MMMM y",
+        "EEEE, d \u05d1MMMM y, Bh": "EEEE, d \u05d1MMMM y, h B",
+        "EEEE, d \u05d1MMMM y, Bhm": "EEEE, d \u05d1MMMM y, h:mm B",
+        "EEEE, d \u05d1MMMM y, Bhms": "EEEE, d \u05d1MMMM y, h:mm:ss B",
+        "EEEE, d \u05d1MMMM y, H": "EEEE, d \u05d1MMMM y, H",
+        "EEEE, d \u05d1MMMM y, H:mm": "EEEE, d \u05d1MMMM y, H:mm",
+        "EEEE, d \u05d1MMMM y, H:mm:ss": "EEEE, d \u05d1MMMM y, H:mm:ss",
+        "EEEE, d \u05d1MMMM y, H:mm:ss z": "EEEE, d \u05d1MMMM y, H:mm:ss z",
+        "EEEE, d \u05d1MMMM y, H:mm:ss zzzz": "EEEE, d \u05d1MMMM y, H:mm:ss zzzz",
+        "EEEE, d \u05d1MMMM y, Hm": "EEEE, d \u05d1MMMM y, H:mm",
+        "EEEE, d \u05d1MMMM y, Hms": "EEEE, d \u05d1MMMM y, H:mm:ss",
+        "EEEE, d \u05d1MMMM y, Hmsv": "EEEE, d \u05d1MMMM y, HH:mm:ss v",
+        "EEEE, d \u05d1MMMM y, Hmv": "EEEE, d \u05d1MMMM y, HH:mm v",
+        "EEEE, d \u05d1MMMM y, h": "EEEE, d \u05d1MMMM y, \u200fh a",
+        "EEEE, d \u05d1MMMM y, hm": "EEEE, d \u05d1MMMM y, h:mm a",
+        "EEEE, d \u05d1MMMM y, hms": "EEEE, d \u05d1MMMM y, h:mm:ss a",
+        "EEEE, d \u05d1MMMM y, hmsv": "EEEE, d \u05d1MMMM y, h:mm:ss a v",
+        "EEEE, d \u05d1MMMM y, hmv": "EEEE, d \u05d1MMMM y, h:mm a v",
+        "EEEE, d \u05d1MMMM y, ms": "EEEE, d \u05d1MMMM y, mm:ss",
+        "EHm": "E H:mm",
+        "EHms": "E H:mm:ss",
+        "Ed": "E \u05d4-d",
+        "Ed, Bh": "E \u05d4-d, h B",
+        "Ed, Bhm": "E \u05d4-d, h:mm B",
+        "Ed, Bhms": "E \u05d4-d, h:mm:ss B",
+        "Ed, H": "E \u05d4-d, H",
+        "Ed, H:mm": "E \u05d4-d, H:mm",
+        "Ed, H:mm:ss": "E \u05d4-d, H:mm:ss",
+        "Ed, H:mm:ss z": "E \u05d4-d, H:mm:ss z",
+        "Ed, H:mm:ss zzzz": "E \u05d4-d, H:mm:ss zzzz",
+        "Ed, Hm": "E \u05d4-d, H:mm",
+        "Ed, Hms": "E \u05d4-d, H:mm:ss",
+        "Ed, Hmsv": "E \u05d4-d, HH:mm:ss v",
+        "Ed, Hmv": "E \u05d4-d, HH:mm v",
+        "Ed, h": "E \u05d4-d, \u200fh a",
+        "Ed, hm": "E \u05d4-d, h:mm a",
+        "Ed, hms": "E \u05d4-d, h:mm:ss a",
+        "Ed, hmsv": "E \u05d4-d, h:mm:ss a v",
+        "Ed, hmv": "E \u05d4-d, h:mm a v",
+        "Ed, ms": "E \u05d4-d, mm:ss",
+        "Ehm": "E h:mm a",
+        "Ehms": "E h:mm:ss a",
+        "Gy": "y G",
+        "Gy, Bh": "y G, h B",
+        "Gy, Bhm": "y G, h:mm B",
+        "Gy, Bhms": "y G, h:mm:ss B",
+        "Gy, H": "y G, H",
+        "Gy, H:mm": "y G, H:mm",
+        "Gy, H:mm:ss": "y G, H:mm:ss",
+        "Gy, H:mm:ss z": "y G, H:mm:ss z",
+        "Gy, H:mm:ss zzzz": "y G, H:mm:ss zzzz",
+        "Gy, Hm": "y G, H:mm",
+        "Gy, Hms": "y G, H:mm:ss",
+        "Gy, Hmsv": "y G, HH:mm:ss v",
+        "Gy, Hmv": "y G, HH:mm v",
+        "Gy, h": "y G, \u200fh a",
+        "Gy, hm": "y G, h:mm a",
+        "Gy, hms": "y G, h:mm:ss a",
+        "Gy, hmsv": "y G, h:mm:ss a v",
+        "Gy, hmv": "y G, h:mm a v",
+        "Gy, ms": "y G, mm:ss",
+        "GyMMM": "MMM y G",
+        "GyMMM, Bh": "MMM y G, h B",
+        "GyMMM, Bhm": "MMM y G, h:mm B",
+        "GyMMM, Bhms": "MMM y G, h:mm:ss B",
+        "GyMMM, H": "MMM y G, H",
+        "GyMMM, H:mm": "MMM y G, H:mm",
+        "GyMMM, H:mm:ss": "MMM y G, H:mm:ss",
+        "GyMMM, H:mm:ss z": "MMM y G, H:mm:ss z",
+        "GyMMM, H:mm:ss zzzz": "MMM y G, H:mm:ss zzzz",
+        "GyMMM, Hm": "MMM y G, H:mm",
+        "GyMMM, Hms": "MMM y G, H:mm:ss",
+        "GyMMM, Hmsv": "MMM y G, HH:mm:ss v",
+        "GyMMM, Hmv": "MMM y G, HH:mm v",
+        "GyMMM, h": "MMM y G, \u200fh a",
+        "GyMMM, hm": "MMM y G, h:mm a",
+        "GyMMM, hms": "MMM y G, h:mm:ss a",
+        "GyMMM, hmsv": "MMM y G, h:mm:ss a v",
+        "GyMMM, hmv": "MMM y G, h:mm a v",
+        "GyMMM, ms": "MMM y G, mm:ss",
+        "GyMMMEd": "E, d \u05d1MMM y G",
+        "GyMMMEd, Bh": "E, d \u05d1MMM y G, h B",
+        "GyMMMEd, Bhm": "E, d \u05d1MMM y G, h:mm B",
+        "GyMMMEd, Bhms": "E, d \u05d1MMM y G, h:mm:ss B",
+        "GyMMMEd, H": "E, d \u05d1MMM y G, H",
+        "GyMMMEd, H:mm": "E, d \u05d1MMM y G, H:mm",
+        "GyMMMEd, H:mm:ss": "E, d \u05d1MMM y G, H:mm:ss",
+        "GyMMMEd, H:mm:ss z": "E, d \u05d1MMM y G, H:mm:ss z",
+        "GyMMMEd, H:mm:ss zzzz": "E, d \u05d1MMM y G, H:mm:ss zzzz",
+        "GyMMMEd, Hm": "E, d \u05d1MMM y G, H:mm",
+        "GyMMMEd, Hms": "E, d \u05d1MMM y G, H:mm:ss",
+        "GyMMMEd, Hmsv": "E, d \u05d1MMM y G, HH:mm:ss v",
+        "GyMMMEd, Hmv": "E, d \u05d1MMM y G, HH:mm v",
+        "GyMMMEd, h": "E, d \u05d1MMM y G, \u200fh a",
+        "GyMMMEd, hm": "E, d \u05d1MMM y G, h:mm a",
+        "GyMMMEd, hms": "E, d \u05d1MMM y G, h:mm:ss a",
+        "GyMMMEd, hmsv": "E, d \u05d1MMM y G, h:mm:ss a v",
+        "GyMMMEd, hmv": "E, d \u05d1MMM y G, h:mm a v",
+        "GyMMMEd, ms": "E, d \u05d1MMM y G, mm:ss",
+        "GyMMMd": "d \u05d1MMM y G",
+        "GyMMMd, Bh": "d \u05d1MMM y G, h B",
+        "GyMMMd, Bhm": "d \u05d1MMM y G, h:mm B",
+        "GyMMMd, Bhms": "d \u05d1MMM y G, h:mm:ss B",
+        "GyMMMd, H": "d \u05d1MMM y G, H",
+        "GyMMMd, H:mm": "d \u05d1MMM y G, H:mm",
+        "GyMMMd, H:mm:ss": "d \u05d1MMM y G, H:mm:ss",
+        "GyMMMd, H:mm:ss z": "d \u05d1MMM y G, H:mm:ss z",
+        "GyMMMd, H:mm:ss zzzz": "d \u05d1MMM y G, H:mm:ss zzzz",
+        "GyMMMd, Hm": "d \u05d1MMM y G, H:mm",
+        "GyMMMd, Hms": "d \u05d1MMM y G, H:mm:ss",
+        "GyMMMd, Hmsv": "d \u05d1MMM y G, HH:mm:ss v",
+        "GyMMMd, Hmv": "d \u05d1MMM y G, HH:mm v",
+        "GyMMMd, h": "d \u05d1MMM y G, \u200fh a",
+        "GyMMMd, hm": "d \u05d1MMM y G, h:mm a",
+        "GyMMMd, hms": "d \u05d1MMM y G, h:mm:ss a",
+        "GyMMMd, hmsv": "d \u05d1MMM y G, h:mm:ss a v",
+        "GyMMMd, hmv": "d \u05d1MMM y G, h:mm a v",
+        "GyMMMd, ms": "d \u05d1MMM y G, mm:ss",
+        "GyMd": "d/M/y G",
+        "GyMd, Bh": "d/M/y G, h B",
+        "GyMd, Bhm": "d/M/y G, h:mm B",
+        "GyMd, Bhms": "d/M/y G, h:mm:ss B",
+        "GyMd, H": "d/M/y G, H",
+        "GyMd, H:mm": "d/M/y G, H:mm",
+        "GyMd, H:mm:ss": "d/M/y G, H:mm:ss",
+        "GyMd, H:mm:ss z": "d/M/y G, H:mm:ss z",
+        "GyMd, H:mm:ss zzzz": "d/M/y G, H:mm:ss zzzz",
+        "GyMd, Hm": "d/M/y G, H:mm",
+        "GyMd, Hms": "d/M/y G, H:mm:ss",
+        "GyMd, Hmsv": "d/M/y G, HH:mm:ss v",
+        "GyMd, Hmv": "d/M/y G, HH:mm v",
+        "GyMd, h": "d/M/y G, \u200fh a",
+        "GyMd, hm": "d/M/y G, h:mm a",
+        "GyMd, hms": "d/M/y G, h:mm:ss a",
+        "GyMd, hmsv": "d/M/y G, h:mm:ss a v",
+        "GyMd, hmv": "d/M/y G, h:mm a v",
+        "GyMd, ms": "d/M/y G, mm:ss",
+        "H": "H",
+        "H:mm": "H:mm",
+        "H:mm:ss": "H:mm:ss",
+        "H:mm:ss z": "H:mm:ss z",
+        "H:mm:ss zzzz": "H:mm:ss zzzz",
+        "Hm": "H:mm",
+        "Hms": "H:mm:ss",
+        "Hmsv": "HH:mm:ss v",
+        "Hmv": "HH:mm v",
+        "M": "L",
+        "M, Bh": "L, h B",
+        "M, Bhm": "L, h:mm B",
+        "M, Bhms": "L, h:mm:ss B",
+        "M, H": "L, H",
+        "M, H:mm": "L, H:mm",
+        "M, H:mm:ss": "L, H:mm:ss",
+        "M, H:mm:ss z": "L, H:mm:ss z",
+        "M, H:mm:ss zzzz": "L, H:mm:ss zzzz",
+        "M, Hm": "L, H:mm",
+        "M, Hms": "L, H:mm:ss",
+        "M, Hmsv": "L, HH:mm:ss v",
+        "M, Hmv": "L, HH:mm v",
+        "M, h": "L, \u200fh a",
+        "M, hm": "L, h:mm a",
+        "M, hms": "L, h:mm:ss a",
+        "M, hmsv": "L, h:mm:ss a v",
+        "M, hmv": "L, h:mm a v",
+        "M, ms": "L, mm:ss",
+        "MEd": "E, d.M",
+        "MEd, Bh": "E, d.M, h B",
+        "MEd, Bhm": "E, d.M, h:mm B",
+        "MEd, Bhms": "E, d.M, h:mm:ss B",
+        "MEd, H": "E, d.M, H",
+        "MEd, H:mm": "E, d.M, H:mm",
+        "MEd, H:mm:ss": "E, d.M, H:mm:ss",
+        "MEd, H:mm:ss z": "E, d.M, H:mm:ss z",
+        "MEd, H:mm:ss zzzz": "E, d.M, H:mm:ss zzzz",
+        "MEd, Hm": "E, d.M, H:mm",
+        "MEd, Hms": "E, d.M, H:mm:ss",
+        "MEd, Hmsv": "E, d.M, HH:mm:ss v",
+        "MEd, Hmv": "E, d.M, HH:mm v",
+        "MEd, h": "E, d.M, \u200fh a",
+        "MEd, hm": "E, d.M, h:mm a",
+        "MEd, hms": "E, d.M, h:mm:ss a",
+        "MEd, hmsv": "E, d.M, h:mm:ss a v",
+        "MEd, hmv": "E, d.M, h:mm a v",
+        "MEd, ms": "E, d.M, mm:ss",
+        "MMM": "LLL",
+        "MMM, Bh": "LLL, h B",
+        "MMM, Bhm": "LLL, h:mm B",
+        "MMM, Bhms": "LLL, h:mm:ss B",
+        "MMM, H": "LLL, H",
+        "MMM, H:mm": "LLL, H:mm",
+        "MMM, H:mm:ss": "LLL, H:mm:ss",
+        "MMM, H:mm:ss z": "LLL, H:mm:ss z",
+        "MMM, H:mm:ss zzzz": "LLL, H:mm:ss zzzz",
+        "MMM, Hm": "LLL, H:mm",
+        "MMM, Hms": "LLL, H:mm:ss",
+        "MMM, Hmsv": "LLL, HH:mm:ss v",
+        "MMM, Hmv": "LLL, HH:mm v",
+        "MMM, h": "LLL, \u200fh a",
+        "MMM, hm": "LLL, h:mm a",
+        "MMM, hms": "LLL, h:mm:ss a",
+        "MMM, hmsv": "LLL, h:mm:ss a v",
+        "MMM, hmv": "LLL, h:mm a v",
+        "MMM, ms": "LLL, mm:ss",
+        "MMMEd": "E, d \u05d1MMM",
+        "MMMEd, Bh": "E, d \u05d1MMM, h B",
+        "MMMEd, Bhm": "E, d \u05d1MMM, h:mm B",
+        "MMMEd, Bhms": "E, d \u05d1MMM, h:mm:ss B",
+        "MMMEd, H": "E, d \u05d1MMM, H",
+        "MMMEd, H:mm": "E, d \u05d1MMM, H:mm",
+        "MMMEd, H:mm:ss": "E, d \u05d1MMM, H:mm:ss",
+        "MMMEd, H:mm:ss z": "E, d \u05d1MMM, H:mm:ss z",
+        "MMMEd, H:mm:ss zzzz": "E, d \u05d1MMM, H:mm:ss zzzz",
+        "MMMEd, Hm": "E, d \u05d1MMM, H:mm",
+        "MMMEd, Hms": "E, d \u05d1MMM, H:mm:ss",
+        "MMMEd, Hmsv": "E, d \u05d1MMM, HH:mm:ss v",
+        "MMMEd, Hmv": "E, d \u05d1MMM, HH:mm v",
+        "MMMEd, h": "E, d \u05d1MMM, \u200fh a",
+        "MMMEd, hm": "E, d \u05d1MMM, h:mm a",
+        "MMMEd, hms": "E, d \u05d1MMM, h:mm:ss a",
+        "MMMEd, hmsv": "E, d \u05d1MMM, h:mm:ss a v",
+        "MMMEd, hmv": "E, d \u05d1MMM, h:mm a v",
+        "MMMEd, ms": "E, d \u05d1MMM, mm:ss",
+        "MMMMd": "d \u05d1MMMM",
+        "MMMMd, Bh": "d \u05d1MMMM, h B",
+        "MMMMd, Bhm": "d \u05d1MMMM, h:mm B",
+        "MMMMd, Bhms": "d \u05d1MMMM, h:mm:ss B",
+        "MMMMd, H": "d \u05d1MMMM, H",
+        "MMMMd, H:mm": "d \u05d1MMMM, H:mm",
+        "MMMMd, H:mm:ss": "d \u05d1MMMM, H:mm:ss",
+        "MMMMd, H:mm:ss z": "d \u05d1MMMM, H:mm:ss z",
+        "MMMMd, H:mm:ss zzzz": "d \u05d1MMMM, H:mm:ss zzzz",
+        "MMMMd, Hm": "d \u05d1MMMM, H:mm",
+        "MMMMd, Hms": "d \u05d1MMMM, H:mm:ss",
+        "MMMMd, Hmsv": "d \u05d1MMMM, HH:mm:ss v",
+        "MMMMd, Hmv": "d \u05d1MMMM, HH:mm v",
+        "MMMMd, h": "d \u05d1MMMM, \u200fh a",
+        "MMMMd, hm": "d \u05d1MMMM, h:mm a",
+        "MMMMd, hms": "d \u05d1MMMM, h:mm:ss a",
+        "MMMMd, hmsv": "d \u05d1MMMM, h:mm:ss a v",
+        "MMMMd, hmv": "d \u05d1MMMM, h:mm a v",
+        "MMMMd, ms": "d \u05d1MMMM, mm:ss",
+        "MMMd": "d \u05d1MMM",
+        "MMMd, Bh": "d \u05d1MMM, h B",
+        "MMMd, Bhm": "d \u05d1MMM, h:mm B",
+        "MMMd, Bhms": "d \u05d1MMM, h:mm:ss B",
+        "MMMd, H": "d \u05d1MMM, H",
+        "MMMd, H:mm": "d \u05d1MMM, H:mm",
+        "MMMd, H:mm:ss": "d \u05d1MMM, H:mm:ss",
+        "MMMd, H:mm:ss z": "d \u05d1MMM, H:mm:ss z",
+        "MMMd, H:mm:ss zzzz": "d \u05d1MMM, H:mm:ss zzzz",
+        "MMMd, Hm": "d \u05d1MMM, H:mm",
+        "MMMd, Hms": "d \u05d1MMM, H:mm:ss",
+        "MMMd, Hmsv": "d \u05d1MMM, HH:mm:ss v",
+        "MMMd, Hmv": "d \u05d1MMM, HH:mm v",
+        "MMMd, h": "d \u05d1MMM, \u200fh a",
+        "MMMd, hm": "d \u05d1MMM, h:mm a",
+        "MMMd, hms": "d \u05d1MMM, h:mm:ss a",
+        "MMMd, hmsv": "d \u05d1MMM, h:mm:ss a v",
+        "MMMd, hmv": "d \u05d1MMM, h:mm a v",
+        "MMMd, ms": "d \u05d1MMM, mm:ss",
+        "Md": "d.M",
+        "Md, Bh": "d.M, h B",
+        "Md, Bhm": "d.M, h:mm B",
+        "Md, Bhms": "d.M, h:mm:ss B",
+        "Md, H": "d.M, H",
+        "Md, H:mm": "d.M, H:mm",
+        "Md, H:mm:ss": "d.M, H:mm:ss",
+        "Md, H:mm:ss z": "d.M, H:mm:ss z",
+        "Md, H:mm:ss zzzz": "d.M, H:mm:ss zzzz",
+        "Md, Hm": "d.M, H:mm",
+        "Md, Hms": "d.M, H:mm:ss",
+        "Md, Hmsv": "d.M, HH:mm:ss v",
+        "Md, Hmv": "d.M, HH:mm v",
+        "Md, h": "d.M, \u200fh a",
+        "Md, hm": "d.M, h:mm a",
+        "Md, hms": "d.M, h:mm:ss a",
+        "Md, hmsv": "d.M, h:mm:ss a v",
+        "Md, hmv": "d.M, h:mm a v",
+        "Md, ms": "d.M, mm:ss",
+        "d": "d",
+        "d \u05d1MMM y": "d \u05d1MMM y",
+        "d \u05d1MMM y, Bh": "d \u05d1MMM y, h B",
+        "d \u05d1MMM y, Bhm": "d \u05d1MMM y, h:mm B",
+        "d \u05d1MMM y, Bhms": "d \u05d1MMM y, h:mm:ss B",
+        "d \u05d1MMM y, H": "d \u05d1MMM y, H",
+        "d \u05d1MMM y, H:mm": "d \u05d1MMM y, H:mm",
+        "d \u05d1MMM y, H:mm:ss": "d \u05d1MMM y, H:mm:ss",
+        "d \u05d1MMM y, H:mm:ss z": "d \u05d1MMM y, H:mm:ss z",
+        "d \u05d1MMM y, H:mm:ss zzzz": "d \u05d1MMM y, H:mm:ss zzzz",
+        "d \u05d1MMM y, Hm": "d \u05d1MMM y, H:mm",
+        "d \u05d1MMM y, Hms": "d \u05d1MMM y, H:mm:ss",
+        "d \u05d1MMM y, Hmsv": "d \u05d1MMM y, HH:mm:ss v",
+        "d \u05d1MMM y, Hmv": "d \u05d1MMM y, HH:mm v",
+        "d \u05d1MMM y, h": "d \u05d1MMM y, \u200fh a",
+        "d \u05d1MMM y, hm": "d \u05d1MMM y, h:mm a",
+        "d \u05d1MMM y, hms": "d \u05d1MMM y, h:mm:ss a",
+        "d \u05d1MMM y, hmsv": "d \u05d1MMM y, h:mm:ss a v",
+        "d \u05d1MMM y, hmv": "d \u05d1MMM y, h:mm a v",
+        "d \u05d1MMM y, ms": "d \u05d1MMM y, mm:ss",
+        "d \u05d1MMMM y": "d \u05d1MMMM y",
+        "d \u05d1MMMM y, Bh": "d \u05d1MMMM y, h B",
+        "d \u05d1MMMM y, Bhm": "d \u05d1MMMM y, h:mm B",
+        "d \u05d1MMMM y, Bhms": "d \u05d1MMMM y, h:mm:ss B",
+        "d \u05d1MMMM y, H": "d \u05d1MMMM y, H",
+        "d \u05d1MMMM y, H:mm": "d \u05d1MMMM y, H:mm",
+        "d \u05d1MMMM y, H:mm:ss": "d \u05d1MMMM y, H:mm:ss",
+        "d \u05d1MMMM y, H:mm:ss z": "d \u05d1MMMM y, H:mm:ss z",
+        "d \u05d1MMMM y, H:mm:ss zzzz": "d \u05d1MMMM y, H:mm:ss zzzz",
+        "d \u05d1MMMM y, Hm": "d \u05d1MMMM y, H:mm",
+        "d \u05d1MMMM y, Hms": "d \u05d1MMMM y, H:mm:ss",
+        "d \u05d1MMMM y, Hmsv": "d \u05d1MMMM y, HH:mm:ss v",
+        "d \u05d1MMMM y, Hmv": "d \u05d1MMMM y, HH:mm v",
+        "d \u05d1MMMM y, h": "d \u05d1MMMM y, \u200fh a",
+        "d \u05d1MMMM y, hm": "d \u05d1MMMM y, h:mm a",
+        "d \u05d1MMMM y, hms": "d \u05d1MMMM y, h:mm:ss a",
+        "d \u05d1MMMM y, hmsv": "d \u05d1MMMM y, h:mm:ss a v",
+        "d \u05d1MMMM y, hmv": "d \u05d1MMMM y, h:mm a v",
+        "d \u05d1MMMM y, ms": "d \u05d1MMMM y, mm:ss",
+        "d, Bh": "d, h B",
+        "d, Bhm": "d, h:mm B",
+        "d, Bhms": "d, h:mm:ss B",
+        "d, H": "d, H",
+        "d, H:mm": "d, H:mm",
+        "d, H:mm:ss": "d, H:mm:ss",
+        "d, H:mm:ss z": "d, H:mm:ss z",
+        "d, H:mm:ss zzzz": "d, H:mm:ss zzzz",
+        "d, Hm": "d, H:mm",
+        "d, Hms": "d, H:mm:ss",
+        "d, Hmsv": "d, HH:mm:ss v",
+        "d, Hmv": "d, HH:mm v",
+        "d, h": "d, \u200fh a",
+        "d, hm": "d, h:mm a",
+        "d, hms": "d, h:mm:ss a",
+        "d, hmsv": "d, h:mm:ss a v",
+        "d, hmv": "d, h:mm a v",
+        "d, ms": "d, mm:ss",
+        "d.M.y": "d.M.y",
+        "d.M.y, Bh": "d.M.y, h B",
+        "d.M.y, Bhm": "d.M.y, h:mm B",
+        "d.M.y, Bhms": "d.M.y, h:mm:ss B",
+        "d.M.y, H": "d.M.y, H",
+        "d.M.y, H:mm": "d.M.y, H:mm",
+        "d.M.y, H:mm:ss": "d.M.y, H:mm:ss",
+        "d.M.y, H:mm:ss z": "d.M.y, H:mm:ss z",
+        "d.M.y, H:mm:ss zzzz": "d.M.y, H:mm:ss zzzz",
+        "d.M.y, Hm": "d.M.y, H:mm",
+        "d.M.y, Hms": "d.M.y, H:mm:ss",
+        "d.M.y, Hmsv": "d.M.y, HH:mm:ss v",
+        "d.M.y, Hmv": "d.M.y, HH:mm v",
+        "d.M.y, h": "d.M.y, \u200fh a",
+        "d.M.y, hm": "d.M.y, h:mm a",
+        "d.M.y, hms": "d.M.y, h:mm:ss a",
+        "d.M.y, hmsv": "d.M.y, h:mm:ss a v",
+        "d.M.y, hmv": "d.M.y, h:mm a v",
+        "d.M.y, ms": "d.M.y, mm:ss",
+        "h": "\u200fh a",
+        "hm": "h:mm a",
+        "hms": "h:mm:ss a",
+        "hmsv": "h:mm:ss a v",
+        "hmv": "h:mm a v",
+        "ms": "mm:ss",
+        "y": "y",
+        "y, Bh": "y, h B",
+        "y, Bhm": "y, h:mm B",
+        "y, Bhms": "y, h:mm:ss B",
+        "y, H": "y, H",
+        "y, H:mm": "y, H:mm",
+        "y, H:mm:ss": "y, H:mm:ss",
+        "y, H:mm:ss z": "y, H:mm:ss z",
+        "y, H:mm:ss zzzz": "y, H:mm:ss zzzz",
+        "y, Hm": "y, H:mm",
+        "y, Hms": "y, H:mm:ss",
+        "y, Hmsv": "y, HH:mm:ss v",
+        "y, Hmv": "y, HH:mm v",
+        "y, h": "y, \u200fh a",
+        "y, hm": "y, h:mm a",
+        "y, hms": "y, h:mm:ss a",
+        "y, hmsv": "y, h:mm:ss a v",
+        "y, hmv": "y, h:mm a v",
+        "y, ms": "y, mm:ss",
+        "yM": "M.y",
+        "yM, Bh": "M.y, h B",
+        "yM, Bhm": "M.y, h:mm B",
+        "yM, Bhms": "M.y, h:mm:ss B",
+        "yM, H": "M.y, H",
+        "yM, H:mm": "M.y, H:mm",
+        "yM, H:mm:ss": "M.y, H:mm:ss",
+        "yM, H:mm:ss z": "M.y, H:mm:ss z",
+        "yM, H:mm:ss zzzz": "M.y, H:mm:ss zzzz",
+        "yM, Hm": "M.y, H:mm",
+        "yM, Hms": "M.y, H:mm:ss",
+        "yM, Hmsv": "M.y, HH:mm:ss v",
+        "yM, Hmv": "M.y, HH:mm v",
+        "yM, h": "M.y, \u200fh a",
+        "yM, hm": "M.y, h:mm a",
+        "yM, hms": "M.y, h:mm:ss a",
+        "yM, hmsv": "M.y, h:mm:ss a v",
+        "yM, hmv": "M.y, h:mm a v",
+        "yM, ms": "M.y, mm:ss",
+        "yMEd": "E, d.M.y",
+        "yMEd, Bh": "E, d.M.y, h B",
+        "yMEd, Bhm": "E, d.M.y, h:mm B",
+        "yMEd, Bhms": "E, d.M.y, h:mm:ss B",
+        "yMEd, H": "E, d.M.y, H",
+        "yMEd, H:mm": "E, d.M.y, H:mm",
+        "yMEd, H:mm:ss": "E, d.M.y, H:mm:ss",
+        "yMEd, H:mm:ss z": "E, d.M.y, H:mm:ss z",
+        "yMEd, H:mm:ss zzzz": "E, d.M.y, H:mm:ss zzzz",
+        "yMEd, Hm": "E, d.M.y, H:mm",
+        "yMEd, Hms": "E, d.M.y, H:mm:ss",
+        "yMEd, Hmsv": "E, d.M.y, HH:mm:ss v",
+        "yMEd, Hmv": "E, d.M.y, HH:mm v",
+        "yMEd, h": "E, d.M.y, \u200fh a",
+        "yMEd, hm": "E, d.M.y, h:mm a",
+        "yMEd, hms": "E, d.M.y, h:mm:ss a",
+        "yMEd, hmsv": "E, d.M.y, h:mm:ss a v",
+        "yMEd, hmv": "E, d.M.y, h:mm a v",
+        "yMEd, ms": "E, d.M.y, mm:ss",
+        "yMM": "M.y",
+        "yMM, Bh": "M.y, h B",
+        "yMM, Bhm": "M.y, h:mm B",
+        "yMM, Bhms": "M.y, h:mm:ss B",
+        "yMM, H": "M.y, H",
+        "yMM, H:mm": "M.y, H:mm",
+        "yMM, H:mm:ss": "M.y, H:mm:ss",
+        "yMM, H:mm:ss z": "M.y, H:mm:ss z",
+        "yMM, H:mm:ss zzzz": "M.y, H:mm:ss zzzz",
+        "yMM, Hm": "M.y, H:mm",
+        "yMM, Hms": "M.y, H:mm:ss",
+        "yMM, Hmsv": "M.y, HH:mm:ss v",
+        "yMM, Hmv": "M.y, HH:mm v",
+        "yMM, h": "M.y, \u200fh a",
+        "yMM, hm": "M.y, h:mm a",
+        "yMM, hms": "M.y, h:mm:ss a",
+        "yMM, hmsv": "M.y, h:mm:ss a v",
+        "yMM, hmv": "M.y, h:mm a v",
+        "yMM, ms": "M.y, mm:ss",
+        "yMMM": "MMM y",
+        "yMMM, Bh": "MMM y, h B",
+        "yMMM, Bhm": "MMM y, h:mm B",
+        "yMMM, Bhms": "MMM y, h:mm:ss B",
+        "yMMM, H": "MMM y, H",
+        "yMMM, H:mm": "MMM y, H:mm",
+        "yMMM, H:mm:ss": "MMM y, H:mm:ss",
+        "yMMM, H:mm:ss z": "MMM y, H:mm:ss z",
+        "yMMM, H:mm:ss zzzz": "MMM y, H:mm:ss zzzz",
+        "yMMM, Hm": "MMM y, H:mm",
+        "yMMM, Hms": "MMM y, H:mm:ss",
+        "yMMM, Hmsv": "MMM y, HH:mm:ss v",
+        "yMMM, Hmv": "MMM y, HH:mm v",
+        "yMMM, h": "MMM y, \u200fh a",
+        "yMMM, hm": "MMM y, h:mm a",
+        "yMMM, hms": "MMM y, h:mm:ss a",
+        "yMMM, hmsv": "MMM y, h:mm:ss a v",
+        "yMMM, hmv": "MMM y, h:mm a v",
+        "yMMM, ms": "MMM y, mm:ss",
+        "yMMMEd": "E, d \u05d1MMM y",
+        "yMMMEd, Bh": "E, d \u05d1MMM y, h B",
+        "yMMMEd, Bhm": "E, d \u05d1MMM y, h:mm B",
+        "yMMMEd, Bhms": "E, d \u05d1MMM y, h:mm:ss B",
+        "yMMMEd, H": "E, d \u05d1MMM y, H",
+        "yMMMEd, H:mm": "E, d \u05d1MMM y, H:mm",
+        "yMMMEd, H:mm:ss": "E, d \u05d1MMM y, H:mm:ss",
+        "yMMMEd, H:mm:ss z": "E, d \u05d1MMM y, H:mm:ss z",
+        "yMMMEd, H:mm:ss zzzz": "E, d \u05d1MMM y, H:mm:ss zzzz",
+        "yMMMEd, Hm": "E, d \u05d1MMM y, H:mm",
+        "yMMMEd, Hms": "E, d \u05d1MMM y, H:mm:ss",
+        "yMMMEd, Hmsv": "E, d \u05d1MMM y, HH:mm:ss v",
+        "yMMMEd, Hmv": "E, d \u05d1MMM y, HH:mm v",
+        "yMMMEd, h": "E, d \u05d1MMM y, \u200fh a",
+        "yMMMEd, hm": "E, d \u05d1MMM y, h:mm a",
+        "yMMMEd, hms": "E, d \u05d1MMM y, h:mm:ss a",
+        "yMMMEd, hmsv": "E, d \u05d1MMM y, h:mm:ss a v",
+        "yMMMEd, hmv": "E, d \u05d1MMM y, h:mm a v",
+        "yMMMEd, ms": "E, d \u05d1MMM y, mm:ss",
+        "yMMMM": "MMMM y",
+        "yMMMM, Bh": "MMMM y, h B",
+        "yMMMM, Bhm": "MMMM y, h:mm B",
+        "yMMMM, Bhms": "MMMM y, h:mm:ss B",
+        "yMMMM, H": "MMMM y, H",
+        "yMMMM, H:mm": "MMMM y, H:mm",
+        "yMMMM, H:mm:ss": "MMMM y, H:mm:ss",
+        "yMMMM, H:mm:ss z": "MMMM y, H:mm:ss z",
+        "yMMMM, H:mm:ss zzzz": "MMMM y, H:mm:ss zzzz",
+        "yMMMM, Hm": "MMMM y, H:mm",
+        "yMMMM, Hms": "MMMM y, H:mm:ss",
+        "yMMMM, Hmsv": "MMMM y, HH:mm:ss v",
+        "yMMMM, Hmv": "MMMM y, HH:mm v",
+        "yMMMM, h": "MMMM y, \u200fh a",
+        "yMMMM, hm": "MMMM y, h:mm a",
+        "yMMMM, hms": "MMMM y, h:mm:ss a",
+        "yMMMM, hmsv": "MMMM y, h:mm:ss a v",
+        "yMMMM, hmv": "MMMM y, h:mm a v",
+        "yMMMM, ms": "MMMM y, mm:ss",
+        "yMMMd": "d \u05d1MMM y",
+        "yMMMd, Bh": "d \u05d1MMM y, h B",
+        "yMMMd, Bhm": "d \u05d1MMM y, h:mm B",
+        "yMMMd, Bhms": "d \u05d1MMM y, h:mm:ss B",
+        "yMMMd, H": "d \u05d1MMM y, H",
+        "yMMMd, H:mm": "d \u05d1MMM y, H:mm",
+        "yMMMd, H:mm:ss": "d \u05d1MMM y, H:mm:ss",
+        "yMMMd, H:mm:ss z": "d \u05d1MMM y, H:mm:ss z",
+        "yMMMd, H:mm:ss zzzz": "d \u05d1MMM y, H:mm:ss zzzz",
+        "yMMMd, Hm": "d \u05d1MMM y, H:mm",
+        "yMMMd, Hms": "d \u05d1MMM y, H:mm:ss",
+        "yMMMd, Hmsv": "d \u05d1MMM y, HH:mm:ss v",
+        "yMMMd, Hmv": "d \u05d1MMM y, HH:mm v",
+        "yMMMd, h": "d \u05d1MMM y, \u200fh a",
+        "yMMMd, hm": "d \u05d1MMM y, h:mm a",
+        "yMMMd, hms": "d \u05d1MMM y, h:mm:ss a",
+        "yMMMd, hmsv": "d \u05d1MMM y, h:mm:ss a v",
+        "yMMMd, hmv": "d \u05d1MMM y, h:mm a v",
+        "yMMMd, ms": "d \u05d1MMM y, mm:ss",
+        "yMd": "d.M.y",
+        "yMd, Bh": "d.M.y, h B",
+        "yMd, Bhm": "d.M.y, h:mm B",
+        "yMd, Bhms": "d.M.y, h:mm:ss B",
+        "yMd, H": "d.M.y, H",
+        "yMd, H:mm": "d.M.y, H:mm",
+        "yMd, H:mm:ss": "d.M.y, H:mm:ss",
+        "yMd, H:mm:ss z": "d.M.y, H:mm:ss z",
+        "yMd, H:mm:ss zzzz": "d.M.y, H:mm:ss zzzz",
+        "yMd, Hm": "d.M.y, H:mm",
+        "yMd, Hms": "d.M.y, H:mm:ss",
+        "yMd, Hmsv": "d.M.y, HH:mm:ss v",
+        "yMd, Hmv": "d.M.y, HH:mm v",
+        "yMd, h": "d.M.y, \u200fh a",
+        "yMd, hm": "d.M.y, h:mm a",
+        "yMd, hms": "d.M.y, h:mm:ss a",
+        "yMd, hmsv": "d.M.y, h:mm:ss a v",
+        "yMd, hmv": "d.M.y, h:mm a v",
+        "yMd, ms": "d.M.y, mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}\u200e",
+    "hc": [
+      "h23",
+      ""
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "\u200e+HH:mm;-HH:mm\u200e",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h B\u2009\u2013\u2009h B",
+        "h": "h\u2013h B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2013h:mm B",
+        "m": "h:mm\u2013h:mm B"
+      },
+      "Gy": {
+        "G": "y G \u2013 y G",
+        "y": "y \u2013 y G"
+      },
+      "GyM": {
+        "G": "M.y GGGGG \u2013 M.y GGGGG",
+        "M": "M.y \u2013 M.y G",
+        "y": "M.y \u2013 M.y G"
+      },
+      "GyMEd": {
+        "G": "E, d.M.y G \u2013 E, d.M.y G",
+        "M": "E, d.M.y \u2013 E, d.M.y G",
+        "d": "E, d.M.y \u2013 E, d.M.y G",
+        "y": "E, d.M.y \u2013 E, d.M.y GGGGG"
+      },
+      "GyMMM": {
+        "G": "MMM y G \u2013 MMM y G",
+        "M": "MMM \u2013 MMM y G",
+        "y": "MMM y \u2013 MMM y G"
+      },
+      "GyMMMEd": {
+        "G": "E, d \u05d1MMM y G \u2013 E, d \u05d1MMM y G",
+        "M": "E, d \u05d1MMM \u2013 E, d \u05d1MMM y G",
+        "d": "E, d \u05d1MMM \u2013 E, d \u05d1MMM y G",
+        "y": "E, d \u05d1MMM y \u2013 E, d \u05d1MMM y G"
+      },
+      "GyMMMd": {
+        "G": "d \u05d1MMM y G \u2013 d \u05d1MMM y G",
+        "M": "d \u05d1MMM \u2013 d \u05d1MMM y G",
+        "d": "d \u2013 d \u05d1MMM y G",
+        "y": "d \u05d1MMM y \u2013 d \u05d1MMM y G"
+      },
+      "GyMd": {
+        "G": "d.M.y G \u2013 d.M.y G",
+        "M": "d.M.y \u2013 d.M.y G",
+        "d": "d.M.y \u2013 d.M.y G",
+        "y": "d.M.y \u2013 d.M.y G"
+      },
+      "H": {
+        "H": "H\u2013H"
+      },
+      "Hm": {
+        "H": "H:mm\u2013H:mm",
+        "m": "H:mm\u2013H:mm"
+      },
+      "Hmv": {
+        "H": "H:mm\u2013H:mm v",
+        "m": "H:mm\u2013H:mm v"
+      },
+      "Hv": {
+        "H": "H\u2013H v"
+      },
+      "M": {
+        "M": "M\u2013M"
+      },
+      "MEd": {
+        "M": "EEEE d.M \u2013 EEEE d.M",
+        "d": "EEEE d.M\u2013EEEE d.M"
+      },
+      "MMM": {
+        "M": "MMM\u2013MMM"
+      },
+      "MMMEd": {
+        "M": "EEEE, d \u05d1MMM \u2013 EEEE, d \u05d1MMM",
+        "d": "EEEE, d \u05d1MMM \u2013 EEEE, d \u05d1MMM"
+      },
+      "MMMM": {
+        "M": "LLLL\u2013LLLL"
+      },
+      "MMMd": {
+        "M": "d \u05d1MMM\u2013d \u05d1MMM",
+        "d": "d\u2013d \u05d1MMM"
+      },
+      "Md": {
+        "M": "d.M\u2013d.M",
+        "d": "d.M\u2013d.M"
+      },
+      "d": {
+        "d": "d\u2013d"
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2013h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm a\u2009\u2013\u2009h:mm a",
+        "h": "h:mm\u2013h:mm a",
+        "m": "h:mm\u2013h:mm a"
+      },
+      "hmv": {
+        "a": "h:mm a\u2009\u2013\u2009h:mm a v",
+        "h": "h:mm\u2013h:mm a v",
+        "m": "h:mm\u2013h:mm a v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2013h\u202fa v"
+      },
+      "intervalFormatFallback": "{0} \u2013 {1}",
+      "y": {
+        "y": "y\u2013y"
+      },
+      "yM": {
+        "M": "M.y\u2013M.y",
+        "y": "M.y\u200f\u2013M.y"
+      },
+      "yMEd": {
+        "M": "EEEE d.M.y \u2013 EEEE d.M.y",
+        "d": "EEEE d.M.y \u2013 EEEE d.M.y",
+        "y": "EEEE d.M.y \u2013 EEEE d.M.y"
+      },
+      "yMMM": {
+        "M": "MMM\u2013MMM y",
+        "y": "MMM y \u2013 MMM y"
+      },
+      "yMMMEd": {
+        "M": "EEEE d MMM \u2013 EEEE d MMM y",
+        "d": "EEEE d MMM \u2013 EEEE d MMM y",
+        "y": "EEEE d MMM y \u2013 EEEE d MMM y"
+      },
+      "yMMMM": {
+        "M": "MMMM\u2013MMMM y",
+        "y": "MMMM y\u2013MMMM y"
+      },
+      "yMMMd": {
+        "M": "d MMM \u2013 d MMM y",
+        "d": "d\u2013d \u05d1MMM y",
+        "y": "d MMM y \u2013 d MMM y"
+      },
+      "yMd": {
+        "M": "d.M.y \u2013 d.M.y",
+        "d": "dd.M.y \u2013 dd.M.y",
+        "y": "d.M.y \u2013 d.M.y"
+      }
+    },
+    "month": {
+      "long": [
+        "\u05d9\u05e0\u05d5\u05d0\u05e8",
+        "\u05e4\u05d1\u05e8\u05d5\u05d0\u05e8",
+        "\u05de\u05e8\u05e5",
+        "\u05d0\u05e4\u05e8\u05d9\u05dc",
+        "\u05de\u05d0\u05d9",
+        "\u05d9\u05d5\u05e0\u05d9",
+        "\u05d9\u05d5\u05dc\u05d9",
+        "\u05d0\u05d5\u05d2\u05d5\u05e1\u05d8",
+        "\u05e1\u05e4\u05d8\u05de\u05d1\u05e8",
+        "\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8",
+        "\u05e0\u05d5\u05d1\u05de\u05d1\u05e8",
+        "\u05d3\u05e6\u05de\u05d1\u05e8"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "short": [
+        "\u05d9\u05e0\u05d5\u05f3",
+        "\u05e4\u05d1\u05e8\u05f3",
+        "\u05de\u05e8\u05e5",
+        "\u05d0\u05e4\u05e8\u05f3",
+        "\u05de\u05d0\u05d9",
+        "\u05d9\u05d5\u05e0\u05d9",
+        "\u05d9\u05d5\u05dc\u05d9",
+        "\u05d0\u05d5\u05d2\u05f3",
+        "\u05e1\u05e4\u05d8\u05f3",
+        "\u05d0\u05d5\u05e7\u05f3",
+        "\u05e0\u05d5\u05d1\u05f3",
+        "\u05d3\u05e6\u05de\u05f3"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "PM",
+    "timeFormat": {
+      "full": "H:mm:ss zzzz",
+      "long": "H:mm:ss z",
+      "medium": "H:mm:ss",
+      "short": "H:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d2\u05e0\u05d8\u05d9\u05e0\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d2\u05e0\u05d8\u05d9\u05e0\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05d2\u05d5\u05d5\u05d0\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05d2\u05d5\u05d5\u05d0\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05dc\u05d5\u05de\u05d1\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05dc\u05d5\u05de\u05d1\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e8\u05d2\u05e0\u05d8\u05d9\u05e0\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e8\u05d2\u05e0\u05d8\u05d9\u05e0\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05e0\u05e6\u05d5\u05d0\u05dc\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05e0\u05e6\u05d5\u05d0\u05dc\u05d4"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d9\u05d0\u05e0\u05d4 \u05d4\u05e6\u05e8\u05e4\u05ea\u05d9\u05ea",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d9\u05d0\u05e0\u05d4 \u05d4\u05e6\u05e8\u05e4\u05ea\u05d9\u05ea"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d6\u05d5\u05e8 \u05d4\u05d4\u05e8\u05d9\u05dd \u05d1\u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d6\u05d5\u05e8 \u05d4\u05d4\u05e8\u05d9\u05dd \u05d1\u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d6\u05d5\u05e8 \u05d4\u05d4\u05e8\u05d9\u05dd \u05d1\u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d6\u05d5\u05e8 \u05d4\u05d4\u05e8\u05d9\u05dd \u05d1\u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d2\u05e8\u05d9\u05e0\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d2\u05e8\u05d9\u05e0\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e7\u05d5\u05d5\u05d3\u05d5\u05e8",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e7\u05d5\u05d5\u05d3\u05d5\u05e8"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d9\u05d0\u05e0\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d9\u05d0\u05e0\u05d4"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05d1\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05d1\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05dc\u05e1\u05e7\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05dc\u05e1\u05e7\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05d5\u05dc\u05d9\u05d1\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05d5\u05dc\u05d9\u05d1\u05d9\u05d4"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05d5 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05d5 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05de\u05d6\u05d5\u05e0\u05e1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05de\u05d6\u05d5\u05e0\u05e1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05de\u05e7\u05e1\u05d9\u05e7\u05d5 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05de\u05e7\u05e1\u05d9\u05e7\u05d5 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05e0\u05d8 \u05e4\u05d9\u05d9\u05e8 \u05d5\u05de\u05d9\u05e7\u05dc\u05d5\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05e0\u05d8 \u05e4\u05d9\u05d9\u05e8 \u05d5\u05de\u05d9\u05e7\u05dc\u05d5\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05e8\u05d5\u05d2\u05d5\u05d5\u05d0\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05e8\u05d5\u05d2\u05d5\u05d5\u05d0\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05e0\u05e0\u05d3\u05d5 \u05d3\u05d9 \u05e0\u05d5\u05e8\u05d5\u05e0\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e8\u05e0\u05e0\u05d3\u05d5 \u05d3\u05d9 \u05e0\u05d5\u05e8\u05d5\u05e0\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d5\u05e8\u05d9\u05e0\u05d0\u05dd",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d5\u05e8\u05d9\u05e0\u05d0\u05dd"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d9\u05dc\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d9\u05dc\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05e8\u05d6\u05d9\u05dc\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05e8\u05d6\u05d9\u05dc\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d2\u05e8\u05d9\u05e0\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d2\u05e8\u05d9\u05e0\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5\u05e4\u05d0\u05d5\u05e0\u05d3\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5\u05e4\u05d0\u05d5\u05e0\u05d3\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d7\u05d5\u05e3 \u05d4\u05de\u05d6\u05e8\u05d7\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05d5\u05e7\u05d5\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05d5\u05e7\u05d5\u05df"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05e8\u05d4\u05f4\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05d9\u05d5\u05d5\u05d9\u05e1",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05d9\u05d5\u05d5\u05d9\u05e1"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05d5\u05de\u05d5\u05df \u05d3\u05f3\u05d0\u05d5\u05e8\u05d5\u05d5\u05d9\u05dc",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05d5\u05de\u05d5\u05df \u05d3\u05f3\u05d0\u05d5\u05e8\u05d5\u05d5\u05d9\u05dc"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d0\u05d5\u05e1\u05d5\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d0\u05d5\u05e1\u05d5\u05df"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5 \u05d6\u05d9\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5 \u05d6\u05d9\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d5\u05ea\u05f3\u05e8\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d5\u05ea\u05f3\u05e8\u05d4"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05d9\u05d5\u05d5\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05d9\u05d5\u05d5\u05d4"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05e1\u05d8\u05d5\u05e7",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05e1\u05d8\u05d5\u05e7"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05e7\u05d6\u05d7\u05e1\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05e7\u05d6\u05d7\u05e1\u05d8\u05df"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d2\u05d9\u05dc \u05d0\u05e0\u05d3\u05d9\u05e8",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e5 \u05d0\u05e0\u05d3\u05d9\u05e8"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05e7\u05d6\u05d7\u05e1\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05e7\u05d6\u05d7\u05e1\u05d8\u05df"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e8\u05e7\u05de\u05e0\u05d9\u05e1\u05d8\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e8\u05e7\u05de\u05e0\u05d9\u05e1\u05d8\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e8\u05d2\u05d9\u05d6\u05e1\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e8\u05d2\u05d9\u05d6\u05e1\u05d8\u05df"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05e8\u05d5\u05e0\u05d9\u05d9 \u05d3\u05d0\u05e8\u05d5\u05e1\u05dc\u05d0\u05dd",
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05e8\u05d5\u05e0\u05d9\u05d9 \u05d3\u05d0\u05e8\u05d5\u05e1\u05dc\u05d0\u05dd"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d8\u05d9\u05de\u05d5\u05e8",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d8\u05d9\u05de\u05d5\u05e8"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d3\u05d9\u05e0\u05d5\u05ea \u05d4\u05de\u05e4\u05e8\u05e5",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d3\u05d9\u05e0\u05d5\u05ea \u05d4\u05de\u05e4\u05e8\u05e5"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d2\u05f3\u05d9\u05e7\u05d9\u05e1\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d2\u05f3\u05d9\u05e7\u05d9\u05e1\u05d8\u05df"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05e0\u05d2 \u05e7\u05d5\u05e0\u05d2 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05e0\u05d2 \u05e7\u05d5\u05e0\u05d2 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05d5\u05d1\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05d5\u05d1\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05e8\u05e7\u05d5\u05d8\u05e1\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05e8\u05e7\u05d5\u05e1\u05d8\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e9\u05e8\u05d0\u05dc (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e9\u05e8\u05d0\u05dc (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e4\u05d2\u05e0\u05d9\u05e1\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e4\u05d2\u05e0\u05d9\u05e1\u05d8\u05df"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d2\u05d9\u05dc \u05e4\u05d8\u05e8\u05d5\u05e4\u05d1\u05dc\u05d5\u05d1\u05e1\u05e7-\u05e7\u05de\u05e6\u05f3\u05d8\u05e1\u05e7\u05d9",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e5 \u05e4\u05d8\u05e8\u05d5\u05e4\u05d1\u05dc\u05d5\u05d1\u05e1\u05e7-\u05e7\u05de\u05e6\u05f3\u05d8\u05e1\u05e7\u05d9"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e7\u05d9\u05e1\u05d8\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e7\u05d9\u05e1\u05d8\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05e4\u05d0\u05dc",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05e4\u05d0\u05dc"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05e8\u05e1\u05e0\u05d5\u05d9\u05d0\u05e8\u05e1\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05e8\u05e1\u05e0\u05d5\u05d9\u05d0\u05e8\u05e1\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05dc\u05d6\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05dc\u05d6\u05d9\u05d4"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Macau": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05d5\u05e8\u05e3 \u05de\u05e7\u05d0\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e5 \u05de\u05e7\u05d0\u05d5"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d2\u05d3\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d2\u05d3\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e0\u05d3\u05d5\u05e0\u05d6\u05d9\u05d4"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05e4\u05d9\u05dc\u05d9\u05e4\u05d9\u05e0\u05d9\u05dd (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05e4\u05d9\u05dc\u05d9\u05e4\u05d9\u05e0\u05d9\u05dd (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d3\u05d9\u05e0\u05d5\u05ea \u05d4\u05de\u05e4\u05e8\u05e5",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d3\u05d9\u05e0\u05d5\u05ea \u05d4\u05de\u05e4\u05e8\u05e5"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d5\u05d1\u05d5\u05e1\u05d9\u05d1\u05d9\u05e8\u05e1\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d5\u05d1\u05d5\u05e1\u05d9\u05d1\u05d9\u05e8\u05e1\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05de\u05e1\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05de\u05e1\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d5\u05e0\u05d2\u05d9\u05d0\u05e0\u05d2",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d5\u05e0\u05d2\u05d9\u05d0\u05e0\u05d2"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Qyzylorda": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05d6\u05d9\u05dc\u05d5\u05e8\u05d3\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05d6\u05d9\u05dc\u05d5\u05e8\u05d3\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05d0\u05e0\u05de\u05e8",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05d0\u05e0\u05de\u05e8"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d7\u05e6\u05d9 \u05d4\u05d0\u05d9 \u05e2\u05e8\u05d1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d7\u05dc\u05d9\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d7\u05dc\u05d9\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05e8\u05d9\u05d0\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05e8\u05d9\u05d0\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05e0\u05d2\u05e4\u05d5\u05e8",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05d9\u05e0\u05d2\u05e4\u05d5\u05e8"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d0\u05d9\u05e4\u05d9\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d0\u05d9\u05e4\u05d9\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05d6\u05d1\u05e7\u05d9\u05e1\u05d8\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05d6\u05d1\u05e7\u05d9\u05e1\u05d8\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05e8\u05d0\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05e8\u05d0\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05d4\u05d5\u05d8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d1\u05d4\u05d5\u05d8\u05df"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e4\u05df (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e4\u05df (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05dc\u05d0\u05df \u05d1\u05d0\u05d8\u05d5\u05e8 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d5\u05dc\u05d0\u05df \u05d1\u05d0\u05d8\u05d5\u05e8 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d5\u05d3\u05d5-\u05e1\u05d9\u05df"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05dc\u05d3\u05d9\u05d5\u05d5\u05e1\u05d8\u05d5\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05dc\u05d3\u05d9\u05d5\u05d5\u05e1\u05d8\u05d5\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e7\u05d5\u05d8\u05e1\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e7\u05d5\u05d8\u05e1\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e7\u05d8\u05e8\u05d9\u05e0\u05d1\u05d5\u05e8\u05d2 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d9\u05e7\u05d8\u05e8\u05d9\u05e0\u05d1\u05d5\u05e8\u05d2 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05d0\u05d6\u05d5\u05e8\u05d9\u05d9\u05dd (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05d0\u05d6\u05d5\u05e8\u05d9\u05d9\u05dd (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d0\u05d8\u05dc\u05e0\u05d8\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05db\u05e3 \u05d5\u05e8\u05d3\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05db\u05e3 \u05d5\u05e8\u05d3\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d2\u05f3\u05d5\u05e8\u05d2\u05f3\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d3\u05e8\u05d5\u05dd \u05d2\u05f3\u05d5\u05e8\u05d2\u05f3\u05d9\u05d4"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e4\u05d5\u05e7\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e4\u05d5\u05e7\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6-\u05de\u05e2\u05e8\u05d1 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6-\u05de\u05e2\u05e8\u05d1 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9 \u05d4\u05dc\u05d5\u05e8\u05d3 \u05d4\u05d0\u05d5 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9 \u05d4\u05dc\u05d5\u05e8\u05d3 \u05d4\u05d0\u05d5 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e2\u05e8\u05d1 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d5\u05e1\u05d8\u05e8\u05dc\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05e0\u05e1\u05e7",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05e0\u05e1\u05e7"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05e8\u05d9\u05e0\u05d9\u05e5\u05f3\u200f"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05e0\u05e1\u05e7",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d9\u05e0\u05e1\u05e7"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d5\u05e1\u05e7\u05d1\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d5\u05e1\u05e7\u05d1\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d2\u05d9\u05dc \u05e1\u05de\u05e8\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d9\u05e5 \u05e1\u05de\u05e8\u05d4"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05dc\u05d2\u05d5\u05d2\u05e8\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05dc\u05d2\u05d5\u05d2\u05e8\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05e8\u05db\u05d6 \u05d0\u05d9\u05e8\u05d5\u05e4\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d4\u05d5\u05d3\u05d9",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d5\u05e7\u05d9\u05d9\u05e0\u05d5\u05e1 \u05d4\u05d4\u05d5\u05d3\u05d9"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05db\u05e8\u05d9\u05e1\u05d8\u05de\u05e1",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05db\u05e8\u05d9\u05e1\u05d8\u05de\u05e1"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e7\u05d5\u05e7\u05d5\u05e1",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e7\u05d5\u05e7\u05d5\u05e1"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05e8\u05e6\u05d5\u05ea \u05d4\u05d3\u05e8\u05d5\u05de\u05d9\u05d5\u05ea \u05d5\u05d4\u05d0\u05e0\u05d8\u05d0\u05e8\u05e7\u05d8\u05d9\u05d5\u05ea \u05e9\u05dc \u05e6\u05e8\u05e4\u05ea",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05e8\u05e6\u05d5\u05ea \u05d4\u05d3\u05e8\u05d5\u05de\u05d9\u05d5\u05ea \u05d5\u05d4\u05d0\u05e0\u05d8\u05d0\u05e8\u05e7\u05d8\u05d9\u05d5\u05ea \u05e9\u05dc \u05e6\u05e8\u05e4\u05ea"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e1\u05d9\u05d9\u05e9\u05dc",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e1\u05d9\u05d9\u05e9\u05dc"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05de\u05dc\u05d3\u05d9\u05d1\u05d9\u05d9\u05dd",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05de\u05dc\u05d3\u05d9\u05d1\u05d9\u05d9\u05dd"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d0\u05d5\u05e8\u05d9\u05e6\u05d9\u05d5\u05e1 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d0\u05d5\u05e8\u05d9\u05e6\u05d9\u05d5\u05e1 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05de\u05d6\u05e8\u05d7 \u05d0\u05e4\u05e8\u05d9\u05e7\u05d4"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d0\u05d5\u05e0\u05d9\u05d5\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05e8\u05d0\u05d5\u05e0\u05d9\u05d5\u05df"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e4\u05d9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05e4\u05d9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5 \u05d6\u05d9\u05dc\u05e0\u05d3 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5 \u05d6\u05d9\u05dc\u05e0\u05d3 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d8\u05d4\u05d0\u05dd (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d8\u05d4\u05d0\u05dd (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9 \u05d4\u05e4\u05e1\u05d7\u05d0 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9 \u05d4\u05e4\u05e1\u05d7\u05d0 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05e0\u05d5\u05d0\u05d8\u05d5 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05e0\u05d5\u05d0\u05d8\u05d5 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e4\u05d9\u05e0\u05d9\u05e7\u05e1",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e4\u05d9\u05e0\u05d9\u05e7\u05e1"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e7\u05dc\u05d0\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e7\u05dc\u05d0\u05d5"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d2\u05f3\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d2\u05f3\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05d1\u05d0\u05dc\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05d1\u05d0\u05dc\u05d5"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05dc\u05d0\u05e4\u05d2\u05d5\u05e1",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05dc\u05d0\u05e4\u05d2\u05d5\u05e1"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05de\u05d1\u05d9\u05d9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05de\u05d1\u05d9\u05d9\u05d4"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e9\u05dc\u05de\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e9\u05dc\u05de\u05d4"
+        ]
+      },
+      "Pacific/Guam": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d5\u05d0\u05dd",
+          "\u05e9\u05e2\u05d5\u05df \u05d2\u05d5\u05d0\u05dd"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05d0\u05dc\u05d0\u05d5\u05d8\u05d9\u05d9\u05dd \u05d4\u05d5\u05d5\u05d0\u05d9 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9\u05d9\u05dd \u05d4\u05d0\u05dc\u05d0\u05d5\u05d8\u05d9\u05d9\u05dd \u05d4\u05d5\u05d5\u05d0\u05d9 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05dc\u05d9\u05d9\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05dc\u05d9\u05d9\u05df"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05e1\u05e8\u05d0\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05d5\u05e1\u05e8\u05d0\u05d4"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05e9\u05dc",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05e9\u05dc"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05e7\u05d9\u05d6",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05e7\u05d9\u05d6"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d0\u05d5\u05e8\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d0\u05d5\u05e8\u05d5"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5\u05d0\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e0\u05d9\u05d5\u05d0\u05d4"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05e0\u05d5\u05e8\u05e4\u05d5\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05e0\u05d5\u05e8\u05e4\u05d5\u05e7 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05dc\u05d3\u05d5\u05e0\u05d9\u05d4 \u05d4\u05d7\u05d3\u05e9\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e7\u05dc\u05d3\u05d5\u05e0\u05d9\u05d4 \u05d4\u05d7\u05d3\u05e9\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05de\u05d5\u05d0\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05e1\u05de\u05d5\u05d0\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05dc\u05d0\u05d5",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05dc\u05d0\u05d5"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d8\u05e7\u05e8\u05df",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d9\u05d8\u05e7\u05e8\u05df"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d5\u05e0\u05d0\u05e4\u05d9",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05d5\u05e0\u05d0\u05e4\u05d9"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e4\u05d5\u05d0\u05d4 \u05d2\u05d9\u05e0\u05d9\u05d0\u05d4 \u05d4\u05d7\u05d3\u05e9\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05e4\u05e4\u05d5\u05d0\u05d4 \u05d2\u05d9\u05e0\u05d9\u05d0\u05d4 \u05d4\u05d7\u05d3\u05e9\u05d4"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e7\u05d5\u05e7 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05e7\u05d5\u05e7 (\u05de\u05d7\u05e6\u05d9\u05ea \u05d4\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Saipan": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05d9\u05d0\u05e0\u05d4 \u05d4\u05e6\u05e4\u05d5\u05e0\u05d9\u05d9\u05dd",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05de\u05e8\u05d9\u05d0\u05e0\u05d4 \u05d4\u05e6\u05e4\u05d5\u05e0\u05d9\u05d9\u05dd"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d4\u05d9\u05d8\u05d9",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d4\u05d9\u05d8\u05d9"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05d9\u05dc\u05d1\u05e8\u05d8",
+          "\u05e9\u05e2\u05d5\u05df \u05d0\u05d9\u05d9 \u05d2\u05d9\u05dc\u05d1\u05e8\u05d8"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e0\u05d2\u05d4 (\u05d7\u05d5\u05e8\u05e3)",
+          "\u05e9\u05e2\u05d5\u05df \u05d8\u05d5\u05e0\u05d2\u05d4 (\u05e7\u05d9\u05e5)"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d5\u05e7",
+          "\u05e9\u05e2\u05d5\u05df \u05e6\u05f3\u05d5\u05e7"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05d5\u05d9\u05d9\u05e7",
+          "\u05e9\u05e2\u05d5\u05df \u05d4\u05d0\u05d9 \u05d5\u05d9\u05d9\u05e7"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05d0\u05dc\u05d9\u05e1 \u05d5\u05e4\u05d5\u05d8\u05d5\u05e0\u05d4",
+          "\u05e9\u05e2\u05d5\u05df \u05d5\u05d5\u05d0\u05dc\u05d9\u05e1 \u05d5\u05e4\u05d5\u05d8\u05d5\u05e0\u05d4"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "\u05d6\u05de\u05df \u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05dc\u05d9 \u05de\u05ea\u05d5\u05d0\u05dd",
+          "\u05d6\u05de\u05df \u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05dc\u05d9 \u05de\u05ea\u05d5\u05d0\u05dd"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "\u05d9\u05d5\u05dd \u05e8\u05d0\u05e9\u05d5\u05df",
+        "\u05d9\u05d5\u05dd \u05e9\u05e0\u05d9",
+        "\u05d9\u05d5\u05dd \u05e9\u05dc\u05d9\u05e9\u05d9",
+        "\u05d9\u05d5\u05dd \u05e8\u05d1\u05d9\u05e2\u05d9",
+        "\u05d9\u05d5\u05dd \u05d7\u05de\u05d9\u05e9\u05d9",
+        "\u05d9\u05d5\u05dd \u05e9\u05d9\u05e9\u05d9",
+        "\u05d9\u05d5\u05dd \u05e9\u05d1\u05ea"
+      ],
+      "narrow": [
+        "\u05d0\u05f3",
+        "\u05d1\u05f3",
+        "\u05d2\u05f3",
+        "\u05d3\u05f3",
+        "\u05d4\u05f3",
+        "\u05d5\u05f3",
+        "\u05e9\u05f3"
+      ],
+      "short": [
+        "\u05d9\u05d5\u05dd \u05d0\u05f3",
+        "\u05d9\u05d5\u05dd \u05d1\u05f3",
+        "\u05d9\u05d5\u05dd \u05d2\u05f3",
+        "\u05d9\u05d5\u05dd \u05d3\u05f3",
+        "\u05d9\u05d5\u05dd \u05d4\u05f3",
+        "\u05d9\u05d5\u05dd \u05d5\u05f3",
+        "\u05e9\u05d1\u05ea"
+      ]
+    }
+  },
+  "locale": "he"
+}

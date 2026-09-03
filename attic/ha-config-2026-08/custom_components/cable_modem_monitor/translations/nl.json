@@ -1,0 +1,116 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Deze modem is al geconfigureerd"
+    },
+    "error": {
+      "cannot_connect": "Kan niet verbinden met de modem.\n\nControleer a.u.b.:\n1. IP-adres is correct (meestal 192.168.100.1)\n2. Als de modem authenticatie vereist, voer gebruikersnaam/wachtwoord in\n3. De webinterface van de modem is toegankelijk vanaf het Home Assistant-netwerk\n\nAls uw modem niet wordt ondersteund, selecteer 'Onbekende Modem (Terugvalmodus)' om basismonitoring en HTML-capture in te schakelen.",
+      "invalid_auth": "Ongeldige gebruikersnaam of wachtwoord. Controleer uw inloggegevens en probeer opnieuw.",
+      "invalid_input": "Ongeldige invoer. Controleer de waarden en probeer opnieuw.",
+      "network_unreachable": "Kan modem niet bereiken - netwerkconnectiviteitsprobleem.\n\nControleer a.u.b.:\n1. Netwerkverbinding - Bent u op het juiste WiFi-netwerk?\n2. Gast-WiFi - Gastnetwerken blokkeren vaak toegang tot lokale apparaten\n3. VPN - Verbreek actieve VPN-verbindingen\n4. IP-adres - Controleer het IP van de modem (meestal 192.168.100.1)\n5. Modem webinterface - Zorg dat deze is ingeschakeld en toegankelijk is\n6. Trage reactie - Sommige modems hebben een paar seconden nodig om wakker te worden; probeer opnieuw\n\nProbeer de modem direct in uw browser te openen om de connectiviteit te verifi\u00ebren.",
+      "unknown": "Onverwachte fout opgetreden. Controleer de Home Assistant-logs voor details.",
+      "unsupported_modem": "Automatische detectie kon uw modemmodel niet identificeren.\n\nOm door te gaan:\n1. Selecteer 'Onbekende Modem (Terugvalmodus)' uit de dropdown hieronder\n2. Dit schakelt basisconnectiviteitsmonitoring in (ping/HTTP-latentie)\n3. Na installatie, klik op de knop 'HTML Vastleggen'\n4. Download diagnostiek en deel met ontwikkelaars om volledige ondersteuning toe te voegen"
+    },
+    "progress": {
+      "validate": "Verbinden met modem..."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Modem IP-adres",
+          "modem_choice": "Modemmodel",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Meestal 192.168.100.1",
+          "modem_choice": "Gebruik 'auto' voor automatische detectie",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "description": "Verbind met uw kabelmodem. Modellen gemarkeerd met * zijn niet geverifieerd.",
+        "title": "Cable Modem Monitor"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "host": "Modem IP",
+          "modem_choice": "Modemmodel",
+          "password": "<redacted>",
+          "scan_interval": "Poll-interval (sec)",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Meestal 192.168.100.1",
+          "modem_choice": "Gebruik 'auto' voor detectie. Wijzig indien onjuist.",
+          "password": "<redacted>",
+          "scan_interval": "60-1800 sec. Standaard 600 (10 min)",
+          "username": "<redacted>"
+        },
+        "description": "Huidig: {detected_modem}\nLaatst gecontroleerd: {last_detection}",
+        "title": "Cable Modem-instellingen"
+      }
+    }
+  },
+  "services": {
+    "clear_history": {
+      "description": "Clear historical data for cable modem sensors older than a specified date.",
+      "fields": {
+        "days_to_keep": {
+          "description": "Number of days of history to keep (older data will be deleted).",
+          "name": "Days to Keep"
+        }
+      },
+      "name": "Clear History"
+    },
+    "generate_dashboard": {
+      "description": "Generates ready-to-use Lovelace YAML for your cable modem dashboard. Copy the output and paste it into a Manual card.",
+      "fields": {
+        "graph_hours": {
+          "description": "Hours of history for power/SNR graphs (errors and latency use fixed timeframes).",
+          "name": "Graph History (hours)"
+        },
+        "include_downstream_frequency": {
+          "description": "Frequency for all downstream channels.",
+          "name": "Downstream Frequency Graph"
+        },
+        "include_downstream_power": {
+          "description": "Power levels for all downstream channels.",
+          "name": "Downstream Power Graph"
+        },
+        "include_downstream_snr": {
+          "description": "Signal-to-noise ratio for all downstream channels.",
+          "name": "Downstream SNR Graph"
+        },
+        "include_errors": {
+          "description": "Corrected and uncorrected error counts (7-day view).",
+          "name": "Error Graphs"
+        },
+        "include_latency": {
+          "description": "Ping and HTTP response times (6-hour view).",
+          "name": "Latency Graph"
+        },
+        "include_status_card": {
+          "description": "Modem status, uptime, channel counts, and restart button.",
+          "name": "Status Card"
+        },
+        "include_upstream_frequency": {
+          "description": "Frequency for all upstream channels.",
+          "name": "Upstream Frequency Graph"
+        },
+        "include_upstream_power": {
+          "description": "Power levels for all upstream channels.",
+          "name": "Upstream Power Graph"
+        },
+        "short_titles": {
+          "description": "Short: 'DS Power (dBmV)' vs Long: 'Downstream Power Levels (dBmV)'.",
+          "name": "Use Short Titles"
+        }
+      },
+      "name": "Generate Dashboard"
+    }
+  }
+}

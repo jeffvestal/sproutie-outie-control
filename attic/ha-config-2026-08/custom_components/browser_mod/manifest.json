@@ -1,0 +1,17 @@
+{
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [
+    "panel_custom",
+    "websocket_api",
+    "http",
+    "frontend",
+    "lovelace"
+  ],
+  "documentation": "https://github.com/thomasloven/hass-browser_mod/blob/master/README.md",
+  "domain": "browser_mod",
+  "iot_class": "local_push",
+  "name": "Browser mod",
+  "requirements": [],
+  "version": "2.6.4"
+}

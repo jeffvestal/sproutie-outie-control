@@ -1,0 +1,116 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Este m\u00f3dem ya est\u00e1 configurado"
+    },
+    "error": {
+      "cannot_connect": "Error al conectar con el m\u00f3dem.\n\nPor favor verifica:\n1. La direcci\u00f3n IP es correcta (t\u00edpicamente 192.168.100.1)\n2. Si el m\u00f3dem requiere autenticaci\u00f3n, ingresa usuario/contrase\u00f1a\n3. La interfaz web del m\u00f3dem es accesible desde la red de Home Assistant\n\nSi tu m\u00f3dem no est\u00e1 soportado, selecciona 'M\u00f3dem Desconocido (Modo de Respaldo)' para habilitar monitoreo b\u00e1sico y captura de HTML.",
+      "invalid_auth": "Usuario o contrase\u00f1a inv\u00e1lidos. Por favor verifica tus credenciales e intenta de nuevo.",
+      "invalid_input": "Entrada inv\u00e1lida proporcionada. Por favor revisa los valores e intenta de nuevo.",
+      "network_unreachable": "No se puede alcanzar el m\u00f3dem - problema de conectividad de red.\n\nPor favor verifica:\n1. Conexi\u00f3n de red - \u00bfEst\u00e1s en la red WiFi correcta?\n2. WiFi de invitados - Las redes de invitados a menudo bloquean el acceso a dispositivos locales\n3. VPN - Desconecta cualquier conexi\u00f3n VPN activa\n4. Direcci\u00f3n IP - Verifica la IP del m\u00f3dem (t\u00edpicamente 192.168.100.1)\n5. Interfaz web del m\u00f3dem - Aseg\u00farate de que est\u00e9 habilitada y accesible\n6. Respuesta lenta - Algunos m\u00f3dems tardan unos segundos en activarse; intenta enviar de nuevo\n\nIntenta acceder al m\u00f3dem directamente en tu navegador para verificar la conectividad.",
+      "unknown": "Ocurri\u00f3 un error inesperado. Revisa los registros de Home Assistant para m\u00e1s detalles.",
+      "unsupported_modem": "La detecci\u00f3n autom\u00e1tica no pudo identificar el modelo de tu m\u00f3dem.\n\nPara continuar:\n1. Selecciona 'M\u00f3dem Desconocido (Modo de Respaldo)' en el men\u00fa abajo\n2. Esto habilitar\u00e1 el monitoreo b\u00e1sico de conectividad (ping/latencia HTTP)\n3. Despu\u00e9s de la instalaci\u00f3n, haz clic en el bot\u00f3n 'Capturar HTML'\n4. Descarga los diagn\u00f3sticos y comp\u00e1rtelos con los desarrolladores para a\u00f1adir soporte completo"
+    },
+    "progress": {
+      "validate": "Conectando al m\u00f3dem..."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Direcci\u00f3n IP del M\u00f3dem",
+          "modem_choice": "Modelo del M\u00f3dem",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Normalmente 192.168.100.1",
+          "modem_choice": "Usa 'auto' para detecci\u00f3n autom\u00e1tica",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "description": "Conecta tu m\u00f3dem. Modelos con * no est\u00e1n verificados.",
+        "title": "Monitor de M\u00f3dem de Cable"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "host": "IP del M\u00f3dem",
+          "modem_choice": "Modelo del M\u00f3dem",
+          "password": "<redacted>",
+          "scan_interval": "Intervalo (seg)",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Normalmente 192.168.100.1",
+          "modem_choice": "Usa 'auto' para detecci\u00f3n. Cambia si es incorrecto.",
+          "password": "<redacted>",
+          "scan_interval": "60-1800 seg. Predeterminado 600 (10 min)",
+          "username": "<redacted>"
+        },
+        "description": "Actual: {detected_modem}\n\u00daltima verificaci\u00f3n: {last_detection}",
+        "title": "Configuraci\u00f3n del M\u00f3dem"
+      }
+    }
+  },
+  "services": {
+    "clear_history": {
+      "description": "Clear historical data for cable modem sensors older than a specified date.",
+      "fields": {
+        "days_to_keep": {
+          "description": "Number of days of history to keep (older data will be deleted).",
+          "name": "Days to Keep"
+        }
+      },
+      "name": "Clear History"
+    },
+    "generate_dashboard": {
+      "description": "Generates ready-to-use Lovelace YAML for your cable modem dashboard. Copy the output and paste it into a Manual card.",
+      "fields": {
+        "graph_hours": {
+          "description": "Hours of history for power/SNR graphs (errors and latency use fixed timeframes).",
+          "name": "Graph History (hours)"
+        },
+        "include_downstream_frequency": {
+          "description": "Frequency for all downstream channels.",
+          "name": "Downstream Frequency Graph"
+        },
+        "include_downstream_power": {
+          "description": "Power levels for all downstream channels.",
+          "name": "Downstream Power Graph"
+        },
+        "include_downstream_snr": {
+          "description": "Signal-to-noise ratio for all downstream channels.",
+          "name": "Downstream SNR Graph"
+        },
+        "include_errors": {
+          "description": "Corrected and uncorrected error counts (7-day view).",
+          "name": "Error Graphs"
+        },
+        "include_latency": {
+          "description": "Ping and HTTP response times (6-hour view).",
+          "name": "Latency Graph"
+        },
+        "include_status_card": {
+          "description": "Modem status, uptime, channel counts, and restart button.",
+          "name": "Status Card"
+        },
+        "include_upstream_frequency": {
+          "description": "Frequency for all upstream channels.",
+          "name": "Upstream Frequency Graph"
+        },
+        "include_upstream_power": {
+          "description": "Power levels for all upstream channels.",
+          "name": "Upstream Power Graph"
+        },
+        "short_titles": {
+          "description": "Short: 'DS Power (dBmV)' vs Long: 'Downstream Power Levels (dBmV)'.",
+          "name": "Use Short Titles"
+        }
+      },
+      "name": "Generate Dashboard"
+    }
+  }
+}

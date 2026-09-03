@@ -1,0 +1,116 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Ten modem jest ju\u017c skonfigurowany"
+    },
+    "error": {
+      "cannot_connect": "Nie uda\u0142o si\u0119 po\u0142\u0105czy\u0107 z modemem.\n\nProsz\u0119 sprawdzi\u0107:\n1. Adres IP jest poprawny (zwykle 192.168.100.1)\n2. Je\u015bli modem wymaga uwierzytelnienia, wprowad\u017a nazw\u0119 u\u017cytkownika/has\u0142o\n3. Interfejs webowy modemu jest dost\u0119pny z sieci Home Assistant\n\nJe\u015bli tw\u00f3j modem nie jest obs\u0142ugiwany, wybierz 'Nieznany Modem (Tryb Awaryjny)', aby w\u0142\u0105czy\u0107 podstawowe monitorowanie i przechwytywanie HTML.",
+      "invalid_auth": "Nieprawid\u0142owa nazwa u\u017cytkownika lub has\u0142o. Sprawd\u017a dane logowania i spr\u00f3buj ponownie.",
+      "invalid_input": "Nieprawid\u0142owe dane wej\u015bciowe. Sprawd\u017a warto\u015bci i spr\u00f3buj ponownie.",
+      "network_unreachable": "Nie mo\u017cna po\u0142\u0105czy\u0107 si\u0119 z modemem - problem z \u0142\u0105czno\u015bci\u0105 sieciow\u0105.\n\nProsz\u0119 sprawdzi\u0107:\n1. Po\u0142\u0105czenie sieciowe - Czy jeste\u015b w odpowiedniej sieci WiFi?\n2. WiFi dla go\u015bci - Sieci go\u015bcinne cz\u0119sto blokuj\u0105 dost\u0119p do urz\u0105dze\u0144 lokalnych\n3. VPN - Roz\u0142\u0105cz aktywne po\u0142\u0105czenia VPN\n4. Adres IP - Sprawd\u017a IP modemu (zwykle 192.168.100.1)\n5. Interfejs webowy modemu - Upewnij si\u0119, \u017ce jest w\u0142\u0105czony i dost\u0119pny\n6. Wolna odpowied\u017a - Niekt\u00f3re modemy potrzebuj\u0105 kilku sekund na wybudzenie; spr\u00f3buj ponownie\n\nSpr\u00f3buj uzyska\u0107 dost\u0119p do modemu bezpo\u015brednio w przegl\u0105darce, aby zweryfikowa\u0107 \u0142\u0105czno\u015b\u0107.",
+      "unknown": "Wyst\u0105pi\u0142 nieoczekiwany b\u0142\u0105d. Sprawd\u017a logi Home Assistant, aby uzyska\u0107 szczeg\u00f3\u0142y.",
+      "unsupported_modem": "Automatyczne wykrywanie nie mog\u0142o zidentyfikowa\u0107 modelu twojego modemu.\n\nAby kontynuowa\u0107:\n1. Wybierz 'Nieznany Modem (Tryb Awaryjny)' z listy rozwijanej poni\u017cej\n2. To w\u0142\u0105cza podstawowe monitorowanie \u0142\u0105czno\u015bci (op\u00f3\u017anienie ping/HTTP)\n3. Po instalacji kliknij przycisk 'Przechwy\u0107 HTML'\n4. Pobierz diagnostyk\u0119 i udost\u0119pnij programistom, aby doda\u0107 pe\u0142ne wsparcie"
+    },
+    "progress": {
+      "validate": "\u0141\u0105czenie z modemem..."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Adres IP modemu",
+          "modem_choice": "Model modemu",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Zwykle 192.168.100.1",
+          "modem_choice": "U\u017cyj 'auto' do automatycznego wykrywania",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "description": "Po\u0142\u0105cz si\u0119 z modemem kablowym. Modele oznaczone * s\u0105 niezweryfikowane.",
+        "title": "Cable Modem Monitor"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "host": "IP modemu",
+          "modem_choice": "Model modemu",
+          "password": "<redacted>",
+          "scan_interval": "Interwa\u0142 odpytywania (sek)",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "Zwykle 192.168.100.1",
+          "modem_choice": "U\u017cyj 'auto' do wykrywania. Zmie\u0144, je\u015bli niepoprawne.",
+          "password": "<redacted>",
+          "scan_interval": "60-1800 sek. Domy\u015blnie 600 (10 min)",
+          "username": "<redacted>"
+        },
+        "description": "Obecny: {detected_modem}\nOstatnio sprawdzono: {last_detection}",
+        "title": "Ustawienia Cable Modem"
+      }
+    }
+  },
+  "services": {
+    "clear_history": {
+      "description": "Clear historical data for cable modem sensors older than a specified date.",
+      "fields": {
+        "days_to_keep": {
+          "description": "Number of days of history to keep (older data will be deleted).",
+          "name": "Days to Keep"
+        }
+      },
+      "name": "Clear History"
+    },
+    "generate_dashboard": {
+      "description": "Generates ready-to-use Lovelace YAML for your cable modem dashboard. Copy the output and paste it into a Manual card.",
+      "fields": {
+        "graph_hours": {
+          "description": "Hours of history for power/SNR graphs (errors and latency use fixed timeframes).",
+          "name": "Graph History (hours)"
+        },
+        "include_downstream_frequency": {
+          "description": "Frequency for all downstream channels.",
+          "name": "Downstream Frequency Graph"
+        },
+        "include_downstream_power": {
+          "description": "Power levels for all downstream channels.",
+          "name": "Downstream Power Graph"
+        },
+        "include_downstream_snr": {
+          "description": "Signal-to-noise ratio for all downstream channels.",
+          "name": "Downstream SNR Graph"
+        },
+        "include_errors": {
+          "description": "Corrected and uncorrected error counts (7-day view).",
+          "name": "Error Graphs"
+        },
+        "include_latency": {
+          "description": "Ping and HTTP response times (6-hour view).",
+          "name": "Latency Graph"
+        },
+        "include_status_card": {
+          "description": "Modem status, uptime, channel counts, and restart button.",
+          "name": "Status Card"
+        },
+        "include_upstream_frequency": {
+          "description": "Frequency for all upstream channels.",
+          "name": "Upstream Frequency Graph"
+        },
+        "include_upstream_power": {
+          "description": "Power levels for all upstream channels.",
+          "name": "Upstream Power Graph"
+        },
+        "short_titles": {
+          "description": "Short: 'DS Power (dBmV)' vs Long: 'Downstream Power Levels (dBmV)'.",
+          "name": "Use Short Titles"
+        }
+      },
+      "name": "Generate Dashboard"
+    }
+  }
+}

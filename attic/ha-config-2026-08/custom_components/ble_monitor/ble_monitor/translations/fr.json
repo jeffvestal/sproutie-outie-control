@@ -1,0 +1,101 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Une seule configuration de moniteur BLE est autoris\u00e9e."
+    },
+    "error": {
+      "cannot_change_mac": "L'adresse MAC ne peut pas \u00eatre modifi\u00e9e.",
+      "cannot_change_uuid": "L'UUID de la balise ne peut pas \u00eatre modifi\u00e9.",
+      "cannot_delete_device": "L'appareil ne peut pas \u00eatre supprim\u00e9.",
+      "cannot_disable_bt_interface": "Impossible de d\u00e9sactiver l'interface BT, alors qu'une ou plusieurs des interfaces BT sont toujours s\u00e9lectionn\u00e9es. D\u00e9s\u00e9lectionnez toutes les interfaces BT.",
+      "invalid_key": "La cl\u00e9 de chiffrement doit comporter 32 caract\u00e8res hexad\u00e9cimaux (24 pour les capteurs Yeelight).",
+      "invalid_mac": "L'adresse MAC doit \u00eatre au format 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "L'UUID de la balise doit \u00eatre au format \"00000000-0000-0000-0000-000000000000\"."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Temps avant d'\u00eatre consid\u00e9r\u00e9 absent (en secondes)",
+          "delete device": "Supprimer l'appareil",
+          "encryption_key": "Cl\u00e9 de cryptage",
+          "mac": "Adresse Mac",
+          "report_unknown": "Rapport inconnu",
+          "reset_timer": "Minuterie de r\u00e9initialisation (en secondes, 0 = off)",
+          "restore_state": "Restaurer l'\u00e9tat apr\u00e8s un red\u00e9marrage",
+          "temperature_unit": "Unit\u00e9 de temp\u00e9rature [tel qu'envoy\u00e9 par l'appareil]",
+          "track_device": "Suivre l'appareil",
+          "tracker_scan_interval": "Intervalle d'analyse du suivi de l'appareil (en secondes)",
+          "use_median": "Utilisez la m\u00e9diane au lieu de la moyenne",
+          "uuid": "UUID de balise"
+        },
+        "title": "Ajouter un appareil"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Utiliser l'analyse active au lieu de l'analyse passive (affecte la batterie)",
+          "bt_auto_restart": "Red\u00e9marrer automatiquement l'adaptateur Bluetooth en cas d'\u00e9chec",
+          "bt_interface": "Adresse MAC de l'interface/Adaptateur Bluetooth",
+          "devices": "Dispositifs",
+          "discovery": "D\u00e9couvrez automatiquement les appareils et les capteurs",
+          "log_spikes": "Log avanc\u00e9e",
+          "period": "P\u00e9riode \u00e0 utiliser pour faire la moyenne",
+          "report_unknown": "Rapport inconnu",
+          "restore_state": "Restaurer l'\u00e9tat apr\u00e8s un red\u00e9marrage",
+          "use_median": "Utilisez la m\u00e9diane au lieu de la moyenne"
+        },
+        "description": "Param\u00e9trage de la configuration de votre moniteur BLE",
+        "title": "Passive BLE Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Vous avez configur\u00e9 le moniteur BLE dans YAML. Veuillez modifier vos options dans YAML."
+    },
+    "error": {
+      "cannot_change_mac": "L'adresse MAC ne peut pas \u00eatre modifi\u00e9e.",
+      "cannot_change_uuid": "L'UUID de la balise ne peut pas \u00eatre modifi\u00e9.",
+      "cannot_delete_device": "L'appareil ne peut pas \u00eatre supprim\u00e9.",
+      "cannot_disable_bt_interface": "Impossible de d\u00e9sactiver l'interface BT, alors qu'une ou plusieurs des interfaces BT sont toujours s\u00e9lectionn\u00e9es. D\u00e9s\u00e9lectionnez toutes les interfaces BT.",
+      "invalid_key": "La cl\u00e9 de chiffrement doit comporter 32 caract\u00e8res hexad\u00e9cimaux (24 pour les capteurs Yeelight).",
+      "invalid_mac": "L'adresse MAC doit \u00eatre au format 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "L'UUID de la balise doit \u00eatre au format \"00000000-0000-0000-0000-000000000000\"."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Temps avant d'\u00eatre consid\u00e9r\u00e9 absent (en secondes)",
+          "delete device": "Supprimer l'appareil",
+          "encryption_key": "Cl\u00e9 de chiffrement (d\u00e9finie sur '-' pour supprimer)",
+          "mac": "Adresse Mac",
+          "report_unknown": "Rapport inconnu",
+          "reset_timer": "Minuterie de r\u00e9initialisation (en secondes, 0 = off)",
+          "restore_state": "Restaurer l'\u00e9tat apr\u00e8s un red\u00e9marrage",
+          "temperature_unit": "Unit\u00e9 de temp\u00e9rature [tel qu'envoy\u00e9 par l'appareil]",
+          "track_device": "Suivre l'appareil",
+          "tracker_scan_interval": "Intervalle d'analyse du suivi de l'appareil (en secondes)",
+          "use_median": "Utilisez la m\u00e9diane au lieu de la moyenne",
+          "uuid": "UUID de balise"
+        },
+        "title": "Configurer l'appareil"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Utiliser l'analyse active au lieu de l'analyse passive (affecte la batterie)",
+          "bt_auto_restart": "Red\u00e9marrer automatiquement l'adaptateur Bluetooth en cas d'\u00e9chec",
+          "bt_interface": "Adresse MAC de l'interface/Adaptateur Bluetooth",
+          "devices": "Dispositifs",
+          "discovery": "D\u00e9couvrez automatiquement les appareils et les capteurs",
+          "log_spikes": "Log avanc\u00e9e",
+          "not_in_use": "YAML est utilis\u00e9, modifiez les options dans YAML",
+          "period": "P\u00e9riode \u00e0 utiliser pour faire la moyenne",
+          "report_unknown": "Rapport inconnu",
+          "restore_state": "Restaurer l'\u00e9tat apr\u00e8s un red\u00e9marrage",
+          "use_median": "Utilisez la m\u00e9diane au lieu de la moyenne"
+        },
+        "description": "La num\u00e9risation sera red\u00e9marr\u00e9e apr\u00e8s avoir appuy\u00e9 sur 'SOUMETTRE'",
+        "title": "Passive BLE Monitor options"
+      }
+    }
+  }
+}

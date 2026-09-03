@@ -1,0 +1,2881 @@
+{
+  "data": {
+    "currencies": {
+      "ADP": {
+        "displayName": {
+          "other": "\uc548\ub3c4\ub77c \ud398\uc138\ud0c0"
+        },
+        "narrow": "ADP",
+        "symbol": "ADP"
+      },
+      "AED": {
+        "displayName": {
+          "other": "\uc544\ub78d\uc5d0\ubbf8\ub9ac\ud2b8 \ub514\ub974\ud568"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFA": {
+        "displayName": {
+          "other": "\uc544\ud504\uac00\ub2c8 (1927\u20132002)"
+        },
+        "narrow": "AFA",
+        "symbol": "AFA"
+      },
+      "AFN": {
+        "displayName": {
+          "other": "\uc544\ud504\uac00\ub2c8\uc2a4\ud0c4 \uc544\ud504\uac00\ub2c8"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALL": {
+        "displayName": {
+          "other": "\uc54c\ubc14\ub2c8\uc544 \ub808\ud06c"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "other": "\uc544\ub974\uba54\ub2c8\uc544 \ub4dc\ub78c"
+        },
+        "narrow": "\u058f",
+        "symbol": "AMD"
+      },
+      "ANG": {
+        "displayName": {
+          "other": "\ub124\ub35c\ub780\ub4dc\ub839 \uc548\ud2f8\ub808\uc2a4 \uae38\ub354"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "other": "\uc559\uace8\ub77c \ucf74\uc790"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "AOK": {
+        "displayName": {
+          "other": "\uc559\uace8\ub77c \ucf74\uc790 (1977\u20131990)"
+        },
+        "narrow": "AOK",
+        "symbol": "AOK"
+      },
+      "AON": {
+        "displayName": {
+          "other": "\uc559\uace8\ub77c \uc2e0\ucf74\uc790 (1990\u20132000)"
+        },
+        "narrow": "AON",
+        "symbol": "AON"
+      },
+      "AOR": {
+        "displayName": {
+          "other": "\uc559\uace8\ub77c \uc7ac\uc870\uc815 \ucf74\uc790 (1995\u20131999)"
+        },
+        "narrow": "AOR",
+        "symbol": "AOR"
+      },
+      "ARA": {
+        "displayName": {
+          "other": "\uc544\ub974\ud5e8\ud2f0\ub098 \uc624\uc2a4\ud2b8\ub784"
+        },
+        "narrow": "ARA",
+        "symbol": "ARA"
+      },
+      "ARL": {
+        "displayName": {
+          "other": "\uc544\ub974\ud5e8\ud2f0\ub098 \ud398\uc18c \ub808\uc774 (1970\u20131983)"
+        },
+        "narrow": "ARL",
+        "symbol": "ARL"
+      },
+      "ARM": {
+        "displayName": {
+          "other": "\uc544\ub974\ud5e8\ud2f0\ub098 \ud398\uc18c (18810\u20131970)"
+        },
+        "narrow": "ARM",
+        "symbol": "ARM"
+      },
+      "ARP": {
+        "displayName": {
+          "other": "\uc544\ub974\ud5e8\ud2f0\ub098 \ud398\uc18c (1983\u20131985)"
+        },
+        "narrow": "ARP",
+        "symbol": "ARP"
+      },
+      "ARS": {
+        "displayName": {
+          "other": "\uc544\ub974\ud5e8\ud2f0\ub098 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "ATS": {
+        "displayName": {
+          "other": "\ud638\uc8fc \uc2e4\ub9c1"
+        },
+        "narrow": "ATS",
+        "symbol": "ATS"
+      },
+      "AUD": {
+        "displayName": {
+          "other": "\ud638\uc8fc \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "AU$"
+      },
+      "AWG": {
+        "displayName": {
+          "other": "\uc544\ub8e8\ubc14 \ud50c\ub85c\ub9b0"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZM": {
+        "displayName": {
+          "other": "\uc544\uc81c\ub974\ubc14\uc774\uc820 \ub9c8\ub098\ud2b8(1993\u20132006)"
+        },
+        "narrow": "AZM",
+        "symbol": "AZM"
+      },
+      "AZN": {
+        "displayName": {
+          "other": "\uc544\uc81c\ub974\ubc14\uc774\uc794 \ub9c8\ub098\ud2b8"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAD": {
+        "displayName": {
+          "other": "\ubcf4\uc2a4\ub2c8\uc544-\ud5e4\ub974\uccb4\uace0\ube44\ub098 \ub514\ub098\ub974"
+        },
+        "narrow": "BAD",
+        "symbol": "BAD"
+      },
+      "BAM": {
+        "displayName": {
+          "other": "\ubcf4\uc2a4\ub2c8\uc544-\ud5e4\ub974\uccb4\uace0\ube44\ub098 \ud0dc\ud658 \ub9c8\ub974\ud06c"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BAN": {
+        "displayName": {
+          "other": "\ubcf4\uc2a4\ub2c8\uc544-\ud5e4\ub974\uccb4\uace0\ube44\ub098 \uc2e0\ub514\ub098\ub974 (1994\u20131997)"
+        },
+        "narrow": "BAN",
+        "symbol": "BAN"
+      },
+      "BBD": {
+        "displayName": {
+          "other": "\ubc14\ubca0\uc774\ub3c4\uc2a4 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "other": "\ubc29\uae00\ub77c\ub370\uc2dc \ud0c0\uce74"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BEC": {
+        "displayName": {
+          "other": "\ubca8\uae30\uc5d0 \ud504\ub791 (\ud0dc\ud658)"
+        },
+        "narrow": "BEC",
+        "symbol": "BEC"
+      },
+      "BEF": {
+        "displayName": {
+          "other": "\ubca8\uae30\uc5d0 \ud504\ub791"
+        },
+        "narrow": "BEF",
+        "symbol": "BEF"
+      },
+      "BEL": {
+        "displayName": {
+          "other": "\ubca8\uae30\uc5d0 \ud504\ub791 (\uae08\uc735)"
+        },
+        "narrow": "BEL",
+        "symbol": "BEL"
+      },
+      "BGL": {
+        "displayName": {
+          "other": "\ubd88\uac00\ub9ac\uc544 \ub3d9\uc804 \ub81b"
+        },
+        "narrow": "BGL",
+        "symbol": "BGL"
+      },
+      "BGM": {
+        "displayName": {
+          "other": "\ubd88\uac00\ub9ac\uc544 \uc0ac\ud68c\uc8fc\uc758\uc790 \ub81b"
+        },
+        "narrow": "BGM",
+        "symbol": "BGM"
+      },
+      "BGN": {
+        "displayName": {
+          "other": "\ubd88\uac00\ub9ac\uc544 \ub808\ud504"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BGO": {
+        "displayName": {
+          "other": "\ubd88\uac00\ub9ac\uc544 \ub81b (1879\u20131952)"
+        },
+        "narrow": "BGO",
+        "symbol": "BGO"
+      },
+      "BHD": {
+        "displayName": {
+          "other": "\ubc14\ub808\uc778 \ub514\ub098\ub974"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "other": "\ubd80\ub8ec\ub514 \ud504\ub791"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "other": "\ubc84\ubba4\ub2e4 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "other": "\ubd80\ub8e8\ub098\uc774 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "other": "\ubcfc\ub9ac\ube44\uc544 \ubcfc\ub9ac\ube44\uc544\ub178"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BOL": {
+        "displayName": {
+          "other": "\ubcfc\ub9ac\ube44\uc544 \ubcfc\ub9ac\ube44\uc544\ub178 (1863\u20131963)"
+        },
+        "narrow": "BOL",
+        "symbol": "BOL"
+      },
+      "BOP": {
+        "displayName": {
+          "other": "\ubcfc\ub9ac\ube44\uc544\ub178 \ud398\uc18c"
+        },
+        "narrow": "BOP",
+        "symbol": "BOP"
+      },
+      "BOV": {
+        "displayName": {
+          "other": "\ubcfc\ub9ac\ube44\uc544\ub178 Mvdol(\uae30\uae08)"
+        },
+        "narrow": "BOV",
+        "symbol": "BOV"
+      },
+      "BRB": {
+        "displayName": {
+          "other": "\ubcfc\ub9ac\ube44\uc544\ub178 \ud06c\ub8e8\uc81c\uc774\ub8e8 \ub178\ubcf4 (1967\u20131986)"
+        },
+        "narrow": "BRB",
+        "symbol": "BRB"
+      },
+      "BRC": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ud06c\ub8e8\uc790\ub450"
+        },
+        "narrow": "BRC",
+        "symbol": "BRC"
+      },
+      "BRE": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ud06c\ub8e8\uc81c\uc774\ub8e8 (1990\u20131993)"
+        },
+        "narrow": "BRE",
+        "symbol": "BRE"
+      },
+      "BRL": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ub808\uc54c"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BRN": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ud06c\ub8e8\uc790\ub450 \ub178\ubcf4"
+        },
+        "narrow": "BRN",
+        "symbol": "BRN"
+      },
+      "BRR": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ud06c\ub8e8\uc81c\uc774\ub8e8"
+        },
+        "narrow": "BRR",
+        "symbol": "BRR"
+      },
+      "BRZ": {
+        "displayName": {
+          "other": "\ube0c\ub77c\uc9c8 \ud06c\ub8e8\uc81c\uc774\ub8e8 (1942\u20131967)"
+        },
+        "narrow": "BRZ",
+        "symbol": "BRZ"
+      },
+      "BSD": {
+        "displayName": {
+          "other": "\ubc14\ud558\ub9c8 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "other": "\ubd80\ud0c4 \ub20c\ud22c\ub214"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BUK": {
+        "displayName": {
+          "other": "\ubc84\ub9c8 \ucc28\ud2b8"
+        },
+        "narrow": "BUK",
+        "symbol": "BUK"
+      },
+      "BWP": {
+        "displayName": {
+          "other": "\ubcf4\uce20\uc640\ub098 \ud480\ub77c"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYB": {
+        "displayName": {
+          "other": "\ubca8\ub77c\ub8e8\uc2a4 \uc2e0\uad8c \ub8e8\ube14 (1994\u20131999)"
+        },
+        "narrow": "BYB",
+        "symbol": "BYB"
+      },
+      "BYN": {
+        "displayName": {
+          "other": "\ubca8\ub77c\ub8e8\uc2a4 \ub8e8\ube14"
+        },
+        "narrow": "\u0440.",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "other": "\ubca8\ub77c\ub8e8\uc2a4 \ub8e8\ube14 (2000\u20132016)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "other": "\ubca8\ub9ac\uc988 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "other": "\uce90\ub098\ub2e4 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "other": "\ucf69\uace0 \ud504\ub791"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHE": {
+        "displayName": {
+          "other": "\uc720\ub85c (WIR)"
+        },
+        "narrow": "CHE",
+        "symbol": "CHE"
+      },
+      "CHF": {
+        "displayName": {
+          "other": "\uc2a4\uc704\uc2a4 \ud504\ub791"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CHW": {
+        "displayName": {
+          "other": "\ud504\ub791 (WIR)"
+        },
+        "narrow": "CHW",
+        "symbol": "CHW"
+      },
+      "CLE": {
+        "displayName": {
+          "other": "\uce60\ub808 \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "CLE",
+        "symbol": "CLE"
+      },
+      "CLF": {
+        "displayName": {
+          "other": "\uce60\ub808 (UF)"
+        },
+        "narrow": "CLF",
+        "symbol": "CLF"
+      },
+      "CLP": {
+        "displayName": {
+          "other": "\uce60\ub808 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "other": "\uc911\uad6d \uc704\uc548\ud654(\uc5ed\uc678)"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "other": "\uc911\uad6d \uc704\uc548\ud654"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "other": "\ucf5c\ub86c\ube44\uc544 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "COU": {
+        "displayName": {
+          "other": "\ucf5c\ub86c\ube44\uc544 \uc2e4\uac00 \ub2e8\uc704"
+        },
+        "narrow": "COU",
+        "symbol": "COU"
+      },
+      "CRC": {
+        "displayName": {
+          "other": "\ucf54\uc2a4\ud0c0\ub9ac\uce74 \ucf5c\ub860"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CSD": {
+        "displayName": {
+          "other": "\uace0 \uc138\ub974\ube44\uc544 \ub514\ub098\ub974"
+        },
+        "narrow": "CSD",
+        "symbol": "CSD"
+      },
+      "CSK": {
+        "displayName": {
+          "other": "\uccb4\ucf54\uc2ac\ub85c\ubc14\ud0a4\uc544 \ub3d9\uc804 \ucf54\ub8e8\ub098"
+        },
+        "narrow": "CSK",
+        "symbol": "CSK"
+      },
+      "CUC": {
+        "displayName": {
+          "other": "\ucfe0\ubc14 \ud0dc\ud658 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "other": "\ucfe0\ubc14 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "other": "\uce74\ubcf4\ubca0\ub974\ub370 \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CYP": {
+        "displayName": {
+          "other": "\uc2f8\uc774\ud504\ub7ec\uc2a4 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "CYP",
+        "symbol": "CYP"
+      },
+      "CZK": {
+        "displayName": {
+          "other": "\uccb4\ucf54 \ucf54\ub8e8\ub098"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DDM": {
+        "displayName": {
+          "other": "\ub3d9\ub3c5 \uc624\uc2a4\ud2b8\ub9c8\ub974\ud06c"
+        },
+        "narrow": "DDM",
+        "symbol": "DDM"
+      },
+      "DEM": {
+        "displayName": {
+          "other": "\ub3c5\uc77c \ub9c8\ub974\ud06c"
+        },
+        "narrow": "DEM",
+        "symbol": "DEM"
+      },
+      "DJF": {
+        "displayName": {
+          "other": "\uc9c0\ubd80\ud2f0 \ud504\ub791"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "other": "\ub374\ub9c8\ud06c \ud06c\ub85c\ub124"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "other": "\ub3c4\ubbf8\ub2c8\uce74 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "other": "\uc54c\uc81c\ub9ac \ub514\ub098\ub974"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "ECS": {
+        "displayName": {
+          "other": "\uc5d0\ucfe0\uc544\ub3c4\ub974 \uc218\ud06c\ub808"
+        },
+        "narrow": "ECS",
+        "symbol": "ECS"
+      },
+      "ECV": {
+        "displayName": {
+          "other": "\uc5d0\ucf70\ub3c4\ub974 (UVC)"
+        },
+        "narrow": "ECV",
+        "symbol": "ECV"
+      },
+      "EEK": {
+        "displayName": {
+          "other": "\uc5d0\uc2a4\ud1a0\ub2c8\uc544 \ud06c\ub8ec"
+        },
+        "narrow": "EEK",
+        "symbol": "EEK"
+      },
+      "EGP": {
+        "displayName": {
+          "other": "\uc774\uc9d1\ud2b8 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "other": "\uc5d0\ub9ac\ud2b8\ub9ac\uc544 \ub098\ud06c\ud30c"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESA": {
+        "displayName": {
+          "other": "\uc2a4\ud398\uc778 \ud398\uc138\ud0c0(\uc608\uae08)"
+        },
+        "narrow": "ESA",
+        "symbol": "ESA"
+      },
+      "ESB": {
+        "displayName": {
+          "other": "\uc2a4\ud398\uc778 \ud398\uc138\ud0c0(\ubcc0\ud658 \uc608\uae08)"
+        },
+        "narrow": "ESB",
+        "symbol": "ESB"
+      },
+      "ESP": {
+        "displayName": {
+          "other": "\uc2a4\ud398\uc778 \ud398\uc138\ud0c0"
+        },
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "other": "\uc5d0\ud2f0\uc624\ud53c\uc544 \ube44\ub974"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "other": "\uc720\ub85c"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FIM": {
+        "displayName": {
+          "other": "\ud540\ub780\ub4dc \ub9c8\ub974\uce74"
+        },
+        "narrow": "FIM",
+        "symbol": "FIM"
+      },
+      "FJD": {
+        "displayName": {
+          "other": "\ud53c\uc9c0 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "other": "\ud3ec\ud074\ub79c\ub4dc\uc81c\ub3c4 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "FRF": {
+        "displayName": {
+          "other": "\ud504\ub791\uc2a4 \ud504\ub791"
+        },
+        "narrow": "FRF",
+        "symbol": "FRF"
+      },
+      "GBP": {
+        "displayName": {
+          "other": "\uc601\uad6d \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEK": {
+        "displayName": {
+          "other": "\uadf8\ub8e8\uc9c0\uc57c \uc9c0\ud3d0 \ub77c\ub9ac\ud2b8"
+        },
+        "narrow": "GEK",
+        "symbol": "GEK"
+      },
+      "GEL": {
+        "displayName": {
+          "other": "\uc870\uc9c0\uc544 \ub77c\ub9ac"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHC": {
+        "displayName": {
+          "other": "\uac00\ub098 \uc2dc\ub514 (1979\u20132007)"
+        },
+        "narrow": "GHC",
+        "symbol": "GHC"
+      },
+      "GHS": {
+        "displayName": {
+          "other": "\uac00\ub098 \uc138\ub514"
+        },
+        "narrow": "GH\u20b5",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "other": "\uc9c0\ube0c\ub864\ud130 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "other": "\uac10\ube44\uc544 \ub2ec\ub77c\uc2dc"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "other": "\uae30\ub2c8 \ud504\ub791"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GNS": {
+        "displayName": {
+          "other": "\uae30\ub2c8 \uc2dc\ub9ac"
+        },
+        "narrow": "GNS",
+        "symbol": "GNS"
+      },
+      "GQE": {
+        "displayName": {
+          "other": "\uc801\ub3c4 \uae30\ub2c8 \uc5d0\ucfe8 (Ekwele)"
+        },
+        "narrow": "GQE",
+        "symbol": "GQE"
+      },
+      "GRD": {
+        "displayName": {
+          "other": "\uadf8\ub9ac\uc2a4 \ub4dc\ub77c\ud06c\ub9c8"
+        },
+        "narrow": "GRD",
+        "symbol": "GRD"
+      },
+      "GTQ": {
+        "displayName": {
+          "other": "\uacfc\ud14c\ub9d0\ub77c \ucf00\ud2b8\uc0b4"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GWE": {
+        "displayName": {
+          "other": "\ud3ec\ub974\ud22c\uac08\ub839 \uae30\ub2c8 \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "GWE",
+        "symbol": "GWE"
+      },
+      "GWP": {
+        "displayName": {
+          "other": "\uae30\ub124\ube44\uc3d8 \ud398\uc18c"
+        },
+        "narrow": "GWP",
+        "symbol": "GWP"
+      },
+      "GYD": {
+        "displayName": {
+          "other": "\uac00\uc774\uc544\ub098 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "other": "\ud64d\ucf69 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "other": "\uc628\ub450\ub77c\uc2a4 \ub818\ud53c\ub77c"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRD": {
+        "displayName": {
+          "other": "\ud06c\ub85c\uc544\ud2f0\uc544 \ub514\ub098\ub974"
+        },
+        "narrow": "HRD",
+        "symbol": "HRD"
+      },
+      "HRK": {
+        "displayName": {
+          "other": "\ud06c\ub85c\uc544\ud2f0\uc544 \ucfe0\ub098"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "other": "\uc544\uc774\ud2f0 \uad6c\ub974\ub4dc"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "other": "\ud5dd\uac00\ub9ac \ud3ec\ub9b0\ud2b8"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "other": "\uc778\ub3c4\ub124\uc2dc\uc544 \ub8e8\ud53c\uc544"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "IEP": {
+        "displayName": {
+          "other": "\uc544\uc77c\ub79c\ub4dc \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "IEP",
+        "symbol": "IEP"
+      },
+      "ILP": {
+        "displayName": {
+          "other": "\uc774\uc2a4\ub77c\uc5d8 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "ILP",
+        "symbol": "ILP"
+      },
+      "ILS": {
+        "displayName": {
+          "other": "\uc774\uc2a4\ub77c\uc5d8 \uc2e0\uad8c \uc138\ucf08"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "other": "\uc778\ub3c4 \ub8e8\ud53c"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "other": "\uc774\ub77c\ud06c \ub514\ub098\ub974"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "other": "\uc774\ub780 \ub9ac\uc584"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "other": "\uc544\uc774\uc2ac\ub780\ub4dc \ud06c\ub85c\ub098"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "ITL": {
+        "displayName": {
+          "other": "\uc774\ud0c8\ub9ac\uc544 \ub9ac\ub77c"
+        },
+        "narrow": "ITL",
+        "symbol": "ITL"
+      },
+      "JMD": {
+        "displayName": {
+          "other": "\uc790\uba54\uc774\uce74 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "other": "\uc694\ub974\ub2e8 \ub514\ub098\ub974"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "other": "\uc77c\ubcf8 \uc5d4\ud654"
+        },
+        "narrow": "\u00a5",
+        "symbol": "JP\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "other": "\ucf00\ub0d0 \uc2e4\ub9c1"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "other": "\ud0a4\ub974\uae30\uc2a4\uc2a4\ud0c4 \uc19c"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "other": "\uce84\ubcf4\ub514\uc544 \ub9ac\uc5d8"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "other": "\ucf54\ubaa8\ub974 \ud504\ub791"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "other": "\uc870\uc120 \ubbfc\uc8fc\uc8fc\uc758 \uc778\ubbfc \uacf5\ud654\uad6d \uc6d0"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRH": {
+        "displayName": {
+          "other": "\ub300\ud55c\ubbfc\uad6d \ud658 (1953\u20131962)"
+        },
+        "narrow": "KRH",
+        "symbol": "KRH"
+      },
+      "KRW": {
+        "displayName": {
+          "other": "\ub300\ud55c\ubbfc\uad6d \uc6d0"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "other": "\ucfe0\uc6e8\uc774\ud2b8 \ub514\ub098\ub974"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "other": "\ucf00\uc774\ub9e8 \uc81c\ub3c4 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "other": "\uce74\uc790\ud750\uc2a4\ud0c4 \ud161\uac8c"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "other": "\ub77c\uc624\uc2a4 \ud0a4\ud504"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "other": "\ub808\ubc14\ub17c \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "other": "\uc2a4\ub9ac\ub791\uce74 \ub8e8\ud53c"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "other": "\ub77c\uc774\ubca0\ub9ac\uc544 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "other": "\ub808\uc18c\ud1a0 \ub85c\ud2f0"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "other": "\ub9ac\ud22c\uc544\ub2c8\uc544 \ub9ac\ud0c0"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LTT": {
+        "displayName": {
+          "other": "\ub8e9\uc148\ubd80\ub974\ud06c \ud0c0\ub85c\ub098"
+        },
+        "narrow": "LTT",
+        "symbol": "LTT"
+      },
+      "LUC": {
+        "displayName": {
+          "other": "\ub8e9\uc148\ubd80\ub974\ud06c \ubcc0\ud658 \ud504\ub791"
+        },
+        "narrow": "LUC",
+        "symbol": "LUC"
+      },
+      "LUF": {
+        "displayName": {
+          "other": "\ub8e9\uc148\ubd80\ub974\ud06c \ud504\ub791"
+        },
+        "narrow": "LUF",
+        "symbol": "LUF"
+      },
+      "LUL": {
+        "displayName": {
+          "other": "\ub8e9\uc148\ubd80\ub974\ud06c \uc7ac\uc815 \ud504\ub791"
+        },
+        "narrow": "LUL",
+        "symbol": "LUL"
+      },
+      "LVL": {
+        "displayName": {
+          "other": "\ub77c\ud2b8\ube44\uc544 \ub77c\ud2b8"
+        },
+        "narrow": "Ls",
+        "symbol": "LVL"
+      },
+      "LVR": {
+        "displayName": {
+          "other": "\ub77c\ud2b8\ube44\uc544 \ub8e8\ube14"
+        },
+        "narrow": "LVR",
+        "symbol": "LVR"
+      },
+      "LYD": {
+        "displayName": {
+          "other": "\ub9ac\ube44\uc544 \ub514\ub098\ub974"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "other": "\ubaa8\ub85c\ucf54 \ub514\ub974\ud568"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MAF": {
+        "displayName": {
+          "other": "\ubaa8\ub85c\ucf54 \ud504\ub791"
+        },
+        "narrow": "MAF",
+        "symbol": "MAF"
+      },
+      "MCF": {
+        "displayName": {
+          "other": "\ubaa8\ub098\ucf54 \ud504\ub791"
+        },
+        "narrow": "MCF",
+        "symbol": "MCF"
+      },
+      "MDC": {
+        "displayName": {
+          "other": "\ubab0\ub3c4\ubc14 \ucfe0\ud3f0"
+        },
+        "narrow": "MDC",
+        "symbol": "MDC"
+      },
+      "MDL": {
+        "displayName": {
+          "other": "\ubab0\ub3c4\ubc14 \ub808\uc774"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "other": "\ub9c8\ub2e4\uac00\uc2a4\uce74\ub974 \uc544\ub9ac\uc544\ub9ac"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MGF": {
+        "displayName": {
+          "other": "\ub9c8\ub2e4\uac00\uc2a4\uce74\ub974 \ud504\ub791"
+        },
+        "narrow": "MGF",
+        "symbol": "MGF"
+      },
+      "MKD": {
+        "displayName": {
+          "other": "\ub9c8\ucf00\ub3c4\ub2c8\uc544 \ub514\ub098\ub974"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MLF": {
+        "displayName": {
+          "other": "\ub9d0\ub9ac \ud504\ub791"
+        },
+        "narrow": "MLF",
+        "symbol": "MLF"
+      },
+      "MMK": {
+        "displayName": {
+          "other": "\ubbf8\uc580\ub9c8 \ud0a4\uc58f"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "other": "\ubabd\uace8 \ud22c\uadf8\ub9ad"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "other": "\ub9c8\uce74\uc624 \ud30c\ud0c0\uce74"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "other": "\ubaa8\ub9ac\ud0c0\ub2c8 \uc6b0\uae30\uc57c (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "other": "\ubaa8\ub9ac\ud0c0\ub2c8 \uc6b0\uae30\uc57c"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MTL": {
+        "displayName": {
+          "other": "\ubab0\ud0c0 \ub9ac\ub77c"
+        },
+        "narrow": "MTL",
+        "symbol": "MTL"
+      },
+      "MTP": {
+        "displayName": {
+          "other": "\ubab0\ud0c0 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "MTP",
+        "symbol": "MTP"
+      },
+      "MUR": {
+        "displayName": {
+          "other": "\ubaa8\ub9ac\uc154\uc2a4 \ub8e8\ud53c"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVR": {
+        "displayName": {
+          "other": "\ubab0\ub514\ube0c \uc81c\ub3c4 \ub8e8\ud53c\uc544"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "other": "\ub9d0\ub77c\uc704 \ucf70\ucc28"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "other": "\uba55\uc2dc\ucf54 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MXP": {
+        "displayName": {
+          "other": "\uba55\uc2dc\ucf54 \uc2e4\ubc84 \ud398\uc18c (1861\u20131992)"
+        },
+        "narrow": "MXP",
+        "symbol": "MXP"
+      },
+      "MXV": {
+        "displayName": {
+          "other": "\uba55\uc2dc\ucf54 (UDI)"
+        },
+        "narrow": "MXV",
+        "symbol": "MXV"
+      },
+      "MYR": {
+        "displayName": {
+          "other": "\ub9d0\ub808\uc774\uc2dc\uc544 \ub9c1\uae43"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZE": {
+        "displayName": {
+          "other": "\ubaa8\uc7a0\ube44\ud06c \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "MZE",
+        "symbol": "MZE"
+      },
+      "MZM": {
+        "displayName": {
+          "other": "\uace0 \ubaa8\uc7a0\ube44\ud06c \uba54\ud2f0\uce7c"
+        },
+        "narrow": "MZM",
+        "symbol": "MZM"
+      },
+      "MZN": {
+        "displayName": {
+          "other": "\ubaa8\uc7a0\ube44\ud06c \uba54\ud2f0\uce7c"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "other": "\ub098\ubbf8\ube44\uc544 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "other": "\ub098\uc774\uc9c0\ub9ac\uc544 \ub098\uc774\ub77c"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIC": {
+        "displayName": {
+          "other": "\ub2c8\uce74\ub77c\uacfc \ucf54\ub974\ub3c4\ubc14 \uc624\ub85c(1988~1991)"
+        },
+        "narrow": "NIC",
+        "symbol": "NIC"
+      },
+      "NIO": {
+        "displayName": {
+          "other": "\ub2c8\uce74\ub77c\uacfc \ucf54\ub974\ub3c4\ubc14"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NLG": {
+        "displayName": {
+          "other": "\ub124\ub378\ub780\ub4dc \uae38\ub354"
+        },
+        "narrow": "NLG",
+        "symbol": "NLG"
+      },
+      "NOK": {
+        "displayName": {
+          "other": "\ub178\ub974\uc6e8\uc774 \ud06c\ub85c\ub124"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "other": "\ub124\ud314 \ub8e8\ud53c"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "other": "\ub274\uc9c8\ub79c\ub4dc \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "other": "\uc624\ub9cc \ub9ac\uc54c"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "other": "\ud30c\ub098\ub9c8 \ubc1c\ubcf4\uc544"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEI": {
+        "displayName": {
+          "other": "\ud398\ub8e8 \uc778\ud2f0"
+        },
+        "narrow": "PEI",
+        "symbol": "PEI"
+      },
+      "PEN": {
+        "displayName": {
+          "other": "\ud398\ub8e8 \uc194"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PES": {
+        "displayName": {
+          "other": "\ud398\ub8e8 \uc194 (1863\u20131965)"
+        },
+        "narrow": "PES",
+        "symbol": "PES"
+      },
+      "PGK": {
+        "displayName": {
+          "other": "\ud30c\ud478\uc544\ub274\uae30\ub2c8 \ud0a4\ub098"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "other": "\ud544\ub9ac\ud540 \ud398\uc18c"
+        },
+        "narrow": "\u20b1",
+        "symbol": "PHP"
+      },
+      "PKR": {
+        "displayName": {
+          "other": "\ud30c\ud0a4\uc2a4\ud0c4 \ub8e8\ud53c"
+        },
+        "narrow": "Rs",
+        "symbol": "PKR"
+      },
+      "PLN": {
+        "displayName": {
+          "other": "\ud3f4\ub780\ub4dc \uc988\uc6cc\ud2f0"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PLZ": {
+        "displayName": {
+          "other": "\ud3f4\ub780\ub4dc \uc990\ub85c\ud2f0 (1950\u20131995)"
+        },
+        "narrow": "PLZ",
+        "symbol": "PLZ"
+      },
+      "PTE": {
+        "displayName": {
+          "other": "\ud3ec\ub974\ud22c\uac08 \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "PTE",
+        "symbol": "PTE"
+      },
+      "PYG": {
+        "displayName": {
+          "other": "\ud30c\ub77c\uacfc\uc774 \uacfc\ub77c\ub2c8"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "other": "\uce74\ud0c0\ub974 \ub9ac\uc584"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "RHD": {
+        "displayName": {
+          "other": "\ub85c\ub514\uc9c0\uc544 \ub2ec\ub7ec"
+        },
+        "narrow": "RHD",
+        "symbol": "RHD"
+      },
+      "ROL": {
+        "displayName": {
+          "other": "\ub8e8\ub9c8\ub2c8\uc544 \ub808\uc774"
+        },
+        "narrow": "ROL",
+        "symbol": "ROL"
+      },
+      "RON": {
+        "displayName": {
+          "other": "\ub8e8\ub9c8\ub2c8\uc544 \ub808\uc6b0"
+        },
+        "narrow": "L",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "other": "\uc138\ub974\ube44\uc544 \ub514\ub098\ub974"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "other": "\ub7ec\uc2dc\uc544 \ub8e8\ube14"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RUR": {
+        "displayName": {
+          "other": "\ub7ec\uc2dc\uc544 \ub8e8\ube14 (1991\u20131998)"
+        },
+        "narrow": "RUR",
+        "symbol": "RUR"
+      },
+      "RWF": {
+        "displayName": {
+          "other": "\ub974\uc644\ub2e4 \ud504\ub791"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "other": "\uc0ac\uc6b0\ub514\uc544\ub77c\ube44\uc544 \ub9ac\uc584"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "other": "\uc194\ub85c\ubaac \uc81c\ub3c4 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "other": "\uc138\uc774\uc178 \ub8e8\ud53c"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDD": {
+        "displayName": {
+          "other": "\uc218\ub2e8 \ub514\ub098\ub974"
+        },
+        "narrow": "SDD",
+        "symbol": "SDD"
+      },
+      "SDG": {
+        "displayName": {
+          "other": "\uc218\ub2e8 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SDP": {
+        "displayName": {
+          "other": "\uace0 \uc218\ub2e8 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "SDP",
+        "symbol": "SDP"
+      },
+      "SEK": {
+        "displayName": {
+          "other": "\uc2a4\uc6e8\ub374 \ud06c\ub85c\ub098"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "other": "\uc2f1\uac00\ud3ec\ub974 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "other": "\uc138\uc778\ud2b8\ud5ec\ub808\ub098 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SIT": {
+        "displayName": {
+          "other": "\uc2ac\ub85c\ubca0\ub2c8\uc544 \ud1a8\ub77c\ub974"
+        },
+        "narrow": "SIT",
+        "symbol": "SIT"
+      },
+      "SKK": {
+        "displayName": {
+          "other": "\uc2ac\ub85c\ubc14\ud0a4\uc544 \ucf54\ub8e8\ub098"
+        },
+        "narrow": "SKK",
+        "symbol": "SKK"
+      },
+      "SLE": {
+        "displayName": {
+          "other": "\uc2dc\uc5d0\ub77c\ub9ac\uc628 \ub9ac\uc628"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "\uc2dc\uc5d0\ub77c\ub9ac\uc628 \ub9ac\uc628(1964~2022)"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "other": "\uc18c\ub9d0\ub9ac\uc544 \uc2e4\ub9c1"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "other": "\uc218\ub9ac\ub0a8 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SRG": {
+        "displayName": {
+          "other": "\uc218\ub9ac\ub0a8 \uae38\ub354"
+        },
+        "narrow": "SRG",
+        "symbol": "SRG"
+      },
+      "SSP": {
+        "displayName": {
+          "other": "\ub0a8\uc218\ub2e8 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "other": "\uc0c1\ud22c\uba54 \ud504\ub9b0\uc2dc\ud398 \ub3c4\ube0c\ub77c (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "other": "\uc0c1\ud22c\uba54 \ud504\ub9b0\uc2dc\ud398 \ub3c4\ube0c\ub77c"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SUR": {
+        "displayName": {
+          "other": "\uc18c\ub828 \ub8e8\ube14"
+        },
+        "narrow": "SUR",
+        "symbol": "SUR"
+      },
+      "SVC": {
+        "displayName": {
+          "other": "\uc5d8\uc0b4\ubc14\ub3c4\ub974 \ucf5c\ub860"
+        },
+        "narrow": "SVC",
+        "symbol": "SVC"
+      },
+      "SYP": {
+        "displayName": {
+          "other": "\uc2dc\ub9ac\uc544 \ud30c\uc6b4\ub4dc"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "other": "\uc2a4\uc640\uc9c8\ub780\ub4dc \ub9b4\ub791\uac8c\ub2c8"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "other": "\ud0dc\uad6d \ubc14\ud2b8"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "THB"
+      },
+      "TJR": {
+        "displayName": {
+          "other": "\ud0c0\uc9c0\ud0a4\uc2a4\ud0c4 \ub8e8\ube14"
+        },
+        "narrow": "TJR",
+        "symbol": "TJR"
+      },
+      "TJS": {
+        "displayName": {
+          "other": "\ud0c0\uc9c0\ud0a4\uc2a4\ud0c4 \uc18c\ubaa8\ub2c8"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMM": {
+        "displayName": {
+          "other": "\ud22c\ub974\ud06c\uba54\ub2c8\uc2a4\ud0c4 \ub9c8\ub098\ud2b8 (1993\u20132009)"
+        },
+        "narrow": "TMM",
+        "symbol": "TMM"
+      },
+      "TMT": {
+        "displayName": {
+          "other": "\ud22c\ub974\ud06c\uba54\ub2c8\uc2a4\ud0c4 \ub9c8\ub098\ud2b8"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "other": "\ud280\ub2c8\uc9c0 \ub514\ub098\ub974"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "other": "\ud1b5\uac00 \ud30c\uc559\uac00"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TPE": {
+        "displayName": {
+          "other": "\ud2f0\ubaa8\ub974 \uc5d0\uc2a4\ucfe0\ub3c4"
+        },
+        "narrow": "TPE",
+        "symbol": "TPE"
+      },
+      "TRL": {
+        "displayName": {
+          "other": "\ud130\ud0a4 \ub9ac\ub77c(1922~2005)"
+        },
+        "narrow": "TRL",
+        "symbol": "TRL"
+      },
+      "TRY": {
+        "displayName": {
+          "other": "\ud280\ub974\ud0a4\uc608 \ub9ac\ub77c"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "other": "\ud2b8\ub9ac\ub2c8\ub2e4\ub4dc \ud1a0\ubc14\uace0 \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "other": "\uc2e0 \ud0c0\uc774\uc644 \ub2ec\ub7ec"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "other": "\ud0c4\uc790\ub2c8\uc544 \uc2e4\ub9c1"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "other": "\uc6b0\ud06c\ub77c\uc774\ub098 \uadf8\ub9ac\ube0c\ub098"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UAK": {
+        "displayName": {
+          "other": "\uc6b0\ud06c\ub77c\uc774\ub098 \uce74\ubcf4\ubc14\ub124\uce20"
+        },
+        "narrow": "UAK",
+        "symbol": "UAK"
+      },
+      "UGS": {
+        "displayName": {
+          "other": "\uc6b0\uac04\ub2e4 \uc2e4\ub9c1 (1966\u20131987)"
+        },
+        "narrow": "UGS",
+        "symbol": "UGS"
+      },
+      "UGX": {
+        "displayName": {
+          "other": "\uc6b0\uac04\ub2e4 \uc2e4\ub9c1"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "other": "\ubbf8\uad6d \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "US$"
+      },
+      "USN": {
+        "displayName": {
+          "other": "\ubbf8\uad6d \ub2ec\ub7ec(\ub2e4\uc74c\ub0a0)"
+        },
+        "narrow": "USN",
+        "symbol": "USN"
+      },
+      "USS": {
+        "displayName": {
+          "other": "\ubbf8\uad6d \ub2ec\ub7ec(\ub2f9\uc77c)"
+        },
+        "narrow": "USS",
+        "symbol": "USS"
+      },
+      "UYI": {
+        "displayName": {
+          "other": "\uc6b0\ub8e8\uacfc\uc774 \ud398\uc18c (UI)"
+        },
+        "narrow": "UYI",
+        "symbol": "UYI"
+      },
+      "UYP": {
+        "displayName": {
+          "other": "\uc6b0\ub8e8\uacfc\uc774 \ud398\uc18c (1975\u20131993)"
+        },
+        "narrow": "UYP",
+        "symbol": "UYP"
+      },
+      "UYU": {
+        "displayName": {
+          "other": "\uc6b0\ub8e8\uacfc\uc774 \ud398\uc18c"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "other": "\uc6b0\uc988\ubca0\ud0a4\uc2a4\ud0c4 \uc228"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEB": {
+        "displayName": {
+          "other": "\ubca0\ub124\uc8fc\uc5d8\ub77c \ubcfc\ub9ac\ubc14\ub974 (1871\u20132008)"
+        },
+        "narrow": "VEB",
+        "symbol": "VEB"
+      },
+      "VEF": {
+        "displayName": {
+          "other": "\ubca0\ub124\uc218\uc5d8\ub77c \ubcfc\ub9ac\ubc14\ub974 (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "other": "\ubca0\ub124\uc218\uc5d8\ub77c \ubcfc\ub9ac\ubc14\ub974"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "other": "\ubca0\ud2b8\ub0a8 \ub3d9"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VNN": {
+        "displayName": {
+          "other": "\ubca0\ud2b8\ub0a8 \ub3d9 (1978\u20131985)"
+        },
+        "narrow": "VNN",
+        "symbol": "VNN"
+      },
+      "VUV": {
+        "displayName": {
+          "other": "\ubc14\ub204\uc544\ud22c \ubc14\ud22c"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "other": "\uc11c \uc0ac\ubaa8\uc544 \ud0c8\ub77c"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "other": "\uc911\uc559\uc544\ud504\ub9ac\uce74 CFA \ud504\ub791"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XAG": {
+        "displayName": {
+          "other": "\uc740\ud654"
+        },
+        "narrow": "XAG",
+        "symbol": "XAG"
+      },
+      "XAU": {
+        "displayName": {
+          "other": "\uae08"
+        },
+        "narrow": "XAU",
+        "symbol": "XAU"
+      },
+      "XBA": {
+        "displayName": {
+          "other": "\uc720\ub974\ucf54 (\uc720\ub7fd \ud68c\uacc4 \ub2e8\uc704)"
+        },
+        "narrow": "XBA",
+        "symbol": "XBA"
+      },
+      "XBB": {
+        "displayName": {
+          "other": "\uc720\ub7fd \ud1b5\ud654 \ub3d9\ub9f9"
+        },
+        "narrow": "XBB",
+        "symbol": "XBB"
+      },
+      "XBC": {
+        "displayName": {
+          "other": "\uc720\ub7fd \uacc4\uc0b0 \ub2e8\uc704 (XBC)"
+        },
+        "narrow": "XBC",
+        "symbol": "XBC"
+      },
+      "XBD": {
+        "displayName": {
+          "other": "\uc720\ub7fd \uacc4\uc0b0 \ub2e8\uc704 (XBD)"
+        },
+        "narrow": "XBD",
+        "symbol": "XBD"
+      },
+      "XCD": {
+        "displayName": {
+          "other": "\ub3d9\uce74\ub9ac\ube0c \ub2ec\ub7ec"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XDR": {
+        "displayName": {
+          "other": "\ud2b9\ubcc4\uc778\ucd9c\uad8c"
+        },
+        "narrow": "XDR",
+        "symbol": "XDR"
+      },
+      "XEU": {
+        "displayName": {
+          "other": "\uc720\ub7fd \ud658\uc728 \ub2e8\uc704"
+        },
+        "narrow": "XEU",
+        "symbol": "XEU"
+      },
+      "XFO": {
+        "displayName": {
+          "other": "\ud504\ub791\uc2a4 \ud504\ub791 (Gold)"
+        },
+        "narrow": "XFO",
+        "symbol": "XFO"
+      },
+      "XFU": {
+        "displayName": {
+          "other": "\ud504\ub791\uc2a4 \ud504\ub791 (UIC)"
+        },
+        "narrow": "XFU",
+        "symbol": "XFU"
+      },
+      "XOF": {
+        "displayName": {
+          "other": "\uc11c\uc544\ud504\ub9ac\uce74 CFA \ud504\ub791"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPD": {
+        "displayName": {
+          "other": "\ud314\ub77c\ub4d0"
+        },
+        "narrow": "XPD",
+        "symbol": "XPD"
+      },
+      "XPF": {
+        "displayName": {
+          "other": "CFP \ud504\ub791"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XPT": {
+        "displayName": {
+          "other": "\ubc31\uae08"
+        },
+        "narrow": "XPT",
+        "symbol": "XPT"
+      },
+      "XRE": {
+        "displayName": {
+          "other": "RINET \uae30\uae08"
+        },
+        "narrow": "XRE",
+        "symbol": "XRE"
+      },
+      "XTS": {
+        "displayName": {
+          "other": "\ud14c\uc2a4\ud2b8 \ud1b5\ud654 \ucf54\ub4dc"
+        },
+        "narrow": "XTS",
+        "symbol": "XTS"
+      },
+      "XXX": {
+        "displayName": {
+          "other": "(\uc54c \uc218 \uc5c6\ub294 \ud1b5\ud654 \ub2e8\uc704)"
+        },
+        "narrow": "\u00a4",
+        "symbol": "\u00a4"
+      },
+      "YDD": {
+        "displayName": {
+          "other": "\uc608\uba58 \ub514\ub098\ub974"
+        },
+        "narrow": "YDD",
+        "symbol": "YDD"
+      },
+      "YER": {
+        "displayName": {
+          "other": "\uc608\uba58 \ub9ac\uc54c"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "YUD": {
+        "displayName": {
+          "other": "\uc720\uace0\uc2ac\ub77c\ube44\uc544 \ub3d9\uc804 \ub514\ub098\ub974"
+        },
+        "narrow": "YUD",
+        "symbol": "YUD"
+      },
+      "YUM": {
+        "displayName": {
+          "other": "\uc720\uace0\uc2ac\ub77c\ube44\uc544 \ub178\ube44 \ub514\ub098\ub974"
+        },
+        "narrow": "YUM",
+        "symbol": "YUM"
+      },
+      "YUN": {
+        "displayName": {
+          "other": "\uc720\uace0\uc2ac\ub77c\ube44\uc544 \uc804\ud658 \ub514\ub098\ub974"
+        },
+        "narrow": "YUN",
+        "symbol": "YUN"
+      },
+      "ZAL": {
+        "displayName": {
+          "other": "\ub0a8\uc544\ud504\ub9ac\uce74 \ub79c\ub4dc (\uae08\uc735)"
+        },
+        "narrow": "ZAL",
+        "symbol": "ZAL"
+      },
+      "ZAR": {
+        "displayName": {
+          "other": "\ub0a8\uc544\ud504\ub9ac\uce74 \ub79c\ub4dc"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "other": "\uc7d8\ube44\uc544 \ucf70\uccd0 (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "other": "\uc7a0\ube44\uc544 \ucf70\ucc28"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      },
+      "ZRN": {
+        "displayName": {
+          "other": "\uc790\uc774\ub974 \uc2e0\uad8c \uc790\uc774\ub974"
+        },
+        "narrow": "ZRN",
+        "symbol": "ZRN"
+      },
+      "ZRZ": {
+        "displayName": {
+          "other": "\uc790\uc774\ub974 \uc790\uc774\ub974"
+        },
+        "narrow": "ZRZ",
+        "symbol": "ZRZ"
+      },
+      "ZWD": {
+        "displayName": {
+          "other": "\uc9d0\ubc14\ube0c\uc6e8 \ub2ec\ub7ec"
+        },
+        "narrow": "ZWD",
+        "symbol": "ZWD"
+      },
+      "ZWL": {
+        "displayName": {
+          "other": "\uc9d0\ubc14\ube0c\uc6e8 \ub2ec\ub7ec (2009)"
+        },
+        "narrow": "ZWL",
+        "symbol": "ZWL"
+      },
+      "ZWR": {
+        "displayName": {
+          "other": "\uc9d0\ubc14\ube0c\uc6e8 \ub2ec\ub7ec (2008)"
+        },
+        "narrow": "ZWR",
+        "symbol": "ZWR"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "\u00a4#,##0.00;(\u00a4#,##0.00)",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "\u00a40\ucc9c"
+            },
+            "10000": {
+              "other": "\u00a40\ub9cc"
+            },
+            "100000": {
+              "other": "\u00a400\ub9cc"
+            },
+            "1000000": {
+              "other": "\u00a4000\ub9cc"
+            },
+            "10000000": {
+              "other": "\u00a40000\ub9cc"
+            },
+            "100000000": {
+              "other": "\u00a40\uc5b5"
+            },
+            "1000000000": {
+              "other": "\u00a400\uc5b5"
+            },
+            "10000000000": {
+              "other": "\u00a4000\uc5b5"
+            },
+            "100000000000": {
+              "other": "\u00a40000\uc5b5"
+            },
+            "1000000000000": {
+              "other": "\u00a40\uc870"
+            },
+            "10000000000000": {
+              "other": "\u00a400\uc870"
+            },
+            "100000000000000": {
+              "other": "\u00a4000\uc870"
+            }
+          },
+          "standard": "\u00a4#,##0.00",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "other": "0\ucc9c"
+            },
+            "10000": {
+              "other": "0\ub9cc"
+            },
+            "100000": {
+              "other": "00\ub9cc"
+            },
+            "1000000": {
+              "other": "000\ub9cc"
+            },
+            "10000000": {
+              "other": "0000\ub9cc"
+            },
+            "100000000": {
+              "other": "0\uc5b5"
+            },
+            "1000000000": {
+              "other": "00\uc5b5"
+            },
+            "10000000000": {
+              "other": "000\uc5b5"
+            },
+            "100000000000": {
+              "other": "0000\uc5b5"
+            },
+            "1000000000000": {
+              "other": "0\uc870"
+            },
+            "10000000000000": {
+              "other": "00\uc870"
+            },
+            "100000000000000": {
+              "other": "000\uc870"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0\ucc9c"
+            },
+            "10000": {
+              "other": "0\ub9cc"
+            },
+            "100000": {
+              "other": "00\ub9cc"
+            },
+            "1000000": {
+              "other": "000\ub9cc"
+            },
+            "10000000": {
+              "other": "0000\ub9cc"
+            },
+            "100000000": {
+              "other": "0\uc5b5"
+            },
+            "1000000000": {
+              "other": "00\uc5b5"
+            },
+            "10000000000": {
+              "other": "000\uc5b5"
+            },
+            "100000000000": {
+              "other": "0000\uc5b5"
+            },
+            "1000000000000": {
+              "other": "0\uc870"
+            },
+            "10000000000000": {
+              "other": "00\uc870"
+            },
+            "100000000000000": {
+              "other": "000\uc870"
+            }
+          },
+          "standard": "#,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ".",
+          "exponential": "E",
+          "group": ",",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "-",
+          "nan": "NaN",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "+",
+          "rangeSign": "~",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{1}\ub2f9 {0}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "other": "{0}\uc5d0\uc774\ucee4"
+          },
+          "narrow": {
+            "other": "{0}ac"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}ac"
+          }
+        },
+        "bit": {
+          "long": {
+            "other": "{0}\ube44\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}bit"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}bit"
+          }
+        },
+        "byte": {
+          "long": {
+            "other": "{0}\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}byte"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}byte"
+          }
+        },
+        "celsius": {
+          "long": {
+            "other": "\uc12d\uc528 {0}\ub3c4"
+          },
+          "narrow": {
+            "other": "{0}\u00b0C"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0C"
+          }
+        },
+        "centimeter": {
+          "long": {
+            "other": "{0}\uc13c\ud2f0\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}cm"
+          },
+          "perUnit": {
+            "long": "\uc13c\ud2f0\ubbf8\ud130\ub2f9 {0}",
+            "narrow": "{0}/cm",
+            "short": "{0}/cm"
+          },
+          "short": {
+            "other": "{0}cm"
+          }
+        },
+        "day": {
+          "long": {
+            "other": "{0}\uc77c"
+          },
+          "narrow": {
+            "other": "{0}\uc77c"
+          },
+          "perUnit": {
+            "long": "\uc77c\ub2f9 {0}",
+            "narrow": "{0}/\uc77c",
+            "short": "{0}/\uc77c"
+          },
+          "short": {
+            "other": "{0}\uc77c"
+          }
+        },
+        "degree": {
+          "long": {
+            "other": "{0}\ub3c4"
+          },
+          "narrow": {
+            "other": "{0}\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0"
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "other": "\ud654\uc528 {0}\ub3c4"
+          },
+          "narrow": {
+            "other": "{0}\u00b0F"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0F"
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "other": "{0}\uc561\ub7c9 \uc628\uc2a4"
+          },
+          "narrow": {
+            "other": "{0}fl oz"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}fl oz"
+          }
+        },
+        "foot": {
+          "long": {
+            "other": "{0}\ud53c\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}\u2032"
+          },
+          "perUnit": {
+            "long": "\ud53c\ud2b8\ub2f9 {0}",
+            "narrow": "{0}/ft",
+            "short": "{0}/ft"
+          },
+          "short": {
+            "other": "{0}ft"
+          }
+        },
+        "gallon": {
+          "long": {
+            "other": "{0}\uac24\ub7f0"
+          },
+          "narrow": {
+            "other": "{0}gal"
+          },
+          "perUnit": {
+            "long": "\uac24\ub7f0\ub2f9 {0}",
+            "narrow": "{0}/gal",
+            "short": "{0}/gal"
+          },
+          "short": {
+            "other": "{0}gal"
+          }
+        },
+        "gigabit": {
+          "long": {
+            "other": "{0}\uae30\uac00\ube44\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}Gb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}Gb"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "other": "{0}\uae30\uac00\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}GB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}GB"
+          }
+        },
+        "gram": {
+          "long": {
+            "other": "{0}\uadf8\ub7a8"
+          },
+          "narrow": {
+            "other": "{0}g"
+          },
+          "perUnit": {
+            "long": "\uadf8\ub7a8\ub2f9 {0}",
+            "narrow": "{0}/g",
+            "short": "{0}/g"
+          },
+          "short": {
+            "other": "{0}g"
+          }
+        },
+        "hectare": {
+          "long": {
+            "other": "{0}\ud5e5\ud0c0\ub974"
+          },
+          "narrow": {
+            "other": "{0}ha"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}ha"
+          }
+        },
+        "hour": {
+          "long": {
+            "other": "{0}\uc2dc\uac04"
+          },
+          "narrow": {
+            "other": "{0}\uc2dc\uac04"
+          },
+          "perUnit": {
+            "long": "\uc2dc\uac04\ub2f9 {0}",
+            "narrow": "{0}/\uc2dc\uac04",
+            "short": "{0}/h"
+          },
+          "short": {
+            "other": "{0}\uc2dc\uac04"
+          }
+        },
+        "inch": {
+          "long": {
+            "other": "{0}\uc778\uce58"
+          },
+          "narrow": {
+            "other": "{0}\u2033"
+          },
+          "perUnit": {
+            "long": "\uc778\uce58\ub2f9 {0}",
+            "narrow": "{0}/in",
+            "short": "{0}/in"
+          },
+          "short": {
+            "other": "{0}in"
+          }
+        },
+        "kilobit": {
+          "long": {
+            "other": "{0}\ud0ac\ub85c\ube44\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}kb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}kb"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "other": "{0}\ud0ac\ub85c\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}kB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}kB"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "other": "{0}\ud0ac\ub85c\uadf8\ub7a8"
+          },
+          "narrow": {
+            "other": "{0}kg"
+          },
+          "perUnit": {
+            "long": "\ud0ac\ub85c\uadf8\ub7a8\ub2f9 {0}",
+            "narrow": "{0}/kg",
+            "short": "{0}/kg"
+          },
+          "short": {
+            "other": "{0}kg"
+          }
+        },
+        "kilometer": {
+          "long": {
+            "other": "{0}\ud0ac\ub85c\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}km"
+          },
+          "perUnit": {
+            "long": "\ud0ac\ub85c\ubbf8\ud130\ub2f9 {0}",
+            "narrow": "{0}/km",
+            "short": "{0}/km"
+          },
+          "short": {
+            "other": "{0}km"
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "other": "\uc2dc\uc18d {0}\ud0ac\ub85c\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}km/h"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}km/h"
+          }
+        },
+        "liter": {
+          "long": {
+            "other": "{0}\ub9ac\ud130"
+          },
+          "narrow": {
+            "other": "{0}L"
+          },
+          "perUnit": {
+            "long": "\ub9ac\ud130\ub2f9 {0}",
+            "narrow": "{0}/L",
+            "short": "{0}/L"
+          },
+          "short": {
+            "other": "{0}L"
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "other": "\ud0ac\ub85c\ubbf8\ud130\ub2f9 {0}\ub9ac\ud130"
+          },
+          "narrow": {
+            "other": "{0}L/km"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}L/km"
+          }
+        },
+        "megabit": {
+          "long": {
+            "other": "{0}\uba54\uac00\ube44\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}Mb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}Mb"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "other": "{0}\uba54\uac00\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}MB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}MB"
+          }
+        },
+        "meter": {
+          "long": {
+            "other": "{0}\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}m"
+          },
+          "perUnit": {
+            "long": "\ubbf8\ud130\ub2f9 {0}",
+            "narrow": "{0}/m",
+            "short": "{0}/m"
+          },
+          "short": {
+            "other": "{0}m"
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "other": "\ucd08\uc18d {0}\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}m/s"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}m/s"
+          }
+        },
+        "mile": {
+          "long": {
+            "other": "{0}\ub9c8\uc77c"
+          },
+          "narrow": {
+            "other": "{0}mi"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}mi"
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "other": "\uac24\ub7f0\ub2f9 {0}\ub9c8\uc77c"
+          },
+          "narrow": {
+            "other": "{0}mpg"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}mpg"
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "other": "\uc2dc\uc18d {0}\ub9c8\uc77c"
+          },
+          "narrow": {
+            "other": "{0}mph"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}mi/h"
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "other": "{0}\uc2a4\uce78\ub514\ub098\ube44\uc544 \ub9c8\uc77c"
+          },
+          "narrow": {
+            "other": "{0}smi"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}smi"
+          }
+        },
+        "milliliter": {
+          "long": {
+            "other": "{0}\ubc00\ub9ac\ub9ac\ud130"
+          },
+          "narrow": {
+            "other": "{0}mL"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}mL"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "other": "{0}\ubc00\ub9ac\ubbf8\ud130"
+          },
+          "narrow": {
+            "other": "{0}mm"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}mm"
+          }
+        },
+        "millisecond": {
+          "long": {
+            "other": "{0}\ubc00\ub9ac\ucd08"
+          },
+          "narrow": {
+            "other": "{0}ms"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}ms"
+          }
+        },
+        "minute": {
+          "long": {
+            "other": "{0}\ubd84"
+          },
+          "narrow": {
+            "other": "{0}\ubd84"
+          },
+          "perUnit": {
+            "long": "\ubd84\ub2f9 {0}",
+            "narrow": "{0}/\ubd84",
+            "short": "{0}/min"
+          },
+          "short": {
+            "other": "{0}\ubd84"
+          }
+        },
+        "month": {
+          "long": {
+            "other": "{0}\uac1c\uc6d4"
+          },
+          "narrow": {
+            "other": "{0}\uac1c\uc6d4"
+          },
+          "perUnit": {
+            "long": "\uc6d4\ub2f9 {0}",
+            "narrow": "{0}/\uc6d4",
+            "short": "{0}/\uc6d4"
+          },
+          "short": {
+            "other": "{0}\uac1c\uc6d4"
+          }
+        },
+        "ounce": {
+          "long": {
+            "other": "{0}\uc628\uc2a4"
+          },
+          "narrow": {
+            "other": "{0}oz"
+          },
+          "perUnit": {
+            "long": "\uc628\uc2a4\ub2f9 {0}",
+            "narrow": "{0}/oz",
+            "short": "{0}/oz"
+          },
+          "short": {
+            "other": "{0}oz"
+          }
+        },
+        "percent": {
+          "long": {
+            "other": "{0}%"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "other": "{0}\ud398\ud0c0\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}PB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}PB"
+          }
+        },
+        "pound": {
+          "long": {
+            "other": "{0}\ud30c\uc6b4\ub4dc"
+          },
+          "narrow": {
+            "other": "{0}lb"
+          },
+          "perUnit": {
+            "long": "\ud30c\uc6b4\ub4dc\ub2f9 {0}",
+            "narrow": "{0}/lb",
+            "short": "{0}/lb"
+          },
+          "short": {
+            "other": "{0}lb"
+          }
+        },
+        "second": {
+          "long": {
+            "other": "{0}\ucd08"
+          },
+          "narrow": {
+            "other": "{0}\ucd08"
+          },
+          "perUnit": {
+            "long": "\ucd08\ub2f9 {0}",
+            "narrow": "{0}/\ucd08",
+            "short": "{0}/s"
+          },
+          "short": {
+            "other": "{0}\ucd08"
+          }
+        },
+        "stone": {
+          "long": {
+            "other": "{0}\uc2a4\ud1a4"
+          },
+          "narrow": {
+            "other": "{0}st"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}st"
+          }
+        },
+        "terabit": {
+          "long": {
+            "other": "{0}\ud14c\ub77c\ube44\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}Tb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}Tb"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "other": "{0}\ud14c\ub77c\ubc14\uc774\ud2b8"
+          },
+          "narrow": {
+            "other": "{0}TB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}TB"
+          }
+        },
+        "week": {
+          "long": {
+            "other": "{0}\uc8fc"
+          },
+          "narrow": {
+            "other": "{0}\uc8fc"
+          },
+          "perUnit": {
+            "long": "\uc8fc\ub2f9 {0}",
+            "narrow": "{0}/\uc8fc",
+            "short": "{0}/\uc8fc"
+          },
+          "short": {
+            "other": "{0}\uc8fc"
+          }
+        },
+        "yard": {
+          "long": {
+            "other": "{0}\uc57c\ub4dc"
+          },
+          "narrow": {
+            "other": "{0}yd"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}yd"
+          }
+        },
+        "year": {
+          "long": {
+            "other": "{0}\ub144"
+          },
+          "narrow": {
+            "other": "{0}\ub144"
+          },
+          "perUnit": {
+            "long": "\uc5f0\ub2f9 {0}",
+            "narrow": "{0}/\ub144",
+            "short": "{0}/\ub144"
+          },
+          "short": {
+            "other": "{0}\ub144"
+          }
+        }
+      }
+    }
+  },
+  "locale": "ko"
+}

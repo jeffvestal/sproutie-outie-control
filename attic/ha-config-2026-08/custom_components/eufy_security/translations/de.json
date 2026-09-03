@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "reauth_successful": "Code is received, reloading the integration in background automatically!",
+      "single_instance_allowed": "Es ist nur eine einzige Instanz zul\u00e4ssig."
+    },
+    "error": {
+      "auth": "Host/Port ist falsch."
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "captcha_input": "Captcha"
+        },
+        "description": "{captcha_img}",
+        "title": "Eufy Security: Captcha"
+      },
+      "user": {
+        "data": {
+          "host": "Host-IP-Adresse (zB 192.168.178.22)",
+          "port": "Port (zB 3000)"
+        },
+        "description": "Geben Sie die IP-Adresse und den Port der Eufy Security Web Socket-Instanz ein",
+        "title": "Eufy Security: Einrichtung"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name_for_custom1": "\u00dcberschreibungsname f\u00fcr benutzerdefinierten Schutzmodus (1)",
+          "name_for_custom2": "\u00dcberschreibungsname f\u00fcr benutzerdefinierten Schutzmodus (2)",
+          "name_for_custom3": "\u00dcberschreibungsname f\u00fcr benutzerdefinierten Schutzmodus (3)",
+          "no_stream_in_hass": "Do not use STREAM module inside Home Assistant (if you do not watch the video inside Home Assistant native streaming or you are using WebRTC, enable this to decrease CPU usage",
+          "rtsp_server_address": "Host-IP-Adresse f\u00fcr GO2RTC-Erweiterung (P2P)",
+          "sync_interval": "Cloud-Scan-Intervall in Sekunden [1 bis 9999]"
+        },
+        "title": "Eufy Security: Einrichtung"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "config": {
+    "abort": {
+      "arch": "Architecture de l'OS non prise en charge : {uname}",
+      "single_instance_allowed": "D\u00e9j\u00e0 configur\u00e9. Une seule configuration possible."
+    },
+    "error": {
+      "connect": "Impossible de se connecter au serveur go2rtc"
+    },
+    "step": {
+      "config": {
+        "data": {
+          "api": "Interface Web publique sur le port 1984",
+          "password": "<redacted>",
+          "rtsp": "RTSP public sur le port 8554",
+          "username": "<redacted>"
+        },
+        "description": "Chemin : `{path}`",
+        "title": "configuration de go2rtc"
+      },
+      "user": {
+        "data": {
+          "url": "URL"
+        },
+        "description": "S\u00e9lectionnez la version du serveur de streaming [go2rtc](https://github.com/AlexxIT/go2rtc)\u00a0:\n1. Laissez vide si vous souhaitez la version int\u00e9gr\u00e9e de go2rtc (*utilisateurs basiques*).\n2. D\u00e9finissez \u00ab\u00a0http://localhost:1984\u00a0\u00bb si vous installez le module compl\u00e9mentaire [go2rtc](https://github.com/AlexxIT/go2rtc#go2rtc-home-assistant-add-on) ou [Frigate 12+](https://docs.frigate.video/) (*utilisateurs avanc\u00e9s*).\n3. D\u00e9finissez une adresse personnalis\u00e9e si vous installez go2rtc sur un autre serveur (*hackers*).",
+        "title": "URL de go2rtc"
+      }
+    }
+  },
+  "services": {
+    "create_link": {
+      "description": "Cr\u00e9ez un lien temporaire ou permanent vers un flux (saisissez `url` ou `entity`)",
+      "fields": {
+        "entity": {
+          "description": "Cam\u00e9ra entity_id",
+          "name": "Entit\u00e9"
+        },
+        "link_id": {
+          "description": "Cr\u00e9ez un ID al\u00e9atoire ou permanent pour votre lien",
+          "name": "ID du lien"
+        },
+        "open_limit": {
+          "description": "Combien de fois un lien peut \u00eatre ouvert (0 - illimit\u00e9)",
+          "name": "Limite ouverte"
+        },
+        "time_to_live": {
+          "description": "Combien de secondes le lien restera-t-il actif (0 - illimit\u00e9)",
+          "name": "Temps du direct"
+        },
+        "url": {
+          "description": "Lien vers le flux RTSP",
+          "name": "URL"
+        }
+      },
+      "name": "Cr\u00e9er un lien"
+    },
+    "dash_cast": {
+      "description": "Diffuser le flux sur un appareil Chromecast via l'application DashCast",
+      "fields": {
+        "entity": {
+          "description": "Cam\u00e9ra entity_id",
+          "name": "Entit\u00e9"
+        },
+        "entity_id": {
+          "description": "Multim\u00e9dia entity_id",
+          "name": "Entit\u00e9 multim\u00e9dia"
+        },
+        "extra": {
+          "description": "Param\u00e8tres de carte suppl\u00e9mentaires",
+          "name": "Suppl\u00e9ment"
+        },
+        "force": {
+          "description": "Forcer le red\u00e9marrage de l'application DashCast",
+          "name": "Forcer"
+        },
+        "hass_url": {
+          "description": "URL de base manuelle vers le serveur Hass",
+          "name": "URL Hass"
+        },
+        "url": {
+          "description": "Link to RTSP-stream",
+          "name": "URL"
+        }
+      },
+      "name": "DashCast"
+    }
+  }
+}

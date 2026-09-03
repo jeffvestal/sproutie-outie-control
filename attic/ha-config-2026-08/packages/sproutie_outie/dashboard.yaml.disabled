@@ -1,0 +1,67 @@
+# Sproutie Outie Control Center Dashboard Configuration
+# This file sets up the main dashboard view
+
+title: Sproutie Outie Control Center
+path: sproutie-outie
+icon: mdi:sprout
+panel: false
+cards:
+  - type: custom:layout-card
+    layout_type: grid
+    layout:
+      grid-template-columns: repeat(12, minmax(0, 1fr))
+      grid-gap: 16px
+    cards:
+      - type: custom:button-card
+        template: cyberpunk_stat
+        entity: sensor.time
+        name: "SPROUTIE OUTIE // BOTANY COMMAND"
+        card_mod:
+          style: |
+            .card {
+              grid-column: 1 / -1;
+              background: rgba(8, 8, 8, 0.9);
+              border: 2px solid #00f3ff;
+              box-shadow: 0 0 30px #00f3ff40;
+              padding: 24px;
+              text-align: center;
+            }
+            .name {
+              font-size: 28px;
+              font-weight: bold;
+              letter-spacing: 4px;
+              text-shadow: 0 0 20px #00f3ff;
+              animation: glitch 3s infinite;
+            }
+            @keyframes glitch {
+              0%, 100% { transform: translate(0); }
+              20% { transform: translate(-2px, 2px); }
+              40% { transform: translate(-2px, -2px); }
+              60% { transform: translate(2px, 2px); }
+              80% { transform: translate(2px, -2px); }
+            }
+            .value {
+              font-size: 16px;
+              margin-top: 8px;
+              opacity: 0.8;
+            }
+        custom_fields:
+          status: |
+            <div style="margin-top: 12px; font-size: 12px; color: #00ff00;">
+              █ SYSTEM STATUS: {{ states('sensor.sproutie_system_status') }} █
+            </div>
+      
+      # Include the main command center view
+      - type: custom:button-card
+        template: cyberpunk_stat
+        entity: sensor.sproutie_outie_internal_temp
+        name: TENT TEMP
+        thresholds:
+          alert_min: 0
+          alert_max: 80
+          warning_min: 60
+          warning_max: 75
+        card_mod:
+          style: |
+            .card { grid-column: span 6; }
+

@@ -1,0 +1,20 @@
+template:
+  - trigger:
+      - platform: event
+        event_type: sproutie_log_event
+    sensor:
+      - name: Sproutie Activity Log
+        unique_id: sproutie_activity_log
+        state: "{{ now().isoformat() }}"
+        attributes:
+          entries: >
+            {% set current = state_attr('sensor.sproutie_activity_log', 'entries') %}
+            {% set current = current if current is iterable and current is not string else [] %}
+            {% set new = [{
+              "time": now().strftime('%a %H:%M'),
+              "type": trigger.event.data.type | default('System'),
+              "message": trigger.event.data.message | default('No message'),
+              "icon": trigger.event.data.icon | default('mdi:playlist-star'),
+              "color": trigger.event.data.color | default('#95a5a6')
+            }] %}
+            {{ (new + current)[:15] }}

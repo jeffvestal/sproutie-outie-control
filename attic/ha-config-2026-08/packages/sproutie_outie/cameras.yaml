@@ -1,0 +1,18 @@
+# Snapshot Cameras for Dashboard Display
+# These local_file cameras display the most recent flash photography snapshots
+# reducing bandwidth usage while keeping live streams available via tap action
+#
+# NOTE: As of HA 2024.12, local_file cameras are UI-only (config flow).
+# Legacy YAML entries below are grandfathered. New cameras (e.g., Sidecar Eyes
+# Snapshot) must be added via Settings > Devices & Services > Add Integration > Local File.
+# The sidecar camera entity (camera.sidecar_eyes_snapshot) was created via UI
+# pointing at /config/www/snapshots/sidecar_eyes_latest.jpg
+
+camera:
+  - platform: local_file
+    name: Top Eyes Snapshot
+    file_path: /config/www/snapshots/top_eyes_latest.jpg
+  
+  - platform: local_file
+    name: Bottom Eyes Snapshot
+    file_path: /config/www/snapshots/bottom_eyes_latest.jpg

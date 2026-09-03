@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "reauth_successful": "Code is received, reloading the integration in background automatically!",
+      "single_instance_allowed": "Slechts \u00e9\u00e9n exemplaar is toegestaan."
+    },
+    "error": {
+      "auth": "Host/Poort klopt niet."
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "captcha": "Captcha"
+        },
+        "description": "{captcha_img}",
+        "title": "Eufy Security: Captcha"
+      },
+      "user": {
+        "data": {
+          "host": "Host IP adres (bijv. 192.168.178.22)",
+          "port": "Poort (bijv. 3000)"
+        },
+        "description": "Voer het IP adres en de poort van de Eufy Security Web Socket-instantie in",
+        "title": "Eufy Security: Instellen"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name_for_custom1": "Naam negeren voor Custom1 Beveiligings-modus",
+          "name_for_custom2": "Naam negeren voor Custom2 Beveiligings-modus",
+          "name_for_custom3": "Naam negeren voor Custom4 Beveiligings-modus",
+          "no_stream_in_hass": "Gebruik geen STREAM module binnen Home Assistant (als je de video niet met Home Assistant native streaming bekijkt of je gebruikt WebRTC, zet dit aan om CPU gebruik te verminderen",
+          "rtsp_server_address": "Host IP-adres voor GO2RTC-add-on (P2P)",
+          "sync_interval": "Cloudscan-interval in seconden [1 tot 9999]"
+        },
+        "title": "Eufy Security: Configuratie"
+      }
+    }
+  }
+}

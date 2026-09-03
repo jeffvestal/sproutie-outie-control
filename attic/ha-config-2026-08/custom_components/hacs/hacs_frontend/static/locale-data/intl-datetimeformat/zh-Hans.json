@@ -1,0 +1,2511 @@
+{
+  "data": {
+    "am": "\u4e0a\u5348",
+    "ca": [
+      "gregory",
+      "chinese"
+    ],
+    "dateFormat": {
+      "full": "y\u5e74M\u6708d\u65e5EEEE",
+      "long": "y\u5e74M\u6708d\u65e5",
+      "medium": "y\u5e74M\u6708d\u65e5",
+      "short": "y/M/d"
+    },
+    "dateTimeFormat": {
+      "full": "{1} {0}",
+      "long": "{1} {0}",
+      "medium": "{1} {0}",
+      "short": "{1} {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "\u516c\u5143",
+        "BC": "\u516c\u5143\u524d"
+      },
+      "narrow": {
+        "AD": "\u516c\u5143",
+        "BC": "\u516c\u5143\u524d"
+      },
+      "short": {
+        "AD": "\u516c\u5143",
+        "BC": "\u516c\u5143\u524d"
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "Bh\u65f6",
+        "Bhm": "Bh:mm",
+        "Bhms": "Bh:mm:ss",
+        "E": "ccc",
+        "E Bh": "ccc Bh\u65f6",
+        "E Bhm": "ccc Bh:mm",
+        "E Bhms": "ccc Bh:mm:ss",
+        "E H": "ccc H\u65f6",
+        "E HH:mm": "ccc HH:mm",
+        "E HH:mm:ss": "ccc HH:mm:ss",
+        "E Hm": "ccc HH:mm",
+        "E Hms": "ccc HH:mm:ss",
+        "E Hmsv": "ccc v HH:mm:ss",
+        "E Hmv": "ccc v HH:mm",
+        "E h": "ccc ah\u65f6",
+        "E hm": "ccc ah:mm",
+        "E hms": "ccc ah:mm:ss",
+        "E hmsv": "ccc v ah:mm:ss",
+        "E hmv": "ccc v ah:mm",
+        "E ms": "ccc mm:ss",
+        "E z HH:mm:ss": "ccc z HH:mm:ss",
+        "E zzzz HH:mm:ss": "ccc zzzz HH:mm:ss",
+        "EBhm": "EBh:mm",
+        "EBhms": "EBh:mm:ss",
+        "EHm": "EHH:mm",
+        "EHms": "EHH:mm:ss",
+        "Ed": "d\u65e5E",
+        "Ed Bh": "d\u65e5E Bh\u65f6",
+        "Ed Bhm": "d\u65e5E Bh:mm",
+        "Ed Bhms": "d\u65e5E Bh:mm:ss",
+        "Ed H": "d\u65e5E H\u65f6",
+        "Ed HH:mm": "d\u65e5E HH:mm",
+        "Ed HH:mm:ss": "d\u65e5E HH:mm:ss",
+        "Ed Hm": "d\u65e5E HH:mm",
+        "Ed Hms": "d\u65e5E HH:mm:ss",
+        "Ed Hmsv": "d\u65e5E v HH:mm:ss",
+        "Ed Hmv": "d\u65e5E v HH:mm",
+        "Ed h": "d\u65e5E ah\u65f6",
+        "Ed hm": "d\u65e5E ah:mm",
+        "Ed hms": "d\u65e5E ah:mm:ss",
+        "Ed hmsv": "d\u65e5E v ah:mm:ss",
+        "Ed hmv": "d\u65e5E v ah:mm",
+        "Ed ms": "d\u65e5E mm:ss",
+        "Ed z HH:mm:ss": "d\u65e5E z HH:mm:ss",
+        "Ed zzzz HH:mm:ss": "d\u65e5E zzzz HH:mm:ss",
+        "Ehm": "Eah:mm",
+        "Ehms": "Eah:mm:ss",
+        "Gy": "Gy\u5e74",
+        "Gy Bh": "Gy\u5e74 Bh\u65f6",
+        "Gy Bhm": "Gy\u5e74 Bh:mm",
+        "Gy Bhms": "Gy\u5e74 Bh:mm:ss",
+        "Gy H": "Gy\u5e74 H\u65f6",
+        "Gy HH:mm": "Gy\u5e74 HH:mm",
+        "Gy HH:mm:ss": "Gy\u5e74 HH:mm:ss",
+        "Gy Hm": "Gy\u5e74 HH:mm",
+        "Gy Hms": "Gy\u5e74 HH:mm:ss",
+        "Gy Hmsv": "Gy\u5e74 v HH:mm:ss",
+        "Gy Hmv": "Gy\u5e74 v HH:mm",
+        "Gy h": "Gy\u5e74 ah\u65f6",
+        "Gy hm": "Gy\u5e74 ah:mm",
+        "Gy hms": "Gy\u5e74 ah:mm:ss",
+        "Gy hmsv": "Gy\u5e74 v ah:mm:ss",
+        "Gy hmv": "Gy\u5e74 v ah:mm",
+        "Gy ms": "Gy\u5e74 mm:ss",
+        "Gy z HH:mm:ss": "Gy\u5e74 z HH:mm:ss",
+        "Gy zzzz HH:mm:ss": "Gy\u5e74 zzzz HH:mm:ss",
+        "GyMMM": "Gy\u5e74M\u6708",
+        "GyMMM Bh": "Gy\u5e74M\u6708 Bh\u65f6",
+        "GyMMM Bhm": "Gy\u5e74M\u6708 Bh:mm",
+        "GyMMM Bhms": "Gy\u5e74M\u6708 Bh:mm:ss",
+        "GyMMM H": "Gy\u5e74M\u6708 H\u65f6",
+        "GyMMM HH:mm": "Gy\u5e74M\u6708 HH:mm",
+        "GyMMM HH:mm:ss": "Gy\u5e74M\u6708 HH:mm:ss",
+        "GyMMM Hm": "Gy\u5e74M\u6708 HH:mm",
+        "GyMMM Hms": "Gy\u5e74M\u6708 HH:mm:ss",
+        "GyMMM Hmsv": "Gy\u5e74M\u6708 v HH:mm:ss",
+        "GyMMM Hmv": "Gy\u5e74M\u6708 v HH:mm",
+        "GyMMM h": "Gy\u5e74M\u6708 ah\u65f6",
+        "GyMMM hm": "Gy\u5e74M\u6708 ah:mm",
+        "GyMMM hms": "Gy\u5e74M\u6708 ah:mm:ss",
+        "GyMMM hmsv": "Gy\u5e74M\u6708 v ah:mm:ss",
+        "GyMMM hmv": "Gy\u5e74M\u6708 v ah:mm",
+        "GyMMM ms": "Gy\u5e74M\u6708 mm:ss",
+        "GyMMM z HH:mm:ss": "Gy\u5e74M\u6708 z HH:mm:ss",
+        "GyMMM zzzz HH:mm:ss": "Gy\u5e74M\u6708 zzzz HH:mm:ss",
+        "GyMMMEd": "Gy\u5e74M\u6708d\u65e5E",
+        "GyMMMEd Bh": "Gy\u5e74M\u6708d\u65e5E Bh\u65f6",
+        "GyMMMEd Bhm": "Gy\u5e74M\u6708d\u65e5E Bh:mm",
+        "GyMMMEd Bhms": "Gy\u5e74M\u6708d\u65e5E Bh:mm:ss",
+        "GyMMMEd H": "Gy\u5e74M\u6708d\u65e5E H\u65f6",
+        "GyMMMEd HH:mm": "Gy\u5e74M\u6708d\u65e5E HH:mm",
+        "GyMMMEd HH:mm:ss": "Gy\u5e74M\u6708d\u65e5E HH:mm:ss",
+        "GyMMMEd Hm": "Gy\u5e74M\u6708d\u65e5E HH:mm",
+        "GyMMMEd Hms": "Gy\u5e74M\u6708d\u65e5E HH:mm:ss",
+        "GyMMMEd Hmsv": "Gy\u5e74M\u6708d\u65e5E v HH:mm:ss",
+        "GyMMMEd Hmv": "Gy\u5e74M\u6708d\u65e5E v HH:mm",
+        "GyMMMEd h": "Gy\u5e74M\u6708d\u65e5E ah\u65f6",
+        "GyMMMEd hm": "Gy\u5e74M\u6708d\u65e5E ah:mm",
+        "GyMMMEd hms": "Gy\u5e74M\u6708d\u65e5E ah:mm:ss",
+        "GyMMMEd hmsv": "Gy\u5e74M\u6708d\u65e5E v ah:mm:ss",
+        "GyMMMEd hmv": "Gy\u5e74M\u6708d\u65e5E v ah:mm",
+        "GyMMMEd ms": "Gy\u5e74M\u6708d\u65e5E mm:ss",
+        "GyMMMEd z HH:mm:ss": "Gy\u5e74M\u6708d\u65e5E z HH:mm:ss",
+        "GyMMMEd zzzz HH:mm:ss": "Gy\u5e74M\u6708d\u65e5E zzzz HH:mm:ss",
+        "GyMMMd": "Gy\u5e74M\u6708d\u65e5",
+        "GyMMMd Bh": "Gy\u5e74M\u6708d\u65e5 Bh\u65f6",
+        "GyMMMd Bhm": "Gy\u5e74M\u6708d\u65e5 Bh:mm",
+        "GyMMMd Bhms": "Gy\u5e74M\u6708d\u65e5 Bh:mm:ss",
+        "GyMMMd H": "Gy\u5e74M\u6708d\u65e5 H\u65f6",
+        "GyMMMd HH:mm": "Gy\u5e74M\u6708d\u65e5 HH:mm",
+        "GyMMMd HH:mm:ss": "Gy\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "GyMMMd Hm": "Gy\u5e74M\u6708d\u65e5 HH:mm",
+        "GyMMMd Hms": "Gy\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "GyMMMd Hmsv": "Gy\u5e74M\u6708d\u65e5 v HH:mm:ss",
+        "GyMMMd Hmv": "Gy\u5e74M\u6708d\u65e5 v HH:mm",
+        "GyMMMd h": "Gy\u5e74M\u6708d\u65e5 ah\u65f6",
+        "GyMMMd hm": "Gy\u5e74M\u6708d\u65e5 ah:mm",
+        "GyMMMd hms": "Gy\u5e74M\u6708d\u65e5 ah:mm:ss",
+        "GyMMMd hmsv": "Gy\u5e74M\u6708d\u65e5 v ah:mm:ss",
+        "GyMMMd hmv": "Gy\u5e74M\u6708d\u65e5 v ah:mm",
+        "GyMMMd ms": "Gy\u5e74M\u6708d\u65e5 mm:ss",
+        "GyMMMd z HH:mm:ss": "Gy\u5e74M\u6708d\u65e5 z HH:mm:ss",
+        "GyMMMd zzzz HH:mm:ss": "Gy\u5e74M\u6708d\u65e5 zzzz HH:mm:ss",
+        "GyMd": "GGGGG y-MM-dd",
+        "GyMd Bh": "GGGGG y-MM-dd Bh\u65f6",
+        "GyMd Bhm": "GGGGG y-MM-dd Bh:mm",
+        "GyMd Bhms": "GGGGG y-MM-dd Bh:mm:ss",
+        "GyMd H": "GGGGG y-MM-dd H\u65f6",
+        "GyMd HH:mm": "GGGGG y-MM-dd HH:mm",
+        "GyMd HH:mm:ss": "GGGGG y-MM-dd HH:mm:ss",
+        "GyMd Hm": "GGGGG y-MM-dd HH:mm",
+        "GyMd Hms": "GGGGG y-MM-dd HH:mm:ss",
+        "GyMd Hmsv": "GGGGG y-MM-dd v HH:mm:ss",
+        "GyMd Hmv": "GGGGG y-MM-dd v HH:mm",
+        "GyMd h": "GGGGG y-MM-dd ah\u65f6",
+        "GyMd hm": "GGGGG y-MM-dd ah:mm",
+        "GyMd hms": "GGGGG y-MM-dd ah:mm:ss",
+        "GyMd hmsv": "GGGGG y-MM-dd v ah:mm:ss",
+        "GyMd hmv": "GGGGG y-MM-dd v ah:mm",
+        "GyMd ms": "GGGGG y-MM-dd mm:ss",
+        "GyMd z HH:mm:ss": "GGGGG y-MM-dd z HH:mm:ss",
+        "GyMd zzzz HH:mm:ss": "GGGGG y-MM-dd zzzz HH:mm:ss",
+        "H": "H\u65f6",
+        "HH:mm": "HH:mm",
+        "HH:mm:ss": "HH:mm:ss",
+        "Hm": "HH:mm",
+        "Hms": "HH:mm:ss",
+        "Hmsv": "v HH:mm:ss",
+        "Hmv": "v HH:mm",
+        "M": "M\u6708",
+        "M Bh": "M\u6708 Bh\u65f6",
+        "M Bhm": "M\u6708 Bh:mm",
+        "M Bhms": "M\u6708 Bh:mm:ss",
+        "M H": "M\u6708 H\u65f6",
+        "M HH:mm": "M\u6708 HH:mm",
+        "M HH:mm:ss": "M\u6708 HH:mm:ss",
+        "M Hm": "M\u6708 HH:mm",
+        "M Hms": "M\u6708 HH:mm:ss",
+        "M Hmsv": "M\u6708 v HH:mm:ss",
+        "M Hmv": "M\u6708 v HH:mm",
+        "M h": "M\u6708 ah\u65f6",
+        "M hm": "M\u6708 ah:mm",
+        "M hms": "M\u6708 ah:mm:ss",
+        "M hmsv": "M\u6708 v ah:mm:ss",
+        "M hmv": "M\u6708 v ah:mm",
+        "M ms": "M\u6708 mm:ss",
+        "M z HH:mm:ss": "M\u6708 z HH:mm:ss",
+        "M zzzz HH:mm:ss": "M\u6708 zzzz HH:mm:ss",
+        "MEd": "M/dE",
+        "MEd Bh": "M/dE Bh\u65f6",
+        "MEd Bhm": "M/dE Bh:mm",
+        "MEd Bhms": "M/dE Bh:mm:ss",
+        "MEd H": "M/dE H\u65f6",
+        "MEd HH:mm": "M/dE HH:mm",
+        "MEd HH:mm:ss": "M/dE HH:mm:ss",
+        "MEd Hm": "M/dE HH:mm",
+        "MEd Hms": "M/dE HH:mm:ss",
+        "MEd Hmsv": "M/dE v HH:mm:ss",
+        "MEd Hmv": "M/dE v HH:mm",
+        "MEd h": "M/dE ah\u65f6",
+        "MEd hm": "M/dE ah:mm",
+        "MEd hms": "M/dE ah:mm:ss",
+        "MEd hmsv": "M/dE v ah:mm:ss",
+        "MEd hmv": "M/dE v ah:mm",
+        "MEd ms": "M/dE mm:ss",
+        "MEd z HH:mm:ss": "M/dE z HH:mm:ss",
+        "MEd zzzz HH:mm:ss": "M/dE zzzz HH:mm:ss",
+        "MMM": "LLL",
+        "MMM Bh": "LLL Bh\u65f6",
+        "MMM Bhm": "LLL Bh:mm",
+        "MMM Bhms": "LLL Bh:mm:ss",
+        "MMM H": "LLL H\u65f6",
+        "MMM HH:mm": "LLL HH:mm",
+        "MMM HH:mm:ss": "LLL HH:mm:ss",
+        "MMM Hm": "LLL HH:mm",
+        "MMM Hms": "LLL HH:mm:ss",
+        "MMM Hmsv": "LLL v HH:mm:ss",
+        "MMM Hmv": "LLL v HH:mm",
+        "MMM h": "LLL ah\u65f6",
+        "MMM hm": "LLL ah:mm",
+        "MMM hms": "LLL ah:mm:ss",
+        "MMM hmsv": "LLL v ah:mm:ss",
+        "MMM hmv": "LLL v ah:mm",
+        "MMM ms": "LLL mm:ss",
+        "MMM z HH:mm:ss": "LLL z HH:mm:ss",
+        "MMM zzzz HH:mm:ss": "LLL zzzz HH:mm:ss",
+        "MMMEd": "M\u6708d\u65e5E",
+        "MMMEd Bh": "M\u6708d\u65e5E Bh\u65f6",
+        "MMMEd Bhm": "M\u6708d\u65e5E Bh:mm",
+        "MMMEd Bhms": "M\u6708d\u65e5E Bh:mm:ss",
+        "MMMEd H": "M\u6708d\u65e5E H\u65f6",
+        "MMMEd HH:mm": "M\u6708d\u65e5E HH:mm",
+        "MMMEd HH:mm:ss": "M\u6708d\u65e5E HH:mm:ss",
+        "MMMEd Hm": "M\u6708d\u65e5E HH:mm",
+        "MMMEd Hms": "M\u6708d\u65e5E HH:mm:ss",
+        "MMMEd Hmsv": "M\u6708d\u65e5E v HH:mm:ss",
+        "MMMEd Hmv": "M\u6708d\u65e5E v HH:mm",
+        "MMMEd h": "M\u6708d\u65e5E ah\u65f6",
+        "MMMEd hm": "M\u6708d\u65e5E ah:mm",
+        "MMMEd hms": "M\u6708d\u65e5E ah:mm:ss",
+        "MMMEd hmsv": "M\u6708d\u65e5E v ah:mm:ss",
+        "MMMEd hmv": "M\u6708d\u65e5E v ah:mm",
+        "MMMEd ms": "M\u6708d\u65e5E mm:ss",
+        "MMMEd z HH:mm:ss": "M\u6708d\u65e5E z HH:mm:ss",
+        "MMMEd zzzz HH:mm:ss": "M\u6708d\u65e5E zzzz HH:mm:ss",
+        "MMMMd": "M\u6708d\u65e5",
+        "MMMMd Bh": "M\u6708d\u65e5 Bh\u65f6",
+        "MMMMd Bhm": "M\u6708d\u65e5 Bh:mm",
+        "MMMMd Bhms": "M\u6708d\u65e5 Bh:mm:ss",
+        "MMMMd H": "M\u6708d\u65e5 H\u65f6",
+        "MMMMd HH:mm": "M\u6708d\u65e5 HH:mm",
+        "MMMMd HH:mm:ss": "M\u6708d\u65e5 HH:mm:ss",
+        "MMMMd Hm": "M\u6708d\u65e5 HH:mm",
+        "MMMMd Hms": "M\u6708d\u65e5 HH:mm:ss",
+        "MMMMd Hmsv": "M\u6708d\u65e5 v HH:mm:ss",
+        "MMMMd Hmv": "M\u6708d\u65e5 v HH:mm",
+        "MMMMd h": "M\u6708d\u65e5 ah\u65f6",
+        "MMMMd hm": "M\u6708d\u65e5 ah:mm",
+        "MMMMd hms": "M\u6708d\u65e5 ah:mm:ss",
+        "MMMMd hmsv": "M\u6708d\u65e5 v ah:mm:ss",
+        "MMMMd hmv": "M\u6708d\u65e5 v ah:mm",
+        "MMMMd ms": "M\u6708d\u65e5 mm:ss",
+        "MMMMd z HH:mm:ss": "M\u6708d\u65e5 z HH:mm:ss",
+        "MMMMd zzzz HH:mm:ss": "M\u6708d\u65e5 zzzz HH:mm:ss",
+        "MMMd": "M\u6708d\u65e5",
+        "MMMd Bh": "M\u6708d\u65e5 Bh\u65f6",
+        "MMMd Bhm": "M\u6708d\u65e5 Bh:mm",
+        "MMMd Bhms": "M\u6708d\u65e5 Bh:mm:ss",
+        "MMMd H": "M\u6708d\u65e5 H\u65f6",
+        "MMMd HH:mm": "M\u6708d\u65e5 HH:mm",
+        "MMMd HH:mm:ss": "M\u6708d\u65e5 HH:mm:ss",
+        "MMMd Hm": "M\u6708d\u65e5 HH:mm",
+        "MMMd Hms": "M\u6708d\u65e5 HH:mm:ss",
+        "MMMd Hmsv": "M\u6708d\u65e5 v HH:mm:ss",
+        "MMMd Hmv": "M\u6708d\u65e5 v HH:mm",
+        "MMMd h": "M\u6708d\u65e5 ah\u65f6",
+        "MMMd hm": "M\u6708d\u65e5 ah:mm",
+        "MMMd hms": "M\u6708d\u65e5 ah:mm:ss",
+        "MMMd hmsv": "M\u6708d\u65e5 v ah:mm:ss",
+        "MMMd hmv": "M\u6708d\u65e5 v ah:mm",
+        "MMMd ms": "M\u6708d\u65e5 mm:ss",
+        "MMMd z HH:mm:ss": "M\u6708d\u65e5 z HH:mm:ss",
+        "MMMd zzzz HH:mm:ss": "M\u6708d\u65e5 zzzz HH:mm:ss",
+        "MMdd": "MM/dd",
+        "MMdd Bh": "MM/dd Bh\u65f6",
+        "MMdd Bhm": "MM/dd Bh:mm",
+        "MMdd Bhms": "MM/dd Bh:mm:ss",
+        "MMdd H": "MM/dd H\u65f6",
+        "MMdd HH:mm": "MM/dd HH:mm",
+        "MMdd HH:mm:ss": "MM/dd HH:mm:ss",
+        "MMdd Hm": "MM/dd HH:mm",
+        "MMdd Hms": "MM/dd HH:mm:ss",
+        "MMdd Hmsv": "MM/dd v HH:mm:ss",
+        "MMdd Hmv": "MM/dd v HH:mm",
+        "MMdd h": "MM/dd ah\u65f6",
+        "MMdd hm": "MM/dd ah:mm",
+        "MMdd hms": "MM/dd ah:mm:ss",
+        "MMdd hmsv": "MM/dd v ah:mm:ss",
+        "MMdd hmv": "MM/dd v ah:mm",
+        "MMdd ms": "MM/dd mm:ss",
+        "MMdd z HH:mm:ss": "MM/dd z HH:mm:ss",
+        "MMdd zzzz HH:mm:ss": "MM/dd zzzz HH:mm:ss",
+        "Md": "M/d",
+        "Md Bh": "M/d Bh\u65f6",
+        "Md Bhm": "M/d Bh:mm",
+        "Md Bhms": "M/d Bh:mm:ss",
+        "Md H": "M/d H\u65f6",
+        "Md HH:mm": "M/d HH:mm",
+        "Md HH:mm:ss": "M/d HH:mm:ss",
+        "Md Hm": "M/d HH:mm",
+        "Md Hms": "M/d HH:mm:ss",
+        "Md Hmsv": "M/d v HH:mm:ss",
+        "Md Hmv": "M/d v HH:mm",
+        "Md h": "M/d ah\u65f6",
+        "Md hm": "M/d ah:mm",
+        "Md hms": "M/d ah:mm:ss",
+        "Md hmsv": "M/d v ah:mm:ss",
+        "Md hmv": "M/d v ah:mm",
+        "Md ms": "M/d mm:ss",
+        "Md z HH:mm:ss": "M/d z HH:mm:ss",
+        "Md zzzz HH:mm:ss": "M/d zzzz HH:mm:ss",
+        "d": "d\u65e5",
+        "d Bh": "d\u65e5 Bh\u65f6",
+        "d Bhm": "d\u65e5 Bh:mm",
+        "d Bhms": "d\u65e5 Bh:mm:ss",
+        "d H": "d\u65e5 H\u65f6",
+        "d HH:mm": "d\u65e5 HH:mm",
+        "d HH:mm:ss": "d\u65e5 HH:mm:ss",
+        "d Hm": "d\u65e5 HH:mm",
+        "d Hms": "d\u65e5 HH:mm:ss",
+        "d Hmsv": "d\u65e5 v HH:mm:ss",
+        "d Hmv": "d\u65e5 v HH:mm",
+        "d h": "d\u65e5 ah\u65f6",
+        "d hm": "d\u65e5 ah:mm",
+        "d hms": "d\u65e5 ah:mm:ss",
+        "d hmsv": "d\u65e5 v ah:mm:ss",
+        "d hmv": "d\u65e5 v ah:mm",
+        "d ms": "d\u65e5 mm:ss",
+        "d z HH:mm:ss": "d\u65e5 z HH:mm:ss",
+        "d zzzz HH:mm:ss": "d\u65e5 zzzz HH:mm:ss",
+        "h": "ah\u65f6",
+        "hm": "ah:mm",
+        "hms": "ah:mm:ss",
+        "hmsv": "v ah:mm:ss",
+        "hmv": "v ah:mm",
+        "ms": "mm:ss",
+        "y": "y\u5e74",
+        "y Bh": "y\u5e74 Bh\u65f6",
+        "y Bhm": "y\u5e74 Bh:mm",
+        "y Bhms": "y\u5e74 Bh:mm:ss",
+        "y H": "y\u5e74 H\u65f6",
+        "y HH:mm": "y\u5e74 HH:mm",
+        "y HH:mm:ss": "y\u5e74 HH:mm:ss",
+        "y Hm": "y\u5e74 HH:mm",
+        "y Hms": "y\u5e74 HH:mm:ss",
+        "y Hmsv": "y\u5e74 v HH:mm:ss",
+        "y Hmv": "y\u5e74 v HH:mm",
+        "y h": "y\u5e74 ah\u65f6",
+        "y hm": "y\u5e74 ah:mm",
+        "y hms": "y\u5e74 ah:mm:ss",
+        "y hmsv": "y\u5e74 v ah:mm:ss",
+        "y hmv": "y\u5e74 v ah:mm",
+        "y ms": "y\u5e74 mm:ss",
+        "y z HH:mm:ss": "y\u5e74 z HH:mm:ss",
+        "y zzzz HH:mm:ss": "y\u5e74 zzzz HH:mm:ss",
+        "y/M/d": "y/M/d",
+        "y/M/d Bh": "y/M/d Bh\u65f6",
+        "y/M/d Bhm": "y/M/d Bh:mm",
+        "y/M/d Bhms": "y/M/d Bh:mm:ss",
+        "y/M/d H": "y/M/d H\u65f6",
+        "y/M/d HH:mm": "y/M/d HH:mm",
+        "y/M/d HH:mm:ss": "y/M/d HH:mm:ss",
+        "y/M/d Hm": "y/M/d HH:mm",
+        "y/M/d Hms": "y/M/d HH:mm:ss",
+        "y/M/d Hmsv": "y/M/d v HH:mm:ss",
+        "y/M/d Hmv": "y/M/d v HH:mm",
+        "y/M/d h": "y/M/d ah\u65f6",
+        "y/M/d hm": "y/M/d ah:mm",
+        "y/M/d hms": "y/M/d ah:mm:ss",
+        "y/M/d hmsv": "y/M/d v ah:mm:ss",
+        "y/M/d hmv": "y/M/d v ah:mm",
+        "y/M/d ms": "y/M/d mm:ss",
+        "y/M/d z HH:mm:ss": "y/M/d z HH:mm:ss",
+        "y/M/d zzzz HH:mm:ss": "y/M/d zzzz HH:mm:ss",
+        "yM": "y/M",
+        "yM Bh": "y/M Bh\u65f6",
+        "yM Bhm": "y/M Bh:mm",
+        "yM Bhms": "y/M Bh:mm:ss",
+        "yM H": "y/M H\u65f6",
+        "yM HH:mm": "y/M HH:mm",
+        "yM HH:mm:ss": "y/M HH:mm:ss",
+        "yM Hm": "y/M HH:mm",
+        "yM Hms": "y/M HH:mm:ss",
+        "yM Hmsv": "y/M v HH:mm:ss",
+        "yM Hmv": "y/M v HH:mm",
+        "yM h": "y/M ah\u65f6",
+        "yM hm": "y/M ah:mm",
+        "yM hms": "y/M ah:mm:ss",
+        "yM hmsv": "y/M v ah:mm:ss",
+        "yM hmv": "y/M v ah:mm",
+        "yM ms": "y/M mm:ss",
+        "yM z HH:mm:ss": "y/M z HH:mm:ss",
+        "yM zzzz HH:mm:ss": "y/M zzzz HH:mm:ss",
+        "yMEEEEd": "y\u5e74M\u6708d\u65e5EEEE",
+        "yMEEEEd Bh": "y\u5e74M\u6708d\u65e5EEEE Bh\u65f6",
+        "yMEEEEd Bhm": "y\u5e74M\u6708d\u65e5EEEE Bh:mm",
+        "yMEEEEd Bhms": "y\u5e74M\u6708d\u65e5EEEE Bh:mm:ss",
+        "yMEEEEd H": "y\u5e74M\u6708d\u65e5EEEE H\u65f6",
+        "yMEEEEd HH:mm": "y\u5e74M\u6708d\u65e5EEEE HH:mm",
+        "yMEEEEd HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE HH:mm:ss",
+        "yMEEEEd Hm": "y\u5e74M\u6708d\u65e5EEEE HH:mm",
+        "yMEEEEd Hms": "y\u5e74M\u6708d\u65e5EEEE HH:mm:ss",
+        "yMEEEEd Hmsv": "y\u5e74M\u6708d\u65e5EEEE v HH:mm:ss",
+        "yMEEEEd Hmv": "y\u5e74M\u6708d\u65e5EEEE v HH:mm",
+        "yMEEEEd h": "y\u5e74M\u6708d\u65e5EEEE ah\u65f6",
+        "yMEEEEd hm": "y\u5e74M\u6708d\u65e5EEEE ah:mm",
+        "yMEEEEd hms": "y\u5e74M\u6708d\u65e5EEEE ah:mm:ss",
+        "yMEEEEd hmsv": "y\u5e74M\u6708d\u65e5EEEE v ah:mm:ss",
+        "yMEEEEd hmv": "y\u5e74M\u6708d\u65e5EEEE v ah:mm",
+        "yMEEEEd ms": "y\u5e74M\u6708d\u65e5EEEE mm:ss",
+        "yMEEEEd z HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE z HH:mm:ss",
+        "yMEEEEd zzzz HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE zzzz HH:mm:ss",
+        "yMEd": "y/M/dE",
+        "yMEd Bh": "y/M/dE Bh\u65f6",
+        "yMEd Bhm": "y/M/dE Bh:mm",
+        "yMEd Bhms": "y/M/dE Bh:mm:ss",
+        "yMEd H": "y/M/dE H\u65f6",
+        "yMEd HH:mm": "y/M/dE HH:mm",
+        "yMEd HH:mm:ss": "y/M/dE HH:mm:ss",
+        "yMEd Hm": "y/M/dE HH:mm",
+        "yMEd Hms": "y/M/dE HH:mm:ss",
+        "yMEd Hmsv": "y/M/dE v HH:mm:ss",
+        "yMEd Hmv": "y/M/dE v HH:mm",
+        "yMEd h": "y/M/dE ah\u65f6",
+        "yMEd hm": "y/M/dE ah:mm",
+        "yMEd hms": "y/M/dE ah:mm:ss",
+        "yMEd hmsv": "y/M/dE v ah:mm:ss",
+        "yMEd hmv": "y/M/dE v ah:mm",
+        "yMEd ms": "y/M/dE mm:ss",
+        "yMEd z HH:mm:ss": "y/M/dE z HH:mm:ss",
+        "yMEd zzzz HH:mm:ss": "y/M/dE zzzz HH:mm:ss",
+        "yMM": "y\u5e74M\u6708",
+        "yMM Bh": "y\u5e74M\u6708 Bh\u65f6",
+        "yMM Bhm": "y\u5e74M\u6708 Bh:mm",
+        "yMM Bhms": "y\u5e74M\u6708 Bh:mm:ss",
+        "yMM H": "y\u5e74M\u6708 H\u65f6",
+        "yMM HH:mm": "y\u5e74M\u6708 HH:mm",
+        "yMM HH:mm:ss": "y\u5e74M\u6708 HH:mm:ss",
+        "yMM Hm": "y\u5e74M\u6708 HH:mm",
+        "yMM Hms": "y\u5e74M\u6708 HH:mm:ss",
+        "yMM Hmsv": "y\u5e74M\u6708 v HH:mm:ss",
+        "yMM Hmv": "y\u5e74M\u6708 v HH:mm",
+        "yMM h": "y\u5e74M\u6708 ah\u65f6",
+        "yMM hm": "y\u5e74M\u6708 ah:mm",
+        "yMM hms": "y\u5e74M\u6708 ah:mm:ss",
+        "yMM hmsv": "y\u5e74M\u6708 v ah:mm:ss",
+        "yMM hmv": "y\u5e74M\u6708 v ah:mm",
+        "yMM ms": "y\u5e74M\u6708 mm:ss",
+        "yMM z HH:mm:ss": "y\u5e74M\u6708 z HH:mm:ss",
+        "yMM zzzz HH:mm:ss": "y\u5e74M\u6708 zzzz HH:mm:ss",
+        "yMMM": "y\u5e74M\u6708",
+        "yMMM Bh": "y\u5e74M\u6708 Bh\u65f6",
+        "yMMM Bhm": "y\u5e74M\u6708 Bh:mm",
+        "yMMM Bhms": "y\u5e74M\u6708 Bh:mm:ss",
+        "yMMM H": "y\u5e74M\u6708 H\u65f6",
+        "yMMM HH:mm": "y\u5e74M\u6708 HH:mm",
+        "yMMM HH:mm:ss": "y\u5e74M\u6708 HH:mm:ss",
+        "yMMM Hm": "y\u5e74M\u6708 HH:mm",
+        "yMMM Hms": "y\u5e74M\u6708 HH:mm:ss",
+        "yMMM Hmsv": "y\u5e74M\u6708 v HH:mm:ss",
+        "yMMM Hmv": "y\u5e74M\u6708 v HH:mm",
+        "yMMM h": "y\u5e74M\u6708 ah\u65f6",
+        "yMMM hm": "y\u5e74M\u6708 ah:mm",
+        "yMMM hms": "y\u5e74M\u6708 ah:mm:ss",
+        "yMMM hmsv": "y\u5e74M\u6708 v ah:mm:ss",
+        "yMMM hmv": "y\u5e74M\u6708 v ah:mm",
+        "yMMM ms": "y\u5e74M\u6708 mm:ss",
+        "yMMM z HH:mm:ss": "y\u5e74M\u6708 z HH:mm:ss",
+        "yMMM zzzz HH:mm:ss": "y\u5e74M\u6708 zzzz HH:mm:ss",
+        "yMMMEd": "y\u5e74M\u6708d\u65e5E",
+        "yMMMEd Bh": "y\u5e74M\u6708d\u65e5E Bh\u65f6",
+        "yMMMEd Bhm": "y\u5e74M\u6708d\u65e5E Bh:mm",
+        "yMMMEd Bhms": "y\u5e74M\u6708d\u65e5E Bh:mm:ss",
+        "yMMMEd H": "y\u5e74M\u6708d\u65e5E H\u65f6",
+        "yMMMEd HH:mm": "y\u5e74M\u6708d\u65e5E HH:mm",
+        "yMMMEd HH:mm:ss": "y\u5e74M\u6708d\u65e5E HH:mm:ss",
+        "yMMMEd Hm": "y\u5e74M\u6708d\u65e5E HH:mm",
+        "yMMMEd Hms": "y\u5e74M\u6708d\u65e5E HH:mm:ss",
+        "yMMMEd Hmsv": "y\u5e74M\u6708d\u65e5E v HH:mm:ss",
+        "yMMMEd Hmv": "y\u5e74M\u6708d\u65e5E v HH:mm",
+        "yMMMEd h": "y\u5e74M\u6708d\u65e5E ah\u65f6",
+        "yMMMEd hm": "y\u5e74M\u6708d\u65e5E ah:mm",
+        "yMMMEd hms": "y\u5e74M\u6708d\u65e5E ah:mm:ss",
+        "yMMMEd hmsv": "y\u5e74M\u6708d\u65e5E v ah:mm:ss",
+        "yMMMEd hmv": "y\u5e74M\u6708d\u65e5E v ah:mm",
+        "yMMMEd ms": "y\u5e74M\u6708d\u65e5E mm:ss",
+        "yMMMEd z HH:mm:ss": "y\u5e74M\u6708d\u65e5E z HH:mm:ss",
+        "yMMMEd zzzz HH:mm:ss": "y\u5e74M\u6708d\u65e5E zzzz HH:mm:ss",
+        "yMMMM": "y\u5e74M\u6708",
+        "yMMMM Bh": "y\u5e74M\u6708 Bh\u65f6",
+        "yMMMM Bhm": "y\u5e74M\u6708 Bh:mm",
+        "yMMMM Bhms": "y\u5e74M\u6708 Bh:mm:ss",
+        "yMMMM H": "y\u5e74M\u6708 H\u65f6",
+        "yMMMM HH:mm": "y\u5e74M\u6708 HH:mm",
+        "yMMMM HH:mm:ss": "y\u5e74M\u6708 HH:mm:ss",
+        "yMMMM Hm": "y\u5e74M\u6708 HH:mm",
+        "yMMMM Hms": "y\u5e74M\u6708 HH:mm:ss",
+        "yMMMM Hmsv": "y\u5e74M\u6708 v HH:mm:ss",
+        "yMMMM Hmv": "y\u5e74M\u6708 v HH:mm",
+        "yMMMM h": "y\u5e74M\u6708 ah\u65f6",
+        "yMMMM hm": "y\u5e74M\u6708 ah:mm",
+        "yMMMM hms": "y\u5e74M\u6708 ah:mm:ss",
+        "yMMMM hmsv": "y\u5e74M\u6708 v ah:mm:ss",
+        "yMMMM hmv": "y\u5e74M\u6708 v ah:mm",
+        "yMMMM ms": "y\u5e74M\u6708 mm:ss",
+        "yMMMM z HH:mm:ss": "y\u5e74M\u6708 z HH:mm:ss",
+        "yMMMM zzzz HH:mm:ss": "y\u5e74M\u6708 zzzz HH:mm:ss",
+        "yMMMd": "y\u5e74M\u6708d\u65e5",
+        "yMMMd Bh": "y\u5e74M\u6708d\u65e5 Bh\u65f6",
+        "yMMMd Bhm": "y\u5e74M\u6708d\u65e5 Bh:mm",
+        "yMMMd Bhms": "y\u5e74M\u6708d\u65e5 Bh:mm:ss",
+        "yMMMd H": "y\u5e74M\u6708d\u65e5 H\u65f6",
+        "yMMMd HH:mm": "y\u5e74M\u6708d\u65e5 HH:mm",
+        "yMMMd HH:mm:ss": "y\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "yMMMd Hm": "y\u5e74M\u6708d\u65e5 HH:mm",
+        "yMMMd Hms": "y\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "yMMMd Hmsv": "y\u5e74M\u6708d\u65e5 v HH:mm:ss",
+        "yMMMd Hmv": "y\u5e74M\u6708d\u65e5 v HH:mm",
+        "yMMMd h": "y\u5e74M\u6708d\u65e5 ah\u65f6",
+        "yMMMd hm": "y\u5e74M\u6708d\u65e5 ah:mm",
+        "yMMMd hms": "y\u5e74M\u6708d\u65e5 ah:mm:ss",
+        "yMMMd hmsv": "y\u5e74M\u6708d\u65e5 v ah:mm:ss",
+        "yMMMd hmv": "y\u5e74M\u6708d\u65e5 v ah:mm",
+        "yMMMd ms": "y\u5e74M\u6708d\u65e5 mm:ss",
+        "yMMMd z HH:mm:ss": "y\u5e74M\u6708d\u65e5 z HH:mm:ss",
+        "yMMMd zzzz HH:mm:ss": "y\u5e74M\u6708d\u65e5 zzzz HH:mm:ss",
+        "yMd": "y/M/d",
+        "yMd Bh": "y/M/d Bh\u65f6",
+        "yMd Bhm": "y/M/d Bh:mm",
+        "yMd Bhms": "y/M/d Bh:mm:ss",
+        "yMd H": "y/M/d H\u65f6",
+        "yMd HH:mm": "y/M/d HH:mm",
+        "yMd HH:mm:ss": "y/M/d HH:mm:ss",
+        "yMd Hm": "y/M/d HH:mm",
+        "yMd Hms": "y/M/d HH:mm:ss",
+        "yMd Hmsv": "y/M/d v HH:mm:ss",
+        "yMd Hmv": "y/M/d v HH:mm",
+        "yMd h": "y/M/d ah\u65f6",
+        "yMd hm": "y/M/d ah:mm",
+        "yMd hms": "y/M/d ah:mm:ss",
+        "yMd hmsv": "y/M/d v ah:mm:ss",
+        "yMd hmv": "y/M/d v ah:mm",
+        "yMd ms": "y/M/d mm:ss",
+        "yMd z HH:mm:ss": "y/M/d z HH:mm:ss",
+        "yMd zzzz HH:mm:ss": "y/M/d zzzz HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5": "y\u5e74M\u6708d\u65e5",
+        "y\u5e74M\u6708d\u65e5 Bh": "y\u5e74M\u6708d\u65e5 Bh\u65f6",
+        "y\u5e74M\u6708d\u65e5 Bhm": "y\u5e74M\u6708d\u65e5 Bh:mm",
+        "y\u5e74M\u6708d\u65e5 Bhms": "y\u5e74M\u6708d\u65e5 Bh:mm:ss",
+        "y\u5e74M\u6708d\u65e5 H": "y\u5e74M\u6708d\u65e5 H\u65f6",
+        "y\u5e74M\u6708d\u65e5 HH:mm": "y\u5e74M\u6708d\u65e5 HH:mm",
+        "y\u5e74M\u6708d\u65e5 HH:mm:ss": "y\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5 Hm": "y\u5e74M\u6708d\u65e5 HH:mm",
+        "y\u5e74M\u6708d\u65e5 Hms": "y\u5e74M\u6708d\u65e5 HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5 Hmsv": "y\u5e74M\u6708d\u65e5 v HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5 Hmv": "y\u5e74M\u6708d\u65e5 v HH:mm",
+        "y\u5e74M\u6708d\u65e5 h": "y\u5e74M\u6708d\u65e5 ah\u65f6",
+        "y\u5e74M\u6708d\u65e5 hm": "y\u5e74M\u6708d\u65e5 ah:mm",
+        "y\u5e74M\u6708d\u65e5 hms": "y\u5e74M\u6708d\u65e5 ah:mm:ss",
+        "y\u5e74M\u6708d\u65e5 hmsv": "y\u5e74M\u6708d\u65e5 v ah:mm:ss",
+        "y\u5e74M\u6708d\u65e5 hmv": "y\u5e74M\u6708d\u65e5 v ah:mm",
+        "y\u5e74M\u6708d\u65e5 ms": "y\u5e74M\u6708d\u65e5 mm:ss",
+        "y\u5e74M\u6708d\u65e5 z HH:mm:ss": "y\u5e74M\u6708d\u65e5 z HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5 zzzz HH:mm:ss": "y\u5e74M\u6708d\u65e5 zzzz HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE": "y\u5e74M\u6708d\u65e5EEEE",
+        "y\u5e74M\u6708d\u65e5EEEE Bh": "y\u5e74M\u6708d\u65e5EEEE Bh\u65f6",
+        "y\u5e74M\u6708d\u65e5EEEE Bhm": "y\u5e74M\u6708d\u65e5EEEE Bh:mm",
+        "y\u5e74M\u6708d\u65e5EEEE Bhms": "y\u5e74M\u6708d\u65e5EEEE Bh:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE H": "y\u5e74M\u6708d\u65e5EEEE H\u65f6",
+        "y\u5e74M\u6708d\u65e5EEEE HH:mm": "y\u5e74M\u6708d\u65e5EEEE HH:mm",
+        "y\u5e74M\u6708d\u65e5EEEE HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE Hm": "y\u5e74M\u6708d\u65e5EEEE HH:mm",
+        "y\u5e74M\u6708d\u65e5EEEE Hms": "y\u5e74M\u6708d\u65e5EEEE HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE Hmsv": "y\u5e74M\u6708d\u65e5EEEE v HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE Hmv": "y\u5e74M\u6708d\u65e5EEEE v HH:mm",
+        "y\u5e74M\u6708d\u65e5EEEE h": "y\u5e74M\u6708d\u65e5EEEE ah\u65f6",
+        "y\u5e74M\u6708d\u65e5EEEE hm": "y\u5e74M\u6708d\u65e5EEEE ah:mm",
+        "y\u5e74M\u6708d\u65e5EEEE hms": "y\u5e74M\u6708d\u65e5EEEE ah:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE hmsv": "y\u5e74M\u6708d\u65e5EEEE v ah:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE hmv": "y\u5e74M\u6708d\u65e5EEEE v ah:mm",
+        "y\u5e74M\u6708d\u65e5EEEE ms": "y\u5e74M\u6708d\u65e5EEEE mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE z HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE z HH:mm:ss",
+        "y\u5e74M\u6708d\u65e5EEEE zzzz HH:mm:ss": "y\u5e74M\u6708d\u65e5EEEE zzzz HH:mm:ss",
+        "z HH:mm:ss": "z HH:mm:ss",
+        "zzzz HH:mm:ss": "zzzz HH:mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23",
+      "",
+      "",
+      "h12"
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "Bh\u65f6\u81f3Bh\u65f6",
+        "h": "Bh\u65f6\u81f3h\u65f6"
+      },
+      "Bhm": {
+        "B": "Bh:mm\u81f3Bh:mm",
+        "h": "Bh:mm\u81f3h:mm",
+        "m": "Bh:mm\u81f3h:mm"
+      },
+      "Gy": {
+        "G": "Gy\u5e74 \u2013 Gy\u5e74",
+        "y": "Gy\u5e74\u2013y\u5e74"
+      },
+      "GyM": {
+        "G": "GGGGGy-MM \u2013 GGGGGy-MM",
+        "M": "GGGGGy-MM \u2013 y-MM",
+        "y": "GGGGGy-MM \u2013 y-MM"
+      },
+      "GyMEd": {
+        "G": "GGGGGy-MM-ddE \u2013 GGGGGy-MM-ddE",
+        "M": "GGGGGy-MM-ddE \u2013 y-MM-ddE",
+        "d": "GGGGGy-MM-ddE \u2013 y-MM-ddE",
+        "y": "GGGGGy-MM-ddE \u2013 y-MM-ddE"
+      },
+      "GyMMM": {
+        "G": "Gy\u5e74MMM \u2013 Gy\u5e74MMM",
+        "M": "Gy\u5e74MMM\u2013MMM",
+        "y": "Gy\u5e74MMM \u2013 y\u5e74MMM"
+      },
+      "GyMMMEd": {
+        "G": "Gy\u5e74MMMd\u65e5E \u2013 Gy\u5e74MMMd\u65e5E",
+        "M": "Gy\u5e74MMMd\u65e5E \u2013 MMMd\u65e5E",
+        "d": "Gy\u5e74MMMd\u65e5E \u2013 MMMd\u65e5E",
+        "y": "Gy\u5e74MMMd\u65e5E \u2013 y\u5e74MMMd\u65e5E"
+      },
+      "GyMMMd": {
+        "G": "Gy\u5e74MMMd\u65e5 \u2013 Gy\u5e74MMMd\u65e5",
+        "M": "Gy\u5e74MMMd\u65e5 \u2013 MMMd\u65e5",
+        "d": "Gy\u5e74MMMd\u2013d\u65e5",
+        "y": "Gy\u5e74MMMd\u65e5 \u2013 y\u5e74MMMd\u65e5"
+      },
+      "GyMd": {
+        "G": "GGGGGy-MM-dd \u2013 GGGGGy-MM-dd",
+        "M": "GGGGGy-MM-dd \u2013 y-MM-dd",
+        "d": "GGGGGy-MM-dd \u2013 y-MM-dd",
+        "y": "GGGGGy-MM-dd \u2013 y-MM-dd"
+      },
+      "H": {
+        "H": "HH\u2013HH"
+      },
+      "Hm": {
+        "H": "HH:mm\u2013HH:mm",
+        "m": "HH:mm\u2013HH:mm"
+      },
+      "Hmv": {
+        "H": "v HH:mm\u2013HH:mm",
+        "m": "v HH:mm\u2013HH:mm"
+      },
+      "Hv": {
+        "H": "v HH\u2013HH"
+      },
+      "M": {
+        "M": "M\u2013M\u6708"
+      },
+      "MEd": {
+        "M": "M/dE\u81f3M/dE",
+        "d": "M/dE\u81f3M/dE"
+      },
+      "MMM": {
+        "M": "MMM \u2013 MMM"
+      },
+      "MMMEd": {
+        "M": "M\u6708d\u65e5E\u81f3M\u6708d\u65e5E",
+        "d": "M\u6708d\u65e5E\u81f3d\u65e5E"
+      },
+      "MMMd": {
+        "M": "M\u6708d\u65e5\u81f3M\u6708d\u65e5",
+        "d": "M\u6708d\u65e5\u81f3d\u65e5"
+      },
+      "Md": {
+        "M": "M/d \u2013 M/d",
+        "d": "M/d \u2013 M/d"
+      },
+      "d": {
+        "d": "d\u2013d\u65e5"
+      },
+      "h": {
+        "a": "ah\u65f6\u81f3ah\u65f6",
+        "h": "ah\u65f6\u81f3h\u65f6"
+      },
+      "hm": {
+        "a": "ah:mm\u81f3ah:mm",
+        "h": "ah:mm\u81f3h:mm",
+        "m": "ah:mm\u81f3h:mm"
+      },
+      "hmv": {
+        "a": "vah:mm\u81f3ah:mm",
+        "h": "vah:mm\u81f3h:mm",
+        "m": "vah:mm\u81f3h:mm"
+      },
+      "hv": {
+        "a": "vah\u65f6\u81f3ah\u65f6",
+        "h": "vah\u65f6\u81f3h\u65f6"
+      },
+      "intervalFormatFallback": "{0} \u2013 {1}",
+      "y": {
+        "y": "y\u2013y\u5e74"
+      },
+      "yM": {
+        "M": "y\u5e74M\u6708\u81f3M\u6708",
+        "y": "y\u5e74M\u6708\u81f3y\u5e74M\u6708"
+      },
+      "yMEd": {
+        "M": "y/M/dE\u81f3y/M/dE",
+        "d": "y/M/dE\u81f3y/M/dE",
+        "y": "y/M/dE\u81f3y/M/dE"
+      },
+      "yMMM": {
+        "M": "y\u5e74M\u6708\u81f3M\u6708",
+        "y": "y\u5e74M\u6708\u81f3y\u5e74M\u6708"
+      },
+      "yMMMEd": {
+        "M": "y\u5e74M\u6708d\u65e5E\u81f3M\u6708d\u65e5E",
+        "d": "y\u5e74M\u6708d\u65e5E\u81f3d\u65e5E",
+        "y": "y\u5e74M\u6708d\u65e5E\u81f3y\u5e74M\u6708d\u65e5E"
+      },
+      "yMMMM": {
+        "M": "y\u5e74M\u6708\u81f3M\u6708",
+        "y": "y\u5e74M\u6708\u81f3y\u5e74M\u6708"
+      },
+      "yMMMd": {
+        "M": "y\u5e74M\u6708d\u65e5\u81f3M\u6708d\u65e5",
+        "d": "y\u5e74M\u6708d\u65e5\u81f3d\u65e5",
+        "y": "y\u5e74M\u6708d\u65e5\u81f3y\u5e74M\u6708d\u65e5"
+      },
+      "yMd": {
+        "M": "y/M/d \u2013 y/M/d",
+        "d": "y/M/d \u2013 y/M/d",
+        "y": "y/M/d \u2013 y/M/d"
+      }
+    },
+    "month": {
+      "long": [
+        "\u4e00\u6708",
+        "\u4e8c\u6708",
+        "\u4e09\u6708",
+        "\u56db\u6708",
+        "\u4e94\u6708",
+        "\u516d\u6708",
+        "\u4e03\u6708",
+        "\u516b\u6708",
+        "\u4e5d\u6708",
+        "\u5341\u6708",
+        "\u5341\u4e00\u6708",
+        "\u5341\u4e8c\u6708"
+      ],
+      "narrow": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "short": [
+        "1\u6708",
+        "2\u6708",
+        "3\u6708",
+        "4\u6708",
+        "5\u6708",
+        "6\u6708",
+        "7\u6708",
+        "8\u6708",
+        "9\u6708",
+        "10\u6708",
+        "11\u6708",
+        "12\u6708"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "\u4e0b\u5348",
+    "timeFormat": {
+      "full": "zzzz HH:mm:ss",
+      "long": "z HH:mm:ss",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4",
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e2d\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4",
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4",
+          "\u5357\u975e\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "\u897f\u90e8\u975e\u6d32\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u90e8\u975e\u6d32\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "\u963f\u6839\u5ef7\u897f\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u6839\u5ef7\u897f\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "\u5df4\u62c9\u572d\u6807\u51c6\u65f6\u95f4",
+          "\u5df4\u62c9\u572d\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "\u54e5\u4f26\u6bd4\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u54e5\u4f26\u6bd4\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "\u963f\u6839\u5ef7\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u6839\u5ef7\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "\u59d4\u5185\u745e\u62c9\u65f6\u95f4",
+          "\u59d4\u5185\u745e\u62c9\u65f6\u95f4"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "\u6cd5\u5c5e\u572d\u4e9a\u90a3\u6807\u51c6\u65f6\u95f4",
+          "\u6cd5\u5c5e\u572d\u4e9a\u90a3\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "\u5317\u7f8e\u5c71\u533a\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u5c71\u533a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "\u5317\u7f8e\u5c71\u533a\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u5c71\u533a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "\u683c\u9675\u5170\u5c9b\u897f\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u9675\u5170\u5c9b\u897f\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "\u5384\u74dc\u591a\u5c14\u6807\u51c6\u65f6\u95f4",
+          "\u5384\u74dc\u591a\u5c14\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "\u572d\u4e9a\u90a3\u65f6\u95f4",
+          "\u572d\u4e9a\u90a3\u65f6\u95f4"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "\u53e4\u5df4\u6807\u51c6\u65f6\u95f4",
+          "\u53e4\u5df4\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "\u963f\u62c9\u65af\u52a0\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u65af\u52a0\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "\u73bb\u5229\u7ef4\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u73bb\u5229\u7ef4\u4e9a\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "\u79d8\u9c81\u6807\u51c6\u65f6\u95f4",
+          "\u79d8\u9c81\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "\u4e9a\u9a6c\u900a\u6807\u51c6\u65f6\u95f4",
+          "\u4e9a\u9a6c\u900a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "\u58a8\u897f\u54e5\u592a\u5e73\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u58a8\u897f\u54e5\u592a\u5e73\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "\u5723\u76ae\u57c3\u5c14\u548c\u5bc6\u514b\u9686\u7fa4\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u5723\u76ae\u57c3\u5c14\u548c\u5bc6\u514b\u9686\u7fa4\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "\u4e4c\u62c9\u572d\u6807\u51c6\u65f6\u95f4",
+          "\u4e4c\u62c9\u572d\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "\u8d39\u5c14\u5357\u591a-\u8fea\u8bfa\u7f57\u5c3c\u4e9a\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u8d39\u5c14\u5357\u591a-\u8fea\u8bfa\u7f57\u5c3c\u4e9a\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "\u82cf\u91cc\u5357\u65f6\u95f4",
+          "\u82cf\u91cc\u5357\u65f6\u95f4"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Rio_Branco": {
+        "long": [
+          "\u963f\u514b\u91cc\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u514b\u91cc\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "\u667a\u5229\u6807\u51c6\u65f6\u95f4",
+          "\u667a\u5229\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "\u5df4\u897f\u5229\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u5df4\u897f\u5229\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "\u683c\u9675\u5170\u5c9b\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u9675\u5170\u5c9b\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "\u7ebd\u82ac\u5170\u6807\u51c6\u65f6\u95f4",
+          "\u7ebd\u82ac\u5170\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "\u5317\u7f8e\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u592a\u5e73\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "\u80b2\u7a7a\u65f6\u95f4",
+          "\u80b2\u7a7a\u65f6\u95f4"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "\u5317\u7f8e\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u5317\u7f8e\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Casey": {
+        "long": [
+          "\u51ef\u897f\u65f6\u95f4",
+          "\u51ef\u897f\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "\u6234\u7ef4\u65af\u65f6\u95f4",
+          "\u6234\u7ef4\u65af\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "\u8fea\u8499\u00b7\u8fea\u7ef4\u5c14\u65f6\u95f4",
+          "\u8fea\u8499\u00b7\u8fea\u7ef4\u5c14\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "\u83ab\u68ee\u65f6\u95f4",
+          "\u83ab\u68ee\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "\u65b0\u897f\u5170\u6807\u51c6\u65f6\u95f4",
+          "\u65b0\u897f\u5170\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "\u7f57\u745f\u62c9\u65f6\u95f4",
+          "\u7f57\u745f\u62c9\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "\u662d\u548c\u65f6\u95f4",
+          "\u662d\u548c\u65f6\u95f4"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "\u6c83\u65af\u6258\u514b\u65f6\u95f4",
+          "\u6c83\u65af\u6258\u514b\u65f6\u95f4"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "\u54c8\u8428\u514b\u65af\u5766\u4e1c\u90e8\u65f6\u95f4",
+          "\u54c8\u8428\u514b\u65af\u5766\u4e1c\u90e8\u65f6\u95f4"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "\u963f\u7eb3\u5fb7\u5c14\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u7eb3\u5fb7\u5c14\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "\u54c8\u8428\u514b\u65af\u5766\u897f\u90e8\u65f6\u95f4",
+          "\u54c8\u8428\u514b\u65af\u5766\u897f\u90e8\u65f6\u95f4"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "\u571f\u5e93\u66fc\u65af\u5766\u6807\u51c6\u65f6\u95f4",
+          "\u571f\u5e93\u66fc\u65af\u5766\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4",
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "\u5409\u5c14\u5409\u65af\u65af\u5766\u65f6\u95f4",
+          "\u5409\u5c14\u5409\u65af\u65af\u5766\u65f6\u95f4"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "\u6587\u83b1\u8fbe\u9c81\u8428\u5170\u65f6\u95f4",
+          "\u6587\u83b1\u8fbe\u9c81\u8428\u5170\u65f6\u95f4"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "\u5370\u5ea6\u65f6\u95f4",
+          "\u5370\u5ea6\u65f6\u95f4"
+        ]
+      },
+      "Asia/Colombo": {
+        "long": [
+          "\u5170\u5361\u65f6\u95f4",
+          "\u5170\u5361\u65f6\u95f4"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "\u4e1c\u5e1d\u6c76\u65f6\u95f4",
+          "\u4e1c\u5e1d\u6c76\u65f6\u95f4"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "\u6d77\u6e7e\u6807\u51c6\u65f6\u95f4",
+          "\u6d77\u6e7e\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "\u5854\u5409\u514b\u65af\u5766\u65f6\u95f4",
+          "\u5854\u5409\u514b\u65af\u5766\u65f6\u95f4"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "\u9999\u6e2f\u6807\u51c6\u65f6\u95f4",
+          "\u9999\u6e2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "\u79d1\u5e03\u591a\u6807\u51c6\u65f6\u95f4",
+          "\u79d1\u5e03\u591a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "\u4f0a\u5c14\u5e93\u8328\u514b\u6807\u51c6\u65f6\u95f4",
+          "\u4f0a\u5c14\u5e93\u8328\u514b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u897f\u90e8\u65f6\u95f4",
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u897f\u90e8\u65f6\u95f4"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u4e1c\u90e8\u65f6\u95f4",
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u4e1c\u90e8\u65f6\u95f4"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "\u4ee5\u8272\u5217\u6807\u51c6\u65f6\u95f4",
+          "\u4ee5\u8272\u5217\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "\u963f\u5bcc\u6c57\u65f6\u95f4",
+          "\u963f\u5bcc\u6c57\u65f6\u95f4"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "\u5f7c\u5f97\u7f57\u5df4\u752b\u6d1b\u592b\u65af\u514b-\u582a\u5bdf\u52a0\u6807\u51c6\u65f6\u95f4",
+          "\u5f7c\u5f97\u7f57\u5df4\u752b\u6d1b\u592b\u65af\u514b-\u582a\u5bdf\u52a0\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "\u5df4\u57fa\u65af\u5766\u6807\u51c6\u65f6\u95f4",
+          "\u5df4\u57fa\u65af\u5766\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "\u5c3c\u6cca\u5c14\u65f6\u95f4",
+          "\u5c3c\u6cca\u5c14\u65f6\u95f4"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "\u514b\u62c9\u65af\u8bfa\u4e9a\u5c14\u65af\u514b\u6807\u51c6\u65f6\u95f4",
+          "\u514b\u62c9\u65af\u8bfa\u4e9a\u5c14\u65af\u514b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "\u9a6c\u6765\u897f\u4e9a\u65f6\u95f4",
+          "\u9a6c\u6765\u897f\u4e9a\u65f6\u95f4"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Macau": {
+        "long": [
+          "\u6fb3\u95e8\u6807\u51c6\u65f6\u95f4",
+          "\u6fb3\u95e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "\u9a6c\u52a0\u4e39\u6807\u51c6\u65f6\u95f4",
+          "\u9a6c\u52a0\u4e39\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u4e2d\u90e8\u65f6\u95f4",
+          "\u5370\u5ea6\u5c3c\u897f\u4e9a\u4e2d\u90e8\u65f6\u95f4"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "\u83f2\u5f8b\u5bbe\u6807\u51c6\u65f6\u95f4",
+          "\u83f2\u5f8b\u5bbe\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "\u6d77\u6e7e\u6807\u51c6\u65f6\u95f4",
+          "\u6d77\u6e7e\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "\u65b0\u897f\u4f2f\u5229\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u65b0\u897f\u4f2f\u5229\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "\u9102\u6728\u65af\u514b\u6807\u51c6\u65f6\u95f4",
+          "\u9102\u6728\u65af\u514b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4",
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "\u5e73\u58e4\u65f6\u95f4",
+          "\u5e73\u58e4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Qyzylorda": {
+        "long": [
+          "\u514b\u5b5c\u6d1b\u5c14\u8fbe\u6807\u51c6\u65f6\u95f4",
+          "\u514b\u5b5c\u6d1b\u5c14\u8fbe\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "\u7f05\u7538\u65f6\u95f4",
+          "\u7f05\u7538\u65f6\u95f4"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "\u963f\u62c9\u4f2f\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u62c9\u4f2f\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "\u5e93\u9875\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u5e93\u9875\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "\u97e9\u56fd\u6807\u51c6\u65f6\u95f4",
+          "\u97e9\u56fd\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "\u4e2d\u56fd\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u56fd\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "\u65b0\u52a0\u5761\u6807\u51c6\u65f6\u95f4",
+          "\u65b0\u52a0\u5761\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "\u53f0\u5317\u6807\u51c6\u65f6\u95f4",
+          "\u53f0\u5317\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "\u4e4c\u5179\u522b\u514b\u65af\u5766\u6807\u51c6\u65f6\u95f4",
+          "\u4e4c\u5179\u522b\u514b\u65af\u5766\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "\u4f0a\u6717\u6807\u51c6\u65f6\u95f4",
+          "\u4f0a\u6717\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "\u4e0d\u4e39\u65f6\u95f4",
+          "\u4e0d\u4e39\u65f6\u95f4"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "\u65e5\u672c\u6807\u51c6\u65f6\u95f4",
+          "\u65e5\u672c\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "\u4e4c\u5170\u5df4\u6258\u6807\u51c6\u65f6\u95f4",
+          "\u4e4c\u5170\u5df4\u6258\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4",
+          "\u4e2d\u5357\u534a\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "\u6d77\u53c2\u5d34\u6807\u51c6\u65f6\u95f4",
+          "\u6d77\u53c2\u5d34\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "\u96c5\u5e93\u8328\u514b\u6807\u51c6\u65f6\u95f4",
+          "\u96c5\u5e93\u8328\u514b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "\u53f6\u5361\u6377\u7433\u5821\u6807\u51c6\u65f6\u95f4",
+          "\u53f6\u5361\u6377\u7433\u5821\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "\u4e9a\u901f\u5c14\u7fa4\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u4e9a\u901f\u5c14\u7fa4\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "\u5927\u897f\u6d0b\u6807\u51c6\u65f6\u95f4",
+          "\u5927\u897f\u6d0b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "\u897f\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "\u4f5b\u5f97\u89d2\u6807\u51c6\u65f6\u95f4",
+          "\u4f5b\u5f97\u89d2\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "\u897f\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u897f\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "\u5357\u4e54\u6cbb\u4e9a\u5c9b\u65f6\u95f4",
+          "\u5357\u4e54\u6cbb\u4e9a\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "\u798f\u514b\u5170\u7fa4\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u798f\u514b\u5170\u7fa4\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "\u6fb3\u5927\u5229\u4e9a\u4e2d\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u6fb3\u5927\u5229\u4e9a\u4e2d\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "\u6fb3\u5927\u5229\u4e9a\u4e2d\u897f\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u6fb3\u5927\u5229\u4e9a\u4e2d\u897f\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "\u8c6a\u52cb\u7235\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u8c6a\u52cb\u7235\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "\u6fb3\u5927\u5229\u4e9a\u897f\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u6fb3\u5927\u5229\u4e9a\u897f\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "\u6fb3\u5927\u5229\u4e9a\u4e1c\u90e8\u6807\u51c6\u65f6\u95f4",
+          "\u6fb3\u5927\u5229\u4e9a\u4e1c\u90e8\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "\u6b27\u6d32\u6781\u4e1c\u65f6\u95f4",
+          "\u6b27\u6d32\u6781\u4e1c\u65f6\u95f4"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4",
+          "\u683c\u6797\u5c3c\u6cbb\u6807\u51c6\u65f6\u95f4"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "\u6b27\u6d32\u6781\u4e1c\u65f6\u95f4",
+          "\u6b27\u6d32\u6781\u4e1c\u65f6\u95f4"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "\u83ab\u65af\u79d1\u6807\u51c6\u65f6\u95f4",
+          "\u83ab\u65af\u79d1\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "\u8428\u9a6c\u62c9\u6807\u51c6\u65f6\u95f4",
+          "\u8428\u9a6c\u62c9\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "\u4e1c\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e1c\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "\u4f0f\u5c14\u52a0\u683c\u52d2\u6807\u51c6\u65f6\u95f4",
+          "\u4f0f\u5c14\u52a0\u683c\u52d2\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "\u4e2d\u6b27\u6807\u51c6\u65f6\u95f4",
+          "\u4e2d\u6b27\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "\u5370\u5ea6\u6d0b\u65f6\u95f4",
+          "\u5370\u5ea6\u6d0b\u65f6\u95f4"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "\u5723\u8bde\u5c9b\u65f6\u95f4",
+          "\u5723\u8bde\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "\u79d1\u79d1\u65af\u7fa4\u5c9b\u65f6\u95f4",
+          "\u79d1\u79d1\u65af\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "\u6cd5\u5c5e\u5357\u65b9\u548c\u5357\u6781\u9886\u5730\u65f6\u95f4",
+          "\u6cd5\u5c5e\u5357\u65b9\u548c\u5357\u6781\u9886\u5730\u65f6\u95f4"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "\u585e\u820c\u5c14\u65f6\u95f4",
+          "\u585e\u820c\u5c14\u65f6\u95f4"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "\u9a6c\u5c14\u4ee3\u592b\u65f6\u95f4",
+          "\u9a6c\u5c14\u4ee3\u592b\u65f6\u95f4"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "\u6bdb\u91cc\u6c42\u65af\u6807\u51c6\u65f6\u95f4",
+          "\u6bdb\u91cc\u6c42\u65af\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4",
+          "\u4e1c\u90e8\u975e\u6d32\u65f6\u95f4"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "\u7559\u5c3c\u6c6a\u65f6\u95f4",
+          "\u7559\u5c3c\u6c6a\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "\u963f\u76ae\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u963f\u76ae\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "\u65b0\u897f\u5170\u6807\u51c6\u65f6\u95f4",
+          "\u65b0\u897f\u5170\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "\u67e5\u5854\u59c6\u6807\u51c6\u65f6\u95f4",
+          "\u67e5\u5854\u59c6\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "\u590d\u6d3b\u8282\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u590d\u6d3b\u8282\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "\u74e6\u52aa\u963f\u56fe\u6807\u51c6\u65f6\u95f4",
+          "\u74e6\u52aa\u963f\u56fe\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "\u83f2\u5c3c\u514b\u65af\u7fa4\u5c9b\u65f6\u95f4",
+          "\u83f2\u5c3c\u514b\u65af\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "\u6258\u514b\u52b3\u65f6\u95f4",
+          "\u6258\u514b\u52b3\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "\u6590\u6d4e\u6807\u51c6\u65f6\u95f4",
+          "\u6590\u6d4e\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "\u56fe\u74e6\u5362\u65f6\u95f4",
+          "\u56fe\u74e6\u5362\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "\u79d1\u9686\u7fa4\u5c9b\u65f6\u95f4",
+          "\u79d1\u9686\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "\u7518\u6bd4\u5c14\u65f6\u95f4",
+          "\u7518\u6bd4\u5c14\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "\u6240\u7f57\u95e8\u7fa4\u5c9b\u65f6\u95f4",
+          "\u6240\u7f57\u95e8\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Guam": {
+        "long": [
+          "\u5173\u5c9b\u65f6\u95f4",
+          "\u5173\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "\u590f\u5a01\u5937-\u963f\u7559\u7533\u6807\u51c6\u65f6\u95f4",
+          "\u590f\u5a01\u5937-\u963f\u7559\u7533\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "\u83b1\u6069\u7fa4\u5c9b\u65f6\u95f4",
+          "\u83b1\u6069\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "\u79d1\u65af\u96f7\u65f6\u95f4",
+          "\u79d1\u65af\u96f7\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "\u9a6c\u7ecd\u5c14\u7fa4\u5c9b\u65f6\u95f4",
+          "\u9a6c\u7ecd\u5c14\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "\u9a6c\u514b\u8428\u65af\u7fa4\u5c9b\u65f6\u95f4",
+          "\u9a6c\u514b\u8428\u65af\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "\u7459\u9c81\u65f6\u95f4",
+          "\u7459\u9c81\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "\u7ebd\u57c3\u65f6\u95f4",
+          "\u7ebd\u57c3\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "\u8bfa\u798f\u514b\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u8bfa\u798f\u514b\u5c9b\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "\u65b0\u5580\u91cc\u591a\u5c3c\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u65b0\u5580\u91cc\u591a\u5c3c\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "\u8428\u6469\u4e9a\u6807\u51c6\u65f6\u95f4",
+          "\u8428\u6469\u4e9a\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "\u5e15\u52b3\u65f6\u95f4",
+          "\u5e15\u52b3\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "\u76ae\u7279\u51ef\u6069\u65f6\u95f4",
+          "\u76ae\u7279\u51ef\u6069\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "\u6ce2\u7eb3\u4f69\u65f6\u95f4",
+          "\u6ce2\u7eb3\u4f69\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "\u5df4\u5e03\u4e9a\u65b0\u51e0\u5185\u4e9a\u65f6\u95f4",
+          "\u5df4\u5e03\u4e9a\u65b0\u51e0\u5185\u4e9a\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "\u5e93\u514b\u7fa4\u5c9b\u6807\u51c6\u65f6\u95f4",
+          "\u5e93\u514b\u7fa4\u5c9b\u4ef2\u590f\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Saipan": {
+        "long": [
+          "\u5317\u9a6c\u91cc\u4e9a\u7eb3\u7fa4\u5c9b\u65f6\u95f4",
+          "\u5317\u9a6c\u91cc\u4e9a\u7eb3\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "\u5854\u5e0c\u63d0\u5c9b\u65f6\u95f4",
+          "\u5854\u5e0c\u63d0\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "\u5409\u5c14\u4f2f\u7279\u7fa4\u5c9b\u65f6\u95f4",
+          "\u5409\u5c14\u4f2f\u7279\u7fa4\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "\u6c64\u52a0\u6807\u51c6\u65f6\u95f4",
+          "\u6c64\u52a0\u590f\u4ee4\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "\u695a\u514b\u65f6\u95f4",
+          "\u695a\u514b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "\u5a01\u514b\u5c9b\u65f6\u95f4",
+          "\u5a01\u514b\u5c9b\u65f6\u95f4"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "\u74e6\u5229\u65af\u548c\u5bcc\u56fe\u7eb3\u65f6\u95f4",
+          "\u74e6\u5229\u65af\u548c\u5bcc\u56fe\u7eb3\u65f6\u95f4"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "\u534f\u8c03\u4e16\u754c\u65f6",
+          "\u534f\u8c03\u4e16\u754c\u65f6"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "\u661f\u671f\u65e5",
+        "\u661f\u671f\u4e00",
+        "\u661f\u671f\u4e8c",
+        "\u661f\u671f\u4e09",
+        "\u661f\u671f\u56db",
+        "\u661f\u671f\u4e94",
+        "\u661f\u671f\u516d"
+      ],
+      "narrow": [
+        "\u65e5",
+        "\u4e00",
+        "\u4e8c",
+        "\u4e09",
+        "\u56db",
+        "\u4e94",
+        "\u516d"
+      ],
+      "short": [
+        "\u5468\u65e5",
+        "\u5468\u4e00",
+        "\u5468\u4e8c",
+        "\u5468\u4e09",
+        "\u5468\u56db",
+        "\u5468\u4e94",
+        "\u5468\u516d"
+      ]
+    }
+  },
+  "locale": "zh-Hans"
+}

@@ -1,0 +1,35 @@
+2025-07-22 11:20:43.815 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration webrtc which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-22 11:20:43.819 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-22 11:20:43.823 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration eufy_security which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-22 11:20:43.827 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-22 11:20:45.136 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-07-22 11:20:45.215 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=24 from 2024-11-20 22:20:11.200413)
+2025-07-22 11:20:50.506 ERROR (MainThread) [homeassistant.setup] Error during setup of component eufy
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/setup.py", line 416, in _async_setup_component
+    result = await task
+             ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/eufy/__init__.py", line 62, in setup
+    data = lakeside.get_devices(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/lakeside/__init__.py", line 39, in get_devices
+    token = r.json()['access_token']
+            ~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'access_token'
+2025-07-22 11:20:52.704 ERROR (MainThread) [yalexs.authenticator_async] Token has expired.
+2025-07-22 11:20:52.904 WARNING (ImportExecutor_0) [custom_components.ble_monitor.bt_helpers] There are no BT controllers present in the system!
+2025-07-22 11:20:53.028 WARNING (MainThread) [homeassistant.config_entries] Config entry 'kegsofduff@gmail.com' for august integration could not authenticate: InvalidAuth
+2025-07-22 11:20:59.874 WARNING (MainThread) [homeassistant.config_entries] Config entry 'kegsofduff@gmail.com' for tuya integration could not authenticate: Authentication failed. Please re-authenticate
+2025-07-22 11:20:59.899 WARNING (MainThread) [homeassistant.config_entries] Config entry 'kegsofduff@gmail.com' for tuya integration could not authenticate: Authentication failed. Please re-authenticate
+2025-07-22 11:21:02.058 WARNING (ImportExecutor_0) [homeassistant.helpers.typing] HomeAssistantType was used from webrtc, this is a deprecated alias which will be removed in HA Core 2025.5. Use homeassistant.core.HomeAssistant instead, please report it to the author of the 'webrtc' custom integration
+2025-07-22 11:21:02.084 WARNING (ImportExecutor_0) [homeassistant.helpers.typing] ServiceCallType was used from webrtc, this is a deprecated alias which will be removed in HA Core 2025.5. Use homeassistant.core.ServiceCall instead, please report it to the author of the 'webrtc' custom integration
+2025-07-22 11:21:02.361 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' calls hass.http.register_static_path which is deprecated because it does blocking I/O in the event loop, instead call `await hass.http.async_register_static_paths([StaticPathConfig("/webrtc/video-rtc.js", "/config/custom_components/webrtc/www/video-rtc.js", True)])`; This function will be removed in 2025.7 at custom_components/webrtc/__init__.py, line 67: hass.http.register_static_path("/webrtc/" + name, str(path / name)), please create a bug report at https://github.com/AlexxIT/WebRTC/issues
+2025-07-22 11:21:02.412 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'webrtc' calls hass.http.register_static_path which is deprecated because it does blocking I/O in the event loop, instead call `await hass.http.async_register_static_paths([StaticPathConfig("/webrtc/embed", "/config/custom_components/webrtc/www/embed.html", True)])`; This function will be removed in 2025.7 at custom_components/webrtc/__init__.py, line 74: hass.http.register_static_path("/webrtc/embed", str(path / "embed.html")), please create a bug report at https://github.com/AlexxIT/WebRTC/issues
+2025-07-28 17:55:56.340 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /info request
+2025-07-28 17:55:56.342 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /supervisor/info request
+2025-07-28 17:55:56.345 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /os/info request
+2025-07-28 17:55:56.347 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /core/info request
+2025-07-28 17:55:56.349 ERROR (MainThread) [homeassistant.components.hassio.coordinator] Error fetching hassio data: Error on Supervisor API: 

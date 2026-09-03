@@ -1,0 +1,404 @@
+{
+  "data": {
+    "day": {
+      "-1": "vakar",
+      "-2": "u\u017evakar",
+      "0": "\u0161iandien",
+      "1": "rytoj",
+      "2": "poryt",
+      "future": {
+        "few": "po {0} dien\u0173",
+        "many": "po {0} dienos",
+        "one": "po {0} dienos",
+        "other": "po {0} dien\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} dienas",
+        "many": "prie\u0161 {0} dienos",
+        "one": "prie\u0161 {0} dien\u0105",
+        "other": "prie\u0161 {0} dien\u0173"
+      }
+    },
+    "day-narrow": {
+      "-1": "vakar",
+      "-2": "u\u017evakar",
+      "0": "\u0161iandien",
+      "1": "rytoj",
+      "2": "poryt",
+      "future": {
+        "few": "po {0} d.",
+        "many": "po {0} d.",
+        "one": "po {0} d.",
+        "other": "po {0} d."
+      },
+      "past": {
+        "few": "prie\u0161 {0} d.",
+        "many": "prie\u0161 {0} d.",
+        "one": "prie\u0161 {0} d.",
+        "other": "prie\u0161 {0} d."
+      }
+    },
+    "day-short": {
+      "-1": "vakar",
+      "-2": "u\u017evakar",
+      "0": "\u0161iandien",
+      "1": "rytoj",
+      "2": "poryt",
+      "future": {
+        "few": "po {0} d.",
+        "many": "po {0} d.",
+        "one": "po {0} d.",
+        "other": "po {0} d."
+      },
+      "past": {
+        "few": "prie\u0161 {0} d.",
+        "many": "prie\u0161 {0} d.",
+        "one": "prie\u0161 {0} d.",
+        "other": "prie\u0161 {0} d."
+      }
+    },
+    "hour": {
+      "0": "\u0161i\u0105 valand\u0105",
+      "future": {
+        "few": "po {0} valand\u0173",
+        "many": "po {0} valandos",
+        "one": "po {0} valandos",
+        "other": "po {0} valand\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} valandas",
+        "many": "prie\u0161 {0} valandos",
+        "one": "prie\u0161 {0} valand\u0105",
+        "other": "prie\u0161 {0} valand\u0173"
+      }
+    },
+    "hour-narrow": {
+      "0": "\u0161i\u0105 valand\u0105",
+      "future": {
+        "few": "po {0} val.",
+        "many": "po {0} val.",
+        "one": "po {0} val.",
+        "other": "po {0} val."
+      },
+      "past": {
+        "few": "prie\u0161 {0} val.",
+        "many": "prie\u0161 {0} val.",
+        "one": "prie\u0161 {0} val.",
+        "other": "prie\u0161 {0} val."
+      }
+    },
+    "hour-short": {
+      "0": "\u0161i\u0105 valand\u0105",
+      "future": {
+        "few": "po {0} val.",
+        "many": "po {0} val.",
+        "one": "po {0} val.",
+        "other": "po {0} val."
+      },
+      "past": {
+        "few": "prie\u0161 {0} val.",
+        "many": "prie\u0161 {0} val.",
+        "one": "prie\u0161 {0} val.",
+        "other": "prie\u0161 {0} val."
+      }
+    },
+    "minute": {
+      "0": "\u0161i\u0105 minut\u0119",
+      "future": {
+        "few": "po {0} minu\u010di\u0173",
+        "many": "po {0} minut\u0117s",
+        "one": "po {0} minut\u0117s",
+        "other": "po {0} minu\u010di\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} minutes",
+        "many": "prie\u0161 {0} minut\u0117s",
+        "one": "prie\u0161 {0} minut\u0119",
+        "other": "prie\u0161 {0} minu\u010di\u0173"
+      }
+    },
+    "minute-narrow": {
+      "0": "\u0161i\u0105 minut\u0119",
+      "future": {
+        "few": "po {0} min.",
+        "many": "po {0} min.",
+        "one": "po {0} min.",
+        "other": "po {0} min."
+      },
+      "past": {
+        "few": "prie\u0161 {0} min.",
+        "many": "prie\u0161 {0} min.",
+        "one": "prie\u0161 {0} min.",
+        "other": "prie\u0161 {0} min."
+      }
+    },
+    "minute-short": {
+      "0": "\u0161i\u0105 minut\u0119",
+      "future": {
+        "few": "po {0} min.",
+        "many": "po {0} min.",
+        "one": "po {0} min.",
+        "other": "po {0} min."
+      },
+      "past": {
+        "few": "prie\u0161 {0} min.",
+        "many": "prie\u0161 {0} min.",
+        "one": "prie\u0161 {0} min.",
+        "other": "prie\u0161 {0} min."
+      }
+    },
+    "month": {
+      "-1": "pra\u0117jus\u012f m\u0117nes\u012f",
+      "0": "\u0161\u012f m\u0117nes\u012f",
+      "1": "kit\u0105 m\u0117nes\u012f",
+      "future": {
+        "few": "po {0} m\u0117nesi\u0173",
+        "many": "po {0} m\u0117nesio",
+        "one": "po {0} m\u0117nesio",
+        "other": "po {0} m\u0117nesi\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} m\u0117nesius",
+        "many": "prie\u0161 {0} m\u0117nesio",
+        "one": "prie\u0161 {0} m\u0117nes\u012f",
+        "other": "prie\u0161 {0} m\u0117nesi\u0173"
+      }
+    },
+    "month-narrow": {
+      "-1": "pra\u0117jus\u012f m\u0117nes\u012f",
+      "0": "\u0161\u012f m\u0117nes\u012f",
+      "1": "kit\u0105 m\u0117nes\u012f",
+      "future": {
+        "few": "po {0} m\u0117n.",
+        "many": "po {0} m\u0117n.",
+        "one": "po {0} m\u0117n.",
+        "other": "po {0} m\u0117n."
+      },
+      "past": {
+        "few": "prie\u0161 {0} m\u0117n.",
+        "many": "prie\u0161 {0} m\u0117n.",
+        "one": "prie\u0161 {0} m\u0117n.",
+        "other": "prie\u0161 {0} m\u0117n."
+      }
+    },
+    "month-short": {
+      "-1": "pra\u0117jus\u012f m\u0117nes\u012f",
+      "0": "\u0161\u012f m\u0117nes\u012f",
+      "1": "kit\u0105 m\u0117nes\u012f",
+      "future": {
+        "few": "po {0} m\u0117n.",
+        "many": "po {0} m\u0117n.",
+        "one": "po {0} m\u0117n.",
+        "other": "po {0} m\u0117n."
+      },
+      "past": {
+        "few": "prie\u0161 {0} m\u0117n.",
+        "many": "prie\u0161 {0} m\u0117n.",
+        "one": "prie\u0161 {0} m\u0117n.",
+        "other": "prie\u0161 {0} m\u0117n."
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "pra\u0117j\u0119s ketvirtis",
+      "0": "\u0161is ketvirtis",
+      "1": "kitas ketvirtis",
+      "future": {
+        "few": "po {0} ketvir\u010di\u0173",
+        "many": "po {0} ketvir\u010dio",
+        "one": "po {0} ketvir\u010dio",
+        "other": "po {0} ketvir\u010di\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} ketvir\u010dius",
+        "many": "prie\u0161 {0} ketvir\u010dio",
+        "one": "prie\u0161 {0} ketvirt\u012f",
+        "other": "prie\u0161 {0} ketvir\u010di\u0173"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "pra\u0117j\u0119s ketvirtis",
+      "0": "\u0161is ketvirtis",
+      "1": "kitas ketvirtis",
+      "future": {
+        "few": "po {0} ketv.",
+        "many": "po {0} ketv.",
+        "one": "po {0} ketv.",
+        "other": "po {0} ketv."
+      },
+      "past": {
+        "few": "prie\u0161 {0} ketv.",
+        "many": "prie\u0161 {0} ketv.",
+        "one": "prie\u0161 {0} ketv.",
+        "other": "prie\u0161 {0} ketv."
+      }
+    },
+    "quarter-short": {
+      "-1": "pra\u0117j\u0119s ketvirtis",
+      "0": "\u0161is ketvirtis",
+      "1": "kitas ketvirtis",
+      "future": {
+        "few": "po {0} ketv.",
+        "many": "po {0} ketv.",
+        "one": "po {0} ketv.",
+        "other": "po {0} ketv."
+      },
+      "past": {
+        "few": "prie\u0161 {0} ketv.",
+        "many": "prie\u0161 {0} ketv.",
+        "one": "prie\u0161 {0} ketv.",
+        "other": "prie\u0161 {0} ketv."
+      }
+    },
+    "second": {
+      "0": "dabar",
+      "future": {
+        "few": "po {0} sekund\u017ei\u0173",
+        "many": "po {0} sekund\u0117s",
+        "one": "po {0} sekund\u0117s",
+        "other": "po {0} sekund\u017ei\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} sekundes",
+        "many": "prie\u0161 {0} sekund\u0117s",
+        "one": "prie\u0161 {0} sekund\u0119",
+        "other": "prie\u0161 {0} sekund\u017ei\u0173"
+      }
+    },
+    "second-narrow": {
+      "0": "dabar",
+      "future": {
+        "few": "po {0} s",
+        "many": "po {0} s",
+        "one": "po {0} s",
+        "other": "po {0} s"
+      },
+      "past": {
+        "few": "prie\u0161 {0} s",
+        "many": "prie\u0161 {0} s",
+        "one": "prie\u0161 {0} s",
+        "other": "prie\u0161 {0} s"
+      }
+    },
+    "second-short": {
+      "0": "dabar",
+      "future": {
+        "few": "po {0} sek.",
+        "many": "po {0} sek.",
+        "one": "po {0} sek.",
+        "other": "po {0} sek."
+      },
+      "past": {
+        "few": "prie\u0161 {0} sek.",
+        "many": "prie\u0161 {0} sek.",
+        "one": "prie\u0161 {0} sek.",
+        "other": "prie\u0161 {0} sek."
+      }
+    },
+    "week": {
+      "-1": "pra\u0117jusi\u0105 savait\u0119",
+      "0": "\u0161i\u0105 savait\u0119",
+      "1": "kit\u0105 savait\u0119",
+      "future": {
+        "few": "po {0} savai\u010di\u0173",
+        "many": "po {0} savait\u0117s",
+        "one": "po {0} savait\u0117s",
+        "other": "po {0} savai\u010di\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} savaites",
+        "many": "prie\u0161 {0} savait\u0117s",
+        "one": "prie\u0161 {0} savait\u0119",
+        "other": "prie\u0161 {0} savai\u010di\u0173"
+      }
+    },
+    "week-narrow": {
+      "-1": "pra\u0117jusi\u0105 savait\u0119",
+      "0": "\u0161i\u0105 savait\u0119",
+      "1": "kit\u0105 savait\u0119",
+      "future": {
+        "few": "po {0} sav.",
+        "many": "po {0} sav.",
+        "one": "po {0} sav.",
+        "other": "po {0} sav."
+      },
+      "past": {
+        "few": "prie\u0161 {0} sav.",
+        "many": "prie\u0161 {0} sav.",
+        "one": "prie\u0161 {0} sav.",
+        "other": "prie\u0161 {0} sav."
+      }
+    },
+    "week-short": {
+      "-1": "pra\u0117jusi\u0105 savait\u0119",
+      "0": "\u0161i\u0105 savait\u0119",
+      "1": "kit\u0105 savait\u0119",
+      "future": {
+        "few": "po {0} sav.",
+        "many": "po {0} sav.",
+        "one": "po {0} sav.",
+        "other": "po {0} sav."
+      },
+      "past": {
+        "few": "prie\u0161 {0} sav.",
+        "many": "prie\u0161 {0} sav.",
+        "one": "prie\u0161 {0} sav.",
+        "other": "prie\u0161 {0} sav."
+      }
+    },
+    "year": {
+      "-1": "pra\u0117jusiais metais",
+      "0": "\u0161iais metais",
+      "1": "kitais metais",
+      "future": {
+        "few": "po {0} met\u0173",
+        "many": "po {0} met\u0173",
+        "one": "po {0} met\u0173",
+        "other": "po {0} met\u0173"
+      },
+      "past": {
+        "few": "prie\u0161 {0} metus",
+        "many": "prie\u0161 {0} met\u0173",
+        "one": "prie\u0161 {0} metus",
+        "other": "prie\u0161 {0} met\u0173"
+      }
+    },
+    "year-narrow": {
+      "-1": "pra\u0117jusiais metais",
+      "0": "\u0161iais metais",
+      "1": "kitais metais",
+      "future": {
+        "few": "po {0} m.",
+        "many": "po {0} m.",
+        "one": "po {0} m.",
+        "other": "po {0} m."
+      },
+      "past": {
+        "few": "prie\u0161 {0} m.",
+        "many": "prie\u0161 {0} m.",
+        "one": "prie\u0161 {0} m.",
+        "other": "prie\u0161 {0} m."
+      }
+    },
+    "year-short": {
+      "-1": "pra\u0117jusiais metais",
+      "0": "\u0161iais metais",
+      "1": "kitais metais",
+      "future": {
+        "few": "po {0} m.",
+        "many": "po {0} m.",
+        "one": "po {0} m.",
+        "other": "po {0} m."
+      },
+      "past": {
+        "few": "prie\u0161 {0} m.",
+        "many": "prie\u0161 {0} m.",
+        "one": "prie\u0161 {0} m.",
+        "other": "prie\u0161 {0} m."
+      }
+    }
+  },
+  "locale": "lt"
+}

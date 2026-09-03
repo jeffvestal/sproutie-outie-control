@@ -1,0 +1,121 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Je povolen\u00e1 iba jedna konfigur\u00e1cia monitora BLE."
+    },
+    "error": {
+      "cannot_change_mac": "MAC addresa nem\u00f4\u017ee by\u0165 zmenen\u00e1.",
+      "cannot_change_uuid": "Beacon UUID nem\u00f4\u017ee by\u0165 zmenen\u00e9.",
+      "cannot_delete_device": "Zariadenia nem\u00f4\u017ee by\u0165 vymazan\u00e9.",
+      "cannot_disable_bt_interface": "Rozhranie BT nemo\u017eno zak\u00e1za\u0165, pokia\u013e je st\u00e1le vybrat\u00e9 jedno alebo viac rozhran\u00ed BT. Zru\u0161te v\u00fdber v\u0161etk\u00fdch rozhran\u00ed BT.",
+      "invalid_key": "\u0160ifrovac\u00ed k\u013e\u00fa\u010d mus\u00ed obsahova\u0165 32 hexadecim\u00e1lnych znakov (24 pre senzory Yeelight).",
+      "invalid_mac": "MAC addresa mus\u00ed by\u0165 vo forme 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID mus\u00ed by\u0165 vo form\u00e1te '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Sledova\u010d zariadenia zoh\u013ead\u0148uje interval domova (v sekund\u00e1ch)",
+          "delete device": "Vymaza\u0165 zariadenie",
+          "encryption_key": "\u0160ifrovac\u00ed k\u013e\u00fa\u010d",
+          "mac": "MAC addresa",
+          "report_unknown": "Nahl\u00e1ste nezn\u00e1me reklamy BLE do denn\u00edka HA",
+          "reset_timer": "Resetova\u0165 \u010dasova\u010d (v sekund\u00e1ch, 0 = vypnut\u00e9)",
+          "restore_state": "Po re\u0161tarte obnovi\u0165 stav",
+          "temperature_unit": "Jednotka teploty [iba sn\u00edma\u010de teploty]",
+          "track_device": "Sledovacie zariadenie",
+          "tracker_scan_interval": "Interval skenovania n\u00e1stroja na sledovanie zariadenia (v sekund\u00e1ch)",
+          "use_median": "Namiesto priemeru pou\u017eite medi\u00e1n",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Prida\u0165 zariadenie"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Pou\u017ei\u0165 akt\u00edvne skenovanie namiesto pas\u00edvneho skenovania (ovplyv\u0148uje bat\u00e9riu)",
+          "bt_auto_restart": "Automaticky re\u0161tartova\u0165 adapt\u00e9r Bluetooth pri zlyhan\u00ed",
+          "bt_interface": "MAC addresa pre Bluetooth interface/adapter",
+          "devices": "Zariadenia",
+          "discovery": "Objavte zariadenia a senzory automaticky",
+          "log_spikes": "Log spikes",
+          "period": "Obdobie, ktor\u00e9 sa m\u00e1 pou\u017ei\u0165 na spriemerovanie",
+          "report_unknown": "Nahl\u00e1ste nezn\u00e1me reklamy BLE do denn\u00edka HA",
+          "restore_state": "Po re\u0161tarte obnovi\u0165 stav",
+          "use_median": "Namiesto priemeru pou\u017eite medi\u00e1n"
+        },
+        "description": "Nastavenie konfigur\u00e1cie v\u00e1\u0161ho monitora BLE",
+        "title": "Pas\u00edvny BLE Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Nakonfigurovali ste BLE monitor v YAML. Zme\u0148te svoje mo\u017enosti v YAML."
+    },
+    "error": {
+      "cannot_change_mac": "MAC adresu nie je mo\u017en\u00e9 zmeni\u0165.",
+      "cannot_change_uuid": "Beacon UUID sa ned\u00e1 zmeni\u0165.",
+      "cannot_delete_device": "Zariadenie nie je mo\u017en\u00e9 odstr\u00e1ni\u0165.",
+      "cannot_disable_bt_interface": "Rozhranie BT nemo\u017eno zak\u00e1za\u0165, pokia\u013e je st\u00e1le vybrat\u00e9 jedno alebo viac rozhran\u00ed BT. Zru\u0161te v\u00fdber v\u0161etk\u00fdch rozhran\u00ed BT.",
+      "invalid_key": "\u0160ifrovac\u00ed k\u013e\u00fa\u010d mus\u00ed obsahova\u0165 32 hexadecim\u00e1lnych znakov (24 pre senzory Yeelight).",
+      "invalid_mac": "MAC addresa mus\u00ed by\u0165 vo forme 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID mus\u00ed by\u0165 vo forme '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Sledova\u010d zariadenia zoh\u013ead\u0148uje interval domova (v sekund\u00e1ch)",
+          "delete device": "Odstr\u00e1ni\u0165 zariadenie",
+          "encryption_key": "\u0160ifrovac\u00ed k\u013e\u00fa\u010d (na odstr\u00e1nenie nastavte na '-')",
+          "mac": "MAC addresa",
+          "report_unknown": "Nahl\u00e1ste nezn\u00e1me reklamy BLE do denn\u00edka HA",
+          "reset_timer": "Resetova\u0165 \u010dasova\u010d (v sekund\u00e1ch, 0 = vypnut\u00e9)",
+          "restore_state": "Po re\u0161tarte obnovi\u0165 stav",
+          "temperature_unit": "Jednotka teploty",
+          "track_device": "Sledovacie zariadenie",
+          "tracker_scan_interval": "Interval skenovania n\u00e1stroja na sledovanie zariadenia (v sekund\u00e1ch)",
+          "use_median": "Namiesto priemeru pou\u017eite medi\u00e1n",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Nakonfigurujte zariadenie"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Pou\u017ei\u0165 akt\u00edvne skenovanie namiesto pas\u00edvneho skenovania (ovplyv\u0148uje bat\u00e9riu)",
+          "bt_auto_restart": "Automaticky re\u0161tartova\u0165 adapt\u00e9r Bluetooth pri zlyhan\u00ed",
+          "bt_interface": "MAC addresa pre Bluetooth interface/adapter",
+          "devices": "Zariadenia",
+          "discovery": "Objavte zariadenia a senzory automaticky",
+          "log_spikes": "Log spikes",
+          "not_in_use": "Pou\u017e\u00edva sa YAML, zme\u0148te mo\u017enosti v YAML",
+          "period": "Obdobie, ktor\u00e9 sa m\u00e1 pou\u017ei\u0165 na spriemerovanie",
+          "report_unknown": "Nahl\u00e1ste nezn\u00e1me reklamy BLE do denn\u00edka HA",
+          "restore_state": "Po re\u0161tarte obnovi\u0165 stav",
+          "use_median": "Namiesto priemeru pou\u017eite medi\u00e1n"
+        },
+        "description": "Po stla\u010den\u00ed sa skenovanie re\u0161tartuje 'SUBMIT'",
+        "title": "Mo\u017enosti pas\u00edvneho monitora BLE"
+      }
+    }
+  },
+  "services": {
+    "cleanup_entries": {
+      "description": "Vy\u010distenie visiacich zariaden\u00ed integr\u00e1cie BLE Montitor.",
+      "name": "\u010cistenie z\u00e1znamov"
+    },
+    "parse_data": {
+      "description": "Odoslanie paketov\u00fdch \u00fadajov RAW HCI do integr\u00e1cie BLE Montitor.",
+      "fields": {
+        "gateway_id": {
+          "description": "Identifik\u00e1tor br\u00e1ny, ktor\u00fd pren\u00e1\u0161a \u00fadaje paketu RAO HCI (len pre sledovacie zariadenia).",
+          "name": "Gateway ID"
+        },
+        "packet": {
+          "description": "RAW HCI packet data hex.",
+          "name": "Packet"
+        }
+      },
+      "name": "Anal\u00fdza \u00fadajov"
+    }
+  }
+}

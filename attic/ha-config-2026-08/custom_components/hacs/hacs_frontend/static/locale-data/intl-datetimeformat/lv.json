@@ -1,0 +1,2646 @@
+{
+  "data": {
+    "am": "priek\u0161p.",
+    "ca": [
+      "gregory"
+    ],
+    "dateFormat": {
+      "full": "EEEE, y. 'gada' d. MMMM",
+      "long": "y. 'gada' d. MMMM",
+      "medium": "y. 'gada' d. MMM",
+      "short": "dd.MM.yy"
+    },
+    "dateTimeFormat": {
+      "full": "{1} {0}",
+      "long": "{1} {0}",
+      "medium": "{1} {0}",
+      "short": "{1} {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "m\u016bsu \u0113r\u0101",
+        "BC": "pirms m\u016bsu \u0113ras"
+      },
+      "narrow": {
+        "AD": "m.\u0113.",
+        "BC": "p.m.\u0113."
+      },
+      "short": {
+        "AD": "m.\u0113.",
+        "BC": "p.m.\u0113."
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h B",
+        "Bhm": "h:mm B",
+        "Bhms": "h:mm:ss B",
+        "E": "ccc",
+        "E Bh": "ccc h B",
+        "E Bhm": "ccc h:mm B",
+        "E Bhms": "ccc h:mm:ss B",
+        "E H": "ccc HH",
+        "E HH:mm": "ccc HH:mm",
+        "E HH:mm:ss": "ccc HH:mm:ss",
+        "E HH:mm:ss z": "ccc HH:mm:ss z",
+        "E HH:mm:ss zzzz": "ccc HH:mm:ss zzzz",
+        "E Hm": "ccc HH:mm",
+        "E Hms": "ccc HH:mm:ss",
+        "E Hmsv": "ccc HH:mm:ss v",
+        "E Hmv": "ccc HH:mm v",
+        "E h": "ccc h\u202fa",
+        "E hm": "ccc h:mm\u202fa",
+        "E hms": "ccc h:mm:ss\u202fa",
+        "E hmsv": "ccc h:mm:ss\u202fa v",
+        "E hmv": "ccc h:mm\u202fa v",
+        "E mmss": "ccc mm:ss",
+        "E ms": "ccc mm:ss",
+        "EBhm": "E, h:mm B",
+        "EBhms": "E, h:mm:ss B",
+        "EEEE, y. 'gada' d. MMMM": "EEEE, y. 'gada' d. MMMM",
+        "EEEE, y. 'gada' d. MMMM Bh": "EEEE, y. 'gada' d. MMMM h B",
+        "EEEE, y. 'gada' d. MMMM Bhm": "EEEE, y. 'gada' d. MMMM h:mm B",
+        "EEEE, y. 'gada' d. MMMM Bhms": "EEEE, y. 'gada' d. MMMM h:mm:ss B",
+        "EEEE, y. 'gada' d. MMMM H": "EEEE, y. 'gada' d. MMMM HH",
+        "EEEE, y. 'gada' d. MMMM HH:mm": "EEEE, y. 'gada' d. MMMM HH:mm",
+        "EEEE, y. 'gada' d. MMMM HH:mm:ss": "EEEE, y. 'gada' d. MMMM HH:mm:ss",
+        "EEEE, y. 'gada' d. MMMM HH:mm:ss z": "EEEE, y. 'gada' d. MMMM HH:mm:ss z",
+        "EEEE, y. 'gada' d. MMMM HH:mm:ss zzzz": "EEEE, y. 'gada' d. MMMM HH:mm:ss zzzz",
+        "EEEE, y. 'gada' d. MMMM Hm": "EEEE, y. 'gada' d. MMMM HH:mm",
+        "EEEE, y. 'gada' d. MMMM Hms": "EEEE, y. 'gada' d. MMMM HH:mm:ss",
+        "EEEE, y. 'gada' d. MMMM Hmsv": "EEEE, y. 'gada' d. MMMM HH:mm:ss v",
+        "EEEE, y. 'gada' d. MMMM Hmv": "EEEE, y. 'gada' d. MMMM HH:mm v",
+        "EEEE, y. 'gada' d. MMMM h": "EEEE, y. 'gada' d. MMMM h\u202fa",
+        "EEEE, y. 'gada' d. MMMM hm": "EEEE, y. 'gada' d. MMMM h:mm\u202fa",
+        "EEEE, y. 'gada' d. MMMM hms": "EEEE, y. 'gada' d. MMMM h:mm:ss\u202fa",
+        "EEEE, y. 'gada' d. MMMM hmsv": "EEEE, y. 'gada' d. MMMM h:mm:ss\u202fa v",
+        "EEEE, y. 'gada' d. MMMM hmv": "EEEE, y. 'gada' d. MMMM h:mm\u202fa v",
+        "EEEE, y. 'gada' d. MMMM mmss": "EEEE, y. 'gada' d. MMMM mm:ss",
+        "EEEE, y. 'gada' d. MMMM ms": "EEEE, y. 'gada' d. MMMM mm:ss",
+        "EHm": "E, HH:mm",
+        "EHms": "E, HH:mm:ss",
+        "Ed": "E, d.",
+        "Ed Bh": "E, d. h B",
+        "Ed Bhm": "E, d. h:mm B",
+        "Ed Bhms": "E, d. h:mm:ss B",
+        "Ed H": "E, d. HH",
+        "Ed HH:mm": "E, d. HH:mm",
+        "Ed HH:mm:ss": "E, d. HH:mm:ss",
+        "Ed HH:mm:ss z": "E, d. HH:mm:ss z",
+        "Ed HH:mm:ss zzzz": "E, d. HH:mm:ss zzzz",
+        "Ed Hm": "E, d. HH:mm",
+        "Ed Hms": "E, d. HH:mm:ss",
+        "Ed Hmsv": "E, d. HH:mm:ss v",
+        "Ed Hmv": "E, d. HH:mm v",
+        "Ed h": "E, d. h\u202fa",
+        "Ed hm": "E, d. h:mm\u202fa",
+        "Ed hms": "E, d. h:mm:ss\u202fa",
+        "Ed hmsv": "E, d. h:mm:ss\u202fa v",
+        "Ed hmv": "E, d. h:mm\u202fa v",
+        "Ed mmss": "E, d. mm:ss",
+        "Ed ms": "E, d. mm:ss",
+        "Ehm": "E, h:mm\u202fa",
+        "Ehms": "E, h:mm:ss\u202fa",
+        "Gy": "G y. 'g'.",
+        "Gy Bh": "G y. 'g'. h B",
+        "Gy Bhm": "G y. 'g'. h:mm B",
+        "Gy Bhms": "G y. 'g'. h:mm:ss B",
+        "Gy H": "G y. 'g'. HH",
+        "Gy HH:mm": "G y. 'g'. HH:mm",
+        "Gy HH:mm:ss": "G y. 'g'. HH:mm:ss",
+        "Gy HH:mm:ss z": "G y. 'g'. HH:mm:ss z",
+        "Gy HH:mm:ss zzzz": "G y. 'g'. HH:mm:ss zzzz",
+        "Gy Hm": "G y. 'g'. HH:mm",
+        "Gy Hms": "G y. 'g'. HH:mm:ss",
+        "Gy Hmsv": "G y. 'g'. HH:mm:ss v",
+        "Gy Hmv": "G y. 'g'. HH:mm v",
+        "Gy h": "G y. 'g'. h\u202fa",
+        "Gy hm": "G y. 'g'. h:mm\u202fa",
+        "Gy hms": "G y. 'g'. h:mm:ss\u202fa",
+        "Gy hmsv": "G y. 'g'. h:mm:ss\u202fa v",
+        "Gy hmv": "G y. 'g'. h:mm\u202fa v",
+        "Gy mmss": "G y. 'g'. mm:ss",
+        "Gy ms": "G y. 'g'. mm:ss",
+        "GyMMM": "G y. 'g'. MMM",
+        "GyMMM Bh": "G y. 'g'. MMM h B",
+        "GyMMM Bhm": "G y. 'g'. MMM h:mm B",
+        "GyMMM Bhms": "G y. 'g'. MMM h:mm:ss B",
+        "GyMMM H": "G y. 'g'. MMM HH",
+        "GyMMM HH:mm": "G y. 'g'. MMM HH:mm",
+        "GyMMM HH:mm:ss": "G y. 'g'. MMM HH:mm:ss",
+        "GyMMM HH:mm:ss z": "G y. 'g'. MMM HH:mm:ss z",
+        "GyMMM HH:mm:ss zzzz": "G y. 'g'. MMM HH:mm:ss zzzz",
+        "GyMMM Hm": "G y. 'g'. MMM HH:mm",
+        "GyMMM Hms": "G y. 'g'. MMM HH:mm:ss",
+        "GyMMM Hmsv": "G y. 'g'. MMM HH:mm:ss v",
+        "GyMMM Hmv": "G y. 'g'. MMM HH:mm v",
+        "GyMMM h": "G y. 'g'. MMM h\u202fa",
+        "GyMMM hm": "G y. 'g'. MMM h:mm\u202fa",
+        "GyMMM hms": "G y. 'g'. MMM h:mm:ss\u202fa",
+        "GyMMM hmsv": "G y. 'g'. MMM h:mm:ss\u202fa v",
+        "GyMMM hmv": "G y. 'g'. MMM h:mm\u202fa v",
+        "GyMMM mmss": "G y. 'g'. MMM mm:ss",
+        "GyMMM ms": "G y. 'g'. MMM mm:ss",
+        "GyMMMEd": "E, G y. 'g'. d. MMM",
+        "GyMMMEd Bh": "E, G y. 'g'. d. MMM h B",
+        "GyMMMEd Bhm": "E, G y. 'g'. d. MMM h:mm B",
+        "GyMMMEd Bhms": "E, G y. 'g'. d. MMM h:mm:ss B",
+        "GyMMMEd H": "E, G y. 'g'. d. MMM HH",
+        "GyMMMEd HH:mm": "E, G y. 'g'. d. MMM HH:mm",
+        "GyMMMEd HH:mm:ss": "E, G y. 'g'. d. MMM HH:mm:ss",
+        "GyMMMEd HH:mm:ss z": "E, G y. 'g'. d. MMM HH:mm:ss z",
+        "GyMMMEd HH:mm:ss zzzz": "E, G y. 'g'. d. MMM HH:mm:ss zzzz",
+        "GyMMMEd Hm": "E, G y. 'g'. d. MMM HH:mm",
+        "GyMMMEd Hms": "E, G y. 'g'. d. MMM HH:mm:ss",
+        "GyMMMEd Hmsv": "E, G y. 'g'. d. MMM HH:mm:ss v",
+        "GyMMMEd Hmv": "E, G y. 'g'. d. MMM HH:mm v",
+        "GyMMMEd h": "E, G y. 'g'. d. MMM h\u202fa",
+        "GyMMMEd hm": "E, G y. 'g'. d. MMM h:mm\u202fa",
+        "GyMMMEd hms": "E, G y. 'g'. d. MMM h:mm:ss\u202fa",
+        "GyMMMEd hmsv": "E, G y. 'g'. d. MMM h:mm:ss\u202fa v",
+        "GyMMMEd hmv": "E, G y. 'g'. d. MMM h:mm\u202fa v",
+        "GyMMMEd mmss": "E, G y. 'g'. d. MMM mm:ss",
+        "GyMMMEd ms": "E, G y. 'g'. d. MMM mm:ss",
+        "GyMMMd": "G y. 'g'. d. MMM",
+        "GyMMMd Bh": "G y. 'g'. d. MMM h B",
+        "GyMMMd Bhm": "G y. 'g'. d. MMM h:mm B",
+        "GyMMMd Bhms": "G y. 'g'. d. MMM h:mm:ss B",
+        "GyMMMd H": "G y. 'g'. d. MMM HH",
+        "GyMMMd HH:mm": "G y. 'g'. d. MMM HH:mm",
+        "GyMMMd HH:mm:ss": "G y. 'g'. d. MMM HH:mm:ss",
+        "GyMMMd HH:mm:ss z": "G y. 'g'. d. MMM HH:mm:ss z",
+        "GyMMMd HH:mm:ss zzzz": "G y. 'g'. d. MMM HH:mm:ss zzzz",
+        "GyMMMd Hm": "G y. 'g'. d. MMM HH:mm",
+        "GyMMMd Hms": "G y. 'g'. d. MMM HH:mm:ss",
+        "GyMMMd Hmsv": "G y. 'g'. d. MMM HH:mm:ss v",
+        "GyMMMd Hmv": "G y. 'g'. d. MMM HH:mm v",
+        "GyMMMd h": "G y. 'g'. d. MMM h\u202fa",
+        "GyMMMd hm": "G y. 'g'. d. MMM h:mm\u202fa",
+        "GyMMMd hms": "G y. 'g'. d. MMM h:mm:ss\u202fa",
+        "GyMMMd hmsv": "G y. 'g'. d. MMM h:mm:ss\u202fa v",
+        "GyMMMd hmv": "G y. 'g'. d. MMM h:mm\u202fa v",
+        "GyMMMd mmss": "G y. 'g'. d. MMM mm:ss",
+        "GyMMMd ms": "G y. 'g'. d. MMM mm:ss",
+        "GyMd": "GGGGG dd-MM-y",
+        "GyMd Bh": "GGGGG dd-MM-y h B",
+        "GyMd Bhm": "GGGGG dd-MM-y h:mm B",
+        "GyMd Bhms": "GGGGG dd-MM-y h:mm:ss B",
+        "GyMd H": "GGGGG dd-MM-y HH",
+        "GyMd HH:mm": "GGGGG dd-MM-y HH:mm",
+        "GyMd HH:mm:ss": "GGGGG dd-MM-y HH:mm:ss",
+        "GyMd HH:mm:ss z": "GGGGG dd-MM-y HH:mm:ss z",
+        "GyMd HH:mm:ss zzzz": "GGGGG dd-MM-y HH:mm:ss zzzz",
+        "GyMd Hm": "GGGGG dd-MM-y HH:mm",
+        "GyMd Hms": "GGGGG dd-MM-y HH:mm:ss",
+        "GyMd Hmsv": "GGGGG dd-MM-y HH:mm:ss v",
+        "GyMd Hmv": "GGGGG dd-MM-y HH:mm v",
+        "GyMd h": "GGGGG dd-MM-y h\u202fa",
+        "GyMd hm": "GGGGG dd-MM-y h:mm\u202fa",
+        "GyMd hms": "GGGGG dd-MM-y h:mm:ss\u202fa",
+        "GyMd hmsv": "GGGGG dd-MM-y h:mm:ss\u202fa v",
+        "GyMd hmv": "GGGGG dd-MM-y h:mm\u202fa v",
+        "GyMd mmss": "GGGGG dd-MM-y mm:ss",
+        "GyMd ms": "GGGGG dd-MM-y mm:ss",
+        "H": "HH",
+        "HH:mm": "HH:mm",
+        "HH:mm:ss": "HH:mm:ss",
+        "HH:mm:ss z": "HH:mm:ss z",
+        "HH:mm:ss zzzz": "HH:mm:ss zzzz",
+        "Hm": "HH:mm",
+        "Hms": "HH:mm:ss",
+        "Hmsv": "HH:mm:ss v",
+        "Hmv": "HH:mm v",
+        "M": "L",
+        "M Bh": "L h B",
+        "M Bhm": "L h:mm B",
+        "M Bhms": "L h:mm:ss B",
+        "M H": "L HH",
+        "M HH:mm": "L HH:mm",
+        "M HH:mm:ss": "L HH:mm:ss",
+        "M HH:mm:ss z": "L HH:mm:ss z",
+        "M HH:mm:ss zzzz": "L HH:mm:ss zzzz",
+        "M Hm": "L HH:mm",
+        "M Hms": "L HH:mm:ss",
+        "M Hmsv": "L HH:mm:ss v",
+        "M Hmv": "L HH:mm v",
+        "M h": "L h\u202fa",
+        "M hm": "L h:mm\u202fa",
+        "M hms": "L h:mm:ss\u202fa",
+        "M hmsv": "L h:mm:ss\u202fa v",
+        "M hmv": "L h:mm\u202fa v",
+        "M mmss": "L mm:ss",
+        "M ms": "L mm:ss",
+        "MEd": "E, dd.MM.",
+        "MEd Bh": "E, dd.MM. h B",
+        "MEd Bhm": "E, dd.MM. h:mm B",
+        "MEd Bhms": "E, dd.MM. h:mm:ss B",
+        "MEd H": "E, dd.MM. HH",
+        "MEd HH:mm": "E, dd.MM. HH:mm",
+        "MEd HH:mm:ss": "E, dd.MM. HH:mm:ss",
+        "MEd HH:mm:ss z": "E, dd.MM. HH:mm:ss z",
+        "MEd HH:mm:ss zzzz": "E, dd.MM. HH:mm:ss zzzz",
+        "MEd Hm": "E, dd.MM. HH:mm",
+        "MEd Hms": "E, dd.MM. HH:mm:ss",
+        "MEd Hmsv": "E, dd.MM. HH:mm:ss v",
+        "MEd Hmv": "E, dd.MM. HH:mm v",
+        "MEd h": "E, dd.MM. h\u202fa",
+        "MEd hm": "E, dd.MM. h:mm\u202fa",
+        "MEd hms": "E, dd.MM. h:mm:ss\u202fa",
+        "MEd hmsv": "E, dd.MM. h:mm:ss\u202fa v",
+        "MEd hmv": "E, dd.MM. h:mm\u202fa v",
+        "MEd mmss": "E, dd.MM. mm:ss",
+        "MEd ms": "E, dd.MM. mm:ss",
+        "MMM": "LLL",
+        "MMM Bh": "LLL h B",
+        "MMM Bhm": "LLL h:mm B",
+        "MMM Bhms": "LLL h:mm:ss B",
+        "MMM H": "LLL HH",
+        "MMM HH:mm": "LLL HH:mm",
+        "MMM HH:mm:ss": "LLL HH:mm:ss",
+        "MMM HH:mm:ss z": "LLL HH:mm:ss z",
+        "MMM HH:mm:ss zzzz": "LLL HH:mm:ss zzzz",
+        "MMM Hm": "LLL HH:mm",
+        "MMM Hms": "LLL HH:mm:ss",
+        "MMM Hmsv": "LLL HH:mm:ss v",
+        "MMM Hmv": "LLL HH:mm v",
+        "MMM h": "LLL h\u202fa",
+        "MMM hm": "LLL h:mm\u202fa",
+        "MMM hms": "LLL h:mm:ss\u202fa",
+        "MMM hmsv": "LLL h:mm:ss\u202fa v",
+        "MMM hmv": "LLL h:mm\u202fa v",
+        "MMM mmss": "LLL mm:ss",
+        "MMM ms": "LLL mm:ss",
+        "MMMEd": "E, d. MMM",
+        "MMMEd Bh": "E, d. MMM h B",
+        "MMMEd Bhm": "E, d. MMM h:mm B",
+        "MMMEd Bhms": "E, d. MMM h:mm:ss B",
+        "MMMEd H": "E, d. MMM HH",
+        "MMMEd HH:mm": "E, d. MMM HH:mm",
+        "MMMEd HH:mm:ss": "E, d. MMM HH:mm:ss",
+        "MMMEd HH:mm:ss z": "E, d. MMM HH:mm:ss z",
+        "MMMEd HH:mm:ss zzzz": "E, d. MMM HH:mm:ss zzzz",
+        "MMMEd Hm": "E, d. MMM HH:mm",
+        "MMMEd Hms": "E, d. MMM HH:mm:ss",
+        "MMMEd Hmsv": "E, d. MMM HH:mm:ss v",
+        "MMMEd Hmv": "E, d. MMM HH:mm v",
+        "MMMEd h": "E, d. MMM h\u202fa",
+        "MMMEd hm": "E, d. MMM h:mm\u202fa",
+        "MMMEd hms": "E, d. MMM h:mm:ss\u202fa",
+        "MMMEd hmsv": "E, d. MMM h:mm:ss\u202fa v",
+        "MMMEd hmv": "E, d. MMM h:mm\u202fa v",
+        "MMMEd mmss": "E, d. MMM mm:ss",
+        "MMMEd ms": "E, d. MMM mm:ss",
+        "MMMMEd": "E, d. MMMM",
+        "MMMMEd Bh": "E, d. MMMM h B",
+        "MMMMEd Bhm": "E, d. MMMM h:mm B",
+        "MMMMEd Bhms": "E, d. MMMM h:mm:ss B",
+        "MMMMEd H": "E, d. MMMM HH",
+        "MMMMEd HH:mm": "E, d. MMMM HH:mm",
+        "MMMMEd HH:mm:ss": "E, d. MMMM HH:mm:ss",
+        "MMMMEd HH:mm:ss z": "E, d. MMMM HH:mm:ss z",
+        "MMMMEd HH:mm:ss zzzz": "E, d. MMMM HH:mm:ss zzzz",
+        "MMMMEd Hm": "E, d. MMMM HH:mm",
+        "MMMMEd Hms": "E, d. MMMM HH:mm:ss",
+        "MMMMEd Hmsv": "E, d. MMMM HH:mm:ss v",
+        "MMMMEd Hmv": "E, d. MMMM HH:mm v",
+        "MMMMEd h": "E, d. MMMM h\u202fa",
+        "MMMMEd hm": "E, d. MMMM h:mm\u202fa",
+        "MMMMEd hms": "E, d. MMMM h:mm:ss\u202fa",
+        "MMMMEd hmsv": "E, d. MMMM h:mm:ss\u202fa v",
+        "MMMMEd hmv": "E, d. MMMM h:mm\u202fa v",
+        "MMMMEd mmss": "E, d. MMMM mm:ss",
+        "MMMMEd ms": "E, d. MMMM mm:ss",
+        "MMMMd": "d. MMMM",
+        "MMMMd Bh": "d. MMMM h B",
+        "MMMMd Bhm": "d. MMMM h:mm B",
+        "MMMMd Bhms": "d. MMMM h:mm:ss B",
+        "MMMMd H": "d. MMMM HH",
+        "MMMMd HH:mm": "d. MMMM HH:mm",
+        "MMMMd HH:mm:ss": "d. MMMM HH:mm:ss",
+        "MMMMd HH:mm:ss z": "d. MMMM HH:mm:ss z",
+        "MMMMd HH:mm:ss zzzz": "d. MMMM HH:mm:ss zzzz",
+        "MMMMd Hm": "d. MMMM HH:mm",
+        "MMMMd Hms": "d. MMMM HH:mm:ss",
+        "MMMMd Hmsv": "d. MMMM HH:mm:ss v",
+        "MMMMd Hmv": "d. MMMM HH:mm v",
+        "MMMMd h": "d. MMMM h\u202fa",
+        "MMMMd hm": "d. MMMM h:mm\u202fa",
+        "MMMMd hms": "d. MMMM h:mm:ss\u202fa",
+        "MMMMd hmsv": "d. MMMM h:mm:ss\u202fa v",
+        "MMMMd hmv": "d. MMMM h:mm\u202fa v",
+        "MMMMd mmss": "d. MMMM mm:ss",
+        "MMMMd ms": "d. MMMM mm:ss",
+        "MMMd": "d. MMM",
+        "MMMd Bh": "d. MMM h B",
+        "MMMd Bhm": "d. MMM h:mm B",
+        "MMMd Bhms": "d. MMM h:mm:ss B",
+        "MMMd H": "d. MMM HH",
+        "MMMd HH:mm": "d. MMM HH:mm",
+        "MMMd HH:mm:ss": "d. MMM HH:mm:ss",
+        "MMMd HH:mm:ss z": "d. MMM HH:mm:ss z",
+        "MMMd HH:mm:ss zzzz": "d. MMM HH:mm:ss zzzz",
+        "MMMd Hm": "d. MMM HH:mm",
+        "MMMd Hms": "d. MMM HH:mm:ss",
+        "MMMd Hmsv": "d. MMM HH:mm:ss v",
+        "MMMd Hmv": "d. MMM HH:mm v",
+        "MMMd h": "d. MMM h\u202fa",
+        "MMMd hm": "d. MMM h:mm\u202fa",
+        "MMMd hms": "d. MMM h:mm:ss\u202fa",
+        "MMMd hmsv": "d. MMM h:mm:ss\u202fa v",
+        "MMMd hmv": "d. MMM h:mm\u202fa v",
+        "MMMd mmss": "d. MMM mm:ss",
+        "MMMd ms": "d. MMM mm:ss",
+        "Md": "dd.MM.",
+        "Md Bh": "dd.MM. h B",
+        "Md Bhm": "dd.MM. h:mm B",
+        "Md Bhms": "dd.MM. h:mm:ss B",
+        "Md H": "dd.MM. HH",
+        "Md HH:mm": "dd.MM. HH:mm",
+        "Md HH:mm:ss": "dd.MM. HH:mm:ss",
+        "Md HH:mm:ss z": "dd.MM. HH:mm:ss z",
+        "Md HH:mm:ss zzzz": "dd.MM. HH:mm:ss zzzz",
+        "Md Hm": "dd.MM. HH:mm",
+        "Md Hms": "dd.MM. HH:mm:ss",
+        "Md Hmsv": "dd.MM. HH:mm:ss v",
+        "Md Hmv": "dd.MM. HH:mm v",
+        "Md h": "dd.MM. h\u202fa",
+        "Md hm": "dd.MM. h:mm\u202fa",
+        "Md hms": "dd.MM. h:mm:ss\u202fa",
+        "Md hmsv": "dd.MM. h:mm:ss\u202fa v",
+        "Md hmv": "dd.MM. h:mm\u202fa v",
+        "Md mmss": "dd.MM. mm:ss",
+        "Md ms": "dd.MM. mm:ss",
+        "d": "d",
+        "d Bh": "d h B",
+        "d Bhm": "d h:mm B",
+        "d Bhms": "d h:mm:ss B",
+        "d H": "d HH",
+        "d HH:mm": "d HH:mm",
+        "d HH:mm:ss": "d HH:mm:ss",
+        "d HH:mm:ss z": "d HH:mm:ss z",
+        "d HH:mm:ss zzzz": "d HH:mm:ss zzzz",
+        "d Hm": "d HH:mm",
+        "d Hms": "d HH:mm:ss",
+        "d Hmsv": "d HH:mm:ss v",
+        "d Hmv": "d HH:mm v",
+        "d h": "d h\u202fa",
+        "d hm": "d h:mm\u202fa",
+        "d hms": "d h:mm:ss\u202fa",
+        "d hmsv": "d h:mm:ss\u202fa v",
+        "d hmv": "d h:mm\u202fa v",
+        "d mmss": "d mm:ss",
+        "d ms": "d mm:ss",
+        "dd.MM.yy": "dd.MM.yy",
+        "dd.MM.yy Bh": "dd.MM.yy h B",
+        "dd.MM.yy Bhm": "dd.MM.yy h:mm B",
+        "dd.MM.yy Bhms": "dd.MM.yy h:mm:ss B",
+        "dd.MM.yy H": "dd.MM.yy HH",
+        "dd.MM.yy HH:mm": "dd.MM.yy HH:mm",
+        "dd.MM.yy HH:mm:ss": "dd.MM.yy HH:mm:ss",
+        "dd.MM.yy HH:mm:ss z": "dd.MM.yy HH:mm:ss z",
+        "dd.MM.yy HH:mm:ss zzzz": "dd.MM.yy HH:mm:ss zzzz",
+        "dd.MM.yy Hm": "dd.MM.yy HH:mm",
+        "dd.MM.yy Hms": "dd.MM.yy HH:mm:ss",
+        "dd.MM.yy Hmsv": "dd.MM.yy HH:mm:ss v",
+        "dd.MM.yy Hmv": "dd.MM.yy HH:mm v",
+        "dd.MM.yy h": "dd.MM.yy h\u202fa",
+        "dd.MM.yy hm": "dd.MM.yy h:mm\u202fa",
+        "dd.MM.yy hms": "dd.MM.yy h:mm:ss\u202fa",
+        "dd.MM.yy hmsv": "dd.MM.yy h:mm:ss\u202fa v",
+        "dd.MM.yy hmv": "dd.MM.yy h:mm\u202fa v",
+        "dd.MM.yy mmss": "dd.MM.yy mm:ss",
+        "dd.MM.yy ms": "dd.MM.yy mm:ss",
+        "h": "h\u202fa",
+        "hm": "h:mm\u202fa",
+        "hms": "h:mm:ss\u202fa",
+        "hmsv": "h:mm:ss\u202fa v",
+        "hmv": "h:mm\u202fa v",
+        "mmss": "mm:ss",
+        "ms": "mm:ss",
+        "y": "y. 'g'.",
+        "y Bh": "y. 'g'. h B",
+        "y Bhm": "y. 'g'. h:mm B",
+        "y Bhms": "y. 'g'. h:mm:ss B",
+        "y H": "y. 'g'. HH",
+        "y HH:mm": "y. 'g'. HH:mm",
+        "y HH:mm:ss": "y. 'g'. HH:mm:ss",
+        "y HH:mm:ss z": "y. 'g'. HH:mm:ss z",
+        "y HH:mm:ss zzzz": "y. 'g'. HH:mm:ss zzzz",
+        "y Hm": "y. 'g'. HH:mm",
+        "y Hms": "y. 'g'. HH:mm:ss",
+        "y Hmsv": "y. 'g'. HH:mm:ss v",
+        "y Hmv": "y. 'g'. HH:mm v",
+        "y h": "y. 'g'. h\u202fa",
+        "y hm": "y. 'g'. h:mm\u202fa",
+        "y hms": "y. 'g'. h:mm:ss\u202fa",
+        "y hmsv": "y. 'g'. h:mm:ss\u202fa v",
+        "y hmv": "y. 'g'. h:mm\u202fa v",
+        "y mmss": "y. 'g'. mm:ss",
+        "y ms": "y. 'g'. mm:ss",
+        "y. 'gada' d. MMM": "y. 'gada' d. MMM",
+        "y. 'gada' d. MMM Bh": "y. 'gada' d. MMM h B",
+        "y. 'gada' d. MMM Bhm": "y. 'gada' d. MMM h:mm B",
+        "y. 'gada' d. MMM Bhms": "y. 'gada' d. MMM h:mm:ss B",
+        "y. 'gada' d. MMM H": "y. 'gada' d. MMM HH",
+        "y. 'gada' d. MMM HH:mm": "y. 'gada' d. MMM HH:mm",
+        "y. 'gada' d. MMM HH:mm:ss": "y. 'gada' d. MMM HH:mm:ss",
+        "y. 'gada' d. MMM HH:mm:ss z": "y. 'gada' d. MMM HH:mm:ss z",
+        "y. 'gada' d. MMM HH:mm:ss zzzz": "y. 'gada' d. MMM HH:mm:ss zzzz",
+        "y. 'gada' d. MMM Hm": "y. 'gada' d. MMM HH:mm",
+        "y. 'gada' d. MMM Hms": "y. 'gada' d. MMM HH:mm:ss",
+        "y. 'gada' d. MMM Hmsv": "y. 'gada' d. MMM HH:mm:ss v",
+        "y. 'gada' d. MMM Hmv": "y. 'gada' d. MMM HH:mm v",
+        "y. 'gada' d. MMM h": "y. 'gada' d. MMM h\u202fa",
+        "y. 'gada' d. MMM hm": "y. 'gada' d. MMM h:mm\u202fa",
+        "y. 'gada' d. MMM hms": "y. 'gada' d. MMM h:mm:ss\u202fa",
+        "y. 'gada' d. MMM hmsv": "y. 'gada' d. MMM h:mm:ss\u202fa v",
+        "y. 'gada' d. MMM hmv": "y. 'gada' d. MMM h:mm\u202fa v",
+        "y. 'gada' d. MMM mmss": "y. 'gada' d. MMM mm:ss",
+        "y. 'gada' d. MMM ms": "y. 'gada' d. MMM mm:ss",
+        "y. 'gada' d. MMMM": "y. 'gada' d. MMMM",
+        "y. 'gada' d. MMMM Bh": "y. 'gada' d. MMMM h B",
+        "y. 'gada' d. MMMM Bhm": "y. 'gada' d. MMMM h:mm B",
+        "y. 'gada' d. MMMM Bhms": "y. 'gada' d. MMMM h:mm:ss B",
+        "y. 'gada' d. MMMM H": "y. 'gada' d. MMMM HH",
+        "y. 'gada' d. MMMM HH:mm": "y. 'gada' d. MMMM HH:mm",
+        "y. 'gada' d. MMMM HH:mm:ss": "y. 'gada' d. MMMM HH:mm:ss",
+        "y. 'gada' d. MMMM HH:mm:ss z": "y. 'gada' d. MMMM HH:mm:ss z",
+        "y. 'gada' d. MMMM HH:mm:ss zzzz": "y. 'gada' d. MMMM HH:mm:ss zzzz",
+        "y. 'gada' d. MMMM Hm": "y. 'gada' d. MMMM HH:mm",
+        "y. 'gada' d. MMMM Hms": "y. 'gada' d. MMMM HH:mm:ss",
+        "y. 'gada' d. MMMM Hmsv": "y. 'gada' d. MMMM HH:mm:ss v",
+        "y. 'gada' d. MMMM Hmv": "y. 'gada' d. MMMM HH:mm v",
+        "y. 'gada' d. MMMM h": "y. 'gada' d. MMMM h\u202fa",
+        "y. 'gada' d. MMMM hm": "y. 'gada' d. MMMM h:mm\u202fa",
+        "y. 'gada' d. MMMM hms": "y. 'gada' d. MMMM h:mm:ss\u202fa",
+        "y. 'gada' d. MMMM hmsv": "y. 'gada' d. MMMM h:mm:ss\u202fa v",
+        "y. 'gada' d. MMMM hmv": "y. 'gada' d. MMMM h:mm\u202fa v",
+        "y. 'gada' d. MMMM mmss": "y. 'gada' d. MMMM mm:ss",
+        "y. 'gada' d. MMMM ms": "y. 'gada' d. MMMM mm:ss",
+        "yM": "MM.y.",
+        "yM Bh": "MM.y. h B",
+        "yM Bhm": "MM.y. h:mm B",
+        "yM Bhms": "MM.y. h:mm:ss B",
+        "yM H": "MM.y. HH",
+        "yM HH:mm": "MM.y. HH:mm",
+        "yM HH:mm:ss": "MM.y. HH:mm:ss",
+        "yM HH:mm:ss z": "MM.y. HH:mm:ss z",
+        "yM HH:mm:ss zzzz": "MM.y. HH:mm:ss zzzz",
+        "yM Hm": "MM.y. HH:mm",
+        "yM Hms": "MM.y. HH:mm:ss",
+        "yM Hmsv": "MM.y. HH:mm:ss v",
+        "yM Hmv": "MM.y. HH:mm v",
+        "yM h": "MM.y. h\u202fa",
+        "yM hm": "MM.y. h:mm\u202fa",
+        "yM hms": "MM.y. h:mm:ss\u202fa",
+        "yM hmsv": "MM.y. h:mm:ss\u202fa v",
+        "yM hmv": "MM.y. h:mm\u202fa v",
+        "yM mmss": "MM.y. mm:ss",
+        "yM ms": "MM.y. mm:ss",
+        "yMEd": "E, d.MM.y.",
+        "yMEd Bh": "E, d.MM.y. h B",
+        "yMEd Bhm": "E, d.MM.y. h:mm B",
+        "yMEd Bhms": "E, d.MM.y. h:mm:ss B",
+        "yMEd H": "E, d.MM.y. HH",
+        "yMEd HH:mm": "E, d.MM.y. HH:mm",
+        "yMEd HH:mm:ss": "E, d.MM.y. HH:mm:ss",
+        "yMEd HH:mm:ss z": "E, d.MM.y. HH:mm:ss z",
+        "yMEd HH:mm:ss zzzz": "E, d.MM.y. HH:mm:ss zzzz",
+        "yMEd Hm": "E, d.MM.y. HH:mm",
+        "yMEd Hms": "E, d.MM.y. HH:mm:ss",
+        "yMEd Hmsv": "E, d.MM.y. HH:mm:ss v",
+        "yMEd Hmv": "E, d.MM.y. HH:mm v",
+        "yMEd h": "E, d.MM.y. h\u202fa",
+        "yMEd hm": "E, d.MM.y. h:mm\u202fa",
+        "yMEd hms": "E, d.MM.y. h:mm:ss\u202fa",
+        "yMEd hmsv": "E, d.MM.y. h:mm:ss\u202fa v",
+        "yMEd hmv": "E, d.MM.y. h:mm\u202fa v",
+        "yMEd mmss": "E, d.MM.y. mm:ss",
+        "yMEd ms": "E, d.MM.y. mm:ss",
+        "yMMM": "y. 'g'. MMM",
+        "yMMM Bh": "y. 'g'. MMM h B",
+        "yMMM Bhm": "y. 'g'. MMM h:mm B",
+        "yMMM Bhms": "y. 'g'. MMM h:mm:ss B",
+        "yMMM H": "y. 'g'. MMM HH",
+        "yMMM HH:mm": "y. 'g'. MMM HH:mm",
+        "yMMM HH:mm:ss": "y. 'g'. MMM HH:mm:ss",
+        "yMMM HH:mm:ss z": "y. 'g'. MMM HH:mm:ss z",
+        "yMMM HH:mm:ss zzzz": "y. 'g'. MMM HH:mm:ss zzzz",
+        "yMMM Hm": "y. 'g'. MMM HH:mm",
+        "yMMM Hms": "y. 'g'. MMM HH:mm:ss",
+        "yMMM Hmsv": "y. 'g'. MMM HH:mm:ss v",
+        "yMMM Hmv": "y. 'g'. MMM HH:mm v",
+        "yMMM h": "y. 'g'. MMM h\u202fa",
+        "yMMM hm": "y. 'g'. MMM h:mm\u202fa",
+        "yMMM hms": "y. 'g'. MMM h:mm:ss\u202fa",
+        "yMMM hmsv": "y. 'g'. MMM h:mm:ss\u202fa v",
+        "yMMM hmv": "y. 'g'. MMM h:mm\u202fa v",
+        "yMMM mmss": "y. 'g'. MMM mm:ss",
+        "yMMM ms": "y. 'g'. MMM mm:ss",
+        "yMMMEd": "E, y. 'g'. d. MMM",
+        "yMMMEd Bh": "E, y. 'g'. d. MMM h B",
+        "yMMMEd Bhm": "E, y. 'g'. d. MMM h:mm B",
+        "yMMMEd Bhms": "E, y. 'g'. d. MMM h:mm:ss B",
+        "yMMMEd H": "E, y. 'g'. d. MMM HH",
+        "yMMMEd HH:mm": "E, y. 'g'. d. MMM HH:mm",
+        "yMMMEd HH:mm:ss": "E, y. 'g'. d. MMM HH:mm:ss",
+        "yMMMEd HH:mm:ss z": "E, y. 'g'. d. MMM HH:mm:ss z",
+        "yMMMEd HH:mm:ss zzzz": "E, y. 'g'. d. MMM HH:mm:ss zzzz",
+        "yMMMEd Hm": "E, y. 'g'. d. MMM HH:mm",
+        "yMMMEd Hms": "E, y. 'g'. d. MMM HH:mm:ss",
+        "yMMMEd Hmsv": "E, y. 'g'. d. MMM HH:mm:ss v",
+        "yMMMEd Hmv": "E, y. 'g'. d. MMM HH:mm v",
+        "yMMMEd h": "E, y. 'g'. d. MMM h\u202fa",
+        "yMMMEd hm": "E, y. 'g'. d. MMM h:mm\u202fa",
+        "yMMMEd hms": "E, y. 'g'. d. MMM h:mm:ss\u202fa",
+        "yMMMEd hmsv": "E, y. 'g'. d. MMM h:mm:ss\u202fa v",
+        "yMMMEd hmv": "E, y. 'g'. d. MMM h:mm\u202fa v",
+        "yMMMEd mmss": "E, y. 'g'. d. MMM mm:ss",
+        "yMMMEd ms": "E, y. 'g'. d. MMM mm:ss",
+        "yMMMM": "y. 'g'. MMMM",
+        "yMMMM Bh": "y. 'g'. MMMM h B",
+        "yMMMM Bhm": "y. 'g'. MMMM h:mm B",
+        "yMMMM Bhms": "y. 'g'. MMMM h:mm:ss B",
+        "yMMMM H": "y. 'g'. MMMM HH",
+        "yMMMM HH:mm": "y. 'g'. MMMM HH:mm",
+        "yMMMM HH:mm:ss": "y. 'g'. MMMM HH:mm:ss",
+        "yMMMM HH:mm:ss z": "y. 'g'. MMMM HH:mm:ss z",
+        "yMMMM HH:mm:ss zzzz": "y. 'g'. MMMM HH:mm:ss zzzz",
+        "yMMMM Hm": "y. 'g'. MMMM HH:mm",
+        "yMMMM Hms": "y. 'g'. MMMM HH:mm:ss",
+        "yMMMM Hmsv": "y. 'g'. MMMM HH:mm:ss v",
+        "yMMMM Hmv": "y. 'g'. MMMM HH:mm v",
+        "yMMMM h": "y. 'g'. MMMM h\u202fa",
+        "yMMMM hm": "y. 'g'. MMMM h:mm\u202fa",
+        "yMMMM hms": "y. 'g'. MMMM h:mm:ss\u202fa",
+        "yMMMM hmsv": "y. 'g'. MMMM h:mm:ss\u202fa v",
+        "yMMMM hmv": "y. 'g'. MMMM h:mm\u202fa v",
+        "yMMMM mmss": "y. 'g'. MMMM mm:ss",
+        "yMMMM ms": "y. 'g'. MMMM mm:ss",
+        "yMMMd": "y. 'g'. d. MMM",
+        "yMMMd Bh": "y. 'g'. d. MMM h B",
+        "yMMMd Bhm": "y. 'g'. d. MMM h:mm B",
+        "yMMMd Bhms": "y. 'g'. d. MMM h:mm:ss B",
+        "yMMMd H": "y. 'g'. d. MMM HH",
+        "yMMMd HH:mm": "y. 'g'. d. MMM HH:mm",
+        "yMMMd HH:mm:ss": "y. 'g'. d. MMM HH:mm:ss",
+        "yMMMd HH:mm:ss z": "y. 'g'. d. MMM HH:mm:ss z",
+        "yMMMd HH:mm:ss zzzz": "y. 'g'. d. MMM HH:mm:ss zzzz",
+        "yMMMd Hm": "y. 'g'. d. MMM HH:mm",
+        "yMMMd Hms": "y. 'g'. d. MMM HH:mm:ss",
+        "yMMMd Hmsv": "y. 'g'. d. MMM HH:mm:ss v",
+        "yMMMd Hmv": "y. 'g'. d. MMM HH:mm v",
+        "yMMMd h": "y. 'g'. d. MMM h\u202fa",
+        "yMMMd hm": "y. 'g'. d. MMM h:mm\u202fa",
+        "yMMMd hms": "y. 'g'. d. MMM h:mm:ss\u202fa",
+        "yMMMd hmsv": "y. 'g'. d. MMM h:mm:ss\u202fa v",
+        "yMMMd hmv": "y. 'g'. d. MMM h:mm\u202fa v",
+        "yMMMd mmss": "y. 'g'. d. MMM mm:ss",
+        "yMMMd ms": "y. 'g'. d. MMM mm:ss",
+        "yMd": "d.MM.y.",
+        "yMd Bh": "d.MM.y. h B",
+        "yMd Bhm": "d.MM.y. h:mm B",
+        "yMd Bhms": "d.MM.y. h:mm:ss B",
+        "yMd H": "d.MM.y. HH",
+        "yMd HH:mm": "d.MM.y. HH:mm",
+        "yMd HH:mm:ss": "d.MM.y. HH:mm:ss",
+        "yMd HH:mm:ss z": "d.MM.y. HH:mm:ss z",
+        "yMd HH:mm:ss zzzz": "d.MM.y. HH:mm:ss zzzz",
+        "yMd Hm": "d.MM.y. HH:mm",
+        "yMd Hms": "d.MM.y. HH:mm:ss",
+        "yMd Hmsv": "d.MM.y. HH:mm:ss v",
+        "yMd Hmv": "d.MM.y. HH:mm v",
+        "yMd h": "d.MM.y. h\u202fa",
+        "yMd hm": "d.MM.y. h:mm\u202fa",
+        "yMd hms": "d.MM.y. h:mm:ss\u202fa",
+        "yMd hmsv": "d.MM.y. h:mm:ss\u202fa v",
+        "yMd hmv": "d.MM.y. h:mm\u202fa v",
+        "yMd mmss": "d.MM.y. mm:ss",
+        "yMd ms": "d.MM.y. mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23",
+      "",
+      "",
+      "h12"
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h B\u2009\u2013\u2009h B",
+        "h": "h\u2013h B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2013h:mm B",
+        "m": "h:mm\u2013h:mm B"
+      },
+      "Gy": {
+        "G": "G y.\u2009\u2013\u2009G y.",
+        "y": "G y.\u2013y."
+      },
+      "GyM": {
+        "G": "GGGGG MM-y.\u2009\u2013\u2009GGGGG MM-y.",
+        "M": "GGGGG MM-y.\u2009\u2013\u2009MM-y.",
+        "y": "GGGGG MM-y.\u2009\u2013\u2009MM-y."
+      },
+      "GyMEd": {
+        "G": "GGGGG dd-MM-y., E\u2009\u2013\u2009GGGGG dd-MM-y., E",
+        "M": "GGGGG dd-MM-y., E\u2009\u2013\u2009dd-MM-y., E",
+        "d": "GGGGG dd-MM-y., E\u2009\u2013\u2009dd-MM-y., E",
+        "y": "GGGGG dd-MM-y., E\u2009\u2013\u2009dd-MM-y., E"
+      },
+      "GyMMM": {
+        "G": "G y. 'gada' MMM\u2009\u2013\u2009G y. 'gada' MMM",
+        "M": "G y. 'gada' MMM\u2013MMM",
+        "y": "G y. 'gada' MMM\u2009\u2013\u2009y. 'gada' MMM"
+      },
+      "GyMMMEd": {
+        "G": "G y. 'gada' d. MMM, E\u2009\u2013\u2009G y. 'gada' d. MMM, E",
+        "M": "G y. 'gada' d. MMM, E\u2009\u2013\u2009d. MMM, E",
+        "d": "G y. 'gada' d. MMM, E\u2009\u2013\u2009d. MMM, E",
+        "y": "G y. 'gada' d. MMM, E\u2009\u2013\u2009y. 'gada' d. MMM, E"
+      },
+      "GyMMMd": {
+        "G": "G y. 'gada' d. MMM\u2009\u2013\u2009G y. 'gada' d. MMM",
+        "M": "G y. 'gada' d. MMM\u2009\u2013\u2009d. MMM",
+        "d": "G y. 'gada' d.\u2013d. MMM",
+        "y": "G y. 'gada' d. MMM\u2009\u2013\u2009y. 'gada' d. MMM"
+      },
+      "GyMd": {
+        "G": "GGGGG dd-MM-y.\u2009\u2013\u2009GGGGG dd-MM-y.",
+        "M": "GGGGG dd-MM-y.\u2009\u2013\u2009dd-MM-y.",
+        "d": "GGGGG dd-MM-y.\u2009\u2013\u2009dd-MM-y.",
+        "y": "GGGGG dd-MM-y.\u2009\u2013\u2009dd-MM-y."
+      },
+      "H": {
+        "H": "HH\u2013HH"
+      },
+      "Hm": {
+        "H": "HH:mm\u2013HH:mm",
+        "m": "HH:mm\u2013HH:mm"
+      },
+      "Hmv": {
+        "H": "HH:mm\u2013HH:mm v",
+        "m": "HH:mm\u2013HH:mm v"
+      },
+      "Hv": {
+        "H": "HH\u2013HH v"
+      },
+      "M": {
+        "M": "MM.\u2013MM."
+      },
+      "MEd": {
+        "M": "E, dd.MM.\u2009\u2013\u2009E, dd.MM.",
+        "d": "E, dd.MM.\u2009\u2013\u2009E, dd.MM."
+      },
+      "MMM": {
+        "M": "LLL\u2013LLL"
+      },
+      "MMMEd": {
+        "M": "E, d. MMM\u2009\u2013\u2009E, d. MMM",
+        "d": "E, d. MMM\u2009\u2013\u2009E, d. MMM"
+      },
+      "MMMd": {
+        "M": "d. MMM\u2009\u2013\u2009d. MMM",
+        "d": "d.\u2013d. MMM"
+      },
+      "Md": {
+        "M": "dd.MM.\u2013dd.MM.",
+        "d": "dd.MM.\u2013dd.MM."
+      },
+      "d": {
+        "d": "d.\u2013d."
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2013h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa",
+        "h": "h:mm\u2013h:mm\u202fa",
+        "m": "h:mm\u2013h:mm\u202fa"
+      },
+      "hmv": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa v",
+        "h": "h:mm\u2013h:mm\u202fa v",
+        "m": "h:mm\u2013h:mm\u202fa, v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2013h\u202fa v"
+      },
+      "intervalFormatFallback": "{0}\u2009\u2013\u2009{1}",
+      "y": {
+        "y": "y.\u2013y."
+      },
+      "yM": {
+        "M": "MM.y.\u2013MM.y.",
+        "y": "MM.y.\u2013MM.y."
+      },
+      "yMEd": {
+        "M": "E, dd.MM.y.\u2009\u2013\u2009E, dd.MM.y.",
+        "d": "E, dd.MM.y.\u2009\u2013\u2009E, dd.MM.y.",
+        "y": "E, dd.MM.y.\u2009\u2013\u2009E, dd.MM.y."
+      },
+      "yMMM": {
+        "M": "y. 'gada' MMM\u2013MMM",
+        "y": "y. 'gada' MMM\u00a0\u2013 y. 'gada' MMM"
+      },
+      "yMMMEd": {
+        "M": "E, y. 'gada' d. MMM\u2009\u2013\u2009E, y. 'gada' d. MMM",
+        "d": "E, y. 'gada' d. MMM\u2009\u2013\u2009E, y. 'gada' d. MMM",
+        "y": "E, y. 'gada' d. MMM\u00a0\u2013 E, y. 'gada' d. MMM"
+      },
+      "yMMMM": {
+        "M": "y. 'gada' MMMM\u2009\u2013\u2009MMMM",
+        "y": "y. 'gada' MMMM\u00a0\u2013 y. 'gada' MMMM"
+      },
+      "yMMMd": {
+        "M": "y. 'gada' d. MMM\u2009\u2013\u2009d. MMM",
+        "d": "y. 'gada' d.\u2013d. MMM",
+        "y": "y. 'gada' d. MMM\u2009\u2013\u2009y. 'gada' d. MMM"
+      },
+      "yMd": {
+        "M": "dd.MM.y.\u2013dd.MM.y.",
+        "d": "dd.MM.y.\u2013dd.MM.y.",
+        "y": "dd.MM.y.\u2013dd.MM.y."
+      }
+    },
+    "month": {
+      "long": [
+        "janv\u0101ris",
+        "febru\u0101ris",
+        "marts",
+        "apr\u012blis",
+        "maijs",
+        "j\u016bnijs",
+        "j\u016blijs",
+        "augusts",
+        "septembris",
+        "oktobris",
+        "novembris",
+        "decembris"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ],
+      "short": [
+        "janv.",
+        "febr.",
+        "marts",
+        "apr.",
+        "maijs",
+        "j\u016bn.",
+        "j\u016bl.",
+        "aug.",
+        "sept.",
+        "okt.",
+        "nov.",
+        "dec."
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "p\u0113cp.",
+    "timeFormat": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "timeZoneName": {
+      "Africa/Abidjan": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Accra": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Addis_Ababa": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Bamako": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Banjul": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Africa/Conakry": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Dakar": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Freetown": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "Dienvid\u0101frikas ziemas laiks",
+          "Dienvid\u0101frikas ziemas laiks"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Lome": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "Centr\u0101l\u0101frikas laiks",
+          "Centr\u0101l\u0101frikas laiks"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "Dienvid\u0101frikas ziemas laiks",
+          "Dienvid\u0101frikas ziemas laiks"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "Dienvid\u0101frikas ziemas laiks",
+          "Dienvid\u0101frikas ziemas laiks"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Nouakchott": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Ouagadougou": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "Rietum\u0101frikas ziemas laiks",
+          "Rietum\u0101frikas vasaras laiks"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "America/Anguilla": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Antigua": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Argentina/San_Luis": {
+        "long": [
+          "Rietumargent\u012bnas ziemas laiks",
+          "Rietumargent\u012bnas vasaras laiks"
+        ]
+      },
+      "America/Aruba": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Asuncion": {
+        "long": [
+          "Paragvajas ziemas laiks",
+          "Paragvajas vasaras laiks"
+        ]
+      },
+      "America/Barbados": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Bogota": {
+        "long": [
+          "Kolumbijas ziemas laiks",
+          "Kolumbijas vasaras laiks"
+        ]
+      },
+      "America/Buenos_Aires": {
+        "long": [
+          "Argent\u012bnas ziemas laiks",
+          "Argent\u012bnas vasaras laiks"
+        ]
+      },
+      "America/Caracas": {
+        "long": [
+          "Venecu\u0113las laiks",
+          "Venecu\u0113las laiks"
+        ]
+      },
+      "America/Cayenne": {
+        "long": [
+          "Francijas Gvi\u0101nas laiks",
+          "Francijas Gvi\u0101nas laiks"
+        ]
+      },
+      "America/Cayman": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Curacao": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Denver": {
+        "long": [
+          "Kalnu ziemas laiks",
+          "Kalnu vasaras laiks"
+        ]
+      },
+      "America/Dominica": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Edmonton": {
+        "long": [
+          "Kalnu ziemas laiks",
+          "Kalnu vasaras laiks"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Godthab": {
+        "long": [
+          "Rietumgrenlandes ziemas laiks",
+          "Rietumgrenlandes vasaras laiks"
+        ]
+      },
+      "America/Grenada": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Guadeloupe": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Guayaquil": {
+        "long": [
+          "Ekvadoras laiks",
+          "Ekvadoras laiks"
+        ]
+      },
+      "America/Guyana": {
+        "long": [
+          "Gaj\u0101nas laiks",
+          "Gaj\u0101nas laiks"
+        ]
+      },
+      "America/Halifax": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Havana": {
+        "long": [
+          "Kubas ziemas laiks",
+          "Kubas vasaras laiks"
+        ]
+      },
+      "America/Jamaica": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "A\u013caskas ziemas laiks",
+          "A\u013caskas vasaras laiks"
+        ]
+      },
+      "America/Kralendijk": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/La_Paz": {
+        "long": [
+          "Bol\u012bvijas laiks",
+          "Bol\u012bvijas laiks"
+        ]
+      },
+      "America/Lima": {
+        "long": [
+          "Peru ziemas laiks",
+          "Peru vasaras laiks"
+        ]
+      },
+      "America/Los_Angeles": {
+        "long": [
+          "Klus\u0101 oke\u0101na ziemas laiks",
+          "Klus\u0101 oke\u0101na vasaras laiks"
+        ]
+      },
+      "America/Lower_Princes": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "Amazones ziemas laiks",
+          "Amazones vasaras laiks"
+        ]
+      },
+      "America/Marigot": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Martinique": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Mazatlan": {
+        "long": [
+          "Meksikas Klus\u0101 oke\u0101na piekrastes ziemas laiks",
+          "Meksikas Klus\u0101 oke\u0101na piekrastes vasaras laiks"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Miquelon": {
+        "long": [
+          "Senpj\u0113ras un Mikelonas ziemas laiks",
+          "Senpj\u0113ras un Mikelonas vasaras laiks"
+        ]
+      },
+      "America/Montevideo": {
+        "long": [
+          "Urugvajas ziemas laiks",
+          "Urugvajas vasaras laiks"
+        ]
+      },
+      "America/Montserrat": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Nassau": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/New_York": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Noronha": {
+        "long": [
+          "Fernandu di Noro\u0146as ziemas laiks",
+          "Fernandu di Noro\u0146as vasaras laiks"
+        ]
+      },
+      "America/Panama": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Paramaribo": {
+        "long": [
+          "Surinamas laiks",
+          "Surinamas laiks"
+        ]
+      },
+      "America/Port-au-Prince": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Port_of_Spain": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Puerto_Rico": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Santiago": {
+        "long": [
+          "\u010c\u012bles ziemas laiks",
+          "\u010c\u012bles vasaras laiks"
+        ]
+      },
+      "America/Sao_Paulo": {
+        "long": [
+          "Braz\u012blijas ziemas laiks",
+          "Braz\u012blijas vasaras laiks"
+        ]
+      },
+      "America/Scoresbysund": {
+        "long": [
+          "Austrumgrenlandes ziemas laiks",
+          "Austrumgrenlandes vasaras laiks"
+        ]
+      },
+      "America/St_Johns": {
+        "long": [
+          "\u0145\u016bfaundlendas ziemas laiks",
+          "\u0145\u016bfaundlendas vasaras laiks"
+        ]
+      },
+      "America/St_Kitts": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/St_Lucia": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/St_Thomas": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/St_Vincent": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "America/Thule": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Tijuana": {
+        "long": [
+          "Klus\u0101 oke\u0101na ziemas laiks",
+          "Klus\u0101 oke\u0101na vasaras laiks"
+        ]
+      },
+      "America/Toronto": {
+        "long": [
+          "Austrumu ziemas laiks",
+          "Austrumu vasaras laiks"
+        ]
+      },
+      "America/Tortola": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "America/Vancouver": {
+        "long": [
+          "Klus\u0101 oke\u0101na ziemas laiks",
+          "Klus\u0101 oke\u0101na vasaras laiks"
+        ]
+      },
+      "America/Whitehorse": {
+        "long": [
+          "Jukonas laiks",
+          "Jukonas laiks"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "Centr\u0101lais ziemas laiks",
+          "Centr\u0101lais vasaras laiks"
+        ]
+      },
+      "Antarctica/Davis": {
+        "long": [
+          "Deivisas laiks",
+          "Deivisas laiks"
+        ]
+      },
+      "Antarctica/DumontDUrville": {
+        "long": [
+          "Dimondirvilas laiks",
+          "Dimondirvilas laiks"
+        ]
+      },
+      "Antarctica/Mawson": {
+        "long": [
+          "Mosonas laiks",
+          "Mosonas laiks"
+        ]
+      },
+      "Antarctica/McMurdo": {
+        "long": [
+          "Jaunz\u0113landes ziemas laiks",
+          "Jaunz\u0113landes vasaras laiks"
+        ]
+      },
+      "Antarctica/Rothera": {
+        "long": [
+          "Roteras laiks",
+          "Roteras laiks"
+        ]
+      },
+      "Antarctica/Syowa": {
+        "long": [
+          "\u0160ovas laiks",
+          "\u0160ovas laiks"
+        ]
+      },
+      "Antarctica/Vostok": {
+        "long": [
+          "Vostokas laiks",
+          "Vostokas laiks"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Asia/Aden": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Almaty": {
+        "long": [
+          "Austrumkazahst\u0101nas laiks",
+          "Austrumkazahst\u0101nas laiks"
+        ]
+      },
+      "Asia/Anadyr": {
+        "long": [
+          "Anadiras ziemas laiks",
+          "Anadiras vasaras laiks"
+        ]
+      },
+      "Asia/Aqtobe": {
+        "long": [
+          "Rietumkazahst\u0101nas laiks",
+          "Rietumkazahst\u0101nas laiks"
+        ]
+      },
+      "Asia/Ashgabat": {
+        "long": [
+          "Turkmenist\u0101nas ziemas laiks",
+          "Turkmenist\u0101nas vasaras laiks"
+        ]
+      },
+      "Asia/Baghdad": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Bahrain": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Bangkok": {
+        "long": [
+          "Indo\u0137\u012bnas laiks",
+          "Indo\u0137\u012bnas laiks"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Asia/Bishkek": {
+        "long": [
+          "Kirgizst\u0101nas laiks",
+          "Kirgizst\u0101nas laiks"
+        ]
+      },
+      "Asia/Brunei": {
+        "long": [
+          "Brunejas Darusalamas laiks",
+          "Brunejas Darusalamas laiks"
+        ]
+      },
+      "Asia/Calcutta": {
+        "long": [
+          "Indijas ziemas laiks",
+          "Indijas ziemas laiks"
+        ]
+      },
+      "Asia/Dili": {
+        "long": [
+          "Austrumtimoras laiks",
+          "Austrumtimoras laiks"
+        ]
+      },
+      "Asia/Dubai": {
+        "long": [
+          "Persijas l\u012b\u010da laiks",
+          "Persijas l\u012b\u010da laiks"
+        ]
+      },
+      "Asia/Dushanbe": {
+        "long": [
+          "Tad\u017eikist\u0101nas laiks",
+          "Tad\u017eikist\u0101nas laiks"
+        ]
+      },
+      "Asia/Hong_Kong": {
+        "long": [
+          "Honkongas ziemas laiks",
+          "Honkongas vasaras laiks"
+        ]
+      },
+      "Asia/Hovd": {
+        "long": [
+          "Hovdas ziemas laiks",
+          "Hovdas vasaras laiks"
+        ]
+      },
+      "Asia/Irkutsk": {
+        "long": [
+          "Irkutskas ziemas laiks",
+          "Irkutskas vasaras laiks"
+        ]
+      },
+      "Asia/Jakarta": {
+        "long": [
+          "Rietumindon\u0113zijas laiks",
+          "Rietumindon\u0113zijas laiks"
+        ]
+      },
+      "Asia/Jayapura": {
+        "long": [
+          "Austrumindon\u0113zijas laiks",
+          "Austrumindon\u0113zijas laiks"
+        ]
+      },
+      "Asia/Jerusalem": {
+        "long": [
+          "Izra\u0113las ziemas laiks",
+          "Izra\u0113las vasaras laiks"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "Afganist\u0101nas laiks",
+          "Afganist\u0101nas laiks"
+        ]
+      },
+      "Asia/Kamchatka": {
+        "long": [
+          "Petropavlovskas-Kam\u010datskas ziemas laiks",
+          "Petropavlovskas-Kam\u010datskas vasaras laiks"
+        ]
+      },
+      "Asia/Karachi": {
+        "long": [
+          "Pakist\u0101nas ziemas laiks",
+          "Pakist\u0101nas vasaras laiks"
+        ]
+      },
+      "Asia/Katmandu": {
+        "long": [
+          "Nep\u0101las laiks",
+          "Nep\u0101las laiks"
+        ]
+      },
+      "Asia/Krasnoyarsk": {
+        "long": [
+          "Krasnojarskas ziemas laiks",
+          "Krasnojarskas vasaras laiks"
+        ]
+      },
+      "Asia/Kuching": {
+        "long": [
+          "Malaizijas laiks",
+          "Malaizijas laiks"
+        ]
+      },
+      "Asia/Kuwait": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Magadan": {
+        "long": [
+          "Magadanas ziemas laiks",
+          "Magadanas vasaras laiks"
+        ]
+      },
+      "Asia/Makassar": {
+        "long": [
+          "Centr\u0101lindon\u0113zijas laiks",
+          "Centr\u0101lindon\u0113zijas laiks"
+        ]
+      },
+      "Asia/Manila": {
+        "long": [
+          "Filip\u012bnu ziemas laiks",
+          "Filip\u012bnu vasaras laiks"
+        ]
+      },
+      "Asia/Muscat": {
+        "long": [
+          "Persijas l\u012b\u010da laiks",
+          "Persijas l\u012b\u010da laiks"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Asia/Novosibirsk": {
+        "long": [
+          "Novosibirskas ziemas laiks",
+          "Novosibirskas vasaras laiks"
+        ]
+      },
+      "Asia/Omsk": {
+        "long": [
+          "Omskas ziemas laiks",
+          "Omskas vasaras laiks"
+        ]
+      },
+      "Asia/Phnom_Penh": {
+        "long": [
+          "Indo\u0137\u012bnas laiks",
+          "Indo\u0137\u012bnas laiks"
+        ]
+      },
+      "Asia/Pyongyang": {
+        "long": [
+          "Phenjanas laiks",
+          "Phenjanas laiks"
+        ]
+      },
+      "Asia/Qatar": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Rangoon": {
+        "long": [
+          "Mjanmas laiks",
+          "Mjanmas laiks"
+        ]
+      },
+      "Asia/Riyadh": {
+        "long": [
+          "Ar\u0101bijas pussalas ziemas laiks",
+          "Ar\u0101bijas pussalas vasaras laiks"
+        ]
+      },
+      "Asia/Sakhalin": {
+        "long": [
+          "Sahal\u012bnas ziemas laiks",
+          "Sahal\u012bnas vasaras laiks"
+        ]
+      },
+      "Asia/Seoul": {
+        "long": [
+          "Korejas ziemas laiks",
+          "Korejas vasaras laiks"
+        ]
+      },
+      "Asia/Shanghai": {
+        "long": [
+          "\u0136\u012bnas ziemas laiks",
+          "\u0136\u012bnas vasaras laiks"
+        ]
+      },
+      "Asia/Singapore": {
+        "long": [
+          "Singap\u016bras laiks",
+          "Singap\u016bras laiks"
+        ]
+      },
+      "Asia/Taipei": {
+        "long": [
+          "Taibei ziemas laiks",
+          "Taibei vasaras laiks"
+        ]
+      },
+      "Asia/Tashkent": {
+        "long": [
+          "Uzbekist\u0101nas ziemas laiks",
+          "Uzbekist\u0101nas vasaras laiks"
+        ]
+      },
+      "Asia/Tehran": {
+        "long": [
+          "Ir\u0101nas ziemas laiks",
+          "Ir\u0101nas vasaras laiks"
+        ]
+      },
+      "Asia/Thimphu": {
+        "long": [
+          "But\u0101nas laiks",
+          "But\u0101nas laiks"
+        ]
+      },
+      "Asia/Tokyo": {
+        "long": [
+          "Jap\u0101nas ziemas laiks",
+          "Jap\u0101nas vasaras laiks"
+        ]
+      },
+      "Asia/Ulaanbaatar": {
+        "long": [
+          "Ulanbatoras ziemas laiks",
+          "Ulanbatoras vasaras laiks"
+        ]
+      },
+      "Asia/Vientiane": {
+        "long": [
+          "Indo\u0137\u012bnas laiks",
+          "Indo\u0137\u012bnas laiks"
+        ]
+      },
+      "Asia/Vladivostok": {
+        "long": [
+          "Vladivostokas ziemas laiks",
+          "Vladivostokas vasaras laiks"
+        ]
+      },
+      "Asia/Yakutsk": {
+        "long": [
+          "Jakutskas ziemas laiks",
+          "Jakutskas vasaras laiks"
+        ]
+      },
+      "Asia/Yekaterinburg": {
+        "long": [
+          "Jekaterinburgas ziemas laiks",
+          "Jekaterinburgas vasaras laiks"
+        ]
+      },
+      "Atlantic/Azores": {
+        "long": [
+          "Azoru salu ziemas laiks",
+          "Azoru salu vasaras laiks"
+        ]
+      },
+      "Atlantic/Bermuda": {
+        "long": [
+          "Atlantijas ziemas laiks",
+          "Atlantijas vasaras laiks"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "Rietumeiropas ziemas laiks",
+          "Rietumeiropas vasaras laiks"
+        ],
+        "short": [
+          "WET",
+          "WEST"
+        ]
+      },
+      "Atlantic/Cape_Verde": {
+        "long": [
+          "Kaboverdes ziemas laiks",
+          "Kaboverdes vasaras laiks"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "Rietumeiropas ziemas laiks",
+          "Rietumeiropas vasaras laiks"
+        ],
+        "short": [
+          "WET",
+          "WEST"
+        ]
+      },
+      "Atlantic/Reykjavik": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Atlantic/South_Georgia": {
+        "long": [
+          "Dienvidd\u017eord\u017eijas laiks",
+          "Dienvidd\u017eord\u017eijas laiks"
+        ]
+      },
+      "Atlantic/St_Helena": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Atlantic/Stanley": {
+        "long": [
+          "Folklenda (Malvinu) salu ziemas laiks",
+          "Folklenda (Malvinu) salu vasaras laiks"
+        ]
+      },
+      "Australia/Adelaide": {
+        "long": [
+          "Austr\u0101lijas centr\u0101lais ziemas laiks",
+          "Austr\u0101lijas centr\u0101lais vasaras laiks"
+        ]
+      },
+      "Australia/Eucla": {
+        "long": [
+          "Austr\u0101lijas centr\u0101lais rietumu ziemas laiks",
+          "Austr\u0101lijas centr\u0101lais rietumu vasaras laiks"
+        ]
+      },
+      "Australia/Lord_Howe": {
+        "long": [
+          "Lorda Hava salas ziemas laiks",
+          "Lorda Hava salas vasaras laiks"
+        ]
+      },
+      "Australia/Perth": {
+        "long": [
+          "Austr\u0101lijas rietumu ziemas laiks",
+          "Austr\u0101lijas rietumu vasaras laiks"
+        ]
+      },
+      "Australia/Sydney": {
+        "long": [
+          "Austr\u0101lijas austrumu ziemas laiks",
+          "Austr\u0101lijas austrumu vasaras laiks"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Kaliningrad": {
+        "long": [
+          "Austrumeiropas laika josla (FET)",
+          "Austrumeiropas laika josla (FET)"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/London": {
+        "long": [
+          "Grini\u010das laiks",
+          "Grini\u010das laiks"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Minsk": {
+        "long": [
+          "Austrumeiropas laika josla (FET)",
+          "Austrumeiropas laika josla (FET)"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "Maskavas ziemas laiks",
+          "Maskavas vasaras laiks"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Samara": {
+        "long": [
+          "Samaras ziemas laiks",
+          "Samaras vasaras laiks"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "Austrumeiropas ziemas laiks",
+          "Austrumeiropas vasaras laiks"
+        ],
+        "short": [
+          "EET",
+          "EEST"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Volgograd": {
+        "long": [
+          "Volgogradas ziemas laiks",
+          "Volgogradas vasaras laiks"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "Centr\u0101leiropas ziemas laiks",
+          "Centr\u0101leiropas vasaras laiks"
+        ],
+        "short": [
+          "CET",
+          "CEST"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Indian/Chagos": {
+        "long": [
+          "Indijas oke\u0101na laiks",
+          "Indijas oke\u0101na laiks"
+        ]
+      },
+      "Indian/Christmas": {
+        "long": [
+          "Ziemsv\u0113tku salas laiks",
+          "Ziemsv\u0113tku salas laiks"
+        ]
+      },
+      "Indian/Cocos": {
+        "long": [
+          "Kokosu (K\u012blinga) salu laiks",
+          "Kokosu (K\u012blinga) salu laiks"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Indian/Kerguelen": {
+        "long": [
+          "Francijas Dienvidj\u016bru un Antarktikas teritorijas laiks",
+          "Francijas Dienvidj\u016bru un Antarktikas teritorijas laiks"
+        ]
+      },
+      "Indian/Mahe": {
+        "long": [
+          "Sei\u0161e\u013cu salu laiks",
+          "Sei\u0161e\u013cu salu laiks"
+        ]
+      },
+      "Indian/Maldives": {
+        "long": [
+          "Mald\u012bvijas laiks",
+          "Mald\u012bvijas laiks"
+        ]
+      },
+      "Indian/Mauritius": {
+        "long": [
+          "Maur\u012bcijas ziemas laiks",
+          "Maur\u012bcijas vasaras laiks"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "Austrum\u0101frikas laiks",
+          "Austrum\u0101frikas laiks"
+        ]
+      },
+      "Indian/Reunion": {
+        "long": [
+          "Reinjonas laiks",
+          "Reinjonas laiks"
+        ]
+      },
+      "Pacific/Apia": {
+        "long": [
+          "Apijas ziemas laiks",
+          "Apijas vasaras laiks"
+        ]
+      },
+      "Pacific/Auckland": {
+        "long": [
+          "Jaunz\u0113landes ziemas laiks",
+          "Jaunz\u0113landes vasaras laiks"
+        ]
+      },
+      "Pacific/Chatham": {
+        "long": [
+          "\u010cetemas ziemas laiks",
+          "\u010cetemas vasaras laiks"
+        ]
+      },
+      "Pacific/Easter": {
+        "long": [
+          "Lieldienu salas ziemas laiks",
+          "Lieldienu salas vasaras laiks"
+        ]
+      },
+      "Pacific/Efate": {
+        "long": [
+          "Vanuatu ziemas laiks",
+          "Vanuatu vasaras laiks"
+        ]
+      },
+      "Pacific/Enderbury": {
+        "long": [
+          "F\u0113niksa salu laiks",
+          "F\u0113niksa salu laiks"
+        ]
+      },
+      "Pacific/Fakaofo": {
+        "long": [
+          "Tokelau laiks",
+          "Tokelau laiks"
+        ]
+      },
+      "Pacific/Fiji": {
+        "long": [
+          "Fid\u017ei ziemas laiks",
+          "Fid\u017ei vasaras laiks"
+        ]
+      },
+      "Pacific/Funafuti": {
+        "long": [
+          "Tuvalu laiks",
+          "Tuvalu laiks"
+        ]
+      },
+      "Pacific/Galapagos": {
+        "long": [
+          "Galapagu laiks",
+          "Galapagu laiks"
+        ]
+      },
+      "Pacific/Gambier": {
+        "long": [
+          "Gambj\u0113 salu laiks",
+          "Gambj\u0113 salu laiks"
+        ]
+      },
+      "Pacific/Guadalcanal": {
+        "long": [
+          "Z\u0101lamana salu laiks",
+          "Z\u0101lamana salu laiks"
+        ]
+      },
+      "Pacific/Honolulu": {
+        "long": [
+          "Havaju\u2013Aleutu ziemas laiks",
+          "Havaju\u2013Aleutu vasaras laiks"
+        ]
+      },
+      "Pacific/Kiritimati": {
+        "long": [
+          "Lainas salu laiks",
+          "Lainas salu laiks"
+        ]
+      },
+      "Pacific/Kosrae": {
+        "long": [
+          "Kosrae laiks",
+          "Kosrae laiks"
+        ]
+      },
+      "Pacific/Majuro": {
+        "long": [
+          "M\u0101r\u0161ala salu laiks",
+          "M\u0101r\u0161ala salu laiks"
+        ]
+      },
+      "Pacific/Marquesas": {
+        "long": [
+          "Mar\u0137\u012bza salu laiks",
+          "Mar\u0137\u012bza salu laiks"
+        ]
+      },
+      "Pacific/Nauru": {
+        "long": [
+          "Nauru laiks",
+          "Nauru laiks"
+        ]
+      },
+      "Pacific/Niue": {
+        "long": [
+          "Niues laiks",
+          "Niues laiks"
+        ]
+      },
+      "Pacific/Norfolk": {
+        "long": [
+          "Norfolkas salas ziemas laiks",
+          "Norfolkas salas vasaras laiks"
+        ]
+      },
+      "Pacific/Noumea": {
+        "long": [
+          "Jaunkaledonijas ziemas laiks",
+          "Jaunkaledonijas vasaras laiks"
+        ]
+      },
+      "Pacific/Pago_Pago": {
+        "long": [
+          "Samoa ziemas laiks",
+          "Samoa vasaras laiks"
+        ]
+      },
+      "Pacific/Palau": {
+        "long": [
+          "Palau laiks",
+          "Palau laiks"
+        ]
+      },
+      "Pacific/Pitcairn": {
+        "long": [
+          "Pitk\u0113rnas laiks",
+          "Pitk\u0113rnas laiks"
+        ]
+      },
+      "Pacific/Ponape": {
+        "long": [
+          "Ponap\u0113 laiks",
+          "Ponap\u0113 laiks"
+        ]
+      },
+      "Pacific/Port_Moresby": {
+        "long": [
+          "Papua-Jaungvinejas laiks",
+          "Papua-Jaungvinejas laiks"
+        ]
+      },
+      "Pacific/Rarotonga": {
+        "long": [
+          "Kuka salu ziemas laiks",
+          "Kuka salu vasaras laiks"
+        ]
+      },
+      "Pacific/Tahiti": {
+        "long": [
+          "Taiti laiks",
+          "Taiti laiks"
+        ]
+      },
+      "Pacific/Tarawa": {
+        "long": [
+          "Gilberta salu laiks",
+          "Gilberta salu laiks"
+        ]
+      },
+      "Pacific/Tongatapu": {
+        "long": [
+          "Tongas ziemas laiks",
+          "Tongas vasaras laiks"
+        ]
+      },
+      "Pacific/Truk": {
+        "long": [
+          "\u010c\u016bkas laiks",
+          "\u010c\u016bkas laiks"
+        ]
+      },
+      "Pacific/Wake": {
+        "long": [
+          "Veika salas laiks",
+          "Veika salas laiks"
+        ]
+      },
+      "Pacific/Wallis": {
+        "long": [
+          "Volisas un Futunas laiks",
+          "Volisas un Futunas laiks"
+        ]
+      },
+      "UTC": {
+        "long": [
+          "Univers\u0101lais koordin\u0113tais laiks",
+          "Univers\u0101lais koordin\u0113tais laiks"
+        ],
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "sv\u0113tdiena",
+        "pirmdiena",
+        "otrdiena",
+        "tre\u0161diena",
+        "ceturtdiena",
+        "piektdiena",
+        "sestdiena"
+      ],
+      "narrow": [
+        "S",
+        "P",
+        "O",
+        "T",
+        "C",
+        "P",
+        "S"
+      ],
+      "short": [
+        "sv\u0113td.",
+        "pirmd.",
+        "otrd.",
+        "tre\u0161d.",
+        "ceturtd.",
+        "piektd.",
+        "sestd."
+      ]
+    }
+  },
+  "locale": "lv"
+}

@@ -1,0 +1,121 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Only a single configuration of BLE monitor is allowed."
+    },
+    "error": {
+      "cannot_change_mac": "MAC address cannot be changed.",
+      "cannot_change_uuid": "Beacon UUID cannot be changed.",
+      "cannot_delete_device": "Device can't be deleted.",
+      "cannot_disable_bt_interface": "Can't disable BT interface, while one or more of the BT interfaces are still selected. Deselect all BT interfaces.",
+      "invalid_key": "Encryption key must be 32 hexadecimal characters (24 for Yeelight sensors).",
+      "invalid_mac": "MAC address must be in the form 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID must be in the form '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Device tracker consider home interval (in seconds)",
+          "delete device": "Delete device",
+          "encryption_key": "Encryption key",
+          "mac": "MAC address",
+          "report_unknown": "Report unknown BLE advertisements to the HA log",
+          "reset_timer": "Reset timer (in seconds, 0 = off)",
+          "restore_state": "Restore state after a restart",
+          "temperature_unit": "Temperature unit [as send by device]",
+          "track_device": "Track device",
+          "tracker_scan_interval": "Device tracker scan interval (in seconds)",
+          "use_median": "Use median instead of mean",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Add device"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Use active scan instead of passive scan (affects battery)",
+          "bt_auto_restart": "Automatically restart Bluetooth adapter on failure",
+          "bt_interface": "MAC address of the Bluetooth interface/adapter",
+          "devices": "Devices",
+          "discovery": "Discover devices and sensors automatically",
+          "log_spikes": "Log spikes",
+          "period": "Period to use for averaging",
+          "report_unknown": "Report unknown BLE advertisements to the HA log",
+          "restore_state": "Restore state after a restart",
+          "use_median": "Use median instead of mean"
+        },
+        "description": "Setup of your BLE monitor configuration",
+        "title": "Passive BLE Monitor"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "You have configured BLE monitor in YAML. Please change your options in YAML."
+    },
+    "error": {
+      "cannot_change_mac": "MAC address cannot be changed.",
+      "cannot_change_uuid": "Beacon UUID cannot be changed.",
+      "cannot_delete_device": "Device can't be deleted.",
+      "cannot_disable_bt_interface": "Can't disable BT interface, while one or more of the BT interfaces are still selected. Deselect all BT interfaces.",
+      "invalid_key": "Encryption key must be 32 hexadecimal characters (24 for for Yeelight sensors).",
+      "invalid_mac": "MAC address must be in the form 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID must be in the form '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Device tracker consider home interval (in seconds)",
+          "delete device": "Delete device",
+          "encryption_key": "Encryption key (set to '-' to remove)",
+          "mac": "MAC address",
+          "report_unknown": "Report unknown BLE advertisements to the HA log",
+          "reset_timer": "Reset timer (in seconds, 0 = off)",
+          "restore_state": "Restore state after a restart",
+          "temperature_unit": "Temperature unit [as send by device]",
+          "track_device": "Track device",
+          "tracker_scan_interval": "Device tracker scan interval (in seconds)",
+          "use_median": "Use median instead of mean",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Configure device"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Use active scan in stead of passive scan (affects battery)",
+          "bt_auto_restart": "Automatically restart Bluetooth adapter on failure",
+          "bt_interface": "MAC address of the Bluetooth interface/adapter",
+          "devices": "Devices",
+          "discovery": "Discover devices and sensors automatically",
+          "log_spikes": "Log spikes",
+          "not_in_use": "YAML is used, change options in YAML",
+          "period": "Period to use for averaging",
+          "report_unknown": "Report unknown BLE advertisements to the HA log",
+          "restore_state": "Restore state after a restart",
+          "use_median": "Use median instead of mean"
+        },
+        "description": "Scanning will be restarted after pressing 'SUBMIT'",
+        "title": "Passive BLE Monitor options"
+      }
+    }
+  },
+  "services": {
+    "cleanup_entries": {
+      "description": "Clean up of dangling devices of the BLE Montitor integration.",
+      "name": "Cleanup entries"
+    },
+    "parse_data": {
+      "description": "Send RAW HCI packet data to the BLE Montitor integration.",
+      "fields": {
+        "gateway_id": {
+          "description": "Identifier of the gateway that transmits the RAW HCI packet data (only for device trackers).",
+          "name": "Gateway ID"
+        },
+        "packet": {
+          "description": "RAW HCI packet data hex.",
+          "name": "Packet"
+        }
+      },
+      "name": "Parse data"
+    }
+  }
+}

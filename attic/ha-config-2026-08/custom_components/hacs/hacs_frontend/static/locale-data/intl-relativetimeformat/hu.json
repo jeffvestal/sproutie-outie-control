@@ -1,0 +1,308 @@
+{
+  "data": {
+    "day": {
+      "-1": "tegnap",
+      "-2": "tegnapel\u0151tt",
+      "0": "ma",
+      "1": "holnap",
+      "2": "holnaput\u00e1n",
+      "future": {
+        "one": "{0} nap m\u00falva",
+        "other": "{0} nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} nappal ezel\u0151tt",
+        "other": "{0} nappal ezel\u0151tt"
+      }
+    },
+    "day-narrow": {
+      "-1": "tegnap",
+      "-2": "tegnapel\u0151tt",
+      "0": "ma",
+      "1": "holnap",
+      "2": "holnaput\u00e1n",
+      "future": {
+        "one": "{0} nap m\u00falva",
+        "other": "{0} nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} napja",
+        "other": "{0} napja"
+      }
+    },
+    "day-short": {
+      "-1": "tegnap",
+      "-2": "tegnapel\u0151tt",
+      "0": "ma",
+      "1": "holnap",
+      "2": "holnaput\u00e1n",
+      "future": {
+        "one": "{0} nap m\u00falva",
+        "other": "{0} nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} napja",
+        "other": "{0} napja"
+      }
+    },
+    "hour": {
+      "0": "ebben az \u00f3r\u00e1ban",
+      "future": {
+        "one": "{0} \u00f3ra m\u00falva",
+        "other": "{0} \u00f3ra m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00f3r\u00e1val ezel\u0151tt",
+        "other": "{0} \u00f3r\u00e1val ezel\u0151tt"
+      }
+    },
+    "hour-narrow": {
+      "0": "ebben az \u00f3r\u00e1ban",
+      "future": {
+        "one": "{0} \u00f3ra m\u00falva",
+        "other": "{0} \u00f3ra m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00f3r\u00e1ja",
+        "other": "{0} \u00f3r\u00e1ja"
+      }
+    },
+    "hour-short": {
+      "0": "ebben az \u00f3r\u00e1ban",
+      "future": {
+        "one": "{0} \u00f3ra m\u00falva",
+        "other": "{0} \u00f3ra m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00f3r\u00e1val ezel\u0151tt",
+        "other": "{0} \u00f3r\u00e1val ezel\u0151tt"
+      }
+    },
+    "minute": {
+      "0": "ebben a percben",
+      "future": {
+        "one": "{0} perc m\u00falva",
+        "other": "{0} perc m\u00falva"
+      },
+      "past": {
+        "one": "{0} perccel ezel\u0151tt",
+        "other": "{0} perccel ezel\u0151tt"
+      }
+    },
+    "minute-narrow": {
+      "0": "ebben a percben",
+      "future": {
+        "one": "{0} perc m\u00falva",
+        "other": "{0} perc m\u00falva"
+      },
+      "past": {
+        "one": "{0} perce",
+        "other": "{0} perce"
+      }
+    },
+    "minute-short": {
+      "0": "ebben a percben",
+      "future": {
+        "one": "{0} perc m\u00falva",
+        "other": "{0} perc m\u00falva"
+      },
+      "past": {
+        "one": "{0} perccel ezel\u0151tt",
+        "other": "{0} perccel ezel\u0151tt"
+      }
+    },
+    "month": {
+      "-1": "el\u0151z\u0151 h\u00f3nap",
+      "0": "ez a h\u00f3nap",
+      "1": "k\u00f6vetkez\u0151 h\u00f3nap",
+      "future": {
+        "one": "{0} h\u00f3nap m\u00falva",
+        "other": "{0} h\u00f3nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} h\u00f3nappal ezel\u0151tt",
+        "other": "{0} h\u00f3nappal ezel\u0151tt"
+      }
+    },
+    "month-narrow": {
+      "-1": "el\u0151z\u0151 h\u00f3nap",
+      "0": "ez a h\u00f3nap",
+      "1": "k\u00f6vetkez\u0151 h\u00f3nap",
+      "future": {
+        "one": "{0} h\u00f3nap m\u00falva",
+        "other": "{0} h\u00f3nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} h\u00f3napja",
+        "other": "{0} h\u00f3napja"
+      }
+    },
+    "month-short": {
+      "-1": "el\u0151z\u0151 h\u00f3nap",
+      "0": "ez a h\u00f3nap",
+      "1": "k\u00f6vetkez\u0151 h\u00f3nap",
+      "future": {
+        "one": "{0} h\u00f3nap m\u00falva",
+        "other": "{0} h\u00f3nap m\u00falva"
+      },
+      "past": {
+        "one": "{0} h\u00f3nappal ezel\u0151tt",
+        "other": "{0} h\u00f3nappal ezel\u0151tt"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "el\u0151z\u0151 negyed\u00e9v",
+      "0": "ez a negyed\u00e9v",
+      "1": "k\u00f6vetkez\u0151 negyed\u00e9v",
+      "future": {
+        "one": "{0} negyed\u00e9v m\u00falva",
+        "other": "{0} negyed\u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} negyed\u00e9vvel ezel\u0151tt",
+        "other": "{0} negyed\u00e9vvel ezel\u0151tt"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "el\u0151z\u0151 negyed\u00e9v",
+      "0": "ez a negyed\u00e9v",
+      "1": "k\u00f6vetkez\u0151 negyed\u00e9v",
+      "future": {
+        "one": "{0} n.\u00e9v m\u00falva",
+        "other": "{0} n.\u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} negyed\u00e9vvel ezel\u0151tt",
+        "other": "{0} negyed\u00e9vvel ezel\u0151tt"
+      }
+    },
+    "quarter-short": {
+      "-1": "el\u0151z\u0151 negyed\u00e9v",
+      "0": "ez a negyed\u00e9v",
+      "1": "k\u00f6vetkez\u0151 negyed\u00e9v",
+      "future": {
+        "one": "{0} negyed\u00e9v m\u00falva",
+        "other": "{0} negyed\u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} negyed\u00e9vvel ezel\u0151tt",
+        "other": "{0} negyed\u00e9vvel ezel\u0151tt"
+      }
+    },
+    "second": {
+      "0": "most",
+      "future": {
+        "one": "{0} m\u00e1sodperc m\u00falva",
+        "other": "{0} m\u00e1sodperc m\u00falva"
+      },
+      "past": {
+        "one": "{0} m\u00e1sodperccel ezel\u0151tt",
+        "other": "{0} m\u00e1sodperccel ezel\u0151tt"
+      }
+    },
+    "second-narrow": {
+      "0": "most",
+      "future": {
+        "one": "{0} m\u00e1sodperc m\u00falva",
+        "other": "{0} m\u00e1sodperc m\u00falva"
+      },
+      "past": {
+        "one": "{0} m.perce",
+        "other": "{0} m.perce"
+      }
+    },
+    "second-short": {
+      "0": "most",
+      "future": {
+        "one": "{0} m\u00e1sodperc m\u00falva",
+        "other": "{0} m\u00e1sodperc m\u00falva"
+      },
+      "past": {
+        "one": "{0} m\u00e1sodperccel ezel\u0151tt",
+        "other": "{0} m\u00e1sodperccel ezel\u0151tt"
+      }
+    },
+    "week": {
+      "-1": "el\u0151z\u0151 h\u00e9t",
+      "0": "ez a h\u00e9t",
+      "1": "k\u00f6vetkez\u0151 h\u00e9t",
+      "future": {
+        "one": "{0} h\u00e9t m\u00falva",
+        "other": "{0} h\u00e9t m\u00falva"
+      },
+      "past": {
+        "one": "{0} h\u00e9ttel ezel\u0151tt",
+        "other": "{0} h\u00e9ttel ezel\u0151tt"
+      }
+    },
+    "week-narrow": {
+      "-1": "el\u0151z\u0151 h\u00e9t",
+      "0": "ez a h\u00e9t",
+      "1": "k\u00f6vetkez\u0151 h\u00e9t",
+      "future": {
+        "one": "{0} h\u00e9t m\u00falva",
+        "other": "{0} h\u00e9t m\u00falva"
+      },
+      "past": {
+        "one": "{0} hete",
+        "other": "{0} hete"
+      }
+    },
+    "week-short": {
+      "-1": "el\u0151z\u0151 h\u00e9t",
+      "0": "ez a h\u00e9t",
+      "1": "k\u00f6vetkez\u0151 h\u00e9t",
+      "future": {
+        "one": "{0} h\u00e9t m\u00falva",
+        "other": "{0} h\u00e9t m\u00falva"
+      },
+      "past": {
+        "one": "{0} h\u00e9ttel ezel\u0151tt",
+        "other": "{0} h\u00e9ttel ezel\u0151tt"
+      }
+    },
+    "year": {
+      "-1": "el\u0151z\u0151 \u00e9v",
+      "0": "ez az \u00e9v",
+      "1": "k\u00f6vetkez\u0151 \u00e9v",
+      "future": {
+        "one": "{0} \u00e9v m\u00falva",
+        "other": "{0} \u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00e9vvel ezel\u0151tt",
+        "other": "{0} \u00e9vvel ezel\u0151tt"
+      }
+    },
+    "year-narrow": {
+      "-1": "el\u0151z\u0151 \u00e9v",
+      "0": "ez az \u00e9v",
+      "1": "k\u00f6vetkez\u0151 \u00e9v",
+      "future": {
+        "one": "{0} \u00e9v m\u00falva",
+        "other": "{0} \u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00e9ve",
+        "other": "{0} \u00e9ve"
+      }
+    },
+    "year-short": {
+      "-1": "el\u0151z\u0151 \u00e9v",
+      "0": "ez az \u00e9v",
+      "1": "k\u00f6vetkez\u0151 \u00e9v",
+      "future": {
+        "one": "{0} \u00e9v m\u00falva",
+        "other": "{0} \u00e9v m\u00falva"
+      },
+      "past": {
+        "one": "{0} \u00e9vvel ezel\u0151tt",
+        "other": "{0} \u00e9vvel ezel\u0151tt"
+      }
+    }
+  },
+  "locale": "hu"
+}

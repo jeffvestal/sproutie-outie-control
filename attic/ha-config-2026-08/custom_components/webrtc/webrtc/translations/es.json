@@ -1,0 +1,88 @@
+{
+  "config": {
+    "abort": {
+      "arch": "Arquitectura del sistema operativo no compatible: {uname}",
+      "single_instance_allowed": "Ya est\u00e1 configurado. Solo es posible una \u00fanica configuraci\u00f3n."
+    },
+    "error": {
+      "connect": "No se puede conectar al servidor go2rtc"
+    },
+    "step": {
+      "config": {
+        "data": {
+          "api": "WebUI p\u00fablica en el puerto 1984",
+          "password": "<redacted>",
+          "rtsp": "RTSP p\u00fablico en el puerto 8554",
+          "username": "<redacted>"
+        },
+        "description": "Ruta: `{path}`",
+        "title": "Configuraci\u00f3n de go2rtc"
+      },
+      "user": {
+        "data": {
+          "url": "URL"
+        },
+        "description": "Selecciona la versi\u00f3n del servidor de streaming [go2rtc](https://github.com/AlexxIT/go2rtc):\n1. Deja vac\u00edo si quieres la versi\u00f3n go2rtc integrada (*usuarios b\u00e1sicos*)\n2. Establece `http://localhost:1984` si instalas el complemento [go2rtc](https://github.com/AlexxIT/go2rtc#go2rtc-home-assistant-add-on) o [Frigate 12+](https://docs.frigate.video/) (*usuarios avanzados*)\n3. Establece una direcci\u00f3n personalizada si instalas go2rtc en otro servidor (*hackers*)",
+        "title": "URL de go2rtc"
+      }
+    }
+  },
+  "services": {
+    "create_link": {
+      "description": "Crea un enlace temporal o permanente a un stream (ingresa `url` o `entidad`)",
+      "fields": {
+        "entity": {
+          "description": "entity_id de la c\u00e1mara",
+          "name": "Entidad"
+        },
+        "link_id": {
+          "description": "Crea una ID aleatoria o permanente para tu enlace",
+          "name": "ID del enlace"
+        },
+        "open_limit": {
+          "description": "Cu\u00e1ntas veces se puede abrir un enlace (0 - ilimitado)",
+          "name": "L\u00edmite de aperturas"
+        },
+        "time_to_live": {
+          "description": "Cu\u00e1ntos segundos vivir\u00e1 el enlace (0 - ilimitado)",
+          "name": "Tiempo de vida"
+        },
+        "url": {
+          "description": "Enlace al stream RTSP",
+          "name": "URL"
+        }
+      },
+      "name": "Crear enlace"
+    },
+    "dash_cast": {
+      "description": "Transmite stream al dispositivo Chromecast a trav\u00e9s de la aplicaci\u00f3n DashCast",
+      "fields": {
+        "entity": {
+          "description": "entity_id de la c\u00e1mara",
+          "name": "Entidad"
+        },
+        "entity_id": {
+          "description": "entity_id del reproductor multimedia",
+          "name": "Entidad multimedia"
+        },
+        "extra": {
+          "descripci\u00f3n": "Par\u00e1metros adicionales de la tarjeta",
+          "name": "Extra"
+        },
+        "force": {
+          "description": "Forzar el reinicio de la aplicaci\u00f3n DashCast",
+          "name": "Forzar"
+        },
+        "hass_url": {
+          "description": "URL base manual al servidor Hass",
+          "name": "URL de Hass"
+        },
+        "url": {
+          "description": "Enlace al stream RTSP",
+          "name": "URL"
+        }
+      },
+      "name": "DashCast"
+    }
+  }
+}

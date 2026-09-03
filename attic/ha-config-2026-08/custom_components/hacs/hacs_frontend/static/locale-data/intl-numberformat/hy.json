@@ -1,0 +1,1991 @@
+{
+  "data": {
+    "currencies": {
+      "AED": {
+        "displayName": {
+          "other": "\u0531\u0544\u0537 \u0564\u056b\u0580\u0570\u0561\u0574"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFN": {
+        "displayName": {
+          "other": "\u0561\u0586\u0572\u0561\u0576\u0561\u056f\u0561\u0576 \u0561\u0586\u0572\u0561\u0576\u056b"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALL": {
+        "displayName": {
+          "other": "\u0561\u056c\u0562\u0561\u0576\u0561\u056f\u0561\u0576 \u056c\u0565\u056f"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "other": "\u0570\u0561\u0575\u056f\u0561\u056f\u0561\u0576 \u0564\u0580\u0561\u0574"
+        },
+        "narrow": "\u058f",
+        "symbol": "\u058f"
+      },
+      "ANG": {
+        "displayName": {
+          "other": "\u0576\u056b\u0564\u0565\u057c\u056c\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u0561\u0576\u057f\u056b\u056c\u0575\u0561\u0576 \u0563\u0578\u0582\u056c\u0564\u0565\u0576"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "other": "\u0561\u0576\u0563\u0578\u056c\u0561\u056f\u0561\u0576 \u056f\u057e\u0561\u0576\u0566\u0561"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "ARS": {
+        "displayName": {
+          "other": "\u0561\u0580\u0563\u0565\u0576\u057f\u056b\u0576\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "AUD": {
+        "displayName": {
+          "other": "\u0561\u057e\u057d\u057f\u0580\u0561\u056c\u056b\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "A$"
+      },
+      "AWG": {
+        "displayName": {
+          "other": "\u0561\u0580\u0578\u0582\u0562\u0561\u056f\u0561\u0576 \u0586\u056c\u0578\u0580\u056b\u0576"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZN": {
+        "displayName": {
+          "other": "\u0561\u0564\u0580\u0562\u0565\u057b\u0561\u0576\u0561\u056f\u0561\u0576 \u0574\u0561\u0576\u0561\u0569"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAM": {
+        "displayName": {
+          "other": "\u0532\u0578\u057d\u0576\u056b\u0561 \u0587 \u0540\u0565\u0580\u0581\u0565\u0563\u0578\u057e\u056b\u0576\u0561\u0575\u056b \u0583\u0578\u056d\u0561\u0580\u056f\u057e\u0578\u0572 \u0574\u0561\u0580\u056f"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BBD": {
+        "displayName": {
+          "other": "\u0562\u0561\u0580\u0562\u0561\u0564\u0578\u057d\u0575\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "other": "\u0532\u0561\u0576\u0563\u056c\u0561\u0564\u0565\u0577\u056b \u057f\u0561\u056f\u0561"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BGN": {
+        "displayName": {
+          "other": "\u0562\u0578\u0582\u056c\u0572\u0561\u0580\u0561\u056f\u0561\u0576 \u056c\u0587"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BHD": {
+        "displayName": {
+          "other": "\u0532\u0561\u0570\u0580\u0565\u0575\u0576\u056b \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "other": "\u0562\u0578\u0582\u0580\u0578\u0582\u0576\u0564\u056b\u0561\u056f\u0561\u0576 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "other": "\u0562\u0565\u0580\u0574\u0578\u0582\u0564\u0575\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "other": "\u0532\u0580\u0578\u0582\u0576\u0565\u0575\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "other": "\u0562\u0578\u056c\u056b\u057e\u056b\u0561\u056f\u0561\u0576 \u0562\u0578\u056c\u056b\u057e\u056b\u0561\u0576\u0578"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BRL": {
+        "displayName": {
+          "other": "\u0562\u0580\u0561\u0566\u056b\u056c\u0561\u056f\u0561\u0576 \u057c\u0565\u0561\u056c"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BSD": {
+        "displayName": {
+          "other": "\u0562\u0561\u0570\u0561\u0574\u0575\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "other": "\u0562\u0578\u0582\u0569\u0561\u0576\u0561\u056f\u0561\u0576 \u0576\u0563\u0578\u0582\u056c\u057f\u0580\u0578\u0582\u0574"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BWP": {
+        "displayName": {
+          "other": "\u0562\u0578\u057f\u057d\u057e\u0561\u0576\u0561\u056f\u0561\u0576 \u057a\u0578\u0582\u056c\u0561"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYN": {
+        "displayName": {
+          "other": "\u0562\u0565\u056c\u0561\u057c\u0578\u0582\u057d\u0561\u056f\u0561\u0576 \u057c\u0578\u0582\u0562\u056c\u056b"
+        },
+        "narrow": "\u0440.",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "other": "\u0562\u0565\u056c\u0561\u057c\u0578\u0582\u057d\u0561\u056f\u0561\u0576 \u057c\u0578\u0582\u0562\u056c\u056b (2000\u20132016)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "other": "\u0532\u0565\u056c\u056b\u0566\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "other": "\u056f\u0561\u0576\u0561\u0564\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "other": "\u053f\u0578\u0576\u0563\u0578\u0575\u056b \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHF": {
+        "displayName": {
+          "other": "\u0577\u057e\u0565\u0575\u0581\u0561\u0580\u0561\u056f\u0561\u0576 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CLP": {
+        "displayName": {
+          "other": "\u0579\u056b\u056c\u056b\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "other": "\u0579\u056b\u0576\u0561\u056f\u0561\u0576 \u0585\u0586\u0577\u0578\u0580\u0561\u0575\u056b\u0576 \u0575\u0578\u0582\u0561\u0576"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "other": "\u0579\u056b\u0576\u0561\u056f\u0561\u0576 \u0575\u0578\u0582\u0561\u0576"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "other": "\u056f\u0578\u056c\u0578\u0582\u0574\u0562\u056b\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "CRC": {
+        "displayName": {
+          "other": "\u053f\u0578\u057d\u057f\u0561 \u054c\u056b\u056f\u0561\u0575\u056b \u056f\u0578\u056c\u0578\u0576"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CUC": {
+        "displayName": {
+          "other": "\u056f\u0578\u0582\u0562\u0561\u0575\u0561\u056f\u0561\u0576 \u0583\u0578\u056d\u0561\u0580\u056f\u057e\u0578\u0572 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "other": "\u056f\u0578\u0582\u0562\u0561\u0575\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "other": "\u053f\u0561\u0562\u0578 \u054e\u0565\u0580\u0564\u0565\u056b \u0567\u057d\u056f\u0578\u0582\u0564\u0578"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CZK": {
+        "displayName": {
+          "other": "\u0579\u0565\u056d\u0561\u056f\u0561\u0576 \u056f\u0580\u0578\u0576\u0561"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DJF": {
+        "displayName": {
+          "other": "\u054b\u056b\u0562\u0578\u0582\u0569\u056b\u056b \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "other": "\u0564\u0561\u0576\u056b\u0561\u056f\u0561\u0576 \u056f\u0580\u0578\u0576"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "other": "\u0564\u0578\u0574\u056b\u0576\u056b\u056f\u0575\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "other": "\u0561\u056c\u056a\u056b\u0580\u0561\u056f\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "EGP": {
+        "displayName": {
+          "other": "\u0565\u0563\u056b\u057a\u057f\u0561\u056f\u0561\u0576 \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "other": "\u0567\u0580\u056b\u0569\u0580\u0565\u0561\u056f\u0561\u0576 \u0576\u0561\u056f\u0586\u0561"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESP": {
+        "displayName": {},
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "other": "\u0565\u0569\u0578\u057e\u057a\u056b\u0561\u056f\u0561\u0576 \u0562\u056b\u0580"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "other": "\u0565\u057e\u0580\u0578"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FJD": {
+        "displayName": {
+          "other": "\u0586\u056b\u057b\u056b\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "other": "\u0556\u0578\u056c\u0584\u056c\u0565\u0576\u0564\u0575\u0561\u0576 \u056f\u0572\u0566\u056b\u0576\u0565\u0580\u056b \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "GBP": {
+        "displayName": {
+          "other": "\u0562\u0580\u056b\u057f\u0561\u0576\u0561\u056f\u0561\u0576 \u0586\u0578\u0582\u0576\u057f \u057d\u057f\u0565\u0580\u056c\u056b\u0576\u0563"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEL": {
+        "displayName": {
+          "other": "\u057e\u0580\u0561\u0581\u0561\u056f\u0561\u0576 \u056c\u0561\u0580\u056b"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHS": {
+        "displayName": {
+          "other": "\u0563\u0561\u0576\u0561\u0575\u0561\u056f\u0561\u0576 \u057d\u0565\u0564\u056b"
+        },
+        "narrow": "GH\u20b5",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "other": "\u054b\u056b\u0562\u0580\u0561\u056c\u0569\u0561\u0580\u056b \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "other": "\u0563\u0561\u0574\u0562\u056b\u0561\u056f\u0561\u0576 \u0564\u0561\u056c\u0561\u057d\u056b"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "other": "\u0563\u057e\u056b\u0576\u0565\u0561\u056f\u0561\u0576 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GTQ": {
+        "displayName": {
+          "other": "\u0563\u057e\u0561\u057f\u0565\u0574\u0561\u056c\u0561\u056f\u0561\u0576 \u056f\u0565\u057f\u057d\u0561\u056c"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GYD": {
+        "displayName": {
+          "other": "\u0563\u0561\u0575\u0561\u0576\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "other": "\u0540\u0578\u0576\u056f\u0578\u0576\u0563\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "other": "\u0570\u0578\u0576\u0564\u0578\u0582\u0580\u0561\u057d\u0561\u056f\u0561\u0576 \u056c\u0565\u0574\u057a\u056b\u0580\u0561"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRK": {
+        "displayName": {
+          "other": "\u056d\u0578\u0580\u057e\u0561\u0569\u0561\u056f\u0561\u0576 \u056f\u0578\u0582\u0576\u0561"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "other": "\u0570\u0561\u0575\u056b\u0569\u0575\u0561\u0576 \u0563\u0578\u0582\u0580\u0564"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "other": "\u0570\u0578\u0582\u0576\u0563\u0561\u0580\u0561\u056f\u0561\u0576 \u0586\u0578\u0580\u056b\u0576\u057f"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "other": "\u056b\u0576\u0564\u0578\u0576\u0565\u0566\u056b\u0561\u056f\u0561\u0576 \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "ILS": {
+        "displayName": {
+          "other": "\u053b\u057d\u0580\u0561\u0575\u0565\u056c\u056b \u0576\u0578\u0580 \u0577\u0565\u056f\u0565\u056c"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "other": "\u0570\u0576\u0564\u056f\u0561\u056f\u0561\u0576 \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "other": "\u056b\u0580\u0561\u0584\u0575\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "other": "\u056b\u0580\u0561\u0576\u0561\u056f\u0561\u0576 \u057c\u056b\u0561\u056c"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "other": "\u056b\u057d\u056c\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u056f\u0580\u0578\u0576"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "JMD": {
+        "displayName": {
+          "other": "\u0543\u0561\u0574\u0561\u0575\u056f\u0561\u0575\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "other": "\u0570\u0578\u0580\u0564\u0561\u0576\u0561\u0576\u0575\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "other": "\u0573\u0561\u057a\u0578\u0576\u0561\u056f\u0561\u0576 \u056b\u0565\u0576"
+        },
+        "narrow": "\u00a5",
+        "symbol": "JP\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "other": "\u0584\u0565\u0576\u056b\u0561\u056f\u0561\u0576 \u0577\u056b\u056c\u056b\u0576\u0563"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "other": "\u0572\u0580\u0572\u0566\u0561\u056f\u0561\u0576 \u057d\u0578\u0574"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "other": "\u056f\u0561\u0574\u0562\u0578\u057b\u0561\u056f\u0561\u0576 \u057c\u056b\u0565\u056c"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "other": "\u056f\u0578\u0574\u0578\u0580\u0575\u0561\u0576 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "other": "\u0570\u0575\u0578\u0582\u057d\u056b\u057d\u056f\u0578\u0580\u0565\u0561\u056f\u0561\u0576 \u057e\u0578\u0576"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRW": {
+        "displayName": {
+          "other": "\u0570\u0561\u0580\u0561\u057e\u056f\u0578\u0580\u0565\u0561\u056f\u0561\u0576 \u057e\u0578\u0576"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "other": "\u0554\u0578\u0582\u057e\u0565\u0575\u0569\u056b \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "other": "\u053f\u0561\u0575\u0574\u0561\u0576\u0575\u0561\u0576 \u056f\u0572\u0566\u056b\u0576\u0565\u0580\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "other": "\u0572\u0561\u0566\u0561\u056d\u0561\u056f\u0561\u0576 \u057f\u0565\u0576\u0563\u0565"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "other": "\u056c\u0561\u0578\u057d\u0561\u056f\u0561\u0576 \u056f\u056b\u057a"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "other": "\u056c\u056b\u0562\u0561\u0576\u0561\u0576\u0575\u0561\u0576 \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "other": "\u0547\u0580\u056b \u053c\u0561\u0576\u056f\u0561\u0575\u056b \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "other": "\u056c\u056b\u0562\u0565\u0580\u056b\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "other": "\u056c\u0565\u057d\u0578\u0569\u0578\u0575\u0561\u056f\u0561\u0576 \u056c\u0578\u057f\u056b"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "other": "\u053c\u056b\u057f\u057e\u0561\u056f\u0561\u0576 \u056c\u056b\u057f"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LVL": {
+        "displayName": {
+          "other": "\u053c\u0561\u057f\u057e\u056b\u0561\u056f\u0561\u0576 \u056c\u0561\u057f"
+        },
+        "narrow": "Ls",
+        "symbol": "LVL"
+      },
+      "LYD": {
+        "displayName": {
+          "other": "\u056c\u056b\u0562\u056b\u0561\u056f\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "other": "\u0544\u0561\u0580\u0578\u056f\u056f\u0578\u0575\u056b \u0564\u056b\u0580\u0570\u0561\u0574"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MDL": {
+        "displayName": {
+          "other": "\u0574\u0578\u056c\u0564\u0578\u057e\u0561\u056f\u0561\u0576 \u056c\u0565\u0575"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "other": "\u0544\u0561\u0564\u0561\u0563\u0561\u057d\u056f\u0561\u0580\u056b \u0561\u0580\u056b\u0561\u0580\u056b"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MKD": {
+        "displayName": {
+          "other": "\u0574\u0561\u056f\u0565\u0564\u0578\u0576\u0561\u056f\u0561\u0576 \u0564\u0565\u0576\u0561\u0580"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MMK": {
+        "displayName": {
+          "other": "\u0544\u0575\u0561\u0576\u0574\u0561\u0575\u056b \u056f\u0575\u0561\u057f"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "other": "\u0574\u0578\u0576\u0572\u0578\u056c\u0561\u056f\u0561\u0576 \u057f\u0578\u0582\u0563\u0580\u056b\u056f"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "other": "\u0544\u0561\u056f\u0561\u0578\u0575\u056b \u057a\u0561\u057f\u0561\u056f\u0561"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "other": "\u0574\u0561\u057e\u0580\u056b\u057f\u0561\u0576\u0561\u056f\u0561\u0576 \u0578\u0582\u0563\u056b\u0575\u0561 (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "other": "\u0574\u0561\u057e\u0580\u056b\u057f\u0561\u0576\u0561\u056f\u0561\u0576 \u0578\u0582\u0563\u056b\u0575\u0561"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MUR": {
+        "displayName": {
+          "other": "\u0574\u0561\u057e\u0580\u056b\u056f\u0575\u0561\u0576 \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVR": {
+        "displayName": {
+          "other": "\u0574\u0561\u056c\u0564\u056b\u057e\u0575\u0561\u0576 \u057c\u0578\u0582\u0586\u056b\u0575\u0561"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "other": "\u0574\u0561\u056c\u0561\u057e\u056b\u0561\u056f\u0561\u0576 \u056f\u057e\u0561\u0579\u0561"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "other": "\u0574\u0565\u0584\u057d\u056b\u056f\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MYR": {
+        "displayName": {
+          "other": "\u0574\u0561\u056c\u0561\u0575\u0566\u056b\u0561\u056f\u0561\u0576 \u057c\u056b\u0576\u0563\u056b\u057f"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZN": {
+        "displayName": {
+          "other": "\u0574\u0578\u0566\u0561\u0574\u0562\u056b\u056f\u0575\u0561\u0576 \u0574\u0565\u057f\u056b\u056f\u0561\u056c"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "other": "\u0576\u0561\u0574\u056b\u0562\u056b\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "other": "\u0576\u056b\u0563\u0565\u0580\u056b\u0561\u056f\u0561\u0576 \u0576\u0561\u0575\u0580\u0561"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIO": {
+        "displayName": {
+          "other": "\u0576\u056b\u056f\u0561\u0580\u0561\u0563\u0578\u0582\u0561\u056f\u0561\u0576 \u056f\u0578\u0580\u0564\u0578\u0562\u0561"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NOK": {
+        "displayName": {
+          "other": "\u0576\u0578\u0580\u057e\u0565\u0563\u0561\u056f\u0561\u0576 \u056f\u0580\u0578\u0576"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "other": "\u0546\u0565\u057a\u0561\u056c\u056b \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "other": "\u0576\u0578\u0580\u0566\u0565\u056c\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "other": "\u0555\u0574\u0561\u0576\u056b \u057c\u056b\u0561\u056c"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "other": "\u057a\u0561\u0576\u0561\u0574\u0561\u056f\u0561\u0576 \u0562\u0561\u056c\u0562\u0578\u0561"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEN": {
+        "displayName": {
+          "other": "\u054a\u0565\u0580\u0578\u0582\u056b \u057d\u0578\u056c"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PGK": {
+        "displayName": {
+          "other": "\u054a\u0561\u057a\u0578\u0582\u0561 \u0546\u0578\u0580 \u0533\u057e\u056b\u0576\u0565\u0561\u0575\u056b \u056f\u056b\u0576\u0561"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "other": "\u0586\u056b\u056c\u056b\u057a\u056b\u0576\u0575\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "\u20b1",
+        "symbol": "PHP"
+      },
+      "PKR": {
+        "displayName": {
+          "other": "\u057a\u0561\u056f\u056b\u057d\u057f\u0561\u0576\u0575\u0561\u0576 \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "Rs",
+        "symbol": "PKR"
+      },
+      "PLN": {
+        "displayName": {
+          "other": "\u056c\u0565\u0570\u0561\u056f\u0561\u0576 \u0566\u056c\u0578\u057f\u056b"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PYG": {
+        "displayName": {
+          "other": "\u057a\u0561\u0580\u0561\u0563\u057e\u0561\u0575\u0561\u056f\u0561\u0576 \u0563\u0578\u0582\u0561\u0580\u0561\u0576\u056b"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "other": "\u053f\u0561\u057f\u0561\u0580\u056b \u057c\u056b\u0561\u056c"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "RON": {
+        "displayName": {
+          "other": "\u057c\u0578\u0582\u0574\u056b\u0576\u0561\u056f\u0561\u0576 \u056c\u0565\u0575"
+        },
+        "narrow": "lei",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "other": "\u057d\u0565\u0580\u0562\u0561\u056f\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "other": "\u057c\u0578\u0582\u057d\u0561\u056f\u0561\u0576 \u057c\u0578\u0582\u0562\u056c\u056b"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RWF": {
+        "displayName": {
+          "other": "\u057c\u0578\u0582\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "other": "\u054d\u0561\u0578\u0582\u0564\u0575\u0561\u0576 \u0531\u0580\u0561\u0562\u056b\u0561\u0575\u056b \u057c\u056b\u0561\u056c"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "other": "\u054d\u0578\u0572\u0578\u0574\u0578\u0576\u0575\u0561\u0576 \u056f\u0572\u0566\u056b\u0576\u0565\u0580\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "other": "\u057d\u0565\u0575\u0577\u0565\u056c\u0575\u0561\u0576 \u057c\u0578\u0582\u0583\u056b"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDG": {
+        "displayName": {
+          "other": "\u057d\u0578\u0582\u0564\u0561\u0576\u0561\u056f\u0561\u0576 \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SEK": {
+        "displayName": {
+          "other": "\u0577\u057e\u0565\u0564\u0561\u056f\u0561\u0576 \u056f\u0580\u0578\u0576"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "other": "\u054d\u056b\u0576\u0563\u0561\u057a\u0578\u0582\u0580\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "other": "\u054d\u0578\u0582\u0580\u0562 \u0540\u0565\u0572\u056b\u0576\u0565\u056b \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SLE": {
+        "displayName": {
+          "other": "\u054d\u056b\u0565\u057c\u0561 \u053c\u0565\u0578\u0576\u0565\u056b \u056c\u0565\u0578\u0576\u0565"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "\u054d\u056b\u0565\u057c\u0561 \u053c\u0565\u0578\u0576\u0565\u056b \u056c\u0565\u0578\u0576\u0565 (1964\u20142022)"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "other": "\u057d\u0578\u0574\u0561\u056c\u056b\u0561\u056f\u0561\u0576 \u0577\u056b\u056c\u056b\u0576\u0563"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "other": "\u057d\u0578\u0582\u0580\u056b\u0576\u0561\u0574\u0561\u056f\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SSP": {
+        "displayName": {
+          "other": "\u0570\u0561\u0580\u0561\u057e\u057d\u0578\u0582\u0564\u0561\u0576\u0561\u056f\u0561\u0576 \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "other": "\u054d\u0561\u0576 \u054f\u0578\u0574\u0565 \u0587 \u0553\u0580\u056b\u0576\u057d\u056b\u057a\u056b\u056b \u0564\u0578\u0562\u0580\u0561 (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "other": "\u054d\u0561\u0576 \u054f\u0578\u0574\u0565 \u0587 \u0553\u0580\u056b\u0576\u057d\u056b\u057a\u056b\u056b \u0564\u0578\u0562\u0580\u0561"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SYP": {
+        "displayName": {
+          "other": "\u057d\u056b\u0580\u056b\u0561\u056f\u0561\u0576 \u0586\u0578\u0582\u0576\u057f"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "other": "\u057d\u057e\u0561\u0566\u056b\u056c\u0565\u0576\u0564\u0561\u056f\u0561\u0576 \u056c\u056b\u056c\u0561\u0576\u0563\u0565\u0576\u056b"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "other": "\u0569\u0561\u056b\u056c\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u0562\u0561\u0570\u057f"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "\u0e3f"
+      },
+      "TJS": {
+        "displayName": {
+          "other": "\u057f\u0561\u057b\u056b\u056f\u0561\u056f\u0561\u0576 \u057d\u0578\u0574\u0578\u0576\u056b"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMT": {
+        "displayName": {
+          "other": "\u0569\u0578\u0582\u0580\u0584\u0574\u0565\u0576\u0561\u056f\u0561\u0576 \u0574\u0561\u0576\u0561\u0569"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "other": "\u0569\u0578\u0582\u0576\u056b\u057d\u0575\u0561\u0576 \u0564\u056b\u0576\u0561\u0580"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "other": "\u054f\u0578\u0576\u0563\u0561\u0575\u056b \u057a\u0561\u0561\u0576\u0563\u0561"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TRY": {
+        "displayName": {
+          "other": "\u0569\u0578\u0582\u0580\u0584\u0561\u056f\u0561\u0576 \u056c\u056b\u0580\u0561"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "other": "\u054f\u0580\u056b\u0576\u056b\u0564\u0561\u0564 \u0587 \u054f\u0578\u0562\u0561\u0563\u0578\u0575\u056b \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "other": "\u0569\u0561\u0575\u057e\u0561\u0576\u0561\u056f\u0561\u0576 \u0576\u0578\u0580 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "other": "\u057f\u0561\u0576\u0566\u0561\u0576\u056b\u0561\u056f\u0561\u0576 \u0577\u056b\u056c\u056b\u0576\u0563"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "other": "\u0578\u0582\u056f\u0580\u0561\u056b\u0576\u0561\u056f\u0561\u0576 \u0563\u0580\u056b\u057e\u0576\u0561"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UGX": {
+        "displayName": {
+          "other": "\u0578\u0582\u0563\u0561\u0576\u0564\u0561\u056f\u0561\u0576 \u0577\u056b\u056c\u056b\u0576\u0563"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "other": "\u0531\u0544\u0546 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "$"
+      },
+      "UYU": {
+        "displayName": {
+          "other": "\u0578\u0582\u0580\u0578\u0582\u0563\u057e\u0561\u0575\u0561\u056f\u0561\u0576 \u057a\u0565\u057d\u0578"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "other": "\u0578\u0582\u0566\u0562\u0565\u056f\u0561\u056f\u0561\u0576 \u057d\u0578\u0574"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEF": {
+        "displayName": {
+          "other": "\u057e\u0565\u0576\u0565\u057d\u0578\u0582\u0565\u056c\u0561\u056f\u0561\u0576 \u0562\u0578\u056c\u056b\u057e\u0561\u0580 (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "other": "\u057e\u0565\u0576\u0565\u057d\u0578\u0582\u0565\u056c\u0561\u056f\u0561\u0576 \u0562\u0578\u056c\u056b\u057e\u0561\u0580"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "other": "\u057e\u056b\u0565\u057f\u0576\u0561\u0574\u0561\u056f\u0561\u0576 \u0564\u0578\u0576\u0563"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VUV": {
+        "displayName": {
+          "other": "\u054e\u0561\u0576\u0578\u0582\u0561\u057f\u0578\u0582\u056b \u057e\u0561\u057f\u0578\u0582"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "other": "\u057d\u0561\u0574\u0578\u0561\u056f\u0561\u0576 \u057f\u0561\u056c\u0561"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "other": "\u053f\u0565\u0576\u057f\u0580\u0578\u0576\u0561\u056f\u0561\u0576 \u0531\u0586\u0580\u056b\u056f\u0561\u0575\u056b \u053f\u0556\u0531 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XCD": {
+        "displayName": {
+          "other": "\u0561\u0580\u0587\u0565\u056c\u0561\u056f\u0561\u0580\u056b\u0562\u0575\u0561\u0576 \u0564\u0578\u056c\u0561\u0580"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XOF": {
+        "displayName": {
+          "other": "\u0531\u0580\u0587\u0574\u057f\u0575\u0561\u0576 \u0531\u0586\u0580\u056b\u056f\u0561\u0575\u056b \u053f\u0556\u0531 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPF": {
+        "displayName": {
+          "other": "\u053f\u054a\u0556 \u0586\u0580\u0561\u0576\u056f"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XXX": {
+        "displayName": {
+          "other": "(\u0561\u0576\u0570\u0561\u0575\u057f \u0561\u0580\u056a\u0578\u0582\u0575\u0569)"
+        },
+        "narrow": "\u00a4",
+        "symbol": "\u00a4"
+      },
+      "YER": {
+        "displayName": {
+          "other": "\u0565\u0574\u0565\u0576\u0561\u056f\u0561\u0576 \u057c\u056b\u0561\u056c"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "ZAR": {
+        "displayName": {
+          "other": "\u0570\u0561\u0580\u0561\u057e\u0561\u0586\u0580\u056b\u056f\u0575\u0561\u0576 \u057c\u0561\u0576\u0564"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "other": "\u0536\u0561\u0574\u0562\u056b\u0561\u056f\u0561\u0576 \u056f\u057e\u0561\u0579\u0561 (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "other": "\u0566\u0561\u0574\u0562\u056b\u0561\u056f\u0561\u0576 \u056f\u057e\u0561\u0579\u0561"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "#,##0.00\u00a0\u00a4",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "0\u00a0\u0570\u0566\u0580\u00a0\u00a4"
+            },
+            "10000": {
+              "other": "00\u00a0\u0570\u0566\u0580\u00a0\u00a4"
+            },
+            "100000": {
+              "other": "000\u00a0\u0570\u0566\u0580\u00a0\u00a4"
+            },
+            "1000000": {
+              "other": "0\u00a0\u0574\u056c\u0576\u00a0\u00a4"
+            },
+            "10000000": {
+              "other": "00\u00a0\u0574\u056c\u0576\u00a0\u00a4"
+            },
+            "100000000": {
+              "other": "000\u00a0\u0574\u056c\u0576\u00a0\u00a4"
+            },
+            "1000000000": {
+              "other": "0\u00a0\u0574\u056c\u0580\u0564\u00a0\u00a4"
+            },
+            "10000000000": {
+              "other": "00\u00a0\u0574\u056c\u0580\u0564\u00a0\u00a4"
+            },
+            "100000000000": {
+              "other": "000\u00a0\u0574\u056c\u0580\u0564\u00a0\u00a4"
+            },
+            "1000000000000": {
+              "other": "0\u00a0\u057f\u0580\u056c\u0576\u00a0\u00a4"
+            },
+            "10000000000000": {
+              "other": "00\u00a0\u057f\u0580\u056c\u0576\u00a0\u00a4"
+            },
+            "100000000000000": {
+              "other": "000\u00a0\u057f\u0580\u056c\u0576\u00a0\u00a4"
+            }
+          },
+          "standard": "#,##0.00\u00a0\u00a4",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "other": "0 \u0570\u0561\u0566\u0561\u0580"
+            },
+            "10000": {
+              "other": "00 \u0570\u0561\u0566\u0561\u0580"
+            },
+            "100000": {
+              "other": "000 \u0570\u0561\u0566\u0561\u0580"
+            },
+            "1000000": {
+              "other": "0 \u0574\u056b\u056c\u056b\u0578\u0576"
+            },
+            "10000000": {
+              "other": "00 \u0574\u056b\u056c\u056b\u0578\u0576"
+            },
+            "100000000": {
+              "other": "000 \u0574\u056b\u056c\u056b\u0578\u0576"
+            },
+            "1000000000": {
+              "other": "0 \u0574\u056b\u056c\u056b\u0561\u0580\u0564"
+            },
+            "10000000000": {
+              "other": "00 \u0574\u056b\u056c\u056b\u0561\u0580\u0564"
+            },
+            "100000000000": {
+              "other": "000 \u0574\u056b\u056c\u056b\u0561\u0580\u0564"
+            },
+            "1000000000000": {
+              "other": "0 \u057f\u0580\u056b\u056c\u056b\u0578\u0576"
+            },
+            "10000000000000": {
+              "other": "00 \u057f\u0580\u056b\u056c\u056b\u0578\u0576"
+            },
+            "100000000000000": {
+              "other": "000 \u057f\u0580\u056b\u056c\u056b\u0578\u0576"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0\u00a0\u0570\u0566\u0580"
+            },
+            "10000": {
+              "other": "00\u00a0\u0570\u0566\u0580"
+            },
+            "100000": {
+              "other": "000\u00a0\u0570\u0566\u0580"
+            },
+            "1000000": {
+              "other": "0\u00a0\u0574\u056c\u0576"
+            },
+            "10000000": {
+              "other": "00\u00a0\u0574\u056c\u0576"
+            },
+            "100000000": {
+              "other": "000\u00a0\u0574\u056c\u0576"
+            },
+            "1000000000": {
+              "other": "0\u00a0\u0574\u056c\u0580\u0564"
+            },
+            "10000000000": {
+              "other": "00\u00a0\u0574\u056c\u0580\u0564"
+            },
+            "100000000000": {
+              "other": "000\u00a0\u0574\u056c\u0580\u0564"
+            },
+            "1000000000000": {
+              "other": "0\u00a0\u057f\u0580\u056c\u0576"
+            },
+            "10000000000000": {
+              "other": "00\u00a0\u057f\u0580\u056c\u0576"
+            },
+            "100000000000000": {
+              "other": "000\u00a0\u057f\u0580\u056c\u0576"
+            }
+          },
+          "standard": "#,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ",",
+          "exponential": "E",
+          "group": "\u00a0",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "-",
+          "nan": "\u0548\u0579\u0539",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "+",
+          "rangeSign": "\u2013",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{0}/{1}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "other": "{0} \u0561\u056f\u0580"
+          },
+          "narrow": {
+            "other": "{0}\u0561\u056f\u0580"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0561\u056f\u0580"
+          }
+        },
+        "bit": {
+          "long": {
+            "other": "{0} \u0562\u056b\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0562\u056b\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0562\u056b\u0569"
+          }
+        },
+        "byte": {
+          "long": {
+            "other": "{0} \u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} \u0562\u0561\u0575\u0569",
+            "other": "{0} \u0532"
+          }
+        },
+        "celsius": {
+          "long": {
+            "other": "{0} \u0561\u057d\u057f\u056b\u0573\u0561\u0576 \u0568\u057d\u057f \u0551\u0565\u056c\u057d\u056b\u0578\u0582\u057d\u056b"
+          },
+          "narrow": {
+            "other": "{0} \u00b0C"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u00b0C"
+          }
+        },
+        "centimeter": {
+          "long": {
+            "other": "{0} \u057d\u0561\u0576\u057f\u056b\u0574\u0565\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u057d\u0574"
+          },
+          "perUnit": {
+            "long": "{0} \u057d\u0561\u0576\u057f\u056b\u0574\u0565\u057f\u0580\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u057d\u0574",
+            "short": "{0}/\u057d\u0574"
+          },
+          "short": {
+            "other": "{0} \u057d\u0574"
+          }
+        },
+        "day": {
+          "long": {
+            "other": "{0} \u0585\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u0585"
+          },
+          "perUnit": {
+            "long": "\u0585\u0580\u0561\u056f\u0561\u0576 {0}",
+            "narrow": "{0}/\u0585",
+            "short": "{0}/\u0585\u0580"
+          },
+          "short": {
+            "other": "{0} \u0585\u0580"
+          }
+        },
+        "degree": {
+          "long": {
+            "other": "{0} \u0561\u057d\u057f\u056b\u0573\u0561\u0576"
+          },
+          "narrow": {
+            "other": "{0}\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0"
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "other": "{0} \u0561\u057d\u057f\u056b\u0573\u0561\u0576 \u0568\u057d\u057f \u0556\u0561\u0580\u0565\u0576\u0570\u0561\u0575\u0569\u056b"
+          },
+          "narrow": {
+            "other": "{0}\u00b0F"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0F"
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "other": "{0} \u0570\u0565\u0572\u0578\u0582\u056f \u0578\u0582\u0576\u056f\u056b"
+          },
+          "narrow": {
+            "other": "{0}\u0570\u0572.\u0578\u0582"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0570\u0572. \u0578\u0582"
+          }
+        },
+        "foot": {
+          "long": {
+            "other": "{0} \u0586\u0578\u0582\u057f"
+          },
+          "narrow": {
+            "other": "{0}\u2032"
+          },
+          "perUnit": {
+            "long": "{0} \u0586\u0578\u0582\u057f\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0586\u057f",
+            "short": "{0}/\u0586\u057f"
+          },
+          "short": {
+            "other": "{0} \u0586\u057f"
+          }
+        },
+        "gallon": {
+          "long": {
+            "other": "{0} \u0563\u0561\u056c\u0578\u0576"
+          },
+          "narrow": {
+            "other": "{0}\u0563\u0561\u056c"
+          },
+          "perUnit": {
+            "long": "{0} \u0563\u0561\u056c\u0578\u0576\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0563\u0561\u056c",
+            "short": "{0}/\u0563\u0561\u056c"
+          },
+          "short": {
+            "other": "{0} \u0563\u0561\u056c"
+          }
+        },
+        "gigabit": {
+          "long": {
+            "other": "{0} \u0563\u056b\u0563\u0561\u0562\u056b\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0533\u0562\u056b\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0533\u0562\u056b\u0569"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "other": "{0} \u0563\u056b\u0563\u0561\u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0533\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0533\u0532"
+          }
+        },
+        "gram": {
+          "long": {
+            "other": "{0} \u0563\u0580\u0561\u0574"
+          },
+          "narrow": {
+            "other": "{0} \u0563"
+          },
+          "perUnit": {
+            "long": "{0} \u0563\u0580\u0561\u0574\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0563",
+            "short": "{0}/\u0563"
+          },
+          "short": {
+            "other": "{0} \u0563"
+          }
+        },
+        "hectare": {
+          "long": {
+            "other": "{0} \u0570\u0565\u056f\u057f\u0561\u0580"
+          },
+          "narrow": {
+            "other": "{0}\u0570\u0561"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0570\u0561"
+          }
+        },
+        "hour": {
+          "long": {
+            "other": "{0} \u056a\u0561\u0574"
+          },
+          "narrow": {
+            "other": "{0}\u056a"
+          },
+          "perUnit": {
+            "long": "{0} \u056a\u0561\u0574\u0578\u0582\u0574",
+            "narrow": "{0}/\u056a",
+            "short": "{0}/\u056a"
+          },
+          "short": {
+            "other": "{0} \u056a"
+          }
+        },
+        "inch": {
+          "long": {
+            "other": "{0} \u0574\u0561\u057f\u0576\u0561\u0579\u0561\u0583"
+          },
+          "narrow": {
+            "other": "{0}\u2033"
+          },
+          "perUnit": {
+            "long": "{0} \u0574\u0561\u057f\u0576\u0561\u0579\u0561\u0583\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0574\u0561\u057f",
+            "short": "{0}/\u0574\u0561\u057f"
+          },
+          "short": {
+            "other": "{0} \u0574\u0561\u057f"
+          }
+        },
+        "kilobit": {
+          "long": {
+            "other": "{0} \u056f\u056b\u056c\u0578\u0562\u056b\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u056f\u0562\u056b\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u056f\u0562\u056b\u0569"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "other": "{0} \u056f\u056b\u056c\u0578\u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u056f\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u056f\u0532"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "other": "{0} \u056f\u056b\u056c\u0578\u0563\u0580\u0561\u0574"
+          },
+          "narrow": {
+            "other": "{0} \u056f\u0563"
+          },
+          "perUnit": {
+            "long": "{0} \u056f\u056b\u056c\u0578\u0563\u0580\u0561\u0574\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u056f\u0563",
+            "short": "{0}/\u056f\u0563"
+          },
+          "short": {
+            "other": "{0} \u056f\u0563"
+          }
+        },
+        "kilometer": {
+          "long": {
+            "other": "{0} \u056f\u056b\u056c\u0578\u0574\u0565\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u056f\u0574"
+          },
+          "perUnit": {
+            "long": "{0} \u056f\u056b\u056c\u0578\u0574\u0565\u057f\u0580\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u056f\u0574",
+            "short": "{0}/\u056f\u0574"
+          },
+          "short": {
+            "other": "{0} \u056f\u0574"
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "other": "{0} \u056f\u056b\u056c\u0578\u0574\u0565\u057f\u0580 \u056a\u0561\u0574\u0578\u0582\u0574"
+          },
+          "narrow": {
+            "other": "{0} \u056f\u0574/\u056a"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u056f\u0574/\u056a"
+          }
+        },
+        "liter": {
+          "long": {
+            "other": "{0} \u056c\u056b\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u056c"
+          },
+          "perUnit": {
+            "long": "{0} \u056c\u056b\u057f\u0580\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u056c",
+            "short": "{0}/\u056c"
+          },
+          "short": {
+            "other": "{0} \u056c"
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "other": "{0} \u056c\u056b\u057f\u0580 \u056f\u056b\u056c\u0578\u0574\u0565\u057f\u0580\u056b \u057e\u0580\u0561"
+          },
+          "narrow": {
+            "other": "{0}\u056c/\u056f\u0574"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u056c/\u056f\u0574"
+          }
+        },
+        "megabit": {
+          "long": {
+            "other": "{0} \u0574\u0565\u0563\u0561\u0562\u056b\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0544\u0562\u056b\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0544\u0562\u056b\u0569"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "other": "{0} \u0574\u0565\u0563\u0561\u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u0544\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0544\u0532"
+          }
+        },
+        "meter": {
+          "long": {
+            "other": "{0} \u0574\u0565\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u0574"
+          },
+          "perUnit": {
+            "long": "{0} \u0574\u0565\u057f\u0580\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0574",
+            "short": "{0}/\u0574"
+          },
+          "short": {
+            "other": "{0} \u0574"
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "other": "{0} \u0574\u0565\u057f\u0580 \u057e\u0561\u0575\u0580\u056f\u0575\u0561\u0576\u0578\u0582\u0574"
+          },
+          "narrow": {
+            "other": "{0}\u0574/\u057e"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574/\u057e"
+          }
+        },
+        "mile": {
+          "long": {
+            "other": "{0} \u0574\u0572\u0578\u0576"
+          },
+          "narrow": {
+            "other": "{0} \u0574\u0572"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u0572"
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "other": "{0} \u0574\u0572\u0578\u0576 \u0563\u0561\u056c\u0578\u0576\u056b \u057e\u0580\u0561"
+          },
+          "narrow": {
+            "other": "{0} \u0574\u0572/\u0563\u0561\u056c"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u0572/\u0563\u0561\u056c"
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "other": "{0} \u0574\u0572\u0578\u0576 \u056a\u0561\u0574\u0578\u0582\u0574"
+          },
+          "narrow": {
+            "other": "{0}\u0574\u0572/\u056a"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u0572/\u056a"
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "other": "{0} \u057d\u056f\u0561\u0576\u0564\u056b\u0576\u0561\u057e\u0575\u0561\u0576 \u0574\u0572\u0578\u0576"
+          },
+          "narrow": {
+            "other": "{0} \u057d\u056f\u0561\u0576\u0564\u2024 \u0574\u0572"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u057d\u056f\u0561\u0576\u0564\u2024 \u0574\u0572"
+          }
+        },
+        "milliliter": {
+          "long": {
+            "other": "{0} \u0574\u056b\u056c\u056b\u056c\u056b\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u0574\u056c"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u056c"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "other": "{0} \u0574\u056b\u056c\u056b\u0574\u0565\u057f\u0580"
+          },
+          "narrow": {
+            "other": "{0} \u0574\u0574"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u0574"
+          }
+        },
+        "millisecond": {
+          "long": {
+            "other": "{0} \u0574\u056b\u056c\u056b\u057e\u0561\u0575\u0580\u056f\u0575\u0561\u0576"
+          },
+          "narrow": {
+            "other": "{0} \u0574\u057e"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0574\u057e"
+          }
+        },
+        "minute": {
+          "long": {
+            "other": "{0} \u0580\u0578\u057a\u0565"
+          },
+          "narrow": {
+            "other": "{0}\u0580"
+          },
+          "perUnit": {
+            "long": "{0} \u0580\u0578\u057a\u0565\u0578\u0582\u0574",
+            "narrow": "{0}/\u0580",
+            "short": "{0}/\u0580"
+          },
+          "short": {
+            "other": "{0} \u0580"
+          }
+        },
+        "month": {
+          "long": {
+            "other": "{0} \u0561\u0574\u056b\u057d"
+          },
+          "narrow": {
+            "other": "{0}\u0561"
+          },
+          "perUnit": {
+            "long": "\u0561\u0574\u057d\u0561\u056f\u0561\u0576 {0}",
+            "narrow": "{0}/\u0561",
+            "short": "{0}/\u0561\u0574\u057d"
+          },
+          "short": {
+            "other": "{0} \u0561\u0574\u057d"
+          }
+        },
+        "ounce": {
+          "long": {
+            "other": "{0} \u0578\u0582\u0576\u056f\u056b"
+          },
+          "narrow": {
+            "other": "{0}\u0578\u0582"
+          },
+          "perUnit": {
+            "long": "{0} \u0578\u0582\u0576\u056f\u056b\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0578\u0582",
+            "short": "{0}/\u0578\u0582"
+          },
+          "short": {
+            "other": "{0} \u0578\u0582"
+          }
+        },
+        "percent": {
+          "long": {
+            "other": "{0} \u057f\u0578\u056f\u0578\u057d"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "other": "{0} \u057a\u0565\u057f\u0561\u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u054a\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u054a\u0532"
+          }
+        },
+        "pound": {
+          "long": {
+            "other": "{0} \u0586\u0578\u0582\u0576\u057f"
+          },
+          "narrow": {
+            "other": "{0}#"
+          },
+          "perUnit": {
+            "long": "{0} \u0586\u0578\u0582\u0576\u057f\u056b \u057e\u0580\u0561",
+            "narrow": "{0}/\u0586\u0578\u0582\u0576\u057f",
+            "short": "{0}/\u0586\u0578\u0582\u0576\u057f"
+          },
+          "short": {
+            "other": "{0} \u0586\u0578\u0582\u0576\u057f"
+          }
+        },
+        "second": {
+          "long": {
+            "other": "{0} \u057e\u0561\u0575\u0580\u056f\u0575\u0561\u0576"
+          },
+          "narrow": {
+            "other": "{0} \u057e"
+          },
+          "perUnit": {
+            "long": "{0} \u057e\u0561\u0575\u0580\u056f\u0575\u0561\u0576\u0578\u0582\u0574",
+            "narrow": "{0}/\u057e",
+            "short": "{0}/\u057e\u0580\u056f"
+          },
+          "short": {
+            "other": "{0} \u057e\u0580\u056f"
+          }
+        },
+        "stone": {
+          "long": {
+            "other": "{0} \u057d\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u057d\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u057d\u0569"
+          }
+        },
+        "terabit": {
+          "long": {
+            "other": "{0} \u057f\u0565\u0580\u0561\u0562\u056b\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u054f\u0562\u056b\u0569"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u054f\u0562\u056b\u0569"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "other": "{0} \u057f\u0565\u0580\u0561\u0562\u0561\u0575\u0569"
+          },
+          "narrow": {
+            "other": "{0}\u054f\u0532"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u054f\u0532"
+          }
+        },
+        "week": {
+          "long": {
+            "other": "{0} \u0577\u0561\u0562\u0561\u0569"
+          },
+          "narrow": {
+            "other": "{0} \u0577"
+          },
+          "perUnit": {
+            "long": "\u0577\u0561\u0562\u0561\u0569\u0561\u056f\u0561\u0576 {0}",
+            "narrow": "{0}/\u0577",
+            "short": "{0}/\u0577\u0561\u0562"
+          },
+          "short": {
+            "other": "{0} \u0577\u0561\u0562"
+          }
+        },
+        "yard": {
+          "long": {
+            "other": "{0} \u0575\u0561\u0580\u0564"
+          },
+          "narrow": {
+            "other": "{0}\u0575\u0564"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0575\u0564"
+          }
+        },
+        "year": {
+          "long": {
+            "other": "{0} \u057f\u0561\u0580\u056b"
+          },
+          "narrow": {
+            "other": "{0} \u057f"
+          },
+          "perUnit": {
+            "long": "\u057f\u0561\u0580\u0565\u056f\u0561\u0576 {0}",
+            "narrow": "{0}/\u057f",
+            "short": "{0}/\u057f"
+          },
+          "short": {
+            "other": "{0} \u057f"
+          }
+        }
+      }
+    }
+  },
+  "locale": "hy"
+}

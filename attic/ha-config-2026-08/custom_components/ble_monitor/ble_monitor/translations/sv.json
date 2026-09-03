@@ -1,0 +1,101 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Bara en konfiguration f\u00f6r BLE \u00f6vervakaren \u00e4r till\u00e5ten."
+    },
+    "error": {
+      "cannot_change_mac": "MAC-adressen kan inte \u00e4ndras.",
+      "cannot_change_uuid": "Beacon UUID kan inte \u00e4ndras.",
+      "cannot_delete_device": "Enheten kan inte tas bort.",
+      "cannot_disable_bt_interface": "Kan inte st\u00e4nga av BT signalen, n\u00e4r en eller fler BT signaler \u00e4r aktiva. Deaktivera samtliga BT signaler.",
+      "invalid_key": "Krypteringsnyckeln m\u00e5ste vara i 32 hexadecimals tecken (24 f\u00f6r Yeelight sensorer).",
+      "invalid_mac": "MAC-adressen m\u00e5ste vara i formatet 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID m\u00e5ste vara i formatet '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Enhetsf\u00f6ljningstid att konstatera hemma (i sekunder)",
+          "delete device": "Radera enhet",
+          "encryption_key": "Krypteringsnyckel",
+          "mac": "MAC-adress",
+          "report_unknown": "Rapportera ok\u00e4nd BLE aktivitet till HA loggen",
+          "reset_timer": "\u00c5terst\u00e4ll timer (i sekunder, 0 = av)",
+          "restore_state": "\u00c5terst\u00e4ll tillst\u00e5nd efter omstart",
+          "temperature_unit": "Temperaturenhet [Endast f\u00f6r temperatursensorer]",
+          "track_device": "F\u00f6lj enhet",
+          "tracker_scan_interval": "Enhetsf\u00f6rf\u00f6ljning skanningsintervall (i sekunder)",
+          "use_median": "Anv\u00e4nd medianv\u00e4rde ist\u00e4llet f\u00f6r medelv\u00e4rde",
+          "uuid": "Beacon UUID"
+        },
+        "title": "L\u00e4gg till enhet"
+      },
+      "user": {
+        "data": {
+          "active_scan": "Anv\u00e4nd aktiv s\u00f6kning ist\u00e4llet f\u00f6r passiv s\u00f6kning (P\u00e5verkar batteriet)",
+          "bt_auto_restart": "Automatisk omstart f\u00f6r adaptern om misslyckad start",
+          "bt_interface": "MAC-adress f\u00f6r Bluetooth gr\u00e4nssnittet/adaptern",
+          "devices": "Enheter",
+          "discovery": "Uppt\u00e4ck enheter och sensorer automatiskt",
+          "log_spikes": "Logga spikar",
+          "period": "Period to use for averaging",
+          "report_unknown": "Rapportera ok\u00e4nd BLE aktivitet till HA loggen",
+          "restore_state": "\u00c5terst\u00e4ll tillst\u00e5nd efter omstart",
+          "use_median": "Anv\u00e4nd medianv\u00e4rde ist\u00e4llet f\u00f6r medelv\u00e4rde"
+        },
+        "description": "St\u00e4ll in din konfiguration f\u00f6r BLE \u00f6vervakaren",
+        "title": "Passiv BLE \u00f6vervakare"
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "not_in_use": "Du har konfigurerat BLE \u00f6vervakaren i YAML. Var sn\u00e4ll att \u00e4ndra dina alternativ i YAML."
+    },
+    "error": {
+      "cannot_change_mac": "MAC-adressen kan inte \u00e4ndras.",
+      "cannot_change_uuid": "Beacon UUID kan inte \u00e4ndras.",
+      "cannot_delete_device": "Enheten kan inte tas bort.",
+      "cannot_disable_bt_interface": "Kan inte st\u00e4nga av BT signalen, n\u00e4r en eller fler BT signaler \u00e4r aktiva. Deaktivera samtliga BT signaler.",
+      "invalid_key": "Krypteringsnyckeln m\u00e5ste vara i 32 hexadecimals tecken (24 f\u00f6r Yeelight sensorer).",
+      "invalid_mac": "MAC-adressen m\u00e5ste vara i formatet 'AA:BB:CC:DD:EE:FF'.",
+      "invalid_uuid": "Beacon UUID m\u00e5ste vara i formatet '00000000-0000-0000-0000-000000000000'."
+    },
+    "step": {
+      "add_remove_device": {
+        "data": {
+          "consider_home": "Enhetsf\u00f6rf\u00f6ljningstid att konstatera hemma (i sekunder)\",",
+          "delete device": "Radera enhet",
+          "encryption_key": "Krypteringsnyckel (s\u00e4tt - f\u00f6r att ta bort)",
+          "mac": "MAC-adress",
+          "report_unknown": "Rapportera ok\u00e4nd BLE aktivitet till HA loggen",
+          "reset_timer": "\u00c5terst\u00e4ll timer (i sekunder, 0 = av)",
+          "restore_state": "\u00c5terst\u00e4ll tillst\u00e5nd efter omstart",
+          "temperature_unit": "Temperaturenhet",
+          "track_device": "F\u00f6lj enhet",
+          "tracker_scan_interval": "Enhetsf\u00f6rf\u00f6ljning skanningsintervall (i sekunder)",
+          "use_median": "Anv\u00e4nd medianv\u00e4rde ist\u00e4llet f\u00f6r medelv\u00e4rde",
+          "uuid": "Beacon UUID"
+        },
+        "title": "Konfigurera enhet"
+      },
+      "init": {
+        "data": {
+          "active_scan": "Anv\u00e4nd aktiv s\u00f6kning ist\u00e4llet f\u00f6r passiv s\u00f6kning (P\u00e5verkar batteriet)",
+          "bt_auto_restart": "Automatisk omstart f\u00f6r adaptern om misslyckad start",
+          "bt_interface": "MAC-adress f\u00f6r Bluetooth gr\u00e4nssnittet/adaptern",
+          "devices": "Enheter",
+          "discovery": "Uppt\u00e4ck enheter och sensorer automatiskt",
+          "log_spikes": "Logga spikar",
+          "not_in_use": "YAML anv\u00e4nds, \u00e4ndra alternativ i YAML",
+          "period": "Period to use for averaging",
+          "report_unknown": "Rapportera ok\u00e4nd BLE aktivitet till HA loggen",
+          "restore_state": "\u00c5terst\u00e4ll tillst\u00e5nd efter omstart",
+          "use_median": "Anv\u00e4nd medianv\u00e4rde ist\u00e4llet f\u00f6r medelv\u00e4rde"
+        },
+        "description": "S\u00f6kning kommer startas om efter att du har tryckt p\u00e5 'SUBMIT'",
+        "title": "Passiv BLE \u00f6vervakare alternativ"
+      }
+    }
+  }
+}

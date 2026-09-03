@@ -1,0 +1,2060 @@
+{
+  "data": {
+    "currencies": {
+      "AED": {
+        "displayName": {
+          "other": "\u0645\u062a\u062d\u062f\u06c1 \u0639\u0631\u0628 \u0627\u0645\u0627\u0631\u0627\u062a\u06cc \u062f\u0631\u06c1\u0645"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFN": {
+        "displayName": {
+          "other": "\u0627\u0641\u063a\u0627\u0646 \u0627\u0641\u063a\u0627\u0646\u06cc"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALL": {
+        "displayName": {
+          "other": "\u0627\u0644\u0628\u0627\u0646\u06cc\u0627 \u06a9\u0627 \u0644\u06cc\u06a9"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "other": "\u0622\u0631\u0645\u06cc\u0646\u06cc\u0627\u0626\u06cc \u0688\u0631\u0645"
+        },
+        "narrow": "\u058f",
+        "symbol": "AMD"
+      },
+      "ANG": {
+        "displayName": {
+          "other": "\u0646\u06cc\u062f\u0631 \u0644\u06cc\u0646\u0688\u0632 \u0627\u0646\u0679\u06cc\u0644\u06cc\u0626\u0646 \u06af\u0644\u0688\u0631"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "other": "\u0627\u0646\u06af\u0648\u0644\u0627 \u06a9\u0627 \u06a9\u0648\u0627\u0646\u0632\u0627"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "ARS": {
+        "displayName": {
+          "other": "\u0627\u0631\u062c\u0646\u0679\u0627\u0626\u0646 \u067e\u06cc\u0633\u06c1"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "AUD": {
+        "displayName": {
+          "other": "\u0622\u0633\u0679\u0631\u06cc\u0644\u06cc\u0646 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "A$"
+      },
+      "AWG": {
+        "displayName": {
+          "other": "\u0627\u0631\u0648\u0628\u0646 \u0641\u0644\u0648\u0631\u0650\u0646"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZN": {
+        "displayName": {
+          "other": "\u0622\u0630\u0631\u0628\u0627\u0626\u062c\u0627\u0646\u06cc \u0645\u0646\u0627\u062a"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAM": {
+        "displayName": {
+          "other": "\u0628\u0648\u0633\u0646\u06cc\u0627 \u06c1\u0631\u0632\u06cc\u06af\u0648\u0648\u06cc\u0646\u0627 \u06a9\u0627 \u0642\u0627\u0628\u0644 \u0645\u0646\u062a\u0642\u0644\u06cc \u0646\u0634\u0627\u0646"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BBD": {
+        "displayName": {
+          "other": "\u0628\u0627\u0631\u0628\u06cc\u0688\u06cc\u0646 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "other": "\u0628\u0646\u06af\u0644\u06c1 \u062f\u06cc\u0634\u06cc \u0679\u06a9\u0627"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BGN": {
+        "displayName": {
+          "other": "\u0628\u0644\u063a\u0627\u0631\u06cc\u0646 \u0644\u06cc\u0648"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BHD": {
+        "displayName": {
+          "other": "\u0628\u062d\u0631\u06cc\u0646\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "other": "\u0628\u0631\u0648\u0646\u0688\u06cc\u0626\u0646 \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "other": "\u0628\u0631\u0645\u0648\u0688\u0627 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "other": "\u0628\u0631\u0648\u0646\u0626\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "other": "\u0628\u0648\u0644\u06cc\u0648\u06cc\u0646 \u0628\u0648\u0644\u06cc\u0648\u06cc\u0627\u0646\u0648"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BRL": {
+        "displayName": {
+          "other": "\u0628\u0631\u0627\u0632\u06cc\u0644\u06cc \u0631\u06cc\u0626\u0644"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BSD": {
+        "displayName": {
+          "other": "\u0628\u06c1\u0627\u0645\u0627\u0646\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "other": "\u0628\u06be\u0648\u0679\u0627\u0646\u06cc \u06af\u064f\u0644\u0679\u0631\u0645"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BWP": {
+        "displayName": {
+          "other": "\u0628\u0648\u062a\u0633\u0648\u0627\u0646\u0627 \u06a9\u0627 \u067e\u0648\u0644\u0627"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYN": {
+        "displayName": {
+          "other": "\u0628\u06cc\u0644\u0627\u0631\u0648\u0633\u06cc \u0631\u0648\u0628\u0644"
+        },
+        "narrow": "\u0440.",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "other": "\u0628\u06cc\u0644\u0627\u0631\u0648\u0633\u06cc \u0631\u0648\u0628\u0644 (\u06f2\u06f0\u06f0\u06f0\u2013\u06f2\u06f0\u06f1\u06f6)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "one": "\u0628\u06cc\u0644\u06cc\u0632 \u0688\u0627\u0644\u0631",
+          "other": "\u0628\u06cc\u0644\u06cc\u0632 \u0688\u0627\u0644\u0631\u0632"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "other": "\u06a9\u0646\u06cc\u0688\u06cc\u0646 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "other": "\u06a9\u0627\u0646\u06af\u0648\u0644\u06cc\u0632 \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHF": {
+        "displayName": {
+          "other": "\u0633\u0648\u0626\u0633 \u0641\u0631\u0627\u0646\u06a9\u0633"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CLP": {
+        "displayName": {
+          "other": "\u0686\u0644\u0651\u06cc\u0646 \u067e\u06cc\u0633\u06c1"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "other": "\u0686\u06cc\u0646\u06cc \u06cc\u0648\u0622\u0646 (\u0622\u0641 \u0634\u0648\u0631)"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "other": "\u0686\u06cc\u0646\u06cc \u06cc\u0648\u0622\u0646"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "other": "\u06a9\u0648\u0644\u0645\u0628\u06cc\u0646 \u067e\u06cc\u0633\u06c1"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "CRC": {
+        "displayName": {
+          "other": "\u06a9\u0648\u0633\u0679\u0627 \u0631\u06cc\u06a9\u0627 \u06a9\u0627 \u06a9\u0648\u0644\u0646"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CUC": {
+        "displayName": {
+          "other": "\u06a9\u06cc\u0648\u0628\u0627 \u06a9\u0627 \u0642\u0627\u0628\u0644 \u0645\u0646\u062a\u0642\u0644\u06cc \u067e\u06cc\u0633\u0648"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "other": "\u06a9\u06cc\u0648\u0628\u0627 \u06a9\u0627 \u067e\u06cc\u0633\u0648"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "other": "\u06a9\u06cc\u067e \u0648\u0631\u0688\u06cc \u06a9\u0627 \u0627\u0633\u06a9\u06cc\u0648\u0688\u0648"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CZK": {
+        "displayName": {
+          "one": "\u0686\u06cc\u06a9 \u06a9\u0631\u0648\u0646\u0627",
+          "other": "\u0686\u06cc\u06a9 \u06a9\u0631\u0648\u0646\u0627\u0632"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DEM": {
+        "displayName": {
+          "other": "\u0688\u0686 \u0645\u0627\u0631\u06a9\u0633"
+        },
+        "narrow": "DEM",
+        "symbol": "DEM"
+      },
+      "DJF": {
+        "displayName": {
+          "other": "\u062c\u0628\u0648\u062a\u06cc \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "other": "\u0688\u0646\u0645\u0627\u0631\u06a9 \u06a9\u0631\u0648\u0646"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "other": "\u0688\u0648\u0645\u0646\u06cc\u06a9\u0646 \u067e\u06cc\u0633\u0648"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "other": "\u0627\u0644\u062c\u06cc\u0631\u06cc\u0627\u0626\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "EEK": {
+        "displayName": {
+          "other": "\u0627\u06cc\u0633\u0679\u0648\u0646\u06cc\u0646 \u06a9\u0631\u0648\u0646"
+        },
+        "narrow": "EEK",
+        "symbol": "EEK"
+      },
+      "EGP": {
+        "displayName": {
+          "other": "\u0645\u0635\u0631\u06cc \u067e\u0627\u0624\u0646\u0688"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "other": "\u0627\u0631\u06cc\u0679\u06cc\u0631\u06cc\u0627\u0626\u06cc \u0646\u0627\u06a9\u0641\u0627"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESP": {
+        "displayName": {},
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "other": "\u0627\u06cc\u062a\u06be\u0648\u067e\u06cc\u0627\u0626\u06cc \u0628\u0650\u0631\u0651"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "other": "\u06cc\u0648\u0631\u0648"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FJD": {
+        "displayName": {
+          "other": "\u0641\u062c\u06cc \u06a9\u0627 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "other": "\u0641\u0627\u06a9\u0644\u06cc\u0646\u0688 \u0622\u0626\u0644\u06cc\u0646\u0688\u0632 \u067e\u0648\u0646\u0688"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "GBP": {
+        "displayName": {
+          "other": "\u0628\u0631\u0637\u0627\u0646\u0648\u06cc \u067e\u0627\u0624\u0646\u0688"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEL": {
+        "displayName": {
+          "other": "\u062c\u0627\u0631\u062c\u06cc\u0627\u0626\u06cc \u0644\u0627\u0631\u06cc"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHS": {
+        "displayName": {
+          "other": "\u06af\u06be\u0627\u0646\u0627 \u06a9\u0627 \u0633\u06cc\u0688\u06cc"
+        },
+        "narrow": "GH\u20b5",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "other": "\u062c\u0628\u0644 \u0627\u0644\u0637\u0627\u0631\u0642 \u067e\u0648\u0646\u0688"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "other": "\u06af\u0627\u0645\u0628\u06cc\u0627 \u06a9\u0627 \u0688\u0644\u0627\u0633\u06cc"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "other": "\u06af\u0646\u06cc \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GTQ": {
+        "displayName": {
+          "other": "\u06af\u0648\u0627\u0679\u06d2 \u0645\u0627\u0644\u0627 \u06a9\u0627 \u06a9\u0648\u0626\u0679\u0632\u0644"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GYD": {
+        "displayName": {
+          "other": "\u06af\u0648\u06cc\u0627\u0646\u06cc\u0632 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "other": "\u06be\u0627\u0646\u06af \u06a9\u0627\u0646\u06af \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "other": "\u06c1\u0648\u0646\u0688\u0648\u0631\u0627\u0646 \u0644\u06cc\u0645\u067e\u06cc\u0631\u0627"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRK": {
+        "displayName": {
+          "other": "\u06a9\u0631\u0648\u0634\u06cc\u0646 \u06a9\u0648\u0646\u0627"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "other": "\u06c1\u06cc\u062a\u06cc \u06a9\u0627 \u06af\u0624\u0631\u0688\u06cc"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "other": "\u06c1\u0646\u06af\u0631\u06cc\u0646 \u0641\u0648\u0631\u0646\u0679"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "other": "\u0627\u0646\u0688\u0648\u0646\u06cc\u0634\u06cc\u0646 \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "ILS": {
+        "displayName": {
+          "one": "\u0627\u0633\u0631\u0627\u0626\u06cc\u0644\u06cc \u0646\u06cc\u0627 \u0634\u06cc\u06a9\u0644",
+          "other": "\u0627\u0633\u0631\u0627\u0626\u06cc\u0644\u06cc \u0646\u06cc\u0627 \u0634\u06cc\u06a9\u0644\u0632"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "one": "\u0628\u06be\u0627\u0631\u062a\u06cc \u0631\u0648\u067e\u06cc\u06c1",
+          "other": "\u0628\u06be\u0627\u0631\u062a\u06cc \u0631\u0648\u067e\u06d2"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "other": "\u0639\u0631\u0627\u0642\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "other": "\u0627\u06cc\u0631\u0627\u0646\u06cc \u0631\u06cc\u0627\u0644"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "one": "\u0622\u0626\u0633 \u0644\u064a\u0646\u0688\u06cc \u06a9\u0631\u0648\u0646\u0627",
+          "other": "\u0622\u0626\u0633 \u0644\u064a\u0646\u0688\u06cc \u06a9\u0631\u0648\u0646\u0648\u06ba"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "JMD": {
+        "displayName": {
+          "other": "\u062c\u0645\u0627\u0626\u06cc\u06a9\u0646 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "other": "\u0627\u0631\u062f\u0646\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "other": "\u062c\u0627\u067e\u0627\u0646\u06cc \u06cc\u0646"
+        },
+        "narrow": "\u00a5",
+        "symbol": "JP\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "other": "\u06a9\u06cc\u0646\u06cc\u0627\u0626\u06cc \u0634\u0644\u0646\u06af"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "other": "\u06a9\u0631\u063a\u0633\u062a\u0627\u0646\u06cc \u0633\u0648\u0645"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "other": "\u06a9\u0645\u0628\u0648\u0688\u06cc\u0627\u0626\u06cc \u0631\u06cc\u0626\u0644"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "other": "\u06a9\u0648\u0645\u0648\u0631\u06cc\u0626\u0646 \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "other": "\u0634\u0645\u0627\u0644\u06cc \u06a9\u0648\u0631\u06cc\u0627\u0626\u06cc \u0648\u0648\u0646"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRW": {
+        "displayName": {
+          "other": "\u062c\u0646\u0648\u0628\u06cc \u06a9\u0648\u0631\u06cc\u0627\u0626\u06cc \u0648\u0648\u0646"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "other": "\u06a9\u0648\u06cc\u062a\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "other": "\u06a9\u06cc\u0645\u06cc\u0646 \u0622\u0626\u0644\u06cc\u0646\u0688\u0632 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "other": "\u0642\u0632\u0627\u062e\u0633\u062a\u0627\u0646\u06cc \u0679\u06cc\u0646\u06af"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "other": "\u0644\u0627\u0624\u0634\u06cc\u0627\u0626\u06cc \u06a9\u0650\u067e"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "other": "\u0644\u0628\u0646\u0627\u0646\u06cc \u067e\u0648\u0646\u0688"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "other": "\u0633\u0631\u06cc \u0644\u0646\u06a9\u0627\u0626\u06cc \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "other": "\u0644\u0627\u0626\u0628\u0631\u06cc\u0627\u0626\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "other": "\u0644\u06cc\u0633\u0648\u062a\u06be\u0648 \u0644\u0648\u062a\u06cc"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "other": "\u0644\u06cc\u062a\u06be\u0648\u06cc\u0646\u06cc\u0627\u0626\u06cc \u0644\u06cc\u0679\u0627\u0633"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LVL": {
+        "displayName": {
+          "other": "\u0644\u0627\u062a\u0648\u06cc\u0627\u0626\u06cc \u0644\u06cc\u0679\u0633"
+        },
+        "narrow": "Ls",
+        "symbol": "LVL"
+      },
+      "LYD": {
+        "displayName": {
+          "other": "\u0644\u06cc\u0628\u06cc\u0627\u0626\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "other": "\u0645\u0631\u0627\u06a9\u0634\u06cc \u062f\u0631\u06c1\u0645"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MDL": {
+        "displayName": {
+          "other": "\u0645\u0627\u0644\u062f\u0648\u0648\u06cc \u0644\u06cc\u0648"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "other": "\u0645\u0644\u0627\u06af\u0627\u0633\u06cc \u0627\u0631\u06cc\u0627\u0631\u06cc"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MKD": {
+        "displayName": {
+          "other": "\u0645\u0642\u062f\u0648\u0646\u06cc\u0627\u0626\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MMK": {
+        "displayName": {
+          "other": "\u0645\u06cc\u0627\u0646\u0645\u0627\u0631 \u06a9\u06cc\u0627\u0679"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "other": "\u0645\u0646\u06af\u0648\u0644\u06cc\u0627\u0626\u06cc \u0679\u06af\u0631\u0650"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "other": "\u0645\u06cc\u06a9\u0627\u0646\u06cc\u0632 \u067e\u0679\u0627\u06a9\u0627"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "other": "\u0645\u0648\u0631\u06cc\u0637\u0627\u0646\u06cc\u0627\u0626\u06cc \u0627\u0648\u06af\u0648\u0626\u06cc\u0627 (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "other": "\u0645\u0648\u0631\u06cc\u0637\u0627\u0646\u06cc\u0627\u0626\u06cc \u0627\u0648\u06af\u0648\u0626\u06cc\u0627"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MUR": {
+        "displayName": {
+          "other": "\u0645\u0627\u0631\u06cc\u0634\u0633 \u06a9\u0627 \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVR": {
+        "displayName": {
+          "other": "\u0645\u0627\u0644\u062f\u06cc\u067e \u06a9\u0627 \u0631\u0648\u0641\u06cc\u06c1"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "other": "\u0645\u0644\u0627\u0648\u06cc \u06a9\u0648\u0627\u0686\u0627"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "other": "\u0645\u06cc\u06a9\u0633\u06cc\u06a9\u06cc \u067e\u06cc\u0633\u06c1"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MYR": {
+        "displayName": {
+          "other": "\u0645\u0644\u06cc\u0634\u06cc\u0627\u0626\u06cc \u0631\u0646\u06af\u0650\u0679"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZN": {
+        "displayName": {
+          "one": "\u0645\u0648\u0632\u0627\u0645\u0628\u06cc\u0642\u06cc \u0645\u06cc\u0679\u06cc\u06a9\u0644",
+          "other": "\u0645\u0648\u0632\u0627\u0645\u0628\u06cc\u0642\u06cc \u0645\u06cc\u0679\u06cc\u06a9\u0644\u0632"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "other": "\u0646\u0627\u0645\u06cc\u0628\u06cc\u0627\u0626\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "other": "\u0646\u0627\u0626\u06cc\u062c\u06cc\u0631\u06cc\u0627\u0626\u06cc \u0646\u0627\u0626\u0631\u0627"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIO": {
+        "displayName": {
+          "other": "\u0646\u06a9\u0627\u0631\u0627 \u06af\u0648\u0627 \u06a9\u0627 \u06a9\u0648\u0631\u0688\u0648\u0628\u0627"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NOK": {
+        "displayName": {
+          "other": "\u0646\u0627\u0631\u0648\u06d2 \u06a9\u0631\u0648\u0646"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "other": "\u0646\u06cc\u067e\u0627\u0644\u06cc \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "other": "\u0646\u06cc\u0648\u0632\u06cc \u0644\u06cc\u0646\u0688 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "other": "\u0639\u0645\u0627\u0646\u06cc \u0631\u06cc\u0627\u0644"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "other": "\u067e\u0646\u0627\u0645\u06c1 \u06a9\u0627 \u0628\u0627\u0644\u0628\u0648\u0622"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEN": {
+        "displayName": {
+          "other": "\u067e\u06cc\u0631\u0648\u0648\u06cc\u0626\u0646 \u0633\u0648\u0644"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PGK": {
+        "displayName": {
+          "other": "\u067e\u0627\u067e\u0648\u0622 \u0646\u06cc\u0648 \u06af\u0646\u06cc \u06a9\u0627 \u06a9\u06cc\u0646\u0627"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "one": "\u0641\u0644\u067e\u0627\u0626\u06cc\u0646\u06cc \u067e\u06cc\u0633\u06c1",
+          "other": "\u0641\u0644\u067e\u0627\u0626\u0646\u06cc \u067e\u06cc\u0633\u0648"
+        },
+        "narrow": "\u20b1",
+        "symbol": "PHP"
+      },
+      "PKR": {
+        "displayName": {
+          "other": "\u067e\u0627\u06a9\u0633\u062a\u0627\u0646\u06cc \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "Rs",
+        "symbol": "Rs"
+      },
+      "PLN": {
+        "displayName": {
+          "other": "\u067e\u0648\u0644\u0634 \u0632\u0644\u0648\u0679\u06cc"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PYG": {
+        "displayName": {
+          "other": "\u067e\u06cc\u0631\u0627\u06af\u0648\u0626\u06d2 \u06a9\u0627 \u06af\u0648\u0622\u0631\u0646\u06cc"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "other": "\u0642\u0637\u0631\u06cc \u0631\u06cc\u0627\u0644"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "RON": {
+        "displayName": {
+          "one": "\u0631\u0648\u0645\u0627\u0646\u06cc\u0627\u0626\u06cc \u0644\u06cc\u0648",
+          "other": "\u0631\u0648\u0645\u0627\u0646\u06cc\u0627\u0626\u06cc \u0644\u06cc"
+        },
+        "narrow": "lei",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "other": "\u0633\u0631\u0628\u06cc\u0646 \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "other": "\u0631\u0648\u0633\u06cc \u0631\u0648\u0628\u0644"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RWF": {
+        "displayName": {
+          "other": "\u0631\u0648\u0627\u0646\u0688\u0627 \u06a9\u0627 \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "other": "\u0633\u0639\u0648\u062f\u06cc \u0631\u06cc\u0627\u0644"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "other": "\u0633\u0648\u0644\u0648\u0645\u0646 \u0622\u0626\u0644\u06cc\u0646\u0688\u0632 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "other": "\u0633\u0634\u0644\u06cc \u06a9\u0627 \u0631\u0648\u067e\u06cc\u06c1"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDG": {
+        "displayName": {
+          "other": "\u0633\u0648\u0688\u0627\u0646\u06cc \u067e\u0627\u0624\u0646\u0688"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SEK": {
+        "displayName": {
+          "one": "\u0633\u0648\u06cc\u0688\u0646 \u06a9\u0631\u0648\u0646\u0627",
+          "other": "\u0633\u0648\u06cc\u0688\u0646 \u06a9\u0631\u0648\u0646\u0631"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "other": "\u0633\u0646\u06af\u0627 \u067e\u0648\u0631 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "other": "\u0633\u06cc\u0646\u0679 \u06c1\u06cc\u0644\u06cc\u0646\u0627 \u067e\u0627\u0624\u0646\u0688"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SIT": {
+        "displayName": {
+          "other": "\u0633\u0644\u0648\u0627\u0646\u06cc\u0646 \u0679\u0648\u0644\u0631"
+        },
+        "narrow": "SIT",
+        "symbol": "SIT"
+      },
+      "SKK": {
+        "displayName": {
+          "other": "\u0633\u0644\u0648\u0648\u06a9 \u06a9\u0631\u0648\u0646\u0627"
+        },
+        "narrow": "SKK",
+        "symbol": "SKK"
+      },
+      "SLE": {
+        "displayName": {
+          "other": "\u0633\u06cc\u0626\u0631\u0627 \u0644\u06cc\u0648\u0646\u06cc\u0646 \u0644\u06cc\u0648\u0646"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "\u0633\u06cc\u0626\u0631\u0627 \u0644\u06cc\u0648\u0646\u06cc\u0646 \u0644\u06cc\u0648\u0646 - 1964-2022"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "other": "\u0635\u0648\u0645\u0627\u0644\u06cc \u0634\u0644\u0646\u06af"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "other": "\u0633\u0648\u0631\u06cc\u0646\u0627\u0645\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SSP": {
+        "displayName": {
+          "one": "\u062c\u0646\u0648\u0628\u06cc \u0633\u0648\u0688\u0627\u0646\u06cc \u067e\u0627\u0624\u0646\u0688",
+          "other": "\u062c\u0646\u0648\u0628\u06cc \u0633\u0648\u0688\u0627\u0646\u06cc \u067e\u0627\u0624\u0646\u0688\u0632"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "other": "\u0633\u0627\u0624 \u0679\u0648\u0645 \u0627\u0648\u0631 \u067e\u0631\u0646\u0633\u067e\u06d2 \u0688\u0648\u0628\u0631\u0627 (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "other": "\u0633\u0627\u0624 \u0679\u0648\u0645\u06d2 \u0627\u0648\u0631 \u067e\u0631\u0646\u0633\u067e\u06d2 \u0688\u0648\u0628\u0631\u0627"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SYP": {
+        "displayName": {
+          "other": "\u0634\u0627\u0645\u06cc \u067e\u0648\u0646\u0688"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "other": "\u0633\u0648\u0627\u0632\u06cc \u0644\u06cc\u0644\u0627\u0646\u062c\u06cc\u0646\u06cc"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "other": "\u062a\u06be\u0627\u0626\u06cc \u0628\u0627\u06c1\u062a"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "\u0e3f"
+      },
+      "TJS": {
+        "displayName": {
+          "other": "\u062a\u0627\u062c\u06a9\u0633\u062a\u0627\u0646\u06cc \u0633\u0648\u0645\u0648\u0646\u06cc"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMT": {
+        "displayName": {
+          "other": "\u062a\u0631\u06a9\u0645\u0627\u0646\u0633\u062a\u0627\u0646\u06cc \u0645\u0646\u0627\u062a"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "other": "\u062a\u06cc\u0648\u0646\u06cc\u0633\u06cc\u0627\u0626\u06cc \u062f\u06cc\u0646\u0627\u0631"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "other": "\u0679\u0648\u0646\u06af\u0646 \u067e\u0627\u0646\u06af\u0627"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TRY": {
+        "displayName": {
+          "other": "\u062a\u0631\u06a9\u06cc \u0644\u06cc\u0631\u0627"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "other": "\u062a\u0631\u06cc\u0646\u06cc\u062f\u0627\u062f \u0627\u0648\u0631 \u0679\u0648\u0628\u0627\u06af\u0648 \u06a9\u0627 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "other": "\u0646\u06cc\u0648 \u062a\u0627\u0626\u06cc\u0648\u0627\u0646 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "other": "\u062a\u0646\u0632\u0627\u0646\u06cc\u0627\u0626\u06cc \u0634\u0644\u0646\u06af"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "other": "\u06cc\u0648\u06a9\u0631\u06cc\u0646\u06cc\u0627\u0626\u06cc \u06c1\u0631\u06cc\u0648\u0646\u06cc\u0627"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UGX": {
+        "displayName": {
+          "other": "\u06cc\u0648\u06af\u0627\u0646\u0688\u0627 \u0634\u0644\u0646\u06af"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "other": "\u0627\u0645\u0631\u06cc\u06a9\u06cc \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "$"
+      },
+      "UYU": {
+        "displayName": {
+          "other": "\u06cc\u0648\u0631\u0648\u06af\u0648\u06cc\u0627\u0646 \u067e\u06cc\u0633\u0648"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "other": "\u0627\u0632\u0628\u06a9\u0633\u062a\u0627\u0646\u06cc \u0633\u0648\u0645"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEB": {
+        "displayName": {
+          "other": "\u0648\u06cc\u0646\u0632\u0648\u06cc\u0644\u0627 \u0628\u0648\u0644\u06cc\u0648\u0631 (1871\u20132008)"
+        },
+        "narrow": "VEB",
+        "symbol": "VEB"
+      },
+      "VEF": {
+        "displayName": {
+          "other": "\u0648\u06cc\u0646\u0632\u0648\u06cc\u0644\u0627 \u0628\u0648\u0644\u06cc\u0648\u0631 (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "other": "\u0648\u06cc\u0646\u0632\u0648\u06cc\u0644\u0627 \u0628\u0648\u0644\u06cc\u0648\u0631"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "other": "\u0648\u06cc\u062a\u0646\u0627\u0645\u06cc \u0688\u0627\u0646\u06af"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VUV": {
+        "displayName": {
+          "other": "\u0648\u06cc\u0646\u0648\u0648\u0627\u062a\u0648 \u0648\u0627\u062a\u0648"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "other": "\u0633\u0627\u0645\u0648\u0622 \u06a9\u0627 \u0679\u0627\u0644\u0627"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "other": "\u0648\u0633\u0637\u06cc \u0627\u0641\u0631\u06cc\u0642\u06cc [CFA] \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XCD": {
+        "displayName": {
+          "other": "\u0645\u0634\u0631\u0642\u06cc \u06a9\u0631\u06cc\u0628\u06cc\u0627 \u06a9\u0627 \u0688\u0627\u0644\u0631"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XOF": {
+        "displayName": {
+          "other": "\u0645\u063a\u0631\u0628\u06cc \u0627\u0641\u0631\u06cc\u0642\u06cc [CFA] \u0641\u0631\u0627\u0646\u06a9"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPF": {
+        "displayName": {
+          "one": "CFP \u0641\u0631\u0627\u0646\u06a9",
+          "other": "CFP \u0641\u0631\u0627\u0646\u06a9\u0633"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XXX": {
+        "displayName": {
+          "one": "(\u06a9\u0631\u0646\u0633\u06cc \u06a9\u06cc \u0646\u0627\u0645\u0639\u0644\u0648\u0645 \u06cc\u0648\u0646\u0679)",
+          "other": "(\u0646\u0627\u0645\u0639\u0644\u0648\u0645 \u06a9\u0631\u0646\u0633\u06cc)"
+        },
+        "narrow": "\u00a4",
+        "symbol": "\u00a4"
+      },
+      "YER": {
+        "displayName": {
+          "other": "\u06cc\u0645\u0646\u06cc \u0631\u06cc\u0627\u0644"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "ZAR": {
+        "displayName": {
+          "other": "\u062c\u0646\u0648\u0628\u06cc \u0627\u0641\u0631\u06cc\u0642\u06cc \u0631\u0627\u0646\u0688"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "other": "\u0632\u0627\u0645\u0628\u06cc\u0627\u0626\u06cc \u06a9\u0648\u0627\u0686\u0627 (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "other": "\u0632\u0627\u0645\u0628\u06cc\u0627\u0626\u06cc \u06a9\u0648\u0627\u0686\u0627"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "\u00a4#,##0.00;(\u00a4#,##0.00)",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "\u00a4\u00a00\u00a0\u06c1\u0632\u0627\u0631"
+            },
+            "10000": {
+              "other": "\u00a4\u00a000\u00a0\u06c1\u0632\u0627\u0631"
+            },
+            "100000": {
+              "other": "\u00a4\u00a00\u00a0\u0644\u0627\u06a9\u06be"
+            },
+            "1000000": {
+              "other": "\u00a4\u00a000\u00a0\u0644\u0627\u06a9\u06be"
+            },
+            "10000000": {
+              "other": "\u00a4\u00a00\u00a0\u06a9\u0631\u0648\u0691"
+            },
+            "100000000": {
+              "other": "\u00a4\u00a000\u00a0\u06a9\u0631\u0648\u0691"
+            },
+            "1000000000": {
+              "other": "\u00a4\u00a00\u00a0\u0627\u0631\u0628"
+            },
+            "10000000000": {
+              "other": "\u00a4\u00a000\u00a0\u0627\u0631\u0628"
+            },
+            "100000000000": {
+              "other": "\u00a4\u00a00\u00a0\u06a9\u06be\u0631\u0628"
+            },
+            "1000000000000": {
+              "other": "\u00a40\u00a0\u0679\u0631\u06cc\u0644\u06cc\u0646"
+            },
+            "10000000000000": {
+              "other": "\u00a4\u00a000\u00a0\u0679\u0631\u06cc\u0644\u06cc\u0646"
+            },
+            "100000000000000": {
+              "other": "\u00a4\u00a0000\u00a0\u0679\u0631\u06cc\u0644\u06cc\u0646"
+            }
+          },
+          "standard": "\u00a4#,##0.00",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "other": "0 \u06c1\u0632\u0627\u0631"
+            },
+            "10000": {
+              "other": "00 \u06c1\u0632\u0627\u0631"
+            },
+            "100000": {
+              "other": "0 \u0644\u0627\u06a9\u06be"
+            },
+            "1000000": {
+              "other": "00 \u0644\u0627\u06a9\u06be"
+            },
+            "10000000": {
+              "other": "0 \u06a9\u0631\u0648\u0691"
+            },
+            "100000000": {
+              "other": "00 \u06a9\u0631\u0648\u0691"
+            },
+            "1000000000": {
+              "other": "0 \u0627\u0631\u0628"
+            },
+            "10000000000": {
+              "other": "00 \u0627\u0631\u0628"
+            },
+            "100000000000": {
+              "other": "0 \u06a9\u06be\u0631\u0628"
+            },
+            "1000000000000": {
+              "other": "00 \u06a9\u06be\u0631\u0628"
+            },
+            "10000000000000": {
+              "other": "00 \u0679\u0631\u06cc\u0644\u06cc\u0646"
+            },
+            "100000000000000": {
+              "other": "000 \u0679\u0631\u06cc\u0644\u06cc\u0646"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0\u00a0\u06c1\u0632\u0627\u0631"
+            },
+            "10000": {
+              "other": "00\u00a0\u06c1\u0632\u0627\u0631"
+            },
+            "100000": {
+              "other": "0\u00a0\u0644\u0627\u06a9\u06be"
+            },
+            "1000000": {
+              "other": "00\u00a0\u0644\u0627\u06a9\u06be"
+            },
+            "10000000": {
+              "other": "0\u00a0\u06a9\u0631\u0648\u0691"
+            },
+            "100000000": {
+              "other": "00\u00a0\u06a9\u0631\u0648\u0691"
+            },
+            "1000000000": {
+              "other": "0\u00a0\u0627\u0631\u0628"
+            },
+            "10000000000": {
+              "other": "00\u00a0\u0627\u0631\u0628"
+            },
+            "100000000000": {
+              "other": "0\u00a0\u06a9\u06be\u0631\u0628"
+            },
+            "1000000000000": {
+              "other": "00\u00a0\u06a9\u06be\u0631\u0628"
+            },
+            "10000000000000": {
+              "other": "00\u00a0\u0679\u0631\u06cc\u0644\u06cc\u0646"
+            },
+            "100000000000000": {
+              "other": "000\u00a0\u0679\u0631\u06cc\u0644\u06cc\u0646"
+            }
+          },
+          "standard": "#,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ".",
+          "exponential": "E",
+          "group": ",",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "\u200e-",
+          "nan": "NaN",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "\u200e+",
+          "rangeSign": "\u2013",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{0} \u0641\u06cc {1}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "other": "{0} \u0627\u06cc\u06a9\u0691"
+          },
+          "narrow": {
+            "other": "{0} \u0627\u06cc\u06a9\u0691"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0627\u06cc\u06a9\u0691"
+          }
+        },
+        "bit": {
+          "long": {
+            "one": "{0} \u0628\u0679",
+            "other": "{0} \u0628\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} bit"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} bit"
+          }
+        },
+        "byte": {
+          "long": {
+            "one": "{0} \u0628\u0627\u0626\u0679",
+            "other": "{0} \u0628\u0627\u0626\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0}B"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} byte"
+          }
+        },
+        "celsius": {
+          "long": {
+            "other": "{0} \u0688\u06af\u0631\u06cc \u0633\u06cc\u0644\u0633\u06cc\u0633"
+          },
+          "narrow": {
+            "other": "{0}\u200e\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u200e\u00b0C"
+          }
+        },
+        "centimeter": {
+          "long": {
+            "other": "{0} \u0633\u06cc\u0646\u0679\u06cc \u0645\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0}cm"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0633\u06cc\u0646\u0679\u06cc \u0645\u06cc\u0679\u0631",
+            "narrow": "{0} \u0641\u06cc \u0633\u06cc\u0646\u0679\u06cc \u0645\u06cc\u0679\u0631",
+            "short": "{0}/cm"
+          },
+          "short": {
+            "other": "{0} \u0633\u06cc\u0646\u0679\u06cc \u0645\u06cc\u0679\u0631"
+          }
+        },
+        "day": {
+          "long": {
+            "other": "{0} \u062f\u0646"
+          },
+          "narrow": {
+            "other": "{0} \u062f\u0646"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u062f\u0646",
+            "narrow": "{0} \u0641\u06cc \u062f\u0646",
+            "short": "{0} \u0641\u06cc \u062f\u0646"
+          },
+          "short": {
+            "other": "{0} \u062f\u0646"
+          }
+        },
+        "degree": {
+          "long": {
+            "other": "{0} \u0688\u06af\u0631\u06cc"
+          },
+          "narrow": {
+            "other": "{0} \u0688\u06af\u0631\u06cc"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0688\u06af\u0631\u06cc"
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "other": "{0} \u0688\u06af\u0631\u06cc \u0641\u0627\u0631\u0646 \u06c1\u0627\u0626\u06cc\u0679"
+          },
+          "narrow": {
+            "other": "{0}\u200e\u00b0F"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u200e\u00b0F"
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "other": "{0} \u0641\u0644\u0648\u0626\u0688 \u0627\u0648\u0646\u0633"
+          },
+          "narrow": {
+            "other": "{0} fl oz"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} fl oz"
+          }
+        },
+        "foot": {
+          "long": {
+            "other": "{0} \u0641\u06cc\u0679"
+          },
+          "narrow": {
+            "other": "{0}\u2032"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0641\u0648\u0679",
+            "narrow": "{0} \u0641\u06cc \u0641\u06cc\u0679",
+            "short": "{0}/ft"
+          },
+          "short": {
+            "other": "{0} \u0641\u06cc\u0679"
+          }
+        },
+        "gallon": {
+          "long": {
+            "other": "{0} \u06af\u06cc\u0644\u0646"
+          },
+          "narrow": {
+            "other": "{0} gal"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06af\u06cc\u0644\u0646",
+            "narrow": "{0}/gal",
+            "short": "{0}/gal"
+          },
+          "short": {
+            "other": "{0} gal"
+          }
+        },
+        "gigabit": {
+          "long": {
+            "one": "{0} \u06af\u06cc\u06af\u0627\u0628\u0679",
+            "other": "{0} \u06af\u06cc\u06af\u0627\u0628\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} Gb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Gb"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "other": "{0} \u06af\u06cc\u06af\u0627\u0628\u0627\u0626\u0679"
+          },
+          "narrow": {
+            "other": "{0} GB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} GB"
+          }
+        },
+        "gram": {
+          "long": {
+            "other": "{0} \u06af\u0631\u0627\u0645"
+          },
+          "narrow": {
+            "other": "{0} \u06af\u0631\u0627\u0645"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06af\u0631\u0627\u0645",
+            "narrow": "{0} \u0641\u06cc \u06af\u0631\u0627\u0645",
+            "short": "{0}/g"
+          },
+          "short": {
+            "other": "{0} g"
+          }
+        },
+        "hectare": {
+          "long": {
+            "other": "{0} \u06c1\u06cc\u06a9\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} \u06c1\u06cc\u06a9\u0679\u0631"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u06c1\u06cc\u06a9\u0679\u0631"
+          }
+        },
+        "hour": {
+          "long": {
+            "one": "{0} \u06af\u06be\u0646\u0679\u06c1",
+            "other": "{0} \u06af\u06be\u0646\u0679\u06d2"
+          },
+          "narrow": {
+            "one": "{0} \u06af\u06be\u0646\u0679\u06c1",
+            "other": "{0} \u06af\u06be\u0646\u0679\u06d2"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06af\u06be\u0646\u0679\u06c1",
+            "narrow": "{0} \u0641\u06cc \u06af\u06be\u0646\u0679\u06c1",
+            "short": "{0} \u0641\u06cc \u06af\u06be\u0646\u0679\u06c1"
+          },
+          "short": {
+            "one": "{0} \u06af\u06be\u0646\u0679\u06c1",
+            "other": "{0} \u06af\u06be\u0646\u0679\u06d2"
+          }
+        },
+        "inch": {
+          "long": {
+            "other": "{0} \u0627\u0646\u0686"
+          },
+          "narrow": {
+            "other": "{0} \u0627\u0646\u0686"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0627\u0646\u0686",
+            "narrow": "{0} \u0641\u06cc \u0627\u0646\u0686",
+            "short": "{0}/in"
+          },
+          "short": {
+            "one": "{0} \u0627\u0646\u0686",
+            "other": "{0} in"
+          }
+        },
+        "kilobit": {
+          "long": {
+            "one": "{0} \u06a9\u0644\u0648\u0628\u0679",
+            "other": "{0} \u06a9\u0644\u0648\u0628\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} kb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kb"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "one": "{0} \u06a9\u0644\u0648\u0628\u0627\u0626\u0679",
+            "other": "{0} \u06a9\u0644\u0648\u0628\u0627\u0626\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} kB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kB"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "other": "{0} \u06a9\u0644\u0648 \u06af\u0631\u0627\u0645"
+          },
+          "narrow": {
+            "other": "{0}kg"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06a9\u0644\u0648 \u06af\u0631\u0627\u0645",
+            "narrow": "{0} \u0641\u06cc \u06a9\u0644\u0648 \u06af\u0631\u0627\u0645",
+            "short": "{0}/kg"
+          },
+          "short": {
+            "other": "{0} kg"
+          }
+        },
+        "kilometer": {
+          "long": {
+            "other": "{0} \u06a9\u0644\u0648 \u0645\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} \u06a9\u0644\u0648 \u0645\u06cc\u0679\u0631"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06a9\u0644\u0648\u0645\u06cc\u0679\u0631",
+            "narrow": "{0} \u0641\u06cc \u06a9\u0644\u0648 \u0645\u06cc\u0679\u0631",
+            "short": "{0} \u0641\u06cc \u06a9\u0644\u0648 \u0645\u06cc\u0679\u0631"
+          },
+          "short": {
+            "other": "{0} \u06a9\u0644\u0648 \u0645\u06cc\u0679\u0631"
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "other": "{0} \u06a9\u0644\u0648\u0645\u06cc\u0679\u0631 \u0641\u06cc \u06af\u06be\u0646\u0679\u06c1"
+          },
+          "narrow": {
+            "other": "{0}kph"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kph"
+          }
+        },
+        "liter": {
+          "long": {
+            "other": "{0} \u0644\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} \u0644\u06cc\u0679\u0631"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0644\u06cc\u0679\u0631",
+            "narrow": "{0} \u0641\u06cc \u0644\u06cc\u0679\u0631",
+            "short": "{0} \u0641\u06cc \u0644\u06cc\u0679\u0631"
+          },
+          "short": {
+            "other": "{0} \u0644\u06cc\u0679\u0631"
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "other": "{0} \u0644\u06cc\u0679\u0631 \u0641\u06cc \u06a9\u0644\u0648\u0645\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} L/km"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} L/km"
+          }
+        },
+        "megabit": {
+          "long": {
+            "one": "{0} \u0645\u06cc\u06af\u0627\u0628\u0679",
+            "other": "{0} \u0645\u06cc\u06af\u0627\u0628\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} Mb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Mb"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "one": "{0} \u0645\u06cc\u06af\u0627\u0628\u0627\u0626\u0679",
+            "other": "{0} \u0645\u064a\u06af\u0627\u0628\u0627\u0626\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} MB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} MB"
+          }
+        },
+        "meter": {
+          "long": {
+            "other": "{0} \u0645\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} \u0645\u06cc\u0679\u0631"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0645\u06cc\u0679\u0631",
+            "narrow": "{0} \u0641\u06cc \u0645\u06cc\u0679\u0631",
+            "short": "{0}/m"
+          },
+          "short": {
+            "other": "{0} \u0645\u06cc\u0679\u0631"
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "other": "{0} \u0645\u06cc\u0679\u0631 \u0641\u06cc \u0633\u06cc\u06a9\u0646\u0688"
+          },
+          "narrow": {
+            "other": "{0}m/s"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} m/s"
+          }
+        },
+        "mile": {
+          "long": {
+            "other": "{0} \u0645\u06cc\u0644"
+          },
+          "narrow": {
+            "other": "{0} \u0645\u06cc\u0644"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0645\u06cc\u0644"
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "other": "{0} \u0645\u06cc\u0644 \u0641\u06cc \u06af\u06cc\u0644\u0646"
+          },
+          "narrow": {
+            "other": "{0} mpg"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mpg"
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "other": "{0} \u0645\u06cc\u0644 \u0641\u06cc \u06af\u06be\u0646\u0679\u06c1"
+          },
+          "narrow": {
+            "other": "{0}mph"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mph"
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "other": "{0} \u0627\u0633\u06a9\u06cc\u0646\u0688\u06cc \u0646\u06cc\u0648\u06cc\u0627\u0626\u06cc \u0645\u06cc\u0644"
+          },
+          "narrow": {
+            "other": "{0} smi"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} smi"
+          }
+        },
+        "milliliter": {
+          "long": {
+            "other": "{0} \u0645\u0644\u06cc \u0644\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "other": "{0} mL"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mL"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "one": "{0} \u0645\u0644\u06cc \u0645\u06cc\u0679\u0631",
+            "other": "{0} \u0645\u0644\u06cc\u0645\u06cc\u0679\u0631"
+          },
+          "narrow": {
+            "one": "{0} \u0645\u0644\u06cc \u0645\u06cc\u0679\u0631",
+            "other": "{0}\u0645\u0644\u06cc \u0645\u06cc\u0679\u0631"
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} \u0645\u0644\u06cc \u0645\u06cc\u0679\u0631",
+            "other": "{0} \u0645\u0644\u06cc\u0645\u06cc\u0679\u0631"
+          }
+        },
+        "millisecond": {
+          "long": {
+            "other": "{0} \u0645\u0644\u06cc \u0633\u06cc\u06a9\u0646\u0688"
+          },
+          "narrow": {
+            "other": "{0} ms"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u0645\u0644\u06cc \u0633\u06cc\u06a9\u0646\u0688"
+          }
+        },
+        "minute": {
+          "long": {
+            "other": "{0} \u0645\u0646\u0679"
+          },
+          "narrow": {
+            "other": "{0} \u0645\u0646\u0679"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0645\u0646\u0679",
+            "narrow": "{0} \u0641\u06cc \u0645\u0646\u0679",
+            "short": "{0} \u0641\u06cc \u0645\u0646\u0679"
+          },
+          "short": {
+            "other": "{0} \u0645\u0646\u0679"
+          }
+        },
+        "month": {
+          "long": {
+            "one": "{0} \u0645\u06c1\u06cc\u0646\u06c1",
+            "other": "{0} \u0645\u06c1\u06cc\u0646\u06d2"
+          },
+          "narrow": {
+            "one": "{0} \u0645\u06c1\u06cc\u0646\u06c1",
+            "other": "{0} \u0645\u06c1\u06cc\u0646\u06d2"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0645\u0627\u06c1",
+            "narrow": "{0}/\u0645\u06c1\u06cc\u0646\u06c1",
+            "short": "{0}/m"
+          },
+          "short": {
+            "one": "{0} \u0645\u06c1\u06cc\u0646\u06c1",
+            "other": "{0} \u0645\u06c1\u06cc\u0646\u06d2"
+          }
+        },
+        "ounce": {
+          "long": {
+            "other": "{0} \u0627\u0648\u0646\u0633"
+          },
+          "narrow": {
+            "other": "{0} \u0648\u0646\u0633"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0627\u0648\u0646\u0633",
+            "narrow": "{0}/oz",
+            "short": "{0}/oz"
+          },
+          "short": {
+            "other": "{0} oz"
+          }
+        },
+        "percent": {
+          "long": {
+            "other": "{0} \u0641\u06cc\u0635\u062f"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "one": "{0} \u067e\u06cc\u0679\u0627 \u0628\u0627\u0626\u0679",
+            "other": "{0} \u067e\u06cc\u0679\u0627 \u0628\u0627\u0626\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} \u067e\u06cc \u0628\u06cc"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u067e\u06cc \u0628\u06cc"
+          }
+        },
+        "pound": {
+          "long": {
+            "other": "{0} \u067e\u0648\u0646\u0688"
+          },
+          "narrow": {
+            "other": "{0} \u067e\u0648\u0646\u0688"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u067e\u0648\u0646\u0688",
+            "narrow": "{0}/lb",
+            "short": "{0}/lb"
+          },
+          "short": {
+            "other": "{0} lb"
+          }
+        },
+        "second": {
+          "long": {
+            "other": "{0} \u0633\u06cc\u06a9\u0646\u0688"
+          },
+          "narrow": {
+            "other": "{0} \u0633\u06cc\u06a9\u0646\u0688"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u0633\u06cc\u06a9\u0646\u0688",
+            "narrow": "{0} \u0641\u06cc \u0633\u06cc\u06a9\u0646\u0688",
+            "short": "{0} \u0641\u06cc \u0633\u06cc\u06a9\u0646\u0688"
+          },
+          "short": {
+            "other": "{0} \u0633\u06cc\u06a9\u0646\u0688"
+          }
+        },
+        "stone": {
+          "long": {
+            "one": "{0} \u0627\u0633\u0679\u0648\u0646",
+            "other": "{0} \u0627\u0633\u0679\u0648\u0646\u0632"
+          },
+          "narrow": {
+            "other": "{0} st"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} st"
+          }
+        },
+        "terabit": {
+          "long": {
+            "one": "{0} \u0679\u06cc\u0631\u0627\u0628\u0679",
+            "other": "{0} \u0679\u06cc\u0631\u0627\u0628\u0679\u0633"
+          },
+          "narrow": {
+            "other": "{0} Tb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Tb"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "other": "{0} \u0679\u06cc\u0631\u0627\u0628\u0627\u0626\u0679"
+          },
+          "narrow": {
+            "other": "{0} TB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} TB"
+          }
+        },
+        "week": {
+          "long": {
+            "one": "{0} \u06c1\u0641\u062a\u06c1",
+            "other": "{0} \u06c1\u0641\u062a\u06d2"
+          },
+          "narrow": {
+            "one": "{0} \u06c1\u0641\u062a\u06c1",
+            "other": "{0} \u06c1\u0641\u062a\u06d2"
+          },
+          "perUnit": {
+            "long": "{0} \u0641\u06cc \u06c1\u0641\u062a\u06c1",
+            "narrow": "{0}/\u06c1\u0641\u062a\u06c1",
+            "short": "{0} \u0641\u06cc \u06c1\u0641\u062a\u06c1"
+          },
+          "short": {
+            "one": "{0} \u06c1\u0641\u062a\u06c1",
+            "other": "{0} \u06c1\u0641\u062a\u06d2"
+          }
+        },
+        "yard": {
+          "long": {
+            "other": "{0} \u06cc\u0627\u0631\u0688"
+          },
+          "narrow": {
+            "other": "{0} \u06cc\u0627\u0631\u0688"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u06cc\u0627\u0631\u0688"
+          }
+        },
+        "year": {
+          "long": {
+            "other": "{0} \u0633\u0627\u0644"
+          },
+          "narrow": {
+            "other": "{0} \u0633\u0627\u0644"
+          },
+          "perUnit": {
+            "long": "\u0641\u06cc \u0633\u0627\u0644 {0}",
+            "narrow": "{0}/\u0633\u0627\u0644",
+            "short": "{0}/y"
+          },
+          "short": {
+            "other": "{0} \u0633\u0627\u0644"
+          }
+        }
+      }
+    }
+  },
+  "locale": "ur"
+}

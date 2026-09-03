@@ -1,0 +1,29 @@
+{
+  "data": {
+    "items": [
+      {
+        "icon": "mdi:thermometer",
+        "id": "target_temp",
+        "max": 90.0,
+        "min": 60.0,
+        "mode": "slider",
+        "name": "Target Temp",
+        "step": 1.0,
+        "unit_of_measurement": "F"
+      },
+      {
+        "icon": "mdi:water-percent",
+        "id": "target_humidity",
+        "max": 90.0,
+        "min": 30.0,
+        "mode": "slider",
+        "name": "Target Humidity",
+        "step": 1.0,
+        "unit_of_measurement": "%"
+      }
+    ]
+  },
+  "key": "input_number",
+  "minor_version": 1,
+  "version": 1
+}

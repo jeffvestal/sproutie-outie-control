@@ -1,0 +1,116 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Ce modem est d\u00e9j\u00e0 configur\u00e9"
+    },
+    "error": {
+      "cannot_connect": "\u00c9chec de la connexion au modem.\n\nVeuillez v\u00e9rifier :\n1. L'adresse IP est correcte (g\u00e9n\u00e9ralement 192.168.100.1)\n2. Si le modem n\u00e9cessite une authentification, entrez nom d'utilisateur/mot de passe\n3. L'interface web du modem est accessible depuis le r\u00e9seau de Home Assistant\n\nSi votre modem n'est pas support\u00e9, s\u00e9lectionnez 'Modem Inconnu (Mode de Secours)' pour activer la surveillance de base et la capture HTML.",
+      "invalid_auth": "Nom d'utilisateur ou mot de passe invalide. Veuillez v\u00e9rifier vos identifiants et r\u00e9essayer.",
+      "invalid_input": "Entr\u00e9e invalide fournie. Veuillez v\u00e9rifier les valeurs et r\u00e9essayer.",
+      "network_unreachable": "Impossible d'atteindre le modem - probl\u00e8me de connectivit\u00e9 r\u00e9seau.\n\nVeuillez v\u00e9rifier :\n1. Connexion r\u00e9seau - \u00cates-vous sur le bon r\u00e9seau WiFi ?\n2. WiFi invit\u00e9 - Les r\u00e9seaux invit\u00e9s bloquent souvent l'acc\u00e8s aux appareils locaux\n3. VPN - D\u00e9connectez toute connexion VPN active\n4. Adresse IP - V\u00e9rifiez l'IP du modem (g\u00e9n\u00e9ralement 192.168.100.1)\n5. Interface web du modem - Assurez-vous qu'elle est activ\u00e9e et accessible\n6. R\u00e9ponse lente - Certains modems mettent quelques secondes \u00e0 se r\u00e9veiller ; r\u00e9essayez\n\nEssayez d'acc\u00e9der au modem directement dans votre navigateur pour v\u00e9rifier la connectivit\u00e9.",
+      "unknown": "Une erreur inattendue s'est produite. V\u00e9rifiez les journaux de Home Assistant pour plus de d\u00e9tails.",
+      "unsupported_modem": "La d\u00e9tection automatique n'a pas pu identifier votre mod\u00e8le de modem.\n\nPour continuer :\n1. S\u00e9lectionnez 'Modem Inconnu (Mode de Secours)' dans le menu ci-dessous\n2. Cela activera la surveillance de connectivit\u00e9 de base (ping/latence HTTP)\n3. Apr\u00e8s l'installation, cliquez sur le bouton 'Capturer HTML'\n4. T\u00e9l\u00e9chargez les diagnostics et partagez-les avec les d\u00e9veloppeurs pour ajouter un support complet"
+    },
+    "progress": {
+      "validate": "Connexion au modem..."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "host": "Adresse IP du Modem",
+          "modem_choice": "Mod\u00e8le du Modem",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "G\u00e9n\u00e9ralement 192.168.100.1",
+          "modem_choice": "'auto' pour d\u00e9tection automatique",
+          "password": "<redacted>",
+          "username": "<redacted>"
+        },
+        "description": "Connectez votre modem. Les mod\u00e8les avec * ne sont pas v\u00e9rifi\u00e9s.",
+        "title": "Moniteur de Modem C\u00e2ble"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "host": "IP du Modem",
+          "modem_choice": "Mod\u00e8le du Modem",
+          "password": "<redacted>",
+          "scan_interval": "Intervalle (sec)",
+          "username": "<redacted>"
+        },
+        "data_description": {
+          "host": "G\u00e9n\u00e9ralement 192.168.100.1",
+          "modem_choice": "'auto' pour d\u00e9tection. Modifier si incorrect.",
+          "password": "<redacted>",
+          "scan_interval": "60-1800 sec. D\u00e9faut 600 (10 min)",
+          "username": "<redacted>"
+        },
+        "description": "Actuel : {detected_modem}\nDerni\u00e8re v\u00e9rification : {last_detection}",
+        "title": "Param\u00e8tres du Modem"
+      }
+    }
+  },
+  "services": {
+    "clear_history": {
+      "description": "Clear historical data for cable modem sensors older than a specified date.",
+      "fields": {
+        "days_to_keep": {
+          "description": "Number of days of history to keep (older data will be deleted).",
+          "name": "Days to Keep"
+        }
+      },
+      "name": "Clear History"
+    },
+    "generate_dashboard": {
+      "description": "Generates ready-to-use Lovelace YAML for your cable modem dashboard. Copy the output and paste it into a Manual card.",
+      "fields": {
+        "graph_hours": {
+          "description": "Hours of history for power/SNR graphs (errors and latency use fixed timeframes).",
+          "name": "Graph History (hours)"
+        },
+        "include_downstream_frequency": {
+          "description": "Frequency for all downstream channels.",
+          "name": "Downstream Frequency Graph"
+        },
+        "include_downstream_power": {
+          "description": "Power levels for all downstream channels.",
+          "name": "Downstream Power Graph"
+        },
+        "include_downstream_snr": {
+          "description": "Signal-to-noise ratio for all downstream channels.",
+          "name": "Downstream SNR Graph"
+        },
+        "include_errors": {
+          "description": "Corrected and uncorrected error counts (7-day view).",
+          "name": "Error Graphs"
+        },
+        "include_latency": {
+          "description": "Ping and HTTP response times (6-hour view).",
+          "name": "Latency Graph"
+        },
+        "include_status_card": {
+          "description": "Modem status, uptime, channel counts, and restart button.",
+          "name": "Status Card"
+        },
+        "include_upstream_frequency": {
+          "description": "Frequency for all upstream channels.",
+          "name": "Upstream Frequency Graph"
+        },
+        "include_upstream_power": {
+          "description": "Power levels for all upstream channels.",
+          "name": "Upstream Power Graph"
+        },
+        "short_titles": {
+          "description": "Short: 'DS Power (dBmV)' vs Long: 'Downstream Power Levels (dBmV)'.",
+          "name": "Use Short Titles"
+        }
+      },
+      "name": "Generate Dashboard"
+    }
+  }
+}

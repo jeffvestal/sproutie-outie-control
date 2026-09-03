@@ -1,0 +1,2576 @@
+{
+  "data": {
+    "currencies": {
+      "AED": {
+        "displayName": {
+          "one": "AAE dirh\u0113ms",
+          "other": "AAE dirh\u0113mi"
+        },
+        "narrow": "AED",
+        "symbol": "AED"
+      },
+      "AFN": {
+        "displayName": {
+          "one": "Afganist\u0101nas afg\u0101ns",
+          "other": "Afganist\u0101nas afg\u0101ni"
+        },
+        "narrow": "\u060b",
+        "symbol": "AFN"
+      },
+      "ALL": {
+        "displayName": {
+          "one": "Alb\u0101nijas leks",
+          "other": "Alb\u0101nijas leki"
+        },
+        "narrow": "ALL",
+        "symbol": "ALL"
+      },
+      "AMD": {
+        "displayName": {
+          "one": "Arm\u0113nijas drams",
+          "other": "Arm\u0113nijas drami"
+        },
+        "narrow": "\u058f",
+        "symbol": "AMD"
+      },
+      "ANG": {
+        "displayName": {
+          "one": "N\u012bderlandes Anti\u013cu guldenis",
+          "other": "N\u012bderlandes Anti\u013cu gulde\u0146i"
+        },
+        "narrow": "ANG",
+        "symbol": "ANG"
+      },
+      "AOA": {
+        "displayName": {
+          "one": "Angolas kvanza",
+          "other": "Angolas kvanzas"
+        },
+        "narrow": "Kz",
+        "symbol": "AOA"
+      },
+      "ARS": {
+        "displayName": {
+          "other": "Argent\u012bnas peso"
+        },
+        "narrow": "$",
+        "symbol": "ARS"
+      },
+      "ATS": {
+        "displayName": {
+          "other": "Austrijas \u0161ili\u0146\u0161"
+        },
+        "narrow": "ATS",
+        "symbol": "ATS"
+      },
+      "AUD": {
+        "displayName": {
+          "one": "Austr\u0101lijas dol\u0101rs",
+          "other": "Austr\u0101lijas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "AU$"
+      },
+      "AWG": {
+        "displayName": {
+          "one": "Arubas guldenis",
+          "other": "Arubas gulde\u0146i"
+        },
+        "narrow": "AWG",
+        "symbol": "AWG"
+      },
+      "AZM": {
+        "displayName": {
+          "one": "Azerbaid\u017e\u0101nas manats (1993\u20132006)",
+          "other": "Azerbaid\u017e\u0101nas manati (1993\u20132006)"
+        },
+        "narrow": "AZM",
+        "symbol": "AZM"
+      },
+      "AZN": {
+        "displayName": {
+          "one": "Azerbaid\u017e\u0101nas manats",
+          "other": "Azerbaid\u017e\u0101nas manati"
+        },
+        "narrow": "\u20bc",
+        "symbol": "AZN"
+      },
+      "BAM": {
+        "displayName": {
+          "one": "Bosnijas un Hercogovinas konvert\u0113jam\u0101 marka",
+          "other": "Bosnijas un Hercogovinas konvert\u0113jam\u0101s markas"
+        },
+        "narrow": "KM",
+        "symbol": "BAM"
+      },
+      "BBD": {
+        "displayName": {
+          "one": "Barbadosas dol\u0101rs",
+          "other": "Barbadosas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "BBD"
+      },
+      "BDT": {
+        "displayName": {
+          "one": "Banglade\u0161as taka",
+          "other": "Banglade\u0161as takas"
+        },
+        "narrow": "\u09f3",
+        "symbol": "BDT"
+      },
+      "BEF": {
+        "displayName": {
+          "one": "Be\u013c\u0123ijas franks",
+          "other": "Be\u013c\u0123ijas franki"
+        },
+        "narrow": "BEF",
+        "symbol": "BEF"
+      },
+      "BGN": {
+        "displayName": {
+          "one": "Bulg\u0101rijas leva",
+          "other": "Bulg\u0101rijas levas"
+        },
+        "narrow": "BGN",
+        "symbol": "BGN"
+      },
+      "BHD": {
+        "displayName": {
+          "one": "Bahreinas din\u0101rs",
+          "other": "Bahreinas din\u0101ri"
+        },
+        "narrow": "BHD",
+        "symbol": "BHD"
+      },
+      "BIF": {
+        "displayName": {
+          "one": "Burundi franks",
+          "other": "Burundi franki"
+        },
+        "narrow": "BIF",
+        "symbol": "BIF"
+      },
+      "BMD": {
+        "displayName": {
+          "one": "Bermudu dol\u0101rs",
+          "other": "Bermudu dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "BMD"
+      },
+      "BND": {
+        "displayName": {
+          "one": "Brunejas dol\u0101rs",
+          "other": "Brunejas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "BND"
+      },
+      "BOB": {
+        "displayName": {
+          "other": "Bol\u012bvijas boliviano"
+        },
+        "narrow": "Bs",
+        "symbol": "BOB"
+      },
+      "BRL": {
+        "displayName": {
+          "one": "Braz\u012blijas re\u0101ls",
+          "other": "Braz\u012blijas re\u0101li"
+        },
+        "narrow": "R$",
+        "symbol": "R$"
+      },
+      "BSD": {
+        "displayName": {
+          "one": "Bahamu dol\u0101rs",
+          "other": "Bahamu dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "BSD"
+      },
+      "BTN": {
+        "displayName": {
+          "one": "But\u0101nas ngultrums",
+          "other": "But\u0101nas ngultrumi"
+        },
+        "narrow": "BTN",
+        "symbol": "BTN"
+      },
+      "BWP": {
+        "displayName": {
+          "one": "Botsvanas pula",
+          "other": "Botsvanas pulas"
+        },
+        "narrow": "P",
+        "symbol": "BWP"
+      },
+      "BYN": {
+        "displayName": {
+          "one": "Baltkrievijas rubelis",
+          "other": "Baltkrievijas rube\u013ci"
+        },
+        "narrow": "\u0440.",
+        "symbol": "BYN"
+      },
+      "BYR": {
+        "displayName": {
+          "one": "Baltkrievijas rubelis (2000\u20132016)",
+          "other": "Baltkrievijas rube\u013ci (2000\u20132016)"
+        },
+        "narrow": "BYR",
+        "symbol": "BYR"
+      },
+      "BZD": {
+        "displayName": {
+          "one": "Belizas dol\u0101rs",
+          "other": "Belizas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "BZD"
+      },
+      "CAD": {
+        "displayName": {
+          "one": "Kan\u0101das dol\u0101rs",
+          "other": "Kan\u0101das dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "CA$"
+      },
+      "CDF": {
+        "displayName": {
+          "one": "KDR franks",
+          "other": "KDR franki"
+        },
+        "narrow": "CDF",
+        "symbol": "CDF"
+      },
+      "CHF": {
+        "displayName": {
+          "one": "\u0160veices franks",
+          "other": "\u0160veices franki"
+        },
+        "narrow": "CHF",
+        "symbol": "CHF"
+      },
+      "CLP": {
+        "displayName": {
+          "other": "\u010c\u012bles peso"
+        },
+        "narrow": "$",
+        "symbol": "CLP"
+      },
+      "CNH": {
+        "displayName": {
+          "one": "\u0136\u012bnas jua\u0146a (of\u0161ors)",
+          "other": "\u0136\u012bnas jua\u0146as (of\u0161ors)",
+          "zero": "\u0136\u012bnas jua\u0146a (of\u0161ors)"
+        },
+        "narrow": "CNH",
+        "symbol": "CNH"
+      },
+      "CNY": {
+        "displayName": {
+          "one": "\u0136\u012bnas jua\u0146s",
+          "other": "\u0136\u012bnas jua\u0146i"
+        },
+        "narrow": "\u00a5",
+        "symbol": "CN\u00a5"
+      },
+      "COP": {
+        "displayName": {
+          "other": "Kolumbijas peso"
+        },
+        "narrow": "$",
+        "symbol": "COP"
+      },
+      "COU": {
+        "displayName": {
+          "other": "Kolumbijas re\u0101ls"
+        },
+        "narrow": "COU",
+        "symbol": "COU"
+      },
+      "CRC": {
+        "displayName": {
+          "one": "Kostarikas kolons",
+          "other": "Kostarikas koloni"
+        },
+        "narrow": "\u20a1",
+        "symbol": "CRC"
+      },
+      "CUC": {
+        "displayName": {
+          "one": "Kubas konvert\u0113jamais peso",
+          "other": "Kubas konvert\u0113jamie peso"
+        },
+        "narrow": "$",
+        "symbol": "CUC"
+      },
+      "CUP": {
+        "displayName": {
+          "other": "Kubas peso"
+        },
+        "narrow": "$",
+        "symbol": "CUP"
+      },
+      "CVE": {
+        "displayName": {
+          "other": "Kaboverdes eskudo"
+        },
+        "narrow": "CVE",
+        "symbol": "CVE"
+      },
+      "CYP": {
+        "displayName": {
+          "other": "Kipras m\u0101rci\u0146a"
+        },
+        "narrow": "CYP",
+        "symbol": "CYP"
+      },
+      "CZK": {
+        "displayName": {
+          "one": "\u010cehijas krona",
+          "other": "\u010cehijas kronas"
+        },
+        "narrow": "K\u010d",
+        "symbol": "CZK"
+      },
+      "DEM": {
+        "displayName": {
+          "other": "V\u0101cijas marka"
+        },
+        "narrow": "DEM",
+        "symbol": "DEM"
+      },
+      "DJF": {
+        "displayName": {
+          "one": "D\u017eibutijas franks",
+          "other": "D\u017eibutijas franki"
+        },
+        "narrow": "DJF",
+        "symbol": "DJF"
+      },
+      "DKK": {
+        "displayName": {
+          "one": "D\u0101nijas krona",
+          "other": "D\u0101nijas kronas"
+        },
+        "narrow": "kr",
+        "symbol": "DKK"
+      },
+      "DOP": {
+        "displayName": {
+          "other": "Dominik\u0101nas peso"
+        },
+        "narrow": "$",
+        "symbol": "DOP"
+      },
+      "DZD": {
+        "displayName": {
+          "one": "Al\u017e\u012brijas din\u0101rs",
+          "other": "Al\u017e\u012brijas din\u0101ri"
+        },
+        "narrow": "DZD",
+        "symbol": "DZD"
+      },
+      "EEK": {
+        "displayName": {
+          "other": "Igaunijas krona"
+        },
+        "narrow": "EEK",
+        "symbol": "EEK"
+      },
+      "EGP": {
+        "displayName": {
+          "one": "\u0112\u0123iptes m\u0101rci\u0146a",
+          "other": "\u0112\u0123iptes m\u0101rci\u0146as"
+        },
+        "narrow": "E\u00a3",
+        "symbol": "EGP"
+      },
+      "ERN": {
+        "displayName": {
+          "one": "Eritrejas nakfa",
+          "other": "Eritrejas nakfas"
+        },
+        "narrow": "ERN",
+        "symbol": "ERN"
+      },
+      "ESP": {
+        "displayName": {
+          "other": "Sp\u0101nijas peseta"
+        },
+        "narrow": "\u20a7",
+        "symbol": "ESP"
+      },
+      "ETB": {
+        "displayName": {
+          "one": "Etiopijas birs",
+          "other": "Etiopijas biri"
+        },
+        "narrow": "ETB",
+        "symbol": "ETB"
+      },
+      "EUR": {
+        "displayName": {
+          "other": "eiro"
+        },
+        "narrow": "\u20ac",
+        "symbol": "\u20ac"
+      },
+      "FIM": {
+        "displayName": {
+          "other": "Somijas marka"
+        },
+        "narrow": "FIM",
+        "symbol": "FIM"
+      },
+      "FJD": {
+        "displayName": {
+          "one": "Fid\u017ei dol\u0101rs",
+          "other": "Fid\u017ei dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "FJD"
+      },
+      "FKP": {
+        "displayName": {
+          "one": "Folklenda Salu m\u0101rci\u0146a",
+          "other": "Folklenda Salu m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "FKP"
+      },
+      "FRF": {
+        "displayName": {
+          "other": "Francijas franks"
+        },
+        "narrow": "FRF",
+        "symbol": "FRF"
+      },
+      "GBP": {
+        "displayName": {
+          "one": "Lielbrit\u0101nijas m\u0101rci\u0146a",
+          "other": "Lielbrit\u0101nijas m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "\u00a3"
+      },
+      "GEL": {
+        "displayName": {
+          "other": "Gruzijas lari"
+        },
+        "narrow": "\u20be",
+        "symbol": "GEL"
+      },
+      "GHS": {
+        "displayName": {
+          "other": "Ganas sedi"
+        },
+        "narrow": "GHS",
+        "symbol": "GHS"
+      },
+      "GIP": {
+        "displayName": {
+          "one": "Gibralt\u0101ra m\u0101rci\u0146a",
+          "other": "Gibralt\u0101ra m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "GIP"
+      },
+      "GMD": {
+        "displayName": {
+          "other": "Gambijas dalasi"
+        },
+        "narrow": "GMD",
+        "symbol": "GMD"
+      },
+      "GNF": {
+        "displayName": {
+          "one": "Gvinejas franks",
+          "other": "Gvinejas franki"
+        },
+        "narrow": "FG",
+        "symbol": "GNF"
+      },
+      "GRD": {
+        "displayName": {
+          "other": "Grie\u0137ijas drahma"
+        },
+        "narrow": "GRD",
+        "symbol": "GRD"
+      },
+      "GTQ": {
+        "displayName": {
+          "one": "Gvatemalas ketsals",
+          "other": "Gvatemalas ketsali"
+        },
+        "narrow": "Q",
+        "symbol": "GTQ"
+      },
+      "GYD": {
+        "displayName": {
+          "one": "Gaj\u0101nas dol\u0101rs",
+          "other": "Gaj\u0101nas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "GYD"
+      },
+      "HKD": {
+        "displayName": {
+          "one": "Honkongas dol\u0101rs",
+          "other": "Honkongas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "HK$"
+      },
+      "HNL": {
+        "displayName": {
+          "one": "Hondurasas lemp\u012bra",
+          "other": "Hondurasas lemp\u012bras"
+        },
+        "narrow": "L",
+        "symbol": "HNL"
+      },
+      "HRK": {
+        "displayName": {
+          "one": "Horv\u0101tijas kuna",
+          "other": "Horv\u0101tijas kunas"
+        },
+        "narrow": "kn",
+        "symbol": "HRK"
+      },
+      "HTG": {
+        "displayName": {
+          "one": "Haiti gurds",
+          "other": "Haiti gurdi"
+        },
+        "narrow": "HTG",
+        "symbol": "HTG"
+      },
+      "HUF": {
+        "displayName": {
+          "one": "Ung\u0101rijas forints",
+          "other": "Ung\u0101rijas forinti"
+        },
+        "narrow": "Ft",
+        "symbol": "HUF"
+      },
+      "IDR": {
+        "displayName": {
+          "one": "Indon\u0113zijas r\u016bpija",
+          "other": "Indon\u0113zijas r\u016bpijas"
+        },
+        "narrow": "Rp",
+        "symbol": "IDR"
+      },
+      "IEP": {
+        "displayName": {
+          "other": "\u012arijas m\u0101rci\u0146a"
+        },
+        "narrow": "IEP",
+        "symbol": "IEP"
+      },
+      "ILS": {
+        "displayName": {
+          "one": "Izra\u0113las \u0161ekelis",
+          "other": "Izra\u0113las \u0161eke\u013ci"
+        },
+        "narrow": "\u20aa",
+        "symbol": "\u20aa"
+      },
+      "INR": {
+        "displayName": {
+          "one": "Indijas r\u016bpija",
+          "other": "Indijas r\u016bpijas"
+        },
+        "narrow": "\u20b9",
+        "symbol": "\u20b9"
+      },
+      "IQD": {
+        "displayName": {
+          "one": "Ir\u0101kas din\u0101rs",
+          "other": "Ir\u0101kas din\u0101ri"
+        },
+        "narrow": "IQD",
+        "symbol": "IQD"
+      },
+      "IRR": {
+        "displayName": {
+          "one": "Ir\u0101nas ri\u0101ls",
+          "other": "Ir\u0101nas ri\u0101li"
+        },
+        "narrow": "IRR",
+        "symbol": "IRR"
+      },
+      "ISK": {
+        "displayName": {
+          "one": "Islandes krona",
+          "other": "Islandes kronas"
+        },
+        "narrow": "kr",
+        "symbol": "ISK"
+      },
+      "ITL": {
+        "displayName": {
+          "other": "It\u0101lijas lira"
+        },
+        "narrow": "ITL",
+        "symbol": "ITL"
+      },
+      "JMD": {
+        "displayName": {
+          "one": "Jamaikas dol\u0101rs",
+          "other": "Jamaikas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "JMD"
+      },
+      "JOD": {
+        "displayName": {
+          "one": "Jord\u0101nas din\u0101rs",
+          "other": "Jord\u0101nas din\u0101ri"
+        },
+        "narrow": "JOD",
+        "symbol": "JOD"
+      },
+      "JPY": {
+        "displayName": {
+          "one": "Jap\u0101nas jena",
+          "other": "Jap\u0101nas jenas"
+        },
+        "narrow": "\u00a5",
+        "symbol": "\u00a5"
+      },
+      "KES": {
+        "displayName": {
+          "one": "Kenijas \u0161ili\u0146\u0161",
+          "other": "Kenijas \u0161ili\u0146i"
+        },
+        "narrow": "KES",
+        "symbol": "KES"
+      },
+      "KGS": {
+        "displayName": {
+          "one": "Kirgizst\u0101nas soms",
+          "other": "Kirgizst\u0101nas somi"
+        },
+        "narrow": "\u20c0",
+        "symbol": "KGS"
+      },
+      "KHR": {
+        "displayName": {
+          "one": "Kambod\u017eas riels",
+          "other": "Kambod\u017eas rieli"
+        },
+        "narrow": "\u17db",
+        "symbol": "KHR"
+      },
+      "KMF": {
+        "displayName": {
+          "one": "Komoru franks",
+          "other": "Komoru franki"
+        },
+        "narrow": "CF",
+        "symbol": "KMF"
+      },
+      "KPW": {
+        "displayName": {
+          "one": "Zieme\u013ckorejas vona",
+          "other": "Zieme\u013ckorejas vonas"
+        },
+        "narrow": "\u20a9",
+        "symbol": "KPW"
+      },
+      "KRW": {
+        "displayName": {
+          "one": "Dienvidkorejas vona",
+          "other": "Dienvidkorejas vonas"
+        },
+        "narrow": "\u20a9",
+        "symbol": "\u20a9"
+      },
+      "KWD": {
+        "displayName": {
+          "one": "Kuveitas din\u0101rs",
+          "other": "Kuveitas din\u0101ri"
+        },
+        "narrow": "KWD",
+        "symbol": "KWD"
+      },
+      "KYD": {
+        "displayName": {
+          "one": "Kaimanu salu dol\u0101rs",
+          "other": "Kaimanu salu dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "KYD"
+      },
+      "KZT": {
+        "displayName": {
+          "one": "Kazahst\u0101nas tenge",
+          "other": "Kazahst\u0101nas tenges"
+        },
+        "narrow": "\u20b8",
+        "symbol": "KZT"
+      },
+      "LAK": {
+        "displayName": {
+          "one": "Laosas kips",
+          "other": "Laosas kipi"
+        },
+        "narrow": "\u20ad",
+        "symbol": "LAK"
+      },
+      "LBP": {
+        "displayName": {
+          "one": "Lib\u0101nas m\u0101rci\u0146a",
+          "other": "Lib\u0101nas m\u0101rci\u0146as"
+        },
+        "narrow": "L\u00a3",
+        "symbol": "LBP"
+      },
+      "LKR": {
+        "displayName": {
+          "one": "\u0160rilankas r\u016bpija",
+          "other": "\u0160rilankas r\u016bpijas"
+        },
+        "narrow": "Rs",
+        "symbol": "LKR"
+      },
+      "LRD": {
+        "displayName": {
+          "one": "Lib\u0113rijas dol\u0101rs",
+          "other": "Lib\u0113rijas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "LRD"
+      },
+      "LSL": {
+        "displayName": {
+          "other": "Lesoto loti"
+        },
+        "narrow": "LSL",
+        "symbol": "LSL"
+      },
+      "LTL": {
+        "displayName": {
+          "one": "Lietuvas lits",
+          "other": "Lietuvas liti"
+        },
+        "narrow": "Lt",
+        "symbol": "LTL"
+      },
+      "LUF": {
+        "displayName": {
+          "other": "Luksemburgas franks"
+        },
+        "narrow": "LUF",
+        "symbol": "LUF"
+      },
+      "LVL": {
+        "displayName": {
+          "one": "Latvijas lats",
+          "other": "Latvijas lati"
+        },
+        "narrow": "Ls",
+        "symbol": "Ls"
+      },
+      "LVR": {
+        "displayName": {
+          "other": "Latvijas rublis"
+        },
+        "narrow": "LVR",
+        "symbol": "LVR"
+      },
+      "LYD": {
+        "displayName": {
+          "one": "L\u012bbijas din\u0101rs",
+          "other": "L\u012bbijas din\u0101ri"
+        },
+        "narrow": "LYD",
+        "symbol": "LYD"
+      },
+      "MAD": {
+        "displayName": {
+          "one": "Marokas dirh\u0113ms",
+          "other": "Marokas dirh\u0113mi"
+        },
+        "narrow": "MAD",
+        "symbol": "MAD"
+      },
+      "MDL": {
+        "displayName": {
+          "one": "Moldovas leja",
+          "other": "Moldovas lejas"
+        },
+        "narrow": "MDL",
+        "symbol": "MDL"
+      },
+      "MGA": {
+        "displayName": {
+          "other": "Madagaskaras ariari"
+        },
+        "narrow": "Ar",
+        "symbol": "MGA"
+      },
+      "MKD": {
+        "displayName": {
+          "one": "Ma\u0137edonijas den\u0101rs",
+          "other": "Ma\u0137edonijas den\u0101ri"
+        },
+        "narrow": "MKD",
+        "symbol": "MKD"
+      },
+      "MLF": {
+        "displayName": {
+          "other": "CFA (\u0100frikas) franks"
+        },
+        "narrow": "MLF",
+        "symbol": "MLF"
+      },
+      "MMK": {
+        "displayName": {
+          "one": "Mjanmas kjats",
+          "other": "Mjanmas kjati"
+        },
+        "narrow": "K",
+        "symbol": "MMK"
+      },
+      "MNT": {
+        "displayName": {
+          "one": "Mongolijas tugriks",
+          "other": "Mongolijas tugriki"
+        },
+        "narrow": "\u20ae",
+        "symbol": "MNT"
+      },
+      "MOP": {
+        "displayName": {
+          "one": "Makao pataka",
+          "other": "Makao patakas"
+        },
+        "narrow": "MOP",
+        "symbol": "MOP"
+      },
+      "MRO": {
+        "displayName": {
+          "one": "Maurit\u0101nijas ugija (1973\u20132017)",
+          "other": "Maurit\u0101nijas ugijas (1973\u20132017)"
+        },
+        "narrow": "MRO",
+        "symbol": "MRO"
+      },
+      "MRU": {
+        "displayName": {
+          "one": "Maurit\u0101nijas ugija",
+          "other": "Maurit\u0101nijas ugijas"
+        },
+        "narrow": "MRU",
+        "symbol": "MRU"
+      },
+      "MTL": {
+        "displayName": {
+          "other": "Maltas lira"
+        },
+        "narrow": "MTL",
+        "symbol": "MTL"
+      },
+      "MTP": {
+        "displayName": {
+          "other": "Maltas m\u0101rci\u0146a"
+        },
+        "narrow": "MTP",
+        "symbol": "MTP"
+      },
+      "MUR": {
+        "displayName": {
+          "one": "Maur\u012bcijas r\u016bpija",
+          "other": "Maur\u012bcijas r\u016bpijas"
+        },
+        "narrow": "Rs",
+        "symbol": "MUR"
+      },
+      "MVR": {
+        "displayName": {
+          "one": "Mald\u012bvijas r\u016bfija",
+          "other": "Mald\u012bvijas r\u016bfijas"
+        },
+        "narrow": "MVR",
+        "symbol": "MVR"
+      },
+      "MWK": {
+        "displayName": {
+          "one": "Mal\u0101vijas kva\u010da",
+          "other": "Mal\u0101vijas kva\u010das"
+        },
+        "narrow": "MWK",
+        "symbol": "MWK"
+      },
+      "MXN": {
+        "displayName": {
+          "other": "Meksikas peso"
+        },
+        "narrow": "$",
+        "symbol": "MX$"
+      },
+      "MYR": {
+        "displayName": {
+          "one": "Malaizijas ringits",
+          "other": "Malaizijas ringiti"
+        },
+        "narrow": "RM",
+        "symbol": "MYR"
+      },
+      "MZE": {
+        "displayName": {
+          "other": "Mozambikas eskudo"
+        },
+        "narrow": "MZE",
+        "symbol": "MZE"
+      },
+      "MZM": {
+        "displayName": {
+          "one": "Mozambikas vecais metikals",
+          "other": "Mozambikas vecie metikali"
+        },
+        "narrow": "MZM",
+        "symbol": "MZM"
+      },
+      "MZN": {
+        "displayName": {
+          "one": "Mozambikas metikals",
+          "other": "Mozambikas metikali"
+        },
+        "narrow": "MZN",
+        "symbol": "MZN"
+      },
+      "NAD": {
+        "displayName": {
+          "one": "Nam\u012bbijas dol\u0101rs",
+          "other": "Nam\u012bbijas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "NAD"
+      },
+      "NGN": {
+        "displayName": {
+          "one": "Nig\u0113rijas naira",
+          "other": "Nig\u0113rijas nairas"
+        },
+        "narrow": "\u20a6",
+        "symbol": "NGN"
+      },
+      "NIO": {
+        "displayName": {
+          "one": "Nikaragvas kordoba",
+          "other": "Nikaragvas kordobas"
+        },
+        "narrow": "C$",
+        "symbol": "NIO"
+      },
+      "NLG": {
+        "displayName": {
+          "other": "N\u012bderlandes guldenis"
+        },
+        "narrow": "NLG",
+        "symbol": "NLG"
+      },
+      "NOK": {
+        "displayName": {
+          "one": "Norv\u0113\u0123ijas krona",
+          "other": "Norv\u0113\u0123ijas kronas"
+        },
+        "narrow": "kr",
+        "symbol": "NOK"
+      },
+      "NPR": {
+        "displayName": {
+          "one": "Nep\u0101las r\u016bpija",
+          "other": "Nep\u0101las r\u016bpijas"
+        },
+        "narrow": "Rs",
+        "symbol": "NPR"
+      },
+      "NZD": {
+        "displayName": {
+          "one": "Jaunz\u0113landes dol\u0101rs",
+          "other": "Jaunz\u0113landes dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "NZ$"
+      },
+      "OMR": {
+        "displayName": {
+          "one": "Om\u0101nas ri\u0101ls",
+          "other": "Om\u0101nas ri\u0101li"
+        },
+        "narrow": "OMR",
+        "symbol": "OMR"
+      },
+      "PAB": {
+        "displayName": {
+          "other": "Panamas balboa"
+        },
+        "narrow": "PAB",
+        "symbol": "PAB"
+      },
+      "PEN": {
+        "displayName": {
+          "one": "Peru sols",
+          "other": "Peru soli"
+        },
+        "narrow": "PEN",
+        "symbol": "PEN"
+      },
+      "PGK": {
+        "displayName": {
+          "one": "Papua-Jaungvinejas kina",
+          "other": "Papua-Jaungvinejas kinas"
+        },
+        "narrow": "PGK",
+        "symbol": "PGK"
+      },
+      "PHP": {
+        "displayName": {
+          "other": "Filip\u012bnu peso"
+        },
+        "narrow": "\u20b1",
+        "symbol": "PHP"
+      },
+      "PKR": {
+        "displayName": {
+          "one": "Pakist\u0101nas r\u016bpija",
+          "other": "Pakist\u0101nas r\u016bpijas"
+        },
+        "narrow": "Rs",
+        "symbol": "PKR"
+      },
+      "PLN": {
+        "displayName": {
+          "one": "Polijas zlots",
+          "other": "Polijas zloti"
+        },
+        "narrow": "z\u0142",
+        "symbol": "PLN"
+      },
+      "PTE": {
+        "displayName": {
+          "other": "Portug\u0101les eskudo"
+        },
+        "narrow": "PTE",
+        "symbol": "PTE"
+      },
+      "PYG": {
+        "displayName": {
+          "other": "Paragvajas guarani"
+        },
+        "narrow": "\u20b2",
+        "symbol": "PYG"
+      },
+      "QAR": {
+        "displayName": {
+          "one": "Kataras ri\u0101ls",
+          "other": "Kataras ri\u0101li"
+        },
+        "narrow": "QAR",
+        "symbol": "QAR"
+      },
+      "ROL": {
+        "displayName": {
+          "one": "Rum\u0101nijas vec\u0101 leva",
+          "other": "Rum\u0101nijas vec\u0101s levas"
+        },
+        "narrow": "ROL",
+        "symbol": "ROL"
+      },
+      "RON": {
+        "displayName": {
+          "one": "Rum\u0101nijas leja",
+          "other": "Rum\u0101nijas lejas"
+        },
+        "narrow": "lei",
+        "symbol": "RON"
+      },
+      "RSD": {
+        "displayName": {
+          "one": "Serbijas din\u0101rs",
+          "other": "Serbijas din\u0101ri"
+        },
+        "narrow": "RSD",
+        "symbol": "RSD"
+      },
+      "RUB": {
+        "displayName": {
+          "one": "Krievijas rublis",
+          "other": "Krievijas rub\u013ci"
+        },
+        "narrow": "\u20bd",
+        "symbol": "RUB"
+      },
+      "RWF": {
+        "displayName": {
+          "one": "Ruandas franks",
+          "other": "Ruandas franki"
+        },
+        "narrow": "RF",
+        "symbol": "RWF"
+      },
+      "SAR": {
+        "displayName": {
+          "one": "Sa\u016bda ri\u0101ls",
+          "other": "Sa\u016bda ri\u0101li"
+        },
+        "narrow": "SAR",
+        "symbol": "SAR"
+      },
+      "SBD": {
+        "displayName": {
+          "one": "Z\u0101lamana Salu dol\u0101rs",
+          "other": "Z\u0101lamana Salu dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "SBD"
+      },
+      "SCR": {
+        "displayName": {
+          "one": "Sei\u0161elu salu r\u016bpija",
+          "other": "Sei\u0161elu salu r\u016bpijas"
+        },
+        "narrow": "SCR",
+        "symbol": "SCR"
+      },
+      "SDG": {
+        "displayName": {
+          "one": "Sud\u0101nas m\u0101rci\u0146a",
+          "other": "Sud\u0101nas m\u0101rci\u0146as"
+        },
+        "narrow": "SDG",
+        "symbol": "SDG"
+      },
+      "SEK": {
+        "displayName": {
+          "one": "Zviedrijas krona",
+          "other": "Zviedrijas kronas"
+        },
+        "narrow": "kr",
+        "symbol": "SEK"
+      },
+      "SGD": {
+        "displayName": {
+          "one": "Singap\u016bras dol\u0101rs",
+          "other": "Singap\u016bras dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "SGD"
+      },
+      "SHP": {
+        "displayName": {
+          "one": "Sv.Hel\u0113nas salas m\u0101rci\u0146a",
+          "other": "Sv.Hel\u0113nas salas m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SHP"
+      },
+      "SIT": {
+        "displayName": {
+          "other": "Slov\u0113nijas tolars"
+        },
+        "narrow": "SIT",
+        "symbol": "SIT"
+      },
+      "SKK": {
+        "displayName": {
+          "other": "Slovakijas krona"
+        },
+        "narrow": "SKK",
+        "symbol": "SKK"
+      },
+      "SLE": {
+        "displayName": {
+          "one": "Sjerraleones leone",
+          "other": "Sjerraleones leones"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "one": "Sjerraleones leone (1964\u20142022)",
+          "other": "Sjerraleones leones (1964\u20142022)"
+        },
+        "narrow": "SLL",
+        "symbol": "SLL"
+      },
+      "SOS": {
+        "displayName": {
+          "one": "Som\u0101lijas \u0161ili\u0146\u0161",
+          "other": "Som\u0101lijas \u0161ili\u0146i"
+        },
+        "narrow": "SOS",
+        "symbol": "SOS"
+      },
+      "SRD": {
+        "displayName": {
+          "one": "Surinamas dol\u0101rs",
+          "other": "Surinamas dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "SRD"
+      },
+      "SRG": {
+        "displayName": {
+          "other": "Surinamas guldenis"
+        },
+        "narrow": "SRG",
+        "symbol": "SRG"
+      },
+      "SSP": {
+        "displayName": {
+          "one": "Dienvidsud\u0101nas m\u0101rci\u0146a",
+          "other": "Dienvidsud\u0101nas m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SSP"
+      },
+      "STD": {
+        "displayName": {
+          "one": "Santome un Prinsipi dobra (1977\u20132017)",
+          "other": "Santome un Prinsipi dobras (1977\u20132017)"
+        },
+        "narrow": "STD",
+        "symbol": "STD"
+      },
+      "STN": {
+        "displayName": {
+          "one": "Santome un Prinsipi dobra",
+          "other": "Santome un Prinsipi dobras"
+        },
+        "narrow": "Db",
+        "symbol": "STN"
+      },
+      "SVC": {
+        "displayName": {
+          "other": "Salvadoras kolons"
+        },
+        "narrow": "SVC",
+        "symbol": "SVC"
+      },
+      "SYP": {
+        "displayName": {
+          "one": "S\u012brijas m\u0101rci\u0146a",
+          "other": "S\u012brijas m\u0101rci\u0146as"
+        },
+        "narrow": "\u00a3",
+        "symbol": "SYP"
+      },
+      "SZL": {
+        "displayName": {
+          "other": "Svazilendas lilangeni"
+        },
+        "narrow": "SZL",
+        "symbol": "SZL"
+      },
+      "THB": {
+        "displayName": {
+          "one": "Taizemes b\u0101ts",
+          "other": "Taizemes b\u0101ti"
+        },
+        "narrow": "\u0e3f",
+        "symbol": "\u0e3f"
+      },
+      "TJS": {
+        "displayName": {
+          "one": "Tad\u017eikist\u0101nas somons",
+          "other": "Tad\u017eikist\u0101nas somoni"
+        },
+        "narrow": "TJS",
+        "symbol": "TJS"
+      },
+      "TMM": {
+        "displayName": {
+          "one": "Turkmenist\u0101nas manats (1993\u20132009)",
+          "other": "Turkmenist\u0101nas manati (1993\u20132009)"
+        },
+        "narrow": "TMM",
+        "symbol": "TMM"
+      },
+      "TMT": {
+        "displayName": {
+          "one": "Turkmenist\u0101nas manats",
+          "other": "Turkmenist\u0101nas manati"
+        },
+        "narrow": "TMT",
+        "symbol": "TMT"
+      },
+      "TND": {
+        "displayName": {
+          "one": "Tunisijas din\u0101rs",
+          "other": "Tunisijas din\u0101ri"
+        },
+        "narrow": "TND",
+        "symbol": "TND"
+      },
+      "TOP": {
+        "displayName": {
+          "one": "Tongas paanga",
+          "other": "Tongas paangas"
+        },
+        "narrow": "T$",
+        "symbol": "TOP"
+      },
+      "TRL": {
+        "displayName": {
+          "one": "Turcijas lira (1922\u20132005)",
+          "other": "Turcijas liras (1922\u20132005)"
+        },
+        "narrow": "TRL",
+        "symbol": "TRL"
+      },
+      "TRY": {
+        "displayName": {
+          "one": "Turcijas lira",
+          "other": "Turcijas liras"
+        },
+        "narrow": "\u20ba",
+        "symbol": "TRY"
+      },
+      "TTD": {
+        "displayName": {
+          "one": "Trinid\u0101das un Tob\u0101go dol\u0101rs",
+          "other": "Trinid\u0101das un Tob\u0101go dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "TTD"
+      },
+      "TWD": {
+        "displayName": {
+          "one": "Taiv\u0101nas jaunais dol\u0101rs",
+          "other": "Taiv\u0101nas jaunie dol\u0101ri"
+        },
+        "narrow": "NT$",
+        "symbol": "NT$"
+      },
+      "TZS": {
+        "displayName": {
+          "one": "Tanz\u0101nijas \u0161ili\u0146\u0161",
+          "other": "Tanz\u0101nijas \u0161ili\u0146i"
+        },
+        "narrow": "TZS",
+        "symbol": "TZS"
+      },
+      "UAH": {
+        "displayName": {
+          "one": "Ukrainas grivna",
+          "other": "Ukrainas grivnas"
+        },
+        "narrow": "\u20b4",
+        "symbol": "UAH"
+      },
+      "UGX": {
+        "displayName": {
+          "one": "Ugandas \u0161ili\u0146\u0161",
+          "other": "Ugandas \u0161ili\u0146i"
+        },
+        "narrow": "UGX",
+        "symbol": "UGX"
+      },
+      "USD": {
+        "displayName": {
+          "one": "ASV dol\u0101rs",
+          "other": "ASV dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "$"
+      },
+      "UYU": {
+        "displayName": {
+          "other": "Urugvajas peso"
+        },
+        "narrow": "$",
+        "symbol": "UYU"
+      },
+      "UZS": {
+        "displayName": {
+          "one": "Uzbekist\u0101nas sums",
+          "other": "Uzbekist\u0101nas sumi"
+        },
+        "narrow": "UZS",
+        "symbol": "UZS"
+      },
+      "VEB": {
+        "displayName": {
+          "one": "Venecu\u0113las boliv\u0101rs (1871\u20132008)",
+          "other": "Venecu\u0113las boliv\u0101ri (1871\u20132008)"
+        },
+        "narrow": "VEB",
+        "symbol": "VEB"
+      },
+      "VEF": {
+        "displayName": {
+          "one": "Venecu\u0113las boliv\u0101rs (2008\u20132018)",
+          "other": "Venecu\u0113las boliv\u0101ri (2008\u20132018)"
+        },
+        "narrow": "Bs",
+        "symbol": "VEF"
+      },
+      "VES": {
+        "displayName": {
+          "one": "Venecu\u0113las boliv\u0101rs",
+          "other": "Venecu\u0113las boliv\u0101ri"
+        },
+        "narrow": "VES",
+        "symbol": "VES"
+      },
+      "VND": {
+        "displayName": {
+          "other": "Vjetnamas dongi"
+        },
+        "narrow": "\u20ab",
+        "symbol": "\u20ab"
+      },
+      "VUV": {
+        "displayName": {
+          "other": "Vanuatu vatu"
+        },
+        "narrow": "VUV",
+        "symbol": "VUV"
+      },
+      "WST": {
+        "displayName": {
+          "one": "Samoa tala",
+          "other": "Samoa talas"
+        },
+        "narrow": "WST",
+        "symbol": "WST"
+      },
+      "XAF": {
+        "displayName": {
+          "one": "Centr\u0101l\u0101frikas CFA franks",
+          "other": "Centr\u0101l\u0101frikas CFA franki"
+        },
+        "narrow": "FCFA",
+        "symbol": "FCFA"
+      },
+      "XAG": {
+        "displayName": {
+          "other": "sudrabs"
+        },
+        "narrow": "XAG",
+        "symbol": "XAG"
+      },
+      "XAU": {
+        "displayName": {
+          "other": "zelts"
+        },
+        "narrow": "XAU",
+        "symbol": "XAU"
+      },
+      "XBA": {
+        "displayName": {
+          "one": "Eiropas nor\u0113\u0137inu vien\u012bba EURCO",
+          "other": "Eiropas nor\u0113\u0137inu vien\u012bbas EURCO"
+        },
+        "narrow": "XBA",
+        "symbol": "XBA"
+      },
+      "XBB": {
+        "displayName": {
+          "other": "Eiropas naudas vien\u012bba"
+        },
+        "narrow": "XBB",
+        "symbol": "XBB"
+      },
+      "XBC": {
+        "displayName": {
+          "one": "Eiropas nor\u0113\u0137inu vien\u012bba (XBC)",
+          "other": "Eiropas nor\u0113\u0137inu vien\u012bbas (XBC)"
+        },
+        "narrow": "XBC",
+        "symbol": "XBC"
+      },
+      "XBD": {
+        "displayName": {
+          "one": "Eiropas nor\u0113\u0137inu vien\u012bba (XBD)",
+          "other": "Eiropas nor\u0113\u0137inu vien\u012bbas (XBD)"
+        },
+        "narrow": "XBD",
+        "symbol": "XBD"
+      },
+      "XCD": {
+        "displayName": {
+          "one": "Austrumkar\u012bbu dol\u0101rs",
+          "other": "Austrumkar\u012bbu dol\u0101ri"
+        },
+        "narrow": "$",
+        "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {},
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
+      "XDR": {
+        "displayName": {
+          "other": "Speci\u0101l\u0101s aiz\u0146\u0113muma ties\u012bbas"
+        },
+        "narrow": "XDR",
+        "symbol": "XDR"
+      },
+      "XEU": {
+        "displayName": {
+          "other": "Eiropas nor\u0113\u0137inu vien\u012bba"
+        },
+        "narrow": "XEU",
+        "symbol": "XEU"
+      },
+      "XFO": {
+        "displayName": {
+          "other": "Francijas zelta franks"
+        },
+        "narrow": "XFO",
+        "symbol": "XFO"
+      },
+      "XFU": {
+        "displayName": {
+          "other": "Francijas UIC franks"
+        },
+        "narrow": "XFU",
+        "symbol": "XFU"
+      },
+      "XOF": {
+        "displayName": {
+          "one": "Rietum\u0101frikas CFA franks",
+          "other": "Rietum\u0101frikas CFA franki"
+        },
+        "narrow": "F\u202fCFA",
+        "symbol": "F\u202fCFA"
+      },
+      "XPD": {
+        "displayName": {
+          "other": "pall\u0101dijs"
+        },
+        "narrow": "XPD",
+        "symbol": "XPD"
+      },
+      "XPF": {
+        "displayName": {
+          "one": "CFP franks",
+          "other": "CFP franki"
+        },
+        "narrow": "CFPF",
+        "symbol": "CFPF"
+      },
+      "XPT": {
+        "displayName": {
+          "other": "plat\u012bns"
+        },
+        "narrow": "XPT",
+        "symbol": "XPT"
+      },
+      "XTS": {
+        "displayName": {
+          "other": "testa val\u016btas kods"
+        },
+        "narrow": "XTS",
+        "symbol": "XTS"
+      },
+      "XXX": {
+        "displayName": {
+          "other": "(nezin\u0101ma val\u016bta)"
+        },
+        "narrow": "\u00a4",
+        "symbol": "\u00a4"
+      },
+      "YER": {
+        "displayName": {
+          "one": "Jemenas ri\u0101ls",
+          "other": "Jemenas ri\u0101li"
+        },
+        "narrow": "YER",
+        "symbol": "YER"
+      },
+      "ZAR": {
+        "displayName": {
+          "one": "Dienvid\u0101frikas rends",
+          "other": "Dienvid\u0101frikas rendi"
+        },
+        "narrow": "R",
+        "symbol": "ZAR"
+      },
+      "ZMK": {
+        "displayName": {
+          "one": "Zambijas kva\u010da (1968\u20132012)",
+          "other": "Zambijas kva\u010das (1968\u20132012)"
+        },
+        "narrow": "ZMK",
+        "symbol": "ZMK"
+      },
+      "ZMW": {
+        "displayName": {
+          "one": "Zambijas kva\u010da",
+          "other": "Zambijas kva\u010das"
+        },
+        "narrow": "ZK",
+        "symbol": "ZMW"
+      },
+      "ZWD": {
+        "displayName": {
+          "other": "Zimbabves dol\u0101rs"
+        },
+        "narrow": "ZWD",
+        "symbol": "ZWD"
+      },
+      "ZWL": {
+        "displayName": {
+          "one": "Zimbabves doll\u0101rs (2009)",
+          "other": "Zimbabves doll\u0101ri (2009)"
+        },
+        "narrow": "ZWL",
+        "symbol": "ZWL"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "numbers": {
+      "currency": {
+        "latn": {
+          "accounting": "#,##0.00\u00a0\u00a4",
+          "currencySpacing": {
+            "afterInsertBetween": "\u00a0",
+            "beforeInsertBetween": "\u00a0"
+          },
+          "short": {
+            "1000": {
+              "other": "0\u00a0t\u016bkst'.'\u00a0\u00a4"
+            },
+            "10000": {
+              "other": "00\u00a0t\u016bkst'.'\u00a0\u00a4"
+            },
+            "100000": {
+              "other": "000\u00a0t\u016bkst'.'\u00a0\u00a4"
+            },
+            "1000000": {
+              "other": "0\u00a0milj'.'\u00a0\u00a4"
+            },
+            "10000000": {
+              "other": "00\u00a0milj'.'\u00a0\u00a4"
+            },
+            "100000000": {
+              "other": "000\u00a0milj'.'\u00a0\u00a4"
+            },
+            "1000000000": {
+              "other": "0\u00a0mljrd'.'\u00a0\u00a4"
+            },
+            "10000000000": {
+              "other": "00\u00a0mljrd'.'\u00a0\u00a4"
+            },
+            "100000000000": {
+              "other": "000\u00a0mljrd'.'\u00a0\u00a4"
+            },
+            "1000000000000": {
+              "other": "0\u00a0trilj'.'\u00a0\u00a4"
+            },
+            "10000000000000": {
+              "other": "00\u00a0trilj'.'\u00a0\u00a4"
+            },
+            "100000000000000": {
+              "other": "000\u00a0trilj'.'\u00a0\u00a4"
+            }
+          },
+          "standard": "#,##0.00\u00a0\u00a4",
+          "unitPattern": "{0} {1}"
+        }
+      },
+      "decimal": {
+        "latn": {
+          "long": {
+            "1000": {
+              "one": "0 t\u016bkstotis",
+              "other": "0 t\u016bksto\u0161i",
+              "zero": "0 t\u016bksto\u0161u"
+            },
+            "10000": {
+              "one": "00 t\u016bkstotis",
+              "other": "00 t\u016bksto\u0161i"
+            },
+            "100000": {
+              "one": "000 t\u016bkstotis",
+              "other": "000 t\u016bksto\u0161i"
+            },
+            "1000000": {
+              "one": "0 miljons",
+              "other": "0 miljoni",
+              "zero": "0 miljonu"
+            },
+            "10000000": {
+              "one": "00 miljons",
+              "other": "00 miljoni"
+            },
+            "100000000": {
+              "one": "000 miljons",
+              "other": "000 miljoni"
+            },
+            "1000000000": {
+              "one": "0 miljards",
+              "other": "0 miljardi",
+              "zero": "0 miljardu"
+            },
+            "10000000000": {
+              "one": "00 miljards",
+              "other": "00 miljardi"
+            },
+            "100000000000": {
+              "one": "000 miljards",
+              "other": "000 miljardi"
+            },
+            "1000000000000": {
+              "one": "0 triljons",
+              "other": "0 triljoni",
+              "zero": "0 triljonu"
+            },
+            "10000000000000": {
+              "one": "00 triljons",
+              "other": "00 triljoni"
+            },
+            "100000000000000": {
+              "one": "000 triljons",
+              "other": "000 triljoni"
+            }
+          },
+          "short": {
+            "1000": {
+              "other": "0\u00a0t\u016bkst'.'"
+            },
+            "10000": {
+              "other": "00\u00a0t\u016bkst'.'"
+            },
+            "100000": {
+              "other": "000\u00a0t\u016bkst'.'"
+            },
+            "1000000": {
+              "other": "0\u00a0milj'.'"
+            },
+            "10000000": {
+              "other": "00\u00a0milj'.'"
+            },
+            "100000000": {
+              "other": "000\u00a0milj'.'"
+            },
+            "1000000000": {
+              "other": "0\u00a0mljrd'.'"
+            },
+            "10000000000": {
+              "other": "00\u00a0mljrd'.'"
+            },
+            "100000000000": {
+              "other": "000\u00a0mljrd'.'"
+            },
+            "1000000000000": {
+              "other": "0\u00a0trilj'.'"
+            },
+            "10000000000000": {
+              "other": "00\u00a0trilj'.'"
+            },
+            "100000000000000": {
+              "other": "000\u00a0trilj'.'"
+            }
+          },
+          "standard": "#,##0.###"
+        }
+      },
+      "nu": [
+        "latn"
+      ],
+      "percent": {
+        "latn": "#,##0%"
+      },
+      "symbols": {
+        "latn": {
+          "approximatelySign": "~",
+          "decimal": ",",
+          "exponential": "E",
+          "group": "\u00a0",
+          "infinity": "\u221e",
+          "list": ";",
+          "minusSign": "-",
+          "nan": "NS",
+          "perMille": "\u2030",
+          "percentSign": "%",
+          "plusSign": "+",
+          "rangeSign": "\u2013",
+          "superscriptingExponent": "\u00d7",
+          "timeSeparator": ":"
+        }
+      }
+    },
+    "units": {
+      "compound": {
+        "per": {
+          "long": "{0}/{1}",
+          "narrow": "{0}/{1}",
+          "short": "{0}/{1}"
+        }
+      },
+      "simple": {
+        "acre": {
+          "long": {
+            "one": "{0} akrs",
+            "other": "{0} akri",
+            "zero": "{0} akru"
+          },
+          "narrow": {
+            "other": "{0}ac"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ac"
+          }
+        },
+        "bit": {
+          "long": {
+            "one": "{0} bits",
+            "other": "{0} biti",
+            "zero": "{0} bitu"
+          },
+          "narrow": {
+            "other": "{0} b"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} b"
+          }
+        },
+        "byte": {
+          "long": {
+            "one": "{0} baits",
+            "other": "{0} baiti",
+            "zero": "{0} baitu"
+          },
+          "narrow": {
+            "other": "{0} B"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} B"
+          }
+        },
+        "celsius": {
+          "long": {
+            "one": "{0} Celsija gr\u0101ds",
+            "other": "{0} Celsija gr\u0101di",
+            "zero": "{0} Celsija gr\u0101du"
+          },
+          "narrow": {
+            "other": "{0} \u00b0C"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u00b0C"
+          }
+        },
+        "centimeter": {
+          "long": {
+            "one": "{0} centimetrs",
+            "other": "{0} centimetri",
+            "zero": "{0} centimetru"
+          },
+          "narrow": {
+            "one": "{0}cm",
+            "other": "{0} cm"
+          },
+          "perUnit": {
+            "long": "{0} centimetr\u0101",
+            "narrow": "{0}/cm",
+            "short": "{0}/cm"
+          },
+          "short": {
+            "other": "{0} cm"
+          }
+        },
+        "day": {
+          "long": {
+            "one": "{0} diena",
+            "other": "{0} dienas",
+            "zero": "{0} dienu"
+          },
+          "narrow": {
+            "other": "{0} d."
+          },
+          "perUnit": {
+            "long": "{0} dien\u0101",
+            "narrow": "{0}/d.",
+            "short": "{0}/d."
+          },
+          "short": {
+            "other": "{0} d."
+          }
+        },
+        "degree": {
+          "long": {
+            "one": "{0} gr\u0101ds",
+            "other": "{0} gr\u0101di",
+            "zero": "{0} gr\u0101du"
+          },
+          "narrow": {
+            "other": "{0}\u00b0"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}\u00b0"
+          }
+        },
+        "fahrenheit": {
+          "long": {
+            "one": "{0} F\u0101renheita gr\u0101ds",
+            "other": "{0} F\u0101renheita gr\u0101di",
+            "zero": "{0} F\u0101renheita gr\u0101du"
+          },
+          "narrow": {
+            "other": "{0}\u00b0F"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} \u00b0F"
+          }
+        },
+        "fluid-ounce": {
+          "long": {
+            "one": "{0} \u0161\u0137idruma unce",
+            "other": "{0} \u0161\u0137idruma unces",
+            "zero": "{0} \u0161\u0137idruma un\u010du"
+          },
+          "narrow": {
+            "other": "{0} fl oz"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} fl oz"
+          }
+        },
+        "foot": {
+          "long": {
+            "one": "{0} p\u0113da",
+            "other": "{0} p\u0113das",
+            "zero": "{0} p\u0113du"
+          },
+          "narrow": {
+            "other": "{0}ft"
+          },
+          "perUnit": {
+            "long": "{0} p\u0113d\u0101",
+            "narrow": "{0}/p\u0113da",
+            "short": "{0}/ft"
+          },
+          "short": {
+            "other": "{0} ft"
+          }
+        },
+        "gallon": {
+          "long": {
+            "one": "{0} galons",
+            "other": "{0} galoni",
+            "zero": "{0} galonu"
+          },
+          "narrow": {
+            "other": "{0} gal"
+          },
+          "perUnit": {
+            "long": "{0} uz galonu",
+            "narrow": "{0}/gal.",
+            "short": "{0}/gal."
+          },
+          "short": {
+            "other": "{0} gal"
+          }
+        },
+        "gigabit": {
+          "long": {
+            "one": "{0} gigabits",
+            "other": "{0} gigabiti",
+            "zero": "{0} gigabitu"
+          },
+          "narrow": {
+            "other": "{0} Gb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Gb"
+          }
+        },
+        "gigabyte": {
+          "long": {
+            "one": "{0} gigabaits",
+            "other": "{0} gigabaiti",
+            "zero": "{0} gigabaitu"
+          },
+          "narrow": {
+            "other": "{0} GB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} GB"
+          }
+        },
+        "gram": {
+          "long": {
+            "one": "{0} grams",
+            "other": "{0} grami",
+            "zero": "{0} gramu"
+          },
+          "narrow": {
+            "other": "{0} g"
+          },
+          "perUnit": {
+            "long": "{0} uz gramu",
+            "narrow": "{0}/g",
+            "short": "{0}/g"
+          },
+          "short": {
+            "other": "{0} g"
+          }
+        },
+        "hectare": {
+          "long": {
+            "one": "{0} hekt\u0101rs",
+            "other": "{0} hekt\u0101ri",
+            "zero": "{0} hekt\u0101ru"
+          },
+          "narrow": {
+            "other": "{0}ha"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ha"
+          }
+        },
+        "hour": {
+          "long": {
+            "one": "{0} stunda",
+            "other": "{0} stundas",
+            "zero": "{0} stundu"
+          },
+          "narrow": {
+            "other": "{0} h"
+          },
+          "perUnit": {
+            "long": "{0} stund\u0101",
+            "narrow": "{0}/h",
+            "short": "{0}/h"
+          },
+          "short": {
+            "other": "{0} st."
+          }
+        },
+        "inch": {
+          "long": {
+            "one": "{0} colla",
+            "other": "{0} collas",
+            "zero": "{0} collu"
+          },
+          "narrow": {
+            "other": "{0}in"
+          },
+          "perUnit": {
+            "long": "{0} coll\u0101",
+            "narrow": "{0}/colla",
+            "short": "{0}/in"
+          },
+          "short": {
+            "other": "{0} in"
+          }
+        },
+        "kilobit": {
+          "long": {
+            "one": "{0} kilobits",
+            "other": "{0} kilobiti",
+            "zero": "{0} kilobitu"
+          },
+          "narrow": {
+            "other": "{0} kb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kb"
+          }
+        },
+        "kilobyte": {
+          "long": {
+            "one": "{0} kilobaits",
+            "other": "{0} kilobaiti",
+            "zero": "{0} kilobaitu"
+          },
+          "narrow": {
+            "other": "{0} kB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} kB"
+          }
+        },
+        "kilogram": {
+          "long": {
+            "one": "{0} kilograms",
+            "other": "{0} kilogrami",
+            "zero": "{0} kilogramu"
+          },
+          "narrow": {
+            "other": "{0} kg"
+          },
+          "perUnit": {
+            "long": "{0} uz kilogramu",
+            "narrow": "{0}/kg",
+            "short": "{0}/kg"
+          },
+          "short": {
+            "other": "{0} kg"
+          }
+        },
+        "kilometer": {
+          "long": {
+            "one": "{0} kilometrs",
+            "other": "{0} kilometri",
+            "zero": "{0} kilometru"
+          },
+          "narrow": {
+            "other": "{0} km"
+          },
+          "perUnit": {
+            "long": "{0} kilometr\u0101",
+            "narrow": "{0}/km",
+            "short": "{0}/km"
+          },
+          "short": {
+            "other": "{0} km"
+          }
+        },
+        "kilometer-per-hour": {
+          "long": {
+            "one": "{0} kilometrs stund\u0101",
+            "other": "{0} kilometri stund\u0101",
+            "zero": "{0} kilometru stund\u0101"
+          },
+          "narrow": {
+            "other": "{0} km/h"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} km/st."
+          }
+        },
+        "liter": {
+          "long": {
+            "one": "{0} litrs",
+            "other": "{0} litri",
+            "zero": "{0} litru"
+          },
+          "narrow": {
+            "other": "{0} l"
+          },
+          "perUnit": {
+            "long": "{0} uz litru",
+            "narrow": "{0}/l",
+            "short": "{0}/l"
+          },
+          "short": {
+            "other": "{0} l"
+          }
+        },
+        "liter-per-kilometer": {
+          "long": {
+            "one": "{0} litrs uz kilometru",
+            "other": "{0} litri uz kilometru",
+            "zero": "{0} litru uz kilometru"
+          },
+          "narrow": {
+            "other": "{0} l/km"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} l/km"
+          }
+        },
+        "megabit": {
+          "long": {
+            "one": "{0} megabits",
+            "other": "{0} megabiti",
+            "zero": "{0} megabitu"
+          },
+          "narrow": {
+            "other": "{0} Mb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Mb"
+          }
+        },
+        "megabyte": {
+          "long": {
+            "other": "{0} megabaits",
+            "zero": "{0} megabaitu"
+          },
+          "narrow": {
+            "other": "{0} MB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} MB"
+          }
+        },
+        "meter": {
+          "long": {
+            "one": "{0} metrs",
+            "other": "{0} metri",
+            "zero": "{0} metru"
+          },
+          "narrow": {
+            "other": "{0} m"
+          },
+          "perUnit": {
+            "long": "{0} metr\u0101",
+            "narrow": "{0}/m",
+            "short": "{0}/m"
+          },
+          "short": {
+            "other": "{0} m"
+          }
+        },
+        "meter-per-second": {
+          "long": {
+            "one": "{0} metrs sekund\u0113",
+            "other": "{0} metri sekund\u0113",
+            "zero": "{0} metru sekund\u0113"
+          },
+          "narrow": {
+            "other": "{0}m/s"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} m/s"
+          }
+        },
+        "mile": {
+          "long": {
+            "one": "{0} j\u016bdze",
+            "other": "{0} j\u016bdzes",
+            "zero": "{0} j\u016bd\u017eu"
+          },
+          "narrow": {
+            "other": "{0}mi"
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} j\u016bdze",
+            "other": "{0} j\u016bdzes"
+          }
+        },
+        "mile-per-gallon": {
+          "long": {
+            "one": "{0} j\u016bdze uz galonu",
+            "other": "{0} j\u016bdzes uz galonu",
+            "zero": "{0} j\u016bd\u017eu uz galonu"
+          },
+          "narrow": {
+            "other": "{0} mpg"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mpg"
+          }
+        },
+        "mile-per-hour": {
+          "long": {
+            "one": "{0} j\u016bdze stund\u0101",
+            "other": "{0} j\u016bdzes stund\u0101",
+            "zero": "{0} j\u016bd\u017eu stund\u0101"
+          },
+          "narrow": {
+            "other": "{0}mi/h"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mi/h"
+          }
+        },
+        "mile-scandinavian": {
+          "long": {
+            "one": "{0} skandin\u0101vu j\u016bdze",
+            "other": "{0} skandin\u0101vu j\u016bdzes",
+            "zero": "{0} skandin\u0101vu j\u016bd\u017eu"
+          },
+          "narrow": {
+            "other": "{0} sk.j.",
+            "zero": "{0}\u00a0sk.j."
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} skandin\u0101vu j\u016bdze",
+            "other": "{0} skandin\u0101vu j\u016bdzes"
+          }
+        },
+        "milliliter": {
+          "long": {
+            "one": "{0} mililitrs",
+            "other": "{0} mililitri",
+            "zero": "{0} mililitru"
+          },
+          "narrow": {
+            "other": "{0} ml"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ml"
+          }
+        },
+        "millimeter": {
+          "long": {
+            "one": "{0} milimetrs",
+            "other": "{0} milimetri",
+            "zero": "{0} milimetru"
+          },
+          "narrow": {
+            "other": "{0} mm"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} mm"
+          }
+        },
+        "millisecond": {
+          "long": {
+            "one": "{0} milisekunde",
+            "other": "{0} milisekundes",
+            "zero": "{0} milisekun\u017eu"
+          },
+          "narrow": {
+            "other": "{0} ms"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} ms"
+          }
+        },
+        "minute": {
+          "long": {
+            "one": "{0} min\u016bte",
+            "other": "{0} min\u016btes",
+            "zero": "{0} min\u016b\u0161u"
+          },
+          "narrow": {
+            "other": "{0} min"
+          },
+          "perUnit": {
+            "long": "{0} min\u016bt\u0113",
+            "narrow": "{0}/min",
+            "short": "{0}/min"
+          },
+          "short": {
+            "other": "{0} min"
+          }
+        },
+        "month": {
+          "long": {
+            "one": "{0} m\u0113nesis",
+            "other": "{0} m\u0113ne\u0161i",
+            "zero": "{0} m\u0113ne\u0161u"
+          },
+          "narrow": {
+            "other": "{0} m."
+          },
+          "perUnit": {
+            "long": "{0} m\u0113nes\u012b",
+            "narrow": "{0}/m.",
+            "short": "{0}/m\u0113n."
+          },
+          "short": {
+            "other": "{0} m\u0113n."
+          }
+        },
+        "ounce": {
+          "long": {
+            "one": "{0} unce",
+            "other": "{0} unces",
+            "zero": "{0} un\u010du"
+          },
+          "narrow": {
+            "other": "{0}oz"
+          },
+          "perUnit": {
+            "long": "{0} uz unci",
+            "narrow": "{0}/unce",
+            "short": "{0}/unce"
+          },
+          "short": {
+            "one": "{0} unce",
+            "other": "{0} unces",
+            "zero": "{0}\u00a0un\u010du"
+          }
+        },
+        "percent": {
+          "long": {
+            "one": "{0} procents",
+            "other": "{0} procenti",
+            "zero": "{0} procentu"
+          },
+          "narrow": {
+            "other": "{0}%"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0}%"
+          }
+        },
+        "petabyte": {
+          "long": {
+            "one": "{0} petabaits",
+            "other": "{0} petabaiti",
+            "zero": "{0} petabaitu"
+          },
+          "narrow": {
+            "other": "{0} PB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} PB"
+          }
+        },
+        "pound": {
+          "long": {
+            "one": "{0} m\u0101rci\u0146a",
+            "other": "{0} m\u0101rci\u0146as",
+            "zero": "{0} m\u0101rci\u0146u"
+          },
+          "narrow": {
+            "other": "{0}lb"
+          },
+          "perUnit": {
+            "long": "{0} uz m\u0101rci\u0146u",
+            "narrow": "{0}/m\u0101rc.",
+            "short": "{0}/lb"
+          },
+          "short": {
+            "other": "{0} lb"
+          }
+        },
+        "second": {
+          "long": {
+            "one": "{0} sekunde",
+            "other": "{0} sekundes",
+            "zero": "{0} sekun\u017eu"
+          },
+          "narrow": {
+            "other": "{0} s"
+          },
+          "perUnit": {
+            "long": "{0} sekund\u0113",
+            "narrow": "{0}/s",
+            "short": "{0}/sek."
+          },
+          "short": {
+            "other": "{0} sek."
+          }
+        },
+        "stone": {
+          "long": {
+            "one": "{0} stouns",
+            "other": "{0} stouni",
+            "zero": "{0}\u00a0stounu"
+          },
+          "narrow": {
+            "other": "{0} st.",
+            "zero": "{0}\u00a0st."
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} stouns",
+            "other": "{0} stouni",
+            "zero": "{0} stounu"
+          }
+        },
+        "terabit": {
+          "long": {
+            "one": "{0} terabits",
+            "other": "{0} terabiti",
+            "zero": "{0} terabitu"
+          },
+          "narrow": {
+            "other": "{0} Tb"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} Tb"
+          }
+        },
+        "terabyte": {
+          "long": {
+            "one": "{0} terabaits",
+            "other": "{0} terabaiti",
+            "zero": "{0} terabaitu"
+          },
+          "narrow": {
+            "other": "{0} TB"
+          },
+          "perUnit": {},
+          "short": {
+            "other": "{0} TB"
+          }
+        },
+        "week": {
+          "long": {
+            "one": "{0} ned\u0113\u013ca",
+            "other": "{0} ned\u0113\u013cas",
+            "zero": "{0} ned\u0113\u013cu"
+          },
+          "narrow": {
+            "other": "{0} n."
+          },
+          "perUnit": {
+            "long": "{0} ned\u0113\u013c\u0101",
+            "narrow": "{0}/n.",
+            "short": "{0}/ned."
+          },
+          "short": {
+            "other": "{0} ned."
+          }
+        },
+        "yard": {
+          "long": {
+            "one": "{0} jards",
+            "other": "{0} jardi",
+            "zero": "{0} jardu"
+          },
+          "narrow": {
+            "other": "{0}yd"
+          },
+          "perUnit": {},
+          "short": {
+            "one": "{0} jards",
+            "other": "{0} jardi"
+          }
+        },
+        "year": {
+          "long": {
+            "one": "{0} gads",
+            "other": "{0} gadi",
+            "zero": "{0} gadu"
+          },
+          "narrow": {
+            "other": "{0} g."
+          },
+          "perUnit": {
+            "long": "{0} gad\u0101",
+            "narrow": "{0}/g.",
+            "short": "{0}/g."
+          },
+          "short": {
+            "other": "{0} g."
+          }
+        }
+      }
+    }
+  },
+  "locale": "lv"
+}

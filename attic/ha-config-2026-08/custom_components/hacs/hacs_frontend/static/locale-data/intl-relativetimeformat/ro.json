@@ -1,0 +1,356 @@
+{
+  "data": {
+    "day": {
+      "-1": "ieri",
+      "-2": "alalt\u0103ieri",
+      "0": "azi",
+      "1": "m\u00e2ine",
+      "2": "poim\u00e2ine",
+      "future": {
+        "few": "peste {0} zile",
+        "one": "peste {0} zi",
+        "other": "peste {0} de zile"
+      },
+      "past": {
+        "few": "acum {0} zile",
+        "one": "acum {0} zi",
+        "other": "acum {0} de zile"
+      }
+    },
+    "day-narrow": {
+      "-1": "ieri",
+      "-2": "alalt\u0103ieri",
+      "0": "azi",
+      "1": "m\u00e2ine",
+      "2": "poim\u00e2ine",
+      "future": {
+        "few": "+{0} zile",
+        "one": "+{0} zi",
+        "other": "+{0} zile"
+      },
+      "past": {
+        "few": "-{0} zile",
+        "one": "-{0} zi",
+        "other": "-{0} zile"
+      }
+    },
+    "day-short": {
+      "-1": "ieri",
+      "-2": "alalt\u0103ieri",
+      "0": "azi",
+      "1": "m\u00e2ine",
+      "2": "poim\u00e2ine",
+      "future": {
+        "few": "peste {0} zile",
+        "one": "peste {0} zi",
+        "other": "peste {0} de zile"
+      },
+      "past": {
+        "few": "acum {0} zile",
+        "one": "acum {0} zi",
+        "other": "acum {0} de zile"
+      }
+    },
+    "hour": {
+      "0": "ora aceasta",
+      "future": {
+        "few": "peste {0} ore",
+        "one": "peste {0} or\u0103",
+        "other": "peste {0} de ore"
+      },
+      "past": {
+        "few": "acum {0} ore",
+        "one": "acum {0} or\u0103",
+        "other": "acum {0} de ore"
+      }
+    },
+    "hour-narrow": {
+      "0": "ora aceasta",
+      "future": {
+        "few": "+{0} h",
+        "one": "+{0} h",
+        "other": "+{0} h"
+      },
+      "past": {
+        "few": "-{0} h",
+        "one": "-{0} h",
+        "other": "-{0} h"
+      }
+    },
+    "hour-short": {
+      "0": "ora aceasta",
+      "future": {
+        "few": "peste {0} h",
+        "one": "peste {0} h",
+        "other": "peste {0} h"
+      },
+      "past": {
+        "few": "acum {0} h",
+        "one": "acum {0} h",
+        "other": "acum {0} h"
+      }
+    },
+    "minute": {
+      "0": "minutul acesta",
+      "future": {
+        "few": "peste {0} minute",
+        "one": "peste {0} minut",
+        "other": "peste {0} de minute"
+      },
+      "past": {
+        "few": "acum {0} minute",
+        "one": "acum {0} minut",
+        "other": "acum {0} de minute"
+      }
+    },
+    "minute-narrow": {
+      "0": "minutul acesta",
+      "future": {
+        "few": "+{0} m",
+        "one": "+{0} m",
+        "other": "+{0} m"
+      },
+      "past": {
+        "few": "-{0} m",
+        "one": "-{0} m",
+        "other": "-{0} m"
+      }
+    },
+    "minute-short": {
+      "0": "minutul acesta",
+      "future": {
+        "few": "peste {0} min.",
+        "one": "peste {0} min.",
+        "other": "peste {0} min."
+      },
+      "past": {
+        "few": "acum {0} min.",
+        "one": "acum {0} min.",
+        "other": "acum {0} min."
+      }
+    },
+    "month": {
+      "-1": "luna trecut\u0103",
+      "0": "luna aceasta",
+      "1": "luna viitoare",
+      "future": {
+        "few": "peste {0} luni",
+        "one": "peste {0} lun\u0103",
+        "other": "peste {0} de luni"
+      },
+      "past": {
+        "few": "acum {0} luni",
+        "one": "acum {0} lun\u0103",
+        "other": "acum {0} de luni"
+      }
+    },
+    "month-narrow": {
+      "-1": "luna trecut\u0103",
+      "0": "luna aceasta",
+      "1": "luna viitoare",
+      "future": {
+        "few": "+{0} luni",
+        "one": "+{0} lun\u0103",
+        "other": "+{0} luni"
+      },
+      "past": {
+        "few": "-{0} luni",
+        "one": "-{0} lun\u0103",
+        "other": "-{0} luni"
+      }
+    },
+    "month-short": {
+      "-1": "luna trecut\u0103",
+      "0": "luna aceasta",
+      "1": "luna viitoare",
+      "future": {
+        "few": "peste {0} luni",
+        "one": "peste {0} lun\u0103",
+        "other": "peste {0} luni"
+      },
+      "past": {
+        "few": "acum {0} luni",
+        "one": "acum {0} lun\u0103",
+        "other": "acum {0} luni"
+      }
+    },
+    "nu": [
+      "latn"
+    ],
+    "quarter": {
+      "-1": "trimestrul trecut",
+      "0": "trimestrul acesta",
+      "1": "trimestrul viitor",
+      "future": {
+        "few": "peste {0} trimestre",
+        "one": "peste {0} trimestru",
+        "other": "peste {0} de trimestre"
+      },
+      "past": {
+        "few": "acum {0} trimestre",
+        "one": "acum {0} trimestru",
+        "other": "acum {0} de trimestre"
+      }
+    },
+    "quarter-narrow": {
+      "-1": "trim. trecut",
+      "0": "trim. acesta",
+      "1": "trim. viitor",
+      "future": {
+        "few": "+{0} trim.",
+        "one": "+{0} trim.",
+        "other": "+{0} trim."
+      },
+      "past": {
+        "few": "-{0} trim.",
+        "one": "-{0} trim.",
+        "other": "-{0} trim."
+      }
+    },
+    "quarter-short": {
+      "-1": "trim. trecut",
+      "0": "trim. acesta",
+      "1": "trim. viitor",
+      "future": {
+        "few": "peste {0} trim.",
+        "one": "peste {0} trim.",
+        "other": "peste {0} trim."
+      },
+      "past": {
+        "few": "acum {0} trim.",
+        "one": "acum {0} trim.",
+        "other": "acum {0} trim."
+      }
+    },
+    "second": {
+      "0": "acum",
+      "future": {
+        "few": "peste {0} secunde",
+        "one": "peste {0} secund\u0103",
+        "other": "peste {0} de secunde"
+      },
+      "past": {
+        "few": "acum {0} secunde",
+        "one": "acum {0} secund\u0103",
+        "other": "acum {0} de secunde"
+      }
+    },
+    "second-narrow": {
+      "0": "acum",
+      "future": {
+        "few": "+{0} s",
+        "one": "+{0} s",
+        "other": "+{0} s"
+      },
+      "past": {
+        "few": "-{0} s",
+        "one": "-{0} s",
+        "other": "-{0} s"
+      }
+    },
+    "second-short": {
+      "0": "acum",
+      "future": {
+        "few": "peste {0} sec.",
+        "one": "peste {0} sec.",
+        "other": "peste {0} sec."
+      },
+      "past": {
+        "few": "acum {0} sec.",
+        "one": "acum {0} sec.",
+        "other": "acum {0} sec."
+      }
+    },
+    "week": {
+      "-1": "s\u0103pt\u0103m\u00e2na trecut\u0103",
+      "0": "s\u0103pt\u0103m\u00e2na aceasta",
+      "1": "s\u0103pt\u0103m\u00e2na viitoare",
+      "future": {
+        "few": "peste {0} s\u0103pt\u0103m\u00e2ni",
+        "one": "peste {0} s\u0103pt\u0103m\u00e2n\u0103",
+        "other": "peste {0} de s\u0103pt\u0103m\u00e2ni"
+      },
+      "past": {
+        "few": "acum {0} s\u0103pt\u0103m\u00e2ni",
+        "one": "acum {0} s\u0103pt\u0103m\u00e2n\u0103",
+        "other": "acum {0} de s\u0103pt\u0103m\u00e2ni"
+      }
+    },
+    "week-narrow": {
+      "-1": "s\u0103pt. trecut\u0103",
+      "0": "s\u0103pt. aceasta",
+      "1": "s\u0103pt. viitoare",
+      "future": {
+        "few": "+{0} s\u0103pt.",
+        "one": "+{0} s\u0103pt.",
+        "other": "+{0} s\u0103pt."
+      },
+      "past": {
+        "few": "-{0} s\u0103pt.",
+        "one": "-{0} s\u0103pt.",
+        "other": "-{0} s\u0103pt."
+      }
+    },
+    "week-short": {
+      "-1": "s\u0103pt. trecut\u0103",
+      "0": "s\u0103pt. aceasta",
+      "1": "s\u0103pt. viitoare",
+      "future": {
+        "few": "peste {0} s\u0103pt.",
+        "one": "peste {0} s\u0103pt.",
+        "other": "peste {0} s\u0103pt."
+      },
+      "past": {
+        "few": "acum {0} s\u0103pt.",
+        "one": "acum {0} s\u0103pt.",
+        "other": "acum {0} s\u0103pt."
+      }
+    },
+    "year": {
+      "-1": "anul trecut",
+      "0": "anul acesta",
+      "1": "anul viitor",
+      "future": {
+        "few": "peste {0} ani",
+        "one": "peste {0} an",
+        "other": "peste {0} de ani"
+      },
+      "past": {
+        "few": "acum {0} ani",
+        "one": "acum {0} an",
+        "other": "acum {0} de ani"
+      }
+    },
+    "year-narrow": {
+      "-1": "anul trecut",
+      "0": "anul acesta",
+      "1": "anul viitor",
+      "future": {
+        "few": "+{0} ani",
+        "one": "+{0} an",
+        "other": "+{0} ani"
+      },
+      "past": {
+        "few": "-{0} ani",
+        "one": "-{0} an",
+        "other": "-{0} ani"
+      }
+    },
+    "year-short": {
+      "-1": "anul trecut",
+      "0": "anul acesta",
+      "1": "anul viitor",
+      "future": {
+        "few": "peste {0} ani",
+        "one": "peste {0} an",
+        "other": "peste {0} de ani"
+      },
+      "past": {
+        "few": "acum {0} ani",
+        "one": "acum {0} an",
+        "other": "acum {0} de ani"
+      }
+    }
+  },
+  "locale": "ro"
+}

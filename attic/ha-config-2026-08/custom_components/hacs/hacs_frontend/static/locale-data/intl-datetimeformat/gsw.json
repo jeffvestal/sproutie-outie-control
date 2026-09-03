@@ -1,0 +1,1638 @@
+{
+  "data": {
+    "am": "vorm.",
+    "ca": [
+      "gregory"
+    ],
+    "dateFormat": {
+      "full": "EEEE, d. MMMM y",
+      "long": "d. MMMM y",
+      "medium": "dd.MM.y",
+      "short": "dd.MM.yy"
+    },
+    "dateTimeFormat": {
+      "full": "{1} {0}",
+      "long": "{1} {0}",
+      "medium": "{1} {0}",
+      "short": "{1} {0}"
+    },
+    "era": {
+      "long": {
+        "AD": "n. Chr.",
+        "BC": "v. Chr."
+      },
+      "narrow": {
+        "AD": "n. Chr.",
+        "BC": "v. Chr."
+      },
+      "short": {
+        "AD": "n. Chr.",
+        "BC": "v. Chr."
+      }
+    },
+    "formats": {
+      "gregory": {
+        "Bh": "h B",
+        "Bhm": "h:mm B",
+        "Bhms": "h:mm:ss B",
+        "E": "ccc",
+        "E Bh": "ccc h B",
+        "E Bhm": "ccc h:mm B",
+        "E Bhms": "ccc h:mm:ss B",
+        "E H": "ccc H",
+        "E HH:mm": "ccc HH:mm",
+        "E HH:mm:ss": "ccc HH:mm:ss",
+        "E HH:mm:ss z": "ccc HH:mm:ss z",
+        "E HH:mm:ss zzzz": "ccc HH:mm:ss zzzz",
+        "E Hm": "ccc HH:mm",
+        "E Hms": "ccc HH:mm:ss",
+        "E Hmsv": "ccc HH:mm:ss v",
+        "E Hmv": "ccc HH:mm v",
+        "E h": "ccc h\u202fa",
+        "E hm": "ccc h:mm a",
+        "E hms": "ccc h:mm:ss a",
+        "E hmsv": "ccc h:mm:ss a v",
+        "E hmv": "ccc h:mm a v",
+        "E mmss": "ccc mm:ss",
+        "E ms": "ccc mm:ss",
+        "EBhm": "E h:mm B",
+        "EBhms": "E h:mm:ss B",
+        "EEEE, d. MMMM y": "EEEE, d. MMMM y",
+        "EEEE, d. MMMM y Bh": "EEEE, d. MMMM y h B",
+        "EEEE, d. MMMM y Bhm": "EEEE, d. MMMM y h:mm B",
+        "EEEE, d. MMMM y Bhms": "EEEE, d. MMMM y h:mm:ss B",
+        "EEEE, d. MMMM y H": "EEEE, d. MMMM y H",
+        "EEEE, d. MMMM y HH:mm": "EEEE, d. MMMM y HH:mm",
+        "EEEE, d. MMMM y HH:mm:ss": "EEEE, d. MMMM y HH:mm:ss",
+        "EEEE, d. MMMM y HH:mm:ss z": "EEEE, d. MMMM y HH:mm:ss z",
+        "EEEE, d. MMMM y HH:mm:ss zzzz": "EEEE, d. MMMM y HH:mm:ss zzzz",
+        "EEEE, d. MMMM y Hm": "EEEE, d. MMMM y HH:mm",
+        "EEEE, d. MMMM y Hms": "EEEE, d. MMMM y HH:mm:ss",
+        "EEEE, d. MMMM y Hmsv": "EEEE, d. MMMM y HH:mm:ss v",
+        "EEEE, d. MMMM y Hmv": "EEEE, d. MMMM y HH:mm v",
+        "EEEE, d. MMMM y h": "EEEE, d. MMMM y h\u202fa",
+        "EEEE, d. MMMM y hm": "EEEE, d. MMMM y h:mm a",
+        "EEEE, d. MMMM y hms": "EEEE, d. MMMM y h:mm:ss a",
+        "EEEE, d. MMMM y hmsv": "EEEE, d. MMMM y h:mm:ss a v",
+        "EEEE, d. MMMM y hmv": "EEEE, d. MMMM y h:mm a v",
+        "EEEE, d. MMMM y mmss": "EEEE, d. MMMM y mm:ss",
+        "EEEE, d. MMMM y ms": "EEEE, d. MMMM y mm:ss",
+        "EHm": "E HH:mm",
+        "EHms": "E HH:mm:ss",
+        "Ed": "E d.",
+        "Ed Bh": "E d. h B",
+        "Ed Bhm": "E d. h:mm B",
+        "Ed Bhms": "E d. h:mm:ss B",
+        "Ed H": "E d. H",
+        "Ed HH:mm": "E d. HH:mm",
+        "Ed HH:mm:ss": "E d. HH:mm:ss",
+        "Ed HH:mm:ss z": "E d. HH:mm:ss z",
+        "Ed HH:mm:ss zzzz": "E d. HH:mm:ss zzzz",
+        "Ed Hm": "E d. HH:mm",
+        "Ed Hms": "E d. HH:mm:ss",
+        "Ed Hmsv": "E d. HH:mm:ss v",
+        "Ed Hmv": "E d. HH:mm v",
+        "Ed h": "E d. h\u202fa",
+        "Ed hm": "E d. h:mm a",
+        "Ed hms": "E d. h:mm:ss a",
+        "Ed hmsv": "E d. h:mm:ss a v",
+        "Ed hmv": "E d. h:mm a v",
+        "Ed mmss": "E d. mm:ss",
+        "Ed ms": "E d. mm:ss",
+        "Ehm": "E h:mm a",
+        "Ehms": "E h:mm:ss a",
+        "Gy": "G y",
+        "Gy Bh": "G y h B",
+        "Gy Bhm": "G y h:mm B",
+        "Gy Bhms": "G y h:mm:ss B",
+        "Gy H": "G y H",
+        "Gy HH:mm": "G y HH:mm",
+        "Gy HH:mm:ss": "G y HH:mm:ss",
+        "Gy HH:mm:ss z": "G y HH:mm:ss z",
+        "Gy HH:mm:ss zzzz": "G y HH:mm:ss zzzz",
+        "Gy Hm": "G y HH:mm",
+        "Gy Hms": "G y HH:mm:ss",
+        "Gy Hmsv": "G y HH:mm:ss v",
+        "Gy Hmv": "G y HH:mm v",
+        "Gy h": "G y h\u202fa",
+        "Gy hm": "G y h:mm a",
+        "Gy hms": "G y h:mm:ss a",
+        "Gy hmsv": "G y h:mm:ss a v",
+        "Gy hmv": "G y h:mm a v",
+        "Gy mmss": "G y mm:ss",
+        "Gy ms": "G y mm:ss",
+        "GyMMM": "G y MMM",
+        "GyMMM Bh": "G y MMM h B",
+        "GyMMM Bhm": "G y MMM h:mm B",
+        "GyMMM Bhms": "G y MMM h:mm:ss B",
+        "GyMMM H": "G y MMM H",
+        "GyMMM HH:mm": "G y MMM HH:mm",
+        "GyMMM HH:mm:ss": "G y MMM HH:mm:ss",
+        "GyMMM HH:mm:ss z": "G y MMM HH:mm:ss z",
+        "GyMMM HH:mm:ss zzzz": "G y MMM HH:mm:ss zzzz",
+        "GyMMM Hm": "G y MMM HH:mm",
+        "GyMMM Hms": "G y MMM HH:mm:ss",
+        "GyMMM Hmsv": "G y MMM HH:mm:ss v",
+        "GyMMM Hmv": "G y MMM HH:mm v",
+        "GyMMM h": "G y MMM h\u202fa",
+        "GyMMM hm": "G y MMM h:mm a",
+        "GyMMM hms": "G y MMM h:mm:ss a",
+        "GyMMM hmsv": "G y MMM h:mm:ss a v",
+        "GyMMM hmv": "G y MMM h:mm a v",
+        "GyMMM mmss": "G y MMM mm:ss",
+        "GyMMM ms": "G y MMM mm:ss",
+        "GyMMMEd": "G y MMM d, E",
+        "GyMMMEd Bh": "G y MMM d, E h B",
+        "GyMMMEd Bhm": "G y MMM d, E h:mm B",
+        "GyMMMEd Bhms": "G y MMM d, E h:mm:ss B",
+        "GyMMMEd H": "G y MMM d, E H",
+        "GyMMMEd HH:mm": "G y MMM d, E HH:mm",
+        "GyMMMEd HH:mm:ss": "G y MMM d, E HH:mm:ss",
+        "GyMMMEd HH:mm:ss z": "G y MMM d, E HH:mm:ss z",
+        "GyMMMEd HH:mm:ss zzzz": "G y MMM d, E HH:mm:ss zzzz",
+        "GyMMMEd Hm": "G y MMM d, E HH:mm",
+        "GyMMMEd Hms": "G y MMM d, E HH:mm:ss",
+        "GyMMMEd Hmsv": "G y MMM d, E HH:mm:ss v",
+        "GyMMMEd Hmv": "G y MMM d, E HH:mm v",
+        "GyMMMEd h": "G y MMM d, E h\u202fa",
+        "GyMMMEd hm": "G y MMM d, E h:mm a",
+        "GyMMMEd hms": "G y MMM d, E h:mm:ss a",
+        "GyMMMEd hmsv": "G y MMM d, E h:mm:ss a v",
+        "GyMMMEd hmv": "G y MMM d, E h:mm a v",
+        "GyMMMEd mmss": "G y MMM d, E mm:ss",
+        "GyMMMEd ms": "G y MMM d, E mm:ss",
+        "GyMMMd": "G y MMM d",
+        "GyMMMd Bh": "G y MMM d h B",
+        "GyMMMd Bhm": "G y MMM d h:mm B",
+        "GyMMMd Bhms": "G y MMM d h:mm:ss B",
+        "GyMMMd H": "G y MMM d H",
+        "GyMMMd HH:mm": "G y MMM d HH:mm",
+        "GyMMMd HH:mm:ss": "G y MMM d HH:mm:ss",
+        "GyMMMd HH:mm:ss z": "G y MMM d HH:mm:ss z",
+        "GyMMMd HH:mm:ss zzzz": "G y MMM d HH:mm:ss zzzz",
+        "GyMMMd Hm": "G y MMM d HH:mm",
+        "GyMMMd Hms": "G y MMM d HH:mm:ss",
+        "GyMMMd Hmsv": "G y MMM d HH:mm:ss v",
+        "GyMMMd Hmv": "G y MMM d HH:mm v",
+        "GyMMMd h": "G y MMM d h\u202fa",
+        "GyMMMd hm": "G y MMM d h:mm a",
+        "GyMMMd hms": "G y MMM d h:mm:ss a",
+        "GyMMMd hmsv": "G y MMM d h:mm:ss a v",
+        "GyMMMd hmv": "G y MMM d h:mm a v",
+        "GyMMMd mmss": "G y MMM d mm:ss",
+        "GyMMMd ms": "G y MMM d mm:ss",
+        "GyMd": "GGGGG y-MM-dd",
+        "GyMd Bh": "GGGGG y-MM-dd h B",
+        "GyMd Bhm": "GGGGG y-MM-dd h:mm B",
+        "GyMd Bhms": "GGGGG y-MM-dd h:mm:ss B",
+        "GyMd H": "GGGGG y-MM-dd H",
+        "GyMd HH:mm": "GGGGG y-MM-dd HH:mm",
+        "GyMd HH:mm:ss": "GGGGG y-MM-dd HH:mm:ss",
+        "GyMd HH:mm:ss z": "GGGGG y-MM-dd HH:mm:ss z",
+        "GyMd HH:mm:ss zzzz": "GGGGG y-MM-dd HH:mm:ss zzzz",
+        "GyMd Hm": "GGGGG y-MM-dd HH:mm",
+        "GyMd Hms": "GGGGG y-MM-dd HH:mm:ss",
+        "GyMd Hmsv": "GGGGG y-MM-dd HH:mm:ss v",
+        "GyMd Hmv": "GGGGG y-MM-dd HH:mm v",
+        "GyMd h": "GGGGG y-MM-dd h\u202fa",
+        "GyMd hm": "GGGGG y-MM-dd h:mm a",
+        "GyMd hms": "GGGGG y-MM-dd h:mm:ss a",
+        "GyMd hmsv": "GGGGG y-MM-dd h:mm:ss a v",
+        "GyMd hmv": "GGGGG y-MM-dd h:mm a v",
+        "GyMd mmss": "GGGGG y-MM-dd mm:ss",
+        "GyMd ms": "GGGGG y-MM-dd mm:ss",
+        "H": "H",
+        "HH:mm": "HH:mm",
+        "HH:mm:ss": "HH:mm:ss",
+        "HH:mm:ss z": "HH:mm:ss z",
+        "HH:mm:ss zzzz": "HH:mm:ss zzzz",
+        "Hm": "HH:mm",
+        "Hms": "HH:mm:ss",
+        "Hmsv": "HH:mm:ss v",
+        "Hmv": "HH:mm v",
+        "M": "L",
+        "M Bh": "L h B",
+        "M Bhm": "L h:mm B",
+        "M Bhms": "L h:mm:ss B",
+        "M H": "L H",
+        "M HH:mm": "L HH:mm",
+        "M HH:mm:ss": "L HH:mm:ss",
+        "M HH:mm:ss z": "L HH:mm:ss z",
+        "M HH:mm:ss zzzz": "L HH:mm:ss zzzz",
+        "M Hm": "L HH:mm",
+        "M Hms": "L HH:mm:ss",
+        "M Hmsv": "L HH:mm:ss v",
+        "M Hmv": "L HH:mm v",
+        "M h": "L h\u202fa",
+        "M hm": "L h:mm a",
+        "M hms": "L h:mm:ss a",
+        "M hmsv": "L h:mm:ss a v",
+        "M hmv": "L h:mm a v",
+        "M mmss": "L mm:ss",
+        "M ms": "L mm:ss",
+        "MEd": "E, d.M.",
+        "MEd Bh": "E, d.M. h B",
+        "MEd Bhm": "E, d.M. h:mm B",
+        "MEd Bhms": "E, d.M. h:mm:ss B",
+        "MEd H": "E, d.M. H",
+        "MEd HH:mm": "E, d.M. HH:mm",
+        "MEd HH:mm:ss": "E, d.M. HH:mm:ss",
+        "MEd HH:mm:ss z": "E, d.M. HH:mm:ss z",
+        "MEd HH:mm:ss zzzz": "E, d.M. HH:mm:ss zzzz",
+        "MEd Hm": "E, d.M. HH:mm",
+        "MEd Hms": "E, d.M. HH:mm:ss",
+        "MEd Hmsv": "E, d.M. HH:mm:ss v",
+        "MEd Hmv": "E, d.M. HH:mm v",
+        "MEd h": "E, d.M. h\u202fa",
+        "MEd hm": "E, d.M. h:mm a",
+        "MEd hms": "E, d.M. h:mm:ss a",
+        "MEd hmsv": "E, d.M. h:mm:ss a v",
+        "MEd hmv": "E, d.M. h:mm a v",
+        "MEd mmss": "E, d.M. mm:ss",
+        "MEd ms": "E, d.M. mm:ss",
+        "MMM": "LLL",
+        "MMM Bh": "LLL h B",
+        "MMM Bhm": "LLL h:mm B",
+        "MMM Bhms": "LLL h:mm:ss B",
+        "MMM H": "LLL H",
+        "MMM HH:mm": "LLL HH:mm",
+        "MMM HH:mm:ss": "LLL HH:mm:ss",
+        "MMM HH:mm:ss z": "LLL HH:mm:ss z",
+        "MMM HH:mm:ss zzzz": "LLL HH:mm:ss zzzz",
+        "MMM Hm": "LLL HH:mm",
+        "MMM Hms": "LLL HH:mm:ss",
+        "MMM Hmsv": "LLL HH:mm:ss v",
+        "MMM Hmv": "LLL HH:mm v",
+        "MMM h": "LLL h\u202fa",
+        "MMM hm": "LLL h:mm a",
+        "MMM hms": "LLL h:mm:ss a",
+        "MMM hmsv": "LLL h:mm:ss a v",
+        "MMM hmv": "LLL h:mm a v",
+        "MMM mmss": "LLL mm:ss",
+        "MMM ms": "LLL mm:ss",
+        "MMMEd": "E d. MMM",
+        "MMMEd Bh": "E d. MMM h B",
+        "MMMEd Bhm": "E d. MMM h:mm B",
+        "MMMEd Bhms": "E d. MMM h:mm:ss B",
+        "MMMEd H": "E d. MMM H",
+        "MMMEd HH:mm": "E d. MMM HH:mm",
+        "MMMEd HH:mm:ss": "E d. MMM HH:mm:ss",
+        "MMMEd HH:mm:ss z": "E d. MMM HH:mm:ss z",
+        "MMMEd HH:mm:ss zzzz": "E d. MMM HH:mm:ss zzzz",
+        "MMMEd Hm": "E d. MMM HH:mm",
+        "MMMEd Hms": "E d. MMM HH:mm:ss",
+        "MMMEd Hmsv": "E d. MMM HH:mm:ss v",
+        "MMMEd Hmv": "E d. MMM HH:mm v",
+        "MMMEd h": "E d. MMM h\u202fa",
+        "MMMEd hm": "E d. MMM h:mm a",
+        "MMMEd hms": "E d. MMM h:mm:ss a",
+        "MMMEd hmsv": "E d. MMM h:mm:ss a v",
+        "MMMEd hmv": "E d. MMM h:mm a v",
+        "MMMEd mmss": "E d. MMM mm:ss",
+        "MMMEd ms": "E d. MMM mm:ss",
+        "MMMMEd": "E d. MMMM",
+        "MMMMEd Bh": "E d. MMMM h B",
+        "MMMMEd Bhm": "E d. MMMM h:mm B",
+        "MMMMEd Bhms": "E d. MMMM h:mm:ss B",
+        "MMMMEd H": "E d. MMMM H",
+        "MMMMEd HH:mm": "E d. MMMM HH:mm",
+        "MMMMEd HH:mm:ss": "E d. MMMM HH:mm:ss",
+        "MMMMEd HH:mm:ss z": "E d. MMMM HH:mm:ss z",
+        "MMMMEd HH:mm:ss zzzz": "E d. MMMM HH:mm:ss zzzz",
+        "MMMMEd Hm": "E d. MMMM HH:mm",
+        "MMMMEd Hms": "E d. MMMM HH:mm:ss",
+        "MMMMEd Hmsv": "E d. MMMM HH:mm:ss v",
+        "MMMMEd Hmv": "E d. MMMM HH:mm v",
+        "MMMMEd h": "E d. MMMM h\u202fa",
+        "MMMMEd hm": "E d. MMMM h:mm a",
+        "MMMMEd hms": "E d. MMMM h:mm:ss a",
+        "MMMMEd hmsv": "E d. MMMM h:mm:ss a v",
+        "MMMMEd hmv": "E d. MMMM h:mm a v",
+        "MMMMEd mmss": "E d. MMMM mm:ss",
+        "MMMMEd ms": "E d. MMMM mm:ss",
+        "MMMMd": "d. MMMM",
+        "MMMMd Bh": "d. MMMM h B",
+        "MMMMd Bhm": "d. MMMM h:mm B",
+        "MMMMd Bhms": "d. MMMM h:mm:ss B",
+        "MMMMd H": "d. MMMM H",
+        "MMMMd HH:mm": "d. MMMM HH:mm",
+        "MMMMd HH:mm:ss": "d. MMMM HH:mm:ss",
+        "MMMMd HH:mm:ss z": "d. MMMM HH:mm:ss z",
+        "MMMMd HH:mm:ss zzzz": "d. MMMM HH:mm:ss zzzz",
+        "MMMMd Hm": "d. MMMM HH:mm",
+        "MMMMd Hms": "d. MMMM HH:mm:ss",
+        "MMMMd Hmsv": "d. MMMM HH:mm:ss v",
+        "MMMMd Hmv": "d. MMMM HH:mm v",
+        "MMMMd h": "d. MMMM h\u202fa",
+        "MMMMd hm": "d. MMMM h:mm a",
+        "MMMMd hms": "d. MMMM h:mm:ss a",
+        "MMMMd hmsv": "d. MMMM h:mm:ss a v",
+        "MMMMd hmv": "d. MMMM h:mm a v",
+        "MMMMd mmss": "d. MMMM mm:ss",
+        "MMMMd ms": "d. MMMM mm:ss",
+        "MMMd": "d. MMM",
+        "MMMd Bh": "d. MMM h B",
+        "MMMd Bhm": "d. MMM h:mm B",
+        "MMMd Bhms": "d. MMM h:mm:ss B",
+        "MMMd H": "d. MMM H",
+        "MMMd HH:mm": "d. MMM HH:mm",
+        "MMMd HH:mm:ss": "d. MMM HH:mm:ss",
+        "MMMd HH:mm:ss z": "d. MMM HH:mm:ss z",
+        "MMMd HH:mm:ss zzzz": "d. MMM HH:mm:ss zzzz",
+        "MMMd Hm": "d. MMM HH:mm",
+        "MMMd Hms": "d. MMM HH:mm:ss",
+        "MMMd Hmsv": "d. MMM HH:mm:ss v",
+        "MMMd Hmv": "d. MMM HH:mm v",
+        "MMMd h": "d. MMM h\u202fa",
+        "MMMd hm": "d. MMM h:mm a",
+        "MMMd hms": "d. MMM h:mm:ss a",
+        "MMMd hmsv": "d. MMM h:mm:ss a v",
+        "MMMd hmv": "d. MMM h:mm a v",
+        "MMMd mmss": "d. MMM mm:ss",
+        "MMMd ms": "d. MMM mm:ss",
+        "MMd": "d.MM.",
+        "MMd Bh": "d.MM. h B",
+        "MMd Bhm": "d.MM. h:mm B",
+        "MMd Bhms": "d.MM. h:mm:ss B",
+        "MMd H": "d.MM. H",
+        "MMd HH:mm": "d.MM. HH:mm",
+        "MMd HH:mm:ss": "d.MM. HH:mm:ss",
+        "MMd HH:mm:ss z": "d.MM. HH:mm:ss z",
+        "MMd HH:mm:ss zzzz": "d.MM. HH:mm:ss zzzz",
+        "MMd Hm": "d.MM. HH:mm",
+        "MMd Hms": "d.MM. HH:mm:ss",
+        "MMd Hmsv": "d.MM. HH:mm:ss v",
+        "MMd Hmv": "d.MM. HH:mm v",
+        "MMd h": "d.MM. h\u202fa",
+        "MMd hm": "d.MM. h:mm a",
+        "MMd hms": "d.MM. h:mm:ss a",
+        "MMd hmsv": "d.MM. h:mm:ss a v",
+        "MMd hmv": "d.MM. h:mm a v",
+        "MMd mmss": "d.MM. mm:ss",
+        "MMd ms": "d.MM. mm:ss",
+        "MMdd": "dd.MM.",
+        "MMdd Bh": "dd.MM. h B",
+        "MMdd Bhm": "dd.MM. h:mm B",
+        "MMdd Bhms": "dd.MM. h:mm:ss B",
+        "MMdd H": "dd.MM. H",
+        "MMdd HH:mm": "dd.MM. HH:mm",
+        "MMdd HH:mm:ss": "dd.MM. HH:mm:ss",
+        "MMdd HH:mm:ss z": "dd.MM. HH:mm:ss z",
+        "MMdd HH:mm:ss zzzz": "dd.MM. HH:mm:ss zzzz",
+        "MMdd Hm": "dd.MM. HH:mm",
+        "MMdd Hms": "dd.MM. HH:mm:ss",
+        "MMdd Hmsv": "dd.MM. HH:mm:ss v",
+        "MMdd Hmv": "dd.MM. HH:mm v",
+        "MMdd h": "dd.MM. h\u202fa",
+        "MMdd hm": "dd.MM. h:mm a",
+        "MMdd hms": "dd.MM. h:mm:ss a",
+        "MMdd hmsv": "dd.MM. h:mm:ss a v",
+        "MMdd hmv": "dd.MM. h:mm a v",
+        "MMdd mmss": "dd.MM. mm:ss",
+        "MMdd ms": "dd.MM. mm:ss",
+        "Md": "d.M.",
+        "Md Bh": "d.M. h B",
+        "Md Bhm": "d.M. h:mm B",
+        "Md Bhms": "d.M. h:mm:ss B",
+        "Md H": "d.M. H",
+        "Md HH:mm": "d.M. HH:mm",
+        "Md HH:mm:ss": "d.M. HH:mm:ss",
+        "Md HH:mm:ss z": "d.M. HH:mm:ss z",
+        "Md HH:mm:ss zzzz": "d.M. HH:mm:ss zzzz",
+        "Md Hm": "d.M. HH:mm",
+        "Md Hms": "d.M. HH:mm:ss",
+        "Md Hmsv": "d.M. HH:mm:ss v",
+        "Md Hmv": "d.M. HH:mm v",
+        "Md h": "d.M. h\u202fa",
+        "Md hm": "d.M. h:mm a",
+        "Md hms": "d.M. h:mm:ss a",
+        "Md hmsv": "d.M. h:mm:ss a v",
+        "Md hmv": "d.M. h:mm a v",
+        "Md mmss": "d.M. mm:ss",
+        "Md ms": "d.M. mm:ss",
+        "d": "d",
+        "d Bh": "d h B",
+        "d Bhm": "d h:mm B",
+        "d Bhms": "d h:mm:ss B",
+        "d H": "d H",
+        "d HH:mm": "d HH:mm",
+        "d HH:mm:ss": "d HH:mm:ss",
+        "d HH:mm:ss z": "d HH:mm:ss z",
+        "d HH:mm:ss zzzz": "d HH:mm:ss zzzz",
+        "d Hm": "d HH:mm",
+        "d Hms": "d HH:mm:ss",
+        "d Hmsv": "d HH:mm:ss v",
+        "d Hmv": "d HH:mm v",
+        "d h": "d h\u202fa",
+        "d hm": "d h:mm a",
+        "d hms": "d h:mm:ss a",
+        "d hmsv": "d h:mm:ss a v",
+        "d hmv": "d h:mm a v",
+        "d mmss": "d mm:ss",
+        "d ms": "d mm:ss",
+        "d. MMMM y": "d. MMMM y",
+        "d. MMMM y Bh": "d. MMMM y h B",
+        "d. MMMM y Bhm": "d. MMMM y h:mm B",
+        "d. MMMM y Bhms": "d. MMMM y h:mm:ss B",
+        "d. MMMM y H": "d. MMMM y H",
+        "d. MMMM y HH:mm": "d. MMMM y HH:mm",
+        "d. MMMM y HH:mm:ss": "d. MMMM y HH:mm:ss",
+        "d. MMMM y HH:mm:ss z": "d. MMMM y HH:mm:ss z",
+        "d. MMMM y HH:mm:ss zzzz": "d. MMMM y HH:mm:ss zzzz",
+        "d. MMMM y Hm": "d. MMMM y HH:mm",
+        "d. MMMM y Hms": "d. MMMM y HH:mm:ss",
+        "d. MMMM y Hmsv": "d. MMMM y HH:mm:ss v",
+        "d. MMMM y Hmv": "d. MMMM y HH:mm v",
+        "d. MMMM y h": "d. MMMM y h\u202fa",
+        "d. MMMM y hm": "d. MMMM y h:mm a",
+        "d. MMMM y hms": "d. MMMM y h:mm:ss a",
+        "d. MMMM y hmsv": "d. MMMM y h:mm:ss a v",
+        "d. MMMM y hmv": "d. MMMM y h:mm a v",
+        "d. MMMM y mmss": "d. MMMM y mm:ss",
+        "d. MMMM y ms": "d. MMMM y mm:ss",
+        "dd.MM.y": "dd.MM.y",
+        "dd.MM.y Bh": "dd.MM.y h B",
+        "dd.MM.y Bhm": "dd.MM.y h:mm B",
+        "dd.MM.y Bhms": "dd.MM.y h:mm:ss B",
+        "dd.MM.y H": "dd.MM.y H",
+        "dd.MM.y HH:mm": "dd.MM.y HH:mm",
+        "dd.MM.y HH:mm:ss": "dd.MM.y HH:mm:ss",
+        "dd.MM.y HH:mm:ss z": "dd.MM.y HH:mm:ss z",
+        "dd.MM.y HH:mm:ss zzzz": "dd.MM.y HH:mm:ss zzzz",
+        "dd.MM.y Hm": "dd.MM.y HH:mm",
+        "dd.MM.y Hms": "dd.MM.y HH:mm:ss",
+        "dd.MM.y Hmsv": "dd.MM.y HH:mm:ss v",
+        "dd.MM.y Hmv": "dd.MM.y HH:mm v",
+        "dd.MM.y h": "dd.MM.y h\u202fa",
+        "dd.MM.y hm": "dd.MM.y h:mm a",
+        "dd.MM.y hms": "dd.MM.y h:mm:ss a",
+        "dd.MM.y hmsv": "dd.MM.y h:mm:ss a v",
+        "dd.MM.y hmv": "dd.MM.y h:mm a v",
+        "dd.MM.y mmss": "dd.MM.y mm:ss",
+        "dd.MM.y ms": "dd.MM.y mm:ss",
+        "dd.MM.yy": "dd.MM.yy",
+        "dd.MM.yy Bh": "dd.MM.yy h B",
+        "dd.MM.yy Bhm": "dd.MM.yy h:mm B",
+        "dd.MM.yy Bhms": "dd.MM.yy h:mm:ss B",
+        "dd.MM.yy H": "dd.MM.yy H",
+        "dd.MM.yy HH:mm": "dd.MM.yy HH:mm",
+        "dd.MM.yy HH:mm:ss": "dd.MM.yy HH:mm:ss",
+        "dd.MM.yy HH:mm:ss z": "dd.MM.yy HH:mm:ss z",
+        "dd.MM.yy HH:mm:ss zzzz": "dd.MM.yy HH:mm:ss zzzz",
+        "dd.MM.yy Hm": "dd.MM.yy HH:mm",
+        "dd.MM.yy Hms": "dd.MM.yy HH:mm:ss",
+        "dd.MM.yy Hmsv": "dd.MM.yy HH:mm:ss v",
+        "dd.MM.yy Hmv": "dd.MM.yy HH:mm v",
+        "dd.MM.yy h": "dd.MM.yy h\u202fa",
+        "dd.MM.yy hm": "dd.MM.yy h:mm a",
+        "dd.MM.yy hms": "dd.MM.yy h:mm:ss a",
+        "dd.MM.yy hmsv": "dd.MM.yy h:mm:ss a v",
+        "dd.MM.yy hmv": "dd.MM.yy h:mm a v",
+        "dd.MM.yy mmss": "dd.MM.yy mm:ss",
+        "dd.MM.yy ms": "dd.MM.yy mm:ss",
+        "h": "h\u202fa",
+        "hm": "h:mm a",
+        "hms": "h:mm:ss a",
+        "hmsv": "h:mm:ss a v",
+        "hmv": "h:mm a v",
+        "mmss": "mm:ss",
+        "ms": "mm:ss",
+        "y": "y",
+        "y Bh": "y h B",
+        "y Bhm": "y h:mm B",
+        "y Bhms": "y h:mm:ss B",
+        "y H": "y H",
+        "y HH:mm": "y HH:mm",
+        "y HH:mm:ss": "y HH:mm:ss",
+        "y HH:mm:ss z": "y HH:mm:ss z",
+        "y HH:mm:ss zzzz": "y HH:mm:ss zzzz",
+        "y Hm": "y HH:mm",
+        "y Hms": "y HH:mm:ss",
+        "y Hmsv": "y HH:mm:ss v",
+        "y Hmv": "y HH:mm v",
+        "y h": "y h\u202fa",
+        "y hm": "y h:mm a",
+        "y hms": "y h:mm:ss a",
+        "y hmsv": "y h:mm:ss a v",
+        "y hmv": "y h:mm a v",
+        "y mmss": "y mm:ss",
+        "y ms": "y mm:ss",
+        "yM": "y-M",
+        "yM Bh": "y-M h B",
+        "yM Bhm": "y-M h:mm B",
+        "yM Bhms": "y-M h:mm:ss B",
+        "yM H": "y-M H",
+        "yM HH:mm": "y-M HH:mm",
+        "yM HH:mm:ss": "y-M HH:mm:ss",
+        "yM HH:mm:ss z": "y-M HH:mm:ss z",
+        "yM HH:mm:ss zzzz": "y-M HH:mm:ss zzzz",
+        "yM Hm": "y-M HH:mm",
+        "yM Hms": "y-M HH:mm:ss",
+        "yM Hmsv": "y-M HH:mm:ss v",
+        "yM Hmv": "y-M HH:mm v",
+        "yM h": "y-M h\u202fa",
+        "yM hm": "y-M h:mm a",
+        "yM hms": "y-M h:mm:ss a",
+        "yM hmsv": "y-M h:mm:ss a v",
+        "yM hmv": "y-M h:mm a v",
+        "yM mmss": "y-M mm:ss",
+        "yM ms": "y-M mm:ss",
+        "yMEd": "E, y-M-d",
+        "yMEd Bh": "E, y-M-d h B",
+        "yMEd Bhm": "E, y-M-d h:mm B",
+        "yMEd Bhms": "E, y-M-d h:mm:ss B",
+        "yMEd H": "E, y-M-d H",
+        "yMEd HH:mm": "E, y-M-d HH:mm",
+        "yMEd HH:mm:ss": "E, y-M-d HH:mm:ss",
+        "yMEd HH:mm:ss z": "E, y-M-d HH:mm:ss z",
+        "yMEd HH:mm:ss zzzz": "E, y-M-d HH:mm:ss zzzz",
+        "yMEd Hm": "E, y-M-d HH:mm",
+        "yMEd Hms": "E, y-M-d HH:mm:ss",
+        "yMEd Hmsv": "E, y-M-d HH:mm:ss v",
+        "yMEd Hmv": "E, y-M-d HH:mm v",
+        "yMEd h": "E, y-M-d h\u202fa",
+        "yMEd hm": "E, y-M-d h:mm a",
+        "yMEd hms": "E, y-M-d h:mm:ss a",
+        "yMEd hmsv": "E, y-M-d h:mm:ss a v",
+        "yMEd hmv": "E, y-M-d h:mm a v",
+        "yMEd mmss": "E, y-M-d mm:ss",
+        "yMEd ms": "E, y-M-d mm:ss",
+        "yMM": "MM.y",
+        "yMM Bh": "MM.y h B",
+        "yMM Bhm": "MM.y h:mm B",
+        "yMM Bhms": "MM.y h:mm:ss B",
+        "yMM H": "MM.y H",
+        "yMM HH:mm": "MM.y HH:mm",
+        "yMM HH:mm:ss": "MM.y HH:mm:ss",
+        "yMM HH:mm:ss z": "MM.y HH:mm:ss z",
+        "yMM HH:mm:ss zzzz": "MM.y HH:mm:ss zzzz",
+        "yMM Hm": "MM.y HH:mm",
+        "yMM Hms": "MM.y HH:mm:ss",
+        "yMM Hmsv": "MM.y HH:mm:ss v",
+        "yMM Hmv": "MM.y HH:mm v",
+        "yMM h": "MM.y h\u202fa",
+        "yMM hm": "MM.y h:mm a",
+        "yMM hms": "MM.y h:mm:ss a",
+        "yMM hmsv": "MM.y h:mm:ss a v",
+        "yMM hmv": "MM.y h:mm a v",
+        "yMM mmss": "MM.y mm:ss",
+        "yMM ms": "MM.y mm:ss",
+        "yMMM": "MMM y",
+        "yMMM Bh": "MMM y h B",
+        "yMMM Bhm": "MMM y h:mm B",
+        "yMMM Bhms": "MMM y h:mm:ss B",
+        "yMMM H": "MMM y H",
+        "yMMM HH:mm": "MMM y HH:mm",
+        "yMMM HH:mm:ss": "MMM y HH:mm:ss",
+        "yMMM HH:mm:ss z": "MMM y HH:mm:ss z",
+        "yMMM HH:mm:ss zzzz": "MMM y HH:mm:ss zzzz",
+        "yMMM Hm": "MMM y HH:mm",
+        "yMMM Hms": "MMM y HH:mm:ss",
+        "yMMM Hmsv": "MMM y HH:mm:ss v",
+        "yMMM Hmv": "MMM y HH:mm v",
+        "yMMM h": "MMM y h\u202fa",
+        "yMMM hm": "MMM y h:mm a",
+        "yMMM hms": "MMM y h:mm:ss a",
+        "yMMM hmsv": "MMM y h:mm:ss a v",
+        "yMMM hmv": "MMM y h:mm a v",
+        "yMMM mmss": "MMM y mm:ss",
+        "yMMM ms": "MMM y mm:ss",
+        "yMMMEd": "E, d. MMM y",
+        "yMMMEd Bh": "E, d. MMM y h B",
+        "yMMMEd Bhm": "E, d. MMM y h:mm B",
+        "yMMMEd Bhms": "E, d. MMM y h:mm:ss B",
+        "yMMMEd H": "E, d. MMM y H",
+        "yMMMEd HH:mm": "E, d. MMM y HH:mm",
+        "yMMMEd HH:mm:ss": "E, d. MMM y HH:mm:ss",
+        "yMMMEd HH:mm:ss z": "E, d. MMM y HH:mm:ss z",
+        "yMMMEd HH:mm:ss zzzz": "E, d. MMM y HH:mm:ss zzzz",
+        "yMMMEd Hm": "E, d. MMM y HH:mm",
+        "yMMMEd Hms": "E, d. MMM y HH:mm:ss",
+        "yMMMEd Hmsv": "E, d. MMM y HH:mm:ss v",
+        "yMMMEd Hmv": "E, d. MMM y HH:mm v",
+        "yMMMEd h": "E, d. MMM y h\u202fa",
+        "yMMMEd hm": "E, d. MMM y h:mm a",
+        "yMMMEd hms": "E, d. MMM y h:mm:ss a",
+        "yMMMEd hmsv": "E, d. MMM y h:mm:ss a v",
+        "yMMMEd hmv": "E, d. MMM y h:mm a v",
+        "yMMMEd mmss": "E, d. MMM y mm:ss",
+        "yMMMEd ms": "E, d. MMM y mm:ss",
+        "yMMMM": "MMMM y",
+        "yMMMM Bh": "MMMM y h B",
+        "yMMMM Bhm": "MMMM y h:mm B",
+        "yMMMM Bhms": "MMMM y h:mm:ss B",
+        "yMMMM H": "MMMM y H",
+        "yMMMM HH:mm": "MMMM y HH:mm",
+        "yMMMM HH:mm:ss": "MMMM y HH:mm:ss",
+        "yMMMM HH:mm:ss z": "MMMM y HH:mm:ss z",
+        "yMMMM HH:mm:ss zzzz": "MMMM y HH:mm:ss zzzz",
+        "yMMMM Hm": "MMMM y HH:mm",
+        "yMMMM Hms": "MMMM y HH:mm:ss",
+        "yMMMM Hmsv": "MMMM y HH:mm:ss v",
+        "yMMMM Hmv": "MMMM y HH:mm v",
+        "yMMMM h": "MMMM y h\u202fa",
+        "yMMMM hm": "MMMM y h:mm a",
+        "yMMMM hms": "MMMM y h:mm:ss a",
+        "yMMMM hmsv": "MMMM y h:mm:ss a v",
+        "yMMMM hmv": "MMMM y h:mm a v",
+        "yMMMM mmss": "MMMM y mm:ss",
+        "yMMMM ms": "MMMM y mm:ss",
+        "yMMMd": "y MMM d",
+        "yMMMd Bh": "y MMM d h B",
+        "yMMMd Bhm": "y MMM d h:mm B",
+        "yMMMd Bhms": "y MMM d h:mm:ss B",
+        "yMMMd H": "y MMM d H",
+        "yMMMd HH:mm": "y MMM d HH:mm",
+        "yMMMd HH:mm:ss": "y MMM d HH:mm:ss",
+        "yMMMd HH:mm:ss z": "y MMM d HH:mm:ss z",
+        "yMMMd HH:mm:ss zzzz": "y MMM d HH:mm:ss zzzz",
+        "yMMMd Hm": "y MMM d HH:mm",
+        "yMMMd Hms": "y MMM d HH:mm:ss",
+        "yMMMd Hmsv": "y MMM d HH:mm:ss v",
+        "yMMMd Hmv": "y MMM d HH:mm v",
+        "yMMMd h": "y MMM d h\u202fa",
+        "yMMMd hm": "y MMM d h:mm a",
+        "yMMMd hms": "y MMM d h:mm:ss a",
+        "yMMMd hmsv": "y MMM d h:mm:ss a v",
+        "yMMMd hmv": "y MMM d h:mm a v",
+        "yMMMd mmss": "y MMM d mm:ss",
+        "yMMMd ms": "y MMM d mm:ss",
+        "yMMdd": "dd.MM.y",
+        "yMMdd Bh": "dd.MM.y h B",
+        "yMMdd Bhm": "dd.MM.y h:mm B",
+        "yMMdd Bhms": "dd.MM.y h:mm:ss B",
+        "yMMdd H": "dd.MM.y H",
+        "yMMdd HH:mm": "dd.MM.y HH:mm",
+        "yMMdd HH:mm:ss": "dd.MM.y HH:mm:ss",
+        "yMMdd HH:mm:ss z": "dd.MM.y HH:mm:ss z",
+        "yMMdd HH:mm:ss zzzz": "dd.MM.y HH:mm:ss zzzz",
+        "yMMdd Hm": "dd.MM.y HH:mm",
+        "yMMdd Hms": "dd.MM.y HH:mm:ss",
+        "yMMdd Hmsv": "dd.MM.y HH:mm:ss v",
+        "yMMdd Hmv": "dd.MM.y HH:mm v",
+        "yMMdd h": "dd.MM.y h\u202fa",
+        "yMMdd hm": "dd.MM.y h:mm a",
+        "yMMdd hms": "dd.MM.y h:mm:ss a",
+        "yMMdd hmsv": "dd.MM.y h:mm:ss a v",
+        "yMMdd hmv": "dd.MM.y h:mm a v",
+        "yMMdd mmss": "dd.MM.y mm:ss",
+        "yMMdd ms": "dd.MM.y mm:ss",
+        "yMd": "y-MM-dd",
+        "yMd Bh": "y-MM-dd h B",
+        "yMd Bhm": "y-MM-dd h:mm B",
+        "yMd Bhms": "y-MM-dd h:mm:ss B",
+        "yMd H": "y-MM-dd H",
+        "yMd HH:mm": "y-MM-dd HH:mm",
+        "yMd HH:mm:ss": "y-MM-dd HH:mm:ss",
+        "yMd HH:mm:ss z": "y-MM-dd HH:mm:ss z",
+        "yMd HH:mm:ss zzzz": "y-MM-dd HH:mm:ss zzzz",
+        "yMd Hm": "y-MM-dd HH:mm",
+        "yMd Hms": "y-MM-dd HH:mm:ss",
+        "yMd Hmsv": "y-MM-dd HH:mm:ss v",
+        "yMd Hmv": "y-MM-dd HH:mm v",
+        "yMd h": "y-MM-dd h\u202fa",
+        "yMd hm": "y-MM-dd h:mm a",
+        "yMd hms": "y-MM-dd h:mm:ss a",
+        "yMd hmsv": "y-MM-dd h:mm:ss a v",
+        "yMd hmv": "y-MM-dd h:mm a v",
+        "yMd mmss": "y-MM-dd mm:ss",
+        "yMd ms": "y-MM-dd mm:ss"
+      }
+    },
+    "gmtFormat": "GMT{0}",
+    "hc": [
+      "h23",
+      "",
+      "h12"
+    ],
+    "hourCycle": "h23",
+    "hourFormat": "+HH:mm;-HH:mm",
+    "intervalFormats": {
+      "Bh": {
+        "B": "h B\u2009\u2013\u2009h B",
+        "h": "h\u2013h B"
+      },
+      "Bhm": {
+        "B": "h:mm B\u2009\u2013\u2009h:mm B",
+        "h": "h:mm\u2013h:mm B",
+        "m": "h:mm\u2013h:mm B"
+      },
+      "Gy": {
+        "G": "G y\u2009\u2013\u2009G y",
+        "y": "G y\u2013y"
+      },
+      "GyM": {
+        "G": "GGGGG y-MM\u2009\u2013\u2009GGGGG y-MM",
+        "M": "GGGGG y-MM\u2009\u2013\u2009y-MM",
+        "y": "GGGGG y-MM\u2009\u2013\u2009y-MM"
+      },
+      "GyMEd": {
+        "G": "GGGGG y-MM-dd, E\u2009\u2013\u2009GGGGG y-MM-dd, E",
+        "M": "GGGGG y-MM-dd, E\u2009\u2013\u2009y-MM-dd, E",
+        "d": "GGGGG y-MM-dd, E\u2009\u2013\u2009y-MM-dd, E",
+        "y": "GGGGG y-MM-dd, E\u2009\u2013\u2009y-MM-dd, E"
+      },
+      "GyMMM": {
+        "G": "G y MMM\u2009\u2013\u2009G y MMM",
+        "M": "G y MMM\u2013MMM",
+        "y": "G y MMM\u2009\u2013\u2009y MMM"
+      },
+      "GyMMMEd": {
+        "G": "G y MMM d, E\u2009\u2013\u2009G y MMM d, E",
+        "M": "G y MMM d, E\u2009\u2013\u2009MMM d, E",
+        "d": "G y MMM d, E\u2009\u2013\u2009MMM d, E",
+        "y": "G y MMM d, E\u2009\u2013\u2009y MMM d, E"
+      },
+      "GyMMMd": {
+        "G": "G y MMM d\u2009\u2013\u2009G y MMM d",
+        "M": "G y MMM d\u2009\u2013\u2009MMM d",
+        "d": "G y MMM d\u2013d",
+        "y": "G y MMM d\u2009\u2013\u2009y MMM d"
+      },
+      "GyMd": {
+        "G": "GGGGG y-MM-dd\u2009\u2013\u2009GGGGG y-MM-dd",
+        "M": "GGGGG y-MM-dd\u2009\u2013\u2009y-MM-dd",
+        "d": "GGGGG y-MM-dd\u2009\u2013\u2009y-MM-dd",
+        "y": "GGGGG y-MM-dd\u2009\u2013\u2009y-MM-dd"
+      },
+      "H": {
+        "H": "HH\u2013HH"
+      },
+      "Hm": {
+        "H": "HH:mm\u2013HH:mm",
+        "m": "HH:mm\u2013HH:mm"
+      },
+      "Hmv": {
+        "H": "HH:mm\u2013HH:mm v",
+        "m": "HH:mm\u2013HH:mm v"
+      },
+      "Hv": {
+        "H": "HH\u2013HH v"
+      },
+      "M": {
+        "M": "M.\u2013M."
+      },
+      "MEd": {
+        "M": "E, dd.MM.\u2009\u2013\u2009E, dd.MM.",
+        "d": "E, dd.MM.\u2009\u2013\u2009E, dd.MM."
+      },
+      "MMM": {
+        "M": "MMM\u2013MMM"
+      },
+      "MMMEd": {
+        "M": "E, d. MMM\u2009\u2013\u2009E, d. MMM",
+        "d": "E, d.\u2009\u2013\u2009E, d. MMM"
+      },
+      "MMMM": {
+        "M": "LLLL\u2013LLLL"
+      },
+      "MMMd": {
+        "M": "d. MMM\u2009\u2013\u2009d. MMM",
+        "d": "d.\u2013d. MMM"
+      },
+      "Md": {
+        "M": "dd.MM.\u2009\u2013\u2009dd.MM.",
+        "d": "dd.MM.\u2009\u2013\u2009dd.MM."
+      },
+      "d": {
+        "d": "d.\u2013d."
+      },
+      "h": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa",
+        "h": "h\u2013h\u202fa"
+      },
+      "hm": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa",
+        "h": "h:mm\u2013h:mm\u202fa",
+        "m": "h:mm\u2013h:mm\u202fa"
+      },
+      "hmv": {
+        "a": "h:mm\u202fa\u2009\u2013\u2009h:mm\u202fa v",
+        "h": "h:mm\u2013h:mm\u202fa v",
+        "m": "h:mm\u2013h:mm\u202fa v"
+      },
+      "hv": {
+        "a": "h\u202fa\u2009\u2013\u2009h\u202fa v",
+        "h": "h\u2013h\u202fa v"
+      },
+      "intervalFormatFallback": "{0}\u2009\u2013\u2009{1}",
+      "y": {
+        "y": "y\u2013y"
+      },
+      "yM": {
+        "M": "MM.y\u2009\u2013\u2009MM.y",
+        "y": "MM.y\u2009\u2013\u2009MM.y"
+      },
+      "yMEd": {
+        "M": "E, dd.MM.y\u2009\u2013\u2009E, dd.MM.y",
+        "d": "E, dd.MM.y\u2009\u2013\u2009E, dd.MM.y",
+        "y": "E, dd.MM.y\u2009\u2013\u2009E, dd.MM.y"
+      },
+      "yMMM": {
+        "M": "MMM\u2013MMM y",
+        "y": "MMM y\u2009\u2013\u2009MMM y"
+      },
+      "yMMMEd": {
+        "M": "E, d. MMM\u2009\u2013\u2009E, d. MMM y",
+        "d": "E, d.\u2009\u2013\u2009E, d. MMM y",
+        "y": "E, d. MMM y\u2009\u2013\u2009E, d. MMM y"
+      },
+      "yMMMM": {
+        "M": "MM\u2009\u2013\u2009MM.y",
+        "y": "MM.y\u2009\u2013\u2009MM.y"
+      },
+      "yMMMd": {
+        "M": "d. MMM\u2009\u2013\u2009d. MMM y",
+        "d": "d.\u2013d. MMM y",
+        "y": "d. MMM y\u2009\u2013\u2009d. MMM y"
+      },
+      "yMd": {
+        "M": "dd.MM.y\u2009\u2013\u2009dd.MM.y",
+        "d": "dd.MM.y\u2009\u2013\u2009dd.MM.y",
+        "y": "dd.MM.y\u2009\u2013\u2009dd.MM.y"
+      }
+    },
+    "month": {
+      "long": [
+        "Januar",
+        "Februar",
+        "M\u00e4rz",
+        "April",
+        "Mai",
+        "Juni",
+        "Juli",
+        "Auguscht",
+        "Sept\u00e4mber",
+        "Oktoober",
+        "Nov\u00e4mber",
+        "Dez\u00e4mber"
+      ],
+      "narrow": [
+        "J",
+        "F",
+        "M",
+        "A",
+        "M",
+        "J",
+        "J",
+        "A",
+        "S",
+        "O",
+        "N",
+        "D"
+      ],
+      "short": [
+        "Jan",
+        "Feb",
+        "M\u00e4r",
+        "Apr",
+        "Mai",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Okt",
+        "Nov",
+        "Dez"
+      ]
+    },
+    "nu": [
+      "latn"
+    ],
+    "pm": "nam.",
+    "timeFormat": {
+      "full": "HH:mm:ss zzzz",
+      "long": "HH:mm:ss z",
+      "medium": "HH:mm:ss",
+      "short": "HH:mm"
+    },
+    "timeZoneName": {
+      "Africa/Addis_Ababa": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Asmera": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Bangui": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Blantyre": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Brazzaville": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Bujumbura": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Cairo": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Africa/Dar_es_Salaam": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Djibouti": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Douala": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Gaborone": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Harare": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Johannesburg": {
+        "long": [
+          "S\u00fc\u00fcdafrikanischi ziit",
+          "S\u00fc\u00fcdafrikanischi ziit"
+        ]
+      },
+      "Africa/Kampala": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Kigali": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Kinshasa": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Lagos": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Libreville": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Luanda": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Lubumbashi": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Lusaka": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Malabo": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Maputo": {
+        "long": [
+          "Zentralafrikanischi Ziit",
+          "Zentralafrikanischi Ziit"
+        ]
+      },
+      "Africa/Maseru": {
+        "long": [
+          "S\u00fc\u00fcdafrikanischi ziit",
+          "S\u00fc\u00fcdafrikanischi ziit"
+        ]
+      },
+      "Africa/Mbabane": {
+        "long": [
+          "S\u00fc\u00fcdafrikanischi ziit",
+          "S\u00fc\u00fcdafrikanischi ziit"
+        ]
+      },
+      "Africa/Mogadishu": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Nairobi": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Africa/Ndjamena": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Niamey": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Porto-Novo": {
+        "long": [
+          "Weschtafrikanischi Schtandardziit",
+          "Weschtafrikanischi Summerziit"
+        ]
+      },
+      "Africa/Tunis": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "America/Belize": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Chicago": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Costa_Rica": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/El_Salvador": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Guatemala": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Juneau": {
+        "long": [
+          "Alaska-Schtandardziit",
+          "Alaska-Summerziit"
+        ]
+      },
+      "America/Manaus": {
+        "long": [
+          "Amazonas-Schtandardziit",
+          "Amazonas-Summerziit"
+        ]
+      },
+      "America/Mexico_City": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Rio_Branco": {
+        "long": [
+          "Acre-Schtandardziit",
+          "Acre-Summerziit"
+        ]
+      },
+      "America/Tegucigalpa": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "America/Winnipeg": {
+        "long": [
+          "Amerika-Zentraal Schtandardziit",
+          "Amerika-Zentraal Summerziit"
+        ]
+      },
+      "Arctic/Longyearbyen": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Asia/Beirut": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Asia/Kabul": {
+        "long": [
+          "Afghanischtan-Ziit",
+          "Afghanischtan-Ziit"
+        ]
+      },
+      "Asia/Nicosia": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Atlantic/Canary": {
+        "long": [
+          "Weschteurop\u00e4ischi Schtandardziit",
+          "Weschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "WEZ",
+          "WESZ"
+        ]
+      },
+      "Atlantic/Faeroe": {
+        "long": [
+          "Weschteurop\u00e4ischi Schtandardziit",
+          "Weschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "WEZ",
+          "WESZ"
+        ]
+      },
+      "Europe/Amsterdam": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Andorra": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Athens": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Europe/Belgrade": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Berlin": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Bratislava": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Brussels": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Bucharest": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Europe/Budapest": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Copenhagen": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Gibraltar": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Helsinki": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Europe/Ljubljana": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Luxembourg": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Madrid": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Malta": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Mariehamn": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Europe/Monaco": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Moscow": {
+        "long": [
+          "Moskauer Schtandardziit",
+          "Moskauer Summerziit"
+        ]
+      },
+      "Europe/Oslo": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Paris": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Podgorica": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Prague": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Rome": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/San_Marino": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Sarajevo": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Skopje": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Sofia": {
+        "long": [
+          "Oschteurop\u00e4ischi Schtandardziit",
+          "Oschteurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "OEZ",
+          "OESZ"
+        ]
+      },
+      "Europe/Stockholm": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Tirane": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Vaduz": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Vatican": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Vienna": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Warsaw": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Zagreb": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Europe/Zurich": {
+        "long": [
+          "Mitteleurop\u00e4ischi Schtandardziit",
+          "Mitteleurop\u00e4ischi Summerziit"
+        ],
+        "short": [
+          "MEZ",
+          "MESZ"
+        ]
+      },
+      "Indian/Antananarivo": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Indian/Comoro": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "Indian/Mayotte": {
+        "long": [
+          "Oschtafrikanischi Ziit",
+          "Oschtafrikanischi Ziit"
+        ]
+      },
+      "UTC": {
+        "short": [
+          "UTC",
+          "UTC"
+        ]
+      }
+    },
+    "weekday": {
+      "long": [
+        "Sunntig",
+        "M\u00e4\u00e4ntig",
+        "Ziischtig",
+        "Mittwuch",
+        "Dunschtig",
+        "Friitig",
+        "Samschtig"
+      ],
+      "narrow": [
+        "S",
+        "M",
+        "D",
+        "M",
+        "D",
+        "F",
+        "S"
+      ],
+      "short": [
+        "Su.",
+        "M\u00e4.",
+        "Zi.",
+        "Mi.",
+        "Du.",
+        "Fr.",
+        "Sa."
+      ]
+    }
+  },
+  "locale": "gsw"
+}
