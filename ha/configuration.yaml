@@ -10,6 +10,7 @@ frontend:
 homeassistant:
   allowlist_external_dirs:
     - /config/www/snapshots
+  packages: !include_dir_named packages
 
 automation: !include automations.yaml
 script: !include_dir_merge_named scripts

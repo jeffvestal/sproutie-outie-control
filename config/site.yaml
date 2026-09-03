@@ -25,7 +25,9 @@ site:
     remote: origin
     branch: main
   alerts:
-    ha_notify_service: notify.persistent_notification
+    ha_notify_service: notify.mobile_app_sergeant_bosco
+    cooldown_s: 1800
+    daily_heartbeat_at: "09:00:00"
 
   zones:
     tent-1:
@@ -38,7 +40,14 @@ site:
         # The Brain owns grow control in R2+.  These retain the physical limits
         # needed by a dumb HA fallback; they do not change existing HA schedules.
         # 60 s covers the slowest measured stable-on response (camera flash: 57.6 s).
-        device_verification: {settle_s: 60, poll_timeout_s: 120, off_threshold_w: 0.5}
+        device_verification: {settle_s: 60, attempts: 2, off_threshold_w: 0.5}
+        watchdogs:
+          switch_unavailable_s: 300
+          power_invalid_s: 600
+          climate_silence_s: 900
+          frozen_value_s: 7200
+          camera_stale_multiplier: 2
+          reconcile_interval_s: 60
 
       ha:
         devices:
@@ -111,11 +120,18 @@ site:
           # This room sensor is deliberately not used for exhaust control.
           room_rh: sensor.govee_humidity_temp_monitor_humidity
         cameras:
-          top-eyes: {entity: camera.top_eyes_snapshot, covers: [rack-top]}
-          bottom-eyes: {entity: camera.bottom_eyes_snapshot, covers: [rack-bottom]}
+          top-eyes:
+            entity: camera.top_eyes_snapshot
+            covers: [rack-top]
+            latest_snapshot_path: /config/www/snapshots/top_eyes_latest.jpg
+          bottom-eyes:
+            entity: camera.bottom_eyes_snapshot
+            covers: [rack-bottom]
+            latest_snapshot_path: /config/www/snapshots/bottom_eyes_latest.jpg
           sidecar-eyes:
             entity: camera.sidecar_eyes_snapshot
             covers: [sidecar-tf, sidecar-tb, sidecar-bf, sidecar-bb]
+            latest_snapshot_path: /config/www/snapshots/sidecar_eyes_latest.jpg
             ip: 192.168.10.180
             network_note: >-
               This is a separate routed subnet via 192.168.1.1, consistent with a VLAN or
