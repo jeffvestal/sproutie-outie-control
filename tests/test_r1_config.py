@@ -22,7 +22,8 @@ def load_module(name, path):
 
 renderer = load_module("render_r1_role_scripts", REPO / "scripts" / "render_r1_role_scripts.py")
 scanner = load_module("secret_scan", REPO / "scripts" / "secret_scan.py")
-deployer = load_module("deploy_r1_config", REPO / "scripts" / "deploy_r1_config.py")
+deployer = load_module("validated_deploy_r1", REPO / "scripts" / "deploy.py")
+retired_deployer = load_module("retired_deploy_r1_config", REPO / "scripts" / "deploy_r1_config.py")
 
 
 class HAConfigLoader(yaml.SafeLoader):
@@ -67,24 +68,26 @@ class R1ConfigTests(unittest.TestCase):
     def test_secret_scan_accepts_r1_source(self):
         self.assertEqual(scanner.main([str(REPO / "ha")]), 0)
 
-    def test_deployer_dry_run_is_local_only(self):
-        self.assertEqual(deployer.main([]), 0)
+    def test_deployer_never_manages_secrets(self):
+        self.assertNotIn("secrets.yaml", deployer.MANAGED_ROOTS)
+        with self.assertRaises(deployer.DeployError):
+            deployer.validate_manifest({"secrets.yaml": "0" * 64})
 
-    def test_deployer_creates_an_empty_active_secrets_file(self):
-        source = (REPO / "scripts" / "deploy_r1_config.py").read_text(encoding="utf-8")
-        self.assertIn("secrets.yaml && chmod 600", source)
-
-    def test_deployer_replaces_all_top_level_includes(self):
-        source = (REPO / "scripts" / "deploy_r1_config.py").read_text(encoding="utf-8")
-        self.assertIn('"template.yaml"', source)
+    def test_deployer_manages_all_r1_top_level_includes(self):
+        self.assertIn("template.yaml", deployer.MANAGED_ROOTS)
+        self.assertIn("themes", deployer.MANAGED_ROOTS)
 
     def test_deployer_treats_core_validation_errors_as_a_stop(self):
-        source = (REPO / "scripts" / "deploy_r1_config.py").read_text(encoding="utf-8")
-        self.assertIn('if "ERROR:" in report:', source)
+        source = (REPO / "scripts" / "deploy.py").read_text(encoding="utf-8")
+        self.assertIn("result.returncode != 0", source)
+        self.assertIn("CoreValidationError", source)
 
     def test_deployer_waits_for_core_before_post_activation_check(self):
-        source = (REPO / "scripts" / "deploy_r1_config.py").read_text(encoding="utf-8")
-        self.assertIn("Home Assistant did not become ready after Core restart", source)
+        source = (REPO / "scripts" / "deploy.py").read_text(encoding="utf-8")
+        self.assertIn("Home Assistant did not become ready after restart", source)
+
+    def test_old_activate_entry_point_is_retired(self):
+        self.assertEqual(retired_deployer.main(["--activate"]), 2)
 
     def test_sensor_fault_test_mode_is_wired_to_the_thermal_guard(self):
         automations = (REPO / "ha" / "automations.yaml").read_text(encoding="utf-8")

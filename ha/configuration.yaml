@@ -1,4 +1,4 @@
-# R1 Home Assistant configuration.  This tree is deployed by scripts/deploy_r1_config.py.
+# R1 Home Assistant configuration. This tree is deployed only by scripts/deploy.sh.
 # Device identity lives only in config/site.yaml; role command scripts are generated from it.
 default_config:
 
