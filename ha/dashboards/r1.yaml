@@ -57,27 +57,39 @@ views:
           - type: button
             entity: switch.top_shelf_lights
             name: Top lights
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_top_lights
           - type: button
             entity: switch.bottom_shelf_lights
             name: Bottom lights
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_bottom_lights
           - type: button
             entity: switch.top_shelf_fan
             name: Top fan
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_top_fan
           - type: button
             entity: switch.bottom_shelf_fan
             name: Bottom fan
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_bottom_fan
           - type: button
             entity: switch.exhaust_fan
             name: Exhaust
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_exhaust
           - type: button
             entity: switch.camera_flash
             name: Camera flash
-            tap_action: {action: toggle}
+            tap_action:
+              action: perform-action
+              perform_action: script.r1_toggle_camera_flash
       - type: entities
         title: Verified power readings
         entities:

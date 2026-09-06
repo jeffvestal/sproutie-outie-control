@@ -3,13 +3,16 @@
   mode: restart
   triggers:
     - trigger: state
+      id: state_change
       entity_id:
         - sensor.monitor2_temperature
         - input_boolean.r1_thermal_test_mode
         - input_boolean.r1_sensor_fault_test_mode
     - trigger: time_pattern
+      id: reconcile
       minutes: "/5"
     - trigger: homeassistant
+      id: startup
       event: start
   conditions:
     - condition: state
@@ -29,20 +32,38 @@
     recovered: >-
       {{ not sensor_bad and not is_state('input_boolean.r1_thermal_test_mode', 'on') and
          temperature < states('input_number.r1_thermal_release_f') | float(85) }}
+    latch_was_active: "{{ is_state('input_boolean.r1_thermal_latch', 'on') }}"
+    start_safety_run: >-
+      {{ not is_state('input_boolean.r1_thermal_latch', 'on') or trigger.id == 'startup' }}
   actions:
     - choose:
         - conditions: "{{ unsafe }}"
           sequence:
+            # Launch the non-blocking owner before writing the latch. If restart mode
+            # interrupts between actions, the replacement either launches it again
+            # (mode: single rejects the duplicate) or sees the already-active owner.
+            - if:
+                - condition: template
+                  value_template: "{{ start_safety_run }}"
+              then:
+                - action: script.turn_on
+                  target: {entity_id: script.r1_apply_thermal_safety}
             - action: input_boolean.turn_on
+              continue_on_error: true
               target: {entity_id: input_boolean.r1_thermal_latch}
-            - action: script.r1_apply_thermal_safety
-            - action: script.r1_notify_safety
-              data:
-                title: R1 thermal safety active
-                message: >-
-                  Thermal safety latch is active: temperature is unsafe, stale, unavailable, or
-                  a thermal/sensor-fault test mode is on. Lights were commanded off and exhaust
-                  commanded on.
+            - if:
+                - condition: template
+                  value_template: "{{ not latch_was_active }}"
+              then:
+                - action: script.turn_on
+                  target: {entity_id: script.r1_notify_safety}
+                  data:
+                    variables:
+                      title: R1 thermal safety active
+                      message: >-
+                        Thermal safety latch is active: temperature is unsafe, stale, unavailable,
+                        or a thermal/sensor-fault test mode is on. Lights were commanded off and
+                        exhaust commanded on.
         - conditions:
             - condition: state
               entity_id: input_boolean.r1_thermal_latch
@@ -50,12 +71,24 @@
             - condition: template
               value_template: "{{ recovered }}"
           sequence:
+            # Recovery cancels both the background owner and any currently awaited role
+            # verifier before releasing the latch, preventing a delayed fail-safe retry.
+            - action: script.turn_off
+              continue_on_error: true
+              target:
+                entity_id:
+                  - script.r1_apply_thermal_safety
+                  - script.r1_set_top_lights
+                  - script.r1_set_bottom_lights
+                  - script.r1_set_exhaust
             - action: input_boolean.turn_off
               target: {entity_id: input_boolean.r1_thermal_latch}
-            - action: script.r1_notify_safety
+            - action: script.turn_on
+              target: {entity_id: script.r1_notify_safety}
               data:
-                title: R1 thermal safety cleared
-                message: Temperature is fresh and below the configured release threshold.
+                variables:
+                  title: R1 thermal safety cleared
+                  message: Temperature is fresh and below the configured release threshold.
 
 - id: r1_fallback_light_schedule
   alias: R1 fallback light schedule
@@ -132,71 +165,3 @@
       state: "off"
     - action: script.r1_set_exhaust
       data: {desired: "off"}
-
-- id: r1_watchdog_entity_availability
-  alias: R1 watchdog entity availability
-  mode: queued
-  triggers:
-    - trigger: state
-      entity_id:
-        - switch.top_shelf_lights
-        - switch.bottom_shelf_lights
-        - switch.top_shelf_fan
-        - switch.bottom_shelf_fan
-        - switch.exhaust_fan
-        - switch.camera_flash
-      to: unavailable
-      for: "00:05:00"
-      id: switch
-    - trigger: state
-      entity_id:
-        - sensor.exhaust_fan_current_consumption
-        - sensor.bottom_shelf_fan_current_consumption
-        - sensor.bottom_shelf_lights_current_consumption
-        - sensor.top_shelf_fan_current_consumption
-        - sensor.top_shelf_lights_current_consumption
-        - sensor.camera_flash_current_consumption
-      to: unavailable
-      for: "00:10:00"
-      id: power
-    - trigger: state
-      entity_id:
-        - sensor.monitor2_temperature
-        - sensor.monitor2_humidity
-      to: unavailable
-      for: "00:15:00"
-      id: climate
-    - trigger: state
-      entity_id:
-        - camera.top_eyes_snapshot
-        - camera.bottom_eyes_snapshot
-        - camera.sidecar_eyes_snapshot
-      to: unavailable
-      for: "00:15:00"
-      id: camera
-  conditions:
-    - condition: template
-      value_template: >-
-        {{ as_timestamp(now()) - as_timestamp(states('input_datetime.r1_last_watchdog_alert'), 0) > 1800 }}
-  actions:
-    - action: script.r1_notify_watchdog
-      data:
-        message: "{{ trigger.id }} entity unavailable: {{ trigger.entity_id }}"
-
-- id: r1_watchdog_frozen_climate
-  alias: R1 watchdog frozen climate reading
-  mode: single
-  triggers:
-    - trigger: time_pattern
-      minutes: "/15"
-  conditions:
-    - condition: template
-      value_template: >-
-        {{ as_timestamp(now()) - as_timestamp(states.sensor.monitor2_temperature.last_changed, 0) > 7200 }}
-    - condition: template
-      value_template: >-
-        {{ as_timestamp(now()) - as_timestamp(states('input_datetime.r1_last_watchdog_alert'), 0) > 1800 }}
-  actions:
-    - action: script.r1_notify_watchdog
-      data:
-        message: Govee tent temperature has not changed for more than two hours.

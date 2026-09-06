@@ -44,8 +44,8 @@ class R1ConfigTests(unittest.TestCase):
                 yaml.load(path.read_text(encoding="utf-8"), Loader=HAConfigLoader)
 
     def test_role_scripts_are_current_with_site_contract(self):
-        devices = renderer.load_devices(REPO / "config" / "site.yaml")
-        expected = renderer.render(devices)
+        devices, verification = renderer.load_contract(REPO / "config" / "site.yaml")
+        expected = renderer.render(devices, verification)
         actual = (REPO / "ha" / "scripts" / "20_device_roles.yaml").read_text(encoding="utf-8")
         self.assertEqual(actual, expected)
 

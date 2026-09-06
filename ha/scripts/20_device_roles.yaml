@@ -9,30 +9,101 @@ r1_set_top_lights:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'top_lights' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.top_shelf_lights
-    - wait_template: >-
-        {% set watts = states('sensor.exhaust_fan_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.top_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
-        {% else %}
-          {{ is_state('switch.top_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_top_lights_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.top_shelf_lights
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.exhaust_fan_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.top_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
+                  {% else %}
+                    {{ is_state('switch.top_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.exhaust_fan_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.top_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
+            {% else %}
+              {{ is_state('switch.top_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_top_lights_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_top_lights
+            active_entity: input_boolean.r1_alert_active_command_top_lights
+            visible_entity: input_boolean.r1_alert_visible_command_top_lights
+            title: R1 command verified · top lights
+            message: top lights now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_top_lights_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_top_lights
+            cooldown_entity: input_datetime.r1_last_alert_command_top_lights
+            active_entity: input_boolean.r1_alert_active_command_top_lights
+            visible_entity: input_boolean.r1_alert_visible_command_top_lights
             title: R1 command verification failed
-            message: top_lights did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.top_shelf_lights') %}
+              {% set power_state = states('sensor.exhaust_fan_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                top lights (switch.top_shelf_lights) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                top lights (switch.top_shelf_lights) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                top lights reached {{ desired }}, but its power telemetry (sensor.exhaust_fan_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (28 <= watts <= 32) %}
+                top lights entity is on but physical draw is {{ watts }} W, outside 28–32 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                top lights entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                top lights did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_top_lights:
+  alias: R1 toggle top lights through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_top_lights
+      data:
+        desired: "{{ 'off' if is_state('switch.top_shelf_lights', 'on') else 'on' }}"
 
 r1_set_bottom_lights:
   alias: R1 set bottom lights
@@ -43,30 +114,101 @@ r1_set_bottom_lights:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'bottom_lights' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.bottom_shelf_lights
-    - wait_template: >-
-        {% set watts = states('sensor.bottom_shelf_fan_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.bottom_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
-        {% else %}
-          {{ is_state('switch.bottom_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_bottom_lights_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.bottom_shelf_lights
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.bottom_shelf_fan_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.bottom_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
+                  {% else %}
+                    {{ is_state('switch.bottom_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.bottom_shelf_fan_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.bottom_shelf_lights', 'on') and watts is not none and 28 <= watts <= 32 }}
+            {% else %}
+              {{ is_state('switch.bottom_shelf_lights', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_bottom_lights_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_bottom_lights
+            active_entity: input_boolean.r1_alert_active_command_bottom_lights
+            visible_entity: input_boolean.r1_alert_visible_command_bottom_lights
+            title: R1 command verified · bottom lights
+            message: bottom lights now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_bottom_lights_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_bottom_lights
+            cooldown_entity: input_datetime.r1_last_alert_command_bottom_lights
+            active_entity: input_boolean.r1_alert_active_command_bottom_lights
+            visible_entity: input_boolean.r1_alert_visible_command_bottom_lights
             title: R1 command verification failed
-            message: bottom_lights did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.bottom_shelf_lights') %}
+              {% set power_state = states('sensor.bottom_shelf_fan_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                bottom lights (switch.bottom_shelf_lights) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                bottom lights (switch.bottom_shelf_lights) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                bottom lights reached {{ desired }}, but its power telemetry (sensor.bottom_shelf_fan_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (28 <= watts <= 32) %}
+                bottom lights entity is on but physical draw is {{ watts }} W, outside 28–32 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                bottom lights entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                bottom lights did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_bottom_lights:
+  alias: R1 toggle bottom lights through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_bottom_lights
+      data:
+        desired: "{{ 'off' if is_state('switch.bottom_shelf_lights', 'on') else 'on' }}"
 
 r1_set_top_fan:
   alias: R1 set top fan
@@ -77,30 +219,101 @@ r1_set_top_fan:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'top_fan' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.top_shelf_fan
-    - wait_template: >-
-        {% set watts = states('sensor.bottom_shelf_lights_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.top_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.0 }}
-        {% else %}
-          {{ is_state('switch.top_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_top_fan_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.top_shelf_fan
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.bottom_shelf_lights_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.top_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.0 }}
+                  {% else %}
+                    {{ is_state('switch.top_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.bottom_shelf_lights_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.top_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.0 }}
+            {% else %}
+              {{ is_state('switch.top_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_top_fan_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_top_fan
+            active_entity: input_boolean.r1_alert_active_command_top_fan
+            visible_entity: input_boolean.r1_alert_visible_command_top_fan
+            title: R1 command verified · top fan
+            message: top fan now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_top_fan_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_top_fan
+            cooldown_entity: input_datetime.r1_last_alert_command_top_fan
+            active_entity: input_boolean.r1_alert_active_command_top_fan
+            visible_entity: input_boolean.r1_alert_visible_command_top_fan
             title: R1 command verification failed
-            message: top_fan did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.top_shelf_fan') %}
+              {% set power_state = states('sensor.bottom_shelf_lights_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                top fan (switch.top_shelf_fan) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                top fan (switch.top_shelf_fan) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                top fan reached {{ desired }}, but its power telemetry (sensor.bottom_shelf_lights_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (3.5 <= watts <= 5.0) %}
+                top fan entity is on but physical draw is {{ watts }} W, outside 3.5–5.0 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                top fan entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                top fan did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_top_fan:
+  alias: R1 toggle top fan through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_top_fan
+      data:
+        desired: "{{ 'off' if is_state('switch.top_shelf_fan', 'on') else 'on' }}"
 
 r1_set_bottom_fan:
   alias: R1 set bottom fan
@@ -111,30 +324,101 @@ r1_set_bottom_fan:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'bottom_fan' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.bottom_shelf_fan
-    - wait_template: >-
-        {% set watts = states('sensor.top_shelf_fan_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.bottom_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.5 }}
-        {% else %}
-          {{ is_state('switch.bottom_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_bottom_fan_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.bottom_shelf_fan
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.top_shelf_fan_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.bottom_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.5 }}
+                  {% else %}
+                    {{ is_state('switch.bottom_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.top_shelf_fan_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.bottom_shelf_fan', 'on') and watts is not none and 3.5 <= watts <= 5.5 }}
+            {% else %}
+              {{ is_state('switch.bottom_shelf_fan', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_bottom_fan_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_bottom_fan
+            active_entity: input_boolean.r1_alert_active_command_bottom_fan
+            visible_entity: input_boolean.r1_alert_visible_command_bottom_fan
+            title: R1 command verified · bottom fan
+            message: bottom fan now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_bottom_fan_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_bottom_fan
+            cooldown_entity: input_datetime.r1_last_alert_command_bottom_fan
+            active_entity: input_boolean.r1_alert_active_command_bottom_fan
+            visible_entity: input_boolean.r1_alert_visible_command_bottom_fan
             title: R1 command verification failed
-            message: bottom_fan did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.bottom_shelf_fan') %}
+              {% set power_state = states('sensor.top_shelf_fan_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                bottom fan (switch.bottom_shelf_fan) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                bottom fan (switch.bottom_shelf_fan) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                bottom fan reached {{ desired }}, but its power telemetry (sensor.top_shelf_fan_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (3.5 <= watts <= 5.5) %}
+                bottom fan entity is on but physical draw is {{ watts }} W, outside 3.5–5.5 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                bottom fan entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                bottom fan did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_bottom_fan:
+  alias: R1 toggle bottom fan through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_bottom_fan
+      data:
+        desired: "{{ 'off' if is_state('switch.bottom_shelf_fan', 'on') else 'on' }}"
 
 r1_set_exhaust:
   alias: R1 set exhaust
@@ -145,30 +429,101 @@ r1_set_exhaust:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'exhaust' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.exhaust_fan
-    - wait_template: >-
-        {% set watts = states('sensor.top_shelf_lights_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.exhaust_fan', 'on') and watts is not none and 23 <= watts <= 29 }}
-        {% else %}
-          {{ is_state('switch.exhaust_fan', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_exhaust_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.exhaust_fan
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.top_shelf_lights_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.exhaust_fan', 'on') and watts is not none and 23 <= watts <= 29 }}
+                  {% else %}
+                    {{ is_state('switch.exhaust_fan', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.top_shelf_lights_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.exhaust_fan', 'on') and watts is not none and 23 <= watts <= 29 }}
+            {% else %}
+              {{ is_state('switch.exhaust_fan', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_exhaust_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_exhaust
+            active_entity: input_boolean.r1_alert_active_command_exhaust
+            visible_entity: input_boolean.r1_alert_visible_command_exhaust
+            title: R1 command verified · exhaust
+            message: exhaust now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_exhaust_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_exhaust
+            cooldown_entity: input_datetime.r1_last_alert_command_exhaust
+            active_entity: input_boolean.r1_alert_active_command_exhaust
+            visible_entity: input_boolean.r1_alert_visible_command_exhaust
             title: R1 command verification failed
-            message: exhaust did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.exhaust_fan') %}
+              {% set power_state = states('sensor.top_shelf_lights_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                exhaust (switch.exhaust_fan) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                exhaust (switch.exhaust_fan) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                exhaust reached {{ desired }}, but its power telemetry (sensor.top_shelf_lights_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (23 <= watts <= 29) %}
+                exhaust entity is on but physical draw is {{ watts }} W, outside 23–29 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                exhaust entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                exhaust did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_exhaust:
+  alias: R1 toggle exhaust through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_exhaust
+      data:
+        desired: "{{ 'off' if is_state('switch.exhaust_fan', 'on') else 'on' }}"
 
 r1_set_camera_flash:
   alias: R1 set camera flash
@@ -179,27 +534,98 @@ r1_set_camera_flash:
       selector:
         select:
           options: ["on", "off"]
+    initial_command_sent:
+      required: false
+      default: false
+      selector:
+        boolean:
   sequence:
     - condition: template
       value_template: >-
         {{ desired == 'off' or 'camera_flash' == 'exhaust' or is_state('input_boolean.r1_thermal_latch', 'off') }}
-    - action: switch.turn_{{ desired }}
+    - action: input_boolean.turn_off
       target:
-        entity_id: switch.camera_flash
-    - wait_template: >-
-        {% set watts = states('sensor.camera_flash_current_consumption') | float(none) %}
-        {% if desired == 'on' %}
-          {{ is_state('switch.camera_flash', 'on') and watts is not none and 9 <= watts <= 11 }}
-        {% else %}
-          {{ is_state('switch.camera_flash', 'off') and watts is not none and watts <= 0.5 }}
-        {% endif %}
-      timeout: "00:02:00"
-      continue_on_timeout: true
+        entity_id: input_boolean.r1_camera_flash_verified
+    - repeat:
+        sequence:
+          - if:
+              - condition: template
+                value_template: >-
+                  {{ not (repeat.first and
+                     initial_command_sent | default(false) | bool) }}
+            then:
+              - action: switch.turn_{{ desired }}
+                continue_on_error: true
+                target:
+                  entity_id: switch.camera_flash
+          - delay:
+              seconds: 60
+        until:
+          - condition: or
+            conditions:
+              - condition: template
+                value_template: >-
+                  {% set watts = states('sensor.camera_flash_current_consumption') | float(none) %}
+                  {% if desired == 'on' %}
+                    {{ is_state('switch.camera_flash', 'on') and watts is not none and 9 <= watts <= 11 }}
+                  {% else %}
+                    {{ is_state('switch.camera_flash', 'off') and watts is not none and watts <= 0.5 }}
+                  {% endif %}
+              - condition: template
+                value_template: "{{ repeat.index >= 2 }}"
     - if:
         - condition: template
-          value_template: "{{ not wait.completed }}"
+          value_template: >-
+            {% set watts = states('sensor.camera_flash_current_consumption') | float(none) %}
+            {% if desired == 'on' %}
+              {{ is_state('switch.camera_flash', 'on') and watts is not none and 9 <= watts <= 11 }}
+            {% else %}
+              {{ is_state('switch.camera_flash', 'off') and watts is not none and watts <= 0.5 }}
+            {% endif %}
       then:
-        - action: persistent_notification.create
+        - action: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.r1_camera_flash_verified
+        - action: script.r1_resolve_alert
           data:
+            key: r1_command_camera_flash
+            active_entity: input_boolean.r1_alert_active_command_camera_flash
+            visible_entity: input_boolean.r1_alert_visible_command_camera_flash
+            title: R1 command verified · camera flash
+            message: camera flash now matches requested state and physical power.
+      else:
+        - action: input_boolean.turn_off
+          target:
+            entity_id: input_boolean.r1_camera_flash_verified
+        - action: script.r1_raise_alert
+          data:
+            key: r1_command_camera_flash
+            cooldown_entity: input_datetime.r1_last_alert_command_camera_flash
+            active_entity: input_boolean.r1_alert_active_command_camera_flash
+            visible_entity: input_boolean.r1_alert_visible_command_camera_flash
             title: R1 command verification failed
-            message: camera_flash did not reach the requested state and power range.
+            message: >-
+              {% set switch_state = states('switch.camera_flash') %}
+              {% set power_state = states('sensor.camera_flash_current_consumption') %}
+              {% set watts = power_state | float(none) %}
+              {% if switch_state in ['unknown', 'unavailable', 'none', ''] %}
+                camera flash (switch.camera_flash) is missing or unavailable after two commands. This is an integration/entity-ID failure.
+              {% elif switch_state != desired %}
+                camera flash (switch.camera_flash) is present but remained {{ switch_state }} after two commands requesting {{ desired }}.
+              {% elif watts is none %}
+                camera flash reached {{ desired }}, but its power telemetry (sensor.camera_flash_current_consumption) is {{ power_state }}; physical actuation is unverified.
+              {% elif desired == 'on' and not (9 <= watts <= 11) %}
+                camera flash entity is on but physical draw is {{ watts }} W, outside 9–11 W. This is a physical/load failure.
+              {% elif desired == 'off' and watts > 0.5 %}
+                camera flash entity is off but physical draw remains {{ watts }} W (limit 0.5 W). This is a physical/relay failure.
+              {% else %}
+                camera flash did not pass state-and-power verification after two commands.
+              {% endif %}
+
+r1_toggle_camera_flash:
+  alias: R1 toggle camera flash through verification
+  mode: restart
+  sequence:
+    - action: script.r1_set_camera_flash
+      data:
+        desired: "{{ 'off' if is_state('switch.camera_flash', 'on') else 'on' }}"
